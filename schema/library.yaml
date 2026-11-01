@@ -117,3 +117,7 @@ manufacturers:
   - {name: Lelon}
   - {name: Würth Elektronik, aliases: [Wurth Elektronik, Würth, Wurth, WE]}
   - {name: Nippon Chemi-Con, aliases: [NCC(Nippon Chemi-Con), NCC, Chemi-Con]}
+  # Beads and inductors (plan 7)
+  - {name: TAI-TECH, aliases: [TAI-TECH Advanced Electronics, TA-I Technology]}
+  - {name: Chilisin}
+  - {name: cjiang, aliases: [Changjiang Microelectronics]}

@@ -33,6 +33,9 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 .venv\Scripts\python -m libkit bulk-add resistor --series E6 --from 1mR --to 100mR --package 2512 --tolerance 1% --min-power 1W
 .venv\Scripts\python -m libkit bulk-add tantalum --series E6 --from 1u --to 470u --case A          # cases A–D
 .venv\Scripts\python -m libkit bulk-add electrolytic --series E6 --from 1u --to 1000u --can 6.3x7.7  # 5x5.4 … 10x10.5
+.venv\Scripts\python -m libkit bulk-add bead --series FB --from 30 --to 2200 --package 0603      # bead impedances @100MHz
+.venv\Scripts\python -m libkit bulk-add inductor --series E6 --from 1u --to 10u --package 0805   # chip inductors
+.venv\Scripts\python -m libkit bulk-add inductor --series E6 --from 1u --to 470u --family SWPA4030S  # power-inductor series
 .venv\Scripts\python -m libkit refresh-stock      # re-query stock + JLC type of every part (network)
 .venv\Scripts\python -m libkit find resistor 62k --package 0402 --tolerance 1%   # candidates for one value (network)
 .venv\Scripts\python -m libkit add C1046         # single add, dry run (network); --write applies it
@@ -62,12 +65,18 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   `new` = will be added, `exists` = an existing part covers the value (or the
   pick's name/LCSC is already in the library), `none` = no part meets the rules
   (see the note). Column `ds` = datasheet language. `--dielectric` defaults to
-  `C0G,NP0,X7R,X5R`. Inductors and ferrite beads are single-add only (no parametric source).
+  `C0G,NP0,X7R,X5R`.
   Capacitors below 10pF are not needed (user decision): start series at 10p.
   Chip sizes: 0402, 0603, 0805, 1206, 1210, 2512. `--min-power 1W` filters resistors (shunts).
   Tantalum (`--case A|B|C|D`) and SMD electrolytic (`--can 5x5.4|6.3x5.4|6.3x7.7|8x10.5|10x10.5`):
   one part per value and size, the highest voltage within the best JLC tier (user decision);
   candidates come from JLC's keyword search, `--tolerance`/`--voltage` are optional filters.
+  Beads (`--series FB`: 30R…2200R @100MHz) and chip inductors (`--package`): one part per value,
+  the highest current within the best JLC tier. Power inductors: whole manufacturer series per size
+  (`--family SWPA4030S`, Sunlord SWPA 3015S/4030S/5040S/6045S/8040S chosen 2026-11-01); import the
+  family footprint once with `add <C…> --category inductors --family Inductor_SMD --fp-name
+  L_Sunlord_<family>` (show the preview), then bulk-add; parts are named by MPN.
+  Add full series, not single values (user rule).
 - **Find (one value):** `libkit find <resistor|capacitor|inductor|bead> <value> --package …`
   lists candidates ordered by the rules (Basic/Preferred, then stock), with notes
   where a part misses the bulk rules (`Extended`, `stock < 1000`, unknown

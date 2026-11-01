@@ -20,6 +20,7 @@ The spec is split into four plans; each leaves a usable library behind.
 4. Review GUI, layout A (spec §6.9), discrete base symbols, local parts — done: `2026-11-01-review-gui.md`.
 5. JLC BOM/CPL export — planned, deferred: `2026-11-01-jlc-export.md`.
 6. Passive series (1210, 2512, mΩ shunts, tantalum, electrolytic) — done: `2026-11-01-passive-series.md`.
+7. Inductor series (beads, chip inductors, power-inductor families) — done: `2026-11-01-inductor-series.md`.
 
 ## Global Constraints
 

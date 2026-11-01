@@ -20,10 +20,16 @@ SERIES = {
 }
 
 
+# Fixed lists that are not E-series: ferrite-bead impedances in ohms at 100 MHz (plan 7).
+FIXED = {"FB": [30.0, 60.0, 120.0, 220.0, 330.0, 470.0, 600.0, 1000.0, 1500.0, 2200.0]}
+
+
 def values(name: str, start: float, stop: float) -> list[float]:
     """All values of series `name` in [start, stop], ascending."""
+    if name in FIXED:
+        return [v for v in FIXED[name] if start * (1 - 1e-9) <= v <= stop * (1 + 1e-9)]
     if name not in SERIES:
-        raise ValueError(f"unknown series {name!r}; known: {', '.join(SERIES)}")
+        raise ValueError(f"unknown series {name!r}; known: {', '.join([*SERIES, *FIXED])}")
     if not 0 < start <= stop:
         raise ValueError(f"bad range {start:g} .. {stop:g}")
     mantissas, shift = SERIES[name]
