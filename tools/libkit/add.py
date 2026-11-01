@@ -185,7 +185,7 @@ def _entry(part: JlcPart, kind: str | None, schema, footprint: str, name: str | 
         if name:
             entry["name"] = name
         return entry
-    manufacturer, _ = manufacturer_name(part.brand, schema)
+    manufacturer, _ = manufacturer_name(part.brand, schema, part.mpn)
     return {
         "name": name or mpn_name(part.mpn),
         "symbol": "",
@@ -330,7 +330,7 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
            if i.severity == "error"]
     if bad:
         raise ValueError(f"{entry['name']} would not build in {category}: {'; '.join(bad)}")
-    manufacturer, known = manufacturer_name(part.brand, schema)
+    manufacturer, known = manufacturer_name(part.brand, schema, part.mpn)
     if not known:
         warnings.append(f"manufacturer {manufacturer!r} (JLC: {part.brand!r}) is not in manufacturers: — kept "
                         "for this single add")

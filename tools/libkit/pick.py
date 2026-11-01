@@ -115,7 +115,7 @@ def pick(need: Need, candidates: list[Candidate], schema: Schema, lookup=None,
         if part is None:
             missing += 1
             continue
-        if schema.canonical_manufacturer(part.brand) is None:
+        if schema.canonical_manufacturer(part.brand, part.mpn) is None:
             unknown += 1
             continue
         if part.stock < need.min_stock:

@@ -15,7 +15,10 @@ KINDS = {
     "capacitor": ("capacitors", "C", "F", "C"),
     "inductor": ("inductors", "L", "H", "L"),
     "bead": ("inductors", "FerriteBead", "Ω", "L"),  # value unit: impedance
+    "tantalum": ("capacitors", "C_Polarized", "F", "CP"),
+    "electrolytic": ("capacitors", "C_Polarized", "F", "CP"),
 }
+POLAR = {"tantalum": "Ta", "electrolytic": "Al"}  # kind: dielectric field
 NAME_CHARS = re.compile(r"[^A-Za-z0-9_.+,-]+")  # KLC G1.1
 METRIC = {"0402": "1005", "0603": "1608", "0805": "2012", "1206": "3216", "1210": "3225", "2512": "6332"}
 
@@ -83,6 +86,13 @@ def kind_of(part: JlcPart) -> str | None:
     """The passive kind a JLC record describes, or None (also for arrays)."""
     if _array(part):
         return None
+    from .polar import ELECTROLYTIC_TYPE, TANTALUM_TYPE
+    if part.type_name == TANTALUM_TYPE:
+        return "tantalum"
+    if part.type_name == ELECTROLYTIC_TYPE:
+        return "electrolytic"
+    if "electrolytic" in part.type_name.casefold() or "polymer" in part.type_name.casefold():
+        return None  # hybrid / polymer aluminium: no bulk kind (single add by MPN only)
     for key, kind in (("Resistance", "resistor"), ("Capacitance", "capacitor"),
                       ("Impedance @ Frequency", "bead"), ("Inductance", "inductor")):
         if _has(part, key):
@@ -98,10 +108,10 @@ def mpn_name(mpn: str) -> str:
     return name
 
 
-def manufacturer_name(brand: str, schema: Schema) -> tuple[str, bool]:
+def manufacturer_name(brand: str, schema: Schema, mpn: str = "") -> tuple[str, bool]:
     """(canonical name, True) for a known manufacturer, else (the brand without
     a "(…)" suffix, False) — single adds may come from anyone (rule 3 is for picks)."""
-    known = schema.canonical_manufacturer(brand)
+    known = schema.canonical_manufacturer(brand, mpn)
     if known:
         return known, True
     return re.sub(r"\s*\(.*\)\s*$", "", brand).strip() or brand.strip(), False
@@ -169,11 +179,13 @@ def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None =
     if why:
         raise ValueError(f"{part.lcsc}: an array, not a single two-pin part ({why})")
     if known_only:
-        manufacturer = schema.canonical_manufacturer(part.brand)
+        manufacturer = schema.canonical_manufacturer(part.brand, part.mpn)
         if manufacturer is None:
             raise ValueError(f"{part.lcsc}: manufacturer {part.brand!r} is not a known manufacturer")
     else:
-        manufacturer, _ = manufacturer_name(part.brand, schema)
+        manufacturer, _ = manufacturer_name(part.brand, schema, part.mpn)
+    if kind in POLAR:
+        return _polar_entry(kind, part, manufacturer, today)
     chip = part.package in METRIC
     if footprint is None:
         if not chip:
@@ -226,4 +238,45 @@ def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None =
         entry.update(voltage=voltage, dielectric=dielectric, tolerance=tolerance)
         entry["name"] = passive_name(kind, value, part.package, voltage=_volts(voltage, part.lcsc),
                                      dielectric=dielectric)
+    return entry
+
+
+def _polar_entry(kind: str, part: JlcPart, manufacturer: str, today: date | None) -> dict[str, str]:
+    """Tantalum or electrolytic: C_<value>_<CaseA|D6.3x7.7>_<voltage>_<Ta|Al> (plan 6)."""
+    from .polar import footprint_name, package_name, size_of
+    size = size_of(kind, part)
+    if size is None:
+        raise ValueError(f"{part.lcsc}: package {part.package!r} is not a {kind} case/can LIB supports")
+    value, _ = _value("capacitor", part)
+    voltage = _attr(part, "Voltage Rating")
+    volts = _volts(voltage, part.lcsc)
+    tolerance = _attr(part, "Tolerance")
+    _percent(tolerance, part.lcsc)
+    package = package_name(kind, size)
+    text = format_value(value, "F")
+    entry = {
+        "name": f"C_{text[:-1]}_{package}_{volts:g}V_{POLAR[kind]}",
+        "symbol": "C_Polarized",
+        "footprint": f"LIB_Passives_SMD:{footprint_name(kind, size)}",
+        "value": text,
+        "package": package,
+        "manufacturer": manufacturer,
+        "mpn": part.mpn,
+        "lcsc": part.lcsc,
+        "jlc_type": part.jlc_type,
+        "datasheet": datasheet_url(part),
+        "status": "active",
+        "stock": str(part.stock),
+        "stock_checked": (today or date.today()).isoformat(),
+        "voltage": voltage,
+        "dielectric": POLAR[kind],
+        "tolerance": tolerance,
+    }
+    esr = _attr(part, "Equivalent Series Resistance(ESR)", required=False)
+    if esr:
+        entry["esr"] = _compact(esr)
+    if kind == "electrolytic":
+        life = _attr(part, "Lifetime", required=False)
+        if life:
+            entry["lifetime"] = _compact(life)
     return entry

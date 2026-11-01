@@ -101,7 +101,7 @@ def _jlc(args) -> int:
                 print(f"  {an}: {av}")
         else:
             print(f"{k}: {v}")
-    print(f"canonical manufacturer: {schema.canonical_manufacturer(part.brand) or 'unknown'}")
+    print(f"canonical manufacturer: {schema.canonical_manufacturer(part.brand, part.mpn) or 'unknown'}")
     ds = Checker(root).for_part(part)
     print(f"datasheet language: {ds.lang}" + (f" ({ds.note})" if ds.note else ""))
     return 0

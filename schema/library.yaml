@@ -47,6 +47,8 @@ categories:
       - {key: voltage, label: Voltage, required: true, keyword: true}
       - {key: dielectric, label: Dielectric, required: true, keyword: true}
       - {key: tolerance, label: Tolerance, required: true, keyword: true}
+      - {key: esr, label: ESR}          # tantalum / electrolytic
+      - {key: lifetime, label: Lifetime}  # electrolytic
   - key: inductors
     title: Inductors
     value_unit: H
@@ -107,3 +109,11 @@ manufacturers:
   - {name: Walsin}
   - {name: FH, aliases: [Guangdong Fenghua Advanced Tech]}
   - {name: Sunlord}
+  # Tantalum and electrolytic capacitors (plan 6). JLC lists most AVX
+  # tantalums with an empty brand ("--"): mpn_prefixes identify them.
+  - {name: KYOCERA AVX, aliases: [AVX, Kyocera AVX], mpn_prefixes: [TAJ, TPS, TCJ, TLJ, F9]}
+  - {name: Rubycon}
+  - {name: Nichicon}
+  - {name: Lelon}
+  - {name: Würth Elektronik, aliases: [Wurth Elektronik, Würth, Wurth, WE]}
+  - {name: Nippon Chemi-Con, aliases: [NCC(Nippon Chemi-Con), NCC, Chemi-Con]}

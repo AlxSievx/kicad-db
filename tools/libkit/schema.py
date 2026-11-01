@@ -45,6 +45,8 @@ class Family:
 class Manufacturer:
     name: str
     aliases: list[str] = field(default_factory=list)
+    # MPN prefixes that identify the maker when JLC leaves the brand empty ("--")
+    mpn_prefixes: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -58,7 +60,7 @@ class Schema:
     def fields_for(self, category: Category) -> list[FieldDef]:
         return self.common + category.fields
 
-    def canonical_manufacturer(self, brand: str) -> str | None:
+    def canonical_manufacturer(self, brand: str, mpn: str = "") -> str | None:
         """The known manufacturer a distributor brand string means, or None.
 
         Matches case-insensitively when the brand equals the name or an alias,
@@ -66,7 +68,11 @@ class Schema:
         "UNI-ROYAL(Uniroyal Elec)" is UNI-ROYAL but "FHX" is not FH.
         """
         b = brand.strip().casefold()
-        if not b:
+        if b in ("", "-", "--"):
+            m_up = mpn.strip().upper()
+            for m in self.manufacturers:
+                if m_up and any(m_up.startswith(p.upper()) for p in m.mpn_prefixes):
+                    return m.name
             return None
         for m in self.manufacturers:
             n = m.name.casefold()
@@ -101,7 +107,7 @@ def _field(d: dict) -> FieldDef:
 def _manufacturer(m) -> Manufacturer:
     if isinstance(m, str):
         return Manufacturer(m)
-    return Manufacturer(m["name"], list(m.get("aliases") or []))
+    return Manufacturer(m["name"], list(m.get("aliases") or []), list(m.get("mpn_prefixes") or []))
 
 
 def load_schema(root: Path) -> Schema:

@@ -7,7 +7,7 @@ def test_schema_has_all_categories(schema):
     assert len(schema.categories) == 16
     cap = schema.categories["capacitors"]
     assert cap.lib_name == "LIB_Capacitors" and cap.value_unit == "F"
-    assert [f.label for f in cap.fields] == ["Voltage", "Dielectric", "Tolerance"]
+    assert [f.label for f in cap.fields] == ["Voltage", "Dielectric", "Tolerance", "ESR", "Lifetime"]
     assert schema.categories["leds_optoelectronics"].lib_name == "LIB_LEDs_Optoelectronics"
     assert schema.categories["mechanical"].orderable is False
     assert schema.families["Passives_SMD"].lib_name == "LIB_Passives_SMD"
