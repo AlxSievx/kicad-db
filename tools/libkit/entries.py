@@ -17,7 +17,7 @@ KINDS = {
     "bead": ("inductors", "FerriteBead", "Ω", "L"),  # value unit: impedance
 }
 NAME_CHARS = re.compile(r"[^A-Za-z0-9_.+,-]+")  # KLC G1.1
-METRIC = {"0402": "1005", "0603": "1608", "0805": "2012", "1206": "3216"}
+METRIC = {"0402": "1005", "0603": "1608", "0805": "2012", "1206": "3216", "1210": "3225", "2512": "6332"}
 
 
 def _kind(kind: str):

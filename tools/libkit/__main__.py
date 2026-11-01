@@ -6,6 +6,7 @@ import argparse
 import sys
 from pathlib import Path
 
+from .entries import METRIC
 from .kicad import kicad_share
 from .net import NetError
 from .schema import SCHEMA_FILE, load_schema
@@ -309,7 +310,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--series", required=True, choices=["E6", "E12", "E24", "E48", "E96"])
     p.add_argument("--from", dest="start", required=True, help="first value, e.g. 1k or 10n")
     p.add_argument("--to", dest="stop", required=True, help="last value (inclusive)")
-    p.add_argument("--package", required=True, choices=["0402", "0603", "0805", "1206"])
+    p.add_argument("--package", required=True, choices=sorted(METRIC))
     p.add_argument("--tolerance", required=True, help="worst acceptable tolerance, e.g. 1%%")
     p.add_argument("--voltage", help="minimum voltage rating for capacitors, e.g. 16V")
     p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
