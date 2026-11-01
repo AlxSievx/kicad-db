@@ -35,6 +35,13 @@ py -3.12 -m venv .venv
 
 How parts are named, picked and added is in [CLAUDE.md](CLAUDE.md).
 
+`libkit jlc`, `bulk-add` and `refresh-stock` read part data from two public
+sources that need no account or key: JLCPCB's own parts search
+(`jlcpcb.com/api/…/selectSmtComponentList`, the record for one C-number) and
+[jlcsearch](https://jlcsearch.tscircuit.com) (parametric resistor and capacitor
+lists). Both are unofficial APIs and may change or disappear without notice;
+`build`, `check` and the tests work offline.
+
 ## License
 
 Base passive symbols, footprints and 3D models are derived from the KiCad

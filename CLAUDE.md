@@ -25,7 +25,33 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 .venv\Scripts\python -m libkit vendor-sym Device:C --into passives
 .venv\Scripts\python -m libkit vendor-fp Capacitor_SMD:C_0402_1005Metric --family Passives_SMD
 .venv\Scripts\python -m pytest
+.venv\Scripts\python -m libkit jlc C1525          # look up one LCSC part (network)
+.venv\Scripts\python -m libkit bulk-add resistor --series E24 --from 1k --to 1M --package 0402 --tolerance 1%
+.venv\Scripts\python -m libkit bulk-add capacitor --series E6 --from 1n --to 1u --package 0402 --tolerance 10% --voltage 16V
+.venv\Scripts\python -m libkit refresh-stock      # re-query stock + JLC type of every part (network)
 ```
+
+Only `jlc`, `bulk-add` and `refresh-stock` use the network. Live tests are
+opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest tests/test_jlc.py`.
+
+## Workflows
+
+- **Single lookup:** `libkit jlc C…` prints JLC's record (MPN, brand, stock,
+  Basic/Preferred/Extended, datasheet, attributes) and the canonical
+  manufacturer name, or `unknown` (then the brand is not in `manufacturers:`).
+- **Bulk add (resistors, capacitors):** always run the dry run first (no
+  `--write`) and show the user the whole table. Run the same command with
+  `--write` only after their OK; it writes `parts/<category>.yaml`, then
+  builds. Then run `check` and commit. Rows: `new` = will be added,
+  `exists` = an existing part covers the value (or the pick's name/LCSC is
+  already in the library), `none` = no part meets the rules (see the note).
+  `--dielectric` defaults to `C0G,NP0,X7R,X5R`. Inductors are single-add only
+  (no parametric source). Capacitors below ~10pF mostly come out `none`: the
+  parametric source has no tolerance for parts specified as ±0.25pF.
+- **Stock refresh:** `libkit refresh-stock` updates `stock`, `stock_checked`
+  and `jlc_type` of every part and lists what needs a look (`not_found`,
+  `out_of_stock`, `low_stock`, `type_changed`, `mpn_changed`). It rebuilds when
+  a JLC type changed. Report the list to the user before committing.
 
 ## Rules
 
@@ -33,7 +59,8 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 - Commit library changes only after the user's OK on each add.
 - Never rename or reuse a part name once it exists. To retire a part, set `status: deprecated`.
 - Never write credentials or absolute paths anywhere. Every library path goes through `${LIB_DIR}`.
-- Datasheets are links only. Use `https://www.lcsc.com/datasheet/<LCSC>.pdf`.
+- Datasheets are links only: JLC's `dataManualUrl` (direct LCSC PDF); `bulk-add` fills it in.
+  Fallback when JLC has none: `https://www.lcsc.com/datasheet/<LCSC>.pdf`.
 - `stock` / `stock_checked` live in YAML only; they are never written into symbols.
 - Quote values YAML could misread, e.g. `package: "0402"`. The loader keeps strings anyway, but quoting makes intent clear.
 
