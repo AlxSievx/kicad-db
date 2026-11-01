@@ -1,0 +1,219 @@
+{
+  "code": 200,
+  "data": {
+    "componentPageInfo": {
+      "total": 1,
+      "list": [
+        {
+          "componentId": 397764,
+          "componentLibraryType": "expand",
+          "stockCount": 45418,
+          "componentTypeEn": "Power Inductors",
+          "erpComponentName": "10uH ±20% 3.5A",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/power-inductors_sunlord-mwsa0503s-100mt_C408412.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1803
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1488
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.1331
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 1999,
+              "productPrice": 0.1213
+            },
+            {
+              "startNumber": 2000,
+              "endNumber": 3999,
+              "productPrice": 0.1032
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.0985
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 2000,
+              "endNumber": 3999,
+              "productPrice": 0.0994
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1434
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.1736
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.1282
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 1999,
+              "productPrice": 0.1168
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": -1,
+              "productPrice": 0.0949
+            }
+          ],
+          "firstSortAccessId": "85c6b138230a4e15a2194c0849a3d6ae",
+          "secondSortAccessId": "b3e40b0323bb4714b4f411a802fab96e",
+          "canPresaleNumber": 38658,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "Sunlord-MWSA0503S100MT/C408412",
+          "leastPatchNumber": 5,
+          "lossNumber": 2,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 2000,
+          "shopCostPrice": 0.39983,
+          "preMinPurchaseNum": 61,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.1803,
+          "componentCode": "C408412",
+          "componentBrandEn": "Sunlord",
+          "componentModelEn": "MWSA0503S-100MT",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583012568562196480-C408412/C408412-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140715Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=8ad7c0b755959ed0d74172328e90a8b8a81cc2ed4b3bd24032a5efab553e99ad",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251550_Sunlord-MWSA0503S-100MT_C408412.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8755182074032594944-C408412.pdf?response-content-disposition=attachment%3B%20filename%3DC408412.pdf%3B%20filename%2A%3DUTF-8%27%27C408412.pdf&x-oss-date=20261101T140715Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e23606a11f2987267a6ce1b612dba00510a998d6af6e12d2b1ad3792d8aa80ee",
+          "dataManualOfficialLink": "",
+          "componentName": "Sunlord MWSA0503S-100MT",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583012569502396417-C408412/C408412-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140715Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=772987b0f75b0153e5318ec7e7882496e57a10b33668033141c3f6f21bc1fb61",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "SMD,5.4x5.2mm",
+          "describe": "10uH 125mΩ 3.2A 3.5A ±20% SMD,5.4x5.2mm Power Inductors ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Current - Saturation(Isat)",
+              "attribute_value_name": "3.5A"
+            },
+            {
+              "attribute_name_en": "Inductance",
+              "attribute_value_name": "10uH"
+            },
+            {
+              "attribute_name_en": "Type",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Tolerance",
+              "attribute_value_name": "±20%"
+            },
+            {
+              "attribute_name_en": "Current Rating",
+              "attribute_value_name": "3.2A"
+            },
+            {
+              "attribute_name_en": "Application Grade",
+              "attribute_value_name": "Consumer grade"
+            },
+            {
+              "attribute_name_en": "DC Resistance(DCR)",
+              "attribute_value_name": "125mΩ"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Power Inductors",
+          "secondSortName": "Inductors, Coils, Chokes",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": null,
+          "componentCodeHigh": "<span class='lucene_highlight_class'>C408412</span>",
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        }
+      ],
+      "pageNum": 1,
+      "pageSize": 5,
+      "size": 0,
+      "startRow": 0,
+      "endRow": 0,
+      "pages": 1,
+      "prePage": 0,
+      "nextPage": 0,
+      "isFirstPage": false,
+      "isLastPage": false,
+      "hasPreviousPage": false,
+      "hasNextPage": false,
+      "navigatePages": 0,
+      "navigatepageNums": null,
+      "navigateFirstPage": 0,
+      "navigateLastPage": 0
+    },
+    "sortAndCountVoList": null,
+    "presaleTypeList": [],
+    "brandList": [],
+    "basePart": null,
+    "preferredPart": null,
+    "economicPart": null,
+    "standardPart": null,
+    "dataSheetPart": null,
+    "photo": null,
+    "queryString": "C408412"
+  },
+  "message": null
+}
