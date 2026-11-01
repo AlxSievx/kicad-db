@@ -179,3 +179,26 @@ def test_resolve_mpn_none():
 def test_resolve_not_found():
     with pytest.raises(ValueError, match="not found"):
         resolve("C999999999", post=fake_post("notfound.json"))
+
+
+def _page_post(pages: dict, total: int):
+    """Keyword search answering page n from pages[n] (lists of records), with `total`."""
+    def post(url, body):
+        return {"code": 200, "data": {"componentPageInfo": {"total": total,
+                                                            "list": pages.get(body["currentPage"], [])}}}
+    return post
+
+
+def test_resolve_mpn_sees_matches_on_later_pages():  # final review I3
+    first = [dict(rec("C6186"), componentCode=f"C9{i}", componentModelEn=f"OTHER{i}") for i in range(99)]
+    first.append(rec("C6186"))
+    second = [dict(rec("C6186"), componentCode="C347222")]
+    with pytest.raises(ValueError, match="C6186 .*C347222"):
+        resolve("AMS1117-3.3", post=_page_post({1: first, 2: second}, total=101))
+
+
+def test_resolve_mpn_refuses_truncated_search():  # final review I3
+    page = [dict(rec("C6186"), componentCode=f"C9{i}", componentModelEn=f"OTHER{i}") for i in range(99)]
+    page.append(rec("C6186"))
+    with pytest.raises(ValueError, match="C-number"):
+        resolve("AMS1117-3.3", post=_page_post({n: page for n in range(1, 50)}, total=100_000))

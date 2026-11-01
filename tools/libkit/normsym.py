@@ -22,8 +22,9 @@ PIN_TYPES = {"input", "output", "bidirectional", "tri_state", "passive", "free",
              "power_in", "power_out", "open_collector", "open_emitter", "no_connect"}
 PIN_RULES = [  # pin name -> type, for pins still "unspecified"
     (re.compile(r"(GND|[AP]GND|VSS|EP)\d*", re.I), "power_in"),
-    (re.compile(r"(VCC|VDD|VIN|VBAT|V\+|AVDD|DVDD)\w*", re.I), "power_in"),
-    (re.compile(r"VOUT\w*", re.I), "power_out"),
+    # Exact supply names (plus a number) only: VINP/VINN/VOUTP are signals.
+    (re.compile(r"(VCC|VDD|VIN|VBAT|V\+|AVDD|DVDD|VDDA|VDDIO|VCCIO)\d*", re.I), "power_in"),
+    (re.compile(r"VOUT\d*", re.I), "power_out"),
     (re.compile(r"(NC|DNC)", re.I), "no_connect"),
 ]
 POINT_HEADS = ("at", "start", "mid", "end", "center", "xy")

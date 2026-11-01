@@ -82,10 +82,11 @@ def _records(data: dict, what: str) -> list:
     return records
 
 
-def search(keyword: str, *, pages: int = 3, post=None) -> list[JlcPart]:
-    """JLC keyword search (e.g. "10uH 0805" or an MPN), up to `pages` pages of 100.
+MAX_RESOLVE_PAGES = 10
 
-    Results come in C-number order, not by stock or type; callers sort."""
+
+def _search(keyword: str, pages: int, post) -> tuple[list[JlcPart], bool]:
+    """(parts, complete): complete is False when more results exist than were read."""
     post = post or net.post_json
     out: list[JlcPart] = []
     for page in range(1, pages + 1):
@@ -95,9 +96,17 @@ def search(keyword: str, *, pages: int = 3, post=None) -> list[JlcPart]:
             raise NetError(f"search {keyword!r}: {e}") from e
         records = _records(data, f"search {keyword!r}")
         out += [parse_record(r) for r in records if isinstance(r, dict)]
-        if len(records) < PAGE_SIZE:
-            break
-    return out
+        total = (data.get("data") or {}).get("componentPageInfo", {}).get("total")
+        if len(records) < PAGE_SIZE or (isinstance(total, int) and page * PAGE_SIZE >= total):
+            return out, True
+    return out, False
+
+
+def search(keyword: str, *, pages: int = 3, post=None) -> list[JlcPart]:
+    """JLC keyword search (e.g. "10uH 0805" or an MPN), up to `pages` pages of 100.
+
+    Results come in C-number order, not by stock or type; callers sort."""
+    return _search(keyword, pages, post)[0]
 
 
 def resolve(ref: str, post=None) -> JlcPart:
@@ -108,7 +117,11 @@ def resolve(ref: str, post=None) -> JlcPart:
         if part is None:
             raise ValueError(f"{ref.upper()}: not found at JLC")
         return part
-    hits = [p for p in search(ref, pages=1, post=post) if p.mpn.casefold() == ref.casefold()]
+    found, complete = _search(ref, MAX_RESOLVE_PAGES, post)
+    if not complete:
+        raise ValueError(f"MPN {ref!r} gives more than {MAX_RESOLVE_PAGES * PAGE_SIZE} JLC results, so "
+                         "other exact matches may exist; use the C-number")
+    hits = [p for p in found if p.mpn.casefold() == ref.casefold()]
     if not hits:
         raise ValueError(f"no JLC part with MPN {ref!r}; use the C-number")
     if len(hits) > 1:

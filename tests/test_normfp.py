@@ -163,3 +163,43 @@ def test_normalised_footprint_passes_klc(tmp_path):
     issues = [str(i) for i in run_klc(repo, [out])]
     for rule in ("F5.1", "F5.2", "F5.3", "F6.3", "F9.1"):
         assert not [i for i in issues if f"KLC {rule}" in i], issues
+
+
+CUSTOM = """(footprint "CUSTOM"
+	(version 20260206)
+	(layer "F.Cu")
+	(property "Reference" "REF**" (at 0 -2 0) (layer "F.SilkS"))
+	(property "Value" "CUSTOM" (at 0 2 0) (layer "F.Fab"))
+	(attr smd)
+	(pad "1" smd custom (at -1 0) (size 0.2 0.2) (layers "F.Cu" "F.Mask" "F.Paste")
+		(primitives (gr_poly (pts (xy -0.5 -0.5) (xy 0.5 -0.5) (xy 0.5 0.5) (xy -0.5 0.5)) (width 0) (fill yes))))
+	(pad "2" smd custom (at 1.05 0) (size 0.2 0.2) (layers "F.Cu" "F.Mask" "F.Paste")
+		(primitives (gr_poly (pts (xy -0.5 -0.5) (xy 2 -0.5) (xy 2 0.5) (xy -0.5 0.5)) (width 0) (fill yes))))
+)
+"""
+
+
+def test_custom_pad_primitives_in_courtyard_and_not_moved(tmp_path):  # final review I2
+    path = tmp_path / "c.kicad_mod"
+    path.write_text(CUSTOM, encoding="utf-8")
+    fp, notes = norm(path=path, name="CUSTOM", model=None)
+    pads = {str(p[1]): p for p in find_all(fp, "pad")}
+    # copper spans x -1.5 .. 3.05 → centre 0.775 > 0.1 mm: anchor kept, reported
+    assert xy(pads["2"], "at") == (1.05, 0)
+    assert any("anchor is" in n for n in notes)
+    poly = find(find(pads["2"], "primitives"), "gr_poly")
+    assert [str(x) for x in find_all(find(poly, "pts"), "xy")[1][1:]] == ["2", "-0.5"]
+    crt = graphics(fp, "F.CrtYd")[0]
+    assert xy(crt, "end")[0] >= 3.05 + 0.25 - 1e-9
+
+
+def test_custom_pad_recentre_moves_anchor_only(tmp_path):  # final review I2
+    path = tmp_path / "c.kicad_mod"
+    path.write_text(CUSTOM.replace("(at 1.05 0)", "(at -1 0)").replace("(xy 2 -0.5) (xy 2 0.5)", "(xy 3.1 -0.5) (xy 3.1 0.5)")
+                    .replace('(pad "1" smd custom (at -1 0)', '(pad "1" smd custom (at -1.5 0)'), encoding="utf-8")
+    # copper: pad 1 -2.0..-1.0, pad 2 -1.5..2.1 → centre 0.05 → moved by -0.05
+    fp, notes = norm(path=path, name="CUSTOM", model=None)
+    pads = {str(p[1]): p for p in find_all(fp, "pad")}
+    assert xy(pads["2"], "at") == (-1.05, 0)
+    poly = find(find(pads["2"], "primitives"), "gr_poly")
+    assert [str(x) for x in find_all(find(poly, "pts"), "xy")[1][1:]] == ["3.1", "-0.5"]

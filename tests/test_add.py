@@ -281,3 +281,21 @@ def test_description_cleaned(lib):
     p = prep(lib, "C6186", **IC)
     d = p.entry["description"]
     assert "℃" not in d and "°C" in d and "、" not in d
+
+
+def test_add_non_chip_resistor_uses_passive_entry(lib):  # final review I1
+    def res2512(ref):
+        p = parse_record(rec("C25744"))
+        p.package, p.lcsc = "2512", "C25745"  # C25744 itself is in minilib already
+        return p
+    p = prep(lib, "C25745", resolve=res2512, category="resistors",
+             footprint="LIB_Passives_SMD:R_0402_1005Metric")
+    assert p.entry["symbol"] == "R" and p.entry["name"] == "R_10k_2512_1pct"  # pattern names for any R/C package
+    assert p.entry["tolerance"] == "±1%" and p.entry["power"]
+    apply(lib, load_plan(lib, "C25745", p.options))
+    assert [i for i in check(lib, klc=False) if i.severity == "error"] == []
+
+
+def test_add_refuses_entry_that_would_not_build(lib):  # final review I1
+    with pytest.raises(ValueError, match="tolerance"):
+        prep(lib, "C6186", category="resistors", symbol="R", footprint="LIB_Passives_SMD:R_0402_1005Metric")

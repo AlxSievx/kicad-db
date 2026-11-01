@@ -33,7 +33,7 @@ from .kicad import find_kicad_cli, kicad_share
 from .klc import run_klc
 from .normfp import normalize_footprint
 from .normsym import normalize_symbol
-from .parts import Part, declare_family, load_parts, write_category
+from .parts import Part, declare_family, load_parts, validate, write_category
 from .schema import Family, load_schema
 from .sexpr import Sym, dumps, find_all, parse
 from .symgen import SYM_VERSION, build_symbol_lib, load_source_symbols, write_text
@@ -155,7 +155,7 @@ def _footprint(stage: _Stage, schema, part: JlcPart, choice: str, family: str | 
 
 def _entry(part: JlcPart, kind: str | None, schema, footprint: str, name: str | None,
            today: date | None) -> dict[str, str]:
-    if kind in ("inductor", "bead"):
+    if kind:  # R, C, L or bead in a package other than 0402–1206: named by MPN
         entry = passive_entry(kind, part, schema, today, footprint=footprint, known_only=False)
         if name:
             entry["name"] = name
@@ -247,10 +247,10 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
             raise ValueError(f"footprint {entry['footprint']} is not in the library yet — vendor it first "
                              "(libkit vendor-fp)")
     else:
-        category = category or ("inductors" if kind in ("inductor", "bead") else None)
+        category = category or (KINDS[kind][0] if kind else None)
         if category not in schema.categories:
             raise ValueError(f"--category is required: one of {', '.join(schema.categories)}")
-        symbol = symbol or {"inductor": "L", "bead": "FerriteBead"}.get(kind or "", "easyeda")
+        symbol = symbol or (KINDS[kind][1] if kind else "easyeda")
         footprint = footprint or "easyeda"
         if pin_types and symbol != "easyeda":
             raise ValueError("--pin-types applies to EasyEDA symbols only")
@@ -280,6 +280,10 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
 
     if entry["name"] in names:
         raise ValueError(f"part name {entry['name']} is already in the library ({names[entry['name']]})")
+    bad = [i.message for i in validate([Part(entry["name"], category, entry, Path("new"))], schema)
+           if i.severity == "error"]
+    if bad:
+        raise ValueError(f"{entry['name']} would not build in {category}: {'; '.join(bad)}")
     manufacturer, known = manufacturer_name(part.brand, schema)
     if not known:
         warnings.append(f"manufacturer {manufacturer!r} (JLC: {part.brand!r}) is not in manufacturers: — kept "

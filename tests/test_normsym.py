@@ -132,3 +132,18 @@ def test_flatten_two_levels(tmp_share):
 def test_stock_symbol_unknown(tmp_share):
     with pytest.raises(KeyError):
         stock_symbol("Test:NOPE", tmp_share, "X")
+
+
+def test_signal_pins_named_like_power_are_not_typed():  # final review (VINP/VINN)
+    text = AMS_LIB.read_text(encoding="utf-8").replace('(name "GND"', '(name "VINP"').replace('(name "VIN"', '(name "VINN"')
+    sym, notes = normalize_symbol(ams(text), "X")
+    types = {n: str(p[1]) for n, p in pins(sym).items()}
+    assert types["1"] == "unspecified" and types["3"] == "unspecified"
+    assert any("VINP(#1)" in n for n in notes)
+
+
+@pytest.mark.parametrize("pin", ["VIN", "VDD2", "VCC", "GND", "AGND", "VOUT", "VOUT1", "VBAT"])
+def test_power_pin_names_still_typed(pin):
+    text = AMS_LIB.read_text(encoding="utf-8").replace('(name "GND"', f'(name "{pin}"')
+    sym, _ = normalize_symbol(ams(text), "X")
+    assert str(pins(sym)["1"][1]) != "unspecified"

@@ -70,7 +70,8 @@ def _pt(node: list, head: str) -> tuple[float, float] | None:
 
 
 def _graphic_points(g: list) -> list[tuple[float, float]]:
-    head = str(g[0])
+    """Extreme points of a footprint graphic (fp_*) or a custom-pad primitive (gr_*)."""
+    head = "fp_" + str(g[0]).split("_", 1)[-1]
     if head == "fp_circle":
         (cx, cy), (ex, ey) = _pt(g, "center"), _pt(g, "end")
         r = math.hypot(ex - cx, ey - cy)
@@ -82,6 +83,8 @@ def _graphic_points(g: list) -> list[tuple[float, float]]:
 
 
 def _pad_points(pad: list) -> list[tuple[float, float]]:
+    """Extreme copper points of a pad, including a custom pad's primitives
+    (pad-relative, rotated with the pad, widened by half their line width)."""
     at, size = find(pad, "at"), find(pad, "size")
     x, y = float(at[1]), float(at[2])
     rot = float(at[3]) if len(at) > 3 else 0.0
@@ -90,7 +93,18 @@ def _pad_points(pad: list) -> list[tuple[float, float]]:
         w, h = h, w
     elif rot % 90:
         w = h = math.hypot(w, h)
-    return [(x - w / 2, y - h / 2), (x + w / 2, y + h / 2)]
+    points = [(x - w / 2, y - h / 2), (x + w / 2, y + h / 2)]
+    prims = find(pad, "primitives")
+    if prims:
+        c, s = math.cos(math.radians(rot)), math.sin(math.radians(rot))
+        for g in prims:
+            if not isinstance(g, list) or not g:
+                continue
+            half = float(find(g, "width")[1]) / 2 if find(g, "width") else 0.0
+            for px, py in _graphic_points(g):
+                rx, ry = x + px * c + py * s, y - px * s + py * c
+                points += [(rx - half, ry - half), (rx + half, ry + half)]
+    return points
 
 
 def _bbox(points) -> tuple[float, float, float, float] | None:
@@ -115,6 +129,9 @@ def _translate(node: list, dx: float, dy: float) -> None:
             continue
         if head in POINT_HEADS and len(c) >= 3:
             c[1], c[2] = _num(float(c[1]) + dx), _num(float(c[2]) + dy)
+            continue
+        if head == "pad":  # only the pad position: primitives are pad-relative
+            _translate([find(c, "at")], dx, dy)
             continue
         _translate(c, dx, dy)
 
