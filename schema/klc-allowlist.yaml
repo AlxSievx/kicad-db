@@ -83,7 +83,7 @@
   rule: S3.6
   reason: Stock KiCad symbol copied unchanged (pin name offset).
 - kind: symbol
-  item: ["*:MountingHole_Pad", "*:BAT54C*", "*:BAV99*"]
+  item: ["*:MountingHole_Pad", "*:BAT54C*", "*:BAV99*", "*:C_Polarized"]
   rule: S3.1
   reason: Stock KiCad symbol copied unchanged (origin not centred).
 - kind: symbol
