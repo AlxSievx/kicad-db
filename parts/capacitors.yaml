@@ -4132,3 +4132,37 @@ parts:
     voltage: 50V
     dielectric: X7R
     tolerance: ±10%
+  - name: C_47u_1210_16V_X5R
+    symbol: C
+    footprint: LIB_Passives_SMD:C_1210_3225Metric
+    value: 47uF
+    package: "1210"
+    manufacturer: Murata
+    mpn: GRM32ER61C476KE15L
+    lcsc: C77101
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2212021100_Murata-Electronics-GRM32ER61C476KE15L_C77101.pdf
+    datasheet_lang: en
+    status: active
+    stock: "213879"
+    stock_checked: "2026-11-01"
+    voltage: 16V
+    dielectric: X5R
+    tolerance: ±10%
+  - name: C_100u_1210_10V_X5R
+    symbol: C
+    footprint: LIB_Passives_SMD:C_1210_3225Metric
+    value: 100uF
+    package: "1210"
+    manufacturer: Samsung
+    mpn: CL32A107MPVNNNE
+    lcsc: C23742
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL32A107MPVNNNE_C23742.pdf
+    datasheet_lang: en
+    status: active
+    stock: "52773"
+    stock_checked: "2026-11-01"
+    voltage: 10V
+    dielectric: X5R
+    tolerance: ±20%
