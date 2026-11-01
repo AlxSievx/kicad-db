@@ -220,6 +220,13 @@ way.
    sizes vs datasheet).
 5. Write the YAML entry, build, commit after my OK.
 
+Decided 2026-11-01 (Plan 3): KiCad's stock symbol/footprint is preferred when
+one exists; EasyEDA output is the fallback. EasyEDA footprints keep EasyEDA's
+orientation, which is JLC's placement orientation (no automatic rotation to
+KLC's pin-1-top-left). Only STEP models are kept. Ferrite beads live in
+Inductors as `FB_<impedance>_<pkg>_<current>`; non-chip inductors are named by
+MPN. Unknown brands on single adds are kept, not added to the known list.
+
 **Bulk add (passives):** generate the value list → pick per value by §6.6 →
 show list → on confirmation write YAML → build → check.
 

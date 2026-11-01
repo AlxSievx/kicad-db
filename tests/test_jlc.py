@@ -2,8 +2,8 @@ import os
 
 import pytest
 
-from fakes import fake_get_bytes, fake_post, rec
-from libkit.jlc import lookup, parse_record
+from fakes import fake_get_bytes, fake_post, paged_fake, rec
+from libkit.jlc import lookup, parse_record, resolve, search
 from libkit.net import NetError
 
 
@@ -138,3 +138,67 @@ def test_cli_output_survives_non_utf8_pipe(tmp_path):
     r = subprocess.run([sys.executable, str(script)], capture_output=True, cwd=REPO, env=env)
     assert r.returncode == 0, r.stderr.decode("utf-8", "replace")
     assert "10kΩ" in r.stdout.decode("utf-8")
+
+
+def test_search_parses_pages():
+    # 20 records on page 1 is a short page (pageSize 100): no page 2 request.
+    parts = search("10uH 0805", pages=2, post=paged_fake("search_10uH_0805.json"))
+    assert len(parts) == 20
+    assert "C1046" in [p.lcsc for p in parts]
+
+
+def test_search_requests_page_size_100():
+    seen = []
+
+    def post(url, body):
+        seen.append(body)
+        return paged_fake("search_10uH_0805.json")(url, body)
+    search("10uH 0805", post=post)
+    assert seen == [{"keyword": "10uH 0805", "currentPage": 1, "pageSize": 100}]
+
+
+def test_resolve_c_number():
+    assert resolve("C1046", post=fake_post("C1046.json")).mpn == "SDFL2012S100KTF"
+
+
+def test_resolve_mpn_exact():
+    assert resolve("mwsa0503s-100mt", post=fake_post("mpn_MWSA0503S-100MT.json")).lcsc == "C408412"
+
+
+def test_resolve_mpn_ambiguous():
+    # Several brands sell an "AMS1117-3.3": the C-numbers are listed to choose from.
+    with pytest.raises(ValueError, match=r"C6186 .*C347222"):
+        resolve("AMS1117-3.3", post=fake_post("mpn_AMS1117-3.3.json"))
+
+
+def test_resolve_mpn_none():
+    with pytest.raises(ValueError, match="no JLC part with MPN"):
+        resolve("NOPE-123", post=fake_post("mpn_MWSA0503S-100MT.json"))
+
+
+def test_resolve_not_found():
+    with pytest.raises(ValueError, match="not found"):
+        resolve("C999999999", post=fake_post("notfound.json"))
+
+
+def _page_post(pages: dict, total: int):
+    """Keyword search answering page n from pages[n] (lists of records), with `total`."""
+    def post(url, body):
+        return {"code": 200, "data": {"componentPageInfo": {"total": total,
+                                                            "list": pages.get(body["currentPage"], [])}}}
+    return post
+
+
+def test_resolve_mpn_sees_matches_on_later_pages():  # final review I3
+    first = [dict(rec("C6186"), componentCode=f"C9{i}", componentModelEn=f"OTHER{i}") for i in range(99)]
+    first.append(rec("C6186"))
+    second = [dict(rec("C6186"), componentCode="C347222")]
+    with pytest.raises(ValueError, match="C6186 .*C347222"):
+        resolve("AMS1117-3.3", post=_page_post({1: first, 2: second}, total=101))
+
+
+def test_resolve_mpn_refuses_truncated_search():  # final review I3
+    page = [dict(rec("C6186"), componentCode=f"C9{i}", componentModelEn=f"OTHER{i}") for i in range(99)]
+    page.append(rec("C6186"))
+    with pytest.raises(ValueError, match="C-number"):
+        resolve("AMS1117-3.3", post=_page_post({n: page for n in range(1, 50)}, total=100_000))

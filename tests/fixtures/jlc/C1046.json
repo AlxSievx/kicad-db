@@ -1,0 +1,837 @@
+{
+  "code": 200,
+  "data": {
+    "componentPageInfo": {
+      "total": 21,
+      "list": [
+        {
+          "componentId": 1398,
+          "componentLibraryType": "base",
+          "stockCount": 225863,
+          "componentTypeEn": "Inductors (SMD)",
+          "erpComponentName": "10uH ±10%",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/inductors-smd_sunlord-sdfl2012s100ktf_C1046.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 199,
+              "productPrice": 0.0516
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 599,
+              "productPrice": 0.0427
+            },
+            {
+              "startNumber": 600,
+              "endNumber": 3999,
+              "productPrice": 0.0381
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": 7999,
+              "productPrice": 0.0342
+            },
+            {
+              "startNumber": 8000,
+              "endNumber": 19999,
+              "productPrice": 0.0329
+            },
+            {
+              "startNumber": 20000,
+              "endNumber": -1,
+              "productPrice": 0.032
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 4000,
+              "endNumber": 7999,
+              "productPrice": 0.0329
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 199,
+              "productPrice": 0.0497
+            },
+            {
+              "startNumber": 600,
+              "endNumber": 3999,
+              "productPrice": 0.0367
+            },
+            {
+              "startNumber": 8000,
+              "endNumber": 19999,
+              "productPrice": 0.0317
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 599,
+              "productPrice": 0.0411
+            },
+            {
+              "startNumber": 20000,
+              "endNumber": -1,
+              "productPrice": 0.0309
+            }
+          ],
+          "firstSortAccessId": "85c6b138230a4e15a2194c0849a3d6ae",
+          "secondSortAccessId": "6e6b9fc54a8f4f1aade212aa8a9b1797",
+          "canPresaleNumber": 202225,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "Sunlord-SDFL2012S100KTF/C1046",
+          "leastPatchNumber": 20,
+          "lossNumber": 8,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 4000,
+          "shopCostPrice": 0.12988,
+          "preMinPurchaseNum": 175,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.0516,
+          "componentCode": "C1046",
+          "componentBrandEn": "Sunlord",
+          "componentModelEn": "SDFL2012S100KTF",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552460505878056960-C1046-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4f5b8b0ed7ea70ace545c6ce77eab9b2ef440e6b4bad9bc93d154679cb7bb7a2",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310301641_Sunlord-SDFL2012S100KTF_C1046.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8755216271270907904-C1046.pdf?response-content-disposition=attachment%3B%20filename%3DC1046.pdf%3B%20filename%2A%3DUTF-8%27%27C1046.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=411e5da43241684d013761c80d9e37aa0a4a80c590e4ff150a4ea141d29aa91e",
+          "dataManualOfficialLink": "",
+          "componentName": "Sunlord SDFL2012S100KTF",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552460506494754816-C1046-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1be79ad30679b0e3cdcb18b114dabd8582d0b31a08b1265411f7ccd5279da0ff",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "0805",
+          "describe": "1.15Ω 10uH 15mA 24MHz 50@2MHz Multilayer inductor ±10% 0805 Inductors (SMD) ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Inductance",
+              "attribute_value_name": "10uH"
+            },
+            {
+              "attribute_name_en": "Type",
+              "attribute_value_name": "Multilayer inductor"
+            },
+            {
+              "attribute_name_en": "Current - Saturation (Isat)",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Q @ Frequency",
+              "attribute_value_name": "50@2MHz"
+            },
+            {
+              "attribute_name_en": "Frequency - Self Resonant",
+              "attribute_value_name": "24MHz"
+            },
+            {
+              "attribute_name_en": "Tolerance",
+              "attribute_value_name": "±10%"
+            },
+            {
+              "attribute_name_en": "Current Rating",
+              "attribute_value_name": "15mA"
+            },
+            {
+              "attribute_name_en": "Application Grade",
+              "attribute_value_name": "Consumer grade"
+            },
+            {
+              "attribute_name_en": "DC Resistance(DCR)",
+              "attribute_value_name": "1.15Ω"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Inductors (SMD)",
+          "secondSortName": "Inductors, Coils, Chokes",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": null,
+          "componentCodeHigh": "<span class='lucene_highlight_class'>C1046</span>",
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 22015264,
+          "componentLibraryType": "expand",
+          "stockCount": 0,
+          "componentTypeEn": "New Arrivals",
+          "erpComponentName": "C1046",
+          "componentSource": "shop",
+          "lcscGoodsUrl": null,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0399
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0206
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0384
+            },
+            {
+              "startNumber": 100,
+              "endNumber": -1,
+              "productPrice": 0.0198
+            }
+          ],
+          "firstSortAccessId": null,
+          "secondSortAccessId": null,
+          "canPresaleNumber": 0,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "JLCPCBAssembly-C1046/C9900084469",
+          "leastPatchNumber": 5,
+          "lossNumber": 4,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 3000,
+          "shopCostPrice": 0.1,
+          "preMinPurchaseNum": 438,
+          "minPurchaseNum": 438,
+          "initialPrice": 0.0206,
+          "componentCode": "C9900084469",
+          "componentBrandEn": "JLCPCB Assembly",
+          "componentModelEn": "C1046",
+          "componentImageUrl": null,
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": null,
+          "dataManualFileAccessId": "",
+          "dataManualFileAccessIdUrl": null,
+          "dataManualOfficialLink": "",
+          "componentName": "JIALICHUANG SMT C1046",
+          "minImage": null,
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "L0805",
+          "describe": "L0805 New Arrivals ROHS",
+          "attributes": null,
+          "rankScore": null,
+          "firstSortName": "New Arrivals",
+          "secondSortName": "Others",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "<span class='lucene_highlight_class'>C1046</span>",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 3848400,
+          "componentLibraryType": "expand",
+          "stockCount": 0,
+          "componentTypeEn": "Parity Generators and Checkers",
+          "erpComponentName": "MC1046P",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/parity-generators-and-checkers_motorola-mc1046p_C3285501.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 13.7446
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 13.7446
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 13.7446
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 5.3197
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 5.1327
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 5.0392
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 4.8543
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 5.1245
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 13.2402
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 13.2402
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 4.9444
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 13.2402
+            }
+          ],
+          "firstSortAccessId": "4df5ced1315c4bd285a97161ea2bc238",
+          "secondSortAccessId": "93649e98759e4f098d3699eaeb0ab289",
+          "canPresaleNumber": 0,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "MOTOROLA-MC1046P/C3285501",
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "0",
+          "noBuyReason": "This product is no longer manufactured.",
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 1,
+          "shopCostPrice": 0.0,
+          "preMinPurchaseNum": 1,
+          "minPurchaseNum": 1,
+          "initialPrice": 13.7446,
+          "componentCode": "C3285501",
+          "componentBrandEn": "MOTOROLA",
+          "componentModelEn": "MC1046P",
+          "componentImageUrl": null,
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403201058_MOTOROLA-MC1046P_C3285501.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8590404124589395968-C3285501.pdf?response-content-disposition=attachment%3B%20filename%3DC3285501.pdf%3B%20filename%2A%3DUTF-8%27%27C3285501.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=52d4f7c51b6ae113e317215c9b8da7e22ee11a2e3e69a78137c08b9c481cdd60",
+          "dataManualOfficialLink": "",
+          "componentName": "MOTOROLA MC1046P",
+          "minImage": null,
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "DIP-14",
+          "describe": "0.7V~0.85V 1.5V~1.8V 8 MC1000 Odd parity generation、Simultaneous odd/even parity output、Even parity generation Parity Generator/Checker DIP-14 Parity Generators and Checkers",
+          "attributes": [
+            {
+              "attribute_name_en": "Output Logic Level - Low",
+              "attribute_value_name": "1.5V~1.8V"
+            },
+            {
+              "attribute_name_en": "Series",
+              "attribute_value_name": "MC1000"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Number of Bits per Element",
+              "attribute_value_name": "8"
+            },
+            {
+              "attribute_name_en": "Output Logic Level - High",
+              "attribute_value_name": "0.7V~0.85V"
+            },
+            {
+              "attribute_name_en": "Input Logic Level - High",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Logic Type",
+              "attribute_value_name": "Parity Generator/Checker"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "Odd parity generation、Simultaneous odd/even parity output、Even parity generation"
+            },
+            {
+              "attribute_name_en": "Input Logic Level - Low",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Quiescent Supply Current",
+              "attribute_value_name": "-"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Parity Generators and Checkers",
+          "secondSortName": "Logic",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "M<span class='lucene_highlight_class'>C1046</span>P",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 0,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 155559,
+          "componentLibraryType": "expand",
+          "stockCount": 2912,
+          "componentTypeEn": "Temperature Sensors",
+          "erpComponentName": "高精度温度-电压转换器",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/temperature-sensors_microchip-tech-tc1046vnbtr_C144227.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.0663
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.8858
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.7874
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 0.6742
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.625
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.6021
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 1.0272
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.8533
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 0.7585
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 0.6495
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.6021
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.58
+            }
+          ],
+          "firstSortAccessId": "caefd6d6f2bc4507bdc2837246857fba",
+          "secondSortAccessId": "a89731d4aa2a463c89b64495618ace2c",
+          "canPresaleNumber": 2912,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "MicrochipTech-TC1046VNBTR/C144227",
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 3000,
+          "shopCostPrice": 3.05635,
+          "preMinPurchaseNum": 9,
+          "minPurchaseNum": 1,
+          "initialPrice": 1.0663,
+          "componentCode": "C144227",
+          "componentBrandEn": "Microchip Tech",
+          "componentModelEn": "TC1046VNBTR",
+          "componentImageUrl": "20190830191435_SOT-23_fd_U.png",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1804162330_Microchip-Tech-TC1046VNBTR_C144227.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8586188272514686976-C144227.pdf?response-content-disposition=attachment%3B%20filename%3DC144227.pdf%3B%20filename%2A%3DUTF-8%27%27C144227.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c4cd4f448d12affc49be286ca4ae0704af9b97f0007ba16fe6480574f848b5c2",
+          "dataManualOfficialLink": "",
+          "componentName": "MICROCHIP TC1046VNBTR",
+          "minImage": "https://assets.lcsc.com/images/lcsc/96x96/",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "SOT-23",
+          "describe": "-40℃~+125℃ 2.7V~4.4V ±2℃ SOT-23 Temperature Sensors ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Standby Current",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "2.7V~4.4V"
+            },
+            {
+              "attribute_name_en": "Detection Temperature Range",
+              "attribute_value_name": "-40℃~+125℃"
+            },
+            {
+              "attribute_name_en": "Tolerance",
+              "attribute_value_name": "±2℃"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Temperature Conversion Time",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Interface",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Temperature Resolution",
+              "attribute_value_name": "-"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Temperature Sensors",
+          "secondSortName": "Sensors",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "T<span class='lucene_highlight_class'>C1046</span>VNBTR",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 705268,
+          "componentLibraryType": "expand",
+          "stockCount": 3,
+          "componentTypeEn": "Charge Pumps",
+          "erpComponentName": "50mA 1.5V~6V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/dc-dc-converters_analog-devices-ltc1046cn8-pbf_C674222.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 9.5764
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 9.3517
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 9.2008
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 9.0515
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 9.0515
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 9.0515
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 100,
+              "endNumber": 499,
+              "productPrice": 8.7194
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 8.7194
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 99,
+              "productPrice": 8.8632
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 9.225
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 8.7194
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 9.0085
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "9023cccfe13e4581b60de0d6c025e808",
+          "canPresaleNumber": 3,
+          "componentProductType": 0,
+          "mergedComponentCode": "",
+          "urlSuffix": "AnalogDevices-LTC1046CN8PBF/C674222",
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": "",
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 50,
+          "shopCostPrice": 47.63,
+          "preMinPurchaseNum": 1,
+          "minPurchaseNum": 1,
+          "initialPrice": 9.5764,
+          "componentCode": "C674222",
+          "componentBrandEn": "Analog Devices",
+          "componentModelEn": "LTC1046CN8#PBF",
+          "componentImageUrl": null,
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310091150_Analog-Devices-LTC1046CN8-PBF_C674222.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8589864261050150912-C674222.pdf?response-content-disposition=attachment%3B%20filename%3DC674222.pdf%3B%20filename%2A%3DUTF-8%27%27C674222.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4e417e0f6aafbd6144cf437f45ff17d94f593d51366ba91b185f318423e4d061",
+          "dataManualOfficialLink": "",
+          "componentName": "ADI LTC1046CN8#PBF",
+          "minImage": null,
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "PDIP-8",
+          "describe": "0℃~+70℃@(TA) 1 1.5V~6V 165uA 30kHz 50mA Built-in Frequency synchronization No PDIP-8 Charge Pumps ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "0℃~+70℃"
+            },
+            {
+              "attribute_name_en": "Function",
+              "attribute_value_name": "Inverted"
+            },
+            {
+              "attribute_name_en": "Output Resistance",
+              "attribute_value_name": "27Ω"
+            },
+            {
+              "attribute_name_en": "PFM Mode",
+              "attribute_value_name": "Not supported"
+            },
+            {
+              "attribute_name_en": "Operating Voltage",
+              "attribute_value_name": "1.5V~6V"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "50mA"
+            },
+            {
+              "attribute_name_en": "Quiescent Current",
+              "attribute_value_name": "165uA"
+            },
+            {
+              "attribute_name_en": "Switching Frequency",
+              "attribute_value_name": "30kHz"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "-6V~-1.5V"
+            },
+            {
+              "attribute_name_en": "Energy Efficiency",
+              "attribute_value_name": "97%"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Charge Pumps",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "LT<span class='lucene_highlight_class'>C1046</span>CN8#PBF",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        }
+      ],
+      "pageNum": 1,
+      "pageSize": 5,
+      "size": 0,
+      "startRow": 0,
+      "endRow": 0,
+      "pages": 5,
+      "prePage": 0,
+      "nextPage": 0,
+      "isFirstPage": false,
+      "isLastPage": false,
+      "hasPreviousPage": false,
+      "hasNextPage": false,
+      "navigatePages": 0,
+      "navigatepageNums": null,
+      "navigateFirstPage": 0,
+      "navigateLastPage": 0
+    },
+    "sortAndCountVoList": null,
+    "presaleTypeList": [],
+    "brandList": [],
+    "basePart": null,
+    "preferredPart": null,
+    "economicPart": null,
+    "standardPart": null,
+    "dataSheetPart": null,
+    "photo": null,
+    "queryString": "C1046"
+  },
+  "message": null
+}

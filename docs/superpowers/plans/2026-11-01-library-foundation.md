@@ -15,8 +15,8 @@
 The spec is split into four plans; each leaves a usable library behind.
 
 1. **Foundation (this plan):** data model, build, check, passive base symbols/footprints, install.
-2. JLC data source, bulk-add of passives, stock refresh (spec §6.6, §6.7 bulk/stock).
-3. Single-part import via easyeda2kicad + normalisation (spec §6.7 single add, §6.5 unique symbols).
+2. JLC data source, bulk-add of passives, stock refresh (spec §6.6, §6.7 bulk/stock) — done: `2026-11-01-jlc-bulk-add.md`.
+3. Single-part import via easyeda2kicad + normalisation (spec §6.7 single add, §6.5 unique symbols) — done: `2026-11-01-single-add.md`.
 4. Review GUI, layout A (spec §6.9).
 
 ## Global Constraints

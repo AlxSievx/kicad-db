@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import copy
 import re
 import shutil
 from pathlib import Path
@@ -20,13 +21,17 @@ def _split(ref: str) -> tuple[str, str]:
     return lib, name
 
 
-def vendor_footprint(stock_ref: str, family: Family, root: Path, kicad_share: Path) -> Path:
+def vendor_footprint(stock_ref: str, family: Family, root: Path, kicad_share: Path, *,
+                     dest_dir: Path | None = None, models_dir: Path | None = None) -> Path:
+    """Copy a stock footprint (and its 3D models) into the family. `dest_dir`
+    and `models_dir` redirect the copies (staging); the model path written
+    into the footprint is always the family's ${LIB_DIR} path."""
     lib, name = _split(stock_ref)
     src = Path(kicad_share) / "footprints" / f"{lib}.pretty" / f"{name}.kicad_mod"
     if not src.exists():
         raise FileNotFoundError(src)
     text = src.read_text(encoding="utf-8")
-    models_dir = Path(root) / "3dmodels" / f"{family.lib_name}.3dshapes"
+    models_dir = Path(models_dir) if models_dir else Path(root) / "3dmodels" / f"{family.lib_name}.3dshapes"
     copies: list[tuple[Path, Path]] = []
 
     def rewrite(m: re.Match) -> str:
@@ -40,7 +45,7 @@ def vendor_footprint(stock_ref: str, family: Family, root: Path, kicad_share: Pa
     for a, b in copies:
         b.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(a, b)
-    dest = Path(root) / "footprints" / f"{family.lib_name}.pretty" / f"{name}.kicad_mod"
+    dest = (Path(dest_dir) if dest_dir else Path(root) / "footprints" / f"{family.lib_name}.pretty") / f"{name}.kicad_mod"
     write_text(dest, text)
     return dest
 
@@ -68,3 +73,30 @@ def vendor_symbol(stock_ref: str, dest: Path, kicad_share: Path) -> None:
             lib_expr.append(stock[n])
             present.add(n)
     write_text(dest, dumps(lib_expr))
+
+
+def stock_symbol(stock_ref: str, kicad_share: Path, name: str) -> list:
+    """A stock KiCad symbol as one self-contained unique symbol named `name`.
+
+    A symbol that `extends` a parent is flattened: the root's units, pins and
+    graphics with the derived symbol's properties (a unique LIB symbol cannot
+    extend anything). Fields are cleaned like an imported symbol's."""
+    from .normsym import clean_properties, rename_symbol
+    lib, sym_name = _split(stock_ref)
+    src_file = Path(kicad_share) / "symbols" / f"{lib}.kicad_sym"
+    stock = {str(s[1]): s for s in find_all(parse(src_file.read_text(encoding="utf-8")), "symbol")}
+    if sym_name not in stock:
+        raise KeyError(f"{sym_name!r} not in {src_file.name}")
+    leaf = stock[sym_name]
+    root = leaf
+    while (ext := find(root, "extends")) is not None:
+        root = stock[str(ext[1])]
+    flat = copy.deepcopy(root)
+    if root is not leaf:
+        props = [copy.deepcopy(p) for p in find_all(leaf, "property")]
+        first = next(i for i, c in enumerate(flat) if isinstance(c, list) and c and c[0] == "property")
+        rest = [c for c in flat if not (isinstance(c, list) and c and c[0] == "property")]
+        flat = rest[:first] + props + rest[first:]
+    flat = rename_symbol(flat, name)
+    clean_properties(flat)
+    return flat

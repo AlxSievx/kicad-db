@@ -76,3 +76,12 @@ def fake_get(fname: str):
     def get(url):
         return load(f"jlcsearch/{fname}")
     return get
+
+
+def paged_fake(fname: str):
+    """A post_json replacement for keyword searches: page 1 comes from
+    tests/fixtures/jlc/<fname>; asking for any later page fails the test."""
+    def post(url, body):
+        assert body.get("currentPage") == 1, f"unexpected request for page {body.get('currentPage')}"
+        return load(f"jlc/{fname}")
+    return post

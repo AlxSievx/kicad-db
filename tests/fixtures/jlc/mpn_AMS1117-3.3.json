@@ -1,0 +1,1709 @@
+{
+  "code": 200,
+  "data": {
+    "componentPageInfo": {
+      "total": 68,
+      "list": [
+        {
+          "componentId": 6652,
+          "componentLibraryType": "base",
+          "stockCount": 1773104,
+          "componentTypeEn": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "erpComponentName": "3.3V 1A 15V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_advanced-monolithic-systems-ams1117-3-3_C6186.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.2066
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.161
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.1388
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.119
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.1134
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1103
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 49,
+              "productPrice": 0.199
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.1092
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": -1,
+              "productPrice": 0.1062
+            },
+            {
+              "startNumber": 50,
+              "endNumber": 149,
+              "productPrice": 0.1551
+            },
+            {
+              "startNumber": 150,
+              "endNumber": 499,
+              "productPrice": 0.1337
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 2499,
+              "productPrice": 0.1146
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "0bc894ef3cfe4df6b5376bcb5a199f74",
+          "canPresaleNumber": 1641436,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "Advanced_MonolithicSystems-AMS1117_33/C6186",
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 2500,
+          "shopCostPrice": 0.55374,
+          "preMinPurchaseNum": 44,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.2066,
+          "componentCode": "C6186",
+          "componentBrandEn": "Advanced Monolithic Systems",
+          "componentModelEn": "AMS1117-3.3",
+          "componentImageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20221228_Advanced-Monolithic-Systems-AMS1117-3-3_C6186_front.jpg",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121508_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8550724073475612672-C6186.pdf?response-content-disposition=attachment%3B%20filename%3DC6186.pdf%3B%20filename%2A%3DUTF-8%27%27C6186.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1eecb2a203ae08b8a84a7d38ab53051e87eebe54d143563573a72e3f7bddf780",
+          "dataManualOfficialLink": "",
+          "componentName": "Advanced Monolithic Systems AMS1117-3.3",
+          "minImage": "https://assets.lcsc.com/images/lcsc/96x96/20221228_Advanced-Monolithic-Systems-AMS1117-3-3_C6186_front.jpg",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": [
+            {
+              "productImage": "https://assets.lcsc.com/images/lcsc/96x96/20221228_Advanced-Monolithic-Systems-AMS1117-3-3_C6186_front.jpg",
+              "productImageAccessId": null,
+              "productBigImage": "https://assets.lcsc.com/images/lcsc/900x900/20221228_Advanced-Monolithic-Systems-AMS1117-3-3_C6186_front.jpg",
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": "https://assets.lcsc.com/images/lcsc/96x96/20221228_Advanced-Monolithic-Systems-AMS1117-3-3_C6186_back.jpg",
+              "productImageAccessId": null,
+              "productBigImage": "https://assets.lcsc.com/images/lcsc/900x900/20221228_Advanced-Monolithic-Systems-AMS1117-3-3_C6186_back.jpg",
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": "https://assets.lcsc.com/images/lcsc/96x96/20221228_Advanced-Monolithic-Systems-AMS1117-3-3_C6186_blank.jpg",
+              "productImageAccessId": null,
+              "productBigImage": "https://assets.lcsc.com/images/lcsc/900x900/20221228_Advanced-Monolithic-Systems-AMS1117-3-3_C6186_blank.jpg",
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": "https://assets.lcsc.com/images/lcsc/96x96/20221228_Advanced-Monolithic-Systems-AMS1117-3-3_C6186_package.jpg",
+              "productImageAccessId": null,
+              "productBigImage": "https://assets.lcsc.com/images/lcsc/900x900/20221228_Advanced-Monolithic-Systems-AMS1117-3-3_C6186_package.jpg",
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "SOT-223",
+          "describe": "-40℃~+125℃ 0.003%Vout 1 1.1V@(800mA) 15V 1A 3.3V 5mA 72dB@(120Hz) Fixed Over Current Protection、Short Circuit Protection、Thermal shutdown Positive SOT-223 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Power Supply Rejection Ratio (PSRR)",
+              "attribute_value_name": "72dB@(120Hz)"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-40℃~+125℃"
+            },
+            {
+              "attribute_name_en": "standby current",
+              "attribute_value_name": "5mA"
+            },
+            {
+              "attribute_name_en": "Noise",
+              "attribute_value_name": "0.003%Vout"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "15V"
+            },
+            {
+              "attribute_name_en": "Output Type",
+              "attribute_value_name": "Fixed"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "1A"
+            },
+            {
+              "attribute_name_en": "Output Configuration",
+              "attribute_value_name": "Positive"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "Over Current Protection、Short Circuit Protection、Thermal shutdown"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "3.3V"
+            },
+            {
+              "attribute_name_en": "Voltage Dropout",
+              "attribute_value_name": "1.1V@(800mA)"
+            },
+            {
+              "attribute_name_en": "Number of Outputs",
+              "attribute_value_name": "1"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "<span class='lucene_highlight_class'>AMS1117-3.3</span>",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 323882,
+          "componentLibraryType": "expand",
+          "stockCount": 1082148,
+          "componentTypeEn": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "erpComponentName": "3.3V 1A 12V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_umw-youtai-semiconductor-co-ltd-ams1117-3-3_C347222.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0488
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0386
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 2499,
+              "productPrice": 0.0333
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.0263
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": 9999,
+              "productPrice": 0.0248
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": -1,
+              "productPrice": 0.0238
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 5000,
+              "endNumber": 9999,
+              "productPrice": 0.0239
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0372
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": -1,
+              "productPrice": 0.023
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.0253
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.047
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 2499,
+              "productPrice": 0.0321
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "0bc894ef3cfe4df6b5376bcb5a199f74",
+          "canPresaleNumber": 1068782,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "323882-AMS1117_33/C347222",
+          "leastPatchNumber": 2,
+          "lossNumber": 1,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 2500,
+          "shopCostPrice": 0.12543,
+          "preMinPurchaseNum": 234,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.0488,
+          "componentCode": "C347222",
+          "componentBrandEn": "UMW(Youtai Semiconductor Co., Ltd.)",
+          "componentModelEn": "AMS1117-3.3",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8616541166485581824-C347222-front.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=beaad7832a77566659c3875ac468999bdb4a9ee3249a00eea33a8cb99a2cae96",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2409141623_UMW-Youtai-Semiconductor-Co---Ltd--AMS1117-3-3_C347222.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8755873535103377408-C347222.pdf?response-content-disposition=attachment%3B%20filename%3DC347222.pdf%3B%20filename%2A%3DUTF-8%27%27C347222.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=274446ecf4443df98def49bec5a1f96546eeb43c8c424664a6ea4b65beed0e04",
+          "dataManualOfficialLink": "",
+          "componentName": "UMW AMS1117-3.3",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8616541167404269568-C347222-front.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=a198c066883d3fc89f5b89c5fa1218f1ee33378fc625d37f38f676190addb0e1",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "SOT-223",
+          "describe": "-40℃~+125℃ 0.003%Vout 1 1.3V@(1A) 12V 1A 3.3V 5mA 60dB@(120Hz) Fixed Over Current Protection Positive SOT-223 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Power Supply Rejection Ratio (PSRR)",
+              "attribute_value_name": "60dB@(120Hz)"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-40℃~+125℃"
+            },
+            {
+              "attribute_name_en": "standby current",
+              "attribute_value_name": "5mA"
+            },
+            {
+              "attribute_name_en": "Noise",
+              "attribute_value_name": "0.003%Vout"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "12V"
+            },
+            {
+              "attribute_name_en": "Output Type",
+              "attribute_value_name": "Fixed"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "1A"
+            },
+            {
+              "attribute_name_en": "Output Configuration",
+              "attribute_value_name": "Positive"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "Over Current Protection"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "3.3V"
+            },
+            {
+              "attribute_name_en": "Voltage Dropout",
+              "attribute_value_name": "1.3V@(1A)"
+            },
+            {
+              "attribute_name_en": "Number of Outputs",
+              "attribute_value_name": "1"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "<span class='lucene_highlight_class'>AMS1117-3.3</span>",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 323916,
+          "componentLibraryType": "expand",
+          "stockCount": 444926,
+          "componentTypeEn": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "erpComponentName": "3.3V 1A 18V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_umw-youtai-semiconductor-co-ltd-ams1117-3-3_C347256.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0468
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0366
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 999,
+              "productPrice": 0.0314
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 4999,
+              "productPrice": 0.0261
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": 9999,
+              "productPrice": 0.0247
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": -1,
+              "productPrice": 0.0237
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 300,
+              "endNumber": 999,
+              "productPrice": 0.0302
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": 9999,
+              "productPrice": 0.0238
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": -1,
+              "productPrice": 0.0228
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0451
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 4999,
+              "productPrice": 0.0252
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0353
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "0bc894ef3cfe4df6b5376bcb5a199f74",
+          "canPresaleNumber": 440698,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "323916-AMS1117_33S/C347256",
+          "leastPatchNumber": 5,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 1000,
+          "shopCostPrice": 0.125,
+          "preMinPurchaseNum": 247,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.0468,
+          "componentCode": "C347256",
+          "componentBrandEn": "UMW(Youtai Semiconductor Co., Ltd.)",
+          "componentModelEn": "AMS1117-3.3S",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8616541104938364928-C347256-front.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=ed51562bff579fb126accd8b6bda40d0da5c1f1c2777bcf2c317c9a2bc99afa5",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2412201212_UMW-Youtai-Semiconductor-Co---Ltd--AMS1117-3-3_C347256.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8755873345307467776-C347256.pdf?response-content-disposition=attachment%3B%20filename%3DC347256.pdf%3B%20filename%2A%3DUTF-8%27%27C347256.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=413ab468b1ca661fbefac3f0a60068a6fddb64bea1c87d29afb63d467ee86f9b",
+          "dataManualOfficialLink": "",
+          "componentName": "UMW AMS1117-3.3S",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8616541105861111808-C347256-front.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=28de58e5ff88ad3b13145addbbb1c74aad29b557ef4073df211ffc147f9a91d2",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "SOT-89",
+          "describe": "-40℃~+125℃ 0.003%Vout 1 1.3V@(1A) 18V 1A 3.3V 5mA 60dB@(120Hz) Fixed Over Current Protection Positive SOT-89 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Power Supply Rejection Ratio (PSRR)",
+              "attribute_value_name": "60dB@(120Hz)"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-40℃~+125℃"
+            },
+            {
+              "attribute_name_en": "standby current",
+              "attribute_value_name": "5mA"
+            },
+            {
+              "attribute_name_en": "Noise",
+              "attribute_value_name": "0.003%Vout"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "18V"
+            },
+            {
+              "attribute_name_en": "Output Type",
+              "attribute_value_name": "Fixed"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "1A"
+            },
+            {
+              "attribute_name_en": "Output Configuration",
+              "attribute_value_name": "Positive"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "Over Current Protection"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "3.3V"
+            },
+            {
+              "attribute_name_en": "Voltage Dropout",
+              "attribute_value_name": "1.3V@(1A)"
+            },
+            {
+              "attribute_name_en": "Number of Outputs",
+              "attribute_value_name": "1"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "<span class='lucene_highlight_class'>AMS1117-3.3</span>S",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 327652,
+          "componentLibraryType": "expand",
+          "stockCount": 4650,
+          "componentTypeEn": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "erpComponentName": "3.3V 1A 10V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_puolop-ams1117-3-3_C351784.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0632
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0512
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 999,
+              "productPrice": 0.0452
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 3999,
+              "productPrice": 0.0406
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": 7999,
+              "productPrice": 0.0337
+            },
+            {
+              "startNumber": 8000,
+              "endNumber": -1,
+              "productPrice": 0.0319
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 8000,
+              "endNumber": -1,
+              "productPrice": 0.0307
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0609
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 999,
+              "productPrice": 0.0435
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 3999,
+              "productPrice": 0.0391
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": 7999,
+              "productPrice": 0.0324
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0494
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "0bc894ef3cfe4df6b5376bcb5a199f74",
+          "canPresaleNumber": 4466,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "PUOLOP-AMS1117_33/C351784",
+          "leastPatchNumber": 2,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 4000,
+          "shopCostPrice": 0.15001,
+          "preMinPurchaseNum": 177,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.0632,
+          "componentCode": "C351784",
+          "componentBrandEn": "PUOLOP",
+          "componentModelEn": "AMS1117-3.3",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583012217013223424-C351784/C351784-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=df4e331a0a2881c53283d44af709d69ed417345b5efeff7f64d79f0593f840d6",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2109151230_PUOLOP-AMS1117-3-3_C351784.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588883611101089793-C351784.pdf?response-content-disposition=attachment%3B%20filename%3DC351784.pdf%3B%20filename%2A%3DUTF-8%27%27C351784.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f7561f1d4ccaf3cdbb086be7304ea1e6b56f72a1b62859a3ceb94faf664d2688",
+          "dataManualOfficialLink": "",
+          "componentName": "PUOLOP AMS1117-3.3",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583012218015662080-C351784/C351784-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=39ed635aba289f79debfc7b05e87af33134eb600628fe858aa5faffe3fb31da3",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "SOT-223-3",
+          "describe": "-20℃~+125℃@(Ta) 1 1.4V@(1A) 10V 12mA 1A 3.3V Fixed Positive SOT-223-3 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Power Supply Rejection Ratio (PSRR)",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-20℃~+125℃@(Ta)"
+            },
+            {
+              "attribute_name_en": "standby current",
+              "attribute_value_name": "12mA"
+            },
+            {
+              "attribute_name_en": "Noise",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "10V"
+            },
+            {
+              "attribute_name_en": "Output Type",
+              "attribute_value_name": "Fixed"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "1A"
+            },
+            {
+              "attribute_name_en": "Output Configuration",
+              "attribute_value_name": "Positive"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "3.3V"
+            },
+            {
+              "attribute_name_en": "Voltage Dropout",
+              "attribute_value_name": "1.4V@(1A)"
+            },
+            {
+              "attribute_name_en": "Number of Outputs",
+              "attribute_value_name": "1"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "<span class='lucene_highlight_class'>AMS1117-3.3</span>",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 343670,
+          "componentLibraryType": "expand",
+          "stockCount": 55887,
+          "componentTypeEn": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "erpComponentName": "3.3V 1A 18V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_kexin-ams1117-3-3_C369933.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0581
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0463
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 2499,
+              "productPrice": 0.0404
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.0317
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": 9999,
+              "productPrice": 0.0281
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": -1,
+              "productPrice": 0.0265
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 5000,
+              "endNumber": 9999,
+              "productPrice": 0.0271
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 2499,
+              "productPrice": 0.0389
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.056
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": -1,
+              "productPrice": 0.0255
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.0305
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0446
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "0bc894ef3cfe4df6b5376bcb5a199f74",
+          "canPresaleNumber": 55490,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "KEXIN-AMS1117_33/C369933",
+          "leastPatchNumber": 5,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 2500,
+          "shopCostPrice": 0.15,
+          "preMinPurchaseNum": 195,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.0581,
+          "componentCode": "C369933",
+          "componentBrandEn": "KEXIN",
+          "componentModelEn": "AMS1117-3.3",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583016216332554240-C369933/C369933-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=607f22a40d1142335e1638d281b87c81968017e5da4561cb9cf1d41ea61a1350",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_KEXIN-AMS1117-3-3_C369933.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588884094050975744-C369933.pdf?response-content-disposition=attachment%3B%20filename%3DC369933.pdf%3B%20filename%2A%3DUTF-8%27%27C369933.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1bf50c79665798ff6f63537d4d10cbe2e1185507ade85776729ccd523eea4277",
+          "dataManualOfficialLink": "",
+          "componentName": "KEXIN AMS1117-3.3",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583016217237577728-C369933/C369933-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c061915ced111245ad12bacb9e0d2747d2a738f28ac16999ee60a97dd211ac17",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "SOT-223-4",
+          "describe": "1 1.3V@(800mA) 18V 1A 3.3V 8mA Fixed Over Temperature Protection Positive SOT-223-4 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Power Supply Rejection Ratio (PSRR)",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "standby current",
+              "attribute_value_name": "8mA"
+            },
+            {
+              "attribute_name_en": "Noise",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "18V"
+            },
+            {
+              "attribute_name_en": "Output Type",
+              "attribute_value_name": "Fixed"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "1A"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "Thermal shutdown"
+            },
+            {
+              "attribute_name_en": "Output Configuration",
+              "attribute_value_name": "Positive"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "3.3V"
+            },
+            {
+              "attribute_name_en": "Voltage Dropout",
+              "attribute_value_name": "1.3V@(800mA)"
+            },
+            {
+              "attribute_name_en": "Number of Outputs",
+              "attribute_value_name": "1"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "<span class='lucene_highlight_class'>AMS1117-3.3</span>",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 943373,
+          "componentLibraryType": "expand",
+          "stockCount": 26319,
+          "componentTypeEn": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "erpComponentName": "3.3V 800mA 18V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_slkor-slkormicro-elec-ams1117-3-3_C880752.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0499
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0397
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 999,
+              "productPrice": 0.0348
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 4999,
+              "productPrice": 0.0271
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": 9999,
+              "productPrice": 0.024
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": -1,
+              "productPrice": 0.0225
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 300,
+              "endNumber": 999,
+              "productPrice": 0.0335
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": 9999,
+              "productPrice": 0.0231
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 4999,
+              "productPrice": 0.0261
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": -1,
+              "productPrice": 0.0217
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0481
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0383
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "0bc894ef3cfe4df6b5376bcb5a199f74",
+          "canPresaleNumber": 19820,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "Slkor_SLKORMICRO_Elec-AMS1117_33/C880752",
+          "leastPatchNumber": 5,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 1000,
+          "shopCostPrice": 0.12792,
+          "preMinPurchaseNum": 228,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.0499,
+          "componentCode": "C880752",
+          "componentBrandEn": "Slkor(SLKORMICRO Elec.)",
+          "componentModelEn": "AMS1117-3.3",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583289991187337216-C880752/C880752-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1b779edfe64caa68f2e885aa3b307fdf38a286c72b06b54d6362919d524536c8",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2405211444_Slkor-SLKORMICRO-Elec--AMS1117-3-3_C880752.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588893857064882176-C880752.pdf?response-content-disposition=attachment%3B%20filename%3DC880752.pdf%3B%20filename%2A%3DUTF-8%27%27C880752.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=be1f06452548de12612eb58038524d1c66b362d91c54ec7f581c3e0988d6ca48",
+          "dataManualOfficialLink": "",
+          "componentName": "Slkor AMS1117-3.3",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583289992051904512-C880752/C880752-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=2b813e978f6bc038d0a6dbcff0a1c017297e4920900a162b3bcc1cab7bdb48b4",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "SOT-89-3",
+          "describe": "-40℃~+125℃@(Tj) 0.003%Vout 1 1.3V@(800mA) 18V 3.3V 3mA 70dB@(120Hz) 800mA Fixed Over Temperature Protection Positive SOT-89-3 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Power Supply Rejection Ratio (PSRR)",
+              "attribute_value_name": "70dB@(120Hz)"
+            },
+            {
+              "attribute_name_en": "standby current",
+              "attribute_value_name": "3mA"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-40℃~+125℃@(Tj)"
+            },
+            {
+              "attribute_name_en": "Noise",
+              "attribute_value_name": "0.003%Vout"
+            },
+            {
+              "attribute_name_en": "Output Type",
+              "attribute_value_name": "Fixed"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "18V"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "800mA"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "Thermal shutdown"
+            },
+            {
+              "attribute_name_en": "Output Configuration",
+              "attribute_value_name": "Positive"
+            },
+            {
+              "attribute_name_en": "Voltage Dropout",
+              "attribute_value_name": "1.3V@(800mA)"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "3.3V"
+            },
+            {
+              "attribute_name_en": "Number of Outputs",
+              "attribute_value_name": "1"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "<span class='lucene_highlight_class'>AMS1117-3.3</span>",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 991679,
+          "componentLibraryType": "expand",
+          "stockCount": 93923,
+          "componentTypeEn": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "erpComponentName": "3.3V 1A 15V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_jsmsemi-ams1117-3-3_C917183.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0571
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0443
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 2499,
+              "productPrice": 0.0379
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.0348
+            },
+            {
+              "startNumber": 5000,
+              "endNumber": 9999,
+              "productPrice": 0.0311
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": -1,
+              "productPrice": 0.0291
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 5000,
+              "endNumber": 9999,
+              "productPrice": 0.0299
+            },
+            {
+              "startNumber": 2500,
+              "endNumber": 4999,
+              "productPrice": 0.0335
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 2499,
+              "productPrice": 0.0366
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": -1,
+              "productPrice": 0.028
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.055
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0427
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "0bc894ef3cfe4df6b5376bcb5a199f74",
+          "canPresaleNumber": 93486,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "JSMSEMI-AMS1117_33/C917183",
+          "leastPatchNumber": 2,
+          "lossNumber": 2,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 2500,
+          "shopCostPrice": 0.14996,
+          "preMinPurchaseNum": 204,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.0571,
+          "componentCode": "C917183",
+          "componentBrandEn": "JSMSEMI",
+          "componentModelEn": "AMS1117-3.3",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583419184986800128-C917183/C917183-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e8d8cb29d33dc5b2c4b080ce394d7375a60e53e71cb002663b4a116684140706",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2408161119_JSMSEMI-AMS1117-3-3_C917183.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588906314940755968-C917183.pdf?response-content-disposition=attachment%3B%20filename%3DC917183.pdf%3B%20filename%2A%3DUTF-8%27%27C917183.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=87ec6654a32a5c38d1ae705590140237a29e871fa93c5ca48cfa9d8499975eba",
+          "dataManualOfficialLink": "",
+          "componentName": "JSMSEMI AMS1117-3.3",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583419185901023232-C917183/C917183-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f0d2fab778388e57f3191660c9ad3cac3e399cdcd00f29e4ccd0c9bb43078aa7",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "SOT-223-3",
+          "describe": "-20℃~+125℃@(Tj) 0.003%Vout 1 1.3V@(800mA) 15V 1A 2mA 3.3V 75dB@(120Hz) Fixed Over Current Protection、Thermal shutdown Positive SOT-223-3 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Power Supply Rejection Ratio (PSRR)",
+              "attribute_value_name": "75dB@(120Hz)"
+            },
+            {
+              "attribute_name_en": "standby current",
+              "attribute_value_name": "2mA"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-20℃~+125℃@(Tj)"
+            },
+            {
+              "attribute_name_en": "Noise",
+              "attribute_value_name": "0.003%Vout"
+            },
+            {
+              "attribute_name_en": "Output Type",
+              "attribute_value_name": "Fixed"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "15V"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "1A"
+            },
+            {
+              "attribute_name_en": "Output Configuration",
+              "attribute_value_name": "Positive"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "Over Current Protection、Thermal shutdown"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "3.3V"
+            },
+            {
+              "attribute_name_en": "Voltage Dropout",
+              "attribute_value_name": "1.3V@(800mA)"
+            },
+            {
+              "attribute_name_en": "Number of Outputs",
+              "attribute_value_name": "1"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "<span class='lucene_highlight_class'>AMS1117-3.3</span>",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 2793377,
+          "componentLibraryType": "expand",
+          "stockCount": 19987,
+          "componentTypeEn": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "erpComponentName": "3.3V 1A 12V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_wpmtek-wei-pan-microelectronics-ams1117-3-3v_C2688239.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0662
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0537
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 999,
+              "productPrice": 0.0473
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 3999,
+              "productPrice": 0.0425
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": 7999,
+              "productPrice": 0.0317
+            },
+            {
+              "startNumber": 8000,
+              "endNumber": -1,
+              "productPrice": 0.0299
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 99,
+              "productPrice": 0.0637
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 3999,
+              "productPrice": 0.041
+            },
+            {
+              "startNumber": 8000,
+              "endNumber": -1,
+              "productPrice": 0.0288
+            },
+            {
+              "startNumber": 100,
+              "endNumber": 299,
+              "productPrice": 0.0517
+            },
+            {
+              "startNumber": 300,
+              "endNumber": 999,
+              "productPrice": 0.0456
+            },
+            {
+              "startNumber": 4000,
+              "endNumber": 7999,
+              "productPrice": 0.0305
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "0bc894ef3cfe4df6b5376bcb5a199f74",
+          "canPresaleNumber": 19236,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "2793377-AMS1117_33V/C2688239",
+          "leastPatchNumber": 5,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 4000,
+          "shopCostPrice": 0.16,
+          "preMinPurchaseNum": 169,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.0662,
+          "componentCode": "C2688239",
+          "componentBrandEn": "WPMtek(Wei Pan Microelectronics)",
+          "componentModelEn": "AMS1117-3.3V",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583395874630479872-C2688239/C2688239-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=940b9caf1f7ddceb0cbe4801983f4ef3ef7f8fc35d896f58ff8ddefa660d8787",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2102221748_WPMtek-Wei-Pan-Microelectronics-AMS1117-3-3V_C2688239.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8757102139904528384-C2688239.pdf?response-content-disposition=attachment%3B%20filename%3DC2688239.pdf%3B%20filename%2A%3DUTF-8%27%27C2688239.pdf&x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r9G%2B75i6xk046xOm3UhmkjZ8sanvzqhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaF5oFww557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsroSs4uDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIpWDNS6KWD5sagAFBQYxvCHtgpRc0bUnDwxCz6ZYT63Kq7wvK9OLymYF1vvKIP%2BR7SJiDGm93j9ulAdkwU%2BhsoLNlgphRn%2FCDpgWvLpjBOaFPP12t93F%2FX7tiaoUjgQX4QyC4xFmP5i2mTpnvdQPlm5ZEtvM40%2BcXL8QwigW64YOs8io9r9LKLbf%2BiCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYHPTMfsEdLZ8KebivkD6q9Ae%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f02496dffaf9e16a6aea5308768b9a45b40b1327f1d893f66d241c4431b641cf",
+          "dataManualOfficialLink": "",
+          "componentName": "WPMtek AMS1117-3.3V",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583395875452698624-C2688239/C2688239-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T140714Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vTOtz%2Boehgx46odkTJgnYmedl5hvPxuDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qapg3V8w557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrUqckZ5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5XMxQ%2BD5ch3ARqAAQK3UTarQNqI93HbE%2Bc%2BPAT%2BoYNhQgkB9wNOCLZ2VPgGI1bjjDDb%2BY%2FS6RYYnmv6%2BkXvx%2F8lfQ%2By7Vziml%2FqWlNZzkNuVUZ3xFNLP9%2BJ75Yo5U8cTDM%2FYG%2BL9aK9qRdCK8iUsgBs39Wlni7fRmhARSCxVRdcH1sPBTWINfZwQTjyIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXfqfJL7ApLCtbxfvsuVUi6ZZ%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=29f75f23382f5643cdce072d80738aaf578afd8a3f2c34ca7b749c8066233f2a",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "SOT-223-3L",
+          "describe": "-40℃~+125℃@(Tj) 0.003%Vout 1 1.4V@(1A) 12V 1A 3.3V 5mA 70dB@(120Hz) Fixed Over Temperature Protection、Thermal Shutdown Positive SOT-223-3L Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Power Supply Rejection Ratio (PSRR)",
+              "attribute_value_name": "70dB@(120Hz)"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-40℃~+125℃@(Tj)"
+            },
+            {
+              "attribute_name_en": "standby current",
+              "attribute_value_name": "5mA"
+            },
+            {
+              "attribute_name_en": "Noise",
+              "attribute_value_name": "0.003%Vout"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "12V"
+            },
+            {
+              "attribute_name_en": "Output Type",
+              "attribute_value_name": "Fixed"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "1A"
+            },
+            {
+              "attribute_name_en": "Output Configuration",
+              "attribute_value_name": "Positive"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "3.3V"
+            },
+            {
+              "attribute_name_en": "Voltage Dropout",
+              "attribute_value_name": "1.4V@(1A)"
+            },
+            {
+              "attribute_name_en": "Number of Outputs",
+              "attribute_value_name": "1"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "<span class='lucene_highlight_class'>AMS1117-3.3</span>V",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        }
+      ],
+      "pageNum": 1,
+      "pageSize": 100,
+      "size": 0,
+      "startRow": 0,
+      "endRow": 0,
+      "pages": 1,
+      "prePage": 0,
+      "nextPage": 0,
+      "isFirstPage": false,
+      "isLastPage": false,
+      "hasPreviousPage": false,
+      "hasNextPage": false,
+      "navigatePages": 0,
+      "navigatepageNums": null,
+      "navigateFirstPage": 0,
+      "navigateLastPage": 0
+    },
+    "sortAndCountVoList": null,
+    "presaleTypeList": [],
+    "brandList": [],
+    "basePart": null,
+    "preferredPart": null,
+    "economicPart": null,
+    "standardPart": null,
+    "dataSheetPart": null,
+    "photo": null,
+    "queryString": "AMS1117-3.3"
+  },
+  "message": null
+}

@@ -42,8 +42,16 @@ sources that need no account or key: JLCPCB's own parts search
 lists). Both are unofficial APIs and may change or disappear without notice;
 `build`, `check` and the tests work offline.
 
+`libkit add` (one part by C-number or MPN) also needs KiCad 10's `kicad-cli`
+and [easyeda2kicad](https://github.com/uPesy/easyeda2kicad.py) (pinned in
+`requirements.txt`, run as a separate program). Symbols, footprints and 3D
+models come from KiCad's stock libraries where one fits, otherwise from the
+EasyEDA/LCSC component library, normalised to the KiCad Library Convention.
+
 ## License
 
-Base passive symbols, footprints and 3D models are derived from the KiCad
-libraries (CC-BY-SA 4.0 with the KiCad library exception). See
+Base passive symbols, footprints and 3D models, and anything vendored with
+`stock:`, are derived from the KiCad libraries (CC-BY-SA 4.0 with the KiCad library exception). See
 [LICENSES/KiCad-libraries.md](LICENSES/KiCad-libraries.md).
+Footprints and 3D models imported from EasyEDA say so in their description
+(`EasyEDA C…`).
