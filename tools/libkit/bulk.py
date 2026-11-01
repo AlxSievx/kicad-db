@@ -259,13 +259,19 @@ def skip_rows(rows: list[Row], values: list[str], unit: str) -> list[Row]:
     """The rows with the "new" ones at `values` (e.g. "62k") marked "skipped".
     A value that is not a "new" row of the plan is an error (a typo would
     otherwise add the part the user wanted left out)."""
-    want = {format_value(parse_value(v, unit), unit): v for v in values}
-    new = {r.value for r in rows if r.status == "new"}
+    def base(text: str) -> str:  # bead rows read "600R@100MHz"; the user may type "600R"
+        return text.split("@")[0]
+
+    try:
+        want = {format_value(parse_value(base(v), unit), unit): v for v in values}
+    except ValueError as e:
+        raise ValueError(f"--skip: {e}") from None
+    new = {base(r.value) for r in rows if r.status == "new"}
     missing = [v for k, v in want.items() if k not in new]
     if missing:
         raise ValueError(f"--skip {', '.join(missing)}: not a new row of the dry run")
-    return [Row(r.value, r.name, "skipped", r.entry, "skipped (--skip)") if r.status == "new" and r.value in want
-            else r for r in rows]
+    return [Row(r.value, r.name, "skipped", r.entry, "skipped (--skip)")
+            if r.status == "new" and base(r.value) in want else r for r in rows]
 
 
 def plan_file(kind: str, package: str) -> Path:

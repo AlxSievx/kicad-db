@@ -169,3 +169,11 @@ def test_cli_bead_needs_package(minilib, monkeypatch, capsys):
     assert cli.main(["bulk-add", "inductor", "--series", "E6", "--from", "1u", "--to", "10u",
                      "--family", "NOPE1234"]) == 1
     assert "libkit add" in capsys.readouterr().err
+
+
+def test_skip_bead_rows():  # final review I1
+    from libkit.bulk import Row, skip_rows
+    rows = [Row("600R@100MHz", "FB_600R_0603_200mA", "new", {}, ""), Row("1k@100MHz", "FB_1k_0603_200mA", "new", {}, "")]
+    out = skip_rows(rows, ["1k"], "Ω")
+    assert [r.status for r in out] == ["new", "skipped"]
+    assert [r.status for r in skip_rows(rows, ["600R@100MHz"], "Ω")] == ["skipped", "new"]
