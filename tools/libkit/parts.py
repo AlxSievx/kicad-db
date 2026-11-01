@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -115,3 +116,42 @@ def validate(parts: list[Part], schema: Schema, root: Path | None = None) -> lis
         if cat.value_unit and man and man not in {m.name for m in schema.manufacturers}:
             issues.append(Issue("warning", p.name, f"manufacturer {man!r} not in known list"))
     return issues
+
+
+class _Dumper(yaml.SafeDumper):
+    """Indent list items under their key ("parts:\n  - name: ..."), like the hand-written files."""
+
+    def increase_indent(self, flow=False, indentless=False):
+        return super().increase_indent(flow, False)
+
+    def choose_scalar_style(self):
+        # Quote with "…" rather than '…' when a value needs quotes (package: "0402").
+        style = super().choose_scalar_style()
+        return '"' if style == "'" else style
+
+
+def write_category(root: Path, category: str, entries: list[dict]) -> None:
+    """Rewrite parts/<category>.yaml with `entries`, fields in schema order.
+
+    Every value is written as a string (YAML quotes "0402" and the like).
+    UTF-8, LF; written to a .tmp file first, then moved into place.
+    """
+    from .schema import load_schema
+    schema = load_schema(root)
+    cat = schema.categories[category]
+    order = [f.key for f in schema.fields_for(cat)]
+    rows = []
+    for e in entries:
+        keys = [k for k in order if k in e] + [k for k in e if k not in order]
+        rows.append({k: str(e[k]) for k in keys})
+    if rows:
+        text = yaml.dump({"parts": rows}, Dumper=_Dumper, allow_unicode=True, sort_keys=False,
+                         default_flow_style=False, width=1000)
+    else:
+        text = "parts: []\n"
+    path = Path(root) / "parts" / f"{category}.yaml"
+    tmp = path.with_suffix(".yaml.tmp")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write(text)
+    os.replace(tmp, path)
