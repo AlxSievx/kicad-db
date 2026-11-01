@@ -7,7 +7,8 @@ import yaml
 from conftest import errors
 from fakes import rec
 from libkit import series
-from libkit.entries import footprint_for, passive_entry, passive_name
+from libkit.entries import (footprint_for, kind_of, manufacturer_name, mpn_name, passive_entry,
+                            passive_name)
 from libkit.jlc import parse_record
 from libkit.parts import Part, load_parts, validate, write_category
 
@@ -169,3 +170,94 @@ def test_single_chip_with_two_pins_is_fine(schema):
     part = parse_record(rec("C25744"))
     part = replace(part, attributes={**part.attributes, "Number of Resistors": "1", "Number of Pins": "2"})
     assert passive_entry("resistor", part, schema, TODAY)["name"] == "R_10k_0402_1pct"
+
+
+def _validate_entry(schema, e):
+    p = Part(e["name"], "inductors", e, None)
+    return [i for i in validate([p], schema) if i.severity == "error"]
+
+
+def test_kind_of():
+    kinds = [kind_of(parse_record(rec(c))) for c in ("C25744", "C1525", "C1046", "C1015", "C6186")]
+    assert kinds == ["resistor", "capacitor", "inductor", "bead", None]
+
+
+def test_inductor_entry(schema):
+    e = passive_entry("inductor", parse_record(rec("C1046")), schema, TODAY)
+    assert e["name"] == "L_10u_0805_15mA"
+    assert e["value"] == "10uH"
+    assert e["symbol"] == "L"
+    assert e["footprint"] == "LIB_Passives_SMD:L_0805_2012Metric"
+    assert e["current_rating"] == "15mA"
+    assert e["dcr"] == "1.15Ω"
+    assert "current_sat" not in e
+    assert _validate_entry(schema, e) == []
+
+
+def test_bead_entry(schema):
+    e = passive_entry("bead", parse_record(rec("C1015")), schema, TODAY)
+    assert e["name"] == "FB_100R_0805_800mA"
+    assert e["value"] == "100R@100MHz"
+    assert e["symbol"] == "FerriteBead"
+    assert e["footprint"] == "LIB_Passives_SMD:L_0805_2012Metric"
+    assert e["current_rating"] == "800mA"
+    assert e["dcr"] == "150mΩ"
+    assert e["description"] == "100R@100MHz 800mA 0805 ferrite bead"
+    assert _validate_entry(schema, e) == []
+
+
+def test_power_inductor_needs_footprint(schema):
+    part = parse_record(rec("C408412"))
+    with pytest.raises(ValueError, match="footprint"):
+        passive_entry("inductor", part, schema, TODAY)
+    e = passive_entry("inductor", part, schema, TODAY, footprint="LIB_Inductor_SMD:L_Sunlord_MWSA0503S")
+    assert e["name"] == "MWSA0503S-100MT"
+    assert e["footprint"] == "LIB_Inductor_SMD:L_Sunlord_MWSA0503S"
+    assert e["current_sat"] == "3.5A"
+    assert e["current_rating"] == "3.2A"
+
+
+@pytest.mark.parametrize("key", ["Current - Saturation (Isat)", "Current - Saturation(Isat)",
+                                 "current - saturation(isat)"])
+def test_attr_key_variants(schema, key):  # Review Focus 1
+    part = parse_record(rec("C408412"))
+    attrs = {k: v for k, v in part.attributes.items() if "isat" not in k.casefold()}
+    e = passive_entry("inductor", replace(part, attributes={**attrs, key: "3.5A"}), schema, TODAY,
+                      footprint="LIB_Inductor_SMD:X")
+    assert e["current_sat"] == "3.5A"
+    e = passive_entry("inductor", replace(part, attributes={**attrs, key: "-"}), schema, TODAY,
+                      footprint="LIB_Inductor_SMD:X")
+    assert "current_sat" not in e
+
+
+def test_inductor_unicode_values(schema):
+    part = parse_record(rec("C1046"))
+    attrs = {**part.attributes, "Inductance": "4.7µH", "DC Resistance(DCR)": "1.15 Ω"}
+    e = passive_entry("inductor", replace(part, attributes=attrs), schema, TODAY)
+    assert e["value"] == "4.7uH" and e["name"] == "L_4.7u_0805_15mA"
+
+
+@pytest.mark.parametrize("mpn,name", [("CKCS4018-4.7uH/M", "CKCS4018-4.7uH_M"),
+                                      ("CD31 4R7M 4.7UH", "CD31_4R7M_4.7UH"),
+                                      ("TPS62130RGTR", "TPS62130RGTR"),
+                                      ("LTC1046CN8#PBF", "LTC1046CN8_PBF"),
+                                      (" /X/ ", "X")])
+def test_mpn_name_sanitized(mpn, name):  # Review Focus 2
+    assert mpn_name(mpn) == name
+
+
+def test_mpn_name_empty_refused():
+    with pytest.raises(ValueError):
+        mpn_name(" / ")
+
+
+def test_unknown_brand_single_add(schema):
+    assert manufacturer_name("AMS(Advanced Monolithic Systems)", schema) == ("AMS", False)
+    assert manufacturer_name("UNI-ROYAL(Uniroyal Elec)", schema) == ("UNI-ROYAL", True)
+
+
+def test_known_only_false_keeps_unknown_brand(schema):
+    part = replace(parse_record(rec("C1046")), brand="NoName(Shenzhen NoName)")
+    with pytest.raises(ValueError, match="not a known manufacturer"):
+        passive_entry("inductor", part, schema, TODAY)
+    assert passive_entry("inductor", part, schema, TODAY, known_only=False)["manufacturer"] == "NoName"

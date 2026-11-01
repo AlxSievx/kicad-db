@@ -13,7 +13,10 @@ KINDS = {
     # kind: (category, symbol, value unit, footprint prefix)
     "resistor": ("resistors", "R", "Ω", "R"),
     "capacitor": ("capacitors", "C", "F", "C"),
+    "inductor": ("inductors", "L", "H", "L"),
+    "bead": ("inductors", "FerriteBead", "Ω", "L"),  # value unit: impedance
 }
+NAME_CHARS = re.compile(r"[^A-Za-z0-9_.+,-]+")  # KLC G1.1
 METRIC = {"0402": "1005", "0603": "1608", "0805": "2012", "1206": "3216"}
 
 
@@ -24,9 +27,16 @@ def _kind(kind: str):
 
 
 def passive_name(kind: str, value: float, package: str, *, tolerance: float | None = None,
-                 voltage: float | None = None, dielectric: str | None = None) -> str:
-    """R_<value>_<pkg>_<tol>pct or C_<value w/o F>_<pkg>_<voltage>_<dielectric> (CLAUDE.md)."""
+                 voltage: float | None = None, dielectric: str | None = None,
+                 current: str | None = None) -> str:
+    """R_<value>_<pkg>_<tol>pct, C_<value w/o F>_<pkg>_<voltage>_<dielectric>,
+    L_<value w/o H>_<pkg>_<current> or FB_<impedance>_<pkg>_<current> (CLAUDE.md)."""
     _, _, unit, prefix = _kind(kind)
+    if kind in ("inductor", "bead"):
+        if not current:
+            raise ValueError(f"an {kind} name needs a current rating")
+        text = format_value(value, unit)
+        return (f"L_{text[:-1]}" if kind == "inductor" else f"FB_{text}") + f"_{package}_{current}"
     if kind == "resistor":
         if tolerance is None:
             raise ValueError("a resistor name needs a tolerance")
@@ -47,11 +57,58 @@ def _clean(text: str) -> str:
     return text.strip().replace("℃", "°C")
 
 
-def _attr(part: JlcPart, key: str) -> str:
-    v = _clean(part.attributes.get(key, ""))
-    if not v or v == "-":
-        raise ValueError(f"{part.lcsc}: JLC record has no {key!r} attribute")
-    return v
+def _key(name: str) -> str:
+    return "".join(name.split()).casefold()
+
+
+def _attr(part: JlcPart, *keys: str, required: bool = True) -> str:
+    """The first of `keys` the record has a value for. Attribute names match
+    with whitespace removed and case folded (JLC writes "Current - Saturation
+    (Isat)" and "Current - Saturation(Isat)"); "-" means no value."""
+    by_key = {_key(k): v for k, v in part.attributes.items()}
+    for key in keys:
+        v = _clean(by_key.get(_key(key), ""))
+        if v and v != "-":
+            return v
+    if required:
+        raise ValueError(f"{part.lcsc}: JLC record has no {keys[0]!r} attribute")
+    return ""
+
+
+def _has(part: JlcPart, key: str) -> bool:
+    return bool(_attr(part, key, required=False))
+
+
+def kind_of(part: JlcPart) -> str | None:
+    """The passive kind a JLC record describes, or None (also for arrays)."""
+    if _array(part):
+        return None
+    for key, kind in (("Resistance", "resistor"), ("Capacitance", "capacitor"),
+                      ("Impedance @ Frequency", "bead"), ("Inductance", "inductor")):
+        if _has(part, key):
+            return kind
+    return None
+
+
+def mpn_name(mpn: str) -> str:
+    """A part name from an MPN: each run of characters KLC G1.1 does not allow becomes "_"."""
+    name = NAME_CHARS.sub("_", mpn.strip()).strip("_")
+    if not name:
+        raise ValueError(f"MPN {mpn!r} gives no usable part name")
+    return name
+
+
+def manufacturer_name(brand: str, schema: Schema) -> tuple[str, bool]:
+    """(canonical name, True) for a known manufacturer, else (the brand without
+    a "(…)" suffix, False) — single adds may come from anyone (rule 3 is for picks)."""
+    known = schema.canonical_manufacturer(brand)
+    if known:
+        return known, True
+    return re.sub(r"\s*\(.*\)\s*$", "", brand).strip() or brand.strip(), False
+
+
+def _compact(text: str) -> str:
+    return "".join(text.split())
 
 
 def _percent(text: str, lcsc: str) -> float:
@@ -80,23 +137,43 @@ def _array(part: JlcPart) -> str | None:
     return None
 
 
-def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None = None) -> dict[str, str]:
-    """The full YAML entry for a resistor or capacitor from its JLC record."""
+def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None = None, *,
+                  footprint: str | None = None, known_only: bool = True) -> dict[str, str]:
+    """The full YAML entry for a resistor, capacitor, inductor or ferrite bead from its JLC record.
+
+    Chip packages (0402–1206) get the pattern name and the LIB_Passives_SMD
+    footprint. Any other package needs `footprint`, and the part is named by
+    its MPN. known_only=False (single adds) keeps an unknown brand instead of
+    refusing it."""
     category, symbol, unit, _ = _kind(kind)
     why = _array(part)
     if why:
         raise ValueError(f"{part.lcsc}: an array, not a single two-pin part ({why})")
-    manufacturer = schema.canonical_manufacturer(part.brand)
-    if manufacturer is None:
-        raise ValueError(f"{part.lcsc}: manufacturer {part.brand!r} is not a known manufacturer")
-    value_key = "Resistance" if kind == "resistor" else "Capacitance"
-    value = parse_value(_attr(part, value_key), unit)
-    tolerance = _attr(part, "Tolerance")
+    if known_only:
+        manufacturer = schema.canonical_manufacturer(part.brand)
+        if manufacturer is None:
+            raise ValueError(f"{part.lcsc}: manufacturer {part.brand!r} is not a known manufacturer")
+    else:
+        manufacturer, _ = manufacturer_name(part.brand, schema)
+    chip = part.package in METRIC
+    if footprint is None:
+        if not chip:
+            raise ValueError(f"{part.lcsc}: package {part.package!r} is not a chip package; "
+                             "a footprint must be given")
+        footprint = footprint_for(kind, part.package)
+    value_key = {"resistor": "Resistance", "capacitor": "Capacitance", "inductor": "Inductance",
+                 "bead": "Impedance @ Frequency"}[kind]
+    raw_value = _attr(part, value_key)
+    frequency = ""
+    if kind == "bead":
+        raw_value, _, frequency = raw_value.partition("@")
+    value = parse_value(_compact(raw_value), unit)
+    value_text = format_value(value, unit) + (f"@{_compact(frequency)}" if frequency else "")
     entry = {
         "name": "",
         "symbol": symbol,
-        "footprint": footprint_for(kind, part.package),
-        "value": format_value(value, unit),
+        "footprint": footprint,
+        "value": value_text,
         "package": part.package,
         "manufacturer": manufacturer,
         "mpn": part.mpn,
@@ -107,6 +184,22 @@ def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None =
         "stock": str(part.stock),
         "stock_checked": (today or date.today()).isoformat(),
     }
+    if kind in ("inductor", "bead"):
+        current = _compact(_attr(part, "Current Rating"))
+        entry["current_rating"] = current
+        if kind == "inductor":
+            sat = _attr(part, "Current - Saturation (Isat)", required=False)
+            if sat:
+                entry["current_sat"] = _compact(sat)
+        dcr = _attr(part, "DC Resistance(DCR)", required=False)
+        if dcr:
+            entry["dcr"] = _compact(dcr)
+        if kind == "bead":
+            entry["description"] = f"{value_text} {current} {part.package} ferrite bead"
+        entry["name"] = (passive_name(kind, value, part.package, current=current) if chip
+                         else mpn_name(part.mpn))
+        return entry
+    tolerance = _attr(part, "Tolerance")
     if kind == "resistor":
         entry["tolerance"] = tolerance
         entry["power"] = _attr(part, "Power(Watts)")
