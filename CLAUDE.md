@@ -65,7 +65,7 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   `new` = will be added, `exists` = an existing part covers the value (or the
   pick's name/LCSC is already in the library), `none` = no part meets the rules
   (see the note). Column `ds` = datasheet language. `--dielectric` defaults to
-  `C0G,NP0,X7R,X5R`. Inductors and ferrite beads are single-add only (no parametric source).
+  `C0G,NP0,X7R,X5R`.
   Capacitors below 10pF are not needed (user decision): start series at 10p.
   Chip sizes: 0402, 0603, 0805, 1206, 1210, 2512. `--min-power 1W` filters resistors (shunts).
   Tantalum (`--case A|B|C|D`) and SMD electrolytic (`--can 5x5.4|6.3x5.4|6.3x7.7|8x10.5|10x10.5`):

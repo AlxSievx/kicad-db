@@ -179,6 +179,12 @@ dielectric `Ta`/`Al`, symbol `C_Polarized`, KiCad stock footprints in `LIB_Passi
 `esr`/`lifetime` fields; bulk adds pick one part per value and size, the highest voltage within the best
 JLC tier.
 
+Decided 2026-11-01 (Plan 7): beads, chip inductors and power inductors are bulk-added as full series:
+beads at 30R…2200R @100MHz and chip inductors per E-series value (highest current within the best JLC
+tier), power inductors as whole manufacturer series per size (Sunlord SWPA), named by MPN, one shared
+footprint per series. The Altium library's Coilcraft LPS3015 and Würth WE-LHMI parts are no longer
+stocked at JLC and are replaced by these series.
+
 **Generated into each symbol:** Reference, Value, Footprint, Datasheet,
 Description, Manufacturer, MPN, LCSC, JLC_Type, category fields, and
 **Keywords** built automatically from the data: value in several spellings
