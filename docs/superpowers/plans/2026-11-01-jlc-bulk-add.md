@@ -20,7 +20,7 @@
   - return up to 100 candidates, sorted by stock, with `lcsc` (int), `mfr`, `stock` (may be null), `is_basic`, `is_preferred`, `tolerance_fraction`, `power_watts` (in mW despite the name), `voltage_rating`, `temperature_coefficient` (dielectric), `capacitance_farads`;
   - include no manufacturer name, so the brand comes from JLC;
   - have no inductor endpoint (404), so inductors stay single-add for now.
-- The Basic 10 pF parts are **C0G**. The rule "X7R/X5R only" can't be met for small values (see the open question at the end).
+- The Basic 10 pF parts are **C0G**. The user therefore changed rule 4 (2026-11-01) to allow C0G/NP0 alongside X7R/X5R.
 
 ## Global Constraints
 
@@ -29,7 +29,7 @@
   1. JLC **Basic or Preferred** before Extended; Extended only if nothing fits.
   2. Stock: **≥ ~1000 for bulk-added passives**. For single parts I name myself: any stock > 0 is accepted, with a warning below ~100.
   3. **Known manufacturers only** (list in repo, e.g. Samsung, Murata, Yageo, UNI-ROYAL, TDK, …; extendable).
-  4. Ceramic capacitors: **X7R / X5R only**, never Y5V/Z5U.
+  4. Ceramic capacitors: **C0G/NP0, X7R or X5R**, never Y5V/Z5U (C0G/NP0 added 2026-11-01: JLC's Basic small values are C0G, the better dielectric there).
   5. Bulk adds show the full list for confirmation before anything is written.
 - The network is used only by `jlc`, `bulk-add` and `refresh-stock`. `build`, `check` and the test suite stay offline (live tests are opt-in with `LIBKIT_LIVE=1`).
 - At most 4 requests per second; 20 s timeout; `User-Agent: libkit/0.2 (personal KiCad library)`.
@@ -112,7 +112,7 @@ def test_live_lookup(): assert lookup("C1525").brand.startswith("Samsung")
   - `jlcsearch.resistors(package: str, ohms: float, get=net.get_json) -> list[Candidate]`
   - `jlcsearch.capacitors(package: str, farads: float, get=net.get_json) -> list[Candidate]`
     - Candidates whose value differs by more than 0.5 % from the request are dropped.
-  - `@dataclass Need(kind: str, value: float, package: str, max_tolerance: float, min_voltage: float | None = None, dielectrics: tuple[str, ...] = ("X7R", "X5R"), min_stock: int = 1000)`
+  - `@dataclass Need(kind: str, value: float, package: str, max_tolerance: float, min_voltage: float | None = None, dielectrics: tuple[str, ...] = ("C0G", "NP0", "X7R", "X5R"), min_stock: int = 1000)`
     - `kind` is `"resistor"` or `"capacitor"`.
   - `@dataclass Pick(need: Need, part: JlcPart | None, candidate: Candidate | None, note: str)`
   - `pick(need: Need, candidates: list[Candidate], schema: Schema, lookup=jlc.lookup) -> Pick`
@@ -121,7 +121,7 @@ Picking algorithm (the spec rules decide the order):
 1. Filter by: tolerance ≤ `max_tolerance`; voltage ≥ `min_voltage` (capacitors); dielectric in `dielectrics` (capacitors); stock ≥ `min_stock`.
 2. Sort: Basic/Preferred first, then stock descending.
 3. Walk the sorted list and `lookup()` each LCSC number. Take the first one whose brand canonicalises to a known manufacturer and whose JLC stock still meets `min_stock`. Stop after 8 lookups.
-4. With no pick, `note` names the first failing reason that emptied the list, e.g. `"no candidate with dielectric X7R/X5R"`, `"no known manufacturer among 8 checked"`. Otherwise `note` is `""`, or `"Extended part"` when the pick is Extended.
+4. With no pick, `note` names the first failing reason that emptied the list, e.g. `"no candidate with dielectric C0G/NP0/X7R/X5R"`, `"no known manufacturer among 8 checked"`. Otherwise `note` is `""`, or `"Extended part"` when the pick is Extended.
 
 - [ ] **Step 1: Record fixtures** with the three GET URLs above.
 - [ ] **Step 2: Write failing tests**
@@ -135,8 +135,8 @@ def test_value_match_tolerance():   # Review Focus 2
 def test_pick_prefers_basic(schema): p = pick(Need("capacitor", 1e-7, "0402", 0.1, 16), caps, schema, lookup=fake_lookup)
     # p.part.lcsc == "C1525", p.part.jlc_type == "Basic", p.note == ""
 def test_pick_respects_min_voltage(schema): ... Need(..., min_voltage=50) → picked candidate.voltage >= 50
-def test_pick_rejects_c0g_by_default(schema): pick(Need("capacitor", 1e-11, "0402", 0.05, 50), caps10p, ...).part is None and "dielectric" in note
-def test_pick_c0g_when_allowed(schema): pick(Need(..., dielectrics=("C0G",)), ...).part.lcsc == "C32949"
+def test_pick_rejects_y5v(schema): candidates all Y5V/Z5U → pick(...).part is None and "dielectric" in note
+def test_pick_c0g_by_default(schema): pick(Need("capacitor", 1e-11, "0402", 0.05, 50), caps10p, ...).part.lcsc == "C32949"
 def test_pick_skips_unknown_brand(schema): lookup returning brand "NoName" for the first → second candidate chosen
 def test_pick_extended_noted(schema): only Extended candidates → p.note == "Extended part"
 def test_pick_stock_threshold(schema): all stock < 1000 → p.part is None and "stock" in p.note
@@ -221,7 +221,7 @@ def test_write_roundtrip_preserves_parts(minilib, schema):   # Review Focus 5
   - CLI:
     ```
     python -m libkit bulk-add resistor  --series E24 --from 1k  --to 1M  --package 0402 --tolerance 1%
-    python -m libkit bulk-add capacitor --series E6  --from 1n  --to 1u  --package 0402 --tolerance 10% --voltage 16V [--dielectric X7R,X5R] [--write]
+    python -m libkit bulk-add capacitor --series E6  --from 1n  --to 1u  --package 0402 --tolerance 10% --voltage 16V [--dielectric C0G,NP0,X7R,X5R] [--write]
     ```
     - Values are parsed with `parse_value`.
     - It always prints a table: value · name · status · LCSC · MPN · manufacturer · type · stock · note.
@@ -304,11 +304,11 @@ def test_refresh_aborts_without_writing(minilib):  # Review Focus 4
   - **Bulk add:** always run the dry run first, show the user the table, and run `--write` only after their OK.
   - **Stock refresh:** `refresh-stock`.
   - Change the datasheet rule to "JLC's `dataManualUrl`; `bulk-add` fills it in".
-  - Add the C0G note from the open question below once the user has answered it.
+  - Keep rule 4 as already updated in CLAUDE.md (C0G/NP0, X7R, X5R; never Y5V/Z5U).
 - [ ] **Step 2: `README.md`.** Add one paragraph naming the two data sources and noting that they are unofficial, keyless APIs that may change.
 - [ ] **Step 3: Run** `py -m pytest -q; py -m libkit check` — Expected: pass, 0 errors.
 - [ ] **Step 4: Commit** `docs: bulk-add and stock workflows`
 
-## Open question for the user (answer before Task 2 runs)
+## Resolved question
 
-The Basic 10 pF–1 nF capacitors at JLC are **C0G/NP0**, and C0G is the *better* dielectric for small values (stable, no DC-bias loss). The rule "X7R/X5R only, never Y5V/Z5U" would leave small values without a part. This plan keeps X7R/X5R as the default (the `--dielectric` option allows C0G per run). The alternative is to make the rule "C0G/NP0, X7R, X5R allowed; Y5V/Z5U never".
+C0G/NP0 dielectric: allowed (user, 2026-11-01). Rule 4 now reads "C0G/NP0, X7R or X5R; never Y5V/Z5U" in the spec, CLAUDE.md and this plan; `Need.dielectrics` defaults to all four names.

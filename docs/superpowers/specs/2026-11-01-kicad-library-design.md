@@ -197,7 +197,7 @@ For automatic picks (bulk add, "find me a part for X"):
    any stock > 0 is accepted, with a warning below ~100.
 3. **Known manufacturers only** (list in repo, e.g. Samsung, Murata, Yageo,
    UNI-ROYAL, TDK, …; extendable).
-4. Ceramic capacitors: **X7R / X5R only**, never Y5V/Z5U.
+4. Ceramic capacitors: **C0G/NP0, X7R or X5R**, never Y5V/Z5U (C0G/NP0 added 2026-11-01: JLC's Basic small values are C0G, the better dielectric there).
 5. Bulk adds show the full list for confirmation before anything is written.
 
 These rules live in `CLAUDE.md` so every Claude session applies them the same

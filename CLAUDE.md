@@ -58,5 +58,5 @@ the search keywords automatically.
 2. Stock: **≥ ~1000 for bulk-added passives**. For single parts the user names:
    any stock > 0 is accepted, with a warning below ~100.
 3. **Known manufacturers only** (`manufacturers:` in `schema/library.yaml`; extendable).
-4. Ceramic capacitors: **X7R / X5R only**, never Y5V/Z5U.
+4. Ceramic capacitors: **C0G/NP0, X7R or X5R**, never Y5V/Z5U (C0G/NP0 added 2026-11-01: JLC's Basic small values are C0G, the better dielectric there).
 5. Bulk adds show the full list for confirmation before anything is written.
