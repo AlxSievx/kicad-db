@@ -15,7 +15,7 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 - `footprints/LIB_<Family>.pretty/`, `3dmodels/LIB_<Family>.3dshapes/` — curated, by package family.
 - `symbols/`, `sym-lib-table`, `fp-lib-table` — **generated, committed. Never edit by hand.**
 - `tools/libkit/` — the tooling; tests in `tests/`.
-- `.libkit/` — local, not committed: the last bulk-add dry run, datasheet-language cache.
+- `.libkit/` — local, not committed: bulk-add dry runs, single-add staging (`add/<REF>/`), datasheet-language cache.
 
 ## Commands (PowerShell, repo root)
 
@@ -30,9 +30,12 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 .venv\Scripts\python -m libkit bulk-add resistor --series E24 --from 1k --to 1M --package 0402 --tolerance 1%
 .venv\Scripts\python -m libkit bulk-add capacitor --series E6 --from 1n --to 1u --package 0402 --tolerance 10% --voltage 16V
 .venv\Scripts\python -m libkit refresh-stock      # re-query stock + JLC type of every part (network)
+.venv\Scripts\python -m libkit find resistor 62k --package 0402 --tolerance 1%   # candidates for one value (network)
+.venv\Scripts\python -m libkit add C1046         # single add, dry run (network); --write applies it
+.venv\Scripts\python -m libkit add C6186 --category ics_power --family Package_TO_SOT --fp-name SOT-223-3_TabPin2
 ```
 
-Only `jlc`, `bulk-add` (dry run) and `refresh-stock` use the network; transient
+Only `jlc`, `bulk-add` (dry run), `refresh-stock`, `find` and `add` (dry run) use the network; transient
 errors (timeouts, HTTP 429/5xx) are retried 3 times (2 s, 5 s, 15 s apart). Tests never touch the network;
 live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k live`.
 
@@ -53,8 +56,37 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   `new` = will be added, `exists` = an existing part covers the value (or the
   pick's name/LCSC is already in the library), `none` = no part meets the rules
   (see the note). Column `ds` = datasheet language. `--dielectric` defaults to
-  `C0G,NP0,X7R,X5R`. Inductors are single-add only (no parametric source).
+  `C0G,NP0,X7R,X5R`. Inductors and ferrite beads are single-add only (no parametric source).
   Capacitors below 10pF are not needed (user decision): start series at 10p.
+- **Find (one value):** `libkit find <resistor|capacitor|inductor|bead> <value> --package …`
+  lists candidates ordered by the rules (Basic/Preferred, then stock), with notes
+  where a part misses the bulk rules (`Extended`, `stock < 1000`, unknown
+  manufacturer, already in the library). Use it when the user names a value,
+  not a part; propose one C-number per value and wait for their OK.
+- **Single add:** `libkit add <C…|MPN>` is a dry run: it prints the YAML entry,
+  the files it would create, warnings, notes, KLC results and preview SVGs
+  (`.libkit/add/<REF>/preview/`), and stages everything in `.libkit/add/<REF>/`.
+  Show the user that report (and the previews); after their OK, the same
+  command with `--write` applies exactly the staged plan (no network), builds,
+  and rolls back on failure. Then `check` and commit. An ambiguous MPN lists
+  the C-numbers to choose from.
+  - Chip passives (0402–1206 R, C, L, ferrite beads) need no options: base
+    symbol + `LIB_Passives_SMD`.
+  - Everything else needs `--category`, and a new footprint needs `--family`.
+    **Source preference:** KiCad's stock library first
+    (`--symbol stock:<Lib>:<Name>`, `--footprint stock:<Lib>:<Name>`), else
+    EasyEDA (the default) with `--fp-name` in KLC form (`SOT-223-3_TabPin2`).
+    Existing LIB items: `--symbol <src symbol>`, `--footprint LIB_<Family>:<Name>`.
+    Family names follow KiCad stock: `Package_TO_SOT`, `Package_SO`,
+    `Package_DFN_QFN`, `Inductor_SMD`, `Connector`, …
+  - EasyEDA footprints keep EasyEDA's (= JLC's) orientation; the report says
+    when pin 1 is not top-left. Only STEP models are kept.
+  - Remaining KLC errors on an imported symbol (S4.2 pin placement, S4.4 pin
+    types): `--pin-types EN=input,#4=passive`, a hand edit of the symbol in
+    `src/symbols/` after `--write`, or an allow-list entry with a reason, each
+    with the user's OK. KLC errors on stock KiCad content are reported as they are.
+  - Unknown brands are kept (without the `(…)` suffix) with a warning; they
+    are not added to `manufacturers:` (that list is for automatic picks).
 - **Stock refresh:** `libkit refresh-stock` updates `stock`, `stock_checked`
   and `jlc_type` of every part and lists what needs a look (`not_found`,
   `out_of_stock`, `low_stock`, `type_changed`, `mpn_changed`). It rebuilds when
@@ -80,8 +112,10 @@ Names may only contain letters, digits and `_ - . + ,` (KLC G1.1). Write `%` as 
 |---|---|---|
 | Capacitors | `C_<value w/o F>_<pkg>_<voltage>_<dielectric>` | `C_100n_0402_16V_X7R` |
 | Resistors | `R_<value>_<pkg>_<tol>pct` | `R_10k_0402_1pct` |
-| Inductors | `L_<value w/o H>_<pkg>_<current>` | `L_10u_0805_1A` |
-| Everything else | the MPN | `TPS62130RGTR` |
+| Inductors (chip, 0402–1206) | `L_<value w/o H>_<pkg>_<current>` | `L_10u_0805_15mA` |
+| Inductors (other packages) | the MPN, value `10uH` | `MWSA0503S-100MT` |
+| Ferrite beads (in Inductors) | `FB_<impedance>_<pkg>_<current>`, value `100R@100MHz` | `FB_100R_0805_800mA` |
+| Everything else | the MPN (characters outside the set above become `_`) | `TPS62130RGTR` |
 
 Value notation (`value:` field): resistors `100R`, `4.7k`, `1M`; capacitors
 `10pF`, `100nF`, `4.7uF`; inductors `10uH`. Other spellings are generated into
