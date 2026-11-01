@@ -82,17 +82,20 @@ categories:
 families:
   - {name: Passives_SMD}
 
-# Known manufacturers for automatic part picks. Others give a warning.
+# Known manufacturers for automatic part picks; parts must use the canonical
+# name. A distributor brand string matches a name case-insensitively when it
+# equals the name or an alias, or starts with the name followed by a space or
+# "(" (e.g. "UNI-ROYAL(Uniroyal Elec)"). List aliases only for other spellings.
 manufacturers:
-  - Samsung
-  - Murata
-  - Yageo
-  - UNI-ROYAL
-  - TDK
-  - Vishay
-  - KEMET
-  - Panasonic
-  - Taiyo Yuden
-  - Walsin
-  - FH (Guangdong Fenghua)
-  - Sunlord
+  - {name: Samsung, aliases: [Samsung Electro-Mechanics]}
+  - {name: Murata}
+  - {name: Yageo}
+  - {name: UNI-ROYAL}
+  - {name: TDK}
+  - {name: Vishay}
+  - {name: KEMET}
+  - {name: Panasonic}
+  - {name: Taiyo Yuden}
+  - {name: Walsin}
+  - {name: FH, aliases: [Guangdong Fenghua Advanced Tech]}
+  - {name: Sunlord}

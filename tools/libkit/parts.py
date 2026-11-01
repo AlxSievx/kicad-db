@@ -112,6 +112,6 @@ def validate(parts: list[Part], schema: Schema, root: Path | None = None) -> lis
         # The known-manufacturer rule is for automatically picked passives
         # (categories with a value unit); single parts may come from anyone.
         man = p.data.get("manufacturer")
-        if cat.value_unit and man and man not in schema.manufacturers:
+        if cat.value_unit and man and man not in {m.name for m in schema.manufacturers}:
             issues.append(Issue("warning", p.name, f"manufacturer {man!r} not in known list"))
     return issues

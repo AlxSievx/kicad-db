@@ -7,6 +7,7 @@ import sys
 from pathlib import Path
 
 from .kicad import kicad_share
+from .net import NetError
 from .schema import SCHEMA_FILE, load_schema
 
 
@@ -74,7 +75,34 @@ def _fetch_klc(args) -> int:
     return 0
 
 
+def _jlc(args) -> int:
+    from dataclasses import asdict
+    from .jlc import lookup
+    schema = load_schema(find_root())
+    part = lookup(args.lcsc)
+    if part is None:
+        print(f"{args.lcsc}: not found at JLC", file=sys.stderr)
+        return 1
+    for k, v in asdict(part).items():
+        if k == "attributes":
+            print("attributes:")
+            for an, av in v.items():
+                print(f"  {an}: {av}")
+        else:
+            print(f"{k}: {v}")
+    print(f"canonical manufacturer: {schema.canonical_manufacturer(part.brand) or 'unknown'}")
+    return 0
+
+
+def _utf8_output() -> None:
+    # Part data has Ω, ±, ℃; Windows pipes default to cp1252, which lacks some.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
+
+
 def main(argv: list[str] | None = None) -> int:
+    _utf8_output()
     ap = argparse.ArgumentParser(prog="libkit")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
@@ -98,9 +126,16 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--into", required=True)
     p.set_defaults(func=_vendor_sym)
 
+    p = sub.add_parser("jlc", help="look up one LCSC part at JLC and print its record")
+    p.add_argument("lcsc", help="LCSC C-number, e.g. C1525")
+    p.set_defaults(func=_jlc)
+
     args = ap.parse_args(argv)
     try:
         return args.func(args)
+    except NetError as e:
+        print(f"ERROR: network: {e}", file=sys.stderr)
+        return 1
     except (FileNotFoundError, KeyError, ValueError) as e:
         print(f"ERROR: {e}", file=sys.stderr)
         return 1
