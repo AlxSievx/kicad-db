@@ -59,12 +59,34 @@ def _build(args) -> int:
     return 0
 
 
+def _check(args) -> int:
+    from .check import check
+    issues = check(find_root(), klc=not args.no_klc)
+    _print_issues(issues)
+    n_err = sum(i.severity == "error" for i in issues)
+    print(f"check: {n_err} errors, {len(issues) - n_err} warnings")
+    return 1 if n_err else 0
+
+
+def _fetch_klc(args) -> int:
+    from .klc import fetch_klc
+    print(f"KLC checker ready in {fetch_klc(find_root())}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="libkit")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("build", help="generate symbol libraries and library tables")
     p.set_defaults(func=_build)
+
+    p = sub.add_parser("check", help="validate data, references, generated files and KLC rules")
+    p.add_argument("--no-klc", action="store_true", help="skip the KLC checks")
+    p.set_defaults(func=_check)
+
+    p = sub.add_parser("fetch-klc", help="install kicad-library-utils at the pinned commit")
+    p.set_defaults(func=_fetch_klc)
 
     p = sub.add_parser("vendor-fp", help="copy a stock KiCad footprint (+3D model) into a family")
     p.add_argument("ref", help="<StockLib>:<Footprint>")

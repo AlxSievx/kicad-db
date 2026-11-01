@@ -1,0 +1,50 @@
+# KLC rules deliberately not enforced. Each entry: kind (symbol|footprint),
+# item (name glob or list of globs; symbols are "<Lib>:<Symbol>"), rule, reason.
+
+# --- Footprints -----------------------------------------------------------
+- kind: footprint
+  item: "*"
+  rule: F9.3
+  reason: >-
+    F9.3 expects the official ${KICAD10_3DMODEL_DIR}/<Lib>.3dshapes layout.
+    LIB uses ${LIB_DIR}/3dmodels/<Lib>.3dshapes (spec 6.3); libkit check
+    verifies every model path and file instead.
+- kind: footprint
+  item: "[RCL]_0[46]0[23]_*Metric"
+  rule: F5.2
+  reason: >-
+    0402/0603 chip footprints copied unchanged from KiCad's stock library;
+    the fab-layer RefDes is scaled below 0.5 mm to fit the body.
+
+# --- Symbols --------------------------------------------------------------
+- kind: symbol
+  item: "*"
+  rule: S6.2
+  reason: >-
+    Every LIB symbol is one orderable part: Value is the component value, not
+    the symbol name, and it carries extra fields (Manufacturer, MPN, LCSC,
+    JLC_Type, parameters). Required fields are enforced by the schema instead.
+- kind: symbol
+  item: "*"
+  rule: S5.1
+  reason: >-
+    Parts carry a fixed Footprint instead of footprint filters; libkit check
+    verifies that every footprint exists.
+- kind: symbol
+  item: "*"
+  rule: S5.2
+  reason: Parts use a fixed Footprint, not footprint filters (see S5.1).
+- kind: symbol
+  item: &stock_bases ["*:R", "*:C", "*:C_Polarized", "*:L", "*:FerriteBead"]
+  rule: S3.3
+  reason: Base symbol copied unchanged from KiCad's Device library (no body fill).
+- kind: symbol
+  item: *stock_bases
+  rule: S3.6
+  reason: Base symbol copied unchanged from KiCad's Device library (pin name offset).
+- kind: symbol
+  item: *stock_bases
+  rule: S4.1
+  reason: >-
+    Base passive symbols from KiCad's Device library use 110 mil, unnamed
+    pins; kept unchanged so they match KiCad's stock look.
