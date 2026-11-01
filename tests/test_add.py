@@ -472,3 +472,9 @@ def test_add_1210_inductor_is_not_chip(lib):  # final review I3
     p = prep(lib, "C1047", resolve=ind1210, category="inductors", footprint="LIB_Passives_SMD:L_0805_2012Metric")
     assert p.entry["footprint"] == "LIB_Passives_SMD:L_0805_2012Metric"
     assert p.entry["name"] == p.entry["mpn"]
+
+
+def test_add_common_mode_choke_fills_inductor_fields(lib):  # 4-pin choke: inductors needs current_rating
+    p = prep(lib, "C95572", category="inductors", symbol="R", footprint="easyeda", family="Inductor_SMD",
+             fp_name="L_CommonModeChoke_TDK_ACT1210")
+    assert p.entry["current_rating"] == "200mA" and p.entry["dcr"] == "700mΩ"

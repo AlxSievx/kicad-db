@@ -1,0 +1,219 @@
+{
+ "code": 200,
+ "data": {
+  "componentPageInfo": {
+   "total": 1,
+   "list": [
+    {
+     "componentId": 96776,
+     "componentLibraryType": "expand",
+     "stockCount": 29741,
+     "componentTypeEn": "Common Mode Filters",
+     "erpComponentName": "两路 共模滤波器 阻抗2.6kΩ@10MHz",
+     "componentSource": "shop",
+     "lcscGoodsUrl": "https://www.lcsc.com/product-detail/common-mode-filters_tdk-act1210-510-2p-tl00_C95572.html",
+     "componentPrices": [
+      {
+       "startNumber": 1,
+       "endNumber": 9,
+       "productPrice": 0.6299
+      },
+      {
+       "startNumber": 10,
+       "endNumber": 29,
+       "productPrice": 0.5282
+      },
+      {
+       "startNumber": 30,
+       "endNumber": 99,
+       "productPrice": 0.4577
+      },
+      {
+       "startNumber": 100,
+       "endNumber": 499,
+       "productPrice": 0.3987
+      },
+      {
+       "startNumber": 500,
+       "endNumber": 999,
+       "productPrice": 0.3806
+      },
+      {
+       "startNumber": 1000,
+       "endNumber": -1,
+       "productPrice": 0.3691
+      }
+     ],
+     "buyComponentPrices": [
+      {
+       "startNumber": 1,
+       "endNumber": 9,
+       "productPrice": 0.6068
+      },
+      {
+       "startNumber": 10,
+       "endNumber": 29,
+       "productPrice": 0.5089
+      },
+      {
+       "startNumber": 30,
+       "endNumber": 99,
+       "productPrice": 0.4409
+      },
+      {
+       "startNumber": 500,
+       "endNumber": 999,
+       "productPrice": 0.3666
+      },
+      {
+       "startNumber": 100,
+       "endNumber": 499,
+       "productPrice": 0.384
+      },
+      {
+       "startNumber": 1000,
+       "endNumber": -1,
+       "productPrice": 0.3556
+      }
+     ],
+     "firstSortAccessId": "e89a9371496f4781a6f3a772ca80508c",
+     "secondSortAccessId": "97c273092b6b4964862e3d41c702daec",
+     "canPresaleNumber": 29609,
+     "componentProductType": 0,
+     "mergedComponentCode": null,
+     "urlSuffix": "TDK-ACT1210_510_2PTL00/C95572",
+     "leastPatchNumber": 2,
+     "lossNumber": 0,
+     "isBuyComponent": "1",
+     "noBuyReason": null,
+     "componentAlternativesCode": null,
+     "replaceUrlSuffix": null,
+     "preferredComponentFlag": false,
+     "allowPostFlag": true,
+     "score": null,
+     "idleFlag": null,
+     "estimateDate": null,
+     "fullReelPrice": null,
+     "encapsulationNumber": 6000,
+     "shopCostPrice": 1.88025,
+     "preMinPurchaseNum": 18,
+     "minPurchaseNum": 1,
+     "initialPrice": 0.6299,
+     "componentCode": "C95572",
+     "componentBrandEn": "TDK",
+     "componentModelEn": "ACT1210-510-2P-TL00",
+     "componentImageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20221231_TDK-ACT1210-510-2P-TL00_C95572_front.jpg",
+     "productBigImageAccessId": null,
+     "productBigImageAccessIdUrl": null,
+     "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2412231100_TDK-ACT1210-510-2P-TL00_C95572.pdf",
+     "dataManualFileAccessId": null,
+     "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8590303234805444608-C95572.pdf?response-content-disposition=attachment%3B%20filename%3DC95572.pdf%3B%20filename%2A%3DUTF-8%27%27C95572.pdf&x-oss-date=20261101T205402Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r5G%2B3cnJIU86e5aG3ns3c0QsNZm6ja1Tz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeJVpSsw557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWhphU9Bo2aHD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMI0HE%2BAKKWD5sagAEMQ0WEV1w57C0s2S3Yp2ZOWbZW8ASlr1LSKkFPIE1MOSDzbJOu99Iag4w1mMK1GTZVJAuSbBlgHtKFCXrDSJH2kXLPWz6t9Lig4KawIMyaQYUa8cNXQf0Klm2WtREbOkIQkJbKNVkkanWEnKthu9X2s3jFx58TQ%2BzJk43nbUtDDSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYLPWhqM5DeRjKVWwaNLutmq7%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=94a512d4fc96213e97d9e4c516c8fb370b5e4464e9535e5310dafa90e2ad49da",
+     "dataManualOfficialLink": "",
+     "componentName": "TDK ACT1210-510-2P-TL00",
+     "minImage": "https://assets.lcsc.com/images/lcsc/96x96/20221231_TDK-ACT1210-510-2P-TL00_C95572_front.jpg",
+     "minImageAccessId": null,
+     "minImageAccessIdUrl": null,
+     "imageList": [
+      {
+       "productImage": "https://assets.lcsc.com/images/lcsc/96x96/20221231_TDK-ACT1210-510-2P-TL00_C95572_front.jpg",
+       "productImageAccessId": null,
+       "productBigImage": "https://assets.lcsc.com/images/lcsc/900x900/20221231_TDK-ACT1210-510-2P-TL00_C95572_front.jpg",
+       "productBigImageAccessId": null,
+       "fileType": null
+      },
+      {
+       "productImage": "https://assets.lcsc.com/images/lcsc/96x96/20221231_TDK-ACT1210-510-2P-TL00_C95572_back.jpg",
+       "productImageAccessId": null,
+       "productBigImage": "https://assets.lcsc.com/images/lcsc/900x900/20221231_TDK-ACT1210-510-2P-TL00_C95572_back.jpg",
+       "productBigImageAccessId": null,
+       "fileType": null
+      },
+      {
+       "productImage": "https://assets.lcsc.com/images/lcsc/96x96/20221231_TDK-ACT1210-510-2P-TL00_C95572_blank.jpg",
+       "productImageAccessId": null,
+       "productBigImage": "https://assets.lcsc.com/images/lcsc/900x900/20221231_TDK-ACT1210-510-2P-TL00_C95572_blank.jpg",
+       "productBigImageAccessId": null,
+       "fileType": null
+      }
+     ],
+     "manufacturerBlackFlag": null,
+     "componentNameEn": null,
+     "componentSpecificationEn": "SMD-4P,3.2x2.5mm",
+     "describe": "-55℃~+150℃ 2 2.6kΩ@10MHz 200mA 51uH@100kHz 700mΩ 80V SMD-4P,3.2x2.5mm Common Mode Filters ROHS",
+     "attributes": [
+      {
+       "attribute_name_en": "Operating Temperature",
+       "attribute_value_name": "-55℃~+150℃"
+      },
+      {
+       "attribute_name_en": "Voltage Rating - DC",
+       "attribute_value_name": "80V"
+      },
+      {
+       "attribute_name_en": "Impedance @ Frequency",
+       "attribute_value_name": "2.6kΩ@10MHz"
+      },
+      {
+       "attribute_name_en": "Number of Lines",
+       "attribute_value_name": "2"
+      },
+      {
+       "attribute_name_en": "Current Rating",
+       "attribute_value_name": "200mA"
+      },
+      {
+       "attribute_name_en": "DC Resistance(DCR)",
+       "attribute_value_name": "700mΩ"
+      },
+      {
+       "attribute_name_en": "Inductance @ Frequency",
+       "attribute_value_name": "51uH@100kHz"
+      }
+     ],
+     "rankScore": null,
+     "firstSortName": "Common Mode Filters",
+     "secondSortName": "Filters",
+     "componentBrandHigh": null,
+     "remarkHigh": null,
+     "componentModelHigh": null,
+     "componentCodeHigh": "<span class='lucene_highlight_class'>C95572</span>",
+     "componentSpecificationHigh": null,
+     "rohsFlag": 1,
+     "shopShowPriceFlag": true,
+     "shopShowForeignPriceFlag": true,
+     "shopRealPriceFlag": true,
+     "assemblyComponentFlag": false,
+     "rohsFileId": null,
+     "rohsUrl": null
+    }
+   ],
+   "pageNum": 1,
+   "pageSize": 5,
+   "size": 0,
+   "startRow": 0,
+   "endRow": 0,
+   "pages": 1,
+   "prePage": 0,
+   "nextPage": 0,
+   "isFirstPage": false,
+   "isLastPage": false,
+   "hasPreviousPage": false,
+   "hasNextPage": false,
+   "navigatePages": 0,
+   "navigatepageNums": null,
+   "navigateFirstPage": 0,
+   "navigateLastPage": 0
+  },
+  "sortAndCountVoList": null,
+  "presaleTypeList": [],
+  "brandList": [],
+  "basePart": null,
+  "preferredPart": null,
+  "economicPart": null,
+  "standardPart": null,
+  "dataSheetPart": null,
+  "photo": null,
+  "queryString": "C95572"
+ },
+ "message": null
+}

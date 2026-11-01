@@ -28,7 +28,7 @@ from . import importer, jlc
 from .build import build
 from .datasheet import Checker
 from .discretes import Discrete, classify
-from .entries import KINDS, POLAR, NAME_CHARS, is_chip, kind_of, manufacturer_name, mpn_name, passive_entry
+from .entries import KINDS, POLAR, NAME_CHARS, _attr, is_chip, kind_of, manufacturer_name, mpn_name, passive_entry
 from .jlc import JlcPart, datasheet_url
 from .kicad import find_kicad_cli, kicad_share
 from .klc import run_klc
@@ -300,6 +300,11 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
         if symbol == "easyeda":
             easyeda()
         entry = _entry(part, kind, schema, fp_ref, name, today)
+        if category == "inductors" and not kind:  # e.g. common-mode chokes: fields from JLC's record
+            for key, attr in (("current_rating", "Current Rating"), ("dcr", "DC Resistance(DCR)")):
+                value = _attr(part, attr, required=False)
+                if value and key not in entry:
+                    entry[key] = "".join(value.split())
         if disc:
             declared = {f.key for f in schema.categories[category].fields}
             entry.update({k: v for k, v in disc.fields.items() if k in declared and k not in entry})
