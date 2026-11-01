@@ -76,3 +76,34 @@ def package_name(kind: str, size: str) -> str:
 
 def footprint_name(kind: str, size: str) -> str:
     return CASES[size][1] if kind == "tantalum" else CANS[size]
+
+
+# Keywords that find a size's records in JLC's search (its keyword index knows
+# the package text, not the case letter).
+def _keywords(kind: str, value_text: str, size: str) -> list[str]:
+    if kind == "tantalum":
+        return [f"{value_text} CASE-{size}-{CASES[size][0]}", f"{value_text} tantalum"]
+    d, l = size.split("x")
+    heights = {"5.4": ["5.4", "5.5"], "7.7": ["7.7", "8"], "10.5": ["10.5", "10", "10.2"]}.get(l, [l])
+    if size == "6.3x5.4":
+        heights = ["5.4", "5.5", "5.8"]
+    return [f"{value_text} SMD,D{d}xL{h}mm" for h in heights]
+
+
+def candidates(kind: str, value: float, size: str, search=None) -> list[JlcPart]:
+    """JLC records of this kind, size and capacitance (within 1%), any brand or stock."""
+    from .entries import part_value
+    from .jlc import search as jlc_search
+    from .values import format_value
+    search = search or jlc_search
+    if size not in (CASES if kind == "tantalum" else CANS):
+        raise ValueError(f"unknown {kind} size {size!r}")
+    found: dict[str, JlcPart] = {}
+    for kw in _keywords(kind, format_value(value, "F"), size):
+        for p in search(kw, pages=2):
+            if size_of(kind, p) != size:
+                continue
+            v = part_value("capacitor", p)
+            if v is not None and abs(v - value) <= 0.01 * value:
+                found.setdefault(p.lcsc, p)
+    return list(found.values())

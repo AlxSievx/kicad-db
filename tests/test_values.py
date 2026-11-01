@@ -50,3 +50,8 @@ def test_metric_1210_2512():
     from libkit.entries import footprint_for
     assert footprint_for("capacitor", "1210") == "LIB_Passives_SMD:C_1210_3225Metric"
     assert footprint_for("resistor", "2512") == "LIB_Passives_SMD:R_2512_6332Metric"
+
+
+def test_large_capacitance_stays_in_uf():  # plan 6: 1000uF electrolytics
+    assert format_value(1e-3, "F") == "1000uF" and parse_value("1000uF", "F") == 1e-3
+    assert parse_value("1mF", "F") == 1e-3

@@ -135,14 +135,27 @@ def _bulk_add(args) -> int:
     from .datasheet import Checker
     from .entries import KINDS
     from .values import parse_value
+    from .polar import CANS, CASES
     root = find_root()
     unit = KINDS[args.kind][2]
     if args.kind == "capacitor" and args.voltage is None:
         raise ValueError("capacitors need --voltage")
+    if args.kind == "tantalum":
+        if args.case not in CASES:
+            raise ValueError(f"tantalum needs --case, one of {', '.join(CASES)}")
+        args.package = args.case
+    elif args.kind == "electrolytic":
+        if args.can not in CANS:
+            raise ValueError(f"electrolytic needs --can, one of {', '.join(CANS)}")
+        args.package = args.can
+    else:
+        if not args.package or not args.tolerance:
+            raise ValueError(f"{args.kind}s need --package and --tolerance")
     run = dict(
         kind=args.kind, series_name=args.series,
         start=parse_value(args.start, unit), stop=parse_value(args.stop, unit),
-        package=args.package, max_tolerance=_percent(args.tolerance, "tolerance"),
+        package=args.package,
+        max_tolerance=_percent(args.tolerance, "tolerance") if args.tolerance else 1.0,
         min_voltage=_volts(args.voltage) if args.voltage else None,
         dielectrics=tuple(d.strip() for d in args.dielectric.split(",") if d.strip()),
         min_power=_watts(args.min_power) if args.min_power else None,
@@ -315,12 +328,14 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(func=_vendor_sym)
 
     p = sub.add_parser("bulk-add", help="add resistors or capacitors for a value series (dry run by default)")
-    p.add_argument("kind", choices=["resistor", "capacitor"])
+    p.add_argument("kind", choices=["resistor", "capacitor", "tantalum", "electrolytic"])
     p.add_argument("--series", required=True, choices=["E6", "E12", "E24", "E48", "E96"])
     p.add_argument("--from", dest="start", required=True, help="first value, e.g. 1k or 10n")
     p.add_argument("--to", dest="stop", required=True, help="last value (inclusive)")
-    p.add_argument("--package", required=True, choices=sorted(METRIC))
-    p.add_argument("--tolerance", required=True, help="worst acceptable tolerance, e.g. 1%%")
+    p.add_argument("--package", choices=sorted(METRIC), help="resistors/capacitors: chip size")
+    p.add_argument("--case", help="tantalum: case A, B, C or D")
+    p.add_argument("--can", help="electrolytic: can 5x5.4, 6.3x5.4, 6.3x7.7, 8x10.5 or 10x10.5")
+    p.add_argument("--tolerance", help="resistors/capacitors: worst acceptable tolerance, e.g. 1%%")
     p.add_argument("--voltage", help="minimum voltage rating for capacitors, e.g. 16V")
     p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
     p.add_argument("--min-power", help="resistors: minimum power rating, e.g. 1W")

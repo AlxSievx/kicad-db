@@ -73,3 +73,102 @@ def test_polarized_pins_match_pads(minilib, schema):  # plan 6 Review Focus 3
                                                   passive_entry("electrolytic", part("C125975"), schema)])
     build(minilib)
     assert [str(i) for i in check(minilib, klc=False) if "pin" in i.message or i.severity == "error"] == []
+
+
+# ---- Task 4: bulk add -----------------------------------------------------------------------------
+from dataclasses import replace  # noqa: E402
+
+from libkit.bulk import apply, load_plan, plan, save_plan  # noqa: E402
+from libkit.datasheet import Result  # noqa: E402
+from libkit.pick import pick_polar  # noqa: E402
+
+
+def variant(code, **kw):
+    p = part(code)
+    attrs = dict(p.attributes)
+    for k in ("Voltage Rating", "Capacitance"):
+        if k in kw:
+            attrs[k] = kw.pop(k)
+    return replace(p, attributes=attrs, **kw)
+
+
+def test_voltage_order_within_tier(schema):  # plan 6 Review Focus 5
+    basic16 = variant("C7171", lcsc="C901", jlc_type="Basic")
+    ext35 = variant("C7171", lcsc="C902", jlc_type="Extended", **{"Voltage Rating": "35V"})
+    ext16 = variant("C7171", lcsc="C903", jlc_type="Extended")
+    assert pick_polar("tantalum", 1e-5, "A", [ext35, basic16], schema).part.lcsc == "C901"
+    assert pick_polar("tantalum", 1e-5, "A", [ext16, ext35], schema).part.lcsc == "C902"
+
+
+def test_odd_records_rejected(schema):  # plan 6 Review Focus 4
+    bad_v = variant("C7171", lcsc="C904", jlc_type="Basic", **{"Voltage Rating": "-"})
+    bad_c = variant("C7171", lcsc="C905", jlc_type="Basic", **{"Capacitance": "10uF±20%"})
+    good = variant("C7171", lcsc="C906", jlc_type="Extended")
+    p = pick_polar("tantalum", 1e-5, "A", [bad_v, bad_c, good], schema)
+    assert p.part.lcsc == "C906"
+    p = pick_polar("tantalum", 1e-5, "A", [bad_v], schema)
+    assert p.part is None and "C904" in p.note
+
+
+def test_pick_polar_rules(schema):
+    unknown = variant("C7171", lcsc="C907", brand="Nobody", mpn="XYZ")
+    low = variant("C7171", lcsc="C908", stock=10)
+    other_case = variant("C16133", lcsc="C909")
+    p = pick_polar("tantalum", 1e-5, "A", [unknown, low, other_case], schema)
+    assert p.part is None and "unknown manufacturer" in p.note
+
+
+def test_pick_polar_prefers_english(schema):
+    a = variant("C7171", lcsc="C910", stock=900_000)
+    b = variant("C7171", lcsc="C911", stock=5_000)
+    lang = lambda p: Result("zh" if p.lcsc == "C910" else "en")  # noqa: E731
+    p = pick_polar("tantalum", 1e-5, "A", [a, b], schema, lang=lang)
+    assert p.part.lcsc == "C911" and p.datasheet.lang == "en"
+
+
+def fake_search(by_value):
+    def search(keyword, pages=2, post=None):
+        return by_value.get(keyword.split()[0], [])
+    return search
+
+
+def lib_with_polar(minilib):
+    shutil.copy(REPO / "src" / "symbols" / "passives.kicad_sym", minilib / "src" / "symbols" / "passives.kicad_sym")
+    for f in ("CP_EIA-3216-18_Kemet-A",):
+        shutil.copy(REPO / "footprints" / "LIB_Passives_SMD.pretty" / f"{f}.kicad_mod",
+                    minilib / "footprints" / "LIB_Passives_SMD.pretty")
+        for m in (REPO / "3dmodels" / "LIB_Passives_SMD.3dshapes").glob(f"{f}.*"):
+            shutil.copy(m, minilib / "3dmodels" / "LIB_Passives_SMD.3dshapes")
+    return minilib
+
+
+RUN_TA = dict(kind="tantalum", series_name="E6", start=1e-5, stop=1.5e-5, package="A",
+              max_tolerance=1.0, min_voltage=None, dielectrics=(), min_power=None)
+
+
+def test_plan_tantalum_rows(minilib):
+    root = lib_with_polar(minilib)
+    rows = plan(root, **RUN_TA, search=fake_search({"10uF": [part("C7171")]}))
+    assert [(r.value, r.status) for r in rows] == [("10uF", "new"), ("15uF", "none")]
+    assert rows[0].name == "C_10u_CaseA_16V_Ta"
+
+
+def test_write_tantalum_plan(minilib):
+    root = lib_with_polar(minilib)
+    rows = plan(root, **RUN_TA, search=fake_search({"10uF": [part("C7171")]}))
+    save_plan(root, RUN_TA, rows)
+    back, _ = load_plan(root, RUN_TA)
+    assert apply(root, "tantalum", back) == 1
+    assert "C_10u_CaseA_16V_Ta" in (root / "parts" / "capacitors.yaml").read_text(encoding="utf-8")
+    assert [i for i in check(root, klc=False) if i.severity == "error"] == []
+    # a second dry run sees the part as existing
+    again = plan(root, **RUN_TA, search=fake_search({"10uF": [part("C7171")]}))
+    assert again[0].status == "exists"
+
+
+def test_cli_case_required(minilib, monkeypatch, capsys):
+    from libkit import __main__ as cli
+    monkeypatch.chdir(minilib)
+    assert cli.main(["bulk-add", "tantalum", "--series", "E6", "--from", "1u", "--to", "10u"]) == 1
+    err = capsys.readouterr().err
+    assert "--case" in err and "A, B, C, D" in err

@@ -14,7 +14,7 @@ _PREFIX = {"p": 1e-12, "n": 1e-9, "u": 1e-6, "µ": 1e-6, "m": 1e-3, "": 1.0, "R"
            "k": 1e3, "M": 1e6, "G": 1e9}
 # Prefixes used when formatting, smallest first.
 _FORMAT_PREFIXES = {
-    "F": ["p", "n", "u", "m", ""],
+    "F": ["p", "n", "u"],  # capacitors stay in uF above 1000uF (1000uF, not 1mF), as datasheets write them
     "H": ["n", "u", "m", ""],
     "Ω": ["m", "", "k", "M", "G"],
 }
@@ -88,7 +88,7 @@ def spellings(v: float, unit: str) -> list[str]:
         out.append(f"{whole}{pre or 'R'}{frac}")
     if unit in ("F", "H") and float(mant) >= 100:
         idx = _FORMAT_PREFIXES[unit].index(pre)
-        if idx + 1 < len(_FORMAT_PREFIXES[unit]):
+        if idx + 1 < len(_FORMAT_PREFIXES[unit]) and _FORMAT_PREFIXES[unit][idx + 1]:
             nxt = _FORMAT_PREFIXES[unit][idx + 1]
             out.append(f"{round(float(mant) / 1000, 6):g}{nxt}{unit}")
     if unit in ("F", "H"):
