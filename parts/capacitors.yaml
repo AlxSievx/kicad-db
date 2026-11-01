@@ -9,6 +9,7 @@ parts:
     lcsc: C1525
     jlc_type: Basic
     datasheet: https://www.lcsc.com/datasheet/C1525.pdf
+    datasheet_lang: en
     status: active
     stock: "35620904"
     stock_checked: "2026-11-01"

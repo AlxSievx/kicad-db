@@ -9,6 +9,7 @@ parts:
     lcsc: C25744
     jlc_type: Basic
     datasheet: https://www.lcsc.com/datasheet/C25744.pdf
+    datasheet_lang: en
     status: active
     stock: "16650328"
     stock_checked: "2026-11-01"
