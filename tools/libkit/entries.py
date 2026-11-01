@@ -137,6 +137,25 @@ def _array(part: JlcPart) -> str | None:
     return None
 
 
+def _value(kind: str, part: JlcPart) -> tuple[float, str]:
+    """(value in the kind's unit, test frequency for beads or "")."""
+    unit = _kind(kind)[2]
+    raw = _attr(part, {"resistor": "Resistance", "capacitor": "Capacitance", "inductor": "Inductance",
+                       "bead": "Impedance @ Frequency"}[kind])
+    frequency = ""
+    if kind == "bead":
+        raw, _, frequency = raw.partition("@")
+    return parse_value(_compact(raw), unit), frequency
+
+
+def part_value(kind: str, part: JlcPart) -> float | None:
+    """The part's resistance/capacitance/inductance/impedance, or None when JLC has none."""
+    try:
+        return _value(kind, part)[0]
+    except ValueError:
+        return None
+
+
 def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None = None, *,
                   footprint: str | None = None, known_only: bool = True) -> dict[str, str]:
     """The full YAML entry for a resistor, capacitor, inductor or ferrite bead from its JLC record.
@@ -161,13 +180,7 @@ def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None =
             raise ValueError(f"{part.lcsc}: package {part.package!r} is not a chip package; "
                              "a footprint must be given")
         footprint = footprint_for(kind, part.package)
-    value_key = {"resistor": "Resistance", "capacitor": "Capacitance", "inductor": "Inductance",
-                 "bead": "Impedance @ Frequency"}[kind]
-    raw_value = _attr(part, value_key)
-    frequency = ""
-    if kind == "bead":
-        raw_value, _, frequency = raw_value.partition("@")
-    value = parse_value(_compact(raw_value), unit)
+    value, frequency = _value(kind, part)
     value_text = format_value(value, unit) + (f"@{_compact(frequency)}" if frequency else "")
     entry = {
         "name": "",

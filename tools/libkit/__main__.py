@@ -160,6 +160,38 @@ def _bulk_add(args) -> int:
     return 0
 
 
+def _table(rows: list[tuple]) -> None:
+    """Print rows as aligned columns; the last column is not padded."""
+    widths = [max(len(str(row[i])) for row in rows) for i in range(len(rows[0]) - 1)]
+    for row in rows:
+        print("  ".join(str(c).ljust(w) for c, w in zip(row, widths)) + "  " + str(row[-1]))
+
+
+def _find(args) -> int:
+    from .entries import KINDS
+    from .find import find
+    from .values import parse_value
+    root = find_root()
+    if args.kind == "capacitor" and args.voltage is None:
+        raise ValueError("capacitors need --voltage")
+    opts = find(root, args.kind, parse_value(args.value, KINDS[args.kind][2]), args.package,
+                max_tolerance=_percent(args.tolerance, "tolerance") if args.tolerance else None,
+                min_voltage=_volts(args.voltage) if args.voltage else None,
+                dielectrics=tuple(d.strip() for d in args.dielectric.split(",") if d.strip()),
+                limit=args.limit)
+    if not opts:
+        print("no candidates")
+        return 0
+    rows = [("LCSC", "MPN", "manufacturer", "type", "stock", "tol", "V/current", "dielectric/DCR", "name", "notes")]
+    for o in opts:
+        e = o.entry or {}
+        rows.append((o.part.lcsc, o.part.mpn, e.get("manufacturer", o.part.brand), o.part.jlc_type, o.part.stock,
+                     e.get("tolerance", "-"), e.get("voltage") or e.get("current_rating") or "-",
+                     e.get("dielectric") or e.get("dcr") or "-", e.get("name", "-"), "; ".join(o.notes)))
+    _table(rows)
+    return 0
+
+
 def _refresh_stock(args) -> int:
     from .parts import load_parts
     from .stock import refresh
@@ -219,6 +251,16 @@ def main(argv: list[str] | None = None) -> int:
                    help="write the new parts of the last dry run with these options, then build")
     p.add_argument("--skip", help="with --write: values of the dry run not to add, e.g. 62k,1.8k")
     p.set_defaults(func=_bulk_add)
+
+    p = sub.add_parser("find", help="list JLC candidates for one passive value (network)")
+    p.add_argument("kind", choices=["resistor", "capacitor", "inductor", "bead"])
+    p.add_argument("value", help="e.g. 62k, 680n, 10u, 600R (bead impedance)")
+    p.add_argument("--package", required=True, help="e.g. 0402")
+    p.add_argument("--tolerance", help="worst acceptable tolerance, e.g. 1%%")
+    p.add_argument("--voltage", help="minimum voltage rating for capacitors, e.g. 25V")
+    p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
+    p.add_argument("--limit", type=int, default=10, help="rows to show (default %(default)s)")
+    p.set_defaults(func=_find)
 
     p = sub.add_parser("refresh-stock", help="re-query stock and JLC type of every part")
     p.set_defaults(func=_refresh_stock)
