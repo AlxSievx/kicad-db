@@ -18,6 +18,8 @@ The spec is split into four plans; each leaves a usable library behind.
 2. JLC data source, bulk-add of passives, stock refresh (spec §6.6, §6.7 bulk/stock) — done: `2026-11-01-jlc-bulk-add.md`.
 3. Single-part import via easyeda2kicad + normalisation (spec §6.7 single add, §6.5 unique symbols) — done: `2026-11-01-single-add.md`.
 4. Review GUI, layout A (spec §6.9), discrete base symbols, local parts — done: `2026-11-01-review-gui.md`.
+5. JLC BOM/CPL export — planned, deferred: `2026-11-01-jlc-export.md`.
+6. Passive series (1210, 2512, mΩ shunts, tantalum, electrolytic) — done: `2026-11-01-passive-series.md`.
 
 ## Global Constraints
 

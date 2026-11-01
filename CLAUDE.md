@@ -30,6 +30,9 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 .venv\Scripts\python -m libkit jlc C1525          # look up one LCSC part (network)
 .venv\Scripts\python -m libkit bulk-add resistor --series E24 --from 1k --to 1M --package 0402 --tolerance 1%
 .venv\Scripts\python -m libkit bulk-add capacitor --series E6 --from 1n --to 1u --package 0402 --tolerance 10% --voltage 16V
+.venv\Scripts\python -m libkit bulk-add resistor --series E6 --from 1mR --to 100mR --package 2512 --tolerance 1% --min-power 1W
+.venv\Scripts\python -m libkit bulk-add tantalum --series E6 --from 1u --to 470u --case A          # cases A–D
+.venv\Scripts\python -m libkit bulk-add electrolytic --series E6 --from 1u --to 1000u --can 6.3x7.7  # 5x5.4 … 10x10.5
 .venv\Scripts\python -m libkit refresh-stock      # re-query stock + JLC type of every part (network)
 .venv\Scripts\python -m libkit find resistor 62k --package 0402 --tolerance 1%   # candidates for one value (network)
 .venv\Scripts\python -m libkit add C1046         # single add, dry run (network); --write applies it
@@ -61,6 +64,10 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   (see the note). Column `ds` = datasheet language. `--dielectric` defaults to
   `C0G,NP0,X7R,X5R`. Inductors and ferrite beads are single-add only (no parametric source).
   Capacitors below 10pF are not needed (user decision): start series at 10p.
+  Chip sizes: 0402, 0603, 0805, 1206, 1210, 2512. `--min-power 1W` filters resistors (shunts).
+  Tantalum (`--case A|B|C|D`) and SMD electrolytic (`--can 5x5.4|6.3x5.4|6.3x7.7|8x10.5|10x10.5`):
+  one part per value and size, the highest voltage within the best JLC tier (user decision);
+  candidates come from JLC's keyword search, `--tolerance`/`--voltage` are optional filters.
 - **Find (one value):** `libkit find <resistor|capacitor|inductor|bead> <value> --package …`
   lists candidates ordered by the rules (Basic/Preferred, then stock), with notes
   where a part misses the bulk rules (`Extended`, `stock < 1000`, unknown
@@ -126,14 +133,16 @@ Names may only contain letters, digits and `_ - . + ,` (KLC G1.1). Write `%` as 
 | Category | Pattern | Example |
 |---|---|---|
 | Capacitors | `C_<value w/o F>_<pkg>_<voltage>_<dielectric>` | `C_100n_0402_16V_X7R` |
-| Resistors | `R_<value>_<pkg>_<tol>pct` | `R_10k_0402_1pct` |
+| Resistors | `R_<value>_<pkg>_<tol>pct` (below 1R: `mR`) | `R_10k_0402_1pct`, `R_10mR_2512_1pct` |
+| Tantalum caps | `C_<value w/o F>_Case<X>_<voltage>_Ta` | `C_10u_CaseA_16V_Ta` |
+| Electrolytic caps | `C_<value w/o F>_D<d>x<h>_<voltage>_Al` | `C_100u_D6.3x7.7_35V_Al` |
 | Inductors (chip, 0402–1206) | `L_<value w/o H>_<pkg>_<current>` | `L_10u_0805_15mA` |
 | Inductors (other packages) | the MPN, value `10uH` | `MWSA0503S-100MT` |
 | Ferrite beads (in Inductors) | `FB_<impedance>_<pkg>_<current>`, value `100R@100MHz` | `FB_100R_0805_800mA` |
 | Everything else | the MPN (characters outside the set above become `_`) | `TPS62130RGTR` |
 
-Value notation (`value:` field): resistors `100R`, `4.7k`, `1M`; capacitors
-`10pF`, `100nF`, `4.7uF`; inductors `10uH`. Other spellings are generated into
+Value notation (`value:` field): resistors `10mR`, `100R`, `4.7k`, `1M` (`mR` = milliohm,
+`M` = megaohm); capacitors `10pF`, `100nF`, `4.7uF`, `1000uF` (never `mF`); inductors `10uH`. Other spellings are generated into
 the search keywords automatically.
 
 ## Part selection rules (automatic picks: bulk add, "find me a part for X")
