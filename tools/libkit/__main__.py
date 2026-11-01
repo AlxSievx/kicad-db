@@ -39,9 +39,32 @@ def _vendor_sym(args) -> int:
     return 0
 
 
+def _print_issues(issues) -> None:
+    for i in issues:
+        print(i, file=sys.stderr if i.severity == "error" else sys.stdout)
+
+
+def _build(args) -> int:
+    from .build import BuildError, build
+    from .parts import load_parts, validate
+    root = find_root()
+    try:
+        written = build(root)
+    except BuildError as e:
+        _print_issues(e.issues)
+        return 1
+    schema = load_schema(root)
+    _print_issues([i for i in validate(load_parts(root, schema), schema, root) if i.severity == "warning"])
+    print(f"built {len(written)} files")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="libkit")
     sub = ap.add_subparsers(dest="cmd", required=True)
+
+    p = sub.add_parser("build", help="generate symbol libraries and library tables")
+    p.set_defaults(func=_build)
 
     p = sub.add_parser("vendor-fp", help="copy a stock KiCad footprint (+3D model) into a family")
     p.add_argument("ref", help="<StockLib>:<Footprint>")
