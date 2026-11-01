@@ -1,0 +1,255 @@
+{
+ "code": 200,
+ "data": {
+  "componentPageInfo": {
+   "total": 13,
+   "list": [
+    {
+     "componentId": 3314,
+     "componentLibraryType": "expand",
+     "stockCount": 0,
+     "componentTypeEn": "MOSFETs",
+     "erpComponentName": "IRFPE50PBF",
+     "componentSource": "shop",
+     "lcscGoodsUrl": "https://www.lcsc.com/product-detail/mosfets_infineon-technologies-irfpe50pbf_C2932.html",
+     "componentPrices": [
+      {
+       "startNumber": 1,
+       "endNumber": 9,
+       "productPrice": 3.4776
+      },
+      {
+       "startNumber": 10,
+       "endNumber": 24,
+       "productPrice": 2.9904
+      },
+      {
+       "startNumber": 25,
+       "endNumber": 99,
+       "productPrice": 2.687
+      },
+      {
+       "startNumber": 100,
+       "endNumber": 399,
+       "productPrice": 2.3736
+      },
+      {
+       "startNumber": 400,
+       "endNumber": 799,
+       "productPrice": 2.2342
+      },
+      {
+       "startNumber": 800,
+       "endNumber": 1999,
+       "productPrice": 2.1719
+      },
+      {
+       "startNumber": 2000,
+       "endNumber": 3999,
+       "productPrice": 2.1489
+      },
+      {
+       "startNumber": 4000,
+       "endNumber": -1,
+       "productPrice": 2.1325
+      }
+     ],
+     "buyComponentPrices": [
+      {
+       "startNumber": 1,
+       "endNumber": 9,
+       "productPrice": 3.35
+      },
+      {
+       "startNumber": 10,
+       "endNumber": 24,
+       "productPrice": 2.8807
+      },
+      {
+       "startNumber": 400,
+       "endNumber": 799,
+       "productPrice": 2.1522
+      },
+      {
+       "startNumber": 800,
+       "endNumber": 1999,
+       "productPrice": 2.0922
+      },
+      {
+       "startNumber": 4000,
+       "endNumber": -1,
+       "productPrice": 2.0543
+      },
+      {
+       "startNumber": 25,
+       "endNumber": 99,
+       "productPrice": 2.5884
+      },
+      {
+       "startNumber": 2000,
+       "endNumber": 3999,
+       "productPrice": 2.0701
+      },
+      {
+       "startNumber": 100,
+       "endNumber": 399,
+       "productPrice": 2.2865
+      }
+     ],
+     "firstSortAccessId": "af6f8457ec9d400e9ccbfa9dd9889152",
+     "secondSortAccessId": "c379c2fda52a490e92606b90e6c81760",
+     "canPresaleNumber": 0,
+     "componentProductType": 0,
+     "mergedComponentCode": null,
+     "urlSuffix": "InfineonTechnologies-IRFPE50PBF/C2932",
+     "leastPatchNumber": 0,
+     "lossNumber": 0,
+     "isBuyComponent": "1",
+     "noBuyReason": null,
+     "componentAlternativesCode": null,
+     "replaceUrlSuffix": null,
+     "preferredComponentFlag": false,
+     "allowPostFlag": true,
+     "score": null,
+     "idleFlag": null,
+     "estimateDate": null,
+     "fullReelPrice": null,
+     "encapsulationNumber": 25,
+     "shopCostPrice": 19.24,
+     "preMinPurchaseNum": 3,
+     "minPurchaseNum": 3,
+     "initialPrice": 3.4776,
+     "componentCode": "C2932",
+     "componentBrandEn": "Infineon Technologies",
+     "componentModelEn": "IRFPE50PBF",
+     "componentImageUrl": "",
+     "productBigImageAccessId": null,
+     "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583059975337332736-C2932/C2932-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T152916Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rgO%2BPEpY5AwfaCdBXnnVISbc1mopbhhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb5a4iIw557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jLciRrO5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5VWD41o5ch3ARqAATHiO%2FZafttj7TZcVC8AxSo2B12QsMke6ULOJ8XGA7y8XheOt3e8f2dniaFDrVpn1EXd1%2ByTVk3ZfXulEsSHsB0tSkd6rsyx8CKs2p0MFKMzjLZpqHJ5ZuT067JNFM7eazj83eZBg5yDyukXFuPopytKeYoznX9mxJMHlBmIC22IIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYUpYpHQav4iv3VyRGaBJMSJe%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4fbf74dd754e4c9fb40eefca0ca44658a9e5c1b04282647881c8b9b949b0f7d1",
+     "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1804140311_Infineon-Technologies-IRFPE50PBF_C2932.pdf",
+     "dataManualFileAccessId": null,
+     "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588887629912162304-C2932.pdf?response-content-disposition=attachment%3B%20filename%3DC2932.pdf%3B%20filename%2A%3DUTF-8%27%27C2932.pdf&x-oss-date=20261101T152916Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5vHB8DVrOxF8fuyN37btnY9aLZ%2BoZLnpDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYtM%2Fl0w557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWopt3dIeDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIMi%2FyG6KWD5sagAGYMKj9RuRpgydQv1TXJQZwhT%2BJvsQHP9ozHAZfhkV104CHnLVeIvwRVTCo9553CGZzPWQo8bfXPmeL3zGeMk8myaKJ%2FDdaznRgVGMmB9iBmjnjBrccuJPQgZb8UN7TczfRbcZLNACKntPQosna8gdtoK3jy%2BBMs8z%2BeKtZRpTHXSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXrLzaA3dF9Y5XjRvhd9RNWLF%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4a220c7a75961596515d8161fa9350d0c18134c37e21ffb34559eb3aa0db78e2",
+     "dataManualOfficialLink": "",
+     "componentName": "Infineon IRFPE50PBF",
+     "minImage": "",
+     "minImageAccessId": null,
+     "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583059976239648768-C2932/C2932-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T152916Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rgO%2BPEpY5AwfaCdBXnnVISbc1mopbhhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb5a4iIw557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jLciRrO5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5VWD41o5ch3ARqAATHiO%2FZafttj7TZcVC8AxSo2B12QsMke6ULOJ8XGA7y8XheOt3e8f2dniaFDrVpn1EXd1%2ByTVk3ZfXulEsSHsB0tSkd6rsyx8CKs2p0MFKMzjLZpqHJ5ZuT067JNFM7eazj83eZBg5yDyukXFuPopytKeYoznX9mxJMHlBmIC22IIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYUpYpHQav4iv3VyRGaBJMSJe%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=84573afd2fa273d84d4caf01214c3ca6f6b6d576b9d89e6807515f7c82861dff",
+     "imageList": [
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      },
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      },
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      }
+     ],
+     "manufacturerBlackFlag": null,
+     "componentNameEn": null,
+     "componentSpecificationEn": "TO-247AC-3",
+     "describe": "-55℃~+150℃ 1 N-channel 1.2Ω@10V 190W 200nC@10V 3.1nF 490pF 4V 7.8A 800V 800pF TO-247AC-3 MOSFETs ROHS",
+     "attributes": [
+      {
+       "attribute_name_en": "Operating Temperature",
+       "attribute_value_name": "-55℃~+150℃"
+      },
+      {
+       "attribute_name_en": "Input Capacitance(Ciss)",
+       "attribute_value_name": "3.1nF"
+      },
+      {
+       "attribute_name_en": "Number",
+       "attribute_value_name": "1 N-channel"
+      },
+      {
+       "attribute_name_en": "Gate Threshold Voltage (Vgs(th))",
+       "attribute_value_name": "4V"
+      },
+      {
+       "attribute_name_en": "Gate Charge(Qg)",
+       "attribute_value_name": "200nC@10V"
+      },
+      {
+       "attribute_name_en": "Reverse Transfer Capacitance (Crss@Vds)",
+       "attribute_value_name": "490pF"
+      },
+      {
+       "attribute_name_en": "Current - Continuous Drain(Id)",
+       "attribute_value_name": "7.8A"
+      },
+      {
+       "attribute_name_en": "Drain to Source Voltage",
+       "attribute_value_name": "800V"
+      },
+      {
+       "attribute_name_en": "Output Capacitance(Coss)",
+       "attribute_value_name": "800pF"
+      },
+      {
+       "attribute_name_en": "Pd - Power Dissipation",
+       "attribute_value_name": "190W"
+      },
+      {
+       "attribute_name_en": "RDS(on)",
+       "attribute_value_name": "1.2Ω@10V"
+      }
+     ],
+     "rankScore": null,
+     "firstSortName": "MOSFETs",
+     "secondSortName": "Transistors/Thyristors",
+     "componentBrandHigh": null,
+     "remarkHigh": null,
+     "componentModelHigh": null,
+     "componentCodeHigh": "<span class='lucene_highlight_class'>C2932</span>",
+     "componentSpecificationHigh": null,
+     "rohsFlag": 1,
+     "shopShowPriceFlag": true,
+     "shopShowForeignPriceFlag": true,
+     "shopRealPriceFlag": true,
+     "assemblyComponentFlag": false,
+     "rohsFileId": null,
+     "rohsUrl": null
+    }
+   ],
+   "pageNum": 1,
+   "pageSize": 5,
+   "size": 0,
+   "startRow": 0,
+   "endRow": 0,
+   "pages": 3,
+   "prePage": 0,
+   "nextPage": 0,
+   "isFirstPage": false,
+   "isLastPage": false,
+   "hasPreviousPage": false,
+   "hasNextPage": false,
+   "navigatePages": 0,
+   "navigatepageNums": null,
+   "navigateFirstPage": 0,
+   "navigateLastPage": 0
+  },
+  "sortAndCountVoList": null,
+  "presaleTypeList": [],
+  "brandList": [],
+  "basePart": null,
+  "preferredPart": null,
+  "economicPart": null,
+  "standardPart": null,
+  "dataSheetPart": null,
+  "photo": null,
+  "queryString": "C2932"
+ },
+ "message": null
+}
