@@ -276,3 +276,54 @@ def test_fp_preview_without_text(minilib):  # browser check: Value text dwarfed 
     render_previews(minilib, minilib / "out", run=run)
     assert seen and "--sp" in seen[0] and seen[0][seen[0].index("-l") + 1] == "F.Cu,B.Cu,F.SilkS,F.Fab,F.CrtYd"
     assert lib_fp.read_bytes() == before  # only a temporary copy is changed
+
+
+def test_library_hash_covers_footprints_symbols_schema(minilib):  # final review I2
+    h = library_hash(minilib)
+    fp = minilib / "footprints/LIB_Passives_SMD.pretty/R_0402_1005Metric.kicad_mod"
+    fp.write_text(fp.read_text(encoding="utf-8").replace("(size 0.54 0.64)", "(size 0.55 0.64)"), encoding="utf-8")
+    h2 = library_hash(minilib)
+    assert h2 != h
+    sym = minilib / "src/symbols/passives.kicad_sym"
+    sym.write_text(sym.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+    h3 = library_hash(minilib)
+    assert h3 != h2
+    allow = minilib / "schema/klc-allowlist.yaml"
+    allow.write_text(allow.read_text(encoding="utf-8") + "\n# x\n", encoding="utf-8")
+    assert library_hash(minilib) != h3
+
+
+CHROME = [Path(r"C:\Program Files\Google\Chrome\Application\chrome.exe"),
+          Path(r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe")]
+
+
+def _dump_dom(index: Path) -> str:
+    import subprocess
+    exe = next((c for c in CHROME if c.exists()), None)
+    if exe is None:
+        pytest.skip("no Chrome/Edge for a headless page test")
+    r = subprocess.run([str(exe), "--headless=new", "--disable-gpu", "--dump-dom", index.as_uri()],
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60)
+    return r.stdout
+
+
+@pytest.mark.browser
+def test_page_stale_results_do_not_mark_rows(minilib):  # final review I3
+    import html
+    from libkit.parts import Issue
+    from libkit.review import write_check_results
+    build(minilib)
+    write_check_results(minilib, [Issue("error", "R_10k_0402_1pct", "old finding")], klc=False)
+    out = minilib / REVIEW_DIR
+
+    def rows_and_pill():
+        dom = html.unescape(_dump_dom(out / "index.html"))
+        rows = re.search(r'<tbody id="rows">(.*?)</tbody>', dom, re.S).group(1)
+        pill = re.search(r'<span id="checkpill"[^>]*>(.*?)</span>', dom, re.S).group(1)
+        return rows, pill
+    rows, pill = rows_and_pill()
+    assert "●" in rows and "1 errors" in pill  # current results mark the row
+    edit(minilib, "power: 62.5mW", "power: 100mW")
+    build(minilib)
+    rows, pill = rows_and_pill()
+    assert "older than the data" in pill and "●" not in rows

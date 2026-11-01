@@ -33,15 +33,25 @@ def _canonical(obj) -> str:
     return json.dumps(obj, sort_keys=True, ensure_ascii=True, separators=(",", ":"))
 
 
-def _hash(parts: list[Part]) -> str:
+SOURCE_GLOBS = ("schema/*.yaml", "src/symbols/*.kicad_sym", "footprints/*.pretty/*.kicad_mod")
+
+
+def _hash(root: Path, parts: list[Part]) -> str:
+    """Part data plus every file check looks at besides them (schema, allow-list,
+    source symbols, footprints); line endings ignored."""
     rows = sorted(([p.name, p.category, p.data] for p in parts), key=lambda r: (r[0], r[1]))
-    return hashlib.sha256(_canonical(rows).encode("ascii")).hexdigest()
+    h = hashlib.sha256(_canonical(rows).encode("ascii"))
+    for pattern in SOURCE_GLOBS:
+        for f in sorted(Path(root).glob(pattern)):
+            h.update(f"\n{f.relative_to(root).as_posix()}\n".encode("utf-8"))
+            h.update(f.read_bytes().replace(b"\r\n", b"\n"))
+    return h.hexdigest()
 
 
 def library_hash(root: Path) -> str:
-    """A fingerprint of all part data; check.js is current when it matches data.js."""
+    """A fingerprint of the library sources; check.js is current when it matches data.js."""
     root = Path(root)
-    return _hash(load_parts(root, load_schema(root)))
+    return _hash(root, load_parts(root, load_schema(root)))
 
 
 def js_assign(var: str, data: dict) -> str:
@@ -107,7 +117,7 @@ def review_data(root: Path, svgs: dict | None = None, notes: list[str] | None = 
     for p in parts:
         counts[p.category] = counts.get(p.category, 0) + 1
     return {
-        "hash": _hash(parts),
+        "hash": _hash(root, parts),
         "built": datetime.now().astimezone().isoformat(timespec="seconds"),
         "notes": list(notes or []) + [str(i) for i in issues if not i.part],
         "previews": previews,

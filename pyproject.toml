@@ -20,4 +20,4 @@ libkit = ["*.html"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-markers = ["kicad: needs kicad-cli"]
+markers = ["kicad: needs kicad-cli", "browser: needs headless Chrome or Edge"]

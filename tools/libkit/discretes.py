@@ -59,8 +59,13 @@ DIODE_FIELDS = {"vr": ("Voltage - DC Reverse(Vr)",), "if": ("Current - Rectified
                 "vf": ("Voltage - Forward(Vf@If)",)}
 
 
+NOT_DISCRETE = ("driver", "photo", "laser", "varactor", "bridge", "module", "array", "display")
+
+
 def _diode(part: JlcPart, tname: str) -> Discrete | None:
-    if "led" in tname.split() or tname.startswith("led"):
+    if any(word in tname for word in NOT_DISCRETE):
+        return None
+    if tname.startswith("led indication") or tname.startswith("light emitting diodes"):
         color = _get(part, "Illumination Color")
         why = _single_diode(part)
         if not why and ("/" in color or "rgb" in _fold(color)):

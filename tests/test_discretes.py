@@ -63,3 +63,11 @@ def test_not_discrete():
 
 def test_type_name_parsed():
     assert part("C8678").type_name == "Schottky Diodes"
+
+
+@pytest.mark.parametrize("tname", ["LED Drivers", "Photodiodes", "Laser Diodes", "Varactor Diodes",
+                                   "Bridge Rectifiers", "LED Driver ICs"])
+def test_not_a_plain_diode_or_led(tname):  # final review I1
+    from dataclasses import replace
+    d = classify(replace(part("C81598"), type_name=tname))
+    assert d is None or d.symbol is None

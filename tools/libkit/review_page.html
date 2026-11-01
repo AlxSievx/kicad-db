@@ -150,7 +150,8 @@ a { color: var(--accent); }
 
   // ---- check results ----
   function checkIssues(name) { return (CHECK && CHECK.parts && CHECK.parts[name]) || []; }
-  function allIssues(p) { return p.issues.concat(checkIssues(p.name)); }
+  // Stale check results never mark rows; the detail panel lists them separately, labelled stale.
+  function allIssues(p) { return STALE ? p.issues : p.issues.concat(checkIssues(p.name)); }
   (function pill() {
     var pillEl = document.getElementById("checkpill");
     if (!CHECK) { pillEl.textContent = "not checked — run libkit check"; return; }
@@ -337,11 +338,13 @@ a { color: var(--accent); }
     if (p.lcsc) { var b2 = el("button", { type: "button", text: "Copy LCSC" }); b2.addEventListener("click", function () { copyText(p.lcsc, b2); }); links.push(b2); }
     if (links.length) { d.appendChild(el("h3", { text: "Links" })); d.appendChild(el("div", { cls: "links" }, links)); }
 
-    d.appendChild(el("h3", { text: "Check results" + (CHECK && STALE ? " (stale)" : "") }));
-    var iss = allIssues(p);
-    if (!CHECK) d.appendChild(el("div", { cls: "muted", text: "not checked — run libkit check" + (p.issues.length ? "; build found:" : "") }));
-    if (iss.length) d.appendChild(el("ul", { cls: "issues" }, iss.map(function (i) { return el("li", { cls: i.severity, text: i.message }); })));
-    else if (CHECK) d.appendChild(el("div", { cls: "muted", text: "no findings" }));
+    d.appendChild(el("h3", { text: "Check results" }));
+    var iss = allIssues(p), old = STALE ? checkIssues(p.name) : [];
+    function list(items) { return el("ul", { cls: "issues" }, items.map(function (i) { return el("li", { cls: i.severity, text: i.message }); })); }
+    if (!CHECK || STALE) d.appendChild(el("div", { cls: "muted", text: (CHECK ? "check results are older than the data — run libkit check" : "not checked — run libkit check") + (p.issues.length ? "; build found:" : "") }));
+    if (iss.length) d.appendChild(list(iss));
+    else if (CHECK && !STALE) d.appendChild(el("div", { cls: "muted", text: "no findings" }));
+    if (old.length) { d.appendChild(el("div", { cls: "muted", text: "last check (stale):" })); d.appendChild(list(old)); }
 
     d.appendChild(el("h3", { text: "Fields" }));
     var dl = el("dl");
