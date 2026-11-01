@@ -128,6 +128,61 @@ def previews_wanted(previews: bool | None) -> tuple[bool, str]:
     return True, ""
 
 
+def assign_issues(issues: list[Issue], root: Path) -> tuple[dict[str, list[dict]], list[dict]]:
+    """Check results per part name, and those that belong to no part.
+
+    Issue.part may be a part name, "<Lib>:<Name>" (KLC symbols), a base
+    symbol ("<Lib>:R": every part of that library deriving from R), or a
+    footprint name (KLC footprints: every part using it)."""
+    root = Path(root)
+    try:
+        schema = load_schema(root)
+        parts = load_parts(root, schema)
+    except (OSError, KeyError, TypeError, ValueError):  # broken data: everything is library-wide
+        schema, parts = None, []
+    names = {p.name for p in parts}
+    lib_of = {p.name: schema.categories[p.category].lib_name for p in parts} if schema else {}
+    per: dict[str, list[dict]] = {}
+    library: list[dict] = []
+    for i in issues:
+        item = i.part or ""
+        lib, sep, name = item.rpartition(":")
+        if not sep:
+            lib, name = "", item
+        if item in names:
+            hits = [item]
+        elif name in names and (not lib or lib_of[name] == lib):
+            hits = [name]
+        else:
+            hits = [p.name for p in parts if name and p.data.get("symbol") == name and p.name != name
+                    and (not lib or lib_of[p.name] == lib)]
+            if not hits:
+                hits = [p.name for p in parts if name and p.data.get("footprint", "").partition(":")[2] == name
+                        and (not lib or p.data["footprint"].partition(":")[0] == lib)]
+        if hits:
+            for h in hits:
+                per.setdefault(h, []).append(_issue(i))
+        else:
+            library.append({"severity": i.severity, "message": f"{item}: {i.message}" if item else i.message})
+    return per, library
+
+
+def write_check_results(root: Path, issues: list[Issue], *, klc: bool) -> Path:
+    """build/review/check.js for the page, stamped with the current library hash."""
+    root = Path(root)
+    try:
+        digest = library_hash(root)
+    except (OSError, KeyError, TypeError, ValueError):
+        digest = ""
+    per, library = assign_issues(issues, root)
+    n_err = sum(i.severity == "error" for i in issues)
+    data = {"hash": digest, "time": datetime.now().astimezone().isoformat(timespec="seconds"), "klc": klc,
+            "errors": n_err, "warnings": len(issues) - n_err, "parts": per, "library": library}
+    path = root / REVIEW_DIR / "check.js"
+    write_text(path, js_assign("LIB_CHECK", data))
+    return path
+
+
 HASH_FILE = ".src-hash"
 
 

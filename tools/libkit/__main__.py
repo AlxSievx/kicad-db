@@ -63,8 +63,15 @@ def _build(args) -> int:
 
 def _check(args) -> int:
     from .check import check
-    issues = check(find_root(), klc=not args.no_klc)
+    from .parts import Issue
+    from .review import write_check_results
+    root = find_root()
+    try:
+        issues = check(root, klc=not args.no_klc)
+    except ValueError as e:  # parts or schema do not load
+        issues = [Issue("error", None, str(e))]
     _print_issues(issues)
+    write_check_results(root, issues, klc=not args.no_klc)
     n_err = sum(i.severity == "error" for i in issues)
     print(f"check: {n_err} errors, {len(issues) - n_err} warnings")
     return 1 if n_err else 0

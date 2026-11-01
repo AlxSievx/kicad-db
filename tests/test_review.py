@@ -177,3 +177,69 @@ def test_render_real(minilib):
     assert r["sym_svgs"] == ["svg/sym/LIB_Resistors/R_10k_0402_1pct_unit1.svg"]
     for rel in r["sym_svgs"] + [r["fp_svg"]]:
         assert (minilib / REVIEW_DIR / rel).read_text(encoding="utf-8").lstrip().startswith("<?xml")
+
+
+def _assign(root, *issues):
+    from libkit.parts import Issue
+    from libkit.review import assign_issues
+    return assign_issues([Issue(*i) for i in issues], root)
+
+
+def test_assign_by_symbol_item(minilib):
+    per, lib = _assign(minilib, ("error", "LIB_Resistors:R_10k_0402_1pct", "KLC S3.3: x"))
+    assert list(per) == ["R_10k_0402_1pct"] and lib == []
+    assert per["R_10k_0402_1pct"] == [{"severity": "error", "message": "KLC S3.3: x"}]
+
+
+def test_assign_part_name(minilib):
+    per, _ = _assign(minilib, ("warning", "R_10k_0402_1pct", "manufacturer"))
+    assert list(per) == ["R_10k_0402_1pct"]
+
+
+def test_assign_base_symbol_to_users(minilib):
+    per, _ = _assign(minilib, ("warning", "LIB_Resistors:R", "KLC S4.1: x"))
+    d = review_data(minilib)
+    assert set(per) == {p["name"] for p in d["parts"] if p["symbol"] == "R"} and per
+
+
+def test_assign_footprint_to_users(minilib):  # KLC footprint items are bare names
+    per, _ = _assign(minilib, ("error", "R_0402_1005Metric", "KLC F5.1: x"))
+    d = review_data(minilib)
+    assert set(per) == {p["name"] for p in d["parts"] if p["footprint"] == "LIB_Passives_SMD:R_0402_1005Metric"}
+
+
+def test_assign_unknown_is_library_wide(minilib):
+    per, lib = _assign(minilib, ("error", None, "stale: x — run build"), ("error", "Nope:Nope", "y"))
+    assert per == {} and [i["message"] for i in lib] == ["stale: x — run build", "Nope:Nope: y"]
+
+
+def _check_cli(root, monkeypatch):
+    from libkit import __main__ as cli
+    monkeypatch.chdir(root)
+    return cli.main(["check", "--no-klc"])
+
+
+def test_check_js_hash_matches_data(minilib, monkeypatch):  # Review Focus 3
+    build(minilib)
+    assert _check_cli(minilib, monkeypatch) == 0
+    c = load_js(minilib / REVIEW_DIR / "check.js", "LIB_CHECK")
+    d = load_js(minilib / REVIEW_DIR / "data.js", "LIB_DATA")
+    assert c["hash"] == d["hash"] and c["klc"] is False and c["errors"] == 0
+
+
+def test_check_js_stale_after_change(minilib, monkeypatch):  # Review Focus 3
+    build(minilib)
+    _check_cli(minilib, monkeypatch)
+    edit(minilib, "power: 62.5mW", "power: 100mW")
+    build(minilib)
+    c = load_js(minilib / REVIEW_DIR / "check.js", "LIB_CHECK")
+    d = load_js(minilib / REVIEW_DIR / "data.js", "LIB_DATA")
+    assert c["hash"] != d["hash"]
+
+
+def test_check_js_on_broken_yaml(minilib, monkeypatch):
+    build(minilib)
+    (minilib / "parts" / "resistors.yaml").write_text("parts: [oops", encoding="utf-8")
+    assert _check_cli(minilib, monkeypatch) == 1
+    c = load_js(minilib / REVIEW_DIR / "check.js", "LIB_CHECK")
+    assert c["hash"] == "" and c["errors"] >= 1
