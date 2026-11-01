@@ -51,4 +51,6 @@ def build(root: Path) -> list[Path]:
         path = root / rel
         write_text(path, text)
         written.append(path)
+    from .review import write_review
+    write_review(root)
     return written

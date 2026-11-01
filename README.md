@@ -35,6 +35,10 @@ py -3.12 -m venv .venv
 
 How parts are named, picked and added is in [CLAUDE.md](CLAUDE.md).
 
+`build` also writes a read-only review page, `build/review/index.html`: open it
+by double-click to search the parts and see each one's symbol, footprint, fields,
+links and `check` results. It works offline; previews need `kicad-cli`.
+
 `libkit jlc`, `bulk-add` and `refresh-stock` read part data from two public
 sources that need no account or key: JLCPCB's own parts search
 (`jlcpcb.com/api/…/selectSmtComponentList`, the record for one C-number) and

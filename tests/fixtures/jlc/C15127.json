@@ -1,0 +1,246 @@
+{
+ "code": 200,
+ "data": {
+  "componentPageInfo": {
+   "total": 6,
+   "list": [
+    {
+     "componentId": 15801,
+     "componentLibraryType": "base",
+     "stockCount": 1811277,
+     "componentTypeEn": "MOSFETs",
+     "erpComponentName": "AO3401A",
+     "componentSource": "shop",
+     "lcscGoodsUrl": "https://www.lcsc.com/product-detail/mosfets_alpha-omega-semicon-ao3401a_C15127.html",
+     "componentPrices": [
+      {
+       "startNumber": 1,
+       "endNumber": 49,
+       "productPrice": 0.0962
+      },
+      {
+       "startNumber": 50,
+       "endNumber": 149,
+       "productPrice": 0.0785
+      },
+      {
+       "startNumber": 150,
+       "endNumber": 499,
+       "productPrice": 0.0693
+      },
+      {
+       "startNumber": 500,
+       "endNumber": 2999,
+       "productPrice": 0.0619
+      },
+      {
+       "startNumber": 3000,
+       "endNumber": 5999,
+       "productPrice": 0.0593
+      },
+      {
+       "startNumber": 6000,
+       "endNumber": -1,
+       "productPrice": 0.0575
+      }
+     ],
+     "buyComponentPrices": [
+      {
+       "startNumber": 1,
+       "endNumber": 49,
+       "productPrice": 0.0926
+      },
+      {
+       "startNumber": 500,
+       "endNumber": 2999,
+       "productPrice": 0.0596
+      },
+      {
+       "startNumber": 50,
+       "endNumber": 149,
+       "productPrice": 0.0756
+      },
+      {
+       "startNumber": 3000,
+       "endNumber": 5999,
+       "productPrice": 0.0571
+      },
+      {
+       "startNumber": 6000,
+       "endNumber": -1,
+       "productPrice": 0.0554
+      },
+      {
+       "startNumber": 150,
+       "endNumber": 499,
+       "productPrice": 0.0667
+      }
+     ],
+     "firstSortAccessId": "af6f8457ec9d400e9ccbfa9dd9889152",
+     "secondSortAccessId": "c379c2fda52a490e92606b90e6c81760",
+     "canPresaleNumber": 1682015,
+     "componentProductType": 0,
+     "mergedComponentCode": null,
+     "urlSuffix": "Alpha_OmegaSemicon-AO3401A/C15127",
+     "leastPatchNumber": 5,
+     "lossNumber": 4,
+     "isBuyComponent": "1",
+     "noBuyReason": null,
+     "componentAlternativesCode": null,
+     "replaceUrlSuffix": null,
+     "preferredComponentFlag": false,
+     "allowPostFlag": true,
+     "score": null,
+     "idleFlag": null,
+     "estimateDate": null,
+     "fullReelPrice": null,
+     "encapsulationNumber": 3000,
+     "shopCostPrice": 0.25049,
+     "preMinPurchaseNum": 115,
+     "minPurchaseNum": 1,
+     "initialPrice": 0.0962,
+     "componentCode": "C15127",
+     "componentBrandEn": "Alpha & Omega Semicon",
+     "componentModelEn": "AO3401A",
+     "componentImageUrl": "",
+     "productBigImageAccessId": null,
+     "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8770913661298712576-C15127-front.jpg?x-oss-date=20261101T152913Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rgO%2BPEpY5AwfaCdBXnnVISbc1mopbhhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb5a4iIw557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jLciRrO5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5VWD41o5ch3ARqAATHiO%2FZafttj7TZcVC8AxSo2B12QsMke6ULOJ8XGA7y8XheOt3e8f2dniaFDrVpn1EXd1%2ByTVk3ZfXulEsSHsB0tSkd6rsyx8CKs2p0MFKMzjLZpqHJ5ZuT067JNFM7eazj83eZBg5yDyukXFuPopytKeYoznX9mxJMHlBmIC22IIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYUpYpHQav4iv3VyRGaBJMSJe%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=57015f543e800dd5a447126d8aafd236d2f9bb60d01433011cfd4987f7dbc176",
+     "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf",
+     "dataManualFileAccessId": null,
+     "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8776572966194683904-C15127.pdf?response-content-disposition=attachment%3B%20filename%3DC15127.pdf%3B%20filename%2A%3DUTF-8%27%27C15127.pdf&x-oss-date=20261101T152913Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5vHB8DVrOxF8fuyN37btnY9aLZ%2BoZLnpDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYtM%2Fl0w557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWopt3dIeDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIMi%2FyG6KWD5sagAGYMKj9RuRpgydQv1TXJQZwhT%2BJvsQHP9ozHAZfhkV104CHnLVeIvwRVTCo9553CGZzPWQo8bfXPmeL3zGeMk8myaKJ%2FDdaznRgVGMmB9iBmjnjBrccuJPQgZb8UN7TczfRbcZLNACKntPQosna8gdtoK3jy%2BBMs8z%2BeKtZRpTHXSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXrLzaA3dF9Y5XjRvhd9RNWLF%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=548257e920502f75f84581a823e3cbd8ee1d2ca92e28f5721c45d51bdf6aea94",
+     "dataManualOfficialLink": "",
+     "componentName": "AOS AO3401A",
+     "minImage": "",
+     "minImageAccessId": null,
+     "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8770913662368124928-C15127-front.jpg?x-oss-date=20261101T152913Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rgO%2BPEpY5AwfaCdBXnnVISbc1mopbhhzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb5a4iIw557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jLciRrO5%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5VWD41o5ch3ARqAATHiO%2FZafttj7TZcVC8AxSo2B12QsMke6ULOJ8XGA7y8XheOt3e8f2dniaFDrVpn1EXd1%2ByTVk3ZfXulEsSHsB0tSkd6rsyx8CKs2p0MFKMzjLZpqHJ5ZuT067JNFM7eazj83eZBg5yDyukXFuPopytKeYoznX9mxJMHlBmIC22IIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYUpYpHQav4iv3VyRGaBJMSJe%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=5774ab1acb4b97d4aa3c65d25c42c2cd6ef52012d7bf1cb9de42c1122a448299",
+     "imageList": [
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      },
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      },
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      },
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      }
+     ],
+     "manufacturerBlackFlag": null,
+     "componentNameEn": null,
+     "componentSpecificationEn": "SOT-23",
+     "describe": "1 P-Channel 14nC@10V 30V 47mΩ@10V、60mΩ@4.5V、85mΩ@2.5V 4A 55pF 645pF 80pF 900mV SOT-23 MOSFETs ROHS",
+     "attributes": [
+      {
+       "attribute_name_en": "Operating Temperature",
+       "attribute_value_name": "-"
+      },
+      {
+       "attribute_name_en": "Input Capacitance(Ciss)",
+       "attribute_value_name": "645pF"
+      },
+      {
+       "attribute_name_en": "Type",
+       "attribute_value_name": "-"
+      },
+      {
+       "attribute_name_en": "Gate Threshold Voltage (Vgs(th))",
+       "attribute_value_name": "900mV"
+      },
+      {
+       "attribute_name_en": "Number",
+       "attribute_value_name": "1 P-Channel"
+      },
+      {
+       "attribute_name_en": "Gate Charge(Qg)",
+       "attribute_value_name": "14nC@10V"
+      },
+      {
+       "attribute_name_en": "Reverse Transfer Capacitance (Crss@Vds)",
+       "attribute_value_name": "55pF"
+      },
+      {
+       "attribute_name_en": "Current - Continuous Drain(Id)",
+       "attribute_value_name": "4A"
+      },
+      {
+       "attribute_name_en": "Drain to Source Voltage",
+       "attribute_value_name": "30V"
+      },
+      {
+       "attribute_name_en": "Output Capacitance(Coss)",
+       "attribute_value_name": "80pF"
+      },
+      {
+       "attribute_name_en": "Pd - Power Dissipation",
+       "attribute_value_name": "-"
+      },
+      {
+       "attribute_name_en": "RDS(on)",
+       "attribute_value_name": "47mΩ@10V、60mΩ@4.5V、85mΩ@2.5V"
+      }
+     ],
+     "rankScore": null,
+     "firstSortName": "MOSFETs",
+     "secondSortName": "Transistors/Thyristors",
+     "componentBrandHigh": null,
+     "remarkHigh": null,
+     "componentModelHigh": null,
+     "componentCodeHigh": "<span class='lucene_highlight_class'>C15127</span>",
+     "componentSpecificationHigh": null,
+     "rohsFlag": 1,
+     "shopShowPriceFlag": true,
+     "shopShowForeignPriceFlag": true,
+     "shopRealPriceFlag": true,
+     "assemblyComponentFlag": false,
+     "rohsFileId": null,
+     "rohsUrl": null
+    }
+   ],
+   "pageNum": 1,
+   "pageSize": 5,
+   "size": 0,
+   "startRow": 0,
+   "endRow": 0,
+   "pages": 2,
+   "prePage": 0,
+   "nextPage": 0,
+   "isFirstPage": false,
+   "isLastPage": false,
+   "hasPreviousPage": false,
+   "hasNextPage": false,
+   "navigatePages": 0,
+   "navigatepageNums": null,
+   "navigateFirstPage": 0,
+   "navigateLastPage": 0
+  },
+  "sortAndCountVoList": null,
+  "presaleTypeList": [],
+  "brandList": [],
+  "basePart": null,
+  "preferredPart": null,
+  "economicPart": null,
+  "standardPart": null,
+  "dataSheetPart": null,
+  "photo": null,
+  "queryString": "C15127"
+ },
+ "message": null
+}

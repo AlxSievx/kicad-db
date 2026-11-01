@@ -22,6 +22,7 @@ class JlcPart:
     datasheet: str
     description: str
     attributes: dict[str, str] = field(default_factory=dict)
+    type_name: str = ""  # componentTypeEn, e.g. "Schottky Diodes"
 
 
 def datasheet_url(part: JlcPart) -> str:
@@ -49,6 +50,7 @@ def parse_record(rec: dict) -> JlcPart:
             description=str(rec.get("describe") or ""),
             attributes={str(a["attribute_name_en"]): str(a["attribute_value_name"])
                         for a in rec.get("attributes") or []},
+            type_name=str(rec.get("componentTypeEn") or ""),
         )
     except (KeyError, TypeError, ValueError) as e:
         raise NetError(f"{code}: unexpected JLC record format ({e!r})") from e

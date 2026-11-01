@@ -189,6 +189,13 @@ typed by hand.
 - Uniform style: 100 mil (2.54 mm) pin grid, 1.27 mm text, fixed field order,
   only Reference + Value visible on placement.
 
+Decided 2026-11-01 (Plan 4): discrete bases copied unchanged from KiCad stock (`D`, `D_Schottky`,
+`D_Zener`, `D_TVS`, `LED`, and the SOT-23 pinouts `Q_NMOS_GSD`, `Q_PMOS_GSD`, `Q_NPN_BEC`,
+`Q_PNP_BEC`, since `Device:Q_NMOS` numbers its pins D/G/S); mechanical bases `MountingHole`,
+`MountingHole_Pad`, `Fiducial`, `TestPoint`. `add` uses a base only when JLC's record and the
+footprint's pads show it fits; unidirectional TVS has no base. Parts without a C-number (non-orderable
+categories) are added with `add --local`. `check` compares symbol pins with footprint pads.
+
 ### 6.6 Part selection rules (decided together)
 
 For automatic picks (bulk add, "find me a part for X"):
@@ -260,6 +267,11 @@ key that would have to live in the repo.
   `kicad-cli`), all fields, check results, links: datasheet, JLC/LCSC page,
   copy MPN.
 - Read-only.
+
+Decided 2026-11-01 (Plan 4): `build/review/index.html` plus `data.js` (from `build`), `check.js`
+(from `check`, stamped with a hash of the part data so stale results are marked) and `svg/`
+previews, cached per library. No network, no `fetch()`; works from `file://`. Without `kicad-cli`
+the page has no previews.
 
 ### 6.10 Installation in KiCad 10
 
