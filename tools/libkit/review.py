@@ -128,14 +128,85 @@ def previews_wanted(previews: bool | None) -> tuple[bool, str]:
     return True, ""
 
 
+HASH_FILE = ".src-hash"
+
+
+def _digest(src: Path) -> str:
+    h = hashlib.sha256()
+    files = sorted(src.glob("*.kicad_mod")) if src.is_dir() else [src]
+    for f in files:
+        h.update(f.name.encode("utf-8") + b"\0" + f.read_bytes() + b"\0")
+    return h.hexdigest()
+
+
+def render_previews(root: Path, svg_dir: Path, run=subprocess.run) -> list[str]:
+    """Render symbols/<Lib>.kicad_sym into svg_dir/sym/<Lib>/ and
+    footprints/<Lib>.pretty into svg_dir/fp/<Lib>/ with kicad-cli, skipping
+    libraries unchanged since their last successful render. Returns notes."""
+    from .kicad import find_kicad_cli
+    root = Path(root)
+    cli = str(find_kicad_cli() or "kicad-cli")
+    jobs = [("sym", f, f.stem) for f in sorted((root / "symbols").glob("*.kicad_sym"))]
+    jobs += [("fp", d, d.stem) for d in sorted((root / "footprints").glob("*.pretty"))]
+    notes: list[str] = []
+    for kind in ("sym", "fp"):
+        wanted = {lib for k, _, lib in jobs if k == kind}
+        base = svg_dir / kind
+        if base.exists():
+            for d in base.iterdir():
+                if d.is_dir() and d.name not in wanted:
+                    shutil.rmtree(d)
+    for kind, src, lib in jobs:
+        out = svg_dir / kind / lib
+        digest = _digest(src)
+        stamp = out / HASH_FILE
+        if stamp.exists() and stamp.read_text(encoding="utf-8") == digest:
+            continue
+        if out.exists():
+            shutil.rmtree(out)
+        out.mkdir(parents=True)
+        r = run([cli, kind, "export", "svg", str(src), "-o", str(out)],
+                capture_output=True, text=True, encoding="utf-8", errors="replace")
+        if r.returncode != 0:
+            shutil.rmtree(out)
+            lines = [ln for ln in (r.stderr or r.stdout or "").splitlines() if ln.strip()]
+            notes.append(f"preview of {lib} failed: {lines[-1].strip() if lines else f'exit {r.returncode}'}")
+            continue
+        stamp.write_text(digest, encoding="utf-8")
+    return notes
+
+
+def _unit(path: Path) -> int:
+    tail = path.stem.rpartition("_unit")[2]
+    return int(tail) if tail.isdigit() else 0
+
+
+def _svg_map(svg_dir: Path) -> dict:
+    out: dict = {}
+    rel = svg_dir.name
+    for d in sorted((svg_dir / "sym").glob("*")) if (svg_dir / "sym").exists() else []:
+        by_part: dict[str, list[Path]] = {}
+        for f in d.glob("*_unit*.svg"):
+            by_part.setdefault(f.stem.rpartition("_unit")[0], []).append(f)
+        for name, files in by_part.items():
+            out[("sym", d.name, name)] = [f"{rel}/sym/{d.name}/{f.name}" for f in sorted(files, key=_unit)]
+    for d in sorted((svg_dir / "fp").glob("*")) if (svg_dir / "fp").exists() else []:
+        for f in d.glob("*.svg"):
+            out[("fp", f"{d.name}:{f.stem}")] = f"{rel}/fp/{d.name}/{f.name}"
+    return out
+
+
 def write_review(root: Path, *, previews: bool | None = None, run=subprocess.run) -> Path:
-    """Write build/review/{index.html,data.js}; returns the index path."""
+    """Write build/review/{index.html,data.js} (and previews); returns the index path."""
     root = Path(root)
     out = root / REVIEW_DIR
     out.mkdir(parents=True, exist_ok=True)
     render, note = previews_wanted(previews)
     notes = [note] if note else []
     svgs: dict = {}
+    if render:
+        notes += render_previews(root, out / "svg", run=run)
+        svgs = _svg_map(out / "svg")
     write_text(out / "data.js", js_assign("LIB_DATA", review_data(root, svgs, notes, previews=render)))
     shutil.copyfile(PAGE, out / "index.html")
     return out / "index.html"

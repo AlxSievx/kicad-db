@@ -1,4 +1,6 @@
 import json
+
+import pytest
 import re
 from pathlib import Path
 
@@ -86,3 +88,92 @@ def test_issues_per_part(minilib):
     edit(minilib, "    status: active\n", "    status: active\n    stock_checked: soon\n")
     p = next(p for p in review_data(minilib)["parts"] if p["name"] == "R_10k_0402_1pct")
     assert any(i["severity"] == "error" for i in p["issues"])
+
+
+def fake_kicad(calls, fail=()):
+    """Stands in for kicad-cli sym/fp export svg; records (kind, source name)."""
+    import subprocess
+    from libkit.sexpr import find_all, parse
+
+    def run(cmd, **kw):
+        kind, src, out = cmd[1], Path(cmd[4]), Path(cmd[cmd.index("-o") + 1])
+        calls.append((kind, src.name))
+        if src.stem in fail or src.name in fail:
+            return subprocess.CompletedProcess(cmd, 1, "", "Error: boom\n")
+        assert out.is_dir(), "kicad-cli fp export needs an existing output folder"
+        if kind == "sym":
+            for s in find_all(parse(src.read_text(encoding="utf-8")), "symbol"):
+                (out / f"{s[1]}_unit1.svg").write_text("<svg/>", encoding="utf-8")
+        else:
+            for f in src.glob("*.kicad_mod"):
+                (out / f"{f.stem}.svg").write_text("<svg/>", encoding="utf-8")
+        return subprocess.CompletedProcess(cmd, 0, "", "")
+    return run
+
+
+def test_previews_cached(minilib):
+    from libkit.review import write_review
+    build(minilib)
+    calls = []
+    write_review(minilib, previews=True, run=fake_kicad(calls))
+    assert ("sym", "LIB_Resistors.kicad_sym") in calls and ("fp", "LIB_Passives_SMD.pretty") in calls
+    d = load_js(minilib / REVIEW_DIR / "data.js", "LIB_DATA")
+    r = next(p for p in d["parts"] if p["name"] == "R_10k_0402_1pct")
+    assert r["sym_svgs"] == ["svg/sym/LIB_Resistors/R_10k_0402_1pct_unit1.svg"]
+    assert r["fp_svg"] == "svg/fp/LIB_Passives_SMD/R_0402_1005Metric.svg"
+    assert (minilib / REVIEW_DIR / r["fp_svg"]).exists()
+    calls.clear()
+    write_review(minilib, previews=True, run=fake_kicad(calls))
+    assert calls == []
+    edit(minilib, "power: 62.5mW", "power: 100mW")
+    build(minilib)
+    write_review(minilib, previews=True, run=fake_kicad(calls))
+    assert calls == [("sym", "LIB_Resistors.kicad_sym")]
+
+
+def test_render_failure_is_a_note(minilib):  # Review Focus 2
+    from libkit.review import write_review
+    build(minilib)
+    write_review(minilib, previews=True, run=fake_kicad([], fail={"LIB_Capacitors"}))
+    d = load_js(minilib / REVIEW_DIR / "data.js", "LIB_DATA")
+    assert any("LIB_Capacitors" in n and "boom" in n for n in d["notes"])
+    caps = [p for p in d["parts"] if p["category"] == "capacitors"]
+    assert caps and all(p["sym_svgs"] == [] for p in caps)
+    assert all(p["sym_svgs"] for p in d["parts"] if p["category"] == "resistors")
+    calls = []  # a failed library is tried again next time
+    write_review(minilib, previews=True, run=fake_kicad(calls))
+    assert calls == [("sym", "LIB_Capacitors.kicad_sym")]
+
+
+def test_build_without_cli(minilib, monkeypatch):  # Review Focus 2
+    from libkit import kicad
+    monkeypatch.delenv("LIBKIT_PREVIEWS")
+    monkeypatch.setattr(kicad, "find_kicad_cli", lambda: None)
+    build(minilib)
+    d = load_js(minilib / REVIEW_DIR / "data.js", "LIB_DATA")
+    assert d["previews"] is False and any("kicad-cli not found" in n for n in d["notes"])
+
+
+def test_removed_library_previews_dropped(minilib):
+    from libkit.review import write_review
+    build(minilib)
+    write_review(minilib, previews=True, run=fake_kicad([]))
+    stale = minilib / REVIEW_DIR / "svg" / "fp" / "LIB_Gone"
+    stale.mkdir(parents=True)
+    write_review(minilib, previews=True, run=fake_kicad([]))
+    assert not stale.exists()
+
+
+@pytest.mark.kicad
+def test_render_real(minilib):
+    from libkit.kicad import find_kicad_cli
+    from libkit.review import write_review
+    if find_kicad_cli() is None:
+        pytest.skip("kicad-cli not installed")
+    build(minilib)
+    write_review(minilib, previews=True)
+    d = load_js(minilib / REVIEW_DIR / "data.js", "LIB_DATA")
+    r = next(p for p in d["parts"] if p["name"] == "R_10k_0402_1pct")
+    assert r["sym_svgs"] == ["svg/sym/LIB_Resistors/R_10k_0402_1pct_unit1.svg"]
+    for rel in r["sym_svgs"] + [r["fp_svg"]]:
+        assert (minilib / REVIEW_DIR / rel).read_text(encoding="utf-8").lstrip().startswith("<?xml")
