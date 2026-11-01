@@ -20,7 +20,7 @@ def test_description_from_template(cap_part, schema):
 
 
 def test_description_template_skips_empty_fields(minilib, schema):
-    r = with_data(part(minilib, "R_10k_0402_1%"), power="")
+    r = with_data(part(minilib, "R_10k_0402_1pct"), power="")
     assert build_description(r, schema) == "10k ±1% 0402 resistor"
 
 

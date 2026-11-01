@@ -1,5 +1,5 @@
 parts:
-  - name: R_10k_0402_1%
+  - name: R_10k_0402_1pct
     symbol: R
     footprint: LIB_Passives_SMD:R_0402_1005Metric
     value: 10k

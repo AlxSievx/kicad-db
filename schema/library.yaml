@@ -12,7 +12,7 @@
 prefix: LIB
 
 common_fields:
-  - {key: name, required: true}
+  - {key: name, required: true, pattern: '[A-Za-z0-9_.+,-]+'}   # KLC G1.1 characters
   - {key: symbol, required: true}
   - {key: footprint, required: true}
   - {key: value, required: true}

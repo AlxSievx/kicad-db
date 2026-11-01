@@ -1,1 +1,15 @@
-parts: []
+parts:
+  - name: C_100n_0402_16V_X7R
+    symbol: C
+    footprint: LIB_Passives_SMD:C_0402_1005Metric
+    value: 100nF
+    package: "0402"
+    manufacturer: Samsung
+    mpn: CL05B104KO5NNNC
+    lcsc: C1525
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/C1525.pdf
+    status: active
+    voltage: 16V
+    dielectric: X7R
+    tolerance: ±10%

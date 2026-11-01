@@ -99,3 +99,8 @@ def test_real_repo_schema_and_parts_load():
     s = load_schema(REPO)
     assert errors(REPO) == []
     assert set(s.categories) == {p.stem for p in (REPO / "parts").glob("*.yaml")}
+
+
+def test_illegal_name_characters():  # KLC G1.1 allows only letters, digits and _-.+,
+    assert "name" in only_error(validate_one({"name": "R_10k_0402_1%"}))
+    assert validate_one({"name": "R_10k_0402_1pct"}) == []
