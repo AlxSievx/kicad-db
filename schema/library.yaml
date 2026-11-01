@@ -122,3 +122,6 @@ manufacturers:
   - {name: TAI-TECH, aliases: [TAI-TECH Advanced Electronics, TA-I Technology]}
   - {name: Chilisin}
   - {name: cjiang, aliases: [Changjiang Microelectronics]}
+  # Power inductors the Altium library used (CY75, YPRH1209)
+  - {name: SHOU HAN}
+  - {name: YJYCOIN}

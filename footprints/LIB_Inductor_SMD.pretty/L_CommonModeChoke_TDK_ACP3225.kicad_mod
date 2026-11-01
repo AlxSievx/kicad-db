@@ -1,0 +1,296 @@
+(footprint "L_CommonModeChoke_TDK_ACP3225"
+	(version 20260206)
+	(generator "libkit")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40°C~+85°C 1.5A 10MΩ 1kΩ@100MHz 2 50mΩ 60V SMD-4P,3.2x2.5mm Common Mode Filters, https://www.lcsc.com/datasheet/lcsc_datasheet_1810181724_TDK-ACP3225-102-2P-T000_C92126.pdf (EasyEDA C92126)")
+	(tags "SMD-4P 3.2x2.5mm ACP3225-102-2P-T000")
+	(property "Reference" "REF**"
+		(at 0 -4.6 0)
+		(layer "F.SilkS")
+		(uuid "83c5d364-2cea-46cb-82e5-a98122686ea5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_CommonModeChoke_TDK_ACP3225"
+		(at 0 4.6 0)
+		(layer "F.Fab")
+		(uuid "b7de1596-99b7-47bd-9936-ec2ebef3083e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "571ddba2-b199-4ee6-8a79-1990b744028c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f1388651-bc7b-4cfb-b7c8-fddc76480c36")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.6 -1.25)
+		(end 1.61 -1.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "57944802-a5d0-437a-b9e4-0342b20bf343")
+	)
+	(fp_line
+		(start -1.6 -0.86)
+		(end -1.6 -1.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c286d262-2b85-4cdc-ab95-8d03a99593a4")
+	)
+	(fp_line
+		(start -1.6 -0.25)
+		(end -1.6 0.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8c954d39-610a-4019-b9d5-669b56299af4")
+	)
+	(fp_line
+		(start -1.6 0.95)
+		(end -1.6 1.24)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8622802e-7358-4051-842d-71d5e3c66f48")
+	)
+	(fp_line
+		(start -1.59 1.24)
+		(end -1.61 1.24)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a71e7025-6d5b-454f-9beb-b6344e47f8b2")
+	)
+	(fp_line
+		(start 1.61 -1.25)
+		(end 1.61 -0.95)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3c5c83e1-0f5e-405a-b51c-e647aa4f4f2c")
+	)
+	(fp_line
+		(start 1.61 -0.25)
+		(end 1.61 0.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6144981a-0e26-4b8d-8452-afee72961061")
+	)
+	(fp_line
+		(start 1.61 0.95)
+		(end 1.61 1.24)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "65ccf220-5878-4d31-80bd-9f51314bc712")
+	)
+	(fp_line
+		(start 1.61 1.24)
+		(end -1.59 1.24)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d4bb30ec-9e6a-4a62-b180-fea369c947b0")
+	)
+	(fp_circle
+		(center -1.6 -1.25)
+		(end -1.57 -1.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "9b8422b9-5408-46d7-8023-ef0788fed2a1")
+	)
+	(fp_line
+		(start -1.6 -1.25)
+		(end 1.61 -1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.6 -0.86)
+		(end -1.6 -1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.6 -0.25)
+		(end -1.6 0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.6 0.95)
+		(end -1.6 1.24)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.59 1.24)
+		(end -1.61 1.24)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.61 -1.25)
+		(end 1.61 -0.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.61 -0.25)
+		(end 1.61 0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.61 0.95)
+		(end 1.61 1.24)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.61 1.24)
+		(end -1.59 1.24)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -2.1 -1.5)
+		(end 2.1 1.49)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -0.005 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.4 -0.6 270)
+		(size 0.4 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "0c295dd3-f651-4a27-9e9e-8c9abb123ba3")
+	)
+	(pad "2" smd roundrect
+		(at -1.4 0.6 270)
+		(size 0.4 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "1be2707d-5e1d-430b-8e68-01e565e65604")
+	)
+	(pad "3" smd roundrect
+		(at 1.4 0.6 270)
+		(size 0.4 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "01fae085-60e8-4e7a-b0cf-07b0fabfb02b")
+	)
+	(pad "4" smd roundrect
+		(at 1.4 -0.6 270)
+		(size 0.4 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "1845ef21-d367-4ddc-9f39-b32bc48bd6b9")
+	)
+	(embedded_fonts no)
+	(model "${LIB_DIR}/3dmodels/LIB_Inductor_SMD.3dshapes/L_CommonModeChoke_TDK_ACP3225.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

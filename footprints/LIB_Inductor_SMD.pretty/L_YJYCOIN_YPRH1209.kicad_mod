@@ -1,0 +1,225 @@
+(footprint "L_YJYCOIN_YPRH1209"
+	(version 20260206)
+	(generator "libkit")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "3.6A 47uH 63mΩ Magnetic Shielded Inductor ±20% SMD,12x12mm Power Inductors, https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YJYCOIN-YPRH1209-470M_C339956.pdf (EasyEDA C339956)")
+	(tags "SMD 12x12mm YPRH1209-470M")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "fe3419a0-acbb-4ae7-af5b-fd3f21fe0366")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_YJYCOIN_YPRH1209"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "33b72d64-08a6-43e6-a352-bed8814dd789")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a67fecde-6493-4768-94bf-3d3deff6e245")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "949b67c5-16bc-4228-98aa-57281b05d9d6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -6.1 -6.1)
+		(end -6.1 -2.93)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5fc16fa5-015d-40e7-a410-a00559589ffe")
+	)
+	(fp_line
+		(start -6.1 2.93)
+		(end -6.1 6.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "73c58986-8161-45d6-adf5-8086f33fea78")
+	)
+	(fp_line
+		(start -6.1 6.1)
+		(end 6.1 6.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6c44093d-b079-446f-8adf-9ed3d0aebda7")
+	)
+	(fp_line
+		(start 6.1 -6.1)
+		(end -6.1 -6.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3be96206-6d1f-482e-b4b7-2e99ca021852")
+	)
+	(fp_line
+		(start 6.1 -2.93)
+		(end 6.1 -6.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "94e25450-b0ce-4560-bb59-d192a6828919")
+	)
+	(fp_line
+		(start 6.1 6.1)
+		(end 6.1 2.93)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fe7650c3-8e0b-4840-b762-f8e7e37af9aa")
+	)
+	(fp_circle
+		(center 6 -6)
+		(end 6.03 -6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "5ad63973-4e55-4b85-abc6-17ee71e628f7")
+	)
+	(fp_line
+		(start -6.1 -6.1)
+		(end -6.1 -2.93)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -6.1 2.93)
+		(end -6.1 6.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -6.1 6.1)
+		(end 6.1 6.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 6.1 -6.1)
+		(end -6.1 -6.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 6.1 -2.93)
+		(end 6.1 -6.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 6.1 6.1)
+		(end 6.1 2.93)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -6.55 -6.35)
+		(end 6.55 6.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 4.9 0 90)
+		(size 5.4 2.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.0893)
+		(uuid "f9f7e3d2-6ff9-48f7-9526-3250efe7ebbb")
+	)
+	(pad "2" smd roundrect
+		(at -4.9 0 90)
+		(size 5.4 2.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.0893)
+		(uuid "c72e62e9-c9ae-46d9-aa02-316fc3f9cb11")
+	)
+	(embedded_fonts no)
+	(model "${LIB_DIR}/3dmodels/LIB_Inductor_SMD.3dshapes/L_YJYCOIN_YPRH1209.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
