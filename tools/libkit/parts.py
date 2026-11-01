@@ -41,10 +41,20 @@ def load_parts(root: Path, schema: Schema) -> list[Part]:
         f = Path(root) / "parts" / f"{key}.yaml"
         if not f.exists():
             continue
-        with open(f, encoding="utf-8") as fh:
-            raw = yaml.load(fh, Loader=yaml.BaseLoader) or {}
-        for entry in raw.get("parts") or []:
-            data = {k: ("" if v is None else v) for k, v in entry.items()}
+        try:
+            with open(f, encoding="utf-8") as fh:
+                raw = yaml.load(fh, Loader=yaml.BaseLoader) or {}
+        except yaml.YAMLError as e:
+            raise ValueError(f"parts/{f.name}: invalid YAML: {e}") from e
+        if not isinstance(raw, dict) or not isinstance(raw.get("parts") or [], list):
+            raise ValueError(f"parts/{f.name}: expected a top-level 'parts:' list")
+        for n, entry in enumerate(raw.get("parts") or [], 1):
+            if not isinstance(entry, dict):
+                raise ValueError(f"parts/{f.name}: entry {n} is not a mapping of fields")
+            bad = [k for k, v in entry.items() if not isinstance(v, str)]
+            if bad:
+                raise ValueError(f"parts/{f.name}: entry {n}: field(s) {', '.join(bad)} must be plain values")
+            data = dict(entry)
             parts.append(Part(name=data.get("name", ""), category=key, data=data, source=f))
     return parts
 
@@ -99,7 +109,9 @@ def validate(parts: list[Part], schema: Schema, root: Path | None = None) -> lis
                 issues.append(Issue("error", p.name, f"duplicate name (also in {seen[p.name].name})"))
             else:
                 seen[p.name] = p.source
+        # The known-manufacturer rule is for automatically picked passives
+        # (categories with a value unit); single parts may come from anyone.
         man = p.data.get("manufacturer")
-        if man and man not in schema.manufacturers:
+        if cat.value_unit and man and man not in schema.manufacturers:
             issues.append(Issue("warning", p.name, f"manufacturer {man!r} not in known list"))
     return issues

@@ -104,3 +104,30 @@ def test_real_repo_schema_and_parts_load():
 def test_illegal_name_characters():  # KLC G1.1 allows only letters, digits and _-.+,
     assert "name" in only_error(validate_one({"name": "R_10k_0402_1%"}))
     assert validate_one({"name": "R_10k_0402_1pct"}) == []
+
+
+def test_unknown_manufacturer_ok_outside_passives():
+    base = {k: v for k, v in VALID_CAP.items() if k not in ("voltage", "dielectric", "tolerance")}
+    ic = {**base, "name": "TPS62130RGTR", "manufacturer": "Texas Instruments", "description": "buck converter"}
+    assert validate_one({}, category="ics_power", base=ic) == []
+
+
+def test_malformed_yaml_is_clear_error(minilib):
+    import pytest
+    from libkit.parts import load_parts
+    from libkit.schema import load_schema
+    (minilib / "parts" / "diodes.yaml").write_text("parts:\n  - name: D1\n   bad: [\n", encoding="utf-8")
+    with pytest.raises(ValueError, match="diodes.yaml"):
+        load_parts(minilib, load_schema(minilib))
+    (minilib / "parts" / "diodes.yaml").write_text("parts:\n  - just a string\n", encoding="utf-8")
+    with pytest.raises(ValueError, match="diodes.yaml"):
+        load_parts(minilib, load_schema(minilib))
+
+
+def test_cli_malformed_yaml_no_traceback(minilib):
+    import subprocess
+    import sys
+    (minilib / "parts" / "diodes.yaml").write_text("parts:\n  - name: D1\n   bad: [\n", encoding="utf-8")
+    for cmd in (["build"], ["check", "--no-klc"]):
+        r = subprocess.run([sys.executable, "-m", "libkit", *cmd], cwd=minilib, capture_output=True, text=True)
+        assert r.returncode == 1 and "diodes.yaml" in r.stderr and "Traceback" not in r.stderr, r.stderr
