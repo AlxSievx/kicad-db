@@ -1,0 +1,98 @@
+# LIB part library — schema
+#
+# Field options:
+#   label     symbol property name; omit = not written into the symbol
+#   required  true | false | orderable (only in orderable categories)
+#             | no_template (only when the category has no description_template)
+#   kind      str (default) | enum | url | date | int
+#   choices   allowed values for enum (case-sensitive)
+#   pattern   regular expression the value must fully match
+#   keyword   true = value goes into the generated search keywords
+
+prefix: LIB
+
+common_fields:
+  - {key: name, required: true}
+  - {key: symbol, required: true}
+  - {key: footprint, required: true}
+  - {key: value, required: true}
+  - {key: package, required: true, keyword: true}
+  - {key: description, required: no_template}
+  - {key: manufacturer, label: Manufacturer, required: orderable, keyword: true}
+  - {key: mpn, label: MPN, required: orderable, keyword: true}
+  - {key: lcsc, label: LCSC, required: orderable, keyword: true, pattern: 'C\d+'}
+  - {key: jlc_type, label: JLC_Type, required: orderable, kind: enum, choices: [Basic, Preferred, Extended]}
+  - {key: datasheet, required: orderable, kind: url}
+  - {key: status, required: true, kind: enum, choices: [active, deprecated]}
+  - {key: stock, kind: int}
+  - {key: stock_checked, kind: date}
+
+categories:
+  - key: resistors
+    title: Resistors
+    value_unit: Ω
+    description_template: "{value} {tolerance} {power} {package} resistor"
+    fields:
+      - {key: tolerance, label: Tolerance, required: true, keyword: true}
+      - {key: power, label: Power, required: true, keyword: true}
+      - {key: tempco, label: Tempco}
+  - key: capacitors
+    title: Capacitors
+    value_unit: F
+    description_template: "{value} {voltage} {dielectric} {tolerance} {package} capacitor"
+    fields:
+      - {key: voltage, label: Voltage, required: true, keyword: true}
+      - {key: dielectric, label: Dielectric, required: true, keyword: true}
+      - {key: tolerance, label: Tolerance, required: true, keyword: true}
+  - key: inductors
+    title: Inductors
+    value_unit: H
+    description_template: "{value} {current_rating} {package} inductor"
+    fields:
+      - {key: current_rating, label: Current, required: true}
+      - {key: current_sat, label: Current_Sat}
+      - {key: dcr, label: DCR}
+  - key: diodes
+    title: Diodes
+    fields:
+      - {key: vr, label: Vr}
+      - {key: if, label: If}
+      - {key: vf, label: Vf}
+  - {key: leds_optoelectronics, title: LEDs_Optoelectronics}
+  - key: transistors
+    title: Transistors
+    fields:
+      - {key: type, label: Type}
+      - {key: v_max, label: V_Max}
+      - {key: i_max, label: I_Max}
+      - {key: rds_on, label: Rds_On}
+  - {key: ics_power, title: ICs_Power}
+  - {key: ics_analog, title: ICs_Analog}
+  - {key: ics_digital_mcu, title: ICs_Digital_MCU}
+  - {key: ics_interface, title: ICs_Interface}
+  - {key: crystals_oscillators, title: Crystals_Oscillators}
+  - {key: connectors, title: Connectors}
+  - {key: switches_relays, title: Switches_Relays}
+  - {key: protection, title: Protection}
+  - {key: mechanical, title: Mechanical, orderable: false}
+  - {key: modules, title: Modules}
+
+# Footprint libraries, by package family. jlc_rotation: optional rotation
+# correction (degrees) for JLC's placement file.
+families:
+  - {name: Passives_SMD}
+
+# Known manufacturers for automatic part picks. Others give a warning.
+manufacturers:
+  - Samsung
+  - Murata
+  - Yageo
+  - UNI-ROYAL
+  - TDK
+  - Vishay
+  - KEMET
+  - Panasonic
+  - Taiyo Yuden
+  - Walsin
+  - FH (Guangdong Fenghua)
+  - Sunlord

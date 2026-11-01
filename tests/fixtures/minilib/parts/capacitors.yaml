@@ -1,0 +1,18 @@
+# Test fixture. package and stock_checked are deliberately unquoted.
+parts:
+  - name: C_100n_0402_16V_X7R
+    symbol: C
+    footprint: LIB_Passives_SMD:C_0402_1005Metric
+    value: 100nF
+    package: 0402
+    manufacturer: Samsung
+    mpn: CL05B104KO5NNNC
+    lcsc: C1525
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/C1525.pdf
+    status: active
+    stock: 48200000
+    stock_checked: 2026-10-30
+    voltage: 16V
+    dielectric: X7R
+    tolerance: ±10%

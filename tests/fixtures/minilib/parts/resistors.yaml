@@ -1,0 +1,14 @@
+parts:
+  - name: R_10k_0402_1%
+    symbol: R
+    footprint: LIB_Passives_SMD:R_0402_1005Metric
+    value: 10k
+    package: "0402"
+    manufacturer: UNI-ROYAL
+    mpn: 0402WGF1002TCE
+    lcsc: C25744
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/C25744.pdf
+    status: active
+    tolerance: ±1%
+    power: 62.5mW
