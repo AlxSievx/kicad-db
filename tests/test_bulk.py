@@ -7,7 +7,7 @@ import pytest
 from conftest import errors
 from fakes import FIXTURES, fake_get_bytes, load
 from libkit import __main__ as cli, net
-from libkit.bulk import PLAN_FILE, apply, load_plan, plan, save_plan
+from libkit.bulk import apply, load_plan, plan, plan_file, save_plan
 from libkit.datasheet import Result
 from libkit.net import NetError
 from libkit.parts import load_parts
@@ -209,11 +209,25 @@ def test_plan_refuses_old_dry_run(minilib):
         load_plan(minilib, RUN_10P, now=now + timedelta(hours=25))
 
 
+PLAN_FILE = plan_file("capacitor")
+
+
 def test_plan_refuses_changed_library(minilib):
     save_plan(minilib, RUN_10P, plan10p(minilib))
-    add_part(minilib, "resistors", {"name": "R_1k_0402_1pct", "symbol": "R"})  # any parts/*.yaml counts
-    with pytest.raises(ValueError, match="changed since"):
+    add_part(minilib, "capacitors", cap10p())
+    with pytest.raises(ValueError, match="capacitors.yaml changed since"):
         load_plan(minilib, RUN_10P)
+
+
+def test_plans_per_kind_are_independent(minilib):
+    # Approve a resistor and a capacitor table together: writing one keeps the other valid.
+    run_r = dict(RUN_10P, kind="resistor", start=1000.0, stop=1000.0, min_voltage=None, dielectrics=[])
+    save_plan(minilib, RUN_10P, plan10p(minilib))
+    save_plan(minilib, run_r, [])
+    add_part(minilib, "resistors", {"name": "R_1k_0402_1pct", "symbol": "R"})
+    assert load_plan(minilib, RUN_10P)[0][0].name == "C_10p_0402_50V_C0G"
+    with pytest.raises(ValueError, match="resistors.yaml changed since"):
+        load_plan(minilib, run_r)
 
 
 def test_plan_missing_or_broken(minilib):
@@ -306,3 +320,25 @@ def test_cli_network_error_writes_nothing(offline, monkeypatch, capsys):
 def test_cli_bad_tolerance(offline, capsys):
     assert cli.main(CLI_10P[:-4] + ["--tolerance", "lots", "--voltage", "50V"]) == 1
     assert "tolerance" in capsys.readouterr().err
+
+def test_cli_write_skip(offline, capsys):
+    before = (offline / "parts" / "capacitors.yaml").read_bytes()
+    assert cli.main(CLI_10P) == 0
+    assert cli.main(CLI_10P + ["--write", "--skip", "10pF"]) == 0
+    out = capsys.readouterr().out
+    assert "skipped (--skip)" in out and "added 0 parts" in out and "1 skipped" in out
+    assert (offline / "parts" / "capacitors.yaml").read_bytes() == before
+
+
+def test_cli_skip_typo_writes_nothing(offline, capsys):
+    before = (offline / "parts" / "capacitors.yaml").read_bytes()
+    assert cli.main(CLI_10P) == 0
+    assert cli.main(CLI_10P + ["--write", "--skip", "22p"]) == 1
+    assert "--skip 22p: not a new row" in capsys.readouterr().err
+    assert (offline / "parts" / "capacitors.yaml").read_bytes() == before
+    assert (offline / PLAN_FILE).exists()  # the plan is still there for a corrected --write
+
+
+def test_cli_skip_needs_write(offline, capsys):
+    assert cli.main(CLI_10P + ["--skip", "10p"]) == 1
+    assert "only applies with --write" in capsys.readouterr().err

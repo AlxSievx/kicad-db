@@ -114,7 +114,7 @@ def _volts(text: str) -> float:
 
 
 def _bulk_add(args) -> int:
-    from .bulk import apply, clear_plan, load_plan, plan, save_plan
+    from .bulk import apply, clear_plan, load_plan, plan, save_plan, skip_rows
     from .datasheet import Checker
     from .entries import KINDS
     from .values import parse_value
@@ -129,8 +129,12 @@ def _bulk_add(args) -> int:
         min_voltage=_volts(args.voltage) if args.voltage else None,
         dielectrics=tuple(d.strip() for d in args.dielectric.split(",") if d.strip()),
     )
+    if args.skip and not args.write:
+        raise ValueError("--skip only applies with --write (the dry run keeps every row)")
     if args.write:
         rows, created = load_plan(root, run)  # exactly the approved dry run, no new picks
+        if args.skip:
+            rows = skip_rows(rows, [v.strip() for v in args.skip.split(",") if v.strip()], unit)
     else:
         rows = plan(root, **run, lang=Checker(root).for_part)
     table = [("value", "name", "status", "LCSC", "MPN", "manufacturer", "type", "ds", "stock", "note")]
@@ -142,16 +146,17 @@ def _bulk_add(args) -> int:
     widths = [max(len(str(row[i])) for row in table) for i in range(len(table[0]) - 1)]
     for row in table:
         print("  ".join(str(c).ljust(w) for c, w in zip(row, widths)) + "  " + row[-1])
-    count = {s: sum(r.status == s for r in rows) for s in ("new", "exists", "none")}
+    count = {s: sum(r.status == s for r in rows) for s in ("new", "exists", "none", "skipped")}
     if not args.write:
         save_plan(root, run, rows)
         print(f"dry run: {count['new']} new, {count['exists']} existing, {count['none']} without a part"
               " — rerun with --write to add exactly these")
         return 0
     n = apply(root, args.kind, rows)
-    clear_plan(root)
+    clear_plan(root, args.kind)
     print(f"added {n} parts to parts/{KINDS[args.kind][0]}.yaml from the dry run of "
-          f"{created.astimezone():%Y-%m-%d %H:%M} ({count['exists']} existing, {count['none']} without a part)")
+          f"{created.astimezone():%Y-%m-%d %H:%M} ({count['exists']} existing, {count['none']} without a part"
+          + (f", {count['skipped']} skipped" if count["skipped"] else "") + ")")
     return 0
 
 
@@ -212,6 +217,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
     p.add_argument("--write", action="store_true",
                    help="write the new parts of the last dry run with these options, then build")
+    p.add_argument("--skip", help="with --write: values of the dry run not to add, e.g. 62k,1.8k")
     p.set_defaults(func=_bulk_add)
 
     p = sub.add_parser("refresh-stock", help="re-query stock and JLC type of every part")

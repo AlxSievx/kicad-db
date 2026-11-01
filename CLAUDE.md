@@ -44,11 +44,12 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   and the datasheet language (`en`, `zh`, `unknown`).
 - **Bulk add (resistors, capacitors):** always run the dry run first (no
   `--write`) and show the user the whole table. The dry run is saved in
-  `.libkit/bulk-plan.json`; after their OK, the same command with `--write`
+  `.libkit/bulk-plan-<kind>.json` (one per kind, so a resistor and a capacitor table can be approved together); after their OK, the same command with `--write`
   writes exactly those rows (no new picks, no network) into
   `parts/<category>.yaml`, then builds. `--write` refuses when the options
-  differ, the dry run is older than 24 h, or `parts/*.yaml` changed since; then
-  dry-run again and show the new table. Then run `check` and commit. Rows:
+  differ, the dry run is older than 24 h, or that `parts/<category>.yaml` changed since; then
+  dry-run again and show the new table. Values the user wants left out:
+  `--write --skip 62k,1.8k` (typos are refused). Then run `check` and commit. Rows:
   `new` = will be added, `exists` = an existing part covers the value (or the
   pick's name/LCSC is already in the library), `none` = no part meets the rules
   (see the note). Column `ds` = datasheet language. `--dielectric` defaults to
