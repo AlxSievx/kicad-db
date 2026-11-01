@@ -1,0 +1,225 @@
+(footprint "L_Sunlord_SWPA3015S"
+	(version 20260206)
+	(generator "libkit")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "2.2uH 2A Wire-wound inductor ±20% SMD,3x3mm Power Inductors, https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA3015S2R2MT_C43389.pdf (EasyEDA C43389)")
+	(tags "SMD 3x3mm SWPA3015S2R2MT")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "bdd87d1e-8649-4c1c-bce9-4b6e70eaea16")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Sunlord_SWPA3015S"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "74b8c83b-7118-4244-826d-30355ee4ad24")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3bcd5914-3545-46bc-b390-cb18c5dac6cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ea1daf25-3595-45d5-823d-aaa31bb0fdb0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.52 -1.9)
+		(end 1.52 -1.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ab633289-f62c-40b6-a2e0-cfe272864fa6")
+	)
+	(fp_line
+		(start -1.52 -1.89)
+		(end -1.52 -1.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1ef99b57-f5c8-4fcf-b590-e71d8bfeb667")
+	)
+	(fp_line
+		(start -1.52 1.9)
+		(end -1.52 1.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ad7268e7-3bfd-485e-b4c6-2340a8a8a784")
+	)
+	(fp_line
+		(start -1.52 1.9)
+		(end 1.52 1.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3cfdf75b-1b9a-4d32-88aa-7ea260a81838")
+	)
+	(fp_line
+		(start 1.52 -1.9)
+		(end 1.52 -1.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "877526de-3631-40d8-a831-30266a987406")
+	)
+	(fp_line
+		(start 1.52 1.89)
+		(end 1.52 1.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "92040441-1634-46c1-b636-ae3b7e666ad3")
+	)
+	(fp_circle
+		(center 1.5 -1.5)
+		(end 1.53 -1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "2767657b-42c7-48b7-a1d8-fe2574ebf3dc")
+	)
+	(fp_line
+		(start -1.52 -1.9)
+		(end 1.52 -1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.52 -1.89)
+		(end -1.52 -1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.52 1.9)
+		(end -1.52 1.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.52 1.9)
+		(end 1.52 1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.52 -1.9)
+		(end 1.52 -1.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.52 1.89)
+		(end 1.52 1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -2 -2.15)
+		(end 2 2.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 1.2 0)
+		(size 1.1 3.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2273)
+		(uuid "0b62fb6d-f406-4f3a-8562-54a418809867")
+	)
+	(pad "2" smd roundrect
+		(at -1.2 0)
+		(size 1.1 3.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2273)
+		(uuid "85f33de2-484a-46ca-82d5-44383b73f195")
+	)
+	(embedded_fonts no)
+	(model "${LIB_DIR}/3dmodels/LIB_Inductor_SMD.3dshapes/L_Sunlord_SWPA3015S.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,149 @@
+(footprint "L_Sunlord_SWPA8040S"
+	(version 20260206)
+	(generator "libkit")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "15uH 2.6A 3.4A 47mΩ ±20% SMD,8x8mm Power Inductors, https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA8040S150MT_C16853.pdf (EasyEDA C16853)")
+	(tags "SMD 8x8mm SWPA8040S150MT")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "2fe90cf6-413e-4dc5-b8cf-886f675234ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Sunlord_SWPA8040S"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "8205c38f-3602-44d1-af70-6ecf114c50eb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a2258c1-183c-4935-95e6-70aa53f533ea")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a1e78b99-a392-4241-a568-bc6d5cdea454")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -4.08 -4.02)
+		(end 4.08 -4.02)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "32918d86-145a-40bc-a4e7-7f5134c9ff3b")
+	)
+	(fp_line
+		(start -4.08 4.02)
+		(end 4.08 4.02)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f2770aea-23b6-493c-80fa-a46ca439b14c")
+	)
+	(fp_circle
+		(center -3.97 3.97)
+		(end -3.94 3.97)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "1c55fd45-6b67-45dc-bc37-0190dd1c50bd")
+	)
+	(fp_line
+		(start -4.08 -4.02)
+		(end 4.08 -4.02)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -4.08 4.02)
+		(end 4.08 4.02)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -5.1 -4.27)
+		(end 5.1 4.27)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 3.33 0)
+		(size 3.024 7.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.0827)
+		(uuid "7378c1af-81e4-41ae-979b-8901fbc26a6a")
+	)
+	(pad "2" smd roundrect
+		(at -3.33 0)
+		(size 3.024 7.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.0827)
+		(uuid "03f1a28c-c45c-4668-b758-3302cec0b775")
+	)
+	(embedded_fonts no)
+	(model "${LIB_DIR}/3dmodels/LIB_Inductor_SMD.3dshapes/L_Sunlord_SWPA8040S.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

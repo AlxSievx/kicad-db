@@ -1,1 +1,84 @@
-parts: []
+parts:
+  - name: SWPA3015S2R2MT
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_Sunlord_SWPA3015S
+    value: 2.2uH
+    package: SMD,3x3mm
+    manufacturer: Sunlord
+    mpn: SWPA3015S2R2MT
+    lcsc: C43389
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA3015S2R2MT_C43389.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "45566"
+    stock_checked: "2026-11-01"
+    current_rating: 2A
+  - name: SWPA4030S100MT
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_Sunlord_SWPA4030S
+    value: 10uH
+    package: SMD,4x4mm
+    manufacturer: Sunlord
+    mpn: SWPA4030S100MT
+    lcsc: C38117
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA4030S100MT_C38117.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "63416"
+    stock_checked: "2026-11-01"
+    current_rating: 1.5A
+    current_sat: 2.4A
+    dcr: 130mΩ
+  - name: SWPA5040S100MT
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_Sunlord_SWPA5040S
+    value: 10uH
+    package: SMD,5x5mm
+    manufacturer: Sunlord
+    mpn: SWPA5040S100MT
+    lcsc: C84608
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA5040S100MT_C84608.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "50810"
+    stock_checked: "2026-11-01"
+    current_rating: 2.1A
+    current_sat: 2.9A
+    dcr: 83mΩ
+  - name: SWPA6045S680MT
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_Sunlord_SWPA6045S
+    value: 68uH
+    package: SMD,6x6mm
+    manufacturer: Sunlord
+    mpn: SWPA6045S680MT
+    lcsc: C53663
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA6045S680MT_C53663.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "34664"
+    stock_checked: "2026-11-01"
+    current_rating: 1A
+    current_sat: 1.2A
+    dcr: 289mΩ
+  - name: SWPA8040S150MT
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_Sunlord_SWPA8040S
+    value: 15uH
+    package: SMD,8x8mm
+    manufacturer: Sunlord
+    mpn: SWPA8040S150MT
+    lcsc: C16853
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA8040S150MT_C16853.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "18375"
+    stock_checked: "2026-11-01"
+    current_rating: 2.6A
+    current_sat: 3.4A
+    dcr: 47mΩ

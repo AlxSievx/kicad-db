@@ -1,6 +1,13 @@
 (fp_lib_table
 	(version 7)
 	(lib
+		(name "LIB_Inductor_SMD")
+		(type "KiCad")
+		(uri "${LIB_DIR}/footprints/LIB_Inductor_SMD.pretty")
+		(options "")
+		(descr "Inductor SMD")
+	)
+	(lib
 		(name "LIB_Passives_SMD")
 		(type "KiCad")
 		(uri "${LIB_DIR}/footprints/LIB_Passives_SMD.pretty")
