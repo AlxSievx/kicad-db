@@ -8,6 +8,7 @@ from pathlib import Path
 from .build import BuildError, generate
 from .klc import run_klc
 from .parts import Issue, load_parts, validate
+from .pins import pin_pad_issues
 from .schema import load_schema
 from .symgen import load_source_symbols
 
@@ -53,6 +54,8 @@ def check(root: Path, klc: bool = True) -> list[Issue]:
             issues.append(Issue("error", p.name, f"footprint library {lib!r} is not a declared family"))
         elif not (root / "footprints" / f"{lib}.pretty" / f"{name}.kicad_mod").exists():
             issues.append(Issue("error", p.name, f"footprint {fp} does not exist"))
+    if sources:
+        issues += pin_pad_issues(parts, sources, root)
     for d in sorted((root / "footprints").glob("*.pretty")):
         if d.stem not in fam_libs:
             issues.append(Issue("error", None, f"footprints/{d.name} is not a declared family in schema"))
