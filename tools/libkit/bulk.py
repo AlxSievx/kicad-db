@@ -286,7 +286,8 @@ def _fingerprint(root: Path, kind: str, package: str) -> str:
         package = package_name(kind, package)
     from .families import family_member
     mine = sorted((p.data for p in load_parts(root, load_schema(root))
-                   if p.category == category and (p.data.get("package") == package
+                   if p.category == category and p.data.get("symbol") == KINDS[kind][1]
+                   and (p.data.get("package") == package
                                                   or family_member(package, p.data.get("mpn", "")))),
                   key=lambda d: json.dumps(d, sort_keys=True))
     return hashlib.sha256(json.dumps(mine, sort_keys=True).encode("utf-8")).hexdigest()

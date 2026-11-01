@@ -184,3 +184,14 @@ def test_bead_keyword_has_frequency():  # live: "120Ω 0603" finds no beads at J
     assert keyword("bead", 120.0, "0603") == "120Ω@100MHz 0603"
     assert keyword("bead", 1000.0, "0402") == "1kΩ@100MHz 0402"
     assert keyword("inductor", 1e-5, "0805") == "10uH 0805"
+
+
+def test_bead_write_keeps_inductor_plan_valid(minilib):  # deferred minor 3: kinds share the inductors category
+    root = lib(minilib)
+    run_l = dict(kind="inductor", series_name="E6", start=1e-5, stop=1e-5, package="0805",
+                 max_tolerance=1.0, min_voltage=None, dielectrics=(), min_power=None, family=False)
+    save_plan(root, run_l, plan(root, **run_l, search=fake_search({"10uH": [part("C1046")]})))
+    run_b = {**RUN_FB, "start": 100.0, "stop": 100.0, "series_name": "E6"}
+    rows = plan(root, **run_b, search=fake_search({"100Ω@100MHz": [part("C1015")]}))
+    apply(root, "bead", rows)
+    load_plan(root, run_l)  # must not say "changed since the last dry run"
