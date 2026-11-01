@@ -94,6 +94,56 @@ def _jlc(args) -> int:
     return 0
 
 
+def _percent(text: str, what: str) -> float:
+    t = text.strip().rstrip("%").lstrip("±")
+    try:
+        return float(t) / 100
+    except ValueError:
+        raise ValueError(f"{what} {text!r} is not a percentage like 1%") from None
+
+
+def _volts(text: str) -> float:
+    try:
+        return float(text.strip().rstrip("Vv"))
+    except ValueError:
+        raise ValueError(f"voltage {text!r} is not like 16V") from None
+
+
+def _bulk_add(args) -> int:
+    from .bulk import apply, plan
+    from .entries import KINDS
+    from .values import parse_value
+    root = find_root()
+    unit = KINDS[args.kind][2]
+    if args.kind == "capacitor" and args.voltage is None:
+        raise ValueError("capacitors need --voltage")
+    run = dict(
+        kind=args.kind, series_name=args.series,
+        start=parse_value(args.start, unit), stop=parse_value(args.stop, unit),
+        package=args.package, max_tolerance=_percent(args.tolerance, "tolerance"),
+        min_voltage=_volts(args.voltage) if args.voltage else None,
+        dielectrics=tuple(d.strip() for d in args.dielectric.split(",") if d.strip()),
+    )
+    rows = plan(root, **run)
+    table = [("value", "name", "status", "LCSC", "MPN", "manufacturer", "type", "stock", "note")]
+    for r in rows:
+        e = r.entry or {}
+        table.append((r.value, r.name or "-", r.status, e.get("lcsc", "-"), e.get("mpn", "-"),
+                      e.get("manufacturer", "-"), e.get("jlc_type", "-"), e.get("stock", "-"), r.note))
+    widths = [max(len(str(row[i])) for row in table) for i in range(len(table[0]) - 1)]
+    for row in table:
+        print("  ".join(str(c).ljust(w) for c, w in zip(row, widths)) + "  " + row[-1])
+    count = {s: sum(r.status == s for r in rows) for s in ("new", "exists", "none")}
+    if not args.write:
+        print(f"dry run: {count['new']} new, {count['exists']} existing, {count['none']} without a part"
+              " — rerun with --write to add")
+        return 0
+    n = apply(root, args.kind, rows)
+    print(f"added {n} parts to parts/{KINDS[args.kind][0]}.yaml ({count['exists']} existing, "
+          f"{count['none']} without a part)")
+    return 0
+
+
 def _utf8_output() -> None:
     # Part data has Ω, ±, ℃; Windows pipes default to cp1252, which lacks some.
     for stream in (sys.stdout, sys.stderr):
@@ -125,6 +175,18 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("ref", help="<StockLib>:<Symbol>")
     p.add_argument("--into", required=True)
     p.set_defaults(func=_vendor_sym)
+
+    p = sub.add_parser("bulk-add", help="add resistors or capacitors for a value series (dry run by default)")
+    p.add_argument("kind", choices=["resistor", "capacitor"])
+    p.add_argument("--series", required=True, choices=["E6", "E12", "E24", "E48", "E96"])
+    p.add_argument("--from", dest="start", required=True, help="first value, e.g. 1k or 10n")
+    p.add_argument("--to", dest="stop", required=True, help="last value (inclusive)")
+    p.add_argument("--package", required=True, choices=["0402", "0603", "0805", "1206"])
+    p.add_argument("--tolerance", required=True, help="worst acceptable tolerance, e.g. 1%%")
+    p.add_argument("--voltage", help="minimum voltage rating for capacitors, e.g. 16V")
+    p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
+    p.add_argument("--write", action="store_true", help="write the new parts and build")
+    p.set_defaults(func=_bulk_add)
 
     p = sub.add_parser("jlc", help="look up one LCSC part at JLC and print its record")
     p.add_argument("lcsc", help="LCSC C-number, e.g. C1525")
