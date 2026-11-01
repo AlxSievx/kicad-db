@@ -95,6 +95,6 @@
   rule: S4.1
   reason: Stock KiCad dual-diode symbol copied unchanged (unnamed common pin).
 - kind: symbol
-  item: ["*:LED", "*:BAV99*"]
+  item: ["*:LED", "*:BAV99*", "*:FerriteBead"]
   rule: EC01
   reason: Stock KiCad symbol copied unchanged (extended geometry check only).
