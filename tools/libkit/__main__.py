@@ -57,6 +57,7 @@ def _build(args) -> int:
     schema = load_schema(root)
     _print_issues([i for i in validate(load_parts(root, schema), schema, root) if i.severity == "warning"])
     print(f"built {len(written)} files")
+    print("review page: build/review/index.html")
     return 0
 
 

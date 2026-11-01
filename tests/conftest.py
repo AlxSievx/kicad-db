@@ -17,6 +17,7 @@ def _offline_by_default(monkeypatch):
     import os
     import urllib.error
     from libkit import net
+    monkeypatch.setenv("LIBKIT_PREVIEWS", "0")  # no kicad-cli renders on build; preview tests opt in
     monkeypatch.setattr(net, "BACKOFF", (0.0,))
     monkeypatch.setattr(net, "MIN_INTERVAL", 0.0)  # test_rate_limit sets its own
     if os.environ.get("LIBKIT_LIVE") != "1":

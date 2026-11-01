@@ -15,6 +15,9 @@ package-dir = {"" = "tools"}
 [tool.setuptools.packages.find]
 where = ["tools"]
 
+[tool.setuptools.package-data]
+libkit = ["*.html"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 markers = ["kicad: needs kicad-cli"]
