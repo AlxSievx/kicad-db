@@ -19,7 +19,8 @@ def family_member(family: str, mpn: str) -> bool:
     fam = family.strip().upper()
     if not rest.startswith(fam):
         return False
-    return re.fullmatch(r"-?(\d{3}|\d+R\d+|R\d+)[A-Z]{0,3}", rest[len(fam):]) is not None
+    code = r"(\d{3}|\d+R\d+|R\d+|\d+(?:\.\d+)?[UM]H)"  # 100, 4R7, R47, or a spelled value: 47UH
+    return re.fullmatch(rf"-?{code}[A-Z]{{0,3}}", rest[len(fam):]) is not None
 
 
 def family_footprint(root: Path, family: str) -> str | None:

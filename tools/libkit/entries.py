@@ -99,6 +99,8 @@ def kind_of(part: JlcPart) -> str | None:
         return "tantalum"
     if part.type_name == ELECTROLYTIC_TYPE:
         return "electrolytic"
+    if "common mode" in part.type_name.casefold():
+        return None  # multi-line chokes: single add with a coupled-inductor symbol
     if "electrolytic" in part.type_name.casefold() or "polymer" in part.type_name.casefold():
         return None  # hybrid / polymer aluminium: no bulk kind (single add by MPN only)
     for key, kind in (("Resistance", "resistor"), ("Capacitance", "capacitor"),

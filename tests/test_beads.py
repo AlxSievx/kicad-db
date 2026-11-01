@@ -195,3 +195,15 @@ def test_bead_write_keeps_inductor_plan_valid(minilib):  # deferred minor 3: kin
     rows = plan(root, **run_b, search=fake_search({"100Ω@100MHz": [part("C1015")]}))
     apply(root, "bead", rows)
     load_plan(root, run_l)  # must not say "changed since the last dry run"
+
+
+def test_common_mode_filter_is_not_a_bead():  # 4-pin chokes are single adds with a coupled-inductor symbol
+    from libkit.entries import kind_of
+    p = replace(part("C1015"), type_name="Common Mode Filters", package="SMD-4P,3.2x2.5mm")
+    assert kind_of(p) is None
+
+
+def test_family_member_value_codes():
+    assert family_member("CY75-", "CY75-47UH") and family_member("CY75-", "CY75-100UH")
+    assert family_member("YPRH1209", "YPRH1209-101M")
+    assert not family_member("CY75-", "CY75-47UHXYZQ")
