@@ -10,6 +10,8 @@ parts:
     jlc_type: Basic
     datasheet: https://www.lcsc.com/datasheet/C25744.pdf
     status: active
+    stock: "16650328"
+    stock_checked: "2026-11-01"
     tolerance: ±1%
     power: 62.5mW
     tempco: ±100ppm/°C

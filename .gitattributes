@@ -6,3 +6,4 @@
 *.py text eol=lf
 *.md text eol=lf
 *.step binary
+*.json text eol=lf

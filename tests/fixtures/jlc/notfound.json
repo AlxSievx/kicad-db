@@ -1,0 +1,781 @@
+{
+  "code": 200,
+  "data": {
+    "componentPageInfo": {
+      "total": 41,
+      "list": [
+        {
+          "componentId": 1487189,
+          "componentLibraryType": "expand",
+          "stockCount": 0,
+          "componentTypeEn": "Through Hole Resistors",
+          "erpComponentName": "金属膜电阻 99.9kΩ ±1% 250mW",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/through-hole-resistors_vishay-intertech-rn60c9992fb14_C1396897.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.2049
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.2049
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.2049
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0793
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0765
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0752
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0724
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0764
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 29,
+              "productPrice": 0.1974
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 199,
+              "productPrice": 0.1974
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.1974
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0737
+            }
+          ],
+          "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
+          "secondSortAccessId": "9ef82dc9906941e99c40ada887595824",
+          "canPresaleNumber": 0,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "VishayIntertech-RN60C9992FB14/C1396897",
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 100,
+          "shopCostPrice": 0.0,
+          "preMinPurchaseNum": 45,
+          "minPurchaseNum": 45,
+          "initialPrice": 0.2049,
+          "componentCode": "C1396897",
+          "componentBrandEn": "Vishay Intertech",
+          "componentModelEn": "RN60C9992FB14",
+          "componentImageUrl": null,
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Vishay-Intertech-RN60C9992FB14_C1396897.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8589007425982631937-C1396897.pdf?response-content-disposition=attachment%3B%20filename%3DC1396897.pdf%3B%20filename%2A%3DUTF-8%27%27C1396897.pdf&x-oss-date=20261101T104553Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rsA47wi%2B5Z75iAQVzLilQdSLpd3Lbs1Tz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb1Wjlow557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkrrU9EWDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkINP%2BMRqKWD5sagAGXDn9z0JyJD%2FVKBDhSQmAuFwbUIK3vjEGVRPx5s2YEQkENGiFVTDJXC2S8qZJ%2Fm5hjlhRC0PVvsbASn3DLlQeh03anWxdjD2EidaU3bHgCDgF2XNFGt9FYZRyzkwsYw3Mrv33rkvS5P7wzD%2BgHG6lTnbvgqLeF8cVnm8DZYp6EWCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYH4Df1xXZkCzznTHD5q3sG7%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d6e974697705815c0a10b05a602e4eff04de2e9411701c960cf0974c990d666c",
+          "dataManualOfficialLink": "",
+          "componentName": "VISHAY RN60C9992FB14",
+          "minImage": null,
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "Plugin,D3.7xL8.7mm",
+          "describe": "-65℃~+175℃ 250mW 99.9kΩ Metal Film Resistor ±1% ±50ppm/℃ 插件,D3.7xL8.7mm Through Hole Resistors",
+          "attributes": [
+            {
+              "attribute_name_en": "Resistance",
+              "attribute_value_name": "99.9kΩ"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-65℃~+175℃"
+            },
+            {
+              "attribute_name_en": "Power(Watts)",
+              "attribute_value_name": "250mW"
+            },
+            {
+              "attribute_name_en": "Type",
+              "attribute_value_name": "Metal Film Resistor"
+            },
+            {
+              "attribute_name_en": "Tolerance",
+              "attribute_value_name": "±1%"
+            },
+            {
+              "attribute_name_en": "Temperature Coefficient",
+              "attribute_value_name": "±50ppm/℃"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Through Hole Resistors",
+          "secondSortName": "Resistors",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "RN60<span class='lucene_highlight_class'>C999</span>2FB14",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 0,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 1866130,
+          "componentLibraryType": "expand",
+          "stockCount": 0,
+          "componentTypeEn": "Through Hole Resistors",
+          "erpComponentName": "金属膜电阻 99.9kΩ ±1% 250mW",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/through-hole-resistors_vishay-intertech-rn60c9992fre6_C1775343.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.1526
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.1526
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 199,
+              "productPrice": 0.1526
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0591
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.057
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.056
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0539
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0569
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.147
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 199,
+              "productPrice": 0.147
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.147
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0549
+            }
+          ],
+          "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
+          "secondSortAccessId": "9ef82dc9906941e99c40ada887595824",
+          "canPresaleNumber": 0,
+          "componentProductType": 0,
+          "mergedComponentCode": "",
+          "urlSuffix": "VishayIntertech-RN60C9992FRE6/C1775343",
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": "",
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 1000,
+          "shopCostPrice": 0.0,
+          "preMinPurchaseNum": 60,
+          "minPurchaseNum": 60,
+          "initialPrice": 0.1526,
+          "componentCode": "C1775343",
+          "componentBrandEn": "Vishay Intertech",
+          "componentModelEn": "RN60C9992FRE6",
+          "componentImageUrl": null,
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Vishay-Intertech-RN60C9992FRE6_C1775343.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8589886113075654656-C1775343.pdf?response-content-disposition=attachment%3B%20filename%3DC1775343.pdf%3B%20filename%2A%3DUTF-8%27%27C1775343.pdf&x-oss-date=20261101T104553Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rsA47wi%2B5Z75iAQVzLilQdSLpd3Lbs1Tz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb1Wjlow557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkrrU9EWDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkINP%2BMRqKWD5sagAGXDn9z0JyJD%2FVKBDhSQmAuFwbUIK3vjEGVRPx5s2YEQkENGiFVTDJXC2S8qZJ%2Fm5hjlhRC0PVvsbASn3DLlQeh03anWxdjD2EidaU3bHgCDgF2XNFGt9FYZRyzkwsYw3Mrv33rkvS5P7wzD%2BgHG6lTnbvgqLeF8cVnm8DZYp6EWCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYH4Df1xXZkCzznTHD5q3sG7%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=14a6613eaaa0b0a607c92ec1d092453e40fa4a12598075543975af0982956fc6",
+          "dataManualOfficialLink": "",
+          "componentName": "VISHAY RN60C9992FRE6",
+          "minImage": null,
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "Plugin,D3.7xL8.7mm",
+          "describe": "-65℃~+175℃ 250mW 99.9kΩ Metal Film Resistor ±1% ±50ppm/℃ 插件,D3.7xL8.7mm Through Hole Resistors",
+          "attributes": [
+            {
+              "attribute_name_en": "Resistance",
+              "attribute_value_name": "99.9kΩ"
+            },
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-65℃~+175℃"
+            },
+            {
+              "attribute_name_en": "Power(Watts)",
+              "attribute_value_name": "250mW"
+            },
+            {
+              "attribute_name_en": "Type",
+              "attribute_value_name": "Metal Film Resistor"
+            },
+            {
+              "attribute_name_en": "Tolerance",
+              "attribute_value_name": "±1%"
+            },
+            {
+              "attribute_name_en": "Temperature Coefficient",
+              "attribute_value_name": "±50ppm/℃"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Through Hole Resistors",
+          "secondSortName": "Resistors",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "RN60<span class='lucene_highlight_class'>C999</span>2FRE6",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 0,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 2265656,
+          "componentLibraryType": "expand",
+          "stockCount": 0,
+          "componentTypeEn": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+          "erpComponentName": "±0.1pF 9.9pF 250V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_kemet-cbr06c999bagac_C2173590.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.1887
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.1887
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 199,
+              "productPrice": 0.1887
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.073
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0704
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0693
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0667
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0704
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.1818
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 199,
+              "productPrice": 0.1818
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.1818
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0678
+            }
+          ],
+          "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
+          "secondSortAccessId": "7e74f1d772c74e3d99bc4868d21962f2",
+          "canPresaleNumber": 0,
+          "componentProductType": 0,
+          "mergedComponentCode": "",
+          "urlSuffix": "KEMET-CBR06C999BAGAC/C2173590",
+          "leastPatchNumber": 5,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": "",
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 4000,
+          "shopCostPrice": 0.0,
+          "preMinPurchaseNum": 48,
+          "minPurchaseNum": 48,
+          "initialPrice": 0.1887,
+          "componentCode": "C2173590",
+          "componentBrandEn": "KEMET",
+          "componentModelEn": "CBR06C999BAGAC",
+          "componentImageUrl": null,
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_KEMET-CBR06C999BAGAC_C2173590.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8589919514835394560-C2173590.pdf?response-content-disposition=attachment%3B%20filename%3DC2173590.pdf%3B%20filename%2A%3DUTF-8%27%27C2173590.pdf&x-oss-date=20261101T104553Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rsA47wi%2B5Z75iAQVzLilQdSLpd3Lbs1Tz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb1Wjlow557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkrrU9EWDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkINP%2BMRqKWD5sagAGXDn9z0JyJD%2FVKBDhSQmAuFwbUIK3vjEGVRPx5s2YEQkENGiFVTDJXC2S8qZJ%2Fm5hjlhRC0PVvsbASn3DLlQeh03anWxdjD2EidaU3bHgCDgF2XNFGt9FYZRyzkwsYw3Mrv33rkvS5P7wzD%2BgHG6lTnbvgqLeF8cVnm8DZYp6EWCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYH4Df1xXZkCzznTHD5q3sG7%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=7e1c0a8433c3975dc1599fd99b157053c4b79d6330258c7d088b353824248b5e",
+          "dataManualOfficialLink": "",
+          "componentName": "KEMET CBR06C999BAGAC",
+          "minImage": null,
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "0603",
+          "describe": "250V 9.9pF C0G 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Voltage Rating",
+              "attribute_value_name": "250V"
+            },
+            {
+              "attribute_name_en": "Capacitance",
+              "attribute_value_name": "9.9pF"
+            },
+            {
+              "attribute_name_en": "Temperature Coefficient",
+              "attribute_value_name": "C0G"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+          "secondSortName": "Capacitors",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "CBR06<span class='lucene_highlight_class'>C999</span>BAGAC",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 2269086,
+          "componentLibraryType": "expand",
+          "stockCount": 0,
+          "componentTypeEn": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+          "erpComponentName": "±0.1pF 9.9pF 50V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_kemet-cbr06c999b5gac_C2177020.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.0391
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.0391
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 199,
+              "productPrice": 0.0391
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0152
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0146
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0144
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0138
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0146
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.0377
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 199,
+              "productPrice": 0.0377
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.0377
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0141
+            }
+          ],
+          "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
+          "secondSortAccessId": "7e74f1d772c74e3d99bc4868d21962f2",
+          "canPresaleNumber": 0,
+          "componentProductType": 0,
+          "mergedComponentCode": "",
+          "urlSuffix": "KEMET-CBR06C999B5GAC/C2177020",
+          "leastPatchNumber": 5,
+          "lossNumber": 4,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": "",
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 4000,
+          "shopCostPrice": 0.0,
+          "preMinPurchaseNum": 618,
+          "minPurchaseNum": 618,
+          "initialPrice": 0.0146,
+          "componentCode": "C2177020",
+          "componentBrandEn": "KEMET",
+          "componentModelEn": "CBR06C999B5GAC",
+          "componentImageUrl": null,
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_KEMET-CBR06C999B5GAC_C2177020.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8589921194116870144-C2177020.pdf?response-content-disposition=attachment%3B%20filename%3DC2177020.pdf%3B%20filename%2A%3DUTF-8%27%27C2177020.pdf&x-oss-date=20261101T104553Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rsA47wi%2B5Z75iAQVzLilQdSLpd3Lbs1Tz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb1Wjlow557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkrrU9EWDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkINP%2BMRqKWD5sagAGXDn9z0JyJD%2FVKBDhSQmAuFwbUIK3vjEGVRPx5s2YEQkENGiFVTDJXC2S8qZJ%2Fm5hjlhRC0PVvsbASn3DLlQeh03anWxdjD2EidaU3bHgCDgF2XNFGt9FYZRyzkwsYw3Mrv33rkvS5P7wzD%2BgHG6lTnbvgqLeF8cVnm8DZYp6EWCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYH4Df1xXZkCzznTHD5q3sG7%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=a772440080fd18dee5f07e60cdb2a45d801626e13e0c4bfa20d955491154a80f",
+          "dataManualOfficialLink": "",
+          "componentName": "KEMET CBR06C999B5GAC",
+          "minImage": null,
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "0603",
+          "describe": "50V 9.9pF C0G 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Voltage Rating",
+              "attribute_value_name": "50V"
+            },
+            {
+              "attribute_name_en": "Capacitance",
+              "attribute_value_name": "9.9pF"
+            },
+            {
+              "attribute_name_en": "Temperature Coefficient",
+              "attribute_value_name": "C0G"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+          "secondSortName": "Capacitors",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "CBR06<span class='lucene_highlight_class'>C999</span>B5GAC",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 2273116,
+          "componentLibraryType": "expand",
+          "stockCount": 0,
+          "componentTypeEn": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+          "erpComponentName": "±0.1pF 9.9pF 50V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_kemet-cbr04c999b5gac_C2181049.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.1416
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.1416
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 199,
+              "productPrice": 0.1416
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0548
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0529
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.052
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1000,
+              "endNumber": -1,
+              "productPrice": 0.0501
+            },
+            {
+              "startNumber": 200,
+              "endNumber": 499,
+              "productPrice": 0.0528
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 0.1364
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 199,
+              "productPrice": 0.1364
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 0.1364
+            },
+            {
+              "startNumber": 500,
+              "endNumber": 999,
+              "productPrice": 0.0509
+            }
+          ],
+          "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
+          "secondSortAccessId": "7e74f1d772c74e3d99bc4868d21962f2",
+          "canPresaleNumber": 0,
+          "componentProductType": 0,
+          "mergedComponentCode": "",
+          "urlSuffix": "KEMET-CBR04C999B5GAC/C2181049",
+          "leastPatchNumber": 5,
+          "lossNumber": 2,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": "",
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 10000,
+          "shopCostPrice": 0.0,
+          "preMinPurchaseNum": 64,
+          "minPurchaseNum": 64,
+          "initialPrice": 0.1416,
+          "componentCode": "C2181049",
+          "componentBrandEn": "KEMET",
+          "componentModelEn": "CBR04C999B5GAC",
+          "componentImageUrl": null,
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_KEMET-CBR04C999B5GAC_C2181049.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8589948836228456448-C2181049.pdf?response-content-disposition=attachment%3B%20filename%3DC2181049.pdf%3B%20filename%2A%3DUTF-8%27%27C2181049.pdf&x-oss-date=20261101T104553Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rsA47wi%2B5Z75iAQVzLilQdSLpd3Lbs1Tz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb1Wjlow557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkrrU9EWDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkINP%2BMRqKWD5sagAGXDn9z0JyJD%2FVKBDhSQmAuFwbUIK3vjEGVRPx5s2YEQkENGiFVTDJXC2S8qZJ%2Fm5hjlhRC0PVvsbASn3DLlQeh03anWxdjD2EidaU3bHgCDgF2XNFGt9FYZRyzkwsYw3Mrv33rkvS5P7wzD%2BgHG6lTnbvgqLeF8cVnm8DZYp6EWCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYH4Df1xXZkCzznTHD5q3sG7%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=52c60da23b09fb805d16f480d6c96564e27dd6885fab34d64d83e8241a4f85dc",
+          "dataManualOfficialLink": "",
+          "componentName": "KEMET CBR04C999B5GAC",
+          "minImage": null,
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "0402",
+          "describe": "50V 9.9pF C0G 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Voltage Rating",
+              "attribute_value_name": "50V"
+            },
+            {
+              "attribute_name_en": "Capacitance",
+              "attribute_value_name": "9.9pF"
+            },
+            {
+              "attribute_name_en": "Temperature Coefficient",
+              "attribute_value_name": "C0G"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+          "secondSortName": "Capacitors",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "CBR04<span class='lucene_highlight_class'>C999</span>B5GAC",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        }
+      ],
+      "pageNum": 1,
+      "pageSize": 5,
+      "size": 0,
+      "startRow": 0,
+      "endRow": 0,
+      "pages": 9,
+      "prePage": 0,
+      "nextPage": 0,
+      "isFirstPage": false,
+      "isLastPage": false,
+      "hasPreviousPage": false,
+      "hasNextPage": false,
+      "navigatePages": 0,
+      "navigatepageNums": null,
+      "navigateFirstPage": 0,
+      "navigateLastPage": 0
+    },
+    "sortAndCountVoList": null,
+    "presaleTypeList": [],
+    "brandList": [],
+    "basePart": null,
+    "preferredPart": null,
+    "economicPart": null,
+    "standardPart": null,
+    "dataSheetPart": null,
+    "photo": null,
+    "queryString": "C999999999"
+  },
+  "message": null
+}

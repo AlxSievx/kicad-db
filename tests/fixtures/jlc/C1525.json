@@ -1,0 +1,913 @@
+{
+  "code": 200,
+  "data": {
+    "componentPageInfo": {
+      "total": 20,
+      "list": [
+        {
+          "componentId": 1877,
+          "componentLibraryType": "base",
+          "stockCount": 35621310,
+          "componentTypeEn": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+          "erpComponentName": "100nF ±10% 16V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_samsung-electro-mechanics-cl05b104ko5nnnc_C1525.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.0032
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.0023
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.002
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0017
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 50199,
+              "productPrice": 0.0016
+            },
+            {
+              "startNumber": 50200,
+              "endNumber": -1,
+              "productPrice": 0.0016
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 999,
+              "productPrice": 0.003
+            },
+            {
+              "startNumber": 10000,
+              "endNumber": 49999,
+              "productPrice": 0.0017
+            },
+            {
+              "startNumber": 50000,
+              "endNumber": 50199,
+              "productPrice": 0.0015
+            },
+            {
+              "startNumber": 3000,
+              "endNumber": 9999,
+              "productPrice": 0.0019
+            },
+            {
+              "startNumber": 1000,
+              "endNumber": 2999,
+              "productPrice": 0.0023
+            },
+            {
+              "startNumber": 50200,
+              "endNumber": -1,
+              "productPrice": 0.0015
+            }
+          ],
+          "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
+          "secondSortAccessId": "7e74f1d772c74e3d99bc4868d21962f2",
+          "canPresaleNumber": 27731145,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "1877-CL05B104KO5NNNC/C1525",
+          "leastPatchNumber": 20,
+          "lossNumber": 10,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 10000,
+          "shopCostPrice": 0.00733,
+          "preMinPurchaseNum": 4512,
+          "minPurchaseNum": 1,
+          "initialPrice": 0.0032,
+          "componentCode": "C1525",
+          "componentBrandEn": "Samsung Electro-Mechanics",
+          "componentModelEn": "CL05B104KO5NNNC",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552476004846223360-C1525-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261101T104546Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rcDuzjvJNizpaxT17mjU0gQcV8mIPKiDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaZD8Vow557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrckDn%2BZ%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5VsfnbL5ch3ARqAARPlGE%2BR2n9rX%2FtGp5b3GbVt9oIeHF%2FSotfbh1BdsPesSbLgGhVWiAIP3PIA56OSdjmhOFzKVi6F6a%2B518kJ%2FqMzh7aT66c7VIr7f1Us8KDZKIRI37yLkA7iPSj2w%2FJr9HAEby7VSAEPe04H%2F58WFp4VuEZ2mnsflcsg9z8huB%2FaIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYiEVWQLCyTZMxWiMuMJPwFaj%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=b51c4baffb145597848729bab1bcfdede75b6f435cbc1b6bf422175792051952",
+          "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579707269992677376-C1525.pdf?response-content-disposition=attachment%3B%20filename%3DC1525.pdf%3B%20filename%2A%3DUTF-8%27%27C1525.pdf&x-oss-date=20261101T104546Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rsA47wi%2B5Z75iAQVzLilQdSLpd3Lbs1Tz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb1Wjlow557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkrrU9EWDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkINP%2BMRqKWD5sagAGXDn9z0JyJD%2FVKBDhSQmAuFwbUIK3vjEGVRPx5s2YEQkENGiFVTDJXC2S8qZJ%2Fm5hjlhRC0PVvsbASn3DLlQeh03anWxdjD2EidaU3bHgCDgF2XNFGt9FYZRyzkwsYw3Mrv33rkvS5P7wzD%2BgHG6lTnbvgqLeF8cVnm8DZYp6EWCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYH4Df1xXZkCzznTHD5q3sG7%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=41526749691f04a00c3ef088fac9067e01680c74633e701d9ed4574d88740380",
+          "dataManualOfficialLink": "",
+          "componentName": "Samsung Electro-Mechanics CL05B104KO5NNNC",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552476005446144000-C1525-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261101T104546Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rcDuzjvJNizpaxT17mjU0gQcV8mIPKiDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaZD8Vow557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrckDn%2BZ%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5VsfnbL5ch3ARqAARPlGE%2BR2n9rX%2FtGp5b3GbVt9oIeHF%2FSotfbh1BdsPesSbLgGhVWiAIP3PIA56OSdjmhOFzKVi6F6a%2B518kJ%2FqMzh7aT66c7VIr7f1Us8KDZKIRI37yLkA7iPSj2w%2FJr9HAEby7VSAEPe04H%2F58WFp4VuEZ2mnsflcsg9z8huB%2FaIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYiEVWQLCyTZMxWiMuMJPwFaj%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d8fe61a3655b917ef680a5b4c97aa8c92a0efaef7c3a7516be051ca2c72add4c",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "0402",
+          "describe": "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Voltage Rating",
+              "attribute_value_name": "16V"
+            },
+            {
+              "attribute_name_en": "Tolerance",
+              "attribute_value_name": "±10%"
+            },
+            {
+              "attribute_name_en": "Capacitance",
+              "attribute_value_name": "100nF"
+            },
+            {
+              "attribute_name_en": "Temperature Coefficient",
+              "attribute_value_name": "X7R"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+          "secondSortName": "Capacitors",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": null,
+          "componentCodeHigh": "<span class='lucene_highlight_class'>C1525</span>",
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 3748453,
+          "componentLibraryType": "expand",
+          "stockCount": 3,
+          "componentTypeEn": "AC-DC Controllers and Regulators",
+          "erpComponentName": "8V~35V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/dc-dc-converters_texas-instruments-uc1525bj_C3186512.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 25.2894
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 24.4725
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 13,
+              "productPrice": 24.4725
+            },
+            {
+              "startNumber": 14,
+              "endNumber": 15,
+              "productPrice": 24.4725
+            },
+            {
+              "startNumber": 16,
+              "endNumber": 17,
+              "productPrice": 24.4725
+            },
+            {
+              "startNumber": 18,
+              "endNumber": -1,
+              "productPrice": 24.4725
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 18,
+              "endNumber": -1,
+              "productPrice": 23.5744
+            },
+            {
+              "startNumber": 10,
+              "endNumber": 11,
+              "productPrice": 23.5744
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 9,
+              "productPrice": 24.3614
+            },
+            {
+              "startNumber": 14,
+              "endNumber": 15,
+              "productPrice": 23.5744
+            },
+            {
+              "startNumber": 16,
+              "endNumber": 17,
+              "productPrice": 23.5744
+            },
+            {
+              "startNumber": 12,
+              "endNumber": 13,
+              "productPrice": 23.5744
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "9023cccfe13e4581b60de0d6c025e808",
+          "canPresaleNumber": 3,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "TexasInstruments-UC1525BJ/C3186512",
+          "leastPatchNumber": 0,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 25,
+          "shopCostPrice": 129.72333,
+          "preMinPurchaseNum": 1,
+          "minPurchaseNum": 1,
+          "initialPrice": 25.2894,
+          "componentCode": "C3186512",
+          "componentBrandEn": "Texas Instruments",
+          "componentModelEn": "UC1525BJ",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8767015098198175744-C3186512-front.jpg?x-oss-date=20261101T104546Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rcDuzjvJNizpaxT17mjU0gQcV8mIPKiDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaZD8Vow557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrckDn%2BZ%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5VsfnbL5ch3ARqAARPlGE%2BR2n9rX%2FtGp5b3GbVt9oIeHF%2FSotfbh1BdsPesSbLgGhVWiAIP3PIA56OSdjmhOFzKVi6F6a%2B518kJ%2FqMzh7aT66c7VIr7f1Us8KDZKIRI37yLkA7iPSj2w%2FJr9HAEby7VSAEPe04H%2F58WFp4VuEZ2mnsflcsg9z8huB%2FaIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYiEVWQLCyTZMxWiMuMJPwFaj%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e017406db81d7f46c9d50e3058299c9aa3e5565be0e6f6fd4192e0f9d6afb23f",
+          "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302212109_Texas-Instruments-UC1525BJ_C3186512.pdf",
+          "dataManualFileAccessId": null,
+          "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8600719583070605312-C3186512.pdf?response-content-disposition=attachment%3B%20filename%3DC3186512.pdf%3B%20filename%2A%3DUTF-8%27%27C3186512.pdf&x-oss-date=20261101T104546Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rsA47wi%2B5Z75iAQVzLilQdSLpd3Lbs1Tz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qb1Wjlow557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkrrU9EWDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkINP%2BMRqKWD5sagAGXDn9z0JyJD%2FVKBDhSQmAuFwbUIK3vjEGVRPx5s2YEQkENGiFVTDJXC2S8qZJ%2Fm5hjlhRC0PVvsbASn3DLlQeh03anWxdjD2EidaU3bHgCDgF2XNFGt9FYZRyzkwsYw3Mrv33rkvS5P7wzD%2BgHG6lTnbvgqLeF8cVnm8DZYp6EWCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYH4Df1xXZkCzznTHD5q3sG7%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=8dcdb41b9887cc6d434dd4de99c245681d5116bf90a9cfb4725abd075043e937",
+          "dataManualOfficialLink": "https://www.ti.com/cn/lit/gpn/uc3525b",
+          "componentName": "TI UC1525BJ",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8767015099255410688-C3186512-front.jpg?x-oss-date=20261101T104546Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rcDuzjvJNizpaxT17mjU0gQcV8mIPKiDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaZD8Vow557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrckDn%2BZ%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5VsfnbL5ch3ARqAARPlGE%2BR2n9rX%2FtGp5b3GbVt9oIeHF%2FSotfbh1BdsPesSbLgGhVWiAIP3PIA56OSdjmhOFzKVi6F6a%2B518kJ%2FqMzh7aT66c7VIr7f1Us8KDZKIRI37yLkA7iPSj2w%2FJr9HAEby7VSAEPe04H%2F58WFp4VuEZ2mnsflcsg9z8huB%2FaIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYiEVWQLCyTZMxWiMuMJPwFaj%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c726427328b5bacfbd558f6768d6a157cfe1b6f916d5a08d9e3b3feef64fa1a6",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "DIP-16",
+          "describe": "-55℃~+125℃ 100Hz~400kHz 14mA 2 8V~35V Boost、Flyback、Forward、Push-Pull、Full-Bridge、Half-Bridge Cycle-by-cycle current limiting、Frequency synchronization External Yes DIP-16 AC-DC Controllers and Regulators ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-55℃~+125℃"
+            },
+            {
+              "attribute_name_en": "Function",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Synchronous Rectifier",
+              "attribute_value_name": "Yes"
+            },
+            {
+              "attribute_name_en": "Frequency - Switching",
+              "attribute_value_name": "100Hz~400kHz"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "8V~35V"
+            },
+            {
+              "attribute_name_en": "Output Type",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Quiescent Current",
+              "attribute_value_name": "14mA"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "Cycle-by-cycle current limiting、Frequency synchronization"
+            },
+            {
+              "attribute_name_en": "Switch tube (built-in/external)",
+              "attribute_value_name": "External"
+            },
+            {
+              "attribute_name_en": "Topology",
+              "attribute_value_name": "Boost、Flyback、Forward、Push-Pull、Full-Bridge、Half-Bridge"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "-"
+            },
+            {
+              "attribute_name_en": "Number of Outputs",
+              "attribute_value_name": "2"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "AC-DC Controllers and Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "U<span class='lucene_highlight_class'>C1525</span>BJ",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 24051180,
+          "componentLibraryType": "expand",
+          "stockCount": 5,
+          "componentTypeEn": "DC-DC Converters",
+          "erpComponentName": "调节脉宽调制器",
+          "componentSource": "shop",
+          "lcscGoodsUrl": "https://www.lcsc.com/product-detail/dc-dc-converters_texas-instruments-uc1525aj_C22427536.html",
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 2,
+              "productPrice": 34.874
+            },
+            {
+              "startNumber": 3,
+              "endNumber": 4,
+              "productPrice": 34.874
+            },
+            {
+              "startNumber": 5,
+              "endNumber": 24,
+              "productPrice": 34.874
+            },
+            {
+              "startNumber": 25,
+              "endNumber": 26,
+              "productPrice": 33.4223
+            },
+            {
+              "startNumber": 27,
+              "endNumber": 28,
+              "productPrice": 33.4223
+            },
+            {
+              "startNumber": 29,
+              "endNumber": -1,
+              "productPrice": 33.4223
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 2,
+              "productPrice": 33.5942
+            },
+            {
+              "startNumber": 5,
+              "endNumber": 24,
+              "productPrice": 33.5942
+            },
+            {
+              "startNumber": 29,
+              "endNumber": -1,
+              "productPrice": 32.1958
+            },
+            {
+              "startNumber": 3,
+              "endNumber": 4,
+              "productPrice": 33.5942
+            },
+            {
+              "startNumber": 25,
+              "endNumber": 26,
+              "productPrice": 32.1958
+            },
+            {
+              "startNumber": 27,
+              "endNumber": 28,
+              "productPrice": 32.1958
+            }
+          ],
+          "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
+          "secondSortAccessId": "9023cccfe13e4581b60de0d6c025e808",
+          "canPresaleNumber": 5,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "TexasInstruments-UC1525AJ/C22427536",
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 25,
+          "shopCostPrice": 177.166,
+          "preMinPurchaseNum": 1,
+          "minPurchaseNum": 1,
+          "initialPrice": 34.874,
+          "componentCode": "C22427536",
+          "componentBrandEn": "Texas Instruments",
+          "componentModelEn": "UC1525AJ",
+          "componentImageUrl": null,
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": "",
+          "dataManualFileAccessId": "",
+          "dataManualFileAccessIdUrl": null,
+          "dataManualOfficialLink": "https://www.ti.com/lit/ds/symlink/uc1525a.pdf",
+          "componentName": "TI UC1525AJ",
+          "minImage": null,
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "DIP-16",
+          "describe": "-55℃~+125℃ 100Hz~400kHz 2 20mA 500mA 8V~35V External Push-Pull DIP-16 DC-DC Converters ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-55℃~+125℃"
+            },
+            {
+              "attribute_name_en": "Frequency - Switching",
+              "attribute_value_name": "100Hz~400kHz"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "8V~35V"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "500mA"
+            },
+            {
+              "attribute_name_en": "Quiescent Current",
+              "attribute_value_name": "20mA"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "Cycle-by-cycle current limiting、Frequency synchronization"
+            },
+            {
+              "attribute_name_en": "Switch tube (built-in/external)",
+              "attribute_value_name": "External"
+            },
+            {
+              "attribute_name_en": "Topology",
+              "attribute_value_name": "Push-Pull"
+            },
+            {
+              "attribute_name_en": "Number of Outputs",
+              "attribute_value_name": "2"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "DC-DC Converters",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "U<span class='lucene_highlight_class'>C1525</span>AJ",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 37574112,
+          "componentLibraryType": "expand",
+          "stockCount": 6,
+          "componentTypeEn": "AC-DC Controllers and Regulators",
+          "erpComponentName": "UC1525AL",
+          "componentSource": "shop",
+          "lcscGoodsUrl": null,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 2,
+              "productPrice": 40.402
+            },
+            {
+              "startNumber": 3,
+              "endNumber": 4,
+              "productPrice": 40.402
+            },
+            {
+              "startNumber": 5,
+              "endNumber": 44,
+              "productPrice": 40.402
+            },
+            {
+              "startNumber": 45,
+              "endNumber": 46,
+              "productPrice": 38.8863
+            },
+            {
+              "startNumber": 47,
+              "endNumber": 48,
+              "productPrice": 38.8863
+            },
+            {
+              "startNumber": 49,
+              "endNumber": -1,
+              "productPrice": 38.8863
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 5,
+              "endNumber": 44,
+              "productPrice": 38.9194
+            },
+            {
+              "startNumber": 1,
+              "endNumber": 2,
+              "productPrice": 38.9194
+            },
+            {
+              "startNumber": 45,
+              "endNumber": 46,
+              "productPrice": 37.4593
+            },
+            {
+              "startNumber": 49,
+              "endNumber": -1,
+              "productPrice": 37.4593
+            },
+            {
+              "startNumber": 47,
+              "endNumber": 48,
+              "productPrice": 37.4593
+            },
+            {
+              "startNumber": 3,
+              "endNumber": 4,
+              "productPrice": 38.9194
+            }
+          ],
+          "firstSortAccessId": null,
+          "secondSortAccessId": null,
+          "canPresaleNumber": 6,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "TexasInstruments-UC1525AL/C35849606",
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 45,
+          "shopCostPrice": 184.8235,
+          "preMinPurchaseNum": 1,
+          "minPurchaseNum": 1,
+          "initialPrice": 40.402,
+          "componentCode": "C35849606",
+          "componentBrandEn": "Texas Instruments",
+          "componentModelEn": "UC1525AL",
+          "componentImageUrl": "",
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8763173989046718464-C35849606-front.jpg?x-oss-date=20261101T104546Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rcDuzjvJNizpaxT17mjU0gQcV8mIPKiDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaZD8Vow557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrckDn%2BZ%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5VsfnbL5ch3ARqAARPlGE%2BR2n9rX%2FtGp5b3GbVt9oIeHF%2FSotfbh1BdsPesSbLgGhVWiAIP3PIA56OSdjmhOFzKVi6F6a%2B518kJ%2FqMzh7aT66c7VIr7f1Us8KDZKIRI37yLkA7iPSj2w%2FJr9HAEby7VSAEPe04H%2F58WFp4VuEZ2mnsflcsg9z8huB%2FaIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYiEVWQLCyTZMxWiMuMJPwFaj%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=cec55e94a4416696fcbca8d668e245d6ac1c153e26aa6b3d31e2e7c87078b743",
+          "dataManualUrl": null,
+          "dataManualFileAccessId": "",
+          "dataManualFileAccessIdUrl": null,
+          "dataManualOfficialLink": "",
+          "componentName": "TI UC1525AL",
+          "minImage": "",
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8763173990179586048-C35849606-front.jpg?x-oss-date=20261101T104546Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rcDuzjvJNizpaxT17mjU0gQcV8mIPKiDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qaZD8Vow557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jrckDn%2BZ%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5VsfnbL5ch3ARqAARPlGE%2BR2n9rX%2FtGp5b3GbVt9oIeHF%2FSotfbh1BdsPesSbLgGhVWiAIP3PIA56OSdjmhOFzKVi6F6a%2B518kJ%2FqMzh7aT66c7VIr7f1Us8KDZKIRI37yLkA7iPSj2w%2FJr9HAEby7VSAEPe04H%2F58WFp4VuEZ2mnsflcsg9z8huB%2FaIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYiEVWQLCyTZMxWiMuMJPwFaj%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=b1f3cf34a4f469ae38fc52cdb212a0b5398bf3867db2d2ae9672f8cef8f5d9e1",
+          "imageList": [
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            },
+            {
+              "productImage": null,
+              "productImageAccessId": null,
+              "productBigImage": null,
+              "productBigImageAccessId": null,
+              "fileType": null
+            }
+          ],
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "LCCC-20",
+          "describe": "LCCC-20 AC-DC Controllers and Regulators ROHS",
+          "attributes": null,
+          "rankScore": null,
+          "firstSortName": "AC-DC Controllers and Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "U<span class='lucene_highlight_class'>C1525</span>AL",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        },
+        {
+          "componentId": 24120111,
+          "componentLibraryType": "expand",
+          "stockCount": 5,
+          "componentTypeEn": "AC-DC Controllers and Regulators",
+          "erpComponentName": "8V~35V",
+          "componentSource": "shop",
+          "lcscGoodsUrl": null,
+          "componentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 2,
+              "productPrice": 53.912
+            },
+            {
+              "startNumber": 3,
+              "endNumber": 4,
+              "productPrice": 53.912
+            },
+            {
+              "startNumber": 5,
+              "endNumber": 29,
+              "productPrice": 53.912
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 31,
+              "productPrice": 52.0994
+            },
+            {
+              "startNumber": 32,
+              "endNumber": 33,
+              "productPrice": 52.0994
+            },
+            {
+              "startNumber": 34,
+              "endNumber": -1,
+              "productPrice": 52.0994
+            }
+          ],
+          "buyComponentPrices": [
+            {
+              "startNumber": 1,
+              "endNumber": 2,
+              "productPrice": 51.9336
+            },
+            {
+              "startNumber": 30,
+              "endNumber": 31,
+              "productPrice": 50.1875
+            },
+            {
+              "startNumber": 34,
+              "endNumber": -1,
+              "productPrice": 50.1875
+            },
+            {
+              "startNumber": 32,
+              "endNumber": 33,
+              "productPrice": 50.1875
+            },
+            {
+              "startNumber": 5,
+              "endNumber": 29,
+              "productPrice": 51.9336
+            },
+            {
+              "startNumber": 3,
+              "endNumber": 4,
+              "productPrice": 51.9336
+            }
+          ],
+          "firstSortAccessId": null,
+          "secondSortAccessId": null,
+          "canPresaleNumber": 5,
+          "componentProductType": 0,
+          "mergedComponentCode": null,
+          "urlSuffix": "TexasInstruments-UC1525AL883B/C22451596",
+          "leastPatchNumber": 2,
+          "lossNumber": 0,
+          "isBuyComponent": "1",
+          "noBuyReason": null,
+          "componentAlternativesCode": null,
+          "replaceUrlSuffix": null,
+          "preferredComponentFlag": false,
+          "allowPostFlag": true,
+          "score": null,
+          "idleFlag": null,
+          "estimateDate": null,
+          "fullReelPrice": null,
+          "encapsulationNumber": 55,
+          "shopCostPrice": 276.18,
+          "preMinPurchaseNum": 1,
+          "minPurchaseNum": 1,
+          "initialPrice": 53.912,
+          "componentCode": "C22451596",
+          "componentBrandEn": "Texas Instruments",
+          "componentModelEn": "UC1525AL883B",
+          "componentImageUrl": null,
+          "productBigImageAccessId": null,
+          "productBigImageAccessIdUrl": null,
+          "dataManualUrl": null,
+          "dataManualFileAccessId": "",
+          "dataManualFileAccessIdUrl": null,
+          "dataManualOfficialLink": "https://www.ti.com.cn/cn/lit/ds/symlink/uc1525a.pdf",
+          "componentName": "TI UC1525AL883B",
+          "minImage": null,
+          "minImageAccessId": null,
+          "minImageAccessIdUrl": null,
+          "imageList": null,
+          "manufacturerBlackFlag": null,
+          "componentNameEn": null,
+          "componentSpecificationEn": "LCCC-20(8.9x8.9)",
+          "describe": "-55℃~+125℃ 100Hz~400kHz 49% 8V~35V Push-Pull LCCC-20(8.9x8.9) AC-DC Controllers and Regulators ROHS",
+          "attributes": [
+            {
+              "attribute_name_en": "Operating Temperature",
+              "attribute_value_name": "-55℃~+125℃"
+            },
+            {
+              "attribute_name_en": "Frequency - Switching",
+              "attribute_value_name": "100Hz~400kHz"
+            },
+            {
+              "attribute_name_en": "Voltage - Supply",
+              "attribute_value_name": "8V~35V"
+            },
+            {
+              "attribute_name_en": "Output Current",
+              "attribute_value_name": "400mA"
+            },
+            {
+              "attribute_name_en": "Duty Cycle(Max)",
+              "attribute_value_name": "49%"
+            },
+            {
+              "attribute_name_en": "Working Mode",
+              "attribute_value_name": "PWM Modulation"
+            },
+            {
+              "attribute_name_en": "Features",
+              "attribute_value_name": "Under Voltage Protection、Soft-start"
+            },
+            {
+              "attribute_name_en": "Topology",
+              "attribute_value_name": "Push-Pull"
+            },
+            {
+              "attribute_name_en": "Pd - Power Dissipation",
+              "attribute_value_name": "1000mW"
+            },
+            {
+              "attribute_name_en": "Output Voltage",
+              "attribute_value_name": "5.1V"
+            }
+          ],
+          "rankScore": null,
+          "firstSortName": "AC-DC Controllers and Regulators",
+          "secondSortName": "Power Management (PMIC)",
+          "componentBrandHigh": null,
+          "remarkHigh": null,
+          "componentModelHigh": "U<span class='lucene_highlight_class'>C1525</span>AL883B",
+          "componentCodeHigh": null,
+          "componentSpecificationHigh": null,
+          "rohsFlag": 1,
+          "shopShowPriceFlag": true,
+          "shopShowForeignPriceFlag": true,
+          "shopRealPriceFlag": true,
+          "assemblyComponentFlag": false,
+          "rohsFileId": null,
+          "rohsUrl": null
+        }
+      ],
+      "pageNum": 1,
+      "pageSize": 5,
+      "size": 0,
+      "startRow": 0,
+      "endRow": 0,
+      "pages": 4,
+      "prePage": 0,
+      "nextPage": 0,
+      "isFirstPage": false,
+      "isLastPage": false,
+      "hasPreviousPage": false,
+      "hasNextPage": false,
+      "navigatePages": 0,
+      "navigatepageNums": null,
+      "navigateFirstPage": 0,
+      "navigateLastPage": 0
+    },
+    "sortAndCountVoList": null,
+    "presaleTypeList": [],
+    "brandList": [],
+    "basePart": null,
+    "preferredPart": null,
+    "economicPart": null,
+    "standardPart": null,
+    "dataSheetPart": null,
+    "photo": null,
+    "queryString": "C1525"
+  },
+  "message": null
+}

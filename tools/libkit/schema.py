@@ -42,15 +42,39 @@ class Family:
 
 
 @dataclass
+class Manufacturer:
+    name: str
+    aliases: list[str] = field(default_factory=list)
+
+
+@dataclass
 class Schema:
     prefix: str
     common: list[FieldDef]
     categories: dict[str, Category]
     families: dict[str, Family]
-    manufacturers: list[str]
+    manufacturers: list[Manufacturer]
 
     def fields_for(self, category: Category) -> list[FieldDef]:
         return self.common + category.fields
+
+    def canonical_manufacturer(self, brand: str) -> str | None:
+        """The known manufacturer a distributor brand string means, or None.
+
+        Matches case-insensitively when the brand equals the name or an alias,
+        or starts with the name followed by a space or "(" — so
+        "UNI-ROYAL(Uniroyal Elec)" is UNI-ROYAL but "FHX" is not FH.
+        """
+        b = brand.strip().casefold()
+        if not b:
+            return None
+        for m in self.manufacturers:
+            n = m.name.casefold()
+            if b == n or b in (a.casefold() for a in m.aliases):
+                return m.name
+            if b.startswith(n) and b[len(n)] in " (":
+                return m.name
+        return None
 
 
 def _flag(v) -> bool:
@@ -72,6 +96,12 @@ def _field(d: dict) -> FieldDef:
     if f.required not in REQUIRED_MODES:
         raise ValueError(f"field {f.key}: unknown required mode {f.required!r}")
     return f
+
+
+def _manufacturer(m) -> Manufacturer:
+    if isinstance(m, str):
+        return Manufacturer(m)
+    return Manufacturer(m["name"], list(m.get("aliases") or []))
 
 
 def load_schema(root: Path) -> Schema:
@@ -102,5 +132,5 @@ def load_schema(root: Path) -> Schema:
         common=[_field(f) for f in raw["common_fields"]],
         categories=cats,
         families=fams,
-        manufacturers=list(raw.get("manufacturers", [])),
+        manufacturers=[_manufacturer(m) for m in raw.get("manufacturers", [])],
     )

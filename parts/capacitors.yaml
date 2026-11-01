@@ -10,6 +10,8 @@ parts:
     jlc_type: Basic
     datasheet: https://www.lcsc.com/datasheet/C1525.pdf
     status: active
+    stock: "35620904"
+    stock_checked: "2026-11-01"
     voltage: 16V
     dielectric: X7R
     tolerance: ±10%
