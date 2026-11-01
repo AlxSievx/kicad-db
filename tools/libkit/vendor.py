@@ -21,13 +21,17 @@ def _split(ref: str) -> tuple[str, str]:
     return lib, name
 
 
-def vendor_footprint(stock_ref: str, family: Family, root: Path, kicad_share: Path) -> Path:
+def vendor_footprint(stock_ref: str, family: Family, root: Path, kicad_share: Path, *,
+                     dest_dir: Path | None = None, models_dir: Path | None = None) -> Path:
+    """Copy a stock footprint (and its 3D models) into the family. `dest_dir`
+    and `models_dir` redirect the copies (staging); the model path written
+    into the footprint is always the family's ${LIB_DIR} path."""
     lib, name = _split(stock_ref)
     src = Path(kicad_share) / "footprints" / f"{lib}.pretty" / f"{name}.kicad_mod"
     if not src.exists():
         raise FileNotFoundError(src)
     text = src.read_text(encoding="utf-8")
-    models_dir = Path(root) / "3dmodels" / f"{family.lib_name}.3dshapes"
+    models_dir = Path(models_dir) if models_dir else Path(root) / "3dmodels" / f"{family.lib_name}.3dshapes"
     copies: list[tuple[Path, Path]] = []
 
     def rewrite(m: re.Match) -> str:
@@ -41,7 +45,7 @@ def vendor_footprint(stock_ref: str, family: Family, root: Path, kicad_share: Pa
     for a, b in copies:
         b.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(a, b)
-    dest = Path(root) / "footprints" / f"{family.lib_name}.pretty" / f"{name}.kicad_mod"
+    dest = (Path(dest_dir) if dest_dir else Path(root) / "footprints" / f"{family.lib_name}.pretty") / f"{name}.kicad_mod"
     write_text(dest, text)
     return dest
 
