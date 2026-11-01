@@ -209,13 +209,13 @@ def test_plan_refuses_old_dry_run(minilib):
         load_plan(minilib, RUN_10P, now=now + timedelta(hours=25))
 
 
-PLAN_FILE = plan_file("capacitor")
+PLAN_FILE = plan_file("capacitor", "0402")
 
 
 def test_plan_refuses_changed_library(minilib):
     save_plan(minilib, RUN_10P, plan10p(minilib))
     add_part(minilib, "capacitors", cap10p())
-    with pytest.raises(ValueError, match="capacitors.yaml changed since"):
+    with pytest.raises(ValueError, match="0402 capacitors changed since"):
         load_plan(minilib, RUN_10P)
 
 
@@ -224,10 +224,22 @@ def test_plans_per_kind_are_independent(minilib):
     run_r = dict(RUN_10P, kind="resistor", start=1000.0, stop=1000.0, min_voltage=None, dielectrics=[])
     save_plan(minilib, RUN_10P, plan10p(minilib))
     save_plan(minilib, run_r, [])
-    add_part(minilib, "resistors", {"name": "R_1k_0402_1pct", "symbol": "R"})
+    add_part(minilib, "resistors", {"name": "R_1k_0402_1pct", "symbol": "R", "package": "0402"})
     assert load_plan(minilib, RUN_10P)[0][0].name == "C_10p_0402_50V_C0G"
-    with pytest.raises(ValueError, match="resistors.yaml changed since"):
+    with pytest.raises(ValueError, match="0402 resistors changed since"):
         load_plan(minilib, run_r)
+
+
+def test_plans_per_package_are_independent(minilib):
+    # Approve 0603 and 0805 tables together: writing 0603 parts keeps the 0805 plan valid.
+    run_0805 = dict(RUN_10P, package="0805")
+    save_plan(minilib, run_0805, [])
+    save_plan(minilib, RUN_10P, plan10p(minilib))
+    assert (minilib / plan_file("capacitor", "0805")).exists() and (minilib / PLAN_FILE).exists()
+    add_part(minilib, "capacitors", cap10p())  # an 0402 part
+    load_plan(minilib, run_0805)
+    with pytest.raises(ValueError, match="0402 capacitors changed since"):
+        load_plan(minilib, RUN_10P)
 
 
 def test_plan_missing_or_broken(minilib):

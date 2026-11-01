@@ -153,7 +153,7 @@ def _bulk_add(args) -> int:
               " — rerun with --write to add exactly these")
         return 0
     n = apply(root, args.kind, rows)
-    clear_plan(root, args.kind)
+    clear_plan(root, args.kind, args.package)
     print(f"added {n} parts to parts/{KINDS[args.kind][0]}.yaml from the dry run of "
           f"{created.astimezone():%Y-%m-%d %H:%M} ({count['exists']} existing, {count['none']} without a part"
           + (f", {count['skipped']} skipped" if count["skipped"] else "") + ")")

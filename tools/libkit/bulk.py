@@ -4,13 +4,14 @@ plan() decides per value: an existing part already covers it ("exists"), a
 new pick by the selection rules ("new"), or no usable part ("none"). It never
 writes. apply() writes all new rows in one category rewrite, then builds.
 
-The dry run's rows are kept in .libkit/bulk-plan-<kind>.json (save_plan), one
-per kind, so a resistor and a capacitor run can be approved together; --write
-applies exactly those (load_plan) instead of picking again, so what lands in
-the library is what was approved. load_plan refuses a plan made with other
-options, older than PLAN_MAX_AGE, or made before parts/<category>.yaml changed
-(names and C-numbers of other categories cannot clash: R_/C_ names, distinct
-parts; apply() validates the whole library anyway).
+The dry run's rows are kept in .libkit/bulk-plan-<kind>-<package>.json
+(save_plan), so runs for several kinds and packages can be approved together;
+--write applies exactly those (load_plan) instead of picking again, so what
+lands in the library is what was approved. load_plan refuses a plan made with
+other options, older than PLAN_MAX_AGE, or made before the library's parts of
+that kind and package changed. Parts of other kinds or packages cannot change
+a plan: names carry kind and package, and a C-number is one package
+(apply() validates the whole library anyway).
 """
 
 from __future__ import annotations
@@ -166,15 +167,18 @@ def skip_rows(rows: list[Row], values: list[str], unit: str) -> list[Row]:
             else r for r in rows]
 
 
-def plan_file(kind: str) -> Path:
-    """Where the dry run for `kind` is kept, relative to the library root."""
-    return PLAN_DIR / f"bulk-plan-{kind}.json"
+def plan_file(kind: str, package: str) -> Path:
+    """Where the dry run for `kind` in `package` is kept, relative to the library root."""
+    return PLAN_DIR / f"bulk-plan-{kind}-{package}.json"
 
 
-def _fingerprint(root: Path, kind: str) -> str:
-    """Hash of parts/<category>.yaml: a plan is only valid for the file it was made against."""
-    f = Path(root) / "parts" / f"{KINDS[kind][0]}.yaml"
-    return hashlib.sha256(f.read_bytes() if f.exists() else b"").hexdigest()
+def _fingerprint(root: Path, kind: str, package: str) -> str:
+    """Hash of the library's parts of this kind and package: what a plan was made against."""
+    category = KINDS[kind][0]
+    mine = sorted((p.data for p in load_parts(root, load_schema(root))
+                   if p.category == category and p.data.get("package") == package),
+                  key=lambda d: json.dumps(d, sort_keys=True))
+    return hashlib.sha256(json.dumps(mine, sort_keys=True).encode("utf-8")).hexdigest()
 
 
 def _normal(run: dict) -> dict:
@@ -183,11 +187,11 @@ def _normal(run: dict) -> dict:
 
 def save_plan(root: Path, run: dict, rows: list[Row], now: datetime | None = None) -> Path:
     """Keep a dry run's rows for --write. `run` holds the plan() options."""
-    path = Path(root) / plan_file(run["kind"])
+    path = Path(root) / plan_file(run["kind"], run["package"])
     data = {
         "created": (now or datetime.now(timezone.utc)).isoformat(timespec="seconds"),
         "run": _normal(run),
-        "library": _fingerprint(root, run["kind"]),
+        "library": _fingerprint(root, run["kind"], run["package"]),
         "rows": [asdict(r) for r in rows],
     }
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -200,7 +204,7 @@ def save_plan(root: Path, run: dict, rows: list[Row], now: datetime | None = Non
 def load_plan(root: Path, run: dict, now: datetime | None = None) -> tuple[list[Row], datetime]:
     """The rows of the last dry run with exactly these options, and when it ran."""
     rerun = "run the same command without --write first"
-    rel = plan_file(run["kind"])
+    rel = plan_file(run["kind"], run["package"])
     path = Path(root) / rel
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -217,10 +221,11 @@ def load_plan(root: Path, run: dict, now: datetime | None = None) -> tuple[list[
         raise ValueError(f"the last dry run used other options ({diff}): {rerun}")
     if (now or datetime.now(timezone.utc)) - created > PLAN_MAX_AGE:
         raise ValueError(f"the last dry run is older than {PLAN_MAX_AGE.total_seconds() / 3600:g} h: {rerun}")
-    if data.get("library") != _fingerprint(root, run["kind"]):
-        raise ValueError(f"parts/{KINDS[run['kind']][0]}.yaml changed since the last dry run: {rerun}")
+    if data.get("library") != _fingerprint(root, run["kind"], run["package"]):
+        raise ValueError(f"the library's {run['package']} {KINDS[run['kind']][0]} changed since the last dry run: "
+                         f"{rerun}")
     return rows, created
 
 
-def clear_plan(root: Path, kind: str) -> None:
-    (Path(root) / plan_file(kind)).unlink(missing_ok=True)
+def clear_plan(root: Path, kind: str, package: str) -> None:
+    (Path(root) / plan_file(kind, package)).unlink(missing_ok=True)
