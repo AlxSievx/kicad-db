@@ -1,0 +1,8 @@
+* text=auto
+*.kicad_sym text eol=lf
+*.kicad_mod text eol=lf
+*-lib-table text eol=lf
+*.yaml text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.step binary
