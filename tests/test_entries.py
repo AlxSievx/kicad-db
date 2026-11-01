@@ -72,7 +72,7 @@ def test_footprint_for():
     assert footprint_for("capacitor", "0603") == "LIB_Passives_SMD:C_0603_1608Metric"
     assert footprint_for("resistor", "1206") == "LIB_Passives_SMD:R_1206_3216Metric"
     with pytest.raises(ValueError):
-        footprint_for("resistor", "2512")
+        footprint_for("resistor", "2010")
 
 
 def test_passive_entry_from_jlc(schema):
