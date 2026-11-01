@@ -144,6 +144,20 @@ def _bulk_add(args) -> int:
     return 0
 
 
+def _refresh_stock(args) -> int:
+    from .parts import load_parts
+    from .stock import refresh
+    root = find_root()
+    changes = refresh(root)
+    for c in changes:
+        print(c)
+    listed = sum(1 for p in load_parts(root, load_schema(root)) if p.data.get("lcsc"))
+    print(f"refreshed {listed - sum(c.kind == 'not_found' for c in changes)} parts")
+    if any(c.kind == "type_changed" for c in changes):
+        return _build(args)
+    return 0
+
+
 def _utf8_output() -> None:
     # Part data has Ω, ±, ℃; Windows pipes default to cp1252, which lacks some.
     for stream in (sys.stdout, sys.stderr):
@@ -187,6 +201,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
     p.add_argument("--write", action="store_true", help="write the new parts and build")
     p.set_defaults(func=_bulk_add)
+
+    p = sub.add_parser("refresh-stock", help="re-query stock and JLC type of every part")
+    p.set_defaults(func=_refresh_stock)
 
     p = sub.add_parser("jlc", help="look up one LCSC part at JLC and print its record")
     p.add_argument("lcsc", help="LCSC C-number, e.g. C1525")
