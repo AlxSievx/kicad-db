@@ -8125,3 +8125,54 @@ parts:
     tolerance: ±1%
     power: 250mW
     tempco: ±100ppm/°C
+  - name: R_62k_0402_1pct
+    symbol: R
+    footprint: LIB_Passives_SMD:R_0402_1005Metric
+    value: 62k
+    package: "0402"
+    manufacturer: UNI-ROYAL
+    mpn: 0402WGF6202TCE
+    lcsc: C37825
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2206010000_UNI-ROYAL-Uniroyal-Elec-0402WGF6202TCE_C37825.pdf
+    datasheet_lang: en
+    status: active
+    stock: "439001"
+    stock_checked: "2026-11-01"
+    tolerance: ±1%
+    power: 62.5mW
+    tempco: ±100ppm/°C
+  - name: R_16R_0402_1pct
+    symbol: R
+    footprint: LIB_Passives_SMD:R_0402_1005Metric
+    value: 16R
+    package: "0402"
+    manufacturer: Yageo
+    mpn: AC0402FR-0716RL
+    lcsc: C226813
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_YAGEO-AC0402FR-0716RL_C226813.pdf
+    datasheet_lang: en
+    status: active
+    stock: "340"
+    stock_checked: "2026-11-01"
+    tolerance: ±1%
+    power: 62.5mW
+    tempco: ±100ppm/°C
+  - name: R_11R_0603_1pct
+    symbol: R
+    footprint: LIB_Passives_SMD:R_0603_1608Metric
+    value: 11R
+    package: "0603"
+    manufacturer: UNI-ROYAL
+    mpn: 0603WAF110JT5E
+    lcsc: C25184
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2205311845_UNI-ROYAL-Uniroyal-Elec-0603WAF110JT5E_C25184.pdf
+    datasheet_lang: en
+    status: active
+    stock: "213"
+    stock_checked: "2026-11-01"
+    tolerance: ±1%
+    power: 100mW
+    tempco: ±200ppm/°C

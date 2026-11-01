@@ -2328,3 +2328,20 @@ parts:
     voltage: 25V
     dielectric: X5R
     tolerance: ±10%
+  - name: C_6.8u_1206_35V_X7R
+    symbol: C
+    footprint: LIB_Passives_SMD:C_1206_3216Metric
+    value: 6.8uF
+    package: "1206"
+    manufacturer: TDK
+    mpn: C3216X7R1V685KT000E
+    lcsc: C342646
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-C3216X7R1V685KT000E_C342646.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "401"
+    stock_checked: "2026-11-01"
+    voltage: 35V
+    dielectric: X7R
+    tolerance: ±10%
