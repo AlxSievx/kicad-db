@@ -33,6 +33,7 @@ class Need:
     min_voltage: float | None = None
     dielectrics: tuple[str, ...] = ("C0G", "NP0", "X7R", "X5R")
     min_stock: int = 1000
+    min_power: float | None = None  # W, resistors only
 
     def __post_init__(self):
         bad = [d.upper() for d in self.dielectrics if d.upper() in FORBIDDEN_DIELECTRICS]
@@ -74,6 +75,10 @@ def _filters(need: Need):
         allowed = {d.upper() for d in need.dielectrics}
         yield (f"no candidate with dielectric {'/'.join(need.dielectrics)}",
                lambda c: c.dielectric is not None and c.dielectric.upper() in allowed)
+    if need.min_power is not None:
+        # Unknown power passes here; bulk re-checks JLC's own record.
+        yield (f"no candidate with power ≥ {need.min_power:g}W",
+               lambda c: c.power_mw is None or c.power_mw >= need.min_power * 1000 - 1e-9)
     # Unknown stock passes: every pick is re-checked against JLC's own stock below.
     yield f"no candidate with stock ≥ {need.min_stock}", lambda c: c.stock is None or c.stock >= need.min_stock
 

@@ -61,6 +61,10 @@ def _mismatch(d: dict, value: float, unit: str, need: Need) -> str | None:
     tol = _num(d.get("tolerance", ""), r"±?\s*(\d+(?:\.\d+)?)\s*%")
     if tol is None or tol / 100 > need.max_tolerance + 1e-12:
         return f"tolerance {d.get('tolerance')}"
+    if need.min_power is not None:
+        watts = power_watts(d.get("power", ""))
+        if watts is None or watts < need.min_power - 1e-12:
+            return f"power {d.get('power')}"
     if need.kind == "capacitor":
         volts = _num(d.get("voltage", ""), r"(\d+(?:\.\d+)?)\s*V")
         if need.min_voltage is not None and (volts is None or volts < need.min_voltage):
@@ -70,6 +74,15 @@ def _mismatch(d: dict, value: float, unit: str, need: Need) -> str | None:
     return None
 
 
+def power_watts(text: str) -> float | None:
+    """1W, 500mW, 1/4W, 62.5mW -> watts; None when not understood."""
+    m = re.fullmatch(r"\s*(\d+(?:\.\d+)?)(?:/(\d+))?\s*(m?)W\s*", text or "")
+    if not m:
+        return None
+    v = float(m.group(1)) / (float(m.group(2)) if m.group(2) else 1)
+    return v / 1000 if m.group(3) else v
+
+
 def _fits(p: Part, value: float, unit: str, need: Need) -> bool:
     """An active library part that already satisfies the need."""
     return p.data.get("status") == "active" and _mismatch(p.data, value, unit, need) is None
@@ -77,7 +90,7 @@ def _fits(p: Part, value: float, unit: str, need: Need) -> bool:
 
 def plan(root: Path, kind: str, series_name: str, start: float, stop: float, package: str,
          max_tolerance: float, min_voltage: float | None, dielectrics: tuple[str, ...],
-         get=None, lookup=None, lang=None) -> list[Row]:
+         min_power: float | None = None, get=None, lookup=None, lang=None) -> list[Row]:
     """`lang` (part -> datasheet.Result) turns on the English-datasheet preference
     and fills in `datasheet_lang`; the CLI passes datasheet.Checker(root).for_part."""
     root = Path(root)
@@ -95,7 +108,8 @@ def plan(root: Path, kind: str, series_name: str, start: float, stop: float, pac
     for v in series.values(series_name, start, stop):
         text = format_value(v, unit)
         need = Need(kind, v, package, max_tolerance, min_voltage if kind == "capacitor" else None,
-                    **({"dielectrics": tuple(dielectrics)} if kind == "capacitor" else {}))
+                    **({"dielectrics": tuple(dielectrics)} if kind == "capacitor" else {}),
+                    min_power=min_power if kind == "resistor" else None)
         have = next((p for p in existing if _fits(p, v, unit, need)), None)
         if have is not None:
             rows.append(Row(text, have.name, "exists", have.data, "already in library"))

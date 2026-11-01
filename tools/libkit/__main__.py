@@ -122,6 +122,14 @@ def _volts(text: str) -> float:
         raise ValueError(f"voltage {text!r} is not like 16V") from None
 
 
+def _watts(text: str) -> float:
+    from .bulk import power_watts
+    w = power_watts(text)
+    if w is None:
+        raise ValueError(f"power {text!r} is not like 1W or 250mW")
+    return w
+
+
 def _bulk_add(args) -> int:
     from .bulk import apply, clear_plan, load_plan, plan, save_plan, skip_rows
     from .datasheet import Checker
@@ -137,6 +145,7 @@ def _bulk_add(args) -> int:
         package=args.package, max_tolerance=_percent(args.tolerance, "tolerance"),
         min_voltage=_volts(args.voltage) if args.voltage else None,
         dielectrics=tuple(d.strip() for d in args.dielectric.split(",") if d.strip()),
+        min_power=_watts(args.min_power) if args.min_power else None,
     )
     if args.skip and not args.write:
         raise ValueError("--skip only applies with --write (the dry run keeps every row)")
@@ -314,6 +323,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--tolerance", required=True, help="worst acceptable tolerance, e.g. 1%%")
     p.add_argument("--voltage", help="minimum voltage rating for capacitors, e.g. 16V")
     p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
+    p.add_argument("--min-power", help="resistors: minimum power rating, e.g. 1W")
     p.add_argument("--write", action="store_true",
                    help="write the new parts of the last dry run with these options, then build")
     p.add_argument("--skip", help="with --write: values of the dry run not to add, e.g. 62k,1.8k")

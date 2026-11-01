@@ -10,6 +10,7 @@ from libkit import __main__ as cli, net
 from libkit.bulk import apply, load_plan, plan, plan_file, save_plan
 from libkit.datasheet import Result
 from libkit.net import NetError
+from libkit.pick import Need
 from libkit.parts import load_parts
 from libkit.schema import load_schema
 
@@ -354,3 +355,20 @@ def test_cli_skip_typo_writes_nothing(offline, capsys):
 def test_cli_skip_needs_write(offline, capsys):
     assert cli.main(CLI_10P + ["--skip", "10p"]) == 1
     assert "only applies with --write" in capsys.readouterr().err
+
+
+def test_mismatch_power():  # plan 6 task 2
+    from libkit.bulk import _mismatch
+    need = Need("resistor", 0.01, "2512", 0.01, min_power=1.0)
+    d = {"package": "2512", "value": "10mR", "tolerance": "±1%"}
+    assert _mismatch({**d, "power": "500mW"}, 0.01, "Ω", need) == "power 500mW"
+    assert _mismatch({**d, "power": "1/4W"}, 0.01, "Ω", need) == "power 1/4W"
+    assert _mismatch({**d, "power": "2W"}, 0.01, "Ω", need) is None
+    assert _mismatch({**d, "power": "-"}, 0.01, "Ω", need) == "power -"
+
+
+def test_plan_options_include_min_power(minilib):
+    rows = plan10p(minilib)
+    save_plan(minilib, RUN_10P, rows)
+    with pytest.raises(ValueError, match="min_power"):
+        load_plan(minilib, {**RUN_10P, "min_power": 1.0})
