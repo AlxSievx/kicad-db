@@ -61,7 +61,12 @@ categories:
       - {key: vr, label: Vr}
       - {key: if, label: If}
       - {key: vf, label: Vf}
-  - {key: leds_optoelectronics, title: LEDs_Optoelectronics}
+      - {key: vz, label: Vz}
+  - key: leds_optoelectronics
+    title: LEDs_Optoelectronics
+    fields:
+      - {key: color, label: Color, keyword: true}
+      - {key: vf, label: Vf}
   - key: transistors
     title: Transistors
     fields:

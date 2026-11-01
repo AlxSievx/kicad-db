@@ -77,3 +77,21 @@ def test_cli_build_exit_codes(minilib):
     r = run_cli(minilib, "build")
     assert r.returncode == 1
     assert "ERROR C_100n_0402_16V_X7R" in r.stdout + r.stderr
+
+
+def test_discrete_part_derives_from_base(minilib):
+    import shutil
+    from conftest import REPO
+    shutil.copy(REPO / "src" / "symbols" / "discretes.kicad_sym", minilib / "src" / "symbols")
+    (minilib / "parts" / "diodes.yaml").write_text(
+        "parts:\n"
+        "  - name: 1N4148W\n    symbol: D\n    footprint: LIB_Passives_SMD:R_0402_1005Metric\n"
+        "    value: 1N4148W\n    package: SOD-123\n    description: 75V 150mA switching diode\n"
+        "    manufacturer: Vishay\n    mpn: 1N4148W\n    lcsc: C81598\n    jlc_type: Basic\n"
+        "    datasheet: https://www.lcsc.com/datasheet/C81598.pdf\n    status: active\n    vr: 75V\n",
+        encoding="utf-8")
+    lib = parse(generate(minilib)["symbols/LIB_Diodes.kicad_sym"])
+    syms = {str(s[1]): s for s in find_all(lib, "symbol")}
+    assert "D" in syms and ["extends", "D"] in syms["1N4148W"]
+    props = {str(p[1]): str(p[2]) for p in find_all(syms["1N4148W"], "property")}
+    assert props["Vr"] == "75V"
