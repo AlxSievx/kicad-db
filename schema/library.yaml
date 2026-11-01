@@ -111,7 +111,7 @@ manufacturers:
   - {name: Sunlord}
   # Tantalum and electrolytic capacitors (plan 6). JLC lists most AVX
   # tantalums with an empty brand ("--"): mpn_prefixes identify them.
-  - {name: KYOCERA AVX, aliases: [AVX, Kyocera AVX], mpn_prefixes: [TAJ, TPS, TCJ, TLJ, F9]}
+  - {name: KYOCERA AVX, aliases: [AVX, Kyocera AVX], mpn_prefixes: [TAJA, TAJB, TAJC, TAJD, TAJE, TPSA, TPSB, TPSC, TPSD, TPSE, TCJA, TCJB, TCJC, TCJD, TLJA, TLJB, TLJR]}
   - {name: Rubycon}
   - {name: Nichicon}
   - {name: Lelon}

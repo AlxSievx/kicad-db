@@ -172,3 +172,8 @@ def test_cli_case_required(minilib, monkeypatch, capsys):
     assert cli.main(["bulk-add", "tantalum", "--series", "E6", "--from", "1u", "--to", "10u"]) == 1
     err = capsys.readouterr().err
     assert "--case" in err and "A, B, C, D" in err
+
+
+def test_mpn_prefix_does_not_catch_ti(schema):  # final review I4
+    assert schema.canonical_manufacturer("--", "TPS62130RGTR") is None
+    assert schema.canonical_manufacturer("--", "TPSD107K010R0080") == "KYOCERA AVX"
