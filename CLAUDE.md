@@ -16,6 +16,7 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 - `symbols/`, `sym-lib-table`, `fp-lib-table` — **generated, committed. Never edit by hand.**
 - `tools/libkit/` — the tooling; tests in `tests/`.
 - `.libkit/` — local, not committed: bulk-add dry runs, single-add staging (`add/<REF>/`), datasheet-language cache.
+- `build/` — local, not committed: review page `build/review/index.html` (written by `build`, check results by `check`), KLC checker.
 
 ## Commands (PowerShell, repo root)
 
@@ -33,6 +34,8 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 .venv\Scripts\python -m libkit find resistor 62k --package 0402 --tolerance 1%   # candidates for one value (network)
 .venv\Scripts\python -m libkit add C1046         # single add, dry run (network); --write applies it
 .venv\Scripts\python -m libkit add C6186 --category ics_power --family Package_TO_SOT --fp-name SOT-223-3_TabPin2
+.venv\Scripts\python -m libkit add C81598 --footprint stock:Diode_SMD:D_SOD-123 --family Diode_SMD   # diode: category + base symbol automatic
+.venv\Scripts\python -m libkit add MountingHole_3.2mm_M3 --local --category mechanical --footprint stock:MountingHole:MountingHole_3.2mm_M3 --family MountingHole
 ```
 
 Only `jlc`, `bulk-add` (dry run), `refresh-stock`, `find` and `add` (dry run) use the network; transient
@@ -72,6 +75,10 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   the C-numbers to choose from.
   - Chip passives (0402–1206 R, C, L, ferrite beads) need no options: base
     symbol + `LIB_Passives_SMD`.
+  - Diodes, LEDs, transistors: category from JLC's part type; base symbol (`D`, `D_Schottky`, `D_Zener`,
+    `D_TVS`, `LED`, `Q_NMOS_GSD`, `Q_PMOS_GSD`, `Q_NPN_BEC`, `Q_PNP_BEC` in `src/symbols/discretes.kicad_sym`)
+    only for a single device whose footprint pads fit (transistors: SOT-23-like packages only); otherwise
+    the EasyEDA symbol, with a note why. Check the pad order the note names (pad 1 = cathode, G/S/D, B/E/C).
   - Everything else needs `--category`, and a new footprint needs `--family`.
     **Source preference:** KiCad's stock library first
     (`--symbol stock:<Lib>:<Name>`, `--footprint stock:<Lib>:<Name>`), else
@@ -87,6 +94,14 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
     with the user's OK. KLC errors on stock KiCad content are reported as they are.
   - Unknown brands are kept (without the `(…)` suffix) with a warning; they
     are not added to `manufacturers:` (that list is for automatic picks).
+  - `add` refuses a symbol pin without a footprint pad of that number (`check` reports it too).
+- **Local parts (no C-number):** `libkit add <name> --local --category mechanical --footprint stock:…
+  --family …` (no network; non-orderable categories only). Symbol from the footprint library
+  (`MountingHole`, `MountingHole_Pad` for `*_Pad`, `Fiducial`, `TestPoint`; else `--symbol`), value = name
+  unless `--value`, description = the footprint's unless `--description`. Same dry run / `--write` flow.
+- **Review page:** `build` writes `build/review/index.html` (open by double-click; search, category chips,
+  columns, detail panel with symbol/footprint previews from `kicad-cli`, fields, links). `check` adds its
+  results; the page says when they are older than the data. Point the user to it after adds.
 - **Stock refresh:** `libkit refresh-stock` updates `stock`, `stock_checked`
   and `jlc_type` of every part and lists what needs a look (`not_found`,
   `out_of_stock`, `low_stock`, `type_changed`, `mpn_changed`). It rebuilds when
