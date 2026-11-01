@@ -7,7 +7,7 @@ name = "libkit"
 version = "0.1.0"
 description = "Build and check tooling for the LIB KiCad part library"
 requires-python = ">=3.12"
-dependencies = ["PyYAML"]
+dependencies = ["PyYAML", "pypdf", "cryptography"]  # cryptography: AES-encrypted datasheet PDFs
 
 [tool.setuptools]
 package-dir = {"" = "tools"}

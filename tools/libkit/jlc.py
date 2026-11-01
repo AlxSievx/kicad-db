@@ -23,6 +23,11 @@ class JlcPart:
     attributes: dict[str, str] = field(default_factory=dict)
 
 
+def datasheet_url(part: JlcPart) -> str:
+    """JLC's datasheet link, or LCSC's generic one when JLC has none (CLAUDE.md)."""
+    return part.datasheet or f"https://www.lcsc.com/datasheet/{part.lcsc}.pdf"
+
+
 def _jlc_type(rec: dict) -> str:
     if rec.get("preferredComponentFlag"):
         return "Preferred"

@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from fakes import fake_post, rec
+from fakes import fake_get_bytes, fake_post, rec
 from libkit.jlc import lookup, parse_record
 from libkit.net import NetError
 
@@ -70,13 +70,24 @@ def test_validate_still_warns_unknown_passive_manufacturer():
     assert validate_one({"manufacturer": "Samsung"}) == []
 
 
-def test_cli_jlc_prints_record(monkeypatch, capsys):
+def test_cli_jlc_prints_record(minilib, monkeypatch, capsys):
     from libkit import __main__ as cli, net
+    monkeypatch.chdir(minilib)
     monkeypatch.setattr(net, "post_json", fake_post("C1525.json"))
+    monkeypatch.setattr(net, "get_bytes", fake_get_bytes())
     assert cli.main(["jlc", "C1525"]) == 0
     out = capsys.readouterr().out
     assert "jlc_type: Basic" in out
     assert "canonical manufacturer: Samsung" in out
+    assert "datasheet language: en" in out
+
+
+def test_cli_jlc_datasheet_unreachable(minilib, monkeypatch, capsys):
+    from libkit import __main__ as cli, net
+    monkeypatch.chdir(minilib)
+    monkeypatch.setattr(net, "post_json", fake_post("C1525.json"))
+    assert cli.main(["jlc", "C1525"]) == 0  # the datasheet check never fails the lookup
+    assert "datasheet language: unknown (download failed" in capsys.readouterr().out
 
 
 def test_cli_jlc_not_found(monkeypatch, capsys):
@@ -118,6 +129,9 @@ def test_cli_output_survives_non_utf8_pipe(tmp_path):
         "from fakes import fake_post\n"
         "from libkit import __main__ as cli, net\n"
         "net.post_json = fake_post('C25744.json')\n"
+        "def offline(url, **kw):\n"
+        "    raise net.NetError('offline')\n"
+        "net.get_bytes = offline\n"  # transient: nothing is cached in the repo
         "sys.exit(cli.main(['jlc', 'C25744']))\n", encoding="utf-8")
     env = {k: v for k, v in os.environ.items() if k not in ("PYTHONIOENCODING", "PYTHONUTF8")}
     env["PYTHONIOENCODING"] = "cp1252"

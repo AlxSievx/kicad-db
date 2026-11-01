@@ -1,12 +1,14 @@
 import json
 import urllib.parse
+from datetime import datetime, timedelta, timezone
 
 import pytest
 
 from conftest import errors
-from fakes import FIXTURES, load
+from fakes import FIXTURES, fake_get_bytes, load
 from libkit import __main__ as cli, net
-from libkit.bulk import apply, plan
+from libkit.bulk import PLAN_FILE, apply, load_plan, plan, save_plan
+from libkit.datasheet import Result
 from libkit.net import NetError
 from libkit.parts import load_parts
 from libkit.schema import load_schema
@@ -169,11 +171,66 @@ def test_bulk_aborts_without_writing(minilib):  # Review Focus 4
     assert (minilib / "parts" / "capacitors.yaml").read_bytes() == before
 
 
+def test_bulk_datasheet_lang_recorded(minilib):
+    [row] = plan10p(minilib, lang=lambda part: Result("en"))
+    assert row.entry["datasheet_lang"] == "en" and row.note == ""
+    assert apply(minilib, "capacitor", [row]) == 1
+    assert "datasheet_lang: en" in (minilib / "parts" / "capacitors.yaml").read_text(encoding="utf-8")
+    assert errors(minilib) == []
+
+
+def test_bulk_without_english_datasheet_still_picked(minilib):  # rule 6 is a preference only
+    [row] = plan10p(minilib, lang=lambda part: Result("zh"))
+    assert row.status == "new" and row.entry["datasheet_lang"] == "zh" and "no English datasheet" in row.note
+
+
+RUN_10P = dict(kind="capacitor", series_name="E6", start=1e-11, stop=1e-11, package="0402",
+               max_tolerance=0.05, min_voltage=50.0, dielectrics=DIELECTRICS)
+
+
+def test_plan_roundtrip(minilib):
+    rows = plan10p(minilib)
+    save_plan(minilib, RUN_10P, rows)
+    back, created = load_plan(minilib, RUN_10P)
+    assert back == rows and created.tzinfo is not None
+
+
+def test_plan_refuses_other_options(minilib):
+    save_plan(minilib, RUN_10P, plan10p(minilib))
+    with pytest.raises(ValueError, match="other options.*max_tolerance"):
+        load_plan(minilib, {**RUN_10P, "max_tolerance": 0.1})
+
+
+def test_plan_refuses_old_dry_run(minilib):
+    now = datetime(2026, 11, 1, 12, tzinfo=timezone.utc)
+    save_plan(minilib, RUN_10P, plan10p(minilib), now=now)
+    load_plan(minilib, RUN_10P, now=now + timedelta(hours=23))
+    with pytest.raises(ValueError, match="older than 24 h"):
+        load_plan(minilib, RUN_10P, now=now + timedelta(hours=25))
+
+
+def test_plan_refuses_changed_library(minilib):
+    save_plan(minilib, RUN_10P, plan10p(minilib))
+    add_part(minilib, "resistors", {"name": "R_1k_0402_1pct", "symbol": "R"})  # any parts/*.yaml counts
+    with pytest.raises(ValueError, match="changed since"):
+        load_plan(minilib, RUN_10P)
+
+
+def test_plan_missing_or_broken(minilib):
+    with pytest.raises(ValueError, match="no dry run"):
+        load_plan(minilib, RUN_10P)
+    (minilib / PLAN_FILE).parent.mkdir(parents=True)
+    (minilib / PLAN_FILE).write_text("{", encoding="utf-8")
+    with pytest.raises(ValueError, match="unreadable"):
+        load_plan(minilib, RUN_10P)
+
+
 @pytest.fixture
 def offline(minilib, monkeypatch):
     monkeypatch.chdir(minilib)
     monkeypatch.setattr(net, "get_json", fake_get())
     monkeypatch.setattr(net, "post_json", lambda u, b: jlc_response(b["keyword"]))
+    monkeypatch.setattr(net, "get_bytes", fake_get_bytes())
     return minilib
 
 
@@ -186,15 +243,44 @@ def test_cli_dry_run_writes_nothing(offline, capsys):
     assert cli.main(CLI_10P) == 0
     out = capsys.readouterr().out
     assert "C_10p_0402_50V_C0G" in out and "C32949" in out and "CL05C100JB5NNNC" in out and "Samsung" in out
-    assert "dry run: 1 new, 0 existing, 0 without a part — rerun with --write to add" in out
+    assert " ds " in out.splitlines()[0] and " en " in out
+    assert "dry run: 1 new, 0 existing, 0 without a part — rerun with --write to add exactly these" in out
     assert (offline / "parts" / "capacitors.yaml").read_bytes() == before
+    assert (offline / PLAN_FILE).exists()
 
 
 def test_cli_write(offline, capsys):
+    assert cli.main(CLI_10P) == 0
     assert cli.main(CLI_10P + ["--write"]) == 0
-    assert "added 1" in capsys.readouterr().out
-    assert "C_10p_0402_50V_C0G" in (offline / "parts" / "capacitors.yaml").read_text(encoding="utf-8")
+    assert "added 1 parts to parts/capacitors.yaml from the dry run of" in capsys.readouterr().out
+    text = (offline / "parts" / "capacitors.yaml").read_text(encoding="utf-8")
+    assert "C_10p_0402_50V_C0G" in text and "datasheet_lang: en" in text
     assert errors(offline) == []
+    assert not (offline / PLAN_FILE).exists()  # used up: a second --write needs a new dry run
+
+
+def test_cli_write_applies_the_dry_run_without_network(offline, monkeypatch, capsys):
+    assert cli.main(CLI_10P) == 0
+
+    def boom(*a, **kw):
+        raise AssertionError("--write must not query the network")
+    for fn in ("get_json", "post_json", "get_bytes"):
+        monkeypatch.setattr(net, fn, boom)
+    assert cli.main(CLI_10P + ["--write"]) == 0
+    assert "C32949" in (offline / "parts" / "capacitors.yaml").read_text(encoding="utf-8")
+
+
+def test_cli_write_needs_dry_run(offline, capsys):
+    before = (offline / "parts" / "capacitors.yaml").read_bytes()
+    assert cli.main(CLI_10P + ["--write"]) == 1
+    assert "no dry run to apply" in capsys.readouterr().err
+    assert (offline / "parts" / "capacitors.yaml").read_bytes() == before
+
+
+def test_cli_write_needs_same_options(offline, capsys):
+    assert cli.main(CLI_10P) == 0
+    assert cli.main(CLI_10P[:-4] + ["--tolerance", "10%", "--voltage", "50V", "--write"]) == 1
+    assert "other options" in capsys.readouterr().err
 
 
 def test_cli_resistor_series(offline, capsys):
@@ -210,10 +296,11 @@ def test_cli_network_error_writes_nothing(offline, monkeypatch, capsys):
     def boom(u, b):
         raise NetError(f"{b['keyword']}: HTTP 500")
     monkeypatch.setattr(net, "post_json", boom)
-    assert cli.main(CLI_10P + ["--write"]) == 1
+    assert cli.main(CLI_10P) == 1
     err = capsys.readouterr().err
     assert "HTTP 500" in err and "C32949" in err
     assert (offline / "parts" / "capacitors.yaml").read_bytes() == before
+    assert not (offline / PLAN_FILE).exists()  # an aborted dry run leaves nothing to --write
 
 
 def test_cli_bad_tolerance(offline, capsys):

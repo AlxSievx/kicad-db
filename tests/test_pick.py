@@ -3,6 +3,7 @@ from dataclasses import replace
 import pytest
 
 from fakes import FIXTURES, fake_get, rec
+from libkit.datasheet import Result
 from libkit.jlc import JlcPart, parse_record
 from libkit.jlcsearch import Candidate, capacitors, resistors
 from libkit.net import NetError
@@ -10,10 +11,11 @@ from libkit.pick import Need, pick
 
 
 def make_lookup(brand: str = "Samsung Electro-Mechanics", brands: dict | None = None, stock: dict | None = None,
-                calls: list | None = None):
+                calls: list | None = None, types: dict | None = None):
     """A lookup that answers from tests/fixtures/jlc/ when a fixture exists,
-    otherwise invents a record (given brand, generous stock)."""
-    brands, stock = brands or {}, stock or {}
+    otherwise invents a record (given brand, generous stock, Extended unless
+    `types` says otherwise)."""
+    brands, stock, types = brands or {}, stock or {}, types or {}
 
     def lookup(lcsc):
         if calls is not None:
@@ -27,8 +29,72 @@ def make_lookup(brand: str = "Samsung Electro-Mechanics", brands: dict | None = 
             p = replace(p, brand=brands[lcsc])
         if lcsc in stock:
             p = replace(p, stock=stock[lcsc])
+        if lcsc in types:
+            p = replace(p, jlc_type=types[lcsc])
         return p
     return lookup
+
+
+def make_lang(langs: dict, calls: list | None = None):
+    """Datasheet language per C-number ("en" when not listed)."""
+    def lang(part):
+        if calls is not None:
+            calls.append(part.lcsc)
+        return Result(langs.get(part.lcsc, "en"), "no PDF behind the link" if langs.get(part.lcsc) == "unknown" else "")
+    return lang
+
+
+NEED = Need("capacitor", 1e-7, "0402", 0.1, 16)
+BASIC = {f"C90{i}": "Basic" for i in range(10)}
+
+
+def test_pick_prefers_english_datasheet_within_tier(schema):  # rule 6
+    cs = [cand("C900", stock=90_000), cand("C901", stock=50_000)]
+    p = pick(NEED, cs, schema, lookup=make_lookup(types=BASIC), lang=make_lang({"C900": "zh"}))
+    assert p.part.lcsc == "C901" and p.note == "" and p.datasheet.lang == "en"
+
+
+def test_pick_stops_at_first_english_basic(schema):  # rule 6: no extra lookups when the first fits
+    calls, checked = [], []
+    cs = [cand("C900", stock=90_000), cand("C901", stock=50_000)]
+    pick(NEED, cs, schema, lookup=make_lookup(types=BASIC, calls=calls), lang=make_lang({}, checked))
+    assert calls == ["C900"] and checked == ["C900"]
+
+
+def test_pick_basic_without_english_beats_extended_with(schema):  # rule 1 before rule 6
+    calls = []
+    cs = [cand("C900"), cand("C950", "Extended", stock=9_000_000)]
+    p = pick(NEED, cs, schema, lookup=make_lookup(types=BASIC, calls=calls), lang=make_lang({"C900": "zh"}))
+    assert p.part.lcsc == "C900" and p.note == "no English datasheet"
+    assert calls == ["C900"]  # Extended candidates are not even looked up
+
+
+def test_pick_unknown_language_before_chinese(schema):
+    cs = [cand("C900", stock=90_000), cand("C901", stock=50_000)]
+    p = pick(NEED, cs, schema, lookup=make_lookup(types=BASIC), lang=make_lang({"C900": "zh", "C901": "unknown"}))
+    assert p.part.lcsc == "C901" and p.note == "datasheet language unknown (no PDF behind the link)"
+
+
+def test_pick_language_checks_are_bounded(schema):
+    from libkit.pick import MAX_LANG_CHECKS
+    checked = []
+    cs = [cand(f"C90{i}", stock=90_000 - i) for i in range(7)]
+    p = pick(NEED, cs, schema, lookup=make_lookup(types=BASIC),
+             lang=make_lang({c.lcsc: "zh" for c in cs}, checked))
+    assert len(checked) == MAX_LANG_CHECKS and p.part.lcsc == "C900"  # best stock among equals
+
+
+def test_pick_jlc_tier_counts_not_jlcsearch(schema):
+    # jlcsearch calls both Basic; JLC's record says the first is Extended.
+    cs = [cand("C900", stock=90_000), cand("C901", stock=50_000)]
+    p = pick(NEED, cs, schema, lookup=make_lookup(types={"C900": "Extended", "C901": "Basic"}),
+             lang=make_lang({"C901": "zh"}))
+    assert p.part.lcsc == "C901" and p.note == "no English datasheet"
+
+
+def test_pick_extended_note_combines(schema):
+    p = pick(NEED, [cand("C950", "Extended")], schema, lookup=make_lookup(), lang=make_lang({"C950": "zh"}))
+    assert p.note == "Extended part; no English datasheet"
 
 
 @pytest.fixture

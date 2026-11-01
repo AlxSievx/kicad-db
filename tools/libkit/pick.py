@@ -2,6 +2,9 @@
 
 1. Basic/Preferred before Extended.  2. Stock >= min_stock.
 3. Known manufacturers only.  4. Ceramic dielectrics C0G/NP0, X7R, X5R only.
+6. Within the same JLC tier (Basic/Preferred, or Extended), a part with an
+   English datasheet before one without (preference only, never a reason to
+   pick nothing; see datasheet.py).
 """
 
 from __future__ import annotations
@@ -10,11 +13,14 @@ from dataclasses import dataclass
 from typing import Callable
 
 from . import jlc
+from .datasheet import Result
 from .jlc import JlcPart
 from .jlcsearch import Candidate
 from .schema import Schema
 
 MAX_LOOKUPS = 8
+MAX_LANG_CHECKS = 4  # datasheets examined per pick before settling for the best so far
+LANG_RANK = {"en": 0, "unknown": 1, "zh": 2}
 FORBIDDEN_DIELECTRICS = {"Y5V", "Z5U"}  # rule 4: never
 
 
@@ -40,6 +46,18 @@ class Pick:
     part: JlcPart | None
     candidate: Candidate | None
     note: str
+    datasheet: Result | None = None  # set when picked with a language check
+
+
+def _chosen(need: Need, part: JlcPart, cand: Candidate, ds: Result | None) -> Pick:
+    notes = []
+    if part.jlc_type == "Extended":
+        notes.append("Extended part")
+    if ds is not None and ds.lang == "zh":
+        notes.append("no English datasheet")
+    elif ds is not None and ds.lang == "unknown":
+        notes.append(f"datasheet language unknown ({ds.note})" if ds.note else "datasheet language unknown")
+    return Pick(need, part, cand, "; ".join(notes), ds)
 
 
 def _pct(f: float) -> str:
@@ -61,9 +79,13 @@ def _filters(need: Need):
 
 
 def pick(need: Need, candidates: list[Candidate], schema: Schema, lookup=None,
-         check: Callable[[JlcPart], str | None] | None = None) -> Pick:
+         check: Callable[[JlcPart], str | None] | None = None,
+         lang: Callable[[JlcPart], Result] | None = None) -> Pick:
     """The best candidate by the rules. `check` may reject a looked-up part
-    (returning the reason); the walk then moves on to the next candidate."""
+    (returning the reason); the walk then moves on to the next candidate.
+    `lang` (datasheet language of a part) enables rule 6: without it the
+    first usable part wins; with it, usable parts of the best JLC tier are
+    compared until one has an English datasheet (at most MAX_LANG_CHECKS)."""
     lookup = lookup or jlc.lookup
     if not candidates:
         return Pick(need, None, None, "no candidates at JLC")
@@ -76,7 +98,13 @@ def pick(need: Need, candidates: list[Candidate], schema: Schema, lookup=None,
 
     checked = unknown = low = missing = 0
     rejected: list[str] = []
+    best = None  # ((tier, language rank), part, candidate, datasheet result)
+    lang_checks = 0
     for c in pool[:MAX_LOOKUPS]:
+        if best is not None and best[0][0] == 0 and c.jlc_type == "Extended":
+            break  # only Extended candidates left, and a Basic/Preferred part is in hand
+        if lang_checks >= MAX_LANG_CHECKS:
+            break
         checked += 1
         part = lookup(c.lcsc)
         if part is None:
@@ -92,7 +120,20 @@ def pick(need: Need, candidates: list[Candidate], schema: Schema, lookup=None,
         if reason:
             rejected.append(reason)
             continue
-        return Pick(need, part, c, "Extended part" if part.jlc_type == "Extended" else "")
+        if lang is None:
+            return _chosen(need, part, c, None)
+        tier = int(part.jlc_type == "Extended")
+        if best is not None and tier > best[0][0]:
+            continue  # JLC's record says Extended although jlcsearch did not
+        ds = lang(part)
+        lang_checks += 1
+        key = (tier, LANG_RANK.get(ds.lang, LANG_RANK["unknown"]))
+        if best is None or key < best[0]:
+            best = (key, part, c, ds)
+        if key == (0, 0):
+            break  # Basic/Preferred with an English datasheet: nothing better to find
+    if best is not None:
+        return _chosen(need, *best[1:])
     if unknown == checked:
         return Pick(need, None, None, f"no known manufacturer among {checked} checked")
     why = ", ".join(f"{n} {what}" for n, what in ((unknown, "unknown manufacturer"),

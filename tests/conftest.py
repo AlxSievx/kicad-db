@@ -10,6 +10,21 @@ REPO = Path(__file__).resolve().parents[1]
 FIXTURE = Path(__file__).parent / "fixtures" / "minilib"
 
 
+@pytest.fixture(autouse=True)
+def _offline_by_default(monkeypatch):
+    """No real network in tests (live tests opt in with LIBKIT_LIVE=1), and no
+    retry pauses. Tests that exercise net.py replace urlopen themselves."""
+    import os
+    import urllib.error
+    from libkit import net
+    monkeypatch.setattr(net, "BACKOFF", (0.0,))
+    monkeypatch.setattr(net, "MIN_INTERVAL", 0.0)  # test_rate_limit sets its own
+    if os.environ.get("LIBKIT_LIVE") != "1":
+        def blocked(req, timeout=None):
+            raise urllib.error.URLError("network disabled in tests")
+        monkeypatch.setattr(net.urllib.request, "urlopen", blocked)
+
+
 @pytest.fixture
 def minilib(tmp_path) -> Path:
     """A throwaway library root: fixture parts + the real schema."""

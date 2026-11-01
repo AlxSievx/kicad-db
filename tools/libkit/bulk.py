@@ -3,12 +3,20 @@
 plan() decides per value: an existing part already covers it ("exists"), a
 new pick by the selection rules ("new"), or no usable part ("none"). It never
 writes. apply() writes all new rows in one category rewrite, then builds.
+
+The dry run's rows are kept in .libkit/bulk-plan.json (save_plan); --write
+applies exactly those (load_plan) instead of picking again, so what lands in
+the library is what was approved. load_plan refuses a plan made with other
+options, older than PLAN_MAX_AGE, or made before parts/*.yaml changed.
 """
 
 from __future__ import annotations
 
+import hashlib
+import json
 import re
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from . import jlcsearch, series
@@ -17,6 +25,9 @@ from .parts import Part, load_parts, validate, write_category
 from .pick import Need, pick
 from .schema import load_schema
 from .values import format_value, parse_value
+
+PLAN_FILE = Path(".libkit") / "bulk-plan.json"
+PLAN_MAX_AGE = timedelta(hours=24)
 
 
 @dataclass
@@ -62,7 +73,9 @@ def _fits(p: Part, value: float, unit: str, need: Need) -> bool:
 
 def plan(root: Path, kind: str, series_name: str, start: float, stop: float, package: str,
          max_tolerance: float, min_voltage: float | None, dielectrics: tuple[str, ...],
-         get=None, lookup=None) -> list[Row]:
+         get=None, lookup=None, lang=None) -> list[Row]:
+    """`lang` (part -> datasheet.Result) turns on the English-datasheet preference
+    and fills in `datasheet_lang`; the CLI passes datasheet.Checker(root).for_part."""
     root = Path(root)
     if kind not in KINDS:
         raise ValueError(f"bulk-add supports {', '.join(KINDS)}, not {kind!r}")
@@ -98,11 +111,13 @@ def plan(root: Path, kind: str, series_name: str, start: float, stop: float, pac
             built[part.lcsc] = e
             return None
 
-        result = pick(need, search(package, v, get=get), schema, lookup=lookup, check=check)
+        result = pick(need, search(package, v, get=get), schema, lookup=lookup, check=check, lang=lang)
         if result.part is None:
             rows.append(Row(text, "", "none", None, result.note))
             continue
         entry = built[result.part.lcsc]
+        if result.datasheet is not None:
+            entry["datasheet_lang"] = result.datasheet.lang
         if entry["name"] in names:
             old = names[entry["name"]]
             rows.append(Row(text, entry["name"], "exists", old.data,
@@ -133,3 +148,59 @@ def apply(root: Path, kind: str, rows: list[Row]) -> int:
     write_category(root, category, [p.data for p in library if p.category == category] + new)
     build(root)
     return len(new)
+
+
+def _fingerprint(root: Path) -> str:
+    """Hash of every parts/*.yaml: a plan is only valid for the library it was made against."""
+    h = hashlib.sha256()
+    for f in sorted((Path(root) / "parts").glob("*.yaml")):
+        h.update(f.name.encode("utf-8") + b"\0" + f.read_bytes() + b"\0")
+    return h.hexdigest()
+
+
+def _normal(run: dict) -> dict:
+    return json.loads(json.dumps(run))  # tuples -> lists, as stored
+
+
+def save_plan(root: Path, run: dict, rows: list[Row], now: datetime | None = None) -> Path:
+    """Keep a dry run's rows for --write. `run` holds the plan() options."""
+    path = Path(root) / PLAN_FILE
+    data = {
+        "created": (now or datetime.now(timezone.utc)).isoformat(timespec="seconds"),
+        "run": _normal(run),
+        "library": _fingerprint(root),
+        "rows": [asdict(r) for r in rows],
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(data, indent=1, ensure_ascii=False), encoding="utf-8")
+    tmp.replace(path)
+    return path
+
+
+def load_plan(root: Path, run: dict, now: datetime | None = None) -> tuple[list[Row], datetime]:
+    """The rows of the last dry run with exactly these options, and when it ran."""
+    rerun = "run the same command without --write first"
+    path = Path(root) / PLAN_FILE
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        created = datetime.fromisoformat(data["created"])
+        stored, rows = data["run"], [Row(**r) for r in data["rows"]]
+    except FileNotFoundError:
+        raise ValueError(f"no dry run to apply: {rerun}") from None
+    except (OSError, ValueError, KeyError, TypeError) as e:
+        raise ValueError(f"{PLAN_FILE.as_posix()} is unreadable ({e}): {rerun}") from None
+    want = _normal(run)
+    if stored != want:
+        diff = ", ".join(f"{k} {stored.get(k)!r} vs {want.get(k)!r}"
+                         for k in sorted(set(stored) | set(want)) if stored.get(k) != want.get(k))
+        raise ValueError(f"the last dry run used other options ({diff}): {rerun}")
+    if (now or datetime.now(timezone.utc)) - created > PLAN_MAX_AGE:
+        raise ValueError(f"the last dry run is older than {PLAN_MAX_AGE.total_seconds() / 3600:g} h: {rerun}")
+    if data.get("library") != _fingerprint(root):
+        raise ValueError(f"parts/*.yaml changed since the last dry run: {rerun}")
+    return rows, created
+
+
+def clear_plan(root: Path) -> None:
+    (Path(root) / PLAN_FILE).unlink(missing_ok=True)

@@ -23,6 +23,9 @@ common_fields:
   - {key: lcsc, label: LCSC, required: orderable, keyword: true, pattern: 'C\d+'}
   - {key: jlc_type, label: JLC_Type, required: orderable, kind: enum, choices: [Basic, Preferred, Extended]}
   - {key: datasheet, required: orderable, kind: url}
+  # Language of the datasheet behind the link (libkit datasheet.py): en (also
+  # bilingual), zh, unknown (no text layer, no PDF). YAML only, like stock.
+  - {key: datasheet_lang, kind: enum, choices: [en, zh, unknown]}
   - {key: status, required: true, kind: enum, choices: [active, deprecated]}
   - {key: stock, kind: int}
   - {key: stock_checked, kind: date}

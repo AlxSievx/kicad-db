@@ -1,2 +1,4 @@
 PyYAML==6.0.2
 pytest==8.3.4
+pypdf==6.19.0
+cryptography==44.0.0

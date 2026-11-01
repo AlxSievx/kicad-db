@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from datetime import date
 
-from .jlc import JlcPart
+from .jlc import JlcPart, datasheet_url
 from .schema import Schema
 from .values import format_value, parse_value
 
@@ -87,7 +87,7 @@ def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None =
         "mpn": part.mpn,
         "lcsc": part.lcsc,
         "jlc_type": part.jlc_type,
-        "datasheet": part.datasheet or f"https://www.lcsc.com/datasheet/{part.lcsc}.pdf",
+        "datasheet": datasheet_url(part),
         "status": "active",
         "stock": str(part.stock),
         "stock_checked": (today or date.today()).isoformat(),

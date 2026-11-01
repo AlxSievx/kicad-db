@@ -77,8 +77,10 @@ def _fetch_klc(args) -> int:
 
 def _jlc(args) -> int:
     from dataclasses import asdict
+    from .datasheet import Checker
     from .jlc import lookup
-    schema = load_schema(find_root())
+    root = find_root()
+    schema = load_schema(root)
     part = lookup(args.lcsc)
     if part is None:
         print(f"{args.lcsc}: not found at JLC", file=sys.stderr)
@@ -91,6 +93,8 @@ def _jlc(args) -> int:
         else:
             print(f"{k}: {v}")
     print(f"canonical manufacturer: {schema.canonical_manufacturer(part.brand) or 'unknown'}")
+    ds = Checker(root).for_part(part)
+    print(f"datasheet language: {ds.lang}" + (f" ({ds.note})" if ds.note else ""))
     return 0
 
 
@@ -110,7 +114,8 @@ def _volts(text: str) -> float:
 
 
 def _bulk_add(args) -> int:
-    from .bulk import apply, plan
+    from .bulk import apply, clear_plan, load_plan, plan, save_plan
+    from .datasheet import Checker
     from .entries import KINDS
     from .values import parse_value
     root = find_root()
@@ -124,23 +129,29 @@ def _bulk_add(args) -> int:
         min_voltage=_volts(args.voltage) if args.voltage else None,
         dielectrics=tuple(d.strip() for d in args.dielectric.split(",") if d.strip()),
     )
-    rows = plan(root, **run)
-    table = [("value", "name", "status", "LCSC", "MPN", "manufacturer", "type", "stock", "note")]
+    if args.write:
+        rows, created = load_plan(root, run)  # exactly the approved dry run, no new picks
+    else:
+        rows = plan(root, **run, lang=Checker(root).for_part)
+    table = [("value", "name", "status", "LCSC", "MPN", "manufacturer", "type", "ds", "stock", "note")]
     for r in rows:
         e = r.entry or {}
         table.append((r.value, r.name or "-", r.status, e.get("lcsc", "-"), e.get("mpn", "-"),
-                      e.get("manufacturer", "-"), e.get("jlc_type", "-"), e.get("stock", "-"), r.note))
+                      e.get("manufacturer", "-"), e.get("jlc_type", "-"), e.get("datasheet_lang", "-"),
+                      e.get("stock", "-"), r.note))
     widths = [max(len(str(row[i])) for row in table) for i in range(len(table[0]) - 1)]
     for row in table:
         print("  ".join(str(c).ljust(w) for c, w in zip(row, widths)) + "  " + row[-1])
     count = {s: sum(r.status == s for r in rows) for s in ("new", "exists", "none")}
     if not args.write:
+        save_plan(root, run, rows)
         print(f"dry run: {count['new']} new, {count['exists']} existing, {count['none']} without a part"
-              " — rerun with --write to add")
+              " — rerun with --write to add exactly these")
         return 0
     n = apply(root, args.kind, rows)
-    print(f"added {n} parts to parts/{KINDS[args.kind][0]}.yaml ({count['exists']} existing, "
-          f"{count['none']} without a part)")
+    clear_plan(root)
+    print(f"added {n} parts to parts/{KINDS[args.kind][0]}.yaml from the dry run of "
+          f"{created.astimezone():%Y-%m-%d %H:%M} ({count['exists']} existing, {count['none']} without a part)")
     return 0
 
 
@@ -199,7 +210,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--tolerance", required=True, help="worst acceptable tolerance, e.g. 1%%")
     p.add_argument("--voltage", help="minimum voltage rating for capacitors, e.g. 16V")
     p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
-    p.add_argument("--write", action="store_true", help="write the new parts and build")
+    p.add_argument("--write", action="store_true",
+                   help="write the new parts of the last dry run with these options, then build")
     p.set_defaults(func=_bulk_add)
 
     p = sub.add_parser("refresh-stock", help="re-query stock and JLC type of every part")
