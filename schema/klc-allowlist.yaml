@@ -48,3 +48,53 @@
   reason: >-
     Base passive symbols from KiCad's Device library use 110 mil, unnamed
     pins; kept unchanged so they match KiCad's stock look.
+
+# --- Stock KiCad content vendored unchanged (Plan 4 starter set, user OK 2026-11-01) ---
+- kind: footprint
+  item: ["D_SOD-123", "D_SOD-323", "D_SMA", "D_SMB", "SOT-23", "LED_0[46]0[358]_*Metric", "MountingHole_*", "TestPoint_*", "Fiducial_*"]
+  rule: F9.1
+  reason: >-
+    Stock KiCad footprint copied unchanged; generic packages carry no datasheet
+    URL in their description (the part's datasheet is on the symbol).
+- kind: footprint
+  item: "LED_0[46]0[23]_*Metric"
+  rule: F5.2
+  reason: Stock KiCad LED footprint copied unchanged; fab RefDes scaled below 0.5 mm to fit the body.
+- kind: footprint
+  item: "MountingHole_*_Pad*"
+  rule: F7.1
+  reason: >-
+    Stock KiCad mounting hole copied unchanged; plated hole that is deliberately
+    excluded from BOM and position files.
+- kind: footprint
+  item: ["TestPoint_Pad_*", "Fiducial_*"]
+  rule: F6.3
+  reason: Stock KiCad footprint copied unchanged; test pads and fiducials have no paste on purpose.
+- kind: footprint
+  item: "Fiducial_*"
+  rule: F6.1
+  reason: Stock KiCad fiducial copied unchanged; a fiducial is an SMD feature without soldered pads.
+- kind: symbol
+  item: ["*:MountingHole", "*:Fiducial"]
+  rule: S7.2
+  reason: Stock KiCad graphical base symbol copied unchanged (keeps KiCad's footprint filters).
+- kind: symbol
+  item: ["*:MountingHole", "*:BAT54C*"]
+  rule: S3.6
+  reason: Stock KiCad symbol copied unchanged (pin name offset).
+- kind: symbol
+  item: ["*:MountingHole_Pad", "*:BAT54C*", "*:BAV99*"]
+  rule: S3.1
+  reason: Stock KiCad symbol copied unchanged (origin not centred).
+- kind: symbol
+  item: ["LIB_Mechanical:Fiducial*"]
+  rule: S6.1
+  reason: KiCad's stock fiducial uses reference FID, which the KLC list does not include.
+- kind: symbol
+  item: ["*:BAT54C*"]
+  rule: S4.1
+  reason: Stock KiCad dual-diode symbol copied unchanged (unnamed common pin).
+- kind: symbol
+  item: ["*:LED", "*:BAV99*"]
+  rule: EC01
+  reason: Stock KiCad symbol copied unchanged (extended geometry check only).
