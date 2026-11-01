@@ -152,3 +152,20 @@ def test_write_field_order_and_style(minilib, schema):
 def test_write_empty_category(minilib):
     write_category(minilib, "inductors", [])
     assert (minilib / "parts" / "inductors.yaml").read_text(encoding="utf-8") == "parts: []\n"
+
+@pytest.mark.parametrize("change", [
+    {"attributes": {"Number of Resistors": "4", "Number of Pins": "8"}},
+    {"description": "11kΩ 4 62.5mW 8 ±1% ±200ppm/℃ 1206 Resistor Networks, Arrays ROHS"},
+])
+def test_arrays_are_refused(schema, change):  # TC164 picked as an "1206 resistor"
+    part = parse_record(rec("C25744"))
+    if "attributes" in change:
+        change = {"attributes": {**part.attributes, **change["attributes"]}}
+    with pytest.raises(ValueError, match="array, not a single two-pin part"):
+        passive_entry("resistor", replace(part, **change), schema, TODAY)
+
+
+def test_single_chip_with_two_pins_is_fine(schema):
+    part = parse_record(rec("C25744"))
+    part = replace(part, attributes={**part.attributes, "Number of Resistors": "1", "Number of Pins": "2"})
+    assert passive_entry("resistor", part, schema, TODAY)["name"] == "R_10k_0402_1pct"

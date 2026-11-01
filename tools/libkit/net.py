@@ -17,8 +17,8 @@ import urllib.request
 USER_AGENT = "libkit/0.2 (personal KiCad library)"
 TIMEOUT = 20
 MIN_INTERVAL = 0.25  # seconds between requests: at most 4 per second
-RETRIES = 2  # extra attempts after the first one
-BACKOFF = (1.0, 3.0)  # pause before retry 1, 2, ... (the last value repeats)
+RETRIES = 3  # extra attempts after the first one
+BACKOFF = (2.0, 5.0, 15.0)  # pause before retry 1, 2, ... (the last value repeats); ~20 s rides out a server hiccup
 
 _last = 0.0
 

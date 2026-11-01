@@ -33,7 +33,7 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 ```
 
 Only `jlc`, `bulk-add` (dry run) and `refresh-stock` use the network; transient
-errors (timeouts, HTTP 429/5xx) are retried twice. Tests never touch the network;
+errors (timeouts, HTTP 429/5xx) are retried 3 times (2 s, 5 s, 15 s apart). Tests never touch the network;
 live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k live`.
 
 ## Workflows

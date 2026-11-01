@@ -68,9 +68,24 @@ def _volts(text: str, lcsc: str) -> float:
     return float(m.group(1)) * (1000 if m.group(2) else 1)
 
 
+def _array(part: JlcPart) -> str | None:
+    """Why `part` is a network/array (several elements, more than two pins), or None.
+    JLC lists arrays under the same package name ("1206") as single chips."""
+    for key in ("Number of Resistors", "Number of Capacitors", "Number of Pins"):
+        m = re.match(r"\d+", part.attributes.get(key, "").strip())
+        if m and int(m.group()) > (2 if key == "Number of Pins" else 1):
+            return f"{key.lower()} {m.group()}"
+    if re.search(r"\b(networks?|arrays?)\b", part.description, re.I):
+        return "network/array"
+    return None
+
+
 def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None = None) -> dict[str, str]:
     """The full YAML entry for a resistor or capacitor from its JLC record."""
     category, symbol, unit, _ = _kind(kind)
+    why = _array(part)
+    if why:
+        raise ValueError(f"{part.lcsc}: an array, not a single two-pin part ({why})")
     manufacturer = schema.canonical_manufacturer(part.brand)
     if manufacturer is None:
         raise ValueError(f"{part.lcsc}: manufacturer {part.brand!r} is not a known manufacturer")
