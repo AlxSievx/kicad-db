@@ -52,9 +52,46 @@ def test_candidates_parsed():
     assert c.value == 10000 and c.dielectric is None and c.stock > 0
 
 
-def test_candidates_null_stock_is_zero():
+def test_candidates_null_stock_is_unknown():
     cs = capacitors("0402", 1e-11, get=fake_get("cap_0402_1e-11.json"))
-    assert any(c.stock == 0 for c in cs)
+    assert any(c.stock is None for c in cs)
+
+
+def test_pick_unknown_stock_asks_jlc(schema):  # Final review I1
+    # jlcsearch has no stock figure for most records; JLC's own stock decides.
+    cs = [cand("C900", stock=None), cand("C901", "Extended", stock=9_000_000)]
+    p = pick(Need("capacitor", 1e-7, "0402", 0.1, 16), cs, schema, lookup=make_lookup())
+    assert p.part.lcsc == "C900"
+
+
+def test_pick_known_stock_first_within_tier(schema):  # Final review I1
+    calls = []
+    cs = [cand("C900", stock=None), cand("C901", stock=2_000)]
+    pick(Need("capacitor", 1e-7, "0402", 0.1, 16), cs, schema, lookup=make_lookup(calls=calls))
+    assert calls == ["C901"]
+
+
+def test_pick_negative_tolerance_is_unknown(schema):  # Final review (rule 4)
+    # tolerance_fraction -0.2 means -20%/+80% — never a "≤ 10%" part.
+    p = pick(Need("capacitor", 1e-7, "0402", 0.1, 16), [cand("C900", tol=-0.2)], schema, lookup=make_lookup())
+    assert p.part is None and "tolerance" in p.note
+
+
+def test_need_rejects_y5v_z5u():  # spec §6.6 rule 4
+    with pytest.raises(ValueError, match="Y5V"):
+        Need("capacitor", 1e-7, "0402", 0.1, 16, dielectrics=("X7R", "Y5V"))
+    with pytest.raises(ValueError, match="Z5U"):
+        Need("capacitor", 1e-7, "0402", 0.1, 16, dielectrics=("z5u",))
+
+
+def test_pick_check_rejects_and_moves_on(schema):  # Final review M1/M2
+    cs = [cand("C900", stock=9_000_000), cand("C901", stock=8_000_000)]
+    p = pick(Need("capacitor", 1e-7, "0402", 0.1, 16), cs, schema, lookup=make_lookup(),
+             check=lambda part: "voltage 10V at JLC" if part.lcsc == "C900" else None)
+    assert p.part.lcsc == "C901"
+    p = pick(Need("capacitor", 1e-7, "0402", 0.1, 16), cs, schema, lookup=make_lookup(),
+             check=lambda part: "voltage 10V at JLC")
+    assert p.part is None and "voltage 10V at JLC" in p.note
 
 
 def test_candidates_url():

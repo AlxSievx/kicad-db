@@ -40,7 +40,8 @@ def jlc_response(code):
     return {"code": 200, "data": {"componentPageInfo": {"list": []}}}
 
 
-def fake_lookup(calls=None, fail_on=None):
+def fake_lookup(calls=None, fail_on=None, attrs=None):
+    from dataclasses import replace
     from libkit.jlc import lookup
 
     def lk(code):
@@ -48,7 +49,11 @@ def fake_lookup(calls=None, fail_on=None):
             calls.append(code)
             if fail_on is not None and len(calls) == fail_on:
                 raise NetError(f"{code}: HTTP 500")
-        return lookup(code, post=lambda u, b: jlc_response(b["keyword"]))
+        part = lookup(code, post=lambda u, b: jlc_response(b["keyword"]))
+        if part is not None and attrs:
+            a = {**part.attributes, **attrs}
+            part = replace(part, attributes={k: v for k, v in a.items() if v is not None})
+        return part
     return lk
 
 
@@ -112,6 +117,24 @@ def test_bulk_existing_value_fits(minilib):
     add_part(minilib, "capacitors", cap10p())
     [row] = plan10p(minilib)
     assert row.status == "exists" and row.name == "C_10p_0402_50V_NP0"
+
+
+def test_bulk_jlc_record_must_match_request(minilib):  # Final review M2
+    # jlcsearch said 50V, JLC's own record says 16V: not a 50V part.
+    [row] = plan(minilib, "capacitor", "E6", 1e-11, 1e-11, "0402", 0.05, 50, DIELECTRICS,
+                 get=fake_get(), lookup=fake_lookup(attrs={"Voltage Rating": "16V"}))
+    assert row.status == "none" and "16V" in row.note
+
+
+def test_bulk_incomplete_record_skipped(minilib):  # Final review M1
+    [row] = plan(minilib, "capacitor", "E6", 1e-11, 1e-11, "0402", 0.05, 50, DIELECTRICS,
+                 get=fake_get(), lookup=fake_lookup(attrs={"Tolerance": None}))
+    assert row.status == "none" and "Tolerance" in row.note
+
+
+def test_cli_rejects_y5v(offline, capsys):  # spec §6.6 rule 4
+    assert cli.main(CLI_10P + ["--dielectric", "Y5V"]) == 1
+    assert "Y5V" in capsys.readouterr().err
 
 
 def test_bulk_none_reported(minilib):

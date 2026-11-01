@@ -26,7 +26,7 @@ class Candidate:
     voltage: float | None  # V
     power_mw: float | None
     dielectric: str | None
-    stock: int
+    stock: int | None  # None: jlcsearch has no figure (JLC's own stock decides)
     jlc_type: str  # "Basic" | "Preferred" | "Extended"
 
 
@@ -53,7 +53,7 @@ def _candidate(r: dict, value_key: str, kind: str) -> Candidate:
             # The field is called power_watts but holds milliwatts.
             power_mw=_float(r.get("power_watts")) if kind == "resistors" else None,
             dielectric=(r.get("temperature_coefficient") or None) if kind == "capacitors" else None,
-            stock=int(r.get("stock") or 0),
+            stock=None if r.get("stock") is None else int(r["stock"]),
             jlc_type=jlc_type,
         )
     except (KeyError, TypeError, ValueError) as e:

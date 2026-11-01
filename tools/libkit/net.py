@@ -6,6 +6,7 @@ Process-wide rate limit of 4 requests per second, 20 s timeout. Every failure
 
 from __future__ import annotations
 
+import http.client
 import json
 import time
 import urllib.error
@@ -38,7 +39,7 @@ def _request(req: urllib.request.Request) -> dict:
             body = resp.read()
     except urllib.error.HTTPError as e:
         raise NetError(f"{url}: HTTP {e.code}") from e
-    except (urllib.error.URLError, TimeoutError, OSError) as e:
+    except (urllib.error.URLError, TimeoutError, OSError, http.client.HTTPException) as e:
         raise NetError(f"{url}: {getattr(e, 'reason', e)}") from e
     try:
         data = json.loads(body)

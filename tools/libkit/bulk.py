@@ -33,27 +33,31 @@ def _num(text: str, pattern: str) -> float | None:
     return float(m.group(1)) if m else None
 
 
-def _fits(p: Part, value: float, unit: str, need: Need) -> bool:
-    """An active library part that already satisfies the need."""
-    d = p.data
-    if d.get("status") != "active" or d.get("package") != need.package:
-        return False
+def _mismatch(d: dict, value: float, unit: str, need: Need) -> str | None:
+    """Why part data `d` does not satisfy the need, or None when it does."""
+    if d.get("package") != need.package:
+        return f"package {d.get('package')}"
     try:
         v = parse_value(d.get("value", ""), unit)
     except ValueError:
-        return False
+        return f"value {d.get('value')!r}"
     if abs(v - value) > jlcsearch.VALUE_MATCH * value:
-        return False
+        return f"value {d.get('value')}"
     tol = _num(d.get("tolerance", ""), r"±?\s*(\d+(?:\.\d+)?)\s*%")
     if tol is None or tol / 100 > need.max_tolerance + 1e-12:
-        return False
+        return f"tolerance {d.get('tolerance')}"
     if need.kind == "capacitor":
         volts = _num(d.get("voltage", ""), r"(\d+(?:\.\d+)?)\s*V")
         if need.min_voltage is not None and (volts is None or volts < need.min_voltage):
-            return False
+            return f"voltage {d.get('voltage')}"
         if d.get("dielectric", "").upper() not in {x.upper() for x in need.dielectrics}:
-            return False
-    return True
+            return f"dielectric {d.get('dielectric')}"
+    return None
+
+
+def _fits(p: Part, value: float, unit: str, need: Need) -> bool:
+    """An active library part that already satisfies the need."""
+    return p.data.get("status") == "active" and _mismatch(p.data, value, unit, need) is None
 
 
 def plan(root: Path, kind: str, series_name: str, start: float, stop: float, package: str,
@@ -79,11 +83,26 @@ def plan(root: Path, kind: str, series_name: str, start: float, stop: float, pac
         if have is not None:
             rows.append(Row(text, have.name, "exists", have.data, "already in library"))
             continue
-        result = pick(need, search(package, v, get=get), schema, lookup=lookup)
+        built: dict[str, dict] = {}
+
+        def check(part, need=need, v=v, built=built):
+            # The entry is built from JLC's own record; it must still meet the
+            # request (jlcsearch's figures can be stale or incomplete).
+            try:
+                e = passive_entry(kind, part, schema)
+            except ValueError as ex:
+                return str(ex)
+            why = _mismatch(e, v, unit, need)
+            if why:
+                return f"{part.lcsc}: {why} at JLC"
+            built[part.lcsc] = e
+            return None
+
+        result = pick(need, search(package, v, get=get), schema, lookup=lookup, check=check)
         if result.part is None:
             rows.append(Row(text, "", "none", None, result.note))
             continue
-        entry = passive_entry(kind, result.part, schema)
+        entry = built[result.part.lcsc]
         if entry["name"] in names:
             old = names[entry["name"]]
             rows.append(Row(text, entry["name"], "exists", old.data,

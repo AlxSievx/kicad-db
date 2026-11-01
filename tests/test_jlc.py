@@ -86,6 +86,21 @@ def test_cli_jlc_not_found(monkeypatch, capsys):
     assert "C999999999" in capsys.readouterr().err
 
 
+@pytest.mark.parametrize("exc", ["http500", "incomplete"])
+def test_lookup_error_names_the_part(monkeypatch, exc):  # Final review I2 / Review Focus 4
+    import http.client
+    import urllib.error
+    from libkit import net
+
+    def urlopen(req, timeout):
+        if exc == "http500":
+            raise urllib.error.HTTPError(req.full_url, 500, "boom", {}, None)
+        raise http.client.IncompleteRead(b"")
+    monkeypatch.setattr(net.urllib.request, "urlopen", urlopen)
+    with pytest.raises(NetError, match="C1525"):
+        lookup("C1525")
+
+
 @pytest.mark.skipif(os.environ.get("LIBKIT_LIVE") != "1", reason="live network test")
 def test_live_lookup():
     assert lookup("C1525").brand.startswith("Samsung")

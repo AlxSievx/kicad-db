@@ -51,7 +51,11 @@ def parse_record(rec: dict) -> JlcPart:
 def lookup(lcsc: str, post=None) -> JlcPart | None:
     """The JLC record whose componentCode is exactly `lcsc`, or None."""
     post = post or net.post_json
-    data = post(SEARCH_URL, {"keyword": lcsc, "currentPage": 1, "pageSize": 5})
+    try:
+        data = post(SEARCH_URL, {"keyword": lcsc, "currentPage": 1, "pageSize": 5})
+    except NetError as e:
+        # The C-number is in the POST body, not the URL: name it.
+        raise NetError(f"{lcsc}: {e}") from e
     try:
         records = data["data"]["componentPageInfo"]["list"] or []
         if not isinstance(records, list):
