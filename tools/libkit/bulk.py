@@ -106,7 +106,7 @@ def plan(root: Path, kind: str, series_name: str, start: float, stop: float, pac
     by_lcsc = {p.data["lcsc"]: p for p in names.values() if p.data.get("lcsc")}
     if kind in POLAR:
         return _plan_polar(kind, series_name, start, stop, package, min_voltage, schema, existing, names, by_lcsc,
-                           search, lang)
+                           search, lang, max_tolerance)
     search = jlcsearch.resistors if kind == "resistor" else jlcsearch.capacitors
 
     rows: list[Row] = []
@@ -166,7 +166,7 @@ def _new_or_existing(text: str, entry: dict, note: str, names: dict, by_lcsc: di
 
 
 def _plan_polar(kind, series_name, start, stop, size, min_voltage, schema, existing, names, by_lcsc,
-                search, lang) -> list[Row]:
+                search, lang, max_tolerance=1.0) -> list[Row]:
     """Tantalum/electrolytic rows: one part per value and case/can (plan 6)."""
     package = package_name(kind, size)
     rows: list[Row] = []
@@ -175,13 +175,15 @@ def _plan_polar(kind, series_name, start, stop, size, min_voltage, schema, exist
         have = next((p for p in existing if p.data.get("status") == "active"
                      and p.data.get("package") == package and p.data.get("dielectric") == POLAR[kind]
                      and abs(parse_value(p.data.get("value", "0F"), "F") - v) <= 0.01 * v
-                     and (min_voltage is None or float(p.data.get("voltage", "0V").rstrip("V")) >= min_voltage)),
+                     and (min_voltage is None or float(p.data.get("voltage", "0V").rstrip("V")) >= min_voltage)
+                     and (_num(p.data.get("tolerance", ""), r"±?\s*(\d+(?:\.\d+)?)\s*%") or 100) / 100
+                     <= max_tolerance + 1e-12),
                     None)
         if have is not None:
             rows.append(Row(text, have.name, "exists", have.data, "already in library"))
             continue
         result = pick_polar(kind, v, size, polar_candidates(kind, v, size, search=search), schema,
-                            lang=lang, min_voltage=min_voltage)
+                            lang=lang, min_voltage=min_voltage, max_tolerance=max_tolerance)
         if result.part is None:
             rows.append(Row(text, "", "none", None, result.note))
             continue

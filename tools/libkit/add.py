@@ -28,7 +28,7 @@ from . import importer, jlc
 from .build import build
 from .datasheet import Checker
 from .discretes import Discrete, classify
-from .entries import KINDS, METRIC, NAME_CHARS, kind_of, manufacturer_name, mpn_name, passive_entry
+from .entries import KINDS, POLAR, NAME_CHARS, is_chip, kind_of, manufacturer_name, mpn_name, passive_entry
 from .jlc import JlcPart, datasheet_url
 from .kicad import find_kicad_cli, kicad_share
 from .klc import run_klc
@@ -259,7 +259,9 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
     stage = _Stage(root, ref)
     unique = None
     new_family = None
-    if kind and part.package in METRIC:
+    from .polar import size_of
+    chip = kind is not None and (size_of(kind, part) is not None if kind in POLAR else is_chip(kind, part.package))
+    if chip:
         given = [k for k in ("category", "symbol", "footprint", "family", "fp_name", "name", "pin_types")
                  if options[k]]
         if given:

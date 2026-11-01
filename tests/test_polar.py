@@ -177,3 +177,31 @@ def test_cli_case_required(minilib, monkeypatch, capsys):
 def test_mpn_prefix_does_not_catch_ti(schema):  # final review I4
     assert schema.canonical_manufacturer("--", "TPS62130RGTR") is None
     assert schema.canonical_manufacturer("--", "TPSD107K010R0080") == "KYOCERA AVX"
+
+
+# ---- final review fixes ---------------------------------------------------------------------------
+def test_chip_sizes_per_kind():  # final review I3 / M5
+    from libkit.entries import footprint_for
+    assert footprint_for("resistor", "2512").endswith("R_2512_6332Metric")
+    assert footprint_for("capacitor", "1210").endswith("C_1210_3225Metric")
+    for kind, pkg in (("inductor", "1210"), ("bead", "1210"), ("capacitor", "2512"), ("resistor", "1210")):
+        with pytest.raises(ValueError):
+            footprint_for(kind, pkg)
+
+
+def test_cli_rejects_size_without_footprint(minilib, monkeypatch, capsys):  # final review M5
+    from libkit import __main__ as cli
+    monkeypatch.chdir(minilib)
+    assert cli.main(["bulk-add", "resistor", "--series", "E6", "--from", "1k", "--to", "1k",
+                     "--package", "1210", "--tolerance", "1%"]) == 1
+    assert "1210" in capsys.readouterr().err
+
+
+def test_polar_tolerance_filter(schema):  # final review I1
+    loose = variant("C7171", lcsc="C920", jlc_type="Basic")
+    loose.attributes["Tolerance"] = "±20%"
+    tight = variant("C7171", lcsc="C921", jlc_type="Extended")  # ±10%
+    p = pick_polar("tantalum", 1e-5, "A", [loose, tight], schema, max_tolerance=0.1)
+    assert p.part.lcsc == "C921"
+    p = pick_polar("tantalum", 1e-5, "A", [loose], schema, max_tolerance=0.1)
+    assert p.part is None and "tolerance" in p.note

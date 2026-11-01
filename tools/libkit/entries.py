@@ -21,6 +21,13 @@ KINDS = {
 POLAR = {"tantalum": "Ta", "electrolytic": "Al"}  # kind: dielectric field
 NAME_CHARS = re.compile(r"[^A-Za-z0-9_.+,-]+")  # KLC G1.1
 METRIC = {"0402": "1005", "0603": "1608", "0805": "2012", "1206": "3216", "1210": "3225", "2512": "6332"}
+# Chip sizes with a LIB_Passives_SMD footprint, per kind (a 1210 inductor is not a chip part).
+_BASE = {"0402", "0603", "0805", "1206"}
+CHIP_SIZES = {"resistor": _BASE | {"2512"}, "capacitor": _BASE | {"1210"}, "inductor": _BASE, "bead": _BASE}
+
+
+def is_chip(kind: str, package: str) -> bool:
+    return package in CHIP_SIZES.get(kind, ())
 
 
 def _kind(kind: str):
@@ -51,8 +58,9 @@ def passive_name(kind: str, value: float, package: str, *, tolerance: float | No
 
 def footprint_for(kind: str, package: str) -> str:
     _, _, _, prefix = _kind(kind)
-    if package not in METRIC:
-        raise ValueError(f"no footprint for package {package!r}; known: {', '.join(METRIC)}")
+    if not is_chip(kind, package):
+        raise ValueError(f"no {kind} footprint for package {package!r}; known: "
+                         f"{', '.join(sorted(CHIP_SIZES.get(kind, ())))}")
     return f"LIB_Passives_SMD:{prefix}_{package}_{METRIC[package]}Metric"
 
 
@@ -185,8 +193,8 @@ def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None =
     else:
         manufacturer, _ = manufacturer_name(part.brand, schema, part.mpn)
     if kind in POLAR:
-        return _polar_entry(kind, part, manufacturer, today)
-    chip = part.package in METRIC
+        return _polar_entry(kind, part, manufacturer, today, footprint)
+    chip = is_chip(kind, part.package)
     if footprint is None:
         if not chip:
             raise ValueError(f"{part.lcsc}: package {part.package!r} is not a chip package; "
@@ -241,23 +249,26 @@ def passive_entry(kind: str, part: JlcPart, schema: Schema, today: date | None =
     return entry
 
 
-def _polar_entry(kind: str, part: JlcPart, manufacturer: str, today: date | None) -> dict[str, str]:
-    """Tantalum or electrolytic: C_<value>_<CaseA|D6.3x7.7>_<voltage>_<Ta|Al> (plan 6)."""
+def _polar_entry(kind: str, part: JlcPart, manufacturer: str, today: date | None,
+                 footprint: str | None = None) -> dict[str, str]:
+    """Tantalum or electrolytic: C_<value>_<CaseA|D6.3x7.7>_<voltage>_<Ta|Al> (plan 6).
+    A case/can LIB has no footprint for needs `footprint`; the part is then named by its MPN."""
     from .polar import footprint_name, package_name, size_of
     size = size_of(kind, part)
-    if size is None:
-        raise ValueError(f"{part.lcsc}: package {part.package!r} is not a {kind} case/can LIB supports")
+    if size is None and footprint is None:
+        raise ValueError(f"{part.lcsc}: package {part.package!r} is not a {kind} case/can LIB supports; "
+                         "a footprint must be given")
     value, _ = _value("capacitor", part)
     voltage = _attr(part, "Voltage Rating")
     volts = _volts(voltage, part.lcsc)
     tolerance = _attr(part, "Tolerance")
     _percent(tolerance, part.lcsc)
-    package = package_name(kind, size)
+    package = package_name(kind, size) if size else part.package
     text = format_value(value, "F")
     entry = {
-        "name": f"C_{text[:-1]}_{package}_{volts:g}V_{POLAR[kind]}",
+        "name": f"C_{text[:-1]}_{package}_{volts:g}V_{POLAR[kind]}" if size else mpn_name(part.mpn),
         "symbol": "C_Polarized",
-        "footprint": f"LIB_Passives_SMD:{footprint_name(kind, size)}",
+        "footprint": f"LIB_Passives_SMD:{footprint_name(kind, size)}" if size else footprint,
         "value": text,
         "package": package,
         "manufacturer": manufacturer,

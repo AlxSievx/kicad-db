@@ -149,8 +149,12 @@ def _bulk_add(args) -> int:
             raise ValueError(f"electrolytic needs --can, one of {', '.join(CANS)}")
         args.package = args.can
     else:
+        from .entries import CHIP_SIZES
         if not args.package or not args.tolerance:
             raise ValueError(f"{args.kind}s need --package and --tolerance")
+        if args.package not in CHIP_SIZES[args.kind]:
+            raise ValueError(f"no {args.kind} footprint for --package {args.package}; "
+                             f"one of {', '.join(sorted(CHIP_SIZES[args.kind]))}")
     run = dict(
         kind=args.kind, series_name=args.series,
         start=parse_value(args.start, unit), stop=parse_value(args.stop, unit),

@@ -151,7 +151,7 @@ def pick(need: Need, candidates: list[Candidate], schema: Schema, lookup=None,
 
 def pick_polar(kind: str, value: float, size: str, parts: list[JlcPart], schema: Schema,
                lang: Callable[[JlcPart], Result] | None = None, min_stock: int = 1000,
-               min_voltage: float | None = None) -> Pick:
+               min_voltage: float | None = None, max_tolerance: float = 1.0) -> Pick:
     """Tantalum/electrolytic pick (plan 6): rules 1–3 as for chips, then one
     voltage per value: the highest rated voltage within the best JLC tier,
     then an English datasheet (rule 6, at most MAX_LANG_CHECKS looks), then stock."""
@@ -178,6 +178,10 @@ def pick_polar(kind: str, value: float, size: str, parts: list[JlcPart], schema:
             continue
         if abs(parse_value(e["value"], "F") - value) > 0.01 * value:
             rejected.append(f"{p.lcsc}: value {e['value']}")
+            continue
+        tol = float(e["tolerance"].strip().lstrip("±").rstrip("%")) / 100
+        if tol > max_tolerance + 1e-12:
+            rejected.append(f"{p.lcsc}: tolerance {e['tolerance']}")
             continue
         volts = float(e["voltage"].rstrip("V"))
         if min_voltage is not None and volts < min_voltage:
