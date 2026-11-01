@@ -33,7 +33,7 @@ def test_review_data_parts(minilib):
     assert r["mpn"] == "0402WGF1002TCE" and r["lcsc"] == "C25744" and r["jlc_type"] == "Basic"
     assert isinstance(r["stock"], int) or r["stock"] is None
     assert "10k" in r["keywords"] and r["description"]
-    assert ["MPN", "0402WGF1002TCE"] in r["fields"]
+    assert ["MPN", "0402WGF1002TCE"] in r["fields"] and ["Datasheet", r["datasheet"]] in r["fields"]
     assert r["sym_svgs"] == [] and r["fp_svg"] is None
 
 
@@ -154,6 +154,16 @@ def test_build_without_cli(minilib, monkeypatch):  # Review Focus 2
     assert d["previews"] is False and any("kicad-cli not found" in n for n in d["notes"])
 
 
+def test_new_render_settings_rerender(minilib, monkeypatch):
+    from libkit import review
+    build(minilib)
+    review.write_review(minilib, previews=True, run=fake_kicad([]))
+    monkeypatch.setattr(review, "RENDER_VERSION", review.RENDER_VERSION + "-next")
+    calls = []
+    review.write_review(minilib, previews=True, run=fake_kicad(calls))
+    assert ("fp", "LIB_Passives_SMD.pretty") in calls
+
+
 def test_removed_library_previews_dropped(minilib):
     from libkit.review import write_review
     build(minilib)
@@ -243,3 +253,26 @@ def test_check_js_on_broken_yaml(minilib, monkeypatch):
     assert _check_cli(minilib, monkeypatch) == 1
     c = load_js(minilib / REVIEW_DIR / "check.js", "LIB_CHECK")
     assert c["hash"] == "" and c["errors"] >= 1
+
+
+def test_fp_preview_without_text(minilib):  # browser check: Value text dwarfed 0402 pads
+    import subprocess
+    from libkit.review import render_previews
+    from libkit.sexpr import find, find_all, parse
+    seen = []
+
+    def run(cmd, **kw):
+        if cmd[1] == "fp":
+            seen.append(cmd)
+            for f in Path(cmd[4]).glob("*.kicad_mod"):
+                fp = parse(f.read_text(encoding="utf-8"))
+                assert not find_all(fp, "fp_text")
+                for p in find_all(fp, "property"):
+                    if p[1] in ("Reference", "Value"):
+                        assert find(p, "hide") == ["hide", "yes"]
+        return subprocess.CompletedProcess(cmd, 0, "", "")
+    lib_fp = minilib / "footprints/LIB_Passives_SMD.pretty/R_0402_1005Metric.kicad_mod"
+    before = lib_fp.read_bytes()
+    render_previews(minilib, minilib / "out", run=run)
+    assert seen and "--sp" in seen[0] and seen[0][seen[0].index("-l") + 1] == "F.Cu,B.Cu,F.SilkS,F.Fab,F.CrtYd"
+    assert lib_fp.read_bytes() == before  # only a temporary copy is changed

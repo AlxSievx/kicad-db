@@ -13,12 +13,14 @@ import json
 import os
 import shutil
 import subprocess
+import tempfile
 from datetime import datetime
 from pathlib import Path
 
 from .parts import Issue, Part, load_parts, validate
 from .pins import pin_pad_issues
 from .schema import Schema, load_schema
+from .sexpr import Sym, dumps, find, find_all, parse
 from .stock import LOW_STOCK_OTHER, LOW_STOCK_PASSIVE
 from .symgen import load_source_symbols, write_text
 from .text import build_description, build_keywords
@@ -55,7 +57,7 @@ def _issue(i: Issue) -> dict:
 def _part_row(p: Part, schema: Schema, issues: list[Issue], svgs: dict) -> dict:
     cat = schema.categories[p.category]
     d = p.data
-    labels = {f.key: f.label or f.key for f in schema.fields_for(cat)}
+    labels = {f.key: f.label or f.key.replace("_", " ").capitalize() for f in schema.fields_for(cat)}
     stock = d.get("stock")
     return {
         "name": p.name,
@@ -184,10 +186,31 @@ def write_check_results(root: Path, issues: list[Issue], *, klc: bool) -> Path:
 
 
 HASH_FILE = ".src-hash"
+RENDER_VERSION = "2"  # bump when the render settings change: cached previews are redrawn
+FP_LAYERS = "F.Cu,B.Cu,F.SilkS,F.Fab,F.CrtYd"  # with --sp: pads with their numbers on the fab layer
+
+
+def _textless_copy(pretty: Path, tmp: Path) -> Path:
+    """A copy of a footprint folder without texts: the Value (= footprint
+    name) on F.Fab would otherwise set the preview's size, not the pads."""
+    dest = tmp / pretty.name
+    dest.mkdir()
+    for f in pretty.glob("*.kicad_mod"):
+        fp = parse(f.read_text(encoding="utf-8"))
+        fp[:] = [c for c in fp if not (isinstance(c, list) and c and c[0] == "fp_text")]
+        for p in find_all(fp, "property"):
+            if p[1] in ("Reference", "Value"):
+                hide = find(p, "hide")
+                if hide is None:
+                    p.append([Sym("hide"), Sym("yes")])
+                else:
+                    hide[1:] = [Sym("yes")]
+        write_text(dest / f.name, dumps(fp))
+    return dest
 
 
 def _digest(src: Path) -> str:
-    h = hashlib.sha256()
+    h = hashlib.sha256(f"{RENDER_VERSION} {FP_LAYERS};".encode("utf-8"))
     files = sorted(src.glob("*.kicad_mod")) if src.is_dir() else [src]
     for f in files:
         h.update(f.name.encode("utf-8") + b"\0" + f.read_bytes() + b"\0")
@@ -220,8 +243,12 @@ def render_previews(root: Path, svg_dir: Path, run=subprocess.run) -> list[str]:
         if out.exists():
             shutil.rmtree(out)
         out.mkdir(parents=True)
-        r = run([cli, kind, "export", "svg", str(src), "-o", str(out)],
-                capture_output=True, text=True, encoding="utf-8", errors="replace")
+        with tempfile.TemporaryDirectory() as tmp:
+            cmd = [cli, kind, "export", "svg", str(src), "-o", str(out)]
+            if kind == "fp":
+                cmd[4] = str(_textless_copy(src, Path(tmp)))
+                cmd += ["-l", FP_LAYERS, "--sp"]
+            r = run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
         if r.returncode != 0:
             shutil.rmtree(out)
             lines = [ln for ln in (r.stderr or r.stdout or "").splitlines() if ln.strip()]
