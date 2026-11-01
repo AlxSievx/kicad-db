@@ -199,6 +199,9 @@ For automatic picks (bulk add, "find me a part for X"):
    UNI-ROYAL, TDK, …; extendable).
 4. Ceramic capacitors: **C0G/NP0, X7R or X5R**, never Y5V/Z5U (C0G/NP0 added 2026-11-01: JLC's Basic small values are C0G, the better dielectric there).
 5. Bulk adds show the full list for confirmation before anything is written.
+6. English datasheet preferred within the same JLC tier; bilingual counts as
+   English; a preference, never a reason to skip a value (added 2026-11-01).
+   A Mouser part number/datasheet as second source is deferred (needs an API key).
 
 These rules live in `CLAUDE.md` so every Claude session applies them the same
 way.
@@ -261,7 +264,8 @@ key that would have to live in the repo.
 ### 6.11 Environment
 
 - KiCad 10.0 (installed), Python 3 (3.15 installed), git.
-- Python deps (easyeda2kicad, PyYAML, kicad-library-utils) installed in a
+- Python deps (easyeda2kicad, PyYAML, pypdf + cryptography for the datasheet
+  language check, kicad-library-utils) installed in a
   project-local virtual environment; versions pinned. If a dependency doesn't
   support Python 3.15 yet, the builder may use an older Python for the venv.
 - Git: Claude commits library changes only after my OK on each add.
