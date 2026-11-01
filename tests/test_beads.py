@@ -78,10 +78,10 @@ def lib(minilib):
 
 def test_plan_bead_rows(minilib):
     root = lib(minilib)
-    rows = plan(root, **RUN_FB, search=fake_search({"100Ω": [part("C1015")]}))
+    rows = plan(root, **RUN_FB, search=fake_search({"100Ω@100MHz": [part("C1015")]}))
     assert [(r.value, r.status) for r in rows] == [("60R@100MHz", "none"), ("120R@100MHz", "none")]
     rows = plan(root, **{**RUN_FB, "start": 100.0, "stop": 100.0, "series_name": "E6"},
-                search=fake_search({"100Ω": [part("C1015")]}))
+                search=fake_search({"100Ω@100MHz": [part("C1015")]}))
     assert rows[0].status == "new" and rows[0].name == "FB_100R_0805_800mA"
 
 
@@ -93,7 +93,7 @@ def test_fb_series_values():
 def test_write_bead_plan(minilib):
     root = lib(minilib)
     run = {**RUN_FB, "start": 100.0, "stop": 100.0, "series_name": "E6"}
-    rows = plan(root, **run, search=fake_search({"100Ω": [part("C1015")]}))
+    rows = plan(root, **run, search=fake_search({"100Ω@100MHz": [part("C1015")]}))
     save_plan(root, run, rows)
     back, _ = load_plan(root, run)
     assert apply(root, "bead", back) == 1
@@ -177,3 +177,10 @@ def test_skip_bead_rows():  # final review I1
     out = skip_rows(rows, ["1k"], "Ω")
     assert [r.status for r in out] == ["new", "skipped"]
     assert [r.status for r in skip_rows(rows, ["600R@100MHz"], "Ω")] == ["skipped", "new"]
+
+
+def test_bead_keyword_has_frequency():  # live: "120Ω 0603" finds no beads at JLC, "120Ω@100MHz 0603" does
+    from libkit.beads import keyword
+    assert keyword("bead", 120.0, "0603") == "120Ω@100MHz 0603"
+    assert keyword("bead", 1000.0, "0402") == "1kΩ@100MHz 0402"
+    assert keyword("inductor", 1e-5, "0805") == "10uH 0805"

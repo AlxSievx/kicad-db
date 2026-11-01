@@ -27,7 +27,8 @@ def current_amps(text: str) -> float | None:
 def keyword(kind: str, value: float, package: str) -> str:
     if kind == "bead":
         text = format_value(value, "Ω")
-        return f"{text[:-1] if text.endswith('R') else text}Ω {package}"
+        # JLC's search finds beads by "120Ω@100MHz", not by "120Ω" alone.
+        return f"{text[:-1] if text.endswith('R') else text}Ω@{BEAD_FREQUENCY} {package}"
     return f"{format_value(value, 'H')} {package}"
 
 
