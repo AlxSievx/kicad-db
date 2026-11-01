@@ -6,6 +6,7 @@ import argparse
 import sys
 from pathlib import Path
 
+from .entries import METRIC
 from .kicad import kicad_share
 from .net import NetError
 from .schema import SCHEMA_FILE, load_schema
@@ -100,7 +101,7 @@ def _jlc(args) -> int:
                 print(f"  {an}: {av}")
         else:
             print(f"{k}: {v}")
-    print(f"canonical manufacturer: {schema.canonical_manufacturer(part.brand) or 'unknown'}")
+    print(f"canonical manufacturer: {schema.canonical_manufacturer(part.brand, part.mpn) or 'unknown'}")
     ds = Checker(root).for_part(part)
     print(f"datasheet language: {ds.lang}" + (f" ({ds.note})" if ds.note else ""))
     return 0
@@ -121,21 +122,47 @@ def _volts(text: str) -> float:
         raise ValueError(f"voltage {text!r} is not like 16V") from None
 
 
+def _watts(text: str) -> float:
+    from .bulk import power_watts
+    w = power_watts(text)
+    if w is None:
+        raise ValueError(f"power {text!r} is not like 1W or 250mW")
+    return w
+
+
 def _bulk_add(args) -> int:
     from .bulk import apply, clear_plan, load_plan, plan, save_plan, skip_rows
     from .datasheet import Checker
     from .entries import KINDS
     from .values import parse_value
+    from .polar import CANS, CASES
     root = find_root()
     unit = KINDS[args.kind][2]
     if args.kind == "capacitor" and args.voltage is None:
         raise ValueError("capacitors need --voltage")
+    if args.kind == "tantalum":
+        if args.case not in CASES:
+            raise ValueError(f"tantalum needs --case, one of {', '.join(CASES)}")
+        args.package = args.case
+    elif args.kind == "electrolytic":
+        if args.can not in CANS:
+            raise ValueError(f"electrolytic needs --can, one of {', '.join(CANS)}")
+        args.package = args.can
+    else:
+        from .entries import CHIP_SIZES
+        if not args.package or not args.tolerance:
+            raise ValueError(f"{args.kind}s need --package and --tolerance")
+        if args.package not in CHIP_SIZES[args.kind]:
+            raise ValueError(f"no {args.kind} footprint for --package {args.package}; "
+                             f"one of {', '.join(sorted(CHIP_SIZES[args.kind]))}")
     run = dict(
         kind=args.kind, series_name=args.series,
         start=parse_value(args.start, unit), stop=parse_value(args.stop, unit),
-        package=args.package, max_tolerance=_percent(args.tolerance, "tolerance"),
+        package=args.package,
+        max_tolerance=_percent(args.tolerance, "tolerance") if args.tolerance else 1.0,
         min_voltage=_volts(args.voltage) if args.voltage else None,
         dielectrics=tuple(d.strip() for d in args.dielectric.split(",") if d.strip()),
+        min_power=_watts(args.min_power) if args.min_power else None,
     )
     if args.skip and not args.write:
         raise ValueError("--skip only applies with --write (the dry run keeps every row)")
@@ -305,14 +332,17 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(func=_vendor_sym)
 
     p = sub.add_parser("bulk-add", help="add resistors or capacitors for a value series (dry run by default)")
-    p.add_argument("kind", choices=["resistor", "capacitor"])
+    p.add_argument("kind", choices=["resistor", "capacitor", "tantalum", "electrolytic"])
     p.add_argument("--series", required=True, choices=["E6", "E12", "E24", "E48", "E96"])
     p.add_argument("--from", dest="start", required=True, help="first value, e.g. 1k or 10n")
     p.add_argument("--to", dest="stop", required=True, help="last value (inclusive)")
-    p.add_argument("--package", required=True, choices=["0402", "0603", "0805", "1206"])
-    p.add_argument("--tolerance", required=True, help="worst acceptable tolerance, e.g. 1%%")
+    p.add_argument("--package", choices=sorted(METRIC), help="resistors/capacitors: chip size")
+    p.add_argument("--case", help="tantalum: case A, B, C or D")
+    p.add_argument("--can", help="electrolytic: can 5x5.4, 6.3x5.4, 6.3x7.7, 8x10.5 or 10x10.5")
+    p.add_argument("--tolerance", help="resistors/capacitors: worst acceptable tolerance, e.g. 1%%")
     p.add_argument("--voltage", help="minimum voltage rating for capacitors, e.g. 16V")
     p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
+    p.add_argument("--min-power", help="resistors: minimum power rating, e.g. 1W")
     p.add_argument("--write", action="store_true",
                    help="write the new parts of the last dry run with these options, then build")
     p.add_argument("--skip", help="with --write: values of the dry run not to add, e.g. 62k,1.8k")

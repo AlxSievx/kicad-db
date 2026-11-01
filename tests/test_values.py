@@ -35,3 +35,23 @@ def test_spellings():
     assert spellings(4700, "Ω") == ["4.7k", "4k7", "4.7kΩ"]
     assert spellings(100, "Ω") == ["100R", "100Ω"]
     assert spellings(1e-5, "H") == ["10uH", "10u", "10µH"]
+
+
+def test_milli_ohm_names_and_values():  # plan 6 Review Focus 1
+    from libkit.entries import passive_name
+    assert format_value(0.01, "Ω") == "10mR"
+    assert parse_value("10mR", "Ω") == parse_value("10m", "Ω") == 0.01
+    assert parse_value("10M", "Ω") == 1e7 and format_value(1e7, "Ω") == "10M"
+    assert passive_name("resistor", 0.01, "2512", tolerance=0.01) == "R_10mR_2512_1pct"
+    assert "10mΩ" in spellings(0.01, "Ω")
+
+
+def test_metric_1210_2512():
+    from libkit.entries import footprint_for
+    assert footprint_for("capacitor", "1210") == "LIB_Passives_SMD:C_1210_3225Metric"
+    assert footprint_for("resistor", "2512") == "LIB_Passives_SMD:R_2512_6332Metric"
+
+
+def test_large_capacitance_stays_in_uf():  # plan 6: 1000uF electrolytics
+    assert format_value(1e-3, "F") == "1000uF" and parse_value("1000uF", "F") == 1e-3
+    assert parse_value("1mF", "F") == 1e-3

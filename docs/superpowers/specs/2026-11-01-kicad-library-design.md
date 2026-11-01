@@ -172,6 +172,13 @@ never renamed once added.
 - Diodes: vr, if, vf
 - Transistors: type, vds/vce, id/ic, rds_on
 
+Decided 2026-11-01 (Plan 6): chip sizes 1210 and 2512 join 0402–1206; sub-ohm values are written
+`10mR` so milliohm can never be read as megaohm; capacitances stay in uF above 1000uF. Tantalum
+(`C_10u_CaseA_16V_Ta`) and SMD electrolytic (`C_100u_D6.3x7.7_35V_Al`) capacitors are capacitors with
+dielectric `Ta`/`Al`, symbol `C_Polarized`, KiCad stock footprints in `LIB_Passives_SMD`, and optional
+`esr`/`lifetime` fields; bulk adds pick one part per value and size, the highest voltage within the best
+JLC tier.
+
 **Generated into each symbol:** Reference, Value, Footprint, Datasheet,
 Description, Manufacturer, MPN, LCSC, JLC_Type, category fields, and
 **Keywords** built automatically from the data: value in several spellings

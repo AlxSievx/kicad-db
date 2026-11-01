@@ -24,9 +24,11 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from . import jlcsearch, series
-from .entries import KINDS, passive_entry
+from .entries import KINDS, POLAR, passive_entry
 from .parts import Part, load_parts, validate, write_category
-from .pick import Need, pick
+from .pick import Need, pick, pick_polar
+from .polar import candidates as polar_candidates
+from .polar import package_name
 from .schema import load_schema
 from .values import format_value, parse_value
 
@@ -61,6 +63,10 @@ def _mismatch(d: dict, value: float, unit: str, need: Need) -> str | None:
     tol = _num(d.get("tolerance", ""), r"±?\s*(\d+(?:\.\d+)?)\s*%")
     if tol is None or tol / 100 > need.max_tolerance + 1e-12:
         return f"tolerance {d.get('tolerance')}"
+    if need.min_power is not None:
+        watts = power_watts(d.get("power", ""))
+        if watts is None or watts < need.min_power - 1e-12:
+            return f"power {d.get('power')}"
     if need.kind == "capacitor":
         volts = _num(d.get("voltage", ""), r"(\d+(?:\.\d+)?)\s*V")
         if need.min_voltage is not None and (volts is None or volts < need.min_voltage):
@@ -70,6 +76,15 @@ def _mismatch(d: dict, value: float, unit: str, need: Need) -> str | None:
     return None
 
 
+def power_watts(text: str) -> float | None:
+    """1W, 500mW, 1/4W, 62.5mW -> watts; None when not understood."""
+    m = re.fullmatch(r"\s*(\d+(?:\.\d+)?)(?:/(\d+))?\s*(m?)W\s*", text or "")
+    if not m:
+        return None
+    v = float(m.group(1)) / (float(m.group(2)) if m.group(2) else 1)
+    return v / 1000 if m.group(3) else v
+
+
 def _fits(p: Part, value: float, unit: str, need: Need) -> bool:
     """An active library part that already satisfies the need."""
     return p.data.get("status") == "active" and _mismatch(p.data, value, unit, need) is None
@@ -77,7 +92,7 @@ def _fits(p: Part, value: float, unit: str, need: Need) -> bool:
 
 def plan(root: Path, kind: str, series_name: str, start: float, stop: float, package: str,
          max_tolerance: float, min_voltage: float | None, dielectrics: tuple[str, ...],
-         get=None, lookup=None, lang=None) -> list[Row]:
+         min_power: float | None = None, get=None, lookup=None, lang=None, search=None) -> list[Row]:
     """`lang` (part -> datasheet.Result) turns on the English-datasheet preference
     and fills in `datasheet_lang`; the CLI passes datasheet.Checker(root).for_part."""
     root = Path(root)
@@ -89,13 +104,17 @@ def plan(root: Path, kind: str, series_name: str, start: float, stop: float, pac
     existing = [p for p in library if p.category == category]
     names = {p.name: p for p in library}
     by_lcsc = {p.data["lcsc"]: p for p in names.values() if p.data.get("lcsc")}
+    if kind in POLAR:
+        return _plan_polar(kind, series_name, start, stop, package, min_voltage, schema, existing, names, by_lcsc,
+                           search, lang, max_tolerance)
     search = jlcsearch.resistors if kind == "resistor" else jlcsearch.capacitors
 
     rows: list[Row] = []
     for v in series.values(series_name, start, stop):
         text = format_value(v, unit)
         need = Need(kind, v, package, max_tolerance, min_voltage if kind == "capacitor" else None,
-                    **({"dielectrics": tuple(dielectrics)} if kind == "capacitor" else {}))
+                    **({"dielectrics": tuple(dielectrics)} if kind == "capacitor" else {}),
+                    min_power=min_power if kind == "resistor" else None)
         have = next((p for p in existing if _fits(p, v, unit, need)), None)
         if have is not None:
             rows.append(Row(text, have.name, "exists", have.data, "already in library"))
@@ -132,6 +151,46 @@ def plan(root: Path, kind: str, series_name: str, start: float, stop: float, pac
                             f"{entry['lcsc']} already in library as {old.name}"))
         else:
             rows.append(Row(text, entry["name"], "new", entry, result.note))
+    return rows
+
+
+def _new_or_existing(text: str, entry: dict, note: str, names: dict, by_lcsc: dict) -> Row:
+    if entry["name"] in names:
+        old = names[entry["name"]]
+        return Row(text, entry["name"], "exists", old.data,
+                   f"name already in library ({old.data.get('status', '?')}, {old.data.get('lcsc', '-')})")
+    if entry["lcsc"] in by_lcsc:
+        old = by_lcsc[entry["lcsc"]]
+        return Row(text, entry["name"], "exists", old.data, f"{entry['lcsc']} already in library as {old.name}")
+    return Row(text, entry["name"], "new", entry, note)
+
+
+def _plan_polar(kind, series_name, start, stop, size, min_voltage, schema, existing, names, by_lcsc,
+                search, lang, max_tolerance=1.0) -> list[Row]:
+    """Tantalum/electrolytic rows: one part per value and case/can (plan 6)."""
+    package = package_name(kind, size)
+    rows: list[Row] = []
+    for v in series.values(series_name, start, stop):
+        text = format_value(v, "F")
+        have = next((p for p in existing if p.data.get("status") == "active"
+                     and p.data.get("package") == package and p.data.get("dielectric") == POLAR[kind]
+                     and abs(parse_value(p.data.get("value", "0F"), "F") - v) <= 0.01 * v
+                     and (min_voltage is None or float(p.data.get("voltage", "0V").rstrip("V")) >= min_voltage)
+                     and (_num(p.data.get("tolerance", ""), r"±?\s*(\d+(?:\.\d+)?)\s*%") or 100) / 100
+                     <= max_tolerance + 1e-12),
+                    None)
+        if have is not None:
+            rows.append(Row(text, have.name, "exists", have.data, "already in library"))
+            continue
+        result = pick_polar(kind, v, size, polar_candidates(kind, v, size, search=search), schema,
+                            lang=lang, min_voltage=min_voltage, max_tolerance=max_tolerance)
+        if result.part is None:
+            rows.append(Row(text, "", "none", None, result.note))
+            continue
+        entry = passive_entry(kind, result.part, schema)
+        if result.datasheet is not None:
+            entry["datasheet_lang"] = result.datasheet.lang
+        rows.append(_new_or_existing(text, entry, result.note, names, by_lcsc))
     return rows
 
 
@@ -175,6 +234,8 @@ def plan_file(kind: str, package: str) -> Path:
 def _fingerprint(root: Path, kind: str, package: str) -> str:
     """Hash of the library's parts of this kind and package: what a plan was made against."""
     category = KINDS[kind][0]
+    if kind in POLAR:
+        package = package_name(kind, package)
     mine = sorted((p.data for p in load_parts(root, load_schema(root))
                    if p.category == category and p.data.get("package") == package),
                   key=lambda d: json.dumps(d, sort_keys=True))

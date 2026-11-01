@@ -28,7 +28,7 @@ from . import importer, jlc
 from .build import build
 from .datasheet import Checker
 from .discretes import Discrete, classify
-from .entries import KINDS, METRIC, NAME_CHARS, kind_of, manufacturer_name, mpn_name, passive_entry
+from .entries import KINDS, POLAR, NAME_CHARS, is_chip, kind_of, manufacturer_name, mpn_name, passive_entry
 from .jlc import JlcPart, datasheet_url
 from .kicad import find_kicad_cli, kicad_share
 from .klc import run_klc
@@ -185,7 +185,7 @@ def _entry(part: JlcPart, kind: str | None, schema, footprint: str, name: str | 
         if name:
             entry["name"] = name
         return entry
-    manufacturer, _ = manufacturer_name(part.brand, schema)
+    manufacturer, _ = manufacturer_name(part.brand, schema, part.mpn)
     return {
         "name": name or mpn_name(part.mpn),
         "symbol": "",
@@ -259,7 +259,9 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
     stage = _Stage(root, ref)
     unique = None
     new_family = None
-    if kind and part.package in METRIC:
+    from .polar import size_of
+    chip = kind is not None and (size_of(kind, part) is not None if kind in POLAR else is_chip(kind, part.package))
+    if chip:
         given = [k for k in ("category", "symbol", "footprint", "family", "fp_name", "name", "pin_types")
                  if options[k]]
         if given:
@@ -330,7 +332,7 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
            if i.severity == "error"]
     if bad:
         raise ValueError(f"{entry['name']} would not build in {category}: {'; '.join(bad)}")
-    manufacturer, known = manufacturer_name(part.brand, schema)
+    manufacturer, known = manufacturer_name(part.brand, schema, part.mpn)
     if not known:
         warnings.append(f"manufacturer {manufacturer!r} (JLC: {part.brand!r}) is not in manufacturers: — kept "
                         "for this single add")

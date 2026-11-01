@@ -280,3 +280,13 @@ def test_pick_lookup_error_propagates(schema, caps):
         raise NetError(f"{c}: HTTP 500")
     with pytest.raises(NetError):
         pick(Need("capacitor", 1e-7, "0402", 0.1, 16), caps, schema, lookup=boom)
+
+
+def test_min_power_filters_candidates(schema):  # plan 6 task 2
+    def cand(lcsc, mw):
+        return Candidate(lcsc, f"M{lcsc}", "2512", 0.01, 0.01, None, mw, None, 50_000, "Basic")
+    need = Need("resistor", 0.01, "2512", 0.01, min_power=1.0)
+    p = pick(need, [cand("C901", 500), cand("C902", 1000)], schema, lookup=make_lookup(brand="Yageo"))
+    assert p.part.lcsc == "C902"
+    p = pick(need, [cand("C901", 500)], schema, lookup=make_lookup(brand="Yageo"))
+    assert p.part is None and "power ≥ 1W" in p.note

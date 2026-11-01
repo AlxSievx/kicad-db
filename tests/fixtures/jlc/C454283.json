@@ -1,0 +1,246 @@
+{
+ "code": 200,
+ "data": {
+  "componentPageInfo": {
+   "total": 1,
+   "list": [
+    {
+     "componentId": 456438,
+     "componentLibraryType": "expand",
+     "stockCount": 500,
+     "componentTypeEn": "Hybrid Aluminum Electrolytic Capacitors",
+     "erpComponentName": "22uF ±20% 80V",
+     "componentSource": "shop",
+     "lcscGoodsUrl": "https://www.lcsc.com/product-detail/hybrid-aluminum-electrolytic-capacitors_panasonic-eehza1k220v_C454283.html",
+     "componentPrices": [
+      {
+       "startNumber": 1,
+       "endNumber": 9,
+       "productPrice": 1.5699
+      },
+      {
+       "startNumber": 10,
+       "endNumber": 29,
+       "productPrice": 1.3041
+      },
+      {
+       "startNumber": 30,
+       "endNumber": 99,
+       "productPrice": 1.1581
+      },
+      {
+       "startNumber": 100,
+       "endNumber": 499,
+       "productPrice": 0.9941
+      },
+      {
+       "startNumber": 500,
+       "endNumber": 999,
+       "productPrice": 0.9203
+      },
+      {
+       "startNumber": 1000,
+       "endNumber": -1,
+       "productPrice": 0.8875
+      }
+     ],
+     "buyComponentPrices": [
+      {
+       "startNumber": 30,
+       "endNumber": 99,
+       "productPrice": 1.1156
+      },
+      {
+       "startNumber": 1,
+       "endNumber": 9,
+       "productPrice": 1.5123
+      },
+      {
+       "startNumber": 500,
+       "endNumber": 999,
+       "productPrice": 0.8865
+      },
+      {
+       "startNumber": 100,
+       "endNumber": 499,
+       "productPrice": 0.9576
+      },
+      {
+       "startNumber": 10,
+       "endNumber": 29,
+       "productPrice": 1.2563
+      },
+      {
+       "startNumber": 1000,
+       "endNumber": -1,
+       "productPrice": 0.8549
+      }
+     ],
+     "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
+     "secondSortAccessId": "2917b3d02baa40c7aca5c8c2f66b06f7",
+     "canPresaleNumber": 500,
+     "componentProductType": 0,
+     "mergedComponentCode": "",
+     "urlSuffix": "PANASONIC-EEHZA1K220V/C454283",
+     "leastPatchNumber": 0,
+     "lossNumber": 0,
+     "isBuyComponent": "1",
+     "noBuyReason": null,
+     "componentAlternativesCode": "",
+     "replaceUrlSuffix": null,
+     "preferredComponentFlag": false,
+     "allowPostFlag": true,
+     "score": null,
+     "idleFlag": null,
+     "estimateDate": null,
+     "fullReelPrice": null,
+     "encapsulationNumber": 500,
+     "shopCostPrice": 4.5,
+     "preMinPurchaseNum": 6,
+     "minPurchaseNum": 1,
+     "initialPrice": 1.5699,
+     "componentCode": "C454283",
+     "componentBrandEn": "PANASONIC",
+     "componentModelEn": "EEHZA1K220V",
+     "componentImageUrl": "",
+     "productBigImageAccessId": null,
+     "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583828199310966784-C454283/C454283-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T171423Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vFPuCCjrVJ4%2FOFexPzs1EtO9pGt%2FLJpzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYJL9yEw557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1j7csAh7F%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5U5Rw2r5ch3ARqAATX1yUfn4h5G3ES6hJGie7a4B2RKMhAvPndg9Jz%2BdvwxNHlpO0oIhHVGYwejR1QpFJKxht6e8PAwz2N%2BPs5cS6insmjLPG7afDV4Vieg6E3lnWl8v65pN5chcoepd8kN8GMSMas1KbnDuAlGfX7bVY22giVD6KOZFnVPR4qfyi1bIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXpuZ6cjhT1ny5BWQx7UjX7bE%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=41d25d2125f9d0984b100652e4959de48449f0ea2e9fda50c286e9d28bbca8ae",
+     "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404151014_PANASONIC-EEHZA1K220V_C454283.pdf",
+     "dataManualFileAccessId": null,
+     "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8590165098099601408-C454283.pdf?response-content-disposition=attachment%3B%20filename%3DC454283.pdf%3B%20filename%2A%3DUTF-8%27%27C454283.pdf&x-oss-date=20261101T171423Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5r0DenOvoVy3LKfWEXAh2YmXPpJq6Ly0zz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qf1XgyEw557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWmrrQ%2F9%2BDJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkI24o%2F9KKWD5sagAFOuRWJeRsBsC%2FdL6oXelfTJVPt4edOXCyOhfUNsFJI0cUGxVWP5KqNWkJjnOxiI3fxn78GCShQLGBz4jFBkyMiBLiyHJ2kgByaSCXlM2%2BE4JDM7qngTpEEX%2BQROquSQ2SdvvAVPss9DL9m8AEaz%2B9wickBFODkW%2BOcC%2F9XuEtdfSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYAFSzSZSkptZcqcfsPueDgY1%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=ea2d11c9db869270fc541ccb9ff8a3442c70f1d06b7e157160917b3e267b41e2",
+     "dataManualOfficialLink": "",
+     "componentName": "PANASONIC EEHZA1K220V",
+     "minImage": "",
+     "minImageAccessId": null,
+     "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583828200241156096-C454283/C454283-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261101T171423Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5vFPuCCjrVJ4%2FOFexPzs1EtO9pGt%2FLJpzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYJL9yEw557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1j7csAh7F%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5U5Rw2r5ch3ARqAATX1yUfn4h5G3ES6hJGie7a4B2RKMhAvPndg9Jz%2BdvwxNHlpO0oIhHVGYwejR1QpFJKxht6e8PAwz2N%2BPs5cS6insmjLPG7afDV4Vieg6E3lnWl8v65pN5chcoepd8kN8GMSMas1KbnDuAlGfX7bVY22giVD6KOZFnVPR4qfyi1bIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXpuZ6cjhT1ny5BWQx7UjX7bE%2F20261101%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=63d405efe397ab402073487075a3b830e134b1c9ce19fd80a8490cf43c9e0934",
+     "imageList": [
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      },
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      },
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      },
+      {
+       "productImage": null,
+       "productImageAccessId": null,
+       "productBigImage": null,
+       "productBigImageAccessId": null,
+       "fileType": null
+      }
+     ],
+     "manufacturerBlackFlag": null,
+     "componentNameEn": null,
+     "componentSpecificationEn": "SMD,D8xL10.5mm",
+     "describe": "-55℃~+105℃ 1.55A@100kHz 10.5mm 10000hrs@105℃ 22uF 45mΩ@100kHz 80V 8mm Polarized SMD ±20% SMD,D8xL10.5mm Hybrid Aluminum Electrolytic Capacitors ROHS",
+     "attributes": [
+      {
+       "attribute_name_en": "Operating Temperature",
+       "attribute_value_name": "-55℃~+105℃"
+      },
+      {
+       "attribute_name_en": "Lifetime",
+       "attribute_value_name": "10000hrs@105℃"
+      },
+      {
+       "attribute_name_en": "Equivalent Series Resistance(ESR)",
+       "attribute_value_name": "45mΩ@100kHz"
+      },
+      {
+       "attribute_name_en": "Voltage Rating",
+       "attribute_value_name": "80V"
+      },
+      {
+       "attribute_name_en": "Pin Spacing",
+       "attribute_value_name": "-"
+      },
+      {
+       "attribute_name_en": "Height - Seated (Max)",
+       "attribute_value_name": "10.5mm"
+      },
+      {
+       "attribute_name_en": "Tolerance",
+       "attribute_value_name": "±20%"
+      },
+      {
+       "attribute_name_en": "Polarity type",
+       "attribute_value_name": "Polarized"
+      },
+      {
+       "attribute_name_en": "Capacitance",
+       "attribute_value_name": "22uF"
+      },
+      {
+       "attribute_name_en": "Mounting Type",
+       "attribute_value_name": "SMD"
+      },
+      {
+       "attribute_name_en": "Ripple Current",
+       "attribute_value_name": "1.55A@100kHz"
+      },
+      {
+       "attribute_name_en": "Diameter",
+       "attribute_value_name": "8mm"
+      }
+     ],
+     "rankScore": null,
+     "firstSortName": "Hybrid Aluminum Electrolytic Capacitors",
+     "secondSortName": "Capacitors",
+     "componentBrandHigh": null,
+     "remarkHigh": null,
+     "componentModelHigh": null,
+     "componentCodeHigh": "<span class='lucene_highlight_class'>C454283</span>",
+     "componentSpecificationHigh": null,
+     "rohsFlag": 1,
+     "shopShowPriceFlag": true,
+     "shopShowForeignPriceFlag": true,
+     "shopRealPriceFlag": true,
+     "assemblyComponentFlag": false,
+     "rohsFileId": null,
+     "rohsUrl": null
+    }
+   ],
+   "pageNum": 1,
+   "pageSize": 5,
+   "size": 0,
+   "startRow": 0,
+   "endRow": 0,
+   "pages": 1,
+   "prePage": 0,
+   "nextPage": 0,
+   "isFirstPage": false,
+   "isLastPage": false,
+   "hasPreviousPage": false,
+   "hasNextPage": false,
+   "navigatePages": 0,
+   "navigatepageNums": null,
+   "navigateFirstPage": 0,
+   "navigateLastPage": 0
+  },
+  "sortAndCountVoList": null,
+  "presaleTypeList": [],
+  "brandList": [],
+  "basePart": null,
+  "preferredPart": null,
+  "economicPart": null,
+  "standardPart": null,
+  "dataSheetPart": null,
+  "photo": null,
+  "queryString": "C454283"
+ },
+ "message": null
+}

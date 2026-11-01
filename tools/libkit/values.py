@@ -1,7 +1,7 @@
 """Component value notation: parsing, canonical form and search spellings.
 
 Canonical stored notation:
-  resistors   100R, 1.5R, 4.7k, 1M      (unit "Ω")
+  resistors   10mR, 100R, 1.5R, 4.7k, 1M (unit "Ω")
   capacitors  10pF, 100nF, 4.7uF        (unit "F")
   inductors   10uH                      (unit "H")
 """
@@ -14,7 +14,7 @@ _PREFIX = {"p": 1e-12, "n": 1e-9, "u": 1e-6, "µ": 1e-6, "m": 1e-3, "": 1.0, "R"
            "k": 1e3, "M": 1e6, "G": 1e9}
 # Prefixes used when formatting, smallest first.
 _FORMAT_PREFIXES = {
-    "F": ["p", "n", "u", "m", ""],
+    "F": ["p", "n", "u"],  # capacitors stay in uF above 1000uF (1000uF, not 1mF), as datasheets write them
     "H": ["n", "u", "m", ""],
     "Ω": ["m", "", "k", "M", "G"],
 }
@@ -37,6 +37,8 @@ def parse_value(text: str, unit: str) -> float:
     s = text.strip()
     if s.endswith(unit):
         s = s[: -len(unit)]
+    if unit == "Ω" and len(s) > 2 and s.endswith("R") and s[-2] in "mkMG":
+        s = s[:-1]  # "10mR" (milliohm notation) and the like
     m = _DEC.fullmatch(s)
     if m:
         num, pre = m.group(1), m.group(2)
@@ -68,7 +70,8 @@ def format_value(v: float, unit: str) -> str:
     _check_unit(unit)
     mant, pre = _mantissa(v, unit)
     if unit == "Ω":
-        return f"{mant}R" if pre == "" else f"{mant}{pre}"
+        # Below 1R the "m" carries an "R" so 10mR can never be read as 10M.
+        return f"{mant}R" if pre == "" else f"{mant}mR" if pre == "m" else f"{mant}{pre}"
     return f"{mant}{pre}{unit}"
 
 
@@ -85,7 +88,7 @@ def spellings(v: float, unit: str) -> list[str]:
         out.append(f"{whole}{pre or 'R'}{frac}")
     if unit in ("F", "H") and float(mant) >= 100:
         idx = _FORMAT_PREFIXES[unit].index(pre)
-        if idx + 1 < len(_FORMAT_PREFIXES[unit]):
+        if idx + 1 < len(_FORMAT_PREFIXES[unit]) and _FORMAT_PREFIXES[unit][idx + 1]:
             nxt = _FORMAT_PREFIXES[unit][idx + 1]
             out.append(f"{round(float(mant) / 1000, 6):g}{nxt}{unit}")
     if unit in ("F", "H"):

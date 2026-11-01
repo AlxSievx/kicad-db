@@ -51,7 +51,7 @@
 
 # --- Stock KiCad content vendored unchanged (Plan 4 starter set, user OK 2026-11-01) ---
 - kind: footprint
-  item: ["D_SOD-123", "D_SOD-323", "D_SMA", "D_SMB", "SOT-23", "LED_0[46]0[358]_*Metric", "MountingHole_*", "TestPoint_*", "Fiducial_*"]
+  item: ["D_SOD-123", "D_SOD-323", "D_SMA", "D_SMB", "SOT-23", "CP_Elec_*", "LED_0[46]0[358]_*Metric", "MountingHole_*", "TestPoint_*", "Fiducial_*"]
   rule: F9.1
   reason: >-
     Stock KiCad footprint copied unchanged; generic packages carry no datasheet

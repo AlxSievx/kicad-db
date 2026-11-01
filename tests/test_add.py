@@ -292,11 +292,11 @@ def test_description_cleaned(lib):
 def test_add_non_chip_resistor_uses_passive_entry(lib):  # final review I1
     def res2512(ref):
         p = parse_record(rec("C25744"))
-        p.package, p.lcsc = "2512", "C25745"  # C25744 itself is in minilib already
+        p.package, p.lcsc = "2010", "C25745"  # C25744 itself is in minilib already
         return p
     p = prep(lib, "C25745", resolve=res2512, category="resistors",
              footprint="LIB_Passives_SMD:R_0402_1005Metric")
-    assert p.entry["symbol"] == "R" and p.entry["name"] == "R_10k_2512_1pct"  # pattern names for any R/C package
+    assert p.entry["symbol"] == "R" and p.entry["name"] == "R_10k_2010_1pct"  # pattern names for any R/C package
     assert p.entry["tolerance"] == "±1%" and p.entry["power"]
     apply(lib, load_plan(lib, "C25745", p.options))
     assert [i for i in check(lib, klc=False) if i.severity == "error"] == []
@@ -436,3 +436,39 @@ def test_cli_value_needs_local(lib, monkeypatch, capsys):
     monkeypatch.chdir(lib)
     assert cli.main(["add", "C6186", "--value", "x"]) == 1
     assert "--local" in capsys.readouterr().err
+
+
+def _copy_fp(root, name):
+    shutil.copy(REPO / "footprints" / "LIB_Passives_SMD.pretty" / f"{name}.kicad_mod",
+                root / "footprints" / "LIB_Passives_SMD.pretty")
+    for m in (REPO / "3dmodels" / "LIB_Passives_SMD.3dshapes").glob(f"{name}.*"):
+        shutil.copy(m, root / "3dmodels" / "LIB_Passives_SMD.3dshapes")
+
+
+def test_add_tantalum_needs_no_options(lib):  # final review I2
+    _copy_fp(lib, "CP_EIA-3216-18_Kemet-A")
+    p = prep(lib, "C7171")
+    assert p.entry["name"] == "C_10u_CaseA_16V_Ta" and p.files == {}
+    assert p.entry["footprint"] == "LIB_Passives_SMD:CP_EIA-3216-18_Kemet-A"
+    with pytest.raises(ValueError, match="does not apply"):
+        prep(lib, "C7171", footprint="LIB_Passives_SMD:R_0402_1005Metric")
+
+
+def test_add_polar_unsupported_can_by_mpn(lib):  # final review I2
+    def odd(ref):
+        p = parse_record(rec("C125975"))
+        p.package, p.lcsc = "SMD,D4xL5.4mm", "C125976"
+        return p
+    p = prep(lib, "C125976", resolve=odd, category="capacitors", footprint="LIB_Passives_SMD:R_0402_1005Metric")
+    assert p.entry["name"] == "UWT1V101MCL1GS" and p.entry["footprint"] == "LIB_Passives_SMD:R_0402_1005Metric"
+    assert p.entry["symbol"] == "C_Polarized" and p.entry["dielectric"] == "Al"
+
+
+def test_add_1210_inductor_is_not_chip(lib):  # final review I3
+    def ind1210(ref):
+        p = parse_record(rec("C1046"))
+        p.package, p.lcsc = "1210", "C1047"
+        return p
+    p = prep(lib, "C1047", resolve=ind1210, category="inductors", footprint="LIB_Passives_SMD:L_0805_2012Metric")
+    assert p.entry["footprint"] == "LIB_Passives_SMD:L_0805_2012Metric"
+    assert p.entry["name"] == p.entry["mpn"]

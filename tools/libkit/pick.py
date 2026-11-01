@@ -33,6 +33,7 @@ class Need:
     min_voltage: float | None = None
     dielectrics: tuple[str, ...] = ("C0G", "NP0", "X7R", "X5R")
     min_stock: int = 1000
+    min_power: float | None = None  # W, resistors only
 
     def __post_init__(self):
         bad = [d.upper() for d in self.dielectrics if d.upper() in FORBIDDEN_DIELECTRICS]
@@ -74,6 +75,10 @@ def _filters(need: Need):
         allowed = {d.upper() for d in need.dielectrics}
         yield (f"no candidate with dielectric {'/'.join(need.dielectrics)}",
                lambda c: c.dielectric is not None and c.dielectric.upper() in allowed)
+    if need.min_power is not None:
+        # Unknown power passes here; bulk re-checks JLC's own record.
+        yield (f"no candidate with power ≥ {need.min_power:g}W",
+               lambda c: c.power_mw is None or c.power_mw >= need.min_power * 1000 - 1e-9)
     # Unknown stock passes: every pick is re-checked against JLC's own stock below.
     yield f"no candidate with stock ≥ {need.min_stock}", lambda c: c.stock is None or c.stock >= need.min_stock
 
@@ -110,7 +115,7 @@ def pick(need: Need, candidates: list[Candidate], schema: Schema, lookup=None,
         if part is None:
             missing += 1
             continue
-        if schema.canonical_manufacturer(part.brand) is None:
+        if schema.canonical_manufacturer(part.brand, part.mpn) is None:
             unknown += 1
             continue
         if part.stock < need.min_stock:
@@ -142,3 +147,65 @@ def pick(need: Need, candidates: list[Candidate], schema: Schema, lookup=None,
     if rejected:
         why = ", ".join(x for x in (why, "; ".join(dict.fromkeys(rejected[:3]))) if x)
     return Pick(need, None, None, f"no usable part among {checked} checked ({why})")
+
+
+def pick_polar(kind: str, value: float, size: str, parts: list[JlcPart], schema: Schema,
+               lang: Callable[[JlcPart], Result] | None = None, min_stock: int = 1000,
+               min_voltage: float | None = None, max_tolerance: float = 1.0) -> Pick:
+    """Tantalum/electrolytic pick (plan 6): rules 1–3 as for chips, then one
+    voltage per value: the highest rated voltage within the best JLC tier,
+    then an English datasheet (rule 6, at most MAX_LANG_CHECKS looks), then stock."""
+    from .entries import passive_entry
+    from .polar import size_of
+    from .values import parse_value
+    need = Need(kind, value, size, 1.0, min_voltage, dielectrics=(), min_stock=min_stock)
+    usable: list[tuple[tuple, JlcPart]] = []
+    unknown = low = 0
+    rejected: list[str] = []
+    for p in parts:
+        if size_of(kind, p) != size:
+            continue
+        if schema.canonical_manufacturer(p.brand, p.mpn) is None:
+            unknown += 1
+            continue
+        if p.stock < min_stock:
+            low += 1
+            continue
+        try:
+            e = passive_entry(kind, p, schema)
+        except ValueError as ex:
+            rejected.append(str(ex))
+            continue
+        if abs(parse_value(e["value"], "F") - value) > 0.01 * value:
+            rejected.append(f"{p.lcsc}: value {e['value']}")
+            continue
+        tol = float(e["tolerance"].strip().lstrip("±").rstrip("%")) / 100
+        if tol > max_tolerance + 1e-12:
+            rejected.append(f"{p.lcsc}: tolerance {e['tolerance']}")
+            continue
+        volts = float(e["voltage"].rstrip("V"))
+        if min_voltage is not None and volts < min_voltage:
+            rejected.append(f"{p.lcsc}: voltage {e['voltage']}")
+            continue
+        usable.append(((int(p.jlc_type == "Extended"), -volts), p))
+    if not usable:
+        if not (unknown or low or rejected):
+            return Pick(need, None, None, "no candidates at JLC")
+        why = ", ".join(f"{n} {what}" for n, what in ((unknown, "unknown manufacturer"),
+                                                        (low, f"stock < {min_stock} at JLC")) if n)
+        if rejected:
+            why = ", ".join(x for x in (why, "; ".join(dict.fromkeys(rejected[:3]))) if x)
+        return Pick(need, None, None, f"no usable part ({why})")
+    best_key = min(k for k, _ in usable)
+    group = sorted((p for k, p in usable if k == best_key), key=lambda p: -p.stock)
+    if lang is None:
+        return _chosen(need, group[0], None, None)
+    best = None
+    for p in group[:MAX_LANG_CHECKS]:
+        ds = lang(p)
+        rank = LANG_RANK.get(ds.lang, LANG_RANK["unknown"])
+        if best is None or rank < best[0]:
+            best = (rank, p, ds)
+        if rank == 0:
+            break
+    return _chosen(need, best[1], None, best[2])

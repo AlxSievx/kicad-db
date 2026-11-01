@@ -101,7 +101,7 @@ def find(root: Path, kind: str, value: float, package: str, *, max_tolerance: fl
             notes.append("Extended")
         if part.stock < BULK_MIN_STOCK:
             notes.append(f"stock < {BULK_MIN_STOCK}")
-        if schema.canonical_manufacturer(part.brand) is None:
+        if schema.canonical_manufacturer(part.brand, part.mpn) is None:
             notes.append(f"unknown manufacturer {part.brand}")
         try:
             entry = passive_entry(kind, part, schema, known_only=False)
