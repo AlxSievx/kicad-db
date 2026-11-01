@@ -38,8 +38,12 @@ def lang(part):
     return Result("en")
 
 
+SHARE = Path(__file__).parent / "fixtures" / "share"  # stock footprints without 3D models
+
+
 def prep(root, ref, **kw):
     kw.setdefault("resolve", resolve)
+    kw.setdefault("kicad_share_dir", SHARE)
     kw.setdefault("fetch", fetch)
     kw.setdefault("lang", lang)
     kw.setdefault("klc", False)
@@ -50,6 +54,7 @@ def prep(root, ref, **kw):
 def lib(minilib):
     """minilib plus the real base symbols (L, FerriteBead) and the 0805 inductor footprint."""
     shutil.copy(REPO / "src" / "symbols" / "passives.kicad_sym", minilib / "src" / "symbols" / "passives.kicad_sym")
+    shutil.copy(REPO / "src" / "symbols" / "discretes.kicad_sym", minilib / "src" / "symbols")
     shutil.copy(REPO / "footprints" / "LIB_Passives_SMD.pretty" / "L_0805_2012Metric.kicad_mod",
                 minilib / "footprints" / "LIB_Passives_SMD.pretty")
     shutil.copy(REPO / "3dmodels" / "LIB_Passives_SMD.3dshapes" / "L_0805_2012Metric.step",
@@ -299,3 +304,50 @@ def test_add_non_chip_resistor_uses_passive_entry(lib):  # final review I1
 def test_add_refuses_entry_that_would_not_build(lib):  # final review I1
     with pytest.raises(ValueError, match="tolerance"):
         prep(lib, "C6186", category="resistors", symbol="R", footprint="LIB_Passives_SMD:R_0402_1005Metric")
+
+
+SOD123 = dict(footprint="stock:Diode_SMD:D_SOD-123", family="Diode_SMD")
+SOT23 = dict(footprint="stock:Package_TO_SOT_SMD:SOT-23", family="Package_TO_SOT_SMD")
+E2K_FP = dict(footprint="easyeda", family="Package_TO_SOT", fp_name="SOT-223-3_TabPin2")  # 4 pads
+
+
+def test_add_diode_uses_base(lib):
+    p = prep(lib, "C81598", **SOD123)
+    assert p.category == "diodes" and p.entry["symbol"] == "D" and p.symbol is None
+    assert p.entry["vr"] == "75V" and p.entry["name"] == "1N4148W"
+    assert any("cathode" in n for n in p.notes)
+
+
+def test_add_mosfet_uses_base(lib):
+    p = prep(lib, "C20917", **SOT23)
+    assert p.category == "transistors" and p.entry["symbol"] == "Q_NMOS_GSD" and p.entry["type"] == "N-MOSFET"
+
+
+def test_add_dual_diode_keeps_easyeda(lib):  # Review Focus 4
+    p = prep(lib, "C8592", **E2K_FP)
+    assert p.category == "diodes" and p.symbol is not None
+    assert any(n.startswith("no base symbol") for n in p.notes)
+
+
+def test_add_base_pad_mismatch_falls_back(lib):
+    p = prep(lib, "C81598", **E2K_FP)
+    assert p.symbol is not None and p.entry["symbol"] == "1N4148W"
+    assert any("does not fit pads 1, 2, 3, 4" in n for n in p.notes)
+
+
+def test_add_explicit_symbol_wins(lib):
+    p = prep(lib, "C81598", symbol="D_Schottky", **SOD123)
+    assert p.entry["symbol"] == "D_Schottky"
+
+
+def test_add_refuses_pin_without_pad(lib):
+    with pytest.raises(ValueError, match=r"pin\(s\) 3"):
+        prep(lib, "C81598", symbol="Q_NMOS_GSD", **SOD123)
+
+
+def test_write_diode_builds_and_checks(lib):
+    p = prep(lib, "C81598", **SOD123)
+    apply(lib, load_plan(lib, "C81598", p.options))
+    text = (lib / "symbols" / "LIB_Diodes.kicad_sym").read_text(encoding="utf-8")
+    assert '(extends "D")' in text
+    assert [i for i in check(lib, klc=False) if i.severity == "error"] == []

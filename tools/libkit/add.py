@@ -27,6 +27,7 @@ from pathlib import Path
 from . import importer, jlc
 from .build import build
 from .datasheet import Checker
+from .discretes import Discrete, classify
 from .entries import KINDS, METRIC, NAME_CHARS, kind_of, manufacturer_name, mpn_name, passive_entry
 from .jlc import JlcPart, datasheet_url
 from .kicad import find_kicad_cli, kicad_share
@@ -34,6 +35,7 @@ from .klc import run_klc
 from .normfp import normalize_footprint
 from .normsym import normalize_symbol
 from .parts import Part, declare_family, load_parts, validate, write_category
+from .pins import footprint_pads, symbol_pins
 from .schema import Family, load_schema
 from .sexpr import Sym, dumps, find_all, parse
 from .symgen import SYM_VERSION, build_symbol_lib, load_source_symbols, write_text
@@ -153,6 +155,29 @@ def _footprint(stage: _Stage, schema, part: JlcPart, choice: str, family: str | 
     return f"{fam.lib_name}:{name}", new_family
 
 
+def _footprint_file(stage: _Stage, fp_ref: str) -> Path:
+    """The staged footprint file of `fp_ref`, else the library's."""
+    lib, _, name = fp_ref.partition(":")
+    rel = f"footprints/{lib}.pretty/{name}.kicad_mod"
+    return stage.files_dir / rel if rel in stage.files else stage.root / rel
+
+
+def _default_symbol(disc: Discrete | None, fp_file: Path, notes: list[str]) -> str:
+    """The discrete base symbol when the footprint's pads fit it, else "easyeda"."""
+    if disc is None:
+        return "easyeda"
+    if disc.symbol is None:
+        notes.append(f"no base symbol: {disc.why}")
+        return "easyeda"
+    pads = footprint_pads(fp_file)
+    if pads != disc.pads:
+        order = sorted(pads, key=lambda n: (not n.isdigit(), int(n) if n.isdigit() else 0, n))
+        notes.append(f"base {disc.symbol} does not fit pads {', '.join(order)}: EasyEDA symbol")
+        return "easyeda"
+    notes.append(f"base symbol {disc.symbol}; check: {disc.checklist}")
+    return disc.symbol
+
+
 def _entry(part: JlcPart, kind: str | None, schema, footprint: str, name: str | None,
            today: date | None) -> dict[str, str]:
     if kind:  # R, C, L or bead in a package other than 0402–1206: named by MPN
@@ -247,19 +272,35 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
             raise ValueError(f"footprint {entry['footprint']} is not in the library yet — vendor it first "
                              "(libkit vendor-fp)")
     else:
-        category = category or (KINDS[kind][0] if kind else None)
+        disc = None if kind else classify(part)
+        category = category or (KINDS[kind][0] if kind else disc.category if disc else None)
         if category not in schema.categories:
             raise ValueError(f"--category is required: one of {', '.join(schema.categories)}")
-        symbol = symbol or (KINDS[kind][1] if kind else "easyeda")
+        symbol = symbol or (KINDS[kind][1] if kind else None)  # None: decided by the footprint's pads
         footprint = footprint or "easyeda"
-        if pin_types and symbol != "easyeda":
-            raise ValueError("--pin-types applies to EasyEDA symbols only")
         share = Path(kicad_share_dir) if kicad_share_dir else kicad_share()
         fetched = None
-        if "easyeda" in (symbol, footprint):
-            fetched = (fetch or importer.fetch_easyeda)(part.lcsc, stage.dir / "easyeda")
+
+        def easyeda():
+            nonlocal fetched
+            if fetched is None:
+                fetched = (fetch or importer.fetch_easyeda)(part.lcsc, stage.dir / "easyeda")
+            return fetched
+
+        if footprint == "easyeda":
+            easyeda()
         fp_ref, new_family = _footprint(stage, schema, part, footprint, family, fp_name, fetched, notes, share)
+        fp_file = _footprint_file(stage, fp_ref)
+        if symbol is None:
+            symbol = _default_symbol(disc, fp_file, notes)
+        if pin_types and symbol != "easyeda":
+            raise ValueError("--pin-types applies to EasyEDA symbols only")
+        if symbol == "easyeda":
+            easyeda()
         entry = _entry(part, kind, schema, fp_ref, name, today)
+        if disc:
+            declared = {f.key for f in schema.categories[category].fields}
+            entry.update({k: v for k, v in disc.fields.items() if k in declared and k not in entry})
         _valid_name(entry["name"], "part name")
         sources = load_source_symbols(root)
         if symbol == "easyeda":
@@ -277,6 +318,11 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
             entry["symbol"] = entry["name"]
         else:
             entry["symbol"] = symbol
+        all_syms = {**sources, entry["name"]: unique} if unique is not None else sources
+        missing = symbol_pins(entry["symbol"], all_syms) - footprint_pads(fp_file)
+        if missing:
+            raise ValueError(f"{entry['name']} would fail check: symbol pin(s) {', '.join(sorted(missing))} "
+                             f"have no pad in {fp_ref}")
 
     if entry["name"] in names:
         raise ValueError(f"part name {entry['name']} is already in the library ({names[entry['name']]})")
