@@ -209,3 +209,63 @@ def pick_polar(kind: str, value: float, size: str, parts: list[JlcPart], schema:
         if rank == 0:
             break
     return _chosen(need, best[1], None, best[2])
+
+
+def pick_ranked(kind: str, value: float, package: str, parts: list[JlcPart], schema: Schema,
+                lang: Callable[[JlcPart], Result] | None = None, min_stock: int = 1000,
+                footprint: str | None = None) -> Pick:
+    """Bead / chip inductor / power-inductor family pick (plan 7). Rules 1–3,
+    then (chips) the highest rated current within the best JLC tier, then an
+    English datasheet (rule 6), then stock. `footprint` set = a family of
+    non-chip power inductors: no current order (one part per value)."""
+    from .beads import BEAD_FREQUENCY, current_amps
+    from .entries import passive_entry
+    need = Need(kind, value, package, 1.0, dielectrics=(), min_stock=min_stock)
+    usable: list[tuple[tuple, JlcPart]] = []
+    unknown = low = 0
+    rejected: list[str] = []
+    for p in parts:
+        if schema.canonical_manufacturer(p.brand, p.mpn) is None:
+            unknown += 1
+            continue
+        if p.stock < min_stock:
+            low += 1
+            continue
+        try:
+            e = passive_entry(kind, p, schema, footprint=footprint)
+        except ValueError as ex:
+            rejected.append(str(ex))
+            continue
+        if kind == "bead" and not e["value"].endswith(f"@{BEAD_FREQUENCY}"):
+            rejected.append(f"{p.lcsc}: impedance {e['value']} is not at {BEAD_FREQUENCY}")
+            continue
+        tier = int(p.jlc_type == "Extended")
+        if footprint is not None:
+            usable.append(((tier,), p))
+            continue
+        amps = current_amps(e.get("current_rating", ""))
+        if amps is None:
+            rejected.append(f"{p.lcsc}: current rating {e.get('current_rating')!r}")
+            continue
+        usable.append(((tier, -amps), p))
+    if not usable:
+        if not (unknown or low or rejected):
+            return Pick(need, None, None, "no candidates at JLC")
+        why = ", ".join(f"{n} {what}" for n, what in ((unknown, "unknown manufacturer"),
+                                                        (low, f"stock < {min_stock} at JLC")) if n)
+        if rejected:
+            why = ", ".join(x for x in (why, "; ".join(dict.fromkeys(rejected[:3]))) if x)
+        return Pick(need, None, None, f"no usable part ({why})")
+    best_key = min(k for k, _ in usable)
+    group = sorted((p for k, p in usable if k == best_key), key=lambda p: -p.stock)
+    if lang is None:
+        return _chosen(need, group[0], None, None)
+    best = None
+    for p in group[:MAX_LANG_CHECKS]:
+        ds = lang(p)
+        rank = LANG_RANK.get(ds.lang, LANG_RANK["unknown"])
+        if best is None or rank < best[0]:
+            best = (rank, p, ds)
+        if rank == 0:
+            break
+    return _chosen(need, best[1], None, best[2])

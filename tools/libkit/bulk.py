@@ -26,7 +26,7 @@ from pathlib import Path
 from . import jlcsearch, series
 from .entries import KINDS, POLAR, passive_entry
 from .parts import Part, load_parts, validate, write_category
-from .pick import Need, pick, pick_polar
+from .pick import Need, pick, pick_polar, pick_ranked
 from .polar import candidates as polar_candidates
 from .polar import package_name
 from .schema import load_schema
@@ -92,7 +92,8 @@ def _fits(p: Part, value: float, unit: str, need: Need) -> bool:
 
 def plan(root: Path, kind: str, series_name: str, start: float, stop: float, package: str,
          max_tolerance: float, min_voltage: float | None, dielectrics: tuple[str, ...],
-         min_power: float | None = None, get=None, lookup=None, lang=None, search=None) -> list[Row]:
+         min_power: float | None = None, family: bool = False, get=None, lookup=None, lang=None,
+         search=None) -> list[Row]:
     """`lang` (part -> datasheet.Result) turns on the English-datasheet preference
     and fills in `datasheet_lang`; the CLI passes datasheet.Checker(root).for_part."""
     root = Path(root)
@@ -104,6 +105,9 @@ def plan(root: Path, kind: str, series_name: str, start: float, stop: float, pac
     existing = [p for p in library if p.category == category]
     names = {p.name: p for p in library}
     by_lcsc = {p.data["lcsc"]: p for p in names.values() if p.data.get("lcsc")}
+    if kind in ("bead", "inductor"):
+        return _plan_ranked(root, kind, series_name, start, stop, package, family, schema, existing, names,
+                            by_lcsc, search, lang)
     if kind in POLAR:
         return _plan_polar(kind, series_name, start, stop, package, min_voltage, schema, existing, names, by_lcsc,
                            search, lang, max_tolerance)
@@ -163,6 +167,44 @@ def _new_or_existing(text: str, entry: dict, note: str, names: dict, by_lcsc: di
         old = by_lcsc[entry["lcsc"]]
         return Row(text, entry["name"], "exists", old.data, f"{entry['lcsc']} already in library as {old.name}")
     return Row(text, entry["name"], "new", entry, note)
+
+
+def _plan_ranked(root, kind, series_name, start, stop, package, family, schema, existing, names, by_lcsc,
+                 search, lang) -> list[Row]:
+    """Chip beads/inductors (package = chip size) or a power-inductor family
+    (package = family prefix, family=True): one part per value (plan 7)."""
+    from . import beads, families
+    unit = KINDS[kind][2]
+    footprint = None
+    if family:
+        if kind != "inductor":
+            raise ValueError("--family applies to inductors only")
+        footprint = families.family_footprint(root, package)
+        if footprint is None:
+            raise ValueError(f"no footprint for family {package} yet: import one member first, e.g. "
+                             f"libkit add <C-number> --category inductors --family Inductor_SMD "
+                             f"--fp-name L_<Brand>_{package}, then run this again")
+    rows: list[Row] = []
+    for v in series.values(series_name, start, stop):
+        text = format_value(v, unit) + ("@100MHz" if kind == "bead" else "")
+        have = next((p for p in existing if p.data.get("status") == "active" and p.data.get("symbol") == KINDS[kind][1]
+                     and (families.family_member(package, p.data.get("mpn", "")) if family
+                          else p.data.get("package") == package)
+                     and abs(parse_value(p.data.get("value", "0").split("@")[0], unit) - v) <= 0.01 * v), None)
+        if have is not None:
+            rows.append(Row(text, have.name, "exists", have.data, "already in library"))
+            continue
+        cands = (families.candidates(package, v, search=search) if family
+                 else beads.candidates(kind, v, package, search=search))
+        result = pick_ranked(kind, v, package, cands, schema, lang=lang, footprint=footprint)
+        if result.part is None:
+            rows.append(Row(text, "", "none", None, result.note))
+            continue
+        entry = passive_entry(kind, result.part, schema, footprint=footprint)
+        if result.datasheet is not None:
+            entry["datasheet_lang"] = result.datasheet.lang
+        rows.append(_new_or_existing(text, entry, result.note, names, by_lcsc))
+    return rows
 
 
 def _plan_polar(kind, series_name, start, stop, size, min_voltage, schema, existing, names, by_lcsc,
@@ -236,8 +278,10 @@ def _fingerprint(root: Path, kind: str, package: str) -> str:
     category = KINDS[kind][0]
     if kind in POLAR:
         package = package_name(kind, package)
+    from .families import family_member
     mine = sorted((p.data for p in load_parts(root, load_schema(root))
-                   if p.category == category and p.data.get("package") == package),
+                   if p.category == category and (p.data.get("package") == package
+                                                  or family_member(package, p.data.get("mpn", "")))),
                   key=lambda d: json.dumps(d, sort_keys=True))
     return hashlib.sha256(json.dumps(mine, sort_keys=True).encode("utf-8")).hexdigest()
 

@@ -148,6 +148,15 @@ def _bulk_add(args) -> int:
         if args.can not in CANS:
             raise ValueError(f"electrolytic needs --can, one of {', '.join(CANS)}")
         args.package = args.can
+    elif args.kind == "inductor" and args.family:
+        if args.package:
+            raise ValueError("give --family or --package, not both")
+        args.package = args.family
+    elif args.kind in ("bead", "inductor"):
+        from .entries import CHIP_SIZES
+        if args.package not in CHIP_SIZES[args.kind]:
+            raise ValueError(f"{args.kind}s need --package, one of {', '.join(sorted(CHIP_SIZES[args.kind]))}"
+                             + (" (or --family for power inductors)" if args.kind == "inductor" else ""))
     else:
         from .entries import CHIP_SIZES
         if not args.package or not args.tolerance:
@@ -164,6 +173,8 @@ def _bulk_add(args) -> int:
         dielectrics=tuple(d.strip() for d in args.dielectric.split(",") if d.strip()),
         min_power=_watts(args.min_power) if args.min_power else None,
     )
+    if args.kind == "inductor":
+        run["family"] = bool(args.family)
     if args.skip and not args.write:
         raise ValueError("--skip only applies with --write (the dry run keeps every row)")
     if args.write:
@@ -332,13 +343,15 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(func=_vendor_sym)
 
     p = sub.add_parser("bulk-add", help="add resistors or capacitors for a value series (dry run by default)")
-    p.add_argument("kind", choices=["resistor", "capacitor", "tantalum", "electrolytic"])
-    p.add_argument("--series", required=True, choices=["E6", "E12", "E24", "E48", "E96"])
+    p.add_argument("kind", choices=["resistor", "capacitor", "tantalum", "electrolytic", "bead", "inductor"])
+    p.add_argument("--series", required=True, choices=["E6", "E12", "E24", "E48", "E96", "FB"],
+                   help="FB = bead impedances 30R…2200R")
     p.add_argument("--from", dest="start", required=True, help="first value, e.g. 1k or 10n")
     p.add_argument("--to", dest="stop", required=True, help="last value (inclusive)")
     p.add_argument("--package", choices=sorted(METRIC), help="resistors/capacitors: chip size")
     p.add_argument("--case", help="tantalum: case A, B, C or D")
     p.add_argument("--can", help="electrolytic: can 5x5.4, 6.3x5.4, 6.3x7.7, 8x10.5 or 10x10.5")
+    p.add_argument("--family", help="inductor: power-inductor series, e.g. SWPA4030S (footprint imported first)")
     p.add_argument("--tolerance", help="resistors/capacitors: worst acceptable tolerance, e.g. 1%%")
     p.add_argument("--voltage", help="minimum voltage rating for capacitors, e.g. 16V")
     p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
