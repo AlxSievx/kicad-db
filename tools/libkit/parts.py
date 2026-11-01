@@ -155,3 +155,30 @@ def write_category(root: Path, category: str, entries: list[dict]) -> None:
     with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(text)
     os.replace(tmp, path)
+
+
+def declare_family(root: Path, name: str) -> None:
+    """Add `- {name: <name>}` to the families: list of schema/library.yaml.
+
+    A text insertion after the list's last item, so comments survive (a YAML
+    rewrite would drop them). No-op when the family is already declared."""
+    from .schema import SCHEMA_FILE, load_schema
+    if name in load_schema(root).families:
+        return
+    path = Path(root) / SCHEMA_FILE
+    lines = path.read_text(encoding="utf-8").split("\n")
+    start = next((i for i, ln in enumerate(lines) if ln.rstrip() == "families:"), None)
+    if start is None:
+        raise ValueError(f"{SCHEMA_FILE.as_posix()}: no 'families:' list")
+    at = start + 1
+    for i in range(start + 1, len(lines)):
+        ln = lines[i]
+        if ln.startswith("  - "):
+            at = i + 1
+        elif ln.strip() and not ln.startswith((" ", "#")):
+            break
+    lines.insert(at, f"  - {{name: {name}}}")
+    tmp = path.with_suffix(".yaml.tmp")
+    with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("\n".join(lines))
+    os.replace(tmp, path)

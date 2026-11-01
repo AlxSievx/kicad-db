@@ -192,6 +192,50 @@ def _find(args) -> int:
     return 0
 
 
+def _pin_types(text: str | None) -> dict[str, str] | None:
+    if not text:
+        return None
+    out = {}
+    for item in text.split(","):
+        key, sep, kind = item.partition("=")
+        if not sep or not key.strip() or not kind.strip():
+            raise ValueError(f"--pin-types item {item!r} is not like EN=input or #4=passive")
+        out[key.strip()] = kind.strip()
+    return out
+
+
+def _add(args) -> int:
+    import yaml
+    from .add import CHECKLIST, apply, clear_plan, load_plan, prepare
+    from .datasheet import Checker
+    root = find_root()
+    options = dict(category=args.category, symbol=args.symbol, footprint=args.footprint, family=args.family,
+                   fp_name=args.fp_name, name=args.name, pin_types=_pin_types(args.pin_types))
+    if args.write:
+        plan = load_plan(root, args.ref, options)
+        written = apply(root, plan)
+        clear_plan(root, args.ref)
+        print(f"added {plan.entry['name']} to parts/{plan.category}.yaml")
+        for f in written:
+            print(f"  wrote {f.relative_to(root).as_posix()}")
+        return 0
+    plan = prepare(root, args.ref, **options, lang=Checker(root).for_part, klc=not args.no_klc, previews=True)
+    print(yaml.safe_dump(plan.entry, allow_unicode=True, sort_keys=False, width=1000).rstrip())
+    if plan.new_family:
+        print(f"new footprint family: {plan.new_family} (declared in schema/library.yaml on --write)")
+    if plan.symbol:
+        print(f"new symbol: {plan.entry['name']} in src/symbols/{plan.category}.kicad_sym")
+    for rel in plan.files:
+        print(f"new file: {rel}")
+    for head, items in (("warning", plan.warnings), ("note", plan.notes), ("KLC", plan.klc),
+                        ("preview", plan.previews)):
+        for i in items:
+            print(f"{head}: {i}")
+    print(CHECKLIST)
+    print("dry run — rerun with --write to add exactly this")
+    return 0
+
+
 def _refresh_stock(args) -> int:
     from .parts import load_parts
     from .stock import refresh
@@ -261,6 +305,19 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--dielectric", default="C0G,NP0,X7R,X5R", help="allowed dielectrics (default %(default)s)")
     p.add_argument("--limit", type=int, default=10, help="rows to show (default %(default)s)")
     p.set_defaults(func=_find)
+
+    p = sub.add_parser("add", help="add one part by C-number or MPN (dry run by default; network)")
+    p.add_argument("ref", help="LCSC C-number (C6186) or exact MPN")
+    p.add_argument("--category", help="category key, e.g. ics_power (not for chip passives)")
+    p.add_argument("--symbol", help="easyeda (default), stock:<Lib>:<Name>, or a symbol in src/symbols")
+    p.add_argument("--footprint", help="easyeda (default), stock:<Lib>:<Name>, or LIB_<Family>:<Name>")
+    p.add_argument("--family", help="footprint family for a new footprint, e.g. Package_TO_SOT")
+    p.add_argument("--fp-name", help="KLC name for an EasyEDA footprint, e.g. SOT-223-3_TabPin2")
+    p.add_argument("--name", help="part name instead of the MPN")
+    p.add_argument("--pin-types", help="EasyEDA symbols: pin types, e.g. EN=input,#4=passive")
+    p.add_argument("--no-klc", action="store_true", help="skip the KLC checks of the staged files")
+    p.add_argument("--write", action="store_true", help="apply the last dry run with these options, then build")
+    p.set_defaults(func=_add)
 
     p = sub.add_parser("refresh-stock", help="re-query stock and JLC type of every part")
     p.set_defaults(func=_refresh_stock)
