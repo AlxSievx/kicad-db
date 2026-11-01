@@ -37,7 +37,7 @@ from .normsym import normalize_symbol
 from .parts import Part, declare_family, load_parts, validate, write_category
 from .pins import footprint_pads, symbol_pins
 from .schema import Family, load_schema
-from .sexpr import Sym, dumps, find_all, parse
+from .sexpr import Sym, dumps, find, find_all, parse
 from .symgen import SYM_VERSION, build_symbol_lib, load_source_symbols, write_text
 from .vendor import stock_symbol, vendor_footprint
 
@@ -345,13 +345,90 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
     plan = AddPlan(ref=ref, options=options, category=category, entry=entry,
                    symbol=dumps(unique) if unique is not None else None, files=dict(stage.files),
                    new_family=new_family, warnings=warnings, notes=notes)
+    return _save(stage, schema, plan, unique, klc, previews)
+
+
+def _save(stage: _Stage, schema, plan: AddPlan, unique: list | None, klc: bool, previews: bool) -> AddPlan:
     if klc:
-        plan.klc = _klc(stage, schema, category, entry, unique)
+        plan.klc = _klc(stage, schema, plan.category, plan.entry, unique)
         if previews:
             plan.previews = _previews(stage)
     plan.created = datetime.now(timezone.utc).isoformat(timespec="seconds")
     (stage.dir / "plan.json").write_text(json.dumps(asdict(plan), indent=1, ensure_ascii=False), encoding="utf-8")
     return plan
+
+
+LOCAL_SYMBOLS = {"MountingHole": "MountingHole", "Fiducial": "Fiducial", "TestPoint": "TestPoint"}
+
+
+def local_symbol(footprint_ref: str) -> str | None:
+    """The mechanical base symbol for a stock or LIB footprint reference, if obvious."""
+    lib, _, name = footprint_ref.removeprefix("stock:").partition(":")
+    lib = lib.removeprefix("LIB_")
+    if lib == "MountingHole":
+        return "MountingHole_Pad" if "_Pad" in name else "MountingHole"
+    return LOCAL_SYMBOLS.get(lib)
+
+
+def local_options(**kw) -> dict:
+    return _options(local=True, **kw)
+
+
+def prepare_local(root: Path, name: str, *, category: str, footprint: str, family: str | None = None,
+                  symbol: str | None = None, value: str | None = None, description: str | None = None,
+                  klc: bool = True, previews: bool = False, kicad_share_dir: Path | None = None) -> AddPlan:
+    """Dry run for a part without a C-number (category with orderable: false); no network."""
+    root = Path(root)
+    options = local_options(category=category, symbol=symbol, footprint=footprint, family=family, value=value,
+                            description=description)
+    schema = load_schema(root)
+    if category not in schema.categories:
+        raise ValueError(f"unknown category {category!r}; one of {', '.join(schema.categories)}")
+    if schema.categories[category].orderable:
+        raise ValueError(f"--local is for non-orderable categories (e.g. mechanical); {category} parts need a "
+                         "C-number")
+    if footprint == "easyeda":
+        raise ValueError("--local parts have no C-number: use a stock: or LIB_ footprint")
+    _valid_name(name, "part name")
+    names = {p.name: p.data.get("status", "?") for p in load_parts(root, schema)}
+    if name in names:
+        raise ValueError(f"part name {name} is already in the library ({names[name]})")
+    symbol = symbol or local_symbol(footprint)
+    if not symbol:
+        raise ValueError(f"no default symbol for {footprint}: give --symbol (a base in src/symbols or "
+                         "stock:<Lib>:<Name>)")
+    stage = _Stage(root, name)
+    notes: list[str] = []
+    share = Path(kicad_share_dir) if kicad_share_dir else kicad_share()
+    fp_ref, new_family = _footprint(stage, schema, None, footprint, family, None, None, notes, share)
+    fp_file = _footprint_file(stage, fp_ref)
+    descr = find(parse(fp_file.read_text(encoding="utf-8")), "descr")
+    description = description or (str(descr[1]).strip() if descr is not None else "")
+    if not description:
+        raise ValueError(f"{fp_ref} has no description: give --description")
+    sources = load_source_symbols(root)
+    unique = None
+    if symbol.startswith("stock:"):
+        unique = stock_symbol(symbol.removeprefix("stock:"), share, name)
+        if name in sources:
+            raise ValueError(f"a source symbol named {name!r} already exists in src/symbols")
+    elif symbol not in sources:
+        raise ValueError(f"symbol {symbol!r} is not in src/symbols")
+    entry = {"name": name, "symbol": name if unique is not None else symbol, "footprint": fp_ref,
+             "value": value or name, "package": fp_ref.partition(":")[2], "description": description,
+             "status": "active"}
+    all_syms = {**sources, name: unique} if unique is not None else sources
+    missing = symbol_pins(entry["symbol"], all_syms) - footprint_pads(fp_file)
+    if missing:
+        raise ValueError(f"{name} would fail check: symbol pin(s) {', '.join(sorted(missing))} have no pad in "
+                         f"{fp_ref}")
+    bad = [i.message for i in validate([Part(name, category, entry, Path("new"))], schema) if i.severity == "error"]
+    if bad:
+        raise ValueError(f"{name} would not build in {category}: {'; '.join(bad)}")
+    plan = AddPlan(ref=name, options=options, category=category, entry=entry,
+                   symbol=dumps(unique) if unique is not None else None, files=dict(stage.files),
+                   new_family=new_family, notes=notes)
+    return _save(stage, schema, plan, unique, klc, previews)
 
 
 def load_plan(root: Path, ref: str, options: dict, now: datetime | None = None) -> AddPlan:

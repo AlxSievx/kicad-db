@@ -161,3 +161,14 @@ def test_cli_refresh_network_error(offline, monkeypatch, capsys):
     monkeypatch.setattr(net, "post_json", boom)
     assert cli.main(["refresh-stock"]) == 1
     assert "timed out" in capsys.readouterr().err
+
+
+def test_refresh_skips_local_parts(minilib):  # Review Focus 5
+    (minilib / "parts" / "mechanical.yaml").write_text(
+        "parts:\n  - name: MH_M3\n    symbol: R\n    footprint: LIB_Passives_SMD:R_0402_1005Metric\n"
+        "    value: M3\n    package: MH\n    description: hole\n    status: active\n", encoding="utf-8")
+    calls = []
+    changes = refresh(minilib, lookup=fake(calls=calls), today=DAY)
+    assert None not in calls and len(calls) == len(set(calls))
+    assert all(c.part != "MH_M3" for c in changes)
+    assert "stock" not in part(minilib, "MH_M3").data
