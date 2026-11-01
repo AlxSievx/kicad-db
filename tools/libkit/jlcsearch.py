@@ -40,6 +40,15 @@ def _float(v) -> float | None:
     return None if v is None else float(v)
 
 
+def _power_mw(v) -> float | None:
+    """jlcsearch's power_watts holds milliwatts for chip resistors (62.5, 750)
+    but watts for 1 W and up (1, 2, 3): no resistor is rated below 10 mW."""
+    f = _float(v)
+    if f is None:
+        return None
+    return f * 1000 if f < 10 else f
+
+
 def _candidate(r: dict, value_key: str, kind: str) -> Candidate:
     try:
         jlc_type = "Preferred" if r.get("is_preferred") else "Basic" if r.get("is_basic") else "Extended"
@@ -50,8 +59,7 @@ def _candidate(r: dict, value_key: str, kind: str) -> Candidate:
             value=float(r[value_key]),
             tolerance=_float(r.get("tolerance_fraction")),
             voltage=_float(r.get("voltage_rating")) if kind == "capacitors" else None,
-            # The field is called power_watts but holds milliwatts.
-            power_mw=_float(r.get("power_watts")) if kind == "resistors" else None,
+            power_mw=_power_mw(r.get("power_watts")) if kind == "resistors" else None,
             dielectric=(r.get("temperature_coefficient") or None) if kind == "capacitors" else None,
             stock=None if r.get("stock") is None else int(r["stock"]),
             jlc_type=jlc_type,

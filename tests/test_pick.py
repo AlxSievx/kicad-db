@@ -290,3 +290,12 @@ def test_min_power_filters_candidates(schema):  # plan 6 task 2
     assert p.part.lcsc == "C902"
     p = pick(need, [cand("C901", 500)], schema, lookup=make_lookup(brand="Yageo"))
     assert p.part is None and "power ≥ 1W" in p.note
+
+
+def test_jlcsearch_power_units():  # jlcsearch's power_watts is mW for chips, W for 1W+ parts
+    from libkit.jlcsearch import _candidate
+    base = {"lcsc": 1, "mfr": "X", "package": "2512", "resistance": 0.01, "stock": 10, "tolerance_fraction": 0.01}
+    assert _candidate({**base, "power_watts": 62.5}, "resistance", "resistors").power_mw == 62.5
+    assert _candidate({**base, "power_watts": 750}, "resistance", "resistors").power_mw == 750
+    assert _candidate({**base, "power_watts": 3}, "resistance", "resistors").power_mw == 3000
+    assert _candidate({**base, "power_watts": 1}, "resistance", "resistors").power_mw == 1000
