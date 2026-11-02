@@ -102,7 +102,8 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
     symbol + `LIB_Passives_SMD`.
   - Diodes, LEDs, transistors: no `--footprint` needed for the packages above (KiCad stock footprint);
     dual diodes and the like: `--symbol stock:Diode:BAV99`. Category from JLC's part type; base symbol (`D`, `D_Schottky`, `D_Zener`,
-    `D_TVS` (unidirectional TVS: `D_Zener`), `LED`, `Q_NMOS_GSD`, `Q_PMOS_GSD`, `Q_NPN_BEC`, `Q_PNP_BEC` in `src/symbols/discretes.kicad_sym`)
+    `D_TVS` (unidirectional TVS: `D_Zener`), `LED`, `Q_NMOS_GSD`, `Q_PMOS_GSD`, `Q_NPN_BEC`, `Q_PNP_BEC` in `src/symbols/discretes.kicad_sym`;
+    power MOSFET bases see below)
     only for a single device whose footprint pads fit (transistors: SOT-23-like packages only); otherwise
     the EasyEDA symbol, with a note why. Check the pad order the note names (pad 1 = cathode, G/S/D, B/E/C).
   - Everything else needs `--category`, and a new footprint needs `--family`.
@@ -121,6 +122,27 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   - Unknown brands are kept (without the `(…)` suffix) with a warning; they
     are not added to `manufacturers:` (that list is for automatic picks).
   - `add` refuses a symbol pin without a footprint pad of that number (`check` reports it too).
+    The reverse is NOT checked: a pad without a symbol pin (typically an exposed pad) stays
+    unconnected. Look at the pad numbers of every new footprint (`grep '(pad '` in the staged
+    `.kicad_mod`) and pick the symbol whose pins cover all of them.
+  - EasyEDA pad numbering is not uniform, even within one package: extra copper (source bar,
+    exposed pad) may repeat a lead number (`3`, `8`) or get its own (`9`). Fix by choosing the
+    symbol, or with the user's OK by renumbering the pad in `footprints/` after `--write`
+    (e.g. exposed drain pad `9` → `8` for `AP30H80Q`), then `build` + `check`.
+  - A footprint name that already exists is reused **without comparing geometry**
+    (`reusing existing footprint`). Only give an existing `--fp-name` when the package is really the same.
+  - KLC findings on stock KiCad footprints/symbols copied unchanged (and the legacy pin stacks of the
+    multi-lead MOSFET bases) are allow-listed in `schema/klc-allowlist.yaml` with a reason, after the
+    user's OK, so `check` stays at 0 errors and 0 warnings. Missing stock 3D model: add without one.
+- **Power MOSFETs** (single adds, all Extended at JLC: pick on stock and brand). Base symbols in
+  `src/symbols/discretes.kicad_sym`, chosen by the footprint's pad numbers:
+  `Q_[NP]MOS_GDS` (TO-252: 1 G, 2 tab D, 3 S), `Q_[NP]MOS_SSSGD` (1–3 S, 4 G, one drain pad 5: KiCad's
+  `TDSON-8-1`, `LFPAK56`, `LFPAK33`, `PowerPAK_SO-8(L)_Single`, `Vishay_PowerPAK_1212-8_Single`,
+  `ONSemi_SO-8FL_488AA`), `Q_[NP]MOS_SSSGDDDD` (SO-8 `SOIC-8_3.9x4.9mm_P1.27mm`, and EasyEDA
+  footprints with drain pads 5–8). Dual SO-8: `--symbol stock:Transistor_FET:Q_Dual_[NP]MOS_S1G1S2G2D2D2D1D1`.
+  Example: `add C534384 --category transistors --symbol Q_NMOS_SSSGD --footprint stock:Package_TO_SOT_SMD:TDSON-8-1 --family Package_TO_SOT_SMD`.
+  Infineon TSDSON-8FL (BSZ…): `--symbol Q_NMOS_SSSGDDDD --family Package_SON --fp-name Infineon_PG-TSDSON-8-FL_3.3x3.3mm_P0.65mm`.
+  Set per package: N 30/40/60/80/100(/150/200) V, P 20/30/40/60(/80/100) V.
 - **Local parts (no C-number):** `libkit add <name> --local --category mechanical --footprint stock:…
   --family …` (no network; non-orderable categories only). Symbol from the footprint library
   (`MountingHole`, `MountingHole_Pad` for `*_Pad`, `Fiducial`, `TestPoint`; else `--symbol`), value = name
@@ -144,6 +166,40 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   `datasheet_lang` (YAML only) records the language libkit found behind the link.
 - `stock` / `stock_checked` live in YAML only; they are never written into symbols.
 - Quote values YAML could misread, e.g. `package: "0402"`. The loader keeps strings anyway, but quoting makes intent clear.
+- JLC attribute values that hold two numbers (`13A、50A` = ambient, case) are fixed by hand in YAML to the
+  datasheet's headline value (`50A`), then `build`.
+
+## Working with the user
+
+- Show every table, dry-run report and preview, and wait for the user's OK before any `--write`.
+- Add **full series**, not single values. Chinese brands are fine.
+- Code changes (`tools/libkit/`): write a plan in `docs/superpowers/plans/` first; the user reviews it.
+  Then execute natively (inline) on a feature branch, one fresh opus reviewer at the end, merge locally after
+  the user's OK. The user pushes themselves (`! git push`).
+- Content-only changes (new base symbols, allow-list entries, parts) need no plan, only the user's OK.
+
+## Altium reference (old library)
+
+Goal: LIB eventually covers every part of the user's Altium DbLib (SciMo Postgres, table `"Parts$"`,
+~1965 rows). **Read only**: never modify it, never commit its data, never copy its password. The
+connection settings are in `C:\SciMo\Altium\AltiumDBlib\altium_library_manager\config.json` (read it at
+runtime, connect with `default_transaction_read_only=on`); dump `SELECT * FROM "Parts$"` to a CSV in the
+session scratchpad only. For every Altium part: check stock and whether it is outdated, and propose better or
+more current stocked alternatives. Altium symbols/footprints may be copied but must be normalised to LIB style.
+Most Altium ICs (188/307) and connectors have no LCSC number (Plan 9: orderable parts without LCSC).
+
+## Open items (deferred)
+
+- Plan 8 review minors: bulk rows drop the pad-order note; no fallback to the next candidate when the top
+  pick fails classify/prepare; TO-236 transistors get no base symbol; bulk and single add share
+  `.libkit/add/<LCSC>` staging; duplicate `--values` not deduplicated; misleading "no candidates" note when
+  JLC returned only neighbour series; `--package` silently ignored for tantalum/electrolytic.
+- `add`: footprint reuse by name without a geometry check; no check for pads without a symbol pin.
+- Power MOSFETs: auto symbol/footprint by package (now explicit options); native KiCad 10 pin stacks
+  (needs pin/pad check support).
+- JLC BOM/CPL export: plan written (`docs/superpowers/plans/2026-11-01-jlc-export.md`), on hold.
+- Not yet added from Altium: IXTY08N100D2 (no stock), AO4606-type N+P pairs, TO-220/TO-263/SiC MOSFETs,
+  SOT-23 MOSFETs SQ2361CES, SI2324DS, DMP3099L.
 
 ## Part naming
 
