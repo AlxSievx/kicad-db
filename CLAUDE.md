@@ -182,8 +182,8 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
 
 Goal: LIB eventually covers every part of the user's Altium DbLib (SciMo Postgres, table `"Parts$"`,
 ~1965 rows). **Read only**: never modify it, never commit its data, never copy its password. The
-connection settings are in `C:\SciMo\Altium\AltiumDBlib\altium_library_manager\config.json` (read it at
-runtime, connect with `default_transaction_read_only=on`); dump `SELECT * FROM "Parts$"` to a CSV in the
+connection settings are in the Altium library manager's `config.json` (path in Claude's project memory,
+not in the repo: no absolute paths; read it at runtime, connect with `default_transaction_read_only=on`); dump `SELECT * FROM "Parts$"` to a CSV in the
 session scratchpad only. For every Altium part: check stock and whether it is outdated, and propose better or
 more current stocked alternatives. Altium symbols/footprints may be copied but must be normalised to LIB style.
 Most Altium ICs (188/307) and connectors have no LCSC number (Plan 9: orderable parts without LCSC).
