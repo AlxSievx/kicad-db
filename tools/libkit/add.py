@@ -131,7 +131,8 @@ def _footprint(stage: _Stage, schema, part: JlcPart, choice: str, family: str | 
             notes.append(f"reusing existing footprint {fam.lib_name}:{name}")
             return f"{fam.lib_name}:{name}", new_family
         tmp = stage.dir / "stock"
-        out = vendor_footprint(stock_ref, fam, root, share, dest_dir=tmp / "fp", models_dir=tmp / "3d")
+        out = vendor_footprint(stock_ref, fam, root, share, dest_dir=tmp / "fp", models_dir=tmp / "3d",
+                               missing_model=notes)
         stage.put_file(f"{pretty}/{out.name}", out)
         for model in sorted((tmp / "3d").glob("*")):
             stage.put_file(f"3dmodels/{fam.lib_name}.3dshapes/{model.name}", model)

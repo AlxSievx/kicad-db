@@ -22,10 +22,13 @@ def _split(ref: str) -> tuple[str, str]:
 
 
 def vendor_footprint(stock_ref: str, family: Family, root: Path, kicad_share: Path, *,
-                     dest_dir: Path | None = None, models_dir: Path | None = None) -> Path:
+                     dest_dir: Path | None = None, models_dir: Path | None = None,
+                     missing_model: list[str] | None = None) -> Path:
     """Copy a stock footprint (and its 3D models) into the family. `dest_dir`
     and `models_dir` redirect the copies (staging); the model path written
-    into the footprint is always the family's ${LIB_DIR} path."""
+    into the footprint is always the family's ${LIB_DIR} path. A model KiCad
+    does not ship raises FileNotFoundError, unless `missing_model` is a list:
+    then the model is left out and a note is appended to it."""
     lib, name = _split(stock_ref)
     src = Path(kicad_share) / "footprints" / f"{lib}.pretty" / f"{name}.kicad_mod"
     if not src.exists():
@@ -33,15 +36,25 @@ def vendor_footprint(stock_ref: str, family: Family, root: Path, kicad_share: Pa
     text = src.read_text(encoding="utf-8")
     models_dir = Path(models_dir) if models_dir else Path(root) / "3dmodels" / f"{family.lib_name}.3dshapes"
     copies: list[tuple[Path, Path]] = []
+    dropped: list[str] = []
 
     def rewrite(m: re.Match) -> str:
         model_src = Path(kicad_share) / "3dmodels" / f"{m.group(1)}.3dshapes" / m.group(2)
         if not model_src.exists():
-            raise FileNotFoundError(model_src)
+            if missing_model is None:
+                raise FileNotFoundError(model_src)
+            dropped.append(f"{m.group(1)}.3dshapes/{m.group(2)}")
+            return m.group(0)
         copies.append((model_src, models_dir / m.group(2)))
         return f'(model "${{LIB_DIR}}/3dmodels/{family.lib_name}.3dshapes/{m.group(2)}"'
 
     text = _MODEL.sub(rewrite, text)
+    if dropped:
+        expr = parse(text)
+        expr[:] = [e for e in expr if not (isinstance(e, list) and e and e[0] == Sym("model")
+                                            and any(str(e[1]).endswith(d) for d in dropped))]
+        text = dumps(expr)
+        missing_model += [f"no 3D model: KiCad's stock library has no {d}" for d in dropped]
     for a, b in copies:
         b.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(a, b)

@@ -60,7 +60,7 @@ def test_add_defaults_stock_footprint(minilib):
         raise AssertionError("EasyEDA must not be fetched")
 
     p = prep(root, "C81598", fetch=no_fetch)
-    assert p.entry["footprint"] == "LIB_Diode_SMD:D_SOD-123" and p.new_family == "Diode_SMD"
+    assert p.entry["footprint"] == "LIB_Diode_SMD:D_SOD-123"  # family Diode_SMD (declared once content exists)
     assert p.entry["symbol"] == "D"
 
 

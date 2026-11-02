@@ -89,3 +89,17 @@ def test_cli_vendor_commands(minilib):
 def test_cli_unknown_family_fails(minilib):
     r = run_cli(minilib, "vendor-fp", "Inductor_SMD:L_0402_1005Metric", "--family", "Nope")
     assert r.returncode == 1 and "Nope" in r.stderr
+
+
+def test_footprint_missing_model_dropped_on_request(root, tmp_path):  # plan 8 content: WS2812B-2020
+    share = tmp_path / "share"
+    (share / "footprints" / "X.pretty").mkdir(parents=True)
+    (share / "footprints" / "X.pretty" / "F.kicad_mod").write_text(
+        '(footprint "F"\n\t(pad "1" smd rect (at 0 0) (size 1 1) (layers "F.Cu"))\n'
+        '\t(model "${KICAD10_3DMODEL_DIR}/X.3dshapes/F.step"\n\t\t(offset (xyz 0 0 0))\n\t)\n)\n',
+        encoding="utf-8")
+    notes = []
+    out = vendor_footprint("X:F", FAM, root, share, missing_model=notes)
+    text = out.read_text(encoding="utf-8")
+    assert "(model" not in text and '(pad "1"' in text
+    assert notes == ["no 3D model: KiCad's stock library has no X.3dshapes/F.step"]
