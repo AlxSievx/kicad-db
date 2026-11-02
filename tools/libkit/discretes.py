@@ -76,12 +76,14 @@ def _diode(part: JlcPart, tname: str) -> Discrete | None:
         channels = _fold(_get(part, "Number of Channels"))
         polarity = _get(part, "Polarity")
         why = ""
+        fields = _fields(part, {"vr": ("Reverse Stand-Off Voltage (Vrwm)",)})
         if channels not in ("", "1", "single-channel", "single"):
             why = f"{_get(part, 'Number of Channels')} channels"
+        elif _fold(polarity) == "unidirectional":  # drawn as a zener, as KiCad's stock SMAJ*A / SM6T*A
+            return _make("diodes", "D_Zener", TWO, DIODE_CHECK, "", fields)
         elif _fold(polarity) != "bidirectional":
-            why = f"polarity {polarity or 'unknown'} (D_TVS is bidirectional only)"
-        return _make("diodes", "D_TVS", TWO, "bidirectional: pad order free", why,
-                     _fields(part, {"vr": ("Reverse Stand-Off Voltage (Vrwm)",)}))
+            why = f"polarity {polarity or 'unknown'}"
+        return _make("diodes", "D_TVS", TWO, "bidirectional: pad order free", why, fields)
     if "zener" in tname:
         return _make("diodes", "D_Zener", TWO, DIODE_CHECK, _single_diode(part),
                      _fields(part, {"vz": ("Zener Voltage(Nom)",)}))
@@ -126,3 +128,51 @@ def _transistor(part: JlcPart, tname: str) -> Discrete | None:
 def classify(part: JlcPart) -> Discrete | None:
     tname = part.type_name.casefold()
     return _diode(part, tname) or _transistor(part, tname)
+
+
+# Plan 8: the stock KiCad footprint of a discrete's package. JLC spells one
+# package in several ways per maker; canonical_package() folds them.
+FOOTPRINTS: dict[str, tuple[str, str]] = {
+    "SOD-123": ("Diode_SMD:D_SOD-123", "Diode_SMD"),
+    "SOD-123F": ("Diode_SMD:D_SOD-123F", "Diode_SMD"),
+    "SOD-323": ("Diode_SMD:D_SOD-323", "Diode_SMD"),
+    "SOD-323F": ("Diode_SMD:D_SOD-323F", "Diode_SMD"),
+    "SOD-523": ("Diode_SMD:D_SOD-523", "Diode_SMD"),
+    "SOD-128": ("Diode_SMD:D_SOD-128", "Diode_SMD"),
+    "SMA": ("Diode_SMD:D_SMA", "Diode_SMD"),
+    "SMB": ("Diode_SMD:D_SMB", "Diode_SMD"),
+    "SMC": ("Diode_SMD:D_SMC", "Diode_SMD"),
+    "SOT-23": ("Package_TO_SOT_SMD:SOT-23", "Package_TO_SOT_SMD"),
+    "SOT-323": ("Package_TO_SOT_SMD:SOT-323_SC-70", "Package_TO_SOT_SMD"),
+    "SOT-363": ("Package_TO_SOT_SMD:SOT-363_SC-70-6", "Package_TO_SOT_SMD"),
+    "LED-0603": ("LED_SMD:LED_0603_1608Metric", "LED_SMD"),
+    "LED-0805": ("LED_SMD:LED_0805_2012Metric", "LED_SMD"),
+    "LED-1206": ("LED_SMD:LED_1206_3216Metric", "LED_SMD"),
+}
+_SPELLINGS = {
+    "SMA": ("SMA", "SMA(DO-214AC)", "DO-214AC(SMA)", "DO-214AC"),
+    "SMB": ("SMB", "SMB(DO-214AA)", "DO-214AA(SMB)", "DO-214AA"),
+    "SMC": ("SMC", "SMC(DO-214AB)", "DO-214AB(SMC)", "DO-214AB"),
+    "SOD-123F": ("SOD-123F", "SOD-123FL"),
+    "SOD-323": ("SOD-323", "SOD-323(SC-90)"),
+    "SOT-23": ("SOT-23", "SOT-23-3", "SOT-23-3L", "TO-236", "TO-236AB"),
+    "SOT-323": ("SOT-323", "SOT-323-3", "SC-70", "SC-70-3"),
+    "SOT-363": ("SOT-363", "SC-70-6(SOT-363)", "TSSOP-6(SOT-363)", "SC-70-6"),
+}
+_CANONICAL = {_fold(s): key for key, spellings in _SPELLINGS.items() for s in spellings}
+_CANONICAL.update({_fold(k): k for k in FOOTPRINTS if not k.startswith("LED-")})
+
+
+def canonical_package(part: JlcPart) -> str | None:
+    """The FOOTPRINTS key of a discrete's JLC package text, or None."""
+    pkg = _fold(part.package)
+    if pkg in ("0603", "0805", "1206"):
+        d = classify(part)
+        return f"LED-{pkg}" if d is not None and d.category == "leds_optoelectronics" else None
+    return _CANONICAL.get(pkg)
+
+
+def stock_footprint(part: JlcPart) -> tuple[str, str] | None:
+    """(stock footprint ref, LIB family) for a discrete's package, or None."""
+    key = canonical_package(part)
+    return FOOTPRINTS.get(key) if key else None

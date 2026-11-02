@@ -103,7 +103,7 @@ manufacturers:
   - {name: Yageo}
   - {name: UNI-ROYAL}
   - {name: TDK}
-  - {name: Vishay}
+  - {name: Vishay, aliases: [Vishay Intertech, Vishay Intertechnology]}
   - {name: KEMET}
   - {name: Panasonic}
   - {name: Taiyo Yuden}
@@ -125,3 +125,34 @@ manufacturers:
   # Power inductors the Altium library used (CY75, YPRH1209)
   - {name: SHOU HAN}
   - {name: YJYCOIN}
+  # Discretes (plan 8). JLC's Basic/Preferred discretes are mostly Chinese
+  # makers (user OK 2026-11-02). "ST(Semtech)" is a Chinese brand: no ST alias.
+  - {name: hongjiacheng}
+  - {name: CJ, aliases: ["Jiangsu Changjing Electronics Technology Co., Ltd.", JCET]}
+  - {name: MDD, aliases: [Microdiode Semiconductor]}
+  - {name: KENTO, aliases: [Hubei KENTO Elec]}
+  - {name: AOS, aliases: [Alpha & Omega Semicon, Alpha & Omega Semiconductor]}
+  - {name: Nexperia}
+  - {name: onsemi, aliases: [ON Semiconductor]}
+  - {name: Diodes Incorporated, aliases: [Diodes Inc, Diodes]}
+  - {name: Infineon, aliases: [Infineon Technologies]}
+  - {name: STMicroelectronics}
+  - {name: Texas Instruments}
+  - {name: ROHM, aliases: [ROHM Semicon, ROHM Semiconductor]}
+  - {name: Littelfuse}
+  - {name: Guangdong Hottech, aliases: [Hottech]}
+  - {name: XINGLIGHT}
+  - {name: Everlight, aliases: [Everlight Elec]}
+  - {name: Worldsemi}
+  - {name: BORN}
+  - {name: LGE}
+  - {name: GOODWORK}
+  - {name: DOWO}
+  - {name: Shandong Jingdao}
+  - {name: TECH PUBLIC}
+  - {name: FOSAN}
+  - {name: JSMSEMI}
+  - {name: Brightking}
+  - {name: UMW}
+  - {name: Slkor}
+  - {name: LRC}

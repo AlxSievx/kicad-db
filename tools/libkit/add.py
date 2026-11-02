@@ -27,7 +27,7 @@ from pathlib import Path
 from . import importer, jlc
 from .build import build
 from .datasheet import Checker
-from .discretes import Discrete, classify
+from .discretes import Discrete, classify, stock_footprint
 from .entries import KINDS, POLAR, NAME_CHARS, _attr, is_chip, kind_of, manufacturer_name, mpn_name, passive_entry
 from .jlc import JlcPart, datasheet_url
 from .kicad import find_kicad_cli, kicad_share
@@ -118,7 +118,7 @@ def _footprint(stage: _Stage, schema, part: JlcPart, choice: str, family: str | 
             raise ValueError(f"footprint {choice!r} does not exist in footprints/")
         return choice, None
     if not family:
-        raise ValueError("--family is required for a new footprint (e.g. Package_TO_SOT, Inductor_SMD)")
+        raise ValueError("--family is required for a new footprint (e.g. Package_TO_SOT_SMD, Inductor_SMD)")
     _valid_name(family, "family")
     fam = schema.families.get(family) or Family(family, f"{schema.prefix}_{family}")
     new_family = None if family in schema.families else family
@@ -279,6 +279,12 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
         if category not in schema.categories:
             raise ValueError(f"--category is required: one of {', '.join(schema.categories)}")
         symbol = symbol or (KINDS[kind][1] if kind else None)  # None: decided by the footprint's pads
+        # only with a base or chosen KiCad symbol (an EasyEDA symbol needs EasyEDA's pad numbers), and not
+        # when --fp-name asks for an EasyEDA footprint
+        mapped = (stock_footprint(part) if disc is not None and (disc.symbol or symbol) and symbol != "easyeda"
+                  and not footprint and not fp_name else None)
+        if mapped:  # plan 8: a discrete in a known package takes KiCad's stock footprint
+            footprint, family = f"stock:{mapped[0]}", family or mapped[1]
         footprint = footprint or "easyeda"
         share = Path(kicad_share_dir) if kicad_share_dir else kicad_share()
         fetched = None
@@ -509,33 +515,46 @@ def _append_symbol(path: Path, text: str) -> None:
 
 def apply(root: Path, plan: AddPlan) -> list[Path]:
     """Write a loaded plan into the library and build; all or nothing."""
+    return apply_many(root, [plan])
+
+
+def apply_many(root: Path, plans: list[AddPlan]) -> list[Path]:
+    """Write loaded plans into the library with one YAML rewrite per category
+    and one build; all or nothing (plan 8: bulk add of discrete series)."""
     root = Path(root)
-    staged = stage_dir(root, plan.ref) / "files"
     undo = _Undo()
     written: list[Path] = []
+
+    def note(path: Path) -> None:
+        if path not in written:
+            written.append(path)
+
     try:
-        if plan.new_family:
+        for family in dict.fromkeys(p.new_family for p in plans if p.new_family):
             undo.touch(root / "schema" / "library.yaml")
-            declare_family(root, plan.new_family)
-            written.append(root / "schema" / "library.yaml")
-        for rel in plan.files:
-            dest = undo.touch(root / rel)
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(staged / rel, dest)
-            written.append(dest)
-        if plan.symbol:
-            src = undo.touch(root / "src" / "symbols" / f"{plan.category}.kicad_sym")
-            _append_symbol(src, plan.symbol)
-            written.append(src)
+            declare_family(root, family)
+            note(root / "schema" / "library.yaml")
+        for plan in plans:
+            staged = stage_dir(root, plan.ref) / "files"
+            for rel in plan.files:
+                dest = undo.touch(root / rel)
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(staged / rel, dest)
+                note(dest)
+            if plan.symbol:
+                src = undo.touch(root / "src" / "symbols" / f"{plan.category}.kicad_sym")
+                _append_symbol(src, plan.symbol)
+                note(src)
         schema = load_schema(root)
-        yaml_file = undo.touch(root / "parts" / f"{plan.category}.yaml")
-        old = [p.data for p in load_parts(root, schema) if p.category == plan.category]
-        write_category(root, plan.category, old + [plan.entry])
-        written.append(yaml_file)
+        library = load_parts(root, schema)
+        for category in dict.fromkeys(p.category for p in plans):
+            yaml_file = undo.touch(root / "parts" / f"{category}.yaml")
+            old = [p.data for p in library if p.category == category]
+            write_category(root, category, old + [p.entry for p in plans if p.category == category])
+            note(yaml_file)
+            undo.touch(root / "symbols" / f"{schema.categories[category].lib_name}.kicad_sym")
         for f in [*sorted((root / "symbols").glob("*.kicad_sym")), root / "sym-lib-table", root / "fp-lib-table"]:
             undo.touch(f)
-        cat = schema.categories[plan.category]
-        undo.touch(root / "symbols" / f"{cat.lib_name}.kicad_sym")
         build(root)
     except BaseException:
         undo.rollback()

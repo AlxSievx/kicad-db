@@ -41,3 +41,22 @@ def values(name: str, start: float, stop: float) -> list[float]:
             if lo <= v <= hi:
                 out.append(v)
     return out
+
+
+# Value codes of MPN series for `bulk-add discrete` (plan 8): BZT52C{} with "3V3" is BZT52C3V3.
+MPN_VALUES = {
+    "zener": ("2V4 2V7 3V0 3V3 3V6 3V9 4V3 4V7 5V1 5V6 6V2 6V8 7V5 8V2 9V1 10 11 12 13 15 16 18 20 22 24 27 30 "
+              "33 36 39 43 47 51").split(),
+    "tvs": ("5.0 6.0 6.5 7.0 7.5 8.0 8.5 9.0 10 11 12 13 14 15 16 17 18 20 22 24 26 28 30 33 36 40 43 45 48 51 54 "
+            "58 60 64 70 75 78 85 90 100").split(),
+}
+
+
+def mpn_values(spec: str) -> list[str]:
+    """A named list of MPN_VALUES, or a comma list of value codes ("14,16,110")."""
+    if spec in MPN_VALUES:
+        return list(MPN_VALUES[spec])
+    out = [v.strip() for v in spec.split(",") if v.strip()]
+    if not out:
+        raise ValueError(f"--values: one of {', '.join(MPN_VALUES)} or a comma list, not {spec!r}")
+    return out

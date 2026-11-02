@@ -36,11 +36,12 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 .venv\Scripts\python -m libkit bulk-add bead --series FB --from 30 --to 2200 --package 0603      # bead impedances @100MHz
 .venv\Scripts\python -m libkit bulk-add inductor --series E6 --from 1u --to 10u --package 0805   # chip inductors
 .venv\Scripts\python -m libkit bulk-add inductor --series E6 --from 1u --to 470u --family SWPA4030S  # power-inductor series
+.venv\Scripts\python -m libkit bulk-add discrete --mpn "BZT52C{}" --values zener --package SOD-123   # MPN series: zener, tvs, or "14,16,110"
 .venv\Scripts\python -m libkit refresh-stock      # re-query stock + JLC type of every part (network)
 .venv\Scripts\python -m libkit find resistor 62k --package 0402 --tolerance 1%   # candidates for one value (network)
 .venv\Scripts\python -m libkit add C1046         # single add, dry run (network); --write applies it
-.venv\Scripts\python -m libkit add C6186 --category ics_power --family Package_TO_SOT --fp-name SOT-223-3_TabPin2
-.venv\Scripts\python -m libkit add C81598 --footprint stock:Diode_SMD:D_SOD-123 --family Diode_SMD   # diode: category + base symbol automatic
+.venv\Scripts\python -m libkit add C6186 --category ics_power --family Package_TO_SOT_SMD --fp-name SOT-223-3_TabPin2
+.venv\Scripts\python -m libkit add C81598         # diode/LED/SOT-23 transistor: stock footprint, category + base symbol automatic
 .venv\Scripts\python -m libkit add MountingHole_3.2mm_M3 --local --category mechanical --footprint stock:MountingHole:MountingHole_3.2mm_M3 --family MountingHole
 ```
 
@@ -77,6 +78,14 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   family footprint once with `add <C…> --category inductors --family Inductor_SMD --fp-name
   L_Sunlord_<family>` (show the preview), then bulk-add; parts are named by MPN.
   Add full series, not single values (user rule).
+- **Bulk add (discretes):** `bulk-add discrete --mpn "SMAJ{}A" --values tvs --package SMA`: one row per
+  MPN (pattern with the value code), packaging suffixes like `-7-F` or `/TR13` count as the same part,
+  neighbour series (`BZT52C3V3S`) do not. Each row is built like a single add (stock footprint of
+  `--package`, base symbol); a part that needs its own symbol is a `none` row: add it singly. Same dry run /
+  `--write` / `--skip 3V6,39` flow, plan file `.libkit/bulk-plan-discrete-<pattern>-<package>.json`.
+  `--values` lists: `zener` (2V4…51), `tvs` (5.0…100); in PowerShell quote a comma list (`"5.0,24"`).
+  Packages: SOD-123, SOD-123F, SOD-323, SOD-323F, SOD-523, SOD-128, SMA, SMB, SMC, SOT-23, SOT-323, SOT-363,
+  LED-0603/0805/1206.
 - **Find (one value):** `libkit find <resistor|capacitor|inductor|bead> <value> --package …`
   lists candidates ordered by the rules (Basic/Preferred, then stock), with notes
   where a part misses the bulk rules (`Extended`, `stock < 1000`, unknown
@@ -91,8 +100,9 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   the C-numbers to choose from.
   - Chip passives (0402–1206 R, C, L, ferrite beads) need no options: base
     symbol + `LIB_Passives_SMD`.
-  - Diodes, LEDs, transistors: category from JLC's part type; base symbol (`D`, `D_Schottky`, `D_Zener`,
-    `D_TVS`, `LED`, `Q_NMOS_GSD`, `Q_PMOS_GSD`, `Q_NPN_BEC`, `Q_PNP_BEC` in `src/symbols/discretes.kicad_sym`)
+  - Diodes, LEDs, transistors: no `--footprint` needed for the packages above (KiCad stock footprint);
+    dual diodes and the like: `--symbol stock:Diode:BAV99`. Category from JLC's part type; base symbol (`D`, `D_Schottky`, `D_Zener`,
+    `D_TVS` (unidirectional TVS: `D_Zener`), `LED`, `Q_NMOS_GSD`, `Q_PMOS_GSD`, `Q_NPN_BEC`, `Q_PNP_BEC` in `src/symbols/discretes.kicad_sym`)
     only for a single device whose footprint pads fit (transistors: SOT-23-like packages only); otherwise
     the EasyEDA symbol, with a note why. Check the pad order the note names (pad 1 = cathode, G/S/D, B/E/C).
   - Everything else needs `--category`, and a new footprint needs `--family`.
@@ -100,7 +110,7 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
     (`--symbol stock:<Lib>:<Name>`, `--footprint stock:<Lib>:<Name>`), else
     EasyEDA (the default) with `--fp-name` in KLC form (`SOT-223-3_TabPin2`).
     Existing LIB items: `--symbol <src symbol>`, `--footprint LIB_<Family>:<Name>`.
-    Family names follow KiCad stock: `Package_TO_SOT`, `Package_SO`,
+    Family names are KiCad stock library names: `Package_TO_SOT_SMD`, `Package_SO`,
     `Package_DFN_QFN`, `Inductor_SMD`, `Connector`, …
   - EasyEDA footprints keep EasyEDA's (= JLC's) orientation; the report says
     when pin 1 is not top-left. Only STEP models are kept.
