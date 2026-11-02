@@ -4166,3 +4166,37 @@ parts:
     voltage: 10V
     dielectric: X5R
     tolerance: ±20%
+  - name: C_100n_0603_100V_X7R
+    symbol: C
+    footprint: LIB_Passives_SMD:C_0603_1608Metric
+    value: 100nF
+    package: "0603"
+    manufacturer: Samsung
+    mpn: CL10B104KC8NNNC
+    lcsc: C15725
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KC8NNNC_C15725.pdf
+    datasheet_lang: en
+    status: active
+    stock: "429820"
+    stock_checked: "2026-11-02"
+    voltage: 100V
+    dielectric: X7R
+    tolerance: ±10%
+  - name: C_47n_0603_100V_X7R
+    symbol: C
+    footprint: LIB_Passives_SMD:C_0603_1608Metric
+    value: 47nF
+    package: "0603"
+    manufacturer: Yageo
+    mpn: CC0603KRX7R0BB473
+    lcsc: C576852
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2006091814_YAGEO-CC0603KRX7R0BB473_C576852.pdf
+    datasheet_lang: en
+    status: active
+    stock: "217499"
+    stock_checked: "2026-11-02"
+    voltage: 100V
+    dielectric: X7R
+    tolerance: ±10%

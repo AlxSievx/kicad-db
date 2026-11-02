@@ -12476,3 +12476,20 @@ parts:
     tolerance: ±1%
     power: 6W
     tempco: ±200ppm/°C
+  - name: R_2.49k_0603_0.1pct
+    symbol: R
+    footprint: LIB_Passives_SMD:R_0603_1608Metric
+    value: 2.49k
+    package: "0603"
+    manufacturer: Yageo
+    mpn: RT0603BRB072K49L
+    lcsc: C860301
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404241509_YAGEO-RT0603BRB072K49L_C860301.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8941"
+    stock_checked: "2026-11-02"
+    tolerance: ±0.1%
+    power: 100mW
+    tempco: ±10ppm/°C
