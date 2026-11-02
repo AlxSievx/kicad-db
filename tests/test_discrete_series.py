@@ -69,3 +69,17 @@ def _with_bases(minilib):
     for f in ("passives.kicad_sym", "discretes.kicad_sym", "mechanical.kicad_sym"):
         shutil.copy(REPO / "src" / "symbols" / f, minilib / "src" / "symbols" / f)
     return minilib
+
+
+# ---- Task 2 ----------------------------------------------------------------------------------------
+def test_discrete_manufacturers(schema):  # Review Focus 3
+    c = schema.canonical_manufacturer
+    assert c("Jiangsu Changjing Electronics Technology Co., Ltd.") == "CJ"
+    assert c("MDD(Microdiode Semiconductor)") == "MDD"
+    assert c("Hubei KENTO Elec") == "KENTO"
+    assert c("Alpha & Omega Semicon") == "AOS"
+    assert c("hongjiacheng") == "hongjiacheng"
+    assert c("STMicroelectronics") == "STMicroelectronics"
+    assert c("Vishay Intertech") == "Vishay"
+    assert c("ST(Semtech)") is None
+    assert c("cjiang") == "cjiang"
