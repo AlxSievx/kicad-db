@@ -3201,3 +3201,427 @@ parts:
     stock_checked: "2026-11-01"
     current_rating: 1.5A
     dcr: 50mΩ
+  - name: CY75-10UH
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_SHOU-HAN_CY75
+    value: 10uH
+    package: SMD,7.8x7mm
+    manufacturer: SHOU HAN
+    mpn: CY75-10UH
+    lcsc: C2929438
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121400_SHOU-HAN-CY75-10UH_C2929438.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7078"
+    stock_checked: "2026-11-01"
+    current_rating: 2.31A
+    dcr: 41.6mΩ
+  - name: CY75-22UH
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_SHOU-HAN_CY75
+    value: 22uH
+    package: SMD,7.8x7mm
+    manufacturer: SHOU HAN
+    mpn: CY75-22UH
+    lcsc: C2929439
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121400_SHOU-HAN-CY75-22UH_C2929439.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4492"
+    stock_checked: "2026-11-01"
+    current_rating: 1.5A
+    dcr: 91mΩ
+  - name: CY75-33UH
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_SHOU-HAN_CY75
+    value: 33uH
+    package: SMD,7.8x7mm
+    manufacturer: SHOU HAN
+    mpn: CY75-33UH
+    lcsc: C2929440
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121400_SHOU-HAN-CY75-33UH_C2929440.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9421"
+    stock_checked: "2026-11-01"
+    current_rating: 1.2A
+    dcr: 119.6mΩ
+  - name: CY75-47UH
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_SHOU-HAN_CY75
+    value: 47uH
+    package: SMD,7.8x7mm
+    manufacturer: SHOU HAN
+    mpn: CY75-47UH
+    lcsc: C2929441
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121400_SHOU-HAN-CY75-47UH_C2929441.pdf
+    datasheet_lang: en
+    status: active
+    stock: "13692"
+    stock_checked: "2026-11-01"
+    current_rating: 1.05A
+    dcr: 175.5mΩ
+  - name: CY75-68UH
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_SHOU-HAN_CY75
+    value: 68uH
+    package: SMD,7.8x7mm
+    manufacturer: SHOU HAN
+    mpn: CY75-68UH
+    lcsc: C2929442
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121400_SHOU-HAN-CY75-68UH_C2929442.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1118"
+    stock_checked: "2026-11-01"
+    current_rating: 830mA
+    dcr: 234mΩ
+  - name: CY75-220UH
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_SHOU-HAN_CY75
+    value: 220uH
+    package: SMD,7.8x7mm
+    manufacturer: SHOU HAN
+    mpn: CY75-220UH
+    lcsc: C2929444
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121400_SHOU-HAN-CY75-220UH_C2929444.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8069"
+    stock_checked: "2026-11-01"
+    current_rating: 480mA
+    dcr: 793mΩ
+  - name: CY75-330UH
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_SHOU-HAN_CY75
+    value: 330uH
+    package: SMD,7.8x7mm
+    manufacturer: SHOU HAN
+    mpn: CY75-330UH
+    lcsc: C2929445
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121400_SHOU-HAN-CY75-330UH_C2929445.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7313"
+    stock_checked: "2026-11-01"
+    current_rating: 390mA
+    dcr: 1.13Ω
+  - name: CY75-470UH
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_SHOU-HAN_CY75
+    value: 470uH
+    package: SMD,7.8x7mm
+    manufacturer: SHOU HAN
+    mpn: CY75-470UH
+    lcsc: C2929496
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121400_SHOU-HAN-CY75-470UH_C2929496.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12143"
+    stock_checked: "2026-11-01"
+    current_rating: 330mA
+    dcr: 1.68Ω
+  - name: YPRH1209-220M
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_YJYCOIN_YPRH1209
+    value: 22uH
+    package: SMD,12x12mm
+    manufacturer: YJYCOIN
+    mpn: YPRH1209-220M
+    lcsc: C718305
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YJYCOIN-YPRH1209-220M_C718305.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1770"
+    stock_checked: "2026-11-01"
+    current_rating: 5.12A
+    dcr: 29mΩ
+  - name: YPRH1209-330M
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_YJYCOIN_YPRH1209
+    value: 33uH
+    package: SMD,12x12mm
+    manufacturer: YJYCOIN
+    mpn: YPRH1209-330M
+    lcsc: C718306
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YJYCOIN-YPRH1209-330M_C718306.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1093"
+    stock_checked: "2026-11-01"
+    current_rating: 4.25A
+    dcr: 53mΩ
+  - name: YPRH1209-680M
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_YJYCOIN_YPRH1209
+    value: 68uH
+    package: SMD,12x12mm
+    manufacturer: YJYCOIN
+    mpn: YPRH1209-680M
+    lcsc: C339957
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YJYCOIN-YPRH1209-680M_C339957.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3504"
+    stock_checked: "2026-11-01"
+    current_rating: 2.76A
+    dcr: 93mΩ
+  - name: YPRH1209-101M
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_YJYCOIN_YPRH1209
+    value: 100uH
+    package: SMD,12x12mm
+    manufacturer: YJYCOIN
+    mpn: YPRH1209-101M
+    lcsc: C718307
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YJYCOIN-YPRH1209-101M_C718307.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4847"
+    stock_checked: "2026-11-01"
+    current_rating: 2.31A
+    dcr: 126mΩ
+  - name: YPRH1209-151M
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_YJYCOIN_YPRH1209
+    value: 150uH
+    package: SMD,12x12mm
+    manufacturer: YJYCOIN
+    mpn: YPRH1209-151M
+    lcsc: C339958
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YJYCOIN-YPRH1209-151M_C339958.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1944"
+    stock_checked: "2026-11-01"
+    current_rating: 1.8A
+    dcr: 174mΩ
+  - name: YPRH1209-221M
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_YJYCOIN_YPRH1209
+    value: 220uH
+    package: SMD,12x12mm
+    manufacturer: YJYCOIN
+    mpn: YPRH1209-221M
+    lcsc: C339959
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YJYCOIN-YPRH1209-221M_C339959.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4199"
+    stock_checked: "2026-11-01"
+    current_rating: 1.64A
+    dcr: 246mΩ
+  - name: YPRH1209-331M
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_YJYCOIN_YPRH1209
+    value: 330uH
+    package: SMD,12x12mm
+    manufacturer: YJYCOIN
+    mpn: YPRH1209-331M
+    lcsc: C718308
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YJYCOIN-YPRH1209-331M_C718308.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3652"
+    stock_checked: "2026-11-01"
+    current_rating: 1.28A
+    dcr: 386mΩ
+  - name: YPRH1209-471M
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_YJYCOIN_YPRH1209
+    value: 470uH
+    package: SMD,12x12mm
+    manufacturer: YJYCOIN
+    mpn: YPRH1209-471M
+    lcsc: C718309
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YJYCOIN-YPRH1209-471M_C718309.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1551"
+    stock_checked: "2026-11-01"
+    current_rating: 1.06A
+    dcr: 471mΩ
+  - name: YPRH1209-102M
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_YJYCOIN_YPRH1209
+    value: 1mH
+    package: SMD,12x12mm
+    manufacturer: YJYCOIN
+    mpn: YPRH1209-102M
+    lcsc: C718311
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YJYCOIN-YPRH1209-102M_C718311.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3403"
+    stock_checked: "2026-11-01"
+    current_rating: 700mA
+    dcr: 1.22Ω
+  - name: YPRH1209-222M
+    symbol: L
+    footprint: LIB_Inductor_SMD:L_YJYCOIN_YPRH1209
+    value: 2.2mH
+    package: SMD,12x12mm
+    manufacturer: YJYCOIN
+    mpn: YPRH1209-222M
+    lcsc: C718314
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2008052135_YJYCOIN-YPRH1209-222M_C718314.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1394"
+    stock_checked: "2026-11-01"
+    current_rating: 430mA
+    dcr: 2.58Ω
+  - name: ACT1210-110-2P-TL00
+    symbol: L_Ferrite_Coupled_1423
+    footprint: LIB_Inductor_SMD:L_CommonModeChoke_TDK_ACT1210
+    value: ACT1210-110-2P-TL00
+    package: SMD-4P,3.2x2.5mm
+    description: -55°C~+150°C 11uH@100kHz 2 300mA 400mΩ 550Ω@10MHz 80V SMD-4P,3.2x2.5mm Common Mode Filters
+    manufacturer: TDK
+    mpn: ACT1210-110-2P-TL00
+    lcsc: C694257
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2010171735_TDK-ACT1210-110-2P-TL00_C694257.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7584"
+    stock_checked: "2026-11-01"
+    current_rating: 300mA
+    dcr: 400mΩ
+  - name: ACT1210-220-2P-TL00
+    symbol: L_Ferrite_Coupled_1423
+    footprint: LIB_Inductor_SMD:L_CommonModeChoke_TDK_ACT1210
+    value: ACT1210-220-2P-TL00
+    package: SMD
+    description: -55°C~+150°C 1.1kΩ@10MHz 2 22uH@100kHz 250mA 500mΩ 80V SMD Common Mode Filters
+    manufacturer: TDK
+    mpn: ACT1210-220-2P-TL00
+    lcsc: C383344
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2212301709_TDK-ACT1210-220-2P-TL00_C383344.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2715"
+    stock_checked: "2026-11-01"
+    current_rating: 250mA
+    dcr: 500mΩ
+  - name: ACT1210-101-2P-TL00
+    symbol: L_Ferrite_Coupled_1423
+    footprint: LIB_Inductor_SMD:L_CommonModeChoke_TDK_ACT1210
+    value: ACT1210-101-2P-TL00
+    package: SMD-4P,3.2x2.5mm
+    description: -55°C~+150°C 1.5Ω 100uH@100kHz 150mA 2 200MΩ 5.1kΩ@10MHz 80V SMD-4P,3.2x2.5mm Common Mode Filters
+    manufacturer: TDK
+    mpn: ACT1210-101-2P-TL00
+    lcsc: C529452
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2005081903_TDK-ACT1210-101-2P-TL00_C529452.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3734"
+    stock_checked: "2026-11-01"
+    current_rating: 150mA
+    dcr: 1.5Ω
+  - name: ACT1210L-201-2P-TL00
+    symbol: L_Ferrite_Coupled_1423
+    footprint: LIB_Inductor_SMD:L_CommonModeChoke_TDK_ACT1210
+    value: ACT1210L-201-2P-TL00
+    package: SMD-4P,3.2x2.5mm
+    description: -40°C~+125°C 10MΩ 2 200uH@100kHz 5.5Ω 70mA 80V SMD-4P,3.2x2.5mm Common Mode Filters
+    manufacturer: TDK
+    mpn: ACT1210L-201-2P-TL00
+    lcsc: C131444
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811111710_TDK-ACT1210L-201-2P-TL00_C131444.pdf
+    datasheet_lang: en
+    status: active
+    stock: "27088"
+    stock_checked: "2026-11-01"
+    current_rating: 70mA
+    dcr: 5.5Ω
+  - name: ACT1210L-101-2P-TL00
+    symbol: L_Ferrite_Coupled_1423
+    footprint: LIB_Inductor_SMD:L_CommonModeChoke_TDK_ACT1210
+    value: ACT1210L-101-2P-TL00
+    package: SMD-4P,3.2x2.5mm
+    description: -40°C~+125°C 1.5Ω 100uH@100kHz 10MΩ 150mA 2 80V SMD-4P,3.2x2.5mm Common Mode Filters
+    manufacturer: TDK
+    mpn: ACT1210L-101-2P-TL00
+    lcsc: C307643
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_TDK-ACT1210L-101-2P-TL00_C307643.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3281"
+    stock_checked: "2026-11-01"
+    current_rating: 150mA
+    dcr: 1.5Ω
+  - name: ACT1210R-101-2P-TL00
+    symbol: L_Ferrite_Coupled_1423
+    footprint: LIB_Inductor_SMD:L_CommonModeChoke_TDK_ACT1210
+    value: ACT1210R-101-2P-TL00
+    package: SMD-4P,3.2x2.5mm
+    description: -40°C~+125°C 1.5Ω 100uH@100kHz 10MΩ 150mA 2 80V SMD-4P,3.2x2.5mm Common Mode Filters
+    manufacturer: TDK
+    mpn: ACT1210R-101-2P-TL00
+    lcsc: C2651155
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2106080334_TDK-ACT1210R-101-2P-TL00_C2651155.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6375"
+    stock_checked: "2026-11-01"
+    current_rating: 150mA
+    dcr: 1.5Ω
+  - name: ACT1210G-800-2P-TL10
+    symbol: L_Ferrite_Coupled_1423
+    footprint: LIB_Inductor_SMD:L_CommonModeChoke_TDK_ACT1210
+    value: ACT1210G-800-2P-TL10
+    package: SMD,3.2x2.5mm
+    description: -40°C~+125°C 10MΩ 2 2.6Ω 70mA 80V 80uH@100kHz SMD,3.2x2.5mm Common Mode Filters
+    manufacturer: TDK
+    mpn: ACT1210G-800-2P-TL10
+    lcsc: C5456469
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C5456469.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "4314"
+    stock_checked: "2026-11-01"
+    current_rating: 70mA
+    dcr: 2.6Ω
+  - name: ACP3225-501-2P-T000
+    symbol: L_Ferrite_Coupled_1423
+    footprint: LIB_Inductor_SMD:L_CommonModeChoke_TDK_ACP3225
+    value: ACP3225-501-2P-T000
+    package: SMD-4P,3.2x2.5mm
+    description: -40°C~+85°C 10MΩ 2 2A 40mΩ 500Ω@100MHz 60V SMD-4P,3.2x2.5mm Common Mode Filters
+    manufacturer: TDK
+    mpn: ACP3225-501-2P-T000
+    lcsc: C78245
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_TDK-ACP3225-501-2P-T000_C78245.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6358"
+    stock_checked: "2026-11-01"
+    current_rating: 2A
+    dcr: 40mΩ
