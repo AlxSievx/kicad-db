@@ -52,7 +52,7 @@
 # --- Stock KiCad content vendored unchanged (Plan 4 starter set, user OK 2026-11-01) ---
 - kind: footprint
   item: ["D_SOD-123", "D_SOD-123F", "D_SOD-323", "D_SOD-323F", "D_SOD-523", "D_SOD-128", "D_SMA", "D_SMB", "D_SMC",
-         "SOT-23", "SOT-323_SC-70", "SOT-363_SC-70-6", "CP_Elec_*", "LED_0[46]0[358]_*Metric", "LED_1206_3216Metric", "MountingHole_*", "TestPoint_*", "Fiducial_*"]
+         "SOT-23", "SOT-323_SC-70", "SOT-363_SC-70-6", "CP_Elec_*", "LED_0[46]0[358]_*Metric", "LED_1206_3216Metric", "D_SOD-923", "MountingHole_*", "TestPoint_*", "Fiducial_*"]
   rule: F9.1
   reason: >-
     Stock KiCad footprint copied unchanged; generic packages carry no datasheet
@@ -80,11 +80,12 @@
   rule: S7.2
   reason: Stock KiCad graphical base symbol copied unchanged (keeps KiCad's footprint filters).
 - kind: symbol
-  item: ["*:MountingHole", "*:BAT54C*"]
+  item: ["*:MountingHole", "*:BAT54C*", "*:BAT54A", "*:WS2812B-2020-V6", "*:WS2812B-V6"]
   rule: S3.6
   reason: Stock KiCad symbol copied unchanged (pin name offset).
 - kind: symbol
-  item: ["*:MountingHole_Pad", "*:BAT54C*", "*:BAV99*", "*:C_Polarized"]
+  item: ["*:MountingHole_Pad", "*:BAT54C*", "*:BAV99*", "*:C_Polarized", "*:BAT54A", "*:BAT54S",
+         "*:BAV199LT1G", "*:DTC114EKAT146"]
   rule: S3.1
   reason: Stock KiCad symbol copied unchanged (origin not centred).
 - kind: symbol
@@ -92,10 +93,36 @@
   rule: S6.1
   reason: KiCad's stock fiducial uses reference FID, which the KLC list does not include.
 - kind: symbol
-  item: ["*:BAT54C*"]
+  item: ["*:BAT54C*", "*:BAT54A"]
   rule: S4.1
   reason: Stock KiCad dual-diode symbol copied unchanged (unnamed common pin).
 - kind: symbol
-  item: ["*:LED", "*:BAV99*", "*:FerriteBead"]
+  item: ["*:LED", "*:BAV99*", "*:FerriteBead", "*:BAV199LT1G", "*:BAV70", "*:BAW56", "*:DTC114EKAT146"]
   rule: EC01
   reason: Stock KiCad symbol copied unchanged (extended geometry check only).
+
+# --- Stock KiCad content vendored unchanged (Plan 8 single adds, user OK 2026-11-02) ---
+- kind: symbol
+  item: ["*:USBLC6-2SC6", "*:USBLC6-4SC6Y", "*:PRTR5V0U2X,215"]
+  rule: S4.4
+  reason: Stock KiCad ESD-array symbol copied unchanged (VBUS/GND pins typed passive).
+- kind: symbol
+  item: ["*:PRTR5V0U2X,215"]
+  rule: S3.3
+  reason: Stock KiCad symbol copied unchanged (outline drawn with default line width).
+- kind: symbol
+  item: ["*:TPD4E05U06DQAR"]
+  rule: S4.6
+  reason: Stock KiCad symbol copied unchanged (NC pins visible, typed as KiCad ships them).
+- kind: symbol
+  item: ["*:TPD4E05U06DQAR"]
+  rule: S4.3
+  reason: Stock KiCad symbol copied unchanged (legacy GND pin stack).
+- kind: footprint
+  item: ["TO-252-2"]
+  rule: F6.2
+  reason: Stock KiCad footprint copied unchanged (anchor on the package centre, not the pad centre).
+- kind: footprint
+  item: ["D_SOD-882", "Nexperia_CFP3_SOD-123W", "LED_WS2812B-2020_PLCC4_2.0x2.0mm", "TO-252-2"]
+  rule: F6.3
+  reason: Stock KiCad footprint copied unchanged (pad shape/layer details as KiCad ships them).
