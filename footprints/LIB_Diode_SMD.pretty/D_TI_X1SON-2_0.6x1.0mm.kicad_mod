@@ -1,0 +1,211 @@
+(footprint "D_TI_X1SON-2_0.6x1.0mm"
+	(version 20260206)
+	(generator "libkit")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40°C~+125°C 1 100nA 12pF 14V 5.5V 6A@8/20us 6V 90W@8/20us Bidirectional ESD IEC 61000-4-2 X1-SON-2(0.6x1) ESD and Surge Protection (TVS/ESD), https://www.lcsc.com/datasheet/lcsc_datasheet_1809050228_Texas-Instruments-TPD1E10B06DPYR_C48260.pdf (EasyEDA C48260)")
+	(tags "X1-SON-2(0.6x1) TPD1E10B06DPYR")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "b6bcc1e9-5f52-405b-bb43-6e7d4b4ee767")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "D_TI_X1SON-2_0.6x1.0mm"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "a4ec2676-133d-43a5-a4e8-3708fc087fae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cd4d0c6c-9353-423d-843b-b6b286b165bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f5f0d20a-100a-4b37-8286-eb34ef032b3b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.5 -0.5)
+		(end 0.5 -0.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "72fbae1b-285d-4b34-9d5e-fb20cec9265f")
+	)
+	(fp_line
+		(start -0.5 0.5)
+		(end 0.5 0.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "476662e8-9e44-4597-826b-6f5f0d1361b7")
+	)
+	(fp_circle
+		(center -0.5 -0.3)
+		(end -0.47 -0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "13e88ae4-e35d-4ae9-b7b7-b62e598abcd9")
+	)
+	(fp_poly
+		(pts
+			(xy -0.1 -0.2)
+			(xy -0.1 0.2)
+			(xy 0 0)
+			(xy 0.000127 0)
+			(xy -0.1 -0.2)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "bf219014-418b-4584-ad34-aed7a1c8b96f")
+	)
+	(fp_poly
+		(pts
+			(xy 0.101219 0.198196)
+			(xy 0.101219 -0.201803)
+			(xy 0.001219 -0.001803)
+			(xy 0.001092 -0.001803)
+			(xy 0.101219 0.198196)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "1c6dc95b-42b6-4df2-9ac3-b1a3ca476847")
+	)
+	(fp_line
+		(start -0.5 -0.5)
+		(end 0.5 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.5 0.5)
+		(end 0.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_poly
+		(pts
+			(xy -0.1 -0.2)
+			(xy -0.1 0.2)
+			(xy 0 0)
+			(xy 0.000127 0)
+			(xy -0.1 -0.2)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+	)
+	(fp_poly
+		(pts
+			(xy 0.101219 0.198196)
+			(xy 0.101219 -0.201803)
+			(xy 0.001219 -0.001803)
+			(xy 0.001092 -0.001803)
+			(xy 0.101219 0.198196)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -1.05 -0.75)
+		(end 1.05 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.5 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "39e2069a-c31d-4f0c-be65-da998442a987")
+	)
+	(pad "2" smd roundrect
+		(at 0.5 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "7a5752ea-2b3a-45a8-bfed-d09c3aa0721b")
+	)
+	(embedded_fonts no)
+	(model "${LIB_DIR}/3dmodels/LIB_Diode_SMD.3dshapes/D_TI_X1SON-2_0.6x1.0mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

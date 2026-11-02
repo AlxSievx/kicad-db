@@ -1,0 +1,175 @@
+(footprint "LED_RGB_XINGLIGHT_XL-1615"
+	(version 20260206)
+	(generator "libkit")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-30°C~+85°C 0.6mm 1.5mm 1.6mm 120° B:460nm~470nm, R:620nm~625nm, G:515nm~530nm Common Anode R:1.8V~2.4V, G:2.6V~3.4V, B:2.6V~3.4V R:100mcd~180mcd, G:350mcd~800mcd, B:120mcd~180mcd R:2000V, G:2000V, B:2000V R:20mA, G:20mA, B:20mA R:50mW, G:70mW, B:70mW R:625nm, B:465nm, G:515nm Top-mount Water Clear SMD-4P,1.6x1.5mm RGB LEDs, https://www.lcsc.com/datasheet/lcsc_datasheet_2410121441_XINGLIGHT-XL-1615RGBC-RF_C965840.pdf (EasyEDA C965840)")
+	(tags "SMD-4P 1.6x1.5mm XL-1615RGBC-RF")
+	(property "Reference" "REF**"
+		(at 0 -4.425 0)
+		(layer "F.SilkS")
+		(uuid "91ebf6e5-e2e8-466f-8ddf-6f33c08fb204")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED_RGB_XINGLIGHT_XL-1615"
+		(at 0 4.425 0)
+		(layer "F.Fab")
+		(uuid "ce5e9ae0-9e33-4c30-817c-badbd8712fc4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "abe28a00-97a0-4488-9a74-236504607a2e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e0083043-bbe3-4f45-bd32-bc059a5f8375")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.76 -1.02)
+		(end 0.76 -1.02)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0254d7ff-f6b7-4a8b-9bc1-b2f20efad244")
+	)
+	(fp_line
+		(start 0.76 1.02)
+		(end -0.76 1.02)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bcb11c36-ab35-476c-b8b9-9deddead7ca2")
+	)
+	(fp_circle
+		(center 0.8 0.75)
+		(end 0.83 0.75)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b72123e4-89ba-4f1a-8543-77634c0ce608")
+	)
+	(fp_line
+		(start -0.76 -1.02)
+		(end 0.76 -1.02)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.76 1.02)
+		(end -0.76 1.02)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_text user "+"
+		(at 1.96 -0.8 180)
+		(layer "F.SilkS")
+		(uuid "b852a1f9-7bec-4c6a-a56a-36a136387838")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.08)
+			)
+			(justify left)
+		)
+	)
+	(fp_rect
+		(start -1.4 -1.27)
+		(end 1.4 1.27)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.61 0.61)
+				(thickness 0.0915)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0.75 0.42 180)
+		(size 0.8 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "b1d3c13b-f5e8-417e-8038-36ac826a59ed")
+	)
+	(pad "2" smd roundrect
+		(at 0.75 -0.42 180)
+		(size 0.8 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "b946e4e2-6407-4c3e-b38b-97f7e1f0644c")
+	)
+	(pad "3" smd roundrect
+		(at -0.75 -0.42 180)
+		(size 0.8 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "20112c47-dc73-4ddb-8a81-2d59a10393b1")
+	)
+	(pad "4" smd roundrect
+		(at -0.75 0.42 180)
+		(size 0.8 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "e7d0a42e-f9bc-4b59-9015-295a95fbd43b")
+	)
+	(embedded_fonts no)
+	(model "${LIB_DIR}/3dmodels/LIB_LED_SMD.3dshapes/LED_RGB_XINGLIGHT_XL-1615.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

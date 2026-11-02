@@ -1,1 +1,302 @@
-parts: []
+parts:
+  - name: KT-0603R
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_0603_1608Metric
+    value: KT-0603R
+    package: "0603"
+    description: -40°C~+85°C 1.6mm x 0.8mm square LED 1.8V~2.4V 120° 20mA 300mcd 40mW 615nm~630nm 645nm Discrete Diode Red Water Clear 0603 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-0603R
+    lcsc: C2286
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6974288"
+    stock_checked: "2026-11-02"
+    color: Red
+    vf: 1.8V~2.4V
+  - name: KT-0603G
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_0603_1608Metric
+    value: KT-0603G
+    package: "0603"
+    description: -40°C~+85°C 1.6mm x 0.8mm square LED 100mW 120° 3.1V 430mcd 513nm~528nm 525nm 5mA Discrete Diode Emerald Green Water Clear 0603 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-0603G
+    lcsc: C12624
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1806151818_Hubei-KENTO-Elec-KT-0603G_C12624.pdf
+    datasheet_lang: en
+    status: active
+    stock: "382347"
+    stock_checked: "2026-11-02"
+    color: Emerald Green
+    vf: 3.1V
+  - name: KT-0603B
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_0603_1608Metric
+    value: KT-0603B
+    package: "0603"
+    description: 100mW 120° 175mcd 3.1V 460nm~475nm 469nm 5mA Blue Discrete Diode Water Clear 0603 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-0603B
+    lcsc: C2288
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810220913_Hubei-KENTO-Elec-KT-0603B_C2288.pdf
+    datasheet_lang: en
+    status: active
+    stock: "139821"
+    stock_checked: "2026-11-02"
+    color: Blue
+    vf: 3.1V
+  - name: KT-0603Y
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_0603_1608Metric
+    value: KT-0603Y
+    package: "0603"
+    description: -40°C~+85°C 120° 175mcd 2.4V 40mW 584nm~594nm 596nm Discrete Diode Water Clear Yellow 0603 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-0603Y
+    lcsc: C2287
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C2287.pdf
+    datasheet_lang: en
+    status: active
+    stock: "110916"
+    stock_checked: "2026-11-02"
+    color: Yellow
+    vf: 2.4V
+  - name: KT-0603W
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_0603_1608Metric
+    value: KT-0603W
+    package: "0603"
+    description: -40°C~+85°C 100mW 120° 2.6V~3.1V 360mcd 5mA Discrete Diode Top-mount White Yellow Lens 0603 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-0603W
+    lcsc: C2290
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2305091500_Hubei-KENTO-Elec-KT-0603W_C2290.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1221955"
+    stock_checked: "2026-11-02"
+    color: White
+    vf: 2.6V~3.1V
+  - name: KT-0805R
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_0805_2012Metric
+    value: KT-0805R
+    package: 0805
+    description: -40°C~+85°C 120° 2.4V 210mcd 40mW 615nm~630nm 645nm Discrete Diode Red Water Clear 0805 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-0805R
+    lcsc: C2295
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C2295.pdf
+    datasheet_lang: en
+    status: active
+    stock: "87285"
+    stock_checked: "2026-11-02"
+    color: Red
+    vf: 2.4V
+  - name: KT-0805G
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_0805_2012Metric
+    value: KT-0805G
+    package: 0805
+    description: -40°C~+85°C 100mW 120° 2.6V~3.1V 430mcd 513nm~528nm 525nm 5mA Discrete Diode Emerald Green Water Clear 0805 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-0805G
+    lcsc: C2297
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1806151820_Hubei-KENTO-Elec-KT-0805G_C2297.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2194292"
+    stock_checked: "2026-11-02"
+    color: Emerald Green
+    vf: 2.6V~3.1V
+  - name: KT-0805B
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_0805_2012Metric
+    value: KT-0805B
+    package: 0805
+    description: -40°C~+85°C 100mW 100mcd 120° 3.1V 460nm~475nm 469nm 5mA Blue Discrete Diode Water Clear 0805 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-0805B
+    lcsc: C2293
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1806130620_Hubei-KENTO-Elec-KT-0805B_C2293.pdf
+    datasheet_lang: en
+    status: active
+    stock: "84871"
+    stock_checked: "2026-11-02"
+    color: Blue
+    vf: 3.1V
+  - name: KT-0805Y
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_0805_2012Metric
+    value: KT-0805Y
+    package: 0805
+    description: -40°C~+85°C 1.8V~2.4V 120° 175mcd 40mW 584nm~594nm 596nm Discrete Diode Water Clear Yellow 0805 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-0805Y
+    lcsc: C2296
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1806151129_Hubei-KENTO-Elec-KT-0805Y_C2296.pdf
+    datasheet_lang: en
+    status: active
+    stock: "620707"
+    stock_checked: "2026-11-02"
+    color: Yellow
+    vf: 1.8V~2.4V
+  - name: KT-0805W
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_0805_2012Metric
+    value: KT-0805W
+    package: 0805
+    description: -30°C~+85°C 120° 13172K~100000K 2.6V~3.2V 25mA 350mcd 80mW Discrete Diode Top-mount White Yellow Lens 0805 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-0805W
+    lcsc: C34499
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2305091500_Hubei-KENTO-Elec-KT-0805W_C34499.pdf
+    datasheet_lang: en
+    status: active
+    stock: "348510"
+    stock_checked: "2026-11-02"
+    color: White
+    vf: 2.6V~3.2V
+  - name: KT-1206R
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_1206_3216Metric
+    value: KT-1206R
+    package: "1206"
+    description: -40°C~+85°C 120° 2.4V 20mA 300mcd 48mW 630nm 635nm Discrete Diode Red Top-mount Water Clear 1206 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-1206R
+    lcsc: C49018
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1806151819_Hubei-KENTO-Elec-KT-1206R_C49018.pdf
+    datasheet_lang: en
+    status: active
+    stock: "40599"
+    stock_checked: "2026-11-02"
+    color: Red
+    vf: 2.4V
+  - name: KT-1206G
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_1206_3216Metric
+    value: KT-1206G
+    package: "1206"
+    description: -40°C~+85°C 120° 2.5V~3.1V 516nm~531nm 520nm 5mA 70mW Discrete Diode Emerald Green Water Clear 1206 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-1206G
+    lcsc: C14641
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C14641.pdf
+    datasheet_lang: en
+    status: active
+    stock: "21279"
+    stock_checked: "2026-11-02"
+    color: Emerald Green
+    vf: 2.5V~3.1V
+  - name: KT-1206B
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_1206_3216Metric
+    value: KT-1206B
+    package: "1206"
+    description: -40°C~+85°C 120° 3.1V 30mcd~70mcd 460nm~475nm 465nm 5mA 70mW Blue Discrete Diode Water Clear 1206 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-1206B
+    lcsc: C72691
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809042023_Hubei-KENTO-Elec-KT-1206B_C72691.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2888"
+    stock_checked: "2026-11-02"
+    color: Blue
+    vf: 3.1V
+  - name: KT-1206Y
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_1206_3216Metric
+    value: KT-1206Y
+    package: "1206"
+    description: 1.8V~2.4V 120° 20mA 210mcd 48mW 586nm~596nm 598nm Discrete Diode Water Clear Yellow 1206 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-1206Y
+    lcsc: C2298
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C2298.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10660"
+    stock_checked: "2026-11-02"
+    color: Yellow
+    vf: 1.8V~2.4V
+  - name: KT-1206W
+    symbol: LED
+    footprint: LIB_LED_SMD:LED_1206_3216Metric
+    value: KT-1206W
+    package: "1206"
+    description: -40°C~+85°C 100mW 120° 13969K~16695K 3.1V 430mcd 5mA Discrete Diode White Yellow Lens 1206 LED Indication - Discrete
+    manufacturer: KENTO
+    mpn: KT-1206W
+    lcsc: C71796
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811121811_Hubei-KENTO-Elec-KT-1206W_C71796.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5051"
+    stock_checked: "2026-11-02"
+    color: White
+    vf: 3.1V
+  - name: WS2812B-2020-V6
+    symbol: WS2812B-2020-V6
+    footprint: LIB_LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm
+    value: WS2812B-2020-V6
+    package: SMD2020-4P
+    description: -40°C~+85°C 0.84mm 120us 160mcd 1uA 200mcd 2kHz 2mm 2mm 3.3V~5.3V 300ns 465nm~470nm 515nm~520nm 520mcd 620nm~625nm 800Kbit/s Built-in power-on reset circuit, Built-in power-on reset circuit, Integrated intelligent reverse connection protection function SMD2020-4P RGB LEDs(Built-in IC)
+    manufacturer: Worldsemi
+    mpn: WS2812B-2020-V6
+    lcsc: C52917434
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C52917434.pdf
+    datasheet_lang: en
+    status: active
+    stock: "671017"
+    stock_checked: "2026-11-02"
+  - name: WS2812B-V6
+    symbol: WS2812B-V6
+    footprint: LIB_LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm
+    value: WS2812B-V6
+    package: SMD5050-4P
+    description: -40°C~+85°C 200mcd~300mcd, 300mcd~500mcd, 600mcd~1cd 465nm~475nm, 515nm~525nm, 620nm~630nm 5.0mm x 5.0mm square LED Red, green, blue SMD5050-4P LED Indication - Discrete
+    manufacturer: Worldsemi
+    mpn: WS2812B-V6
+    lcsc: C52917433
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C52917433.pdf
+    datasheet_lang: en
+    status: active
+    stock: "122296"
+    stock_checked: "2026-11-02"
+    color: Red, Green, Blue
+  - name: XL-1615RGBC-RF
+    symbol: XL-1615RGBC-RF
+    footprint: LIB_LED_SMD:LED_RGB_XINGLIGHT_XL-1615
+    value: XL-1615RGBC-RF
+    package: SMD-4P,1.6x1.5mm
+    description: -30°C~+85°C 0.6mm 1.5mm 1.6mm 120° B:460nm~470nm, R:620nm~625nm, G:515nm~530nm Common Anode R:1.8V~2.4V, G:2.6V~3.4V, B:2.6V~3.4V R:100mcd~180mcd, G:350mcd~800mcd, B:120mcd~180mcd R:2000V, G:2000V, B:2000V R:20mA, G:20mA, B:20mA R:50mW, G:70mW, B:70mW R:625nm, B:465nm, G:515nm Top-mount Water Clear SMD-4P,1.6x1.5mm RGB LEDs
+    manufacturer: XINGLIGHT
+    mpn: XL-1615RGBC-RF
+    lcsc: C965840
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121441_XINGLIGHT-XL-1615RGBC-RF_C965840.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "341849"
+    stock_checked: "2026-11-02"

@@ -5095,3 +5095,785 @@ parts:
     vr: 100V
     if: 5A
     vf: 850mV@5A
+  - name: 1N4148W
+    symbol: D
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: 1N4148W
+    package: SOD-123
+    description: -55°C~+150°C 1.25V@150mA 100V 150mA 1uA@75V 2A 400mW 4ns Independent SOD-123 Switching Diodes
+    manufacturer: hongjiacheng
+    mpn: 1N4148W
+    lcsc: C7420318
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308281515_hongjiacheng-1N4148W_C7420318.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "4043297"
+    stock_checked: "2026-11-02"
+    vr: 100V
+    if: 150mA
+    vf: 1.25V@150mA
+  - name: 1N4148WS
+    symbol: D
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: 1N4148WS
+    package: SOD-323
+    description: 1.25V@150mA 100V 150mA 1uA@75V 200mW 2A 4ns Independent SOD-323 Switching Diodes
+    manufacturer: CJ
+    mpn: 1N4148WS
+    lcsc: C2128
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810101110_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--1N4148WS_C2128.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "2974764"
+    stock_checked: "2026-11-02"
+    vr: 100V
+    if: 150mA
+    vf: 1.25V@150mA
+  - name: BAS16
+    symbol: BAS16
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BAS16
+    package: SOT-23
+    description: -55°C~+150°C 1.25V@150mA 150mA 1uA 225mW 2A 4ns 75V Standalone SOT-23 Switching Diodes
+    manufacturer: hongjiacheng
+    mpn: BAS16
+    lcsc: C7502724
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308281443_hongjiacheng-BAS16_C7502724.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "92969"
+    stock_checked: "2026-11-02"
+    vr: 75V
+    if: 150mA
+    vf: 1.25V@150mA
+  - name: BAV99,215
+    symbol: BAV99,215
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BAV99,215
+    package: SOT-23
+    description: 1 Pair Series Connection 1.25V@150mA 100V 215mA 250mW 4A 4ns 500nA@80V SOT-23 Switching Diodes
+    manufacturer: Nexperia
+    mpn: BAV99,215
+    lcsc: C2500
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407250951_Nexperia-BAV99-215_C2500.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1290769"
+    stock_checked: "2026-11-02"
+    vr: 100V
+    if: 125mA
+    vf: 1.25V@150mA
+  - name: BAV70
+    symbol: BAV70
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BAV70
+    package: SOT-23
+    description: -55°C~+150°C 1 Pair Common Cathode 1.25V@150mA 2.5uA@70V 200mA 225mW 2A 6ns 70V SOT-23 Switching Diodes
+    manufacturer: CJ
+    mpn: BAV70
+    lcsc: C68978
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--BAV70_C68978.pdf
+    datasheet_lang: en
+    status: active
+    stock: "623535"
+    stock_checked: "2026-11-02"
+    vr: 70V
+    if: 200mA
+    vf: 1.25V@150mA
+  - name: BAW56
+    symbol: BAW56
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BAW56
+    package: SOT-23
+    description: -55°C~+150°C 1 Pair Common Anode 1.25V@150mA 2.5uA 200mA 225mW 2A 4ns 70V SOT-23 Switching Diodes
+    manufacturer: hongjiacheng
+    mpn: BAW56
+    lcsc: C7502729
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404031008_hongjiacheng-BAW56_C7502729.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "87115"
+    stock_checked: "2026-11-02"
+    vr: 70V
+    if: 200mA
+    vf: 1.25V@150mA
+  - name: BAV199LT1G
+    symbol: BAV199LT1G
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BAV199LT1G
+    package: SOT-23
+    description: -65°C~+150°C 1 Pair Series Connection 1.25V@150mA 215mA 2A 5uA@70V 70V SOT-23 Diodes - General Purpose
+    manufacturer: onsemi
+    mpn: BAV199LT1G
+    lcsc: C145516
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811041150_onsemi-BAV199LT1G_C145516.pdf
+    datasheet_lang: en
+    status: active
+    stock: "385084"
+    stock_checked: "2026-11-02"
+    vr: 70V
+    if: 215mA
+    vf: 1.25V@150mA
+  - name: BAT54A
+    symbol: BAT54A
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BAT54A
+    package: SOT-23
+    description: 1 Pair Common Anode 1V@100mA 200mA 200mW 2uA 30V 600mA SOT-23 Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: BAT54A
+    lcsc: C7502690
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308281443_hongjiacheng-BAT54A_C7502690.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "61389"
+    stock_checked: "2026-11-02"
+    vr: 30V
+    if: 200mA
+    vf: 1V@100mA
+  - name: BAT54C,215
+    symbol: BAT54C,215
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BAT54C,215
+    package: SOT-23
+    description: 1 Pair Common Cathode 200mA 2uA@25V 30V 600mA 800mV@100mA SOT-23 Schottky Diodes
+    manufacturer: Nexperia
+    mpn: BAT54C,215
+    lcsc: C37704
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241028_Nexperia-BAT54C-215_C37704.pdf
+    datasheet_lang: en
+    status: active
+    stock: "487504"
+    stock_checked: "2026-11-02"
+    vr: 30V
+    if: 200mA
+    vf: 800mV@100mA
+  - name: BAT54S
+    symbol: BAT54S
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BAT54S
+    package: SOT-23
+    description: 1 Pair Series Connection 200mA 2uA@30V 30V 400mV@10mA 600mA SOT-23 Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: BAT54S
+    lcsc: C7420333
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310171613_hongjiacheng-BAT54S_C7420333.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "740536"
+    stock_checked: "2026-11-02"
+    vr: 30V
+    if: 200mA
+    vf: 400mV@10mA
+  - name: BAT54WS
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BAT54WS
+    package: SOD-323
+    description: -55°C~+125°C 1V@100mA 200mA 2uA 30V 600mA Standalone SOD-323 Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: BAT54WS
+    lcsc: C7502694
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308281443_hongjiacheng-BAT54WS_C7502694.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "109515"
+    stock_checked: "2026-11-02"
+    vr: 30V
+    if: 200mA
+    vf: 1V@100mA
+  - name: BAT54CW
+    symbol: BAT54CW
+    footprint: LIB_Package_TO_SOT_SMD:SOT-323_SC-70
+    value: BAT54CW
+    package: SOT-323
+    description: 1 Pair Common Cathode 1V@100mA 200mA 200mW 2uA@25V 30V 600mA SOT-323 Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: BAT54CW
+    lcsc: C22392482
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405071138_hongjiacheng-BAT54CW_C22392482.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "310306"
+    stock_checked: "2026-11-02"
+    vr: 30V
+    if: 200mA
+    vf: 1V@100mA
+  - name: BAS70,215
+    symbol: BAS70,215
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BAS70,215
+    package: SOT-23
+    description: 1 Independent 100mA 10uA@70V 1V@15mA 70V 70mA SOT-23 Schottky Diodes
+    manufacturer: Nexperia
+    mpn: BAS70,215
+    lcsc: C109295
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241025_Nexperia-BAS70-215_C109295.pdf
+    datasheet_lang: en
+    status: active
+    stock: "160308"
+    stock_checked: "2026-11-02"
+    vr: 70V
+    if: 70mA
+    vf: 1V@15mA
+  - name: B5819W
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: B5819W SL
+    package: SOD-123
+    description: 1A 40V 600mV@1A 9A Independent SOD-123 Schottky Diodes
+    manufacturer: CJ
+    mpn: B5819W SL
+    lcsc: C8598
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--B5819W-SL_C8598.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "960840"
+    stock_checked: "2026-11-02"
+    vr: 40V
+    if: 1A
+    vf: 600mV@1A
+  - name: B5819WS
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: B5819WS
+    package: SOD-323
+    description: -55°C~+150°C 10A 1A 1mA@40V 40V 600mV@1A Independent SOD-323 Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: B5819WS
+    lcsc: C7420331
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2402010510_hongjiacheng-B5819WS_C7420331.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "4831562"
+    stock_checked: "2026-11-02"
+    vr: 40V
+    if: 1A
+    vf: 600mV@1A
+  - name: BAT760-7
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BAT760-7
+    package: SOD-323
+    description: 1 Independent 1A 30V 5.5A 50uA@15V 550mV@1A SOD-323 Schottky Diodes
+    manufacturer: Diodes Incorporated
+    mpn: BAT760-7
+    lcsc: C124187
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811081720_Diodes-Incorporated-BAT760-7_C124187.pdf
+    datasheet_lang: en
+    status: active
+    stock: "13950"
+    stock_checked: "2026-11-02"
+    vr: 30V
+    if: 1A
+    vf: 550mV@1A
+  - name: RB521S30T1G
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SOD-523
+    value: RB521S30T1G
+    package: SOD-523
+    description: -55°C~+125°C 1 Independent 1A 200mA 30V 30uA@10V 500mV@200mA SOD-523 Schottky Diodes
+    manufacturer: onsemi
+    mpn: RB521S30T1G
+    lcsc: C145179
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811031710_onsemi-RB521S30T1G_C145179.pdf
+    datasheet_lang: en
+    status: active
+    stock: "62009"
+    stock_checked: "2026-11-02"
+    vr: 30V
+    if: 200mA
+    vf: 500mV@200mA
+  - name: NSR0240P2T5G
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SOD-923
+    value: NSR0240P2T5G
+    package: SOD-923
+    description: -55°C~+150°C 1 Independent 200mA 2A 40V 540mV@200mA 5uA@40V SOD-923 Schottky Diodes
+    manufacturer: onsemi
+    mpn: NSR0240P2T5G
+    lcsc: C896425
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2103221206_onsemi-NSR0240P2T5G_C896425.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5196"
+    stock_checked: "2026-11-02"
+    vr: 40V
+    if: 200mA
+    vf: 540mV@200mA
+  - name: PMEG6010ER,115
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:Nexperia_CFP3_SOD-123W
+    value: PMEG6010ER,115
+    package: SOD-123W
+    description: 1 Independent 1A 50A 530mV@1A 60V 60uA@60V SOD-123W Schottky Diodes
+    manufacturer: Nexperia
+    mpn: PMEG6010ER,115
+    lcsc: C456121
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241031_Nexperia-PMEG6010ER-115_C456121.pdf
+    datasheet_lang: en
+    status: active
+    stock: "32628"
+    stock_checked: "2026-11-02"
+    vr: 60V
+    if: 1A
+    vf: 530mV@1A
+  - name: PMEG10020ELRX
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:Nexperia_CFP3_SOD-123W
+    value: PMEG10020ELRX
+    package: SOD-123W
+    description: -65°C~+150°C 100V 150nA@100V 2A 830mV@2A Independent SOD-123W Schottky Diodes
+    manufacturer: Nexperia
+    mpn: PMEG10020ELRX
+    lcsc: C456130
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241031_Nexperia-PMEG10020ELRX_C456130.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2108"
+    stock_checked: "2026-11-02"
+    vr: 100V
+    if: 2A
+    vf: 830mV@2A
+  - name: PMEG6030EP,115
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SOD-128
+    value: PMEG6030EP,115
+    package: SOD-128
+    description: 1 Independent 200uA@60V 3A 50A 530mV@3A 60V SOD-128 Schottky Diodes
+    manufacturer: Nexperia
+    mpn: PMEG6030EP,115
+    lcsc: C456127
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010131_Nexperia-PMEG6030EP-115_C456127.pdf
+    datasheet_lang: en
+    status: active
+    stock: "13956"
+    stock_checked: "2026-11-02"
+    vr: 60V
+    if: 3A
+    vf: 530mV@3A
+  - name: B560C-13-F
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMC
+    value: B560C-13-F
+    package: SMC(DO-214AB)
+    description: -55°C~+150°C 1 Independent 100A 500uA@60V 5A 60V 700mV@5A SMC(DO-214AB) Schottky Diodes
+    manufacturer: Diodes Incorporated
+    mpn: B560C-13-F
+    lcsc: C85100
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2412251154_Diodes-Incorporated-B560C-13-F_C85100.pdf
+    datasheet_lang: en
+    status: active
+    stock: "109248"
+    stock_checked: "2026-11-02"
+    vr: 60V
+    if: 5A
+    vf: 700mV@5A
+  - name: MBRD20100CT
+    symbol: MBRD20100CT
+    footprint: LIB_Package_TO_SOT_SMD:TO-252-2
+    value: MBRD20100CT
+    package: TO-252
+    description: 1 Pair Common Cathode 100V 20A 20uA@100V 850mV@10A TO-252 Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: MBRD20100CT
+    lcsc: C49841320
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49841320.pdf
+    datasheet_lang: en
+    status: active
+    stock: "16122"
+    stock_checked: "2026-11-02"
+    vr: 100V
+    if: 20A
+    vf: 850mV@10A
+  - name: MBR230LSFT1G
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: MBR230LSFT1G
+    package: SOD-123FL
+    description: -55°C~+125°C 1 Independent 1mA@30V 2A 30V 40A 430mV@2A SOD-123FL Schottky Diodes
+    manufacturer: onsemi
+    mpn: MBR230LSFT1G
+    lcsc: C126673
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810241808_onsemi-MBR230LSFT1G_C126673.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7897"
+    stock_checked: "2026-11-02"
+    vr: 30V
+    if: 2A
+    vf: 430mV@2A
+  - name: M7
+    symbol: D
+    footprint: LIB_Diode_SMD:D_SMA
+    value: M7
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 1.1V@1A 1A 1kV 30A 5uA@1kV Independent SMA(DO-214AC) Diodes - General Purpose
+    manufacturer: MDD
+    mpn: M7
+    lcsc: C95872
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-M7_C95872.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7207374"
+    stock_checked: "2026-11-02"
+    vr: 1kV
+    if: 1A
+    vf: 1.1V@1A
+  - name: US1M
+    symbol: D
+    footprint: LIB_Diode_SMD:D_SMA
+    value: US1M
+    package: SMA
+    description: -55°C~+150°C 1 Independent 1.65V@1A 1A 1kV 30A 5uA@1kV 75ns SMA Fast Recovery / High Efficiency Diodes
+    manufacturer: MDD
+    mpn: US1M
+    lcsc: C412437
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407101111_MDD-Microdiode-Semiconductor-US1M_C412437.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2202027"
+    stock_checked: "2026-11-02"
+    vr: 1kV
+    if: 1A
+    vf: 1.65V@1A
+  - name: ES1D
+    symbol: D
+    footprint: LIB_Diode_SMD:D_SMA
+    value: ES1D
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 1 Independent 1A 1V@1A 200V 2uA@200V 30A 35ns SMA(DO-214AC) Fast Recovery / High Efficiency Diodes
+    manufacturer: hongjiacheng
+    mpn: ES1D
+    lcsc: C18199158
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2402280140_hongjiacheng-ES1D_C18199158.pdf
+    datasheet_lang: en
+    status: active
+    stock: "276726"
+    stock_checked: "2026-11-02"
+    vr: 200V
+    if: 1A
+    vf: 1V@1A
+  - name: ES1J
+    symbol: D
+    footprint: LIB_Diode_SMD:D_SMA
+    value: ES1J
+    package: SMA
+    description: -55°C~+150°C 1 Independent 1.7V@1A 1A 35ns 5uA@600V 600V SMA Fast Recovery / High Efficiency Diodes
+    manufacturer: MDD
+    mpn: ES1J
+    lcsc: C412438
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407101112_MDD-Microdiode-Semiconductor-ES1J_C412438.pdf
+    datasheet_lang: en
+    status: active
+    stock: "628752"
+    stock_checked: "2026-11-02"
+    vr: 600V
+    if: 1A
+    vf: 1.7V@1A
+  - name: ES2J
+    symbol: D
+    footprint: LIB_Diode_SMD:D_SMA
+    value: ES2J
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 1 Independent 1.7V@2A 2A 35ns 50A 5uA@600V 600V SMA(DO-214AC) Fast Recovery / High Efficiency Diodes
+    manufacturer: hongjiacheng
+    mpn: ES2J
+    lcsc: C7420341
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308281514_hongjiacheng-ES2J_C7420341.pdf
+    datasheet_lang: en
+    status: active
+    stock: "329326"
+    stock_checked: "2026-11-02"
+    vr: 600V
+    if: 2A
+    vf: 1.7V@2A
+  - name: ES3JB
+    symbol: D
+    footprint: LIB_Diode_SMD:D_SMB
+    value: ES3JB
+    package: SMB
+    description: -55°C~+150°C 1 Independent 1.7V@3A 100A 2uA@600V 35ns 3A 600V SMB Fast Recovery / High Efficiency Diodes
+    manufacturer: hongjiacheng
+    mpn: ES3JB
+    lcsc: C18199163
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309251015_hongjiacheng-ES3JB_C18199163.pdf
+    datasheet_lang: en
+    status: active
+    stock: "183364"
+    stock_checked: "2026-11-02"
+    vr: 600V
+    if: 3A
+    vf: 1.7V@3A
+  - name: US3MC
+    symbol: D
+    footprint: LIB_Diode_SMD:D_SMC
+    value: US3MC
+    package: SMC
+    description: -55°C~+150°C 1 Independent 1.7V@3A 100A 1kV 2uA@1000V 3A 75ns SMC Fast Recovery / High Efficiency Diodes
+    manufacturer: hongjiacheng
+    mpn: US3MC
+    lcsc: C18199130
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309251015_hongjiacheng-US3MC_C18199130.pdf
+    datasheet_lang: en
+    status: active
+    stock: "41726"
+    stock_checked: "2026-11-02"
+    vr: 1kV
+    if: 3A
+    vf: 1.7V@3A
+  - name: SMBJ400CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ400CA
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 400V 494V 5uA 600W@10/1000us 648V 930mA Bidirectional IEC 61000-4-2 Single-channel TVS SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ400CA
+    lcsc: C42394417
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMBJ400CA_C42394417.pdf
+    datasheet_lang: en
+    status: active
+    stock: "29375"
+    stock_checked: "2026-11-02"
+    vr: 400V
+  - name: USBLC6-2SC6
+    symbol: USBLC6-2SC6
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: USBLC6-2SC6
+    package: SOT-23-6L
+    description: -40°C~+125°C 150nA 17V 2 3.5pF 5.25V 5A 6V ESD IEC 61000-4-2 Unidirectional SOT-23-6L ESD and Surge Protection (TVS/ESD)
+    manufacturer: STMicroelectronics
+    mpn: USBLC6-2SC6
+    lcsc: C7519
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf
+    datasheet_lang: en
+    status: active
+    stock: "40611"
+    stock_checked: "2026-11-02"
+    vr: 5.25V
+  - name: USBLC6-4SC6Y
+    symbol: USBLC6-4SC6Y
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: USBLC6-4SC6Y
+    package: SOT-23-6L
+    description: -40°C~+150°C 10nA 17V 3pF 5.25V 6V ESD Four channels SOT-23-6L ESD and Surge Protection (TVS/ESD)
+    manufacturer: STMicroelectronics
+    mpn: USBLC6-4SC6Y
+    lcsc: C435848
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_STMicroelectronics-USBLC6-4SC6Y_C435848.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7736"
+    stock_checked: "2026-11-02"
+    vr: 5.25V
+  - name: SRV05-4
+    symbol: SRV05-4
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: SRV05-4
+    package: SOT-23-6L
+    description: -55°C~+150°C 15V 1pF 4A 5V 5uA 6V 80W ESD Four channels IEC 61000-4-2, IEC 61000-4-5 Unidirectional SOT-23-6L ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SRV05-4
+    lcsc: C7420376
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407101112_hongjiacheng-SRV05-4_C7420376.pdf
+    datasheet_lang: en
+    status: active
+    stock: "114052"
+    stock_checked: "2026-11-02"
+    vr: 5V
+  - name: PESD5V0S1BL,315
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-882
+    value: PESD5V0S1BL,315
+    package: DFN1006-2
+    description: -65°C~+150°C 1 12A@8/20us 130W@8/20us 14V 35pF 5V 5nA 9.5V Bidirectional ESD IEC 61000-4-2, IEC 61000-4-5 DFN1006-2 ESD and Surge Protection (TVS/ESD)
+    manufacturer: Nexperia
+    mpn: PESD5V0S1BL,315
+    lcsc: C84374
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241045_Nexperia-PESD5V0S1BL-315_C84374.pdf
+    datasheet_lang: en
+    status: active
+    stock: "67064"
+    stock_checked: "2026-11-02"
+    vr: 5V
+  - name: ESD5Z5V0
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-523
+    value: ESD5Z5V0
+    package: SOD-523
+    description: -55°C~+150°C 1 105W 15V 5V 6.2V 7A 80nA 80pF ESD IEC 61000-4-2 Unidirectional SOD-523 ESD and Surge Protection (TVS/ESD)
+    manufacturer: MDD
+    mpn: ESD5Z5V0
+    lcsc: C502546
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2408090958_MDD-Microdiode-Semiconductor-ESD5Z5V0_C502546.pdf
+    datasheet_lang: en
+    status: active
+    stock: "67999"
+    stock_checked: "2026-11-02"
+    vr: 5V
+  - name: TPD1E10B06DPYR
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_TI_X1SON-2_0.6x1.0mm
+    value: TPD1E10B06DPYR
+    package: X1-SON-2(0.6x1)
+    description: -40°C~+125°C 1 100nA 12pF 14V 5.5V 6A@8/20us 6V 90W@8/20us Bidirectional ESD IEC 61000-4-2 X1-SON-2(0.6x1) ESD and Surge Protection (TVS/ESD)
+    manufacturer: Texas Instruments
+    mpn: TPD1E10B06DPYR
+    lcsc: C48260
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809050228_Texas-Instruments-TPD1E10B06DPYR_C48260.pdf
+    datasheet_lang: en
+    status: active
+    stock: "299590"
+    stock_checked: "2026-11-02"
+    vr: 5.5V
+  - name: TPD4E05U06DQAR
+    symbol: TPD4E05U06DQAR
+    footprint: LIB_Package_SON:USON-10_2.5x1.0mm_P0.5mm
+    value: TPD4E05U06DQAR
+    package: USON-10(1x2.5)
+    description: -40°C~+125°C 0.5pF 10nA 14V 2.5A@8/20us 40W@8/20us 5.5V 6.5V ESD Four channels IEC 61000-4-2, IEC 61000-4-5, IEC 61000-4-4 Unidirectional USON-10(1x2.5) ESD and Surge Protection (TVS/ESD)
+    manufacturer: Texas Instruments
+    mpn: TPD4E05U06DQAR
+    lcsc: C138714
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811132110_Texas-Instruments-TPD4E05U06DQAR_C138714.pdf
+    datasheet_lang: en
+    status: active
+    stock: "121226"
+    stock_checked: "2026-11-02"
+    vr: 5.5V
+  - name: PESD1CAN,215
+    symbol: PESD1CAN,215
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: PESD1CAN,215
+    package: SOT-23
+    description: -65°C~+150°C 11pF 1nA 2 200W@8/20us 24V 30.3V 3A@8/20us 70V Bidirectional ESD IEC 61000-4-2, IEC 61000-4-5 SOT-23 ESD and Surge Protection (TVS/ESD)
+    manufacturer: Nexperia
+    mpn: PESD1CAN,215
+    lcsc: C15771
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811141231_Nexperia-PESD1CAN-215_C15771.pdf
+    datasheet_lang: en
+    status: active
+    stock: "123861"
+    stock_checked: "2026-11-02"
+    vr: 24V
+  - name: ESDCAN03-2BWY
+    symbol: ESDCAN03-2BWY
+    footprint: LIB_Package_TO_SOT_SMD:SOT-323_SC-70
+    value: ESDCAN03-2BWY
+    package: SOT-323-3L
+    description: -55°C~+175°C 10nA 170W@8/20us 2 24V 26.5V 3.5pF 3.7A@8/20us 41V Bidirectional TVS SOT-323-3L ESD and Surge Protection (TVS/ESD)
+    manufacturer: STMicroelectronics
+    mpn: ESDCAN03-2BWY
+    lcsc: C1973833
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-ESDCAN03-2BWY_C1973833.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2434"
+    stock_checked: "2026-11-02"
+    vr: 24V
+  - name: PRTR5V0U2X,215
+    symbol: PRTR5V0U2X,215
+    footprint: LIB_Package_TO_SOT_SMD:SOT-143
+    value: PRTR5V0U2X,215
+    package: SOT-143
+    description: -40°C~+85°C 100nA 17V 1pF 2 2.5A@8/20us 5.5V 9V ESD IEC 61000-4-2 Unidirectional SOT-143 ESD and Surge Protection (TVS/ESD)
+    manufacturer: Nexperia
+    mpn: PRTR5V0U2X,215
+    lcsc: C12333
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010302_Nexperia-PRTR5V0U2X-215_C12333.pdf
+    datasheet_lang: en
+    status: active
+    stock: "87182"
+    stock_checked: "2026-11-02"
+    vr: 5.5V
+  - name: ESDA6V1L
+    symbol: ESDA6V1L
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: ESDA6V1L
+    package: SOT-23
+    description: -40°C~+125°C 140pF 2 20uA 300W@8/20us 5.25V 6.1V 7.2V ESD IEC 61000-4-2 Unidirectional SOT-23 ESD and Surge Protection (TVS/ESD)
+    manufacturer: STMicroelectronics
+    mpn: ESDA6V1L
+    lcsc: C24378
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-ESDA6V1L_C24378.pdf
+    datasheet_lang: en
+    status: active
+    stock: "76459"
+    stock_checked: "2026-11-02"
+    vr: 5.25V
+  - name: PTVS5V0S1UR,115
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:Nexperia_CFP3_SOD-123W
+    value: PTVS5V0S1UR,115
+    package: SOD-123W
+    description: 400W 43.5A 5V 5uA 6.4V 9.2V IEC 61000-4-2 TVS Unidirectional SOD-123W ESD and Surge Protection (TVS/ESD)
+    manufacturer: Nexperia
+    mpn: PTVS5V0S1UR,115
+    lcsc: C478011
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Nexperia-PTVS5V0S1UR-115_C478011.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1111"
+    stock_checked: "2026-11-02"
+    vr: 5V
+  - name: SP0503BAHTG
+    symbol: SP0503BAHTG
+    footprint: LIB_Package_TO_SOT_SMD:SOT-143
+    value: SP0503BAHTG
+    package: SOT-143
+    description: -55°C~+125°C 100nA 30pF 5.5V 8.5V IEC 61000-4-2 TVS Three channels SOT-143 ESD and Surge Protection (TVS/ESD)
+    manufacturer: Littelfuse
+    mpn: SP0503BAHTG
+    lcsc: C7074
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811061811_Littelfuse-SP0503BAHTG_C7074.pdf
+    datasheet_lang: en
+    status: active
+    stock: "13206"
+    stock_checked: "2026-11-02"
+    vr: 5.5V

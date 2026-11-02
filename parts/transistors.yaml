@@ -1,1 +1,460 @@
-parts: []
+parts:
+  - name: MMBT3904
+    symbol: Q_NPN_BEC
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: MMBT3904(RANGE:100-300)
+    package: SOT-23
+    description: -55°C~+150°C 1 NPN 100 100nA 200mA 200mW 300MHz 300mV 40V 6V NPN SOT-23 Bipolar (BJT)
+    manufacturer: CJ
+    mpn: MMBT3904(RANGE:100-300)
+    lcsc: C20526
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2207041900_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--MMBT3904-RANGE-100-300_C20526.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2681343"
+    stock_checked: "2026-11-02"
+    type: NPN
+    v_max: 40V
+    i_max: 200mA
+  - name: MMBT3906
+    symbol: Q_PNP_BEC
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: MMBT3906
+    package: SOT-23
+    description: -55°C~+150°C 1 PNP 100 100nA 200mA 200mW 300MHz 300mV 40V 5V PNP SOT-23 Bipolar (BJT)
+    manufacturer: hongjiacheng
+    mpn: MMBT3906
+    lcsc: C7420354
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221203_hongjiacheng-MMBT3906_C7420354.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "612923"
+    stock_checked: "2026-11-02"
+    type: PNP
+    v_max: 40V
+    i_max: 200mA
+  - name: MMBT2222A
+    symbol: Q_NPN_BEC
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: MMBT2222A 1P
+    package: SOT-23
+    description: -55°C~+150°C 1 NPN 100 10nA 300MHz 300mW 40V 600mA 6V NPN SOT-23 Bipolar (BJT)
+    manufacturer: CJ
+    mpn: MMBT2222A 1P
+    lcsc: C8512
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811081957_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--MMBT2222A-1P_C8512.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "899867"
+    stock_checked: "2026-11-02"
+    type: NPN
+    v_max: 40V
+    i_max: 600mA
+  - name: MMBT2907A
+    symbol: Q_PNP_BEC
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: MMBT2907A
+    package: SOT-23
+    description: -55°C~+150°C 1 PNP 100 100nA 200MHz 250mW 400mV 5V 600mA 60V PNP SOT-23 Bipolar (BJT)
+    manufacturer: hongjiacheng
+    mpn: MMBT2907A
+    lcsc: C7420352
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221203_hongjiacheng-MMBT2907A_C7420352.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "98583"
+    stock_checked: "2026-11-02"
+    type: PNP
+    v_max: 60V
+    i_max: 600mA
+  - name: BC847C
+    symbol: Q_NPN_BEC
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BC847C
+    package: SOT-23
+    description: 1 NPN 100MHz 100mA 100nA 200mW 420 45V 500mV 6V NPN SOT-23 Bipolar (BJT)
+    manufacturer: Guangdong Hottech
+    mpn: BC847C
+    lcsc: C181141
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809211233_Guangdong-Hottech-BC847C_C181141.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "244630"
+    stock_checked: "2026-11-02"
+    type: NPN
+    v_max: 45V
+    i_max: 100mA
+  - name: BC857C
+    symbol: Q_PNP_BEC
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BC857C
+    package: SOT-23
+    description: 1 PNP 100MHz 100mA 100nA 200mW 420 45V 500mV 5V PNP SOT-23 Bipolar (BJT)
+    manufacturer: Guangdong Hottech
+    mpn: BC857C
+    lcsc: C181147
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811121711_Guangdong-Hottech-BC857C_C181147.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "34651"
+    stock_checked: "2026-11-02"
+    type: PNP
+    v_max: 45V
+    i_max: 100mA
+  - name: BC817-40
+    symbol: Q_NPN_BEC
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BC817-40
+    package: SOT-23
+    description: -55°C~+150°C 1 NPN 100 100MHz 100nA 300mW 45V 500mA 5V 700mV NPN SOT-23 Bipolar (BJT)
+    manufacturer: hongjiacheng
+    mpn: BC817-40
+    lcsc: C20069155
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404060130_hongjiacheng-BC817-40_C20069155.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "192742"
+    stock_checked: "2026-11-02"
+    type: NPN
+    v_max: 45V
+    i_max: 500mA
+  - name: BC807-40
+    symbol: Q_PNP_BEC
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BC807-40
+    package: SOT-23
+    description: -55°C~+150°C 1 PNP 100MHz 100nA 300mW 40 45V 500mA 5V 700mV PNP SOT-23 Bipolar (BJT)
+    manufacturer: hongjiacheng
+    mpn: BC807-40
+    lcsc: C20069142
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312291746_hongjiacheng-BC807-40_C20069142.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "121534"
+    stock_checked: "2026-11-02"
+    type: PNP
+    v_max: 45V
+    i_max: 500mA
+  - name: SS8050
+    symbol: Q_NPN_BEC
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: SS8050(RANGE:200-350)
+    package: SOT-23
+    description: -55°C~+150°C 1 NPN 1.5A 100MHz 100nA 200 25V 300mW 500mV 5V NPN SOT-23 Bipolar (BJT)
+    manufacturer: CJ
+    mpn: SS8050(RANGE:200-350)
+    lcsc: C2150
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2303221100_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SS8050-RANGE-200-350_C2150.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3221608"
+    stock_checked: "2026-11-02"
+    type: NPN
+    v_max: 25V
+    i_max: 1.5A
+  - name: SS8550
+    symbol: Q_PNP_BEC
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: SS8550 Y2(RANGE:200-350)
+    package: SOT-23
+    description: -55°C~+150°C 1 PNP 1.5A 100MHz 100nA 200 25V 300mW 500mV 5V PNP SOT-23 Bipolar (BJT)
+    manufacturer: CJ
+    mpn: SS8550 Y2(RANGE:200-350)
+    lcsc: C8542
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810161212_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SS8550-Y2-RANGE-200-350_C8542.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "770765"
+    stock_checked: "2026-11-02"
+    type: PNP
+    v_max: 25V
+    i_max: 1.5A
+  - name: BC847BS
+    symbol: BC847BS
+    footprint: LIB_Package_TO_SOT_SMD:SOT-363_SC-70-6
+    value: BC847BS
+    package: SOT-363
+    description: -55°C~+150°C 100MHz 100mA 100nA 2 NPN 200mW 45V 500mV 6V 800 NPN Standalone SOT-363 Bipolar (BJT)
+    manufacturer: hongjiacheng
+    mpn: BC847BS
+    lcsc: C41375126
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409041457_hongjiacheng-BC847BS_C41375126.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "80348"
+    stock_checked: "2026-11-02"
+    type: NPN
+    v_max: 45V
+    i_max: 100mA
+  - name: MMDT3904
+    symbol: MMDT3904
+    footprint: LIB_Package_TO_SOT_SMD:SOT-363_SC-70-6
+    value: MMDT3904
+    package: SOT-363
+    description: 100nA 2 NPN 200mA 200mW 300 300MHz 300mV 40V 6V NPN Standalone SOT-363 Bipolar (BJT)
+    manufacturer: hongjiacheng
+    mpn: MMDT3904
+    lcsc: C41375125
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409051048_hongjiacheng-MMDT3904_C41375125.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "59934"
+    stock_checked: "2026-11-02"
+    type: NPN
+    v_max: 40V
+    i_max: 200mA
+  - name: DTC114EKAT146
+    symbol: DTC114EKAT146
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: DTC114EKAT146
+    package: TO-236-3(SOT-23-3)
+    description: 1 1 NPN (Pre-Biased) 100mV 10kΩ 200mW 250MHz 30 300mV 3V@10mA,0.3V 500mV 50V 50mA NPN TO-236-3(SOT-23-3) Digital Transistors
+    manufacturer: ROHM
+    mpn: DTC114EKAT146
+    lcsc: C79971
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810122210_ROHM-Semicon-DTC114EKAT146_C79971.pdf
+    datasheet_lang: en
+    status: active
+    stock: "197841"
+    stock_checked: "2026-11-02"
+  - name: 2N7002
+    symbol: Q_NMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: 2N7002
+    package: SOT-23
+    description: 1 N-channel 115mA 2.5V 225mW 25pF 50pF 5pF 5Ω@10V 60V N-Channel ±20V SOT-23 MOSFETs
+    manufacturer: CJ
+    mpn: 2N7002
+    lcsc: C8545
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3311469"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 60V
+    i_max: 115mA
+    rds_on: 5Ω@10V
+  - name: 2N7002DW
+    symbol: 2N7002DW
+    footprint: LIB_Package_TO_SOT_SMD:SOT-363_SC-70-6
+    value: 2N7002DW
+    package: SOT-363
+    description: -50°C~+150°C 1.9Ω@10V 12pF 2 N-Channel 2.5V 300mA 300mW 60V 650pC@30V SOT-363 MOSFETs
+    manufacturer: Guangdong Hottech
+    mpn: 2N7002DW
+    lcsc: C5190214
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210111800_Guangdong-Hottech-2N7002DW_C5190214.pdf
+    datasheet_lang: en
+    status: active
+    stock: "156624"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 60V
+    i_max: 300mA
+    rds_on: 1.9Ω@10V
+  - name: BSS138LT1G
+    symbol: Q_NMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BSS138LT1G
+    package: SOT-23
+    description: -55°C~+150°C 1 N-channel 200mA 225mW 5.6Ω@2.75V 500mV 50V 50pF 5pF SOT-23 MOSFETs
+    manufacturer: onsemi
+    mpn: BSS138LT1G
+    lcsc: C82045
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811032002_onsemi-BSS138LT1G_C82045.pdf
+    datasheet_lang: en
+    status: active
+    stock: "556140"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 50V
+    i_max: 200mA
+    rds_on: 5.6Ω@2.75V
+  - name: BSS138BK,215
+    symbol: Q_NMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BSS138BK,215
+    package: SOT-23
+    description: -55°C~+150°C 1 N-channel 1.6V 1.6Ω@10V 350mW 360mA 56pF 60V 700pC@4.5V N-Channel SOT-23 MOSFETs
+    manufacturer: Nexperia
+    mpn: BSS138BK,215
+    lcsc: C282529
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Nexperia-BSS138BK-215_C282529.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10290"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 60V
+    i_max: 360mA
+    rds_on: 1.6Ω@10V
+  - name: BSS84
+    symbol: Q_PMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BSS84
+    package: SOT-23
+    description: -55°C~+150°C 1 P-Channel 1.4V 1.77nC@10V 170mA 2.8pF 2.9pF 3.3Ω@10V, 3.5Ω@4.5V 43pF 60V 680mW P-Channel SOT-23 MOSFETs
+    manufacturer: hongjiacheng
+    mpn: BSS84
+    lcsc: C7420340
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2306301553_hongjiacheng-BSS84_C7420340.pdf
+    datasheet_lang: en
+    status: active
+    stock: "195531"
+    stock_checked: "2026-11-02"
+    type: P-MOSFET
+    v_max: 60V
+    i_max: 170mA
+    rds_on: 3.3Ω@10V、3.5Ω@4.5V
+  - name: BSS123
+    symbol: Q_NMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: BSS123
+    package: SOT-23
+    description: -55°C~+150°C 1 N-channel 1.4V 1.4nC@10V 100V 170mA 22pF 2pF 3.5pF 680mW 6Ω@10V, 10Ω@4.5V N-Channel SOT-23 MOSFETs
+    manufacturer: hongjiacheng
+    mpn: BSS123
+    lcsc: C7420338
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308281514_hongjiacheng-BSS123_C7420338.pdf
+    datasheet_lang: en
+    status: active
+    stock: "846336"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 100V
+    i_max: 170mA
+    rds_on: 6Ω@10V、10Ω@4.5V
+  - name: AO3400A
+    symbol: Q_NMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: AO3400A
+    package: SOT-23
+    description: -55°C~+150°C 1 N-channel 1.45V 1.4W 30V 48mΩ@2.5V 5.7A 50pF 630pF 75pF 7nC@10V N-Channel SOT-23 MOSFETs
+    manufacturer: AOS
+    mpn: AO3400A
+    lcsc: C20917
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811081213_Alpha---Omega-Semicon-AO3400A_C20917.pdf
+    datasheet_lang: en
+    status: active
+    stock: "975208"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 30V
+    i_max: 5.7A
+    rds_on: 48mΩ@2.5V
+  - name: AO3401A
+    symbol: Q_PMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: AO3401A
+    package: SOT-23
+    description: 1 P-Channel 14nC@10V 30V 47mΩ@10V, 60mΩ@4.5V, 85mΩ@2.5V 4A 55pF 645pF 80pF 900mV SOT-23 MOSFETs
+    manufacturer: AOS
+    mpn: AO3401A
+    lcsc: C15127
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1713051"
+    stock_checked: "2026-11-02"
+    type: P-MOSFET
+    v_max: 30V
+    i_max: 4A
+    rds_on: 47mΩ@10V、60mΩ@4.5V、85mΩ@2.5V
+  - name: SI2301CDS-T1-GE3
+    symbol: Q_PMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: SI2301CDS-T1-GE3
+    package: SOT-23
+    description: -55°C~+150°C 1 P-Channel 1.6W 10nC@4.5V 142mΩ@2.5V 1V 20V 3.1A 405pF 55pF 75pF P-Channel SOT-23 MOSFETs
+    manufacturer: Vishay
+    mpn: SI2301CDS-T1-GE3
+    lcsc: C10487
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1808272021_Vishay-Intertech-SI2301CDS-T1-GE3_C10487.pdf
+    datasheet_lang: en
+    status: active
+    stock: "123555"
+    stock_checked: "2026-11-02"
+    type: P-MOSFET
+    v_max: 20V
+    i_max: 3.1A
+    rds_on: 142mΩ@2.5V
+  - name: DMG2305UX-13
+    symbol: Q_PMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: DMG2305UX-13
+    package: SOT-23
+    description: -55°C~+150°C 1 P-Channel 1.4W 10.2nC@4.5V 20V 40mΩ@4.5V, 52mΩ@2.5V 5A 77pF 808pF 85pF 900mV P-Channel SOT-23 MOSFETs
+    manufacturer: Diodes Incorporated
+    mpn: DMG2305UX-13
+    lcsc: C144153
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Diodes-Incorporated-DMG2305UX-13_C144153.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11810"
+    stock_checked: "2026-11-02"
+    type: P-MOSFET
+    v_max: 20V
+    i_max: 5A
+    rds_on: 40mΩ@4.5V、52mΩ@2.5V
+  - name: DMP2035U-7
+    symbol: Q_PMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: DMP2035U-7
+    package: SOT-23
+    description: -55°C~+150°C 1 P-Channel 1.61nF 145pF 15.4nC@4.5V 157pF 20V 23mΩ@4.5V, 30mΩ@2.5V, 41mΩ@1.8V 3.6A 700mV 810mW SOT-23 MOSFETs
+    manufacturer: Diodes Incorporated
+    mpn: DMP2035U-7
+    lcsc: C110499
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809191928_Diodes-Incorporated-DMP2035U-7_C110499.pdf
+    datasheet_lang: en
+    status: active
+    stock: "270891"
+    stock_checked: "2026-11-02"
+    type: P-MOSFET
+    v_max: 20V
+    i_max: 3.6A
+    rds_on: 23mΩ@4.5V、30mΩ@2.5V、41mΩ@1.8V
+  - name: IRLML2502TRPBF
+    symbol: Q_NMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: IRLML2502TRPBF
+    package: SOT-23
+    description: -55°C~+150°C 1 N-channel 1.25W 1.2V 12nC 20V 4.2A 45mΩ@4.5V 66pF 740pF 90pF N-Channel SOT-23 MOSFETs
+    manufacturer: Infineon
+    mpn: IRLML2502TRPBF
+    lcsc: C2589
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Infineon-Technologies-IRLML2502TRPBF_C2589.pdf
+    datasheet_lang: en
+    status: active
+    stock: "45036"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 20V
+    i_max: 4.2A
+    rds_on: 45mΩ@4.5V
