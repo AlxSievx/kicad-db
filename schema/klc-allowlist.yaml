@@ -126,3 +126,27 @@
   item: ["D_SOD-882", "Nexperia_CFP3_SOD-123W", "LED_WS2812B-2020_PLCC4_2.0x2.0mm", "TO-252-2"]
   rule: F6.3
   reason: Stock KiCad footprint copied unchanged (pad shape/layer details as KiCad ships them).
+
+# --- Power MOSFETs (user OK 2026-11-02) ---
+- kind: symbol
+  item: ["*:Q_NMOS_SSSGD*", "*:Q_PMOS_SSSGD*"]
+  rule: S4.3
+  reason: >-
+    Multi-lead MOSFET bases use the legacy pin stack (one visible S/D pin, the rest hidden),
+    as KiCad's own IRF7404/PSMN5R2-60YL do; native stacks need libkit pin/pad check support.
+- kind: footprint
+  item: ["LFPAK56"]
+  rule: F5.3
+  reason: Stock KiCad footprint copied unchanged (courtyard as KiCad ships it).
+- kind: footprint
+  item: ["LFPAK56", "LFPAK33"]
+  rule: F6.2
+  reason: Stock KiCad footprint copied unchanged (anchor on the package centre, not the pad centre).
+- kind: footprint
+  item: ["LFPAK56"]
+  rule: F9.2
+  reason: Stock KiCad footprint copied unchanged (solder paste margin as KiCad ships it).
+- kind: footprint
+  item: ["LFPAK56", "LFPAK33", "TDSON-8-1", "PowerPAK_SO-8_Single", "PowerPAK_SO-8L_Single", "Vishay_PowerPAK_1212-8_Single"]
+  rule: F6.3
+  reason: Stock KiCad footprint copied unchanged (pad shape/layer details as KiCad ships them).
