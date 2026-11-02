@@ -1256,3 +1256,98 @@ parts:
     v_max: 100V
     i_max: 13A
     rds_on: 205mΩ@10V
+  - name: BSZ019N03LS
+    symbol: Q_NMOS_SSSGDDDD
+    footprint: LIB_Package_SON:Infineon_PG-TSDSON-8-FL_3.3x3.3mm_P0.65mm
+    value: BSZ019N03LS
+    package: TSDSON-8FL
+    description: -55°C~+150°C 1 N-channel 1.9mΩ@10V 140pF 2.8nF 2V 30V 40A 44nC@10V 69W 960pF N-Channel TSDSON-8FL MOSFETs
+    manufacturer: Infineon
+    mpn: BSZ019N03LS
+    lcsc: C152374
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Infineon-Technologies-BSZ019N03LS_C152374.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5002"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 30V
+    i_max: 40A
+    rds_on: 1.9mΩ@10V
+  - name: BSZ075N08NS5
+    symbol: Q_NMOS_SSSGDDDD
+    footprint: LIB_Package_SON:Infineon_PG-TSDSON-8-FL_3.3x3.3mm_P0.65mm
+    value: BSZ075N08NS5
+    package: TSDSON-8FL
+    description: -55°C~+150°C 1 N-channel 2.08nF 26pF 29.5nC@10V 3.8V 69W 7.5mΩ@10V 73A 80V TSDSON-8FL MOSFETs
+    manufacturer: Infineon
+    mpn: BSZ075N08NS5
+    lcsc: C534679
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121918_Infineon-Technologies-BSZ075N08NS5_C534679.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12255"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 80V
+    i_max: 73A
+    rds_on: 7.5mΩ@10V
+  - name: BSZ097N10NS5
+    symbol: Q_NMOS_SSSGDDDD
+    footprint: LIB_Package_SON:Infineon_PG-TSDSON-8-FL_3.3x3.3mm_P0.65mm
+    value: BSZ097N10NS5
+    package: TSDSON-8FL
+    description: -55°C~+150°C 1 N-channel 100V 2.08nF 21pF 28nC@10V 3.8V 39A 69W 9.7mΩ@10V TSDSON-8FL MOSFETs
+    manufacturer: Infineon
+    mpn: BSZ097N10NS5
+    lcsc: C534697
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2005291612_Infineon-Technologies-BSZ097N10NS5_C534697.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1944"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 100V
+    i_max: 39A
+    rds_on: 9.7mΩ@10V
+  - name: BSZ067N06LS3_G
+    symbol: Q_NMOS_SSSGDDDD
+    footprint: LIB_Package_SON:Infineon_PG-TSDSON-8-FL_3.3x3.3mm_P0.65mm
+    value: BSZ067N06LS3 G
+    package: TSDSON-8FL
+    description: -55°C~+150°C 1 N-channel 2.2V 20A 3.8nF 32pF 51nC@10V 6.7mΩ@10V 60V 69W 710pF N-Channel TSDSON-8FL MOSFETs
+    manufacturer: Infineon
+    mpn: BSZ067N06LS3 G
+    lcsc: C534675
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2005291612_Infineon-Technologies-BSZ067N06LS3-G_C534675.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "2996"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 60V
+    i_max: 20A
+    rds_on: 6.7mΩ@10V
+  - name: AP30H80Q
+    symbol: Q_NMOS_SSSGDDDD
+    footprint: LIB_Package_SON:PDFN-8-1EP_3x3mm_P0.65mm
+    value: AP30H80Q
+    package: PDFN3X3-8L
+    description: -55°C~+150°C 1 N-channel 1.614nF 12mΩ@4.5V 2.5V 215pF 245pF 30V 33.7nC@10V 46W 70A PDFN3X3-8L MOSFETs
+    manufacturer: ALLPOWER
+    mpn: AP30H80Q
+    lcsc: C2828592
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2105241819_ALLPOWER-ShenZhen-Quan-Li-Semiconductor-AP30H80Q_C2828592.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "8490"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 30V
+    i_max: 70A
+    rds_on: 12mΩ@4.5V
