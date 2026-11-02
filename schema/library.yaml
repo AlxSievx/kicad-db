@@ -100,6 +100,14 @@ families:
   - {name: TestPoint}
   - {name: Fiducial}
   - {name: Package_SO}
+  - {name: Package_DFN_QFN}
+  - {name: Converter_DCDC}
+  - {name: Connector_USB}
+  - {name: Connector_Molex}
+  - {name: Connector_PinHeader_1.27mm}
+  - {name: Connector_JST}
+  - {name: Connector_PinHeader_2.54mm}
+  - {name: Connector_Samtec}
 
 # Known manufacturers for automatic part picks; parts must use the canonical
 # name. A distributor brand string matches a name case-insensitively when it

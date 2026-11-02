@@ -1,1 +1,31 @@
-parts: []
+parts:
+  - name: NUP2105LT1G
+    symbol: NUP2105LT1G
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: NUP2105LT1G
+    package: SOT-23
+    description: -55°C~+150°C 100nA 2 24V 30pF 32V 350W@8/20us 44V 8A@8/20us Bidirectional IEC 61000-4-2, IEC 61000-4-5, IEC 61000-4-4 TVS SOT-23 ESD and Surge Protection (TVS/ESD)
+    manufacturer: onsemi
+    mpn: NUP2105LT1G
+    lcsc: C14486
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811091923_onsemi-NUP2105LT1G_C14486.pdf
+    datasheet_lang: en
+    status: active
+    stock: "216867"
+    stock_checked: "2026-11-02"
+  - name: NCP18XH103F03RB
+    symbol: NCP18XH103F03RB
+    footprint: LIB_Passives_SMD:R_0603_1608Metric
+    value: NCP18XH103F03RB
+    package: "0603"
+    description: -40°C~+125°C 0.8mm 1.6mm 100mW 10kΩ 1mW/°C 310uA 3380K 3434K 3455K ±1% ±1% 0603 NTC Thermistors
+    manufacturer: Murata
+    mpn: NCP18XH103F03RB
+    lcsc: C13564
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810311113_Murata-Electronics-NCP18XH103F03RB_C13564.pdf
+    datasheet_lang: en
+    status: active
+    stock: "96834"
+    stock_checked: "2026-11-02"

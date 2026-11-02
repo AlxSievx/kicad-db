@@ -1,1 +1,106 @@
-parts: []
+parts:
+  - name: TYPE-C-31-M-12
+    symbol: TYPE-C-31-M-12
+    footprint: LIB_Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12
+    value: TYPE-C-31-M-12
+    package: SMD
+    description: -30°C~+80°C 1 10,000 cycles 16P 20V 5A 7.35mm Female Surface Mount, Right Angle Type-C SMD USB Connectors
+    manufacturer: Korean Hroparts Elec
+    mpn: TYPE-C-31-M-12
+    lcsc: C165948
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "177008"
+    stock_checked: "2026-11-02"
+  - name: "5055670671"
+    symbol: Conn_01x06_MP2
+    footprint: LIB_Connector_Molex:Molex_Micro-Lock_Plus_505567-0671_1x06-1MP_P1.25mm_Horizontal
+    value: "5055670671"
+    package: SMD,P=1.25mm
+    description: -40°C~+105°C 1 1.25mm 1.5A 1x6P 50V 6 6P Black Brass Surface Mount, Right Angle Tin UL94V-0 SMD,P=1.25mm Wire To Board Connector
+    manufacturer: MOLEX
+    mpn: "5055670671"
+    lcsc: C585388
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2406281015_MOLEX-5055670671_C585388.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "12123"
+    stock_checked: "2026-11-02"
+  - name: FTSH-107-01-L-DV-K
+    symbol: FTSH-107-01-L-DV-K
+    footprint: LIB_Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical_SMD
+    value: FTSH-107-01-L-DV-K
+    package: SMD,P=1.27mm
+    description: -55°C~+125°C 1.27mm 14P 2 2x7P 3.05mm 3.4A Black Gold Phosphor bronze Pin Header Surface Mount,Vertical SMD,P=1.27mm Pin Headers
+    manufacturer: Samtec
+    mpn: FTSH-107-01-L-DV-K
+    lcsc: C5307809
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311161804_Samtec-FTSH-107-01-L-DV-K_C5307809.pdf
+    datasheet_lang: en
+    status: active
+    stock: "742"
+    stock_checked: "2026-11-02"
+  - name: FTSH-110-01-L-DV-K
+    symbol: FTSH-110-01-L-DV-K
+    footprint: LIB_Connector_PinHeader_1.27mm:PinHeader_2x10_P1.27mm_Vertical_SMD
+    value: FTSH-110-01-L-DV-K
+    package: SMD,P=1.27mm
+    description: -55°C~+125°C 1.27mm 2 20P 2x10P 3.05mm 3.4A Black Gold Phosphor bronze Pin Header Surface Mount,Vertical SMD,P=1.27mm Pin Headers
+    manufacturer: Samtec
+    mpn: FTSH-110-01-L-DV-K
+    lcsc: C7421768
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C7421768.pdf
+    datasheet_lang: en
+    status: active
+    stock: "322"
+    stock_checked: "2026-11-02"
+  - name: S2B-PH-SM4-TB_LF_SN
+    symbol: S2B-PH-SM4-TB_LF_SN
+    footprint: LIB_Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal
+    value: S2B-PH-SM4-TB(LF)(SN)
+    package: SMD,P=2mm,Surface Mount，Right Angle
+    description: -25°C~+85°C 1 100V 1x2P 2 2A 2P 2mm 5.5mm 7.9mm 8.6mm Auxiliary Solder Pin Beige Copper alloy PA PH Surface Mount, Right Angle Tin UL94V-0 SMD,P=2mm,卧贴 Wire To Board Connector
+    manufacturer: JST
+    mpn: S2B-PH-SM4-TB(LF)(SN)
+    lcsc: C295747
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2102031704_JST-S2B-PH-SM4-TB-LF-SN_C295747.pdf
+    datasheet_lang: en
+    status: active
+    stock: "28084"
+    stock_checked: "2026-11-02"
+  - name: PZ254V-11-03P
+    symbol: PZ254V-11-03P
+    footprint: LIB_Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+    value: PZ254V-11-03P
+    package: Plugin,P=2.54mm
+    description: -40°C~+105°C 1 1x3P 2.54mm 2.5mm 250V 3A 3P 3mm 6.1mm Black Brass Gold Square pin Through Hole Plugin,P=2.54mm Pin Headers
+    manufacturer: XFCN
+    mpn: PZ254V-11-03P
+    lcsc: C2937625
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_XFCN-PZ254V-11-03P_C2937625.pdf
+    datasheet_lang: en
+    status: active
+    stock: "728468"
+    stock_checked: "2026-11-02"
+  - name: LSEM-120-03.0-F-DV-A-N-K-TR
+    symbol: Conn_02x20_Odd_Even_ZeroPadded
+    footprint: LIB_Connector_Samtec:Samtec_LSEM-120-03.0-x-DV-A-N_2x20_P0.80mm_Vertical
+    value: LSEM-120-03.0-F-DV-A-N-K-TR
+    package: SMD,P=0.8mm
+    description: -55°C~+125°C 0.8mm 1.8A 2 40P Gold Phosphor bronze Surface Mount,Vertical SMD,P=0.8mm Board-to-Board and Backplane Connector
+    manufacturer: Samtec
+    mpn: LSEM-120-03.0-F-DV-A-N-K-TR
+    lcsc: C5663733
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312012013_Samtec-LSEM-120-03-0-F-DV-A-N-K-TR_C5663733.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1"
+    stock_checked: "2026-11-02"

@@ -1,1 +1,61 @@
-parts: []
+parts:
+  - name: ISO7760FDWR
+    symbol: ISO7760FDWR
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: ISO7760FDWR
+    package: SOIC-16-300mil
+    description: -55°C~+125°C 0 100Mbps 100kV/us 11ns 2.25V~5.5V 2.25V~5.5V 5000 6 SOIC-16-300mil Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7760FDWR
+    lcsc: C2878538
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302282300_Texas-Instruments-ISO7760FDWR_C2878538.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3254"
+    stock_checked: "2026-11-02"
+  - name: ISO7721FDWV
+    symbol: ISO7721FDWV
+    footprint: LIB_Package_SO:SOIC-8_7.5x5.85mm_P1.27mm
+    value: ISO7721FDWV
+    package: SOIC-8
+    description: -55°C~+125°C 1 1 100Mbps 100kV/us 11ns 2 2.25V~5.5V 2.25V~5.5V 5000 Fail-safe output SOIC-8 Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7721FDWV
+    lcsc: C5216479
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220330_Texas-Instruments-ISO7721FDWV_C5216479.pdf
+    datasheet_lang: en
+    status: active
+    stock: "448"
+    stock_checked: "2026-11-02"
+  - name: AS5047P-ATSM
+    symbol: AS5047P-ATSM
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: AS5047P-ATSM
+    package: TSSOP-14
+    description: -40°C~+125°C 0°~360° 1.2mm 15mA 4.4mm 4.5V~5.5V 5mm Magnetic rotary position sensor No SPI TSSOP-14 Position Sensors
+    manufacturer: AMS
+    mpn: AS5047P-ATSM
+    lcsc: C962063
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304241427_AMS-AS5047P-ATSM_C962063.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5189"
+    stock_checked: "2026-11-02"
+  - name: CH340N
+    symbol: CH340N
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: CH340N
+    package: SOP-8
+    description: -20°C~+70°C 1 2Mbps 3.3V, 5V USB 2.0 USB to serial SOP-8 USB Converters
+    manufacturer: WCH
+    mpn: CH340N
+    lcsc: C2977777
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403131131_WCH-Jiangsu-Qin-Heng-CH340N_C2977777.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "49860"
+    stock_checked: "2026-11-02"

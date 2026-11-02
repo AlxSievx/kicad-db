@@ -1,0 +1,239 @@
+(footprint "Converter_DCDC_Mornsun_URB-S-6WR3_SIP-7_THT"
+	(version 20260206)
+	(generator "libkit")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40°C~+105°C 1 1.2A 1.5kV 1000uF 12mm 22mm 300kHz 5V 6W 82% 9.5mm 9V~36V Short Circuit Protection SIP,22x9.5mm Isolated Power Modules, https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405211604_YLPTEC-URB2405S-6WR3_C3031185.pdf (EasyEDA C3031185)")
+	(tags "SIP 22x9.5mm URB2405S-6WR3")
+	(property "Reference" "REF**"
+		(at 8.89 -4 0)
+		(layer "F.SilkS")
+		(uuid "b9588165-6ecf-4ad6-93df-88be05fb848b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Converter_DCDC_Mornsun_URB-S-6WR3_SIP-7_THT"
+		(at 8.89 4 0)
+		(layer "F.Fab")
+		(uuid "2bf76be4-a3b1-4ff0-8af4-155af5476dde")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 8.89 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "976b62b6-a827-4974-bdb2-90345313ec86")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 8.89 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "08d76c5e-1683-44ff-9d4f-52c28ce39b7d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.11 -2.7)
+		(end 19.89 -2.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c7857812-ff2f-4f9e-a2b5-253dc381fa50")
+	)
+	(fp_line
+		(start -2.11 6.8)
+		(end -2.11 -2.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a6b8a7a7-bba5-45e2-8c69-b5ec0cb58b3f")
+	)
+	(fp_line
+		(start 19.89 -2.7)
+		(end 19.89 6.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "449f381f-92d6-4bf9-b5e1-1c1bec65c41e")
+	)
+	(fp_line
+		(start 19.89 6.8)
+		(end -2.11 6.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e352ef4b-fe2f-4dc1-a4d7-81f7b6af668b")
+	)
+	(fp_circle
+		(center -2.11 -2.7)
+		(end -2.08 -2.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "85803d73-5fd3-470c-bb2e-a9e8de6bdd6b")
+	)
+	(fp_circle
+		(center -0.89 -1.65)
+		(end -0.64 -1.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "df928d74-f646-433c-b6bc-82bc7a86919f")
+	)
+	(fp_line
+		(start -2.11 -2.7)
+		(end 19.89 -2.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -2.11 6.8)
+		(end -2.11 -2.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 19.89 -2.7)
+		(end 19.89 6.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 19.89 6.8)
+		(end -2.11 6.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -2.36 -2.95)
+		(end 20.14 7.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 8.89 2.05 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "db49f123-3f2f-426d-8a31-bd74a3cd2d58")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.8 1.8)
+		(drill 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a3e89a69-04bd-432d-977c-2803b28da5a2")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 1.8 1.8)
+		(drill 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a1de4a5b-839e-43a9-8293-0ccc815f1d70")
+	)
+	(pad "5" thru_hole circle
+		(at 10.16 0)
+		(size 1.8 1.8)
+		(drill 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "52f0032a-8e17-4c8c-8b3e-effb57f1e3b0")
+	)
+	(pad "6" thru_hole circle
+		(at 12.7 0)
+		(size 1.8 1.8)
+		(drill 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8b972164-1e46-4446-929a-cd1851a185db")
+	)
+	(pad "7" thru_hole circle
+		(at 15.24 0)
+		(size 1.8 1.8)
+		(drill 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "11626737-030f-44dd-94bd-8eff0b7ae024")
+	)
+	(pad "8" thru_hole circle
+		(at 17.78 0)
+		(size 1.8 1.8)
+		(drill 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "115a81fb-b90f-4387-b290-473491ab562f")
+	)
+	(embedded_fonts no)
+	(model "${LIB_DIR}/3dmodels/LIB_Converter_DCDC.3dshapes/Converter_DCDC_Mornsun_URB-S-6WR3_SIP-7_THT.step"
+		(offset (xyz 8.89 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,1 +1,91 @@
-parts: []
+parts:
+  - name: DRV8353HRTAR
+    symbol: DRV8353HRTAR
+    footprint: LIB_Package_DFN_QFN:Texas_RTA0040A_WQFN-40-1EP_6x6mm_P0.5mm
+    value: DRV8353HRTAR
+    package: WQFN-40-EP(6x6)
+    description: -40°C~+125°C 1.5V 20uA 25ns 25ns 3 700mA 700mA 800mV 9V~75V MOSFET Three Phase Under Voltage Protection, Over Current Protection, Overtemperature protection (OTP) WQFN-40-EP(6x6) Gate Drivers
+    manufacturer: Texas Instruments
+    mpn: DRV8353HRTAR
+    lcsc: C2150766
+    jlc_type: Extended
+    datasheet: https://datasheet.lcsc.com/lcsc/2302281030_Texas-Instruments-DRV8353HRTAR_C2150766.pdf
+    datasheet_lang: en
+    status: active
+    stock: "145"
+    stock_checked: "2026-11-02"
+  - name: LM5060MM_NOPB
+    symbol: LM5060MM_NOPB
+    footprint: LIB_Package_SO:MSOP-10_3x3mm_P0.5mm
+    value: LM5060MM/NOPB
+    package: VSSOP-10-0.5mm
+    description: -40°C~+125°C 5.5V~65V Active Low 过压保护, 欠压锁定, 集成电荷泵, Overcurrent Protection, 锁存保护 VSSOP-10-0.5mm Power Distribution Switches
+    manufacturer: Texas Instruments
+    mpn: LM5060MM/NOPB
+    lcsc: C74456
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-LM5060MM-NOPB_C74456.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3816"
+    stock_checked: "2026-11-02"
+  - name: LMR38020SDDAR
+    symbol: LMR38020SDDAR
+    footprint: LIB_Package_SO:TI_SO-PowerPAD-8
+    value: LMR38020SDDAR
+    package: SOP-8-EP
+    description: -40°C~+150°C@(TJ) 1 1V~75V 2.2MHz 2A 4.2V~80V 40uA Adjustable Buck Buck Built-in Yes SOP-8-EP DC-DC Converters
+    manufacturer: Texas Instruments
+    mpn: LMR38020SDDAR
+    lcsc: C3192337
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302282230_Texas-Instruments-LMR38020SDDAR_C3192337.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5431"
+    stock_checked: "2026-11-02"
+  - name: TLV76050DBZR
+    symbol: TLV76050DBZR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: TLV76050DBZR
+    package: SOT-23
+    description: -40°C~+125°C@(Tj) 1 1.2V@(100mA) 100mA 30V 5V 5mA Fixed Over Current Protection, Over Temperature Protection Positive SOT-23 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TLV76050DBZR
+    lcsc: C2867465
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220700_Texas-Instruments-TLV76050DBZR_C2867465.pdf
+    datasheet_lang: en
+    status: active
+    stock: "738"
+    stock_checked: "2026-11-02"
+  - name: TLV75733PDYDR
+    symbol: TLV75733PDYDR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5_TLV757P_DYD
+    value: TLV75733PDYDR
+    package: SOT-23-5
+    description: -40°C~+125°C 1 1A 25uA 3.3V 425mV@(1A) 46dB@(100kHz) 5.5V 71.5uVrms Fixed Over Current Protection, Thermal Shutdown, Input undervoltage protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TLV75733PDYDR
+    lcsc: C22399950
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C22399950.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "15251"
+    stock_checked: "2026-11-02"
+  - name: UCC27517DBVR
+    symbol: UCC27517DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: UCC27517DBVR
+    package: SOT-23-5
+    description: -40°C~+140°C 1 1V~1.2V 2.2V~2.4V 4.5V~18V 4A 4A 7ns 8ns IGBT, MOSFET Low Side Under Voltage Protection SOT-23-5 Gate Drivers
+    manufacturer: Texas Instruments
+    mpn: UCC27517DBVR
+    lcsc: C99395
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2303021300_Texas-Instruments-UCC27517DBVR_C99395.pdf
+    datasheet_lang: en
+    status: active
+    stock: "21540"
+    stock_checked: "2026-11-02"

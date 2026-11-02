@@ -1351,3 +1351,41 @@ parts:
     v_max: 30V
     i_max: 70A
     rds_on: 12mΩ@4.5V
+  - name: BSC027N10NS5
+    symbol: Q_NMOS_SSSGD
+    footprint: LIB_Package_TO_SOT_SMD:TDSON-8-1
+    value: BSC027N10NS5
+    package: TDSON-8-EP(5x6)
+    description: -55°C~+175°C 1 N-channel 100A 100V 2.1mΩ@10V, 2.6mΩ@6V 3V 3W 43pF 6.3nF 89nC@10V 970pF N-Channel TDSON-8-EP(5x6) MOSFETs
+    manufacturer: Infineon
+    mpn: BSC027N10NS5
+    lcsc: C534315
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2005291339_Infineon-Technologies-BSC027N10NS5_C534315.pdf
+    datasheet_lang: en
+    status: active
+    stock: "751"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 100V
+    i_max: 100A
+    rds_on: 2.7mΩ@10V
+  - name: IPT015N10N5
+    symbol: Q_NMOS_GSD
+    footprint: LIB_Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1
+    value: IPT015N10N5
+    package: HSOF-8
+    description: -55°C~+175°C 1 N-channel 100V 140pF 16nF 2.3nF 211nC@10V 2mΩ@6V 3.8V 300A 375W N-Channel HSOF-8 MOSFETs
+    manufacturer: Infineon
+    mpn: IPT015N10N5
+    lcsc: C108964
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810010717_Infineon-Technologies-IPT015N10N5_C108964.pdf
+    datasheet_lang: en
+    status: active
+    stock: "39818"
+    stock_checked: "2026-11-02"
+    type: N-MOSFET
+    v_max: 100V
+    i_max: 300A
+    rds_on: 2mΩ@6V

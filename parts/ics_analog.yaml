@@ -1,1 +1,91 @@
-parts: []
+parts:
+  - name: AMC3302DWER
+    symbol: AMC3302DWER
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: AMC3302DWER
+    package: SOIC-16
+    description: -40°C~+125°C 15uV 340kHz 41 4250 95kV/us Differential Isolated ΔΣ (Sigma-Delta) modulator, Fault detection, Full-differential topology, Integrated digital interface, Single-supply isolation, Integrated isolated power supply ±50mV SOIC-16 Isolation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: AMC3302DWER
+    lcsc: C4990160
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2302220400_Texas-Instruments-AMC3302DWER_C4990160.pdf
+    datasheet_lang: en
+    status: active
+    stock: "442"
+    stock_checked: "2026-11-02"
+  - name: AMC3330DWER
+    symbol: AMC3330DWER
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: AMC3330DWER
+    package: SOIC-16
+    description: -40°C~+125°C 2 2.5nA 375kHz 4250 50uV 85kV/us Differential Isolated ΔΣ (Sigma-Delta) modulator, Fault detection, Full-differential topology, Single-supply isolation, Integrated isolated power supply SOIC-16 Isolation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: AMC3330DWER
+    lcsc: C2999368
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220530_Texas-Instruments-AMC3330DWER_C2999368.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2819"
+    stock_checked: "2026-11-02"
+  - name: AMC1311BDWVR
+    symbol: AMC1311BDWVR
+    footprint: LIB_Package_SO:SOIC-8_7.5x5.85mm_P1.27mm
+    value: AMC1311BDWVR
+    package: SOIC-8-300mil
+    description: -55°C~+125°C 1.5mV 3.5nA 3uV/°C Transimpedance Amplifier SOIC-8-300mil Special Purpose Amplifiers
+    manufacturer: Texas Instruments
+    mpn: AMC1311BDWVR
+    lcsc: C783598
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121900_Texas-Instruments-AMC1311BDWVR_C783598.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7372"
+    stock_checked: "2026-11-02"
+  - name: TLV1702AIDGKR
+    symbol: TLV1702AIDGKR
+    footprint: LIB_Package_SO:VSSOP-8_3x3mm_P0.65mm
+    value: TLV1702AIDGKR
+    package: VSSOP-8
+    description: -18V~-1.1V, 1.1V~18V -40°C~+125°C 0.37us 0.5nA 2 2.2V~36V 20uV/°C 3.5mV 36V 55uA 560ns 5nA Open Collector Rail-to-Rail Input VSSOP-8 Comparators
+    manufacturer: Texas Instruments
+    mpn: TLV1702AIDGKR
+    lcsc: C2870937
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010300_Texas-Instruments-TLV1702AIDGKR_C2870937.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3145"
+    stock_checked: "2026-11-02"
+  - name: LM4040AIM3X-2.5_NOPB
+    symbol: LM4040AIM3X-2.5_NOPB
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: LM4040AIM3X-2.5/NOPB
+    package: SOT-23
+    description: -40°C~+85°C@(Ta) 100ppm/°C 15mA 2.5V 35uVrms 60uA 60uA Fixed Parallel ±0.1% SOT-23 Voltage Reference
+    manufacturer: Texas Instruments
+    mpn: LM4040AIM3X-2.5/NOPB
+    lcsc: C111866
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303021300_Texas-Instruments-LM4040AIM3X-2-5-NOPB_C111866.pdf
+    datasheet_lang: en
+    status: active
+    stock: "28794"
+    stock_checked: "2026-11-02"
+  - name: REF3025EAIDBZR
+    symbol: REF3025EAIDBZR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: REF3025EAIDBZR
+    package: SOT-23-3
+    description: SOT-23-3 Voltage Reference
+    manufacturer: Texas Instruments
+    mpn: REF3025EAIDBZR
+    lcsc: C53222239
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C53222239.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "800"
+    stock_checked: "2026-11-02"

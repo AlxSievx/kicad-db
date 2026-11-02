@@ -12459,3 +12459,20 @@ parts:
     tolerance: ±1%
     power: 2W
     tempco: ±50ppm/°C
+  - name: R_0.5mR_2512_1pct
+    symbol: R
+    footprint: LIB_Passives_SMD:R_2512_6332Metric
+    value: 0.5mR
+    package: "2512"
+    manufacturer: Vishay
+    mpn: WSLF2512L5000FEA
+    lcsc: C844703
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312131902_Vishay-Intertech-WSLF2512L5000FEA_C844703.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6454"
+    stock_checked: "2026-11-02"
+    tolerance: ±1%
+    power: 6W
+    tempco: ±200ppm/°C

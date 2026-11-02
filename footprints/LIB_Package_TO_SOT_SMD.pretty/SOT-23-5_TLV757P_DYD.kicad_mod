@@ -1,0 +1,185 @@
+(footprint "SOT-23-5_TLV757P_DYD"
+	(version 20260206)
+	(generator "libkit")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40°C~+125°C 1 1A 25uA 3.3V 425mV@(1A) 46dB@(100kHz) 5.5V 71.5uVrms Fixed Over Current Protection, Thermal Shutdown, Input undervoltage protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators, https://www.lcsc.com/datasheet/C22399950.pdf (EasyEDA C22399950)")
+	(tags "SOT-23-5 TLV75733PDYDR")
+	(property "Reference" "REF**"
+		(at 0 -5.2 0)
+		(layer "F.SilkS")
+		(uuid "4a05d357-7330-4e3c-ae47-15c4c96140c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOT-23-5_TLV757P_DYD"
+		(at 0 5.2 0)
+		(layer "F.Fab")
+		(uuid "40c01093-afa0-4b74-9d44-23dc14c03fad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a9e352e6-a419-48a2-851f-78f7782a3e63")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b66fd8cc-0d43-465a-b5d5-fa3f7692c1d5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.52 -0.7)
+		(end -1.52 0.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cf81434d-4846-4712-8444-09d8f6c761f1")
+	)
+	(fp_line
+		(start -0.38 -0.89)
+		(end 0.38 -0.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "69f0d56a-8b1d-453e-b6d3-5344075d4fbf")
+	)
+	(fp_line
+		(start 1.4 -0.42)
+		(end 1.4 0.42)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "82c9e46c-50b5-476c-9d92-7614096e943f")
+	)
+	(fp_circle
+		(center -1.45 1.4)
+		(end -1.42 1.4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "86edb01c-6b1a-4051-b03d-e4d38211a765")
+	)
+	(fp_line
+		(start -1.52 -0.7)
+		(end -1.52 0.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.38 -0.89)
+		(end 0.38 -0.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.4 -0.42)
+		(end 1.4 0.42)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -1.77 -1.95)
+		(end 1.65 1.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.06 -0.095 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.096)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.95 1.2)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "018bb1c4-063c-498a-89d0-6b952295ecb6")
+	)
+	(pad "2" smd roundrect
+		(at 0 1.2)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "ecf2f861-c50f-49cb-a9d6-f0d6e35abc42")
+	)
+	(pad "3" smd roundrect
+		(at 0.95 1.2)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "8ee5c224-5bc0-406e-a476-064219d23714")
+	)
+	(pad "4" smd roundrect
+		(at 0.95 -1.2)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "8d577bdf-4e36-4c4c-b1ca-5675fc11b7c0")
+	)
+	(pad "5" smd roundrect
+		(at -0.95 -1.2)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "521ab61f-db6b-4b07-a95d-9058eee365c1")
+	)
+	(pad "6" smd roundrect
+		(at 0 0 90)
+		(size 0.975 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c0805fae-31fd-41d9-a566-c5abb9db63f5")
+	)
+	(embedded_fonts no)
+)

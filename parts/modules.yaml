@@ -1,1 +1,16 @@
-parts: []
+parts:
+  - name: URB2405S-6WR3
+    symbol: URB2405S-6WR3
+    footprint: LIB_Converter_DCDC:Converter_DCDC_Mornsun_URB-S-6WR3_SIP-7_THT
+    value: URB2405S-6WR3
+    package: SIP,22x9.5mm
+    description: -40°C~+105°C 1 1.2A 1.5kV 1000uF 12mm 22mm 300kHz 5V 6W 82% 9.5mm 9V~36V Short Circuit Protection SIP,22x9.5mm Isolated Power Modules
+    manufacturer: YLPTEC
+    mpn: URB2405S-6WR3
+    lcsc: C3031185
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405211604_YLPTEC-URB2405S-6WR3_C3031185.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6843"
+    stock_checked: "2026-11-02"

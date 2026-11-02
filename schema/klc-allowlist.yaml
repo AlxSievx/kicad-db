@@ -150,3 +150,110 @@
   item: ["LFPAK56", "LFPAK33", "TDSON-8-1", "PowerPAK_SO-8_Single", "PowerPAK_SO-8L_Single", "Vishay_PowerPAK_1212-8_Single"]
   rule: F6.3
   reason: Stock KiCad footprint copied unchanged (pad shape/layer details as KiCad ships them).
+
+# --- uCCxServo ICs and connectors (step 3, user OK pending) ---
+- kind: symbol
+  item: ["*:DRV8353HRTAR", "*:AMC1311BDWVR"]
+  rule: S4.4
+  reason: >-
+    KLC guesses power pins from names: DRV8353 DVDD is the internal LDO output (power_out),
+    AMC1311 VIN is the analog signal input and VOUTP/VOUTN are signal outputs; typed as the datasheet defines them.
+- kind: symbol
+  item: ["*:URB2405S-6WR3"]
+  rule: S4.5
+  reason: The SIP module has no pin 4 (pin missing in the package), so the symbol has none.
+- kind: symbol
+  item: ["*:TYPE-C-31-M-12"]
+  rule: S4.4
+  reason: Stock KiCad USB_C_Receptacle_USB2.0_16P copied unchanged (VBUS/GND types, legacy pin stacks, unused SBU-side pins omitted).
+- kind: symbol
+  item: ["*:TYPE-C-31-M-12"]
+  rule: S4.3
+  reason: Stock KiCad USB_C_Receptacle_USB2.0_16P copied unchanged (VBUS/GND types, legacy pin stacks, unused SBU-side pins omitted).
+- kind: symbol
+  item: ["*:TYPE-C-31-M-12"]
+  rule: S4.5
+  reason: Stock KiCad USB_C_Receptacle_USB2.0_16P copied unchanged (VBUS/GND types, legacy pin stacks, unused SBU-side pins omitted).
+- kind: symbol
+  item: ["*:TYPE-C-31-M-12"]
+  rule: S3.6
+  reason: Stock KiCad USB_C_Receptacle_USB2.0_16P copied unchanged (VBUS/GND types, legacy pin stacks, unused SBU-side pins omitted).
+- kind: symbol
+  item: ["*:TYPE-C-31-M-12"]
+  rule: EC01
+  reason: Stock KiCad USB_C_Receptacle_USB2.0_16P copied unchanged (VBUS/GND types, legacy pin stacks, unused SBU-side pins omitted).
+- kind: symbol
+  item: ["*:TLV1702AIDGKR"]
+  rule: S3.1
+  reason: Stock KiCad Comparator:LM393 (same dual-comparator pinout) copied unchanged; power unit off-centre, unnamed pins.
+- kind: symbol
+  item: ["*:TLV1702AIDGKR"]
+  rule: S3.6
+  reason: Stock KiCad Comparator:LM393 (same dual-comparator pinout) copied unchanged; power unit off-centre, unnamed pins.
+- kind: symbol
+  item: ["*:TLV1702AIDGKR"]
+  rule: S4.1
+  reason: Stock KiCad Comparator:LM393 (same dual-comparator pinout) copied unchanged; power unit off-centre, unnamed pins.
+- kind: symbol
+  item: ["*:ISO7760FDWR"]
+  rule: S3.1
+  reason: Stock KiCad Isolator:ISO7760DW copied unchanged (origin slightly off-centre).
+- kind: symbol
+  item: ["*:AMC3330DWER", "*:REF3025EAIDBZR", "*:AS5047P-ATSM"]
+  rule: S4.2
+  reason: >-
+    Stock KiCad symbols (Isolator_Analog:AMC3330, Reference_Voltage:REF3025, Sensor_Magnetic:AS5047D)
+    copied unchanged; KLC's power-converter heuristic misreads their supply pins.
+- kind: symbol
+  item: ["*:AMC3330DWER", "*:REF3025EAIDBZR", "*:AS5047P-ATSM"]
+  rule: S3.6
+  reason: >-
+    Stock KiCad symbols (Isolator_Analog:AMC3330, Reference_Voltage:REF3025, Sensor_Magnetic:AS5047D)
+    copied unchanged; KLC's power-converter heuristic misreads their supply pins.
+- kind: symbol
+  item: ["*:S2B-PH-SM4-TB_LF_SN", "*:FTSH-107-01-L-DV-K", "*:FTSH-110-01-L-DV-K", "*:PZ254V-11-03P"]
+  rule: S3.1
+  reason: Stock KiCad Connector_Generic symbols copied unchanged (origin and outline width as KiCad ships them).
+- kind: symbol
+  item: ["*:S2B-PH-SM4-TB_LF_SN", "*:FTSH-107-01-L-DV-K", "*:FTSH-110-01-L-DV-K", "*:PZ254V-11-03P"]
+  rule: S3.3
+  reason: Stock KiCad Connector_Generic symbols copied unchanged (origin and outline width as KiCad ships them).
+- kind: symbol
+  item: ["*:NCP18XH103F03RB"]
+  rule: S3.3
+  reason: Stock KiCad Device:Thermistor_NTC copied unchanged (reference TH, unnamed pins, no fill).
+- kind: symbol
+  item: ["*:NCP18XH103F03RB"]
+  rule: S4.1
+  reason: Stock KiCad Device:Thermistor_NTC copied unchanged (reference TH, unnamed pins, no fill).
+- kind: symbol
+  item: ["*:NCP18XH103F03RB"]
+  rule: S6.1
+  reason: Stock KiCad Device:Thermistor_NTC copied unchanged (reference TH, unnamed pins, no fill).
+- kind: footprint
+  item: ["PinHeader_1x03_P2.54mm_Vertical", "PinHeader_2x07_P1.27mm_Vertical_SMD", "PinHeader_2x10_P1.27mm_Vertical_SMD"]
+  rule: F9.1
+  reason: Stock KiCad pin-header footprints copied unchanged (generic, no datasheet URL; pad shape as shipped).
+- kind: footprint
+  item: ["PinHeader_1x03_P2.54mm_Vertical", "PinHeader_2x07_P1.27mm_Vertical_SMD", "PinHeader_2x10_P1.27mm_Vertical_SMD"]
+  rule: F6.3
+  reason: Stock KiCad pin-header footprints copied unchanged (generic, no datasheet URL; pad shape as shipped).
+- kind: footprint
+  item: ["Infineon_PG-HSOF-8-1", "TI_SO-PowerPAD-8"]
+  rule: F6.3
+  reason: Stock KiCad footprints copied unchanged (pad shapes, line widths and paste margin as KiCad ships them).
+
+- kind: footprint
+  item: ["Infineon_PG-HSOF-8-1", "TI_SO-PowerPAD-8"]
+  rule: F5.1
+  reason: Stock KiCad footprints copied unchanged (pad shapes, line widths and paste margin as KiCad ships them).
+
+- kind: footprint
+  item: ["Infineon_PG-HSOF-8-1", "TI_SO-PowerPAD-8"]
+  rule: F5.2
+  reason: Stock KiCad footprints copied unchanged (pad shapes, line widths and paste margin as KiCad ships them).
+
+- kind: footprint
+  item: ["Infineon_PG-HSOF-8-1", "TI_SO-PowerPAD-8"]
+  rule: F9.2
+  reason: Stock KiCad footprints copied unchanged (pad shapes, line widths and paste margin as KiCad ships them).
