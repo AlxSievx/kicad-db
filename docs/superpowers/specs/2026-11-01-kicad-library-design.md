@@ -185,6 +185,12 @@ tier), power inductors as whole manufacturer series per size (Sunlord SWPA), nam
 footprint per series. The Altium library's Coilcraft LPS3015 and Würth WE-LHMI parts are no longer
 stocked at JLC and are replaced by these series.
 
+Decided 2026-11-02 (Plan 8): discretes are bulk-added as MPN series (`BZT52C{}` × Zener values, SMF/SMAJ/SMBJ
+`{}A`/`{}CA` × TVS values), one part per MPN by the same rules, named by MPN, each built like a single add.
+Diodes, LEDs and SOT-23-like transistors take KiCad's stock footprint of their package; unidirectional TVS
+use the `D_Zener` base as in KiCad's stock library. Chinese makers (hongjiacheng, CJ, MDD, KENTO, …) are
+known manufacturers: they are most of JLC's Basic/Preferred discretes.
+
 **Generated into each symbol:** Reference, Value, Footprint, Datasheet,
 Description, Manufacturer, MPN, LCSC, JLC_Type, category fields, and
 **Keywords** built automatically from the data: value in several spellings
