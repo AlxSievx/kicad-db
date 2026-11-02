@@ -27,7 +27,7 @@ from pathlib import Path
 from . import importer, jlc
 from .build import build
 from .datasheet import Checker
-from .discretes import Discrete, classify
+from .discretes import Discrete, classify, stock_footprint
 from .entries import KINDS, POLAR, NAME_CHARS, _attr, is_chip, kind_of, manufacturer_name, mpn_name, passive_entry
 from .jlc import JlcPart, datasheet_url
 from .kicad import find_kicad_cli, kicad_share
@@ -279,6 +279,9 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
         if category not in schema.categories:
             raise ValueError(f"--category is required: one of {', '.join(schema.categories)}")
         symbol = symbol or (KINDS[kind][1] if kind else None)  # None: decided by the footprint's pads
+        mapped = stock_footprint(part) if disc is not None and not footprint else None
+        if mapped:  # plan 8: a discrete in a known package takes KiCad's stock footprint
+            footprint, family = f"stock:{mapped[0]}", family or mapped[1]
         footprint = footprint or "easyeda"
         share = Path(kicad_share_dir) if kicad_share_dir else kicad_share()
         fetched = None
