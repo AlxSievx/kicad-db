@@ -99,6 +99,7 @@ families:
   - {name: MountingHole}
   - {name: TestPoint}
   - {name: Fiducial}
+  - {name: Package_SO}
 
 # Known manufacturers for automatic part picks; parts must use the canonical
 # name. A distributor brand string matches a name case-insensitively when it

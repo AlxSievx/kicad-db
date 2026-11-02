@@ -36,6 +36,13 @@
 		(descr "MountingHole")
 	)
 	(lib
+		(name "LIB_Package_SO")
+		(type "KiCad")
+		(uri "${LIB_DIR}/footprints/LIB_Package_SO.pretty")
+		(options "")
+		(descr "Package SO")
+	)
+	(lib
 		(name "LIB_Package_SON")
 		(type "KiCad")
 		(uri "${LIB_DIR}/footprints/LIB_Package_SON.pretty")
