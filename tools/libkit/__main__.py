@@ -136,6 +136,14 @@ def _bulk_add(args) -> int:
     from .entries import KINDS
     from .values import parse_value
     from .polar import CANS, CASES
+    if args.kind == "discrete":
+        return _bulk_discrete(args)
+    if args.mpn or args.values:
+        raise ValueError("--mpn and --values apply to discretes only")
+    if not (args.series and args.start and args.stop):
+        raise ValueError(f"{args.kind}s need --series, --from and --to")
+    if args.package and args.kind in ("resistor", "capacitor", "bead", "inductor") and args.package not in METRIC:
+        raise ValueError(f"--package {args.package}: one of {', '.join(sorted(METRIC))}")
     root = find_root()
     unit = KINDS[args.kind][2]
     if args.kind == "capacitor" and args.voltage is None:
@@ -202,6 +210,50 @@ def _bulk_add(args) -> int:
     clear_plan(root, args.kind, args.package)
     print(f"added {n} parts to parts/{KINDS[args.kind][0]}.yaml from the dry run of "
           f"{created.astimezone():%Y-%m-%d %H:%M} ({count['exists']} existing, {count['none']} without a part"
+          + (f", {count['skipped']} skipped" if count["skipped"] else "") + ")")
+    return 0
+
+
+def _bulk_discrete(args) -> int:
+    from . import discrete_series as ds
+    from .datasheet import Checker
+    from .discretes import FOOTPRINTS
+    from .series import mpn_values
+    other = [o for o in ("series", "start", "stop", "case", "can", "family", "tolerance", "voltage", "min_power")
+             if getattr(args, o)]
+    if other:
+        raise ValueError(f"--{other[0].replace('_', '-')} does not apply to discretes")
+    if not args.mpn or not args.values:
+        raise ValueError("discretes need --mpn (e.g. BZT52C{}) and --values (zener, tvs or 14,16,110)")
+    if args.package not in FOOTPRINTS:
+        raise ValueError(f"discretes need --package, one of {', '.join(FOOTPRINTS)}")
+    if args.skip and not args.write:
+        raise ValueError("--skip only applies with --write (the dry run keeps every row)")
+    root = find_root()
+    run = dict(pattern=args.mpn, values=mpn_values(args.values), package=args.package)
+    if args.write:
+        rows, created = ds.load_plan(root, run)
+        if args.skip:
+            rows = ds.skip_rows(rows, [v for v in args.skip.split(",") if v.strip()])
+    else:
+        rows = ds.plan(root, **run, lang=Checker(root).for_part)
+    table = [("value", "name", "status", "LCSC", "manufacturer", "package", "type", "ds", "stock", "note")]
+    for r in rows:
+        e = r.entry or {}
+        table.append((r.value, r.name or "-", r.status, e.get("lcsc", "-"), e.get("manufacturer", "-"),
+                      e.get("package", "-"), e.get("jlc_type", "-"), e.get("datasheet_lang", "-"),
+                      e.get("stock", "-"), r.note))
+    _table(table)
+    count = {s: sum(r.status == s for r in rows) for s in ("new", "exists", "none", "skipped")}
+    if not args.write:
+        ds.save_plan(root, run, rows)
+        print(f"dry run: {count['new']} new, {count['exists']} existing, {count['none']} without a part"
+              " — rerun with --write to add exactly these")
+        return 0
+    n = ds.apply(root, run, rows)
+    ds.clear(root, run)
+    print(f"added {n} parts from the dry run of {created.astimezone():%Y-%m-%d %H:%M} "
+          f"({count['exists']} existing, {count['none']} without a part"
           + (f", {count['skipped']} skipped" if count["skipped"] else "") + ")")
     return 0
 
@@ -343,12 +395,15 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(func=_vendor_sym)
 
     p = sub.add_parser("bulk-add", help="add resistors or capacitors for a value series (dry run by default)")
-    p.add_argument("kind", choices=["resistor", "capacitor", "tantalum", "electrolytic", "bead", "inductor"])
-    p.add_argument("--series", required=True, choices=["E6", "E12", "E24", "E48", "E96", "FB"],
+    p.add_argument("kind", choices=["resistor", "capacitor", "tantalum", "electrolytic", "bead", "inductor",
+                                    "discrete"])
+    p.add_argument("--series", choices=["E6", "E12", "E24", "E48", "E96", "FB"],
                    help="FB = bead impedances 30R…2200R")
-    p.add_argument("--from", dest="start", required=True, help="first value, e.g. 1k or 10n")
-    p.add_argument("--to", dest="stop", required=True, help="last value (inclusive)")
-    p.add_argument("--package", choices=sorted(METRIC), help="resistors/capacitors: chip size")
+    p.add_argument("--from", dest="start", help="first value, e.g. 1k or 10n")
+    p.add_argument("--to", dest="stop", help="last value (inclusive)")
+    p.add_argument("--package", help="chip size (0402…), or for discretes the package (SOD-123, SMA, …)")
+    p.add_argument("--mpn", help="discrete: MPN pattern with {} for the value, e.g. BZT52C{}")
+    p.add_argument("--values", help="discrete: zener, tvs, or a comma list of value codes, e.g. 14,16,110")
     p.add_argument("--case", help="tantalum: case A, B, C or D")
     p.add_argument("--can", help="electrolytic: can 5x5.4, 6.3x5.4, 6.3x7.7, 8x10.5 or 10x10.5")
     p.add_argument("--family", help="inductor: power-inductor series, e.g. SWPA4030S (footprint imported first)")

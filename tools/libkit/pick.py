@@ -149,6 +149,33 @@ def pick(need: Need, candidates: list[Candidate], schema: Schema, lookup=None,
     return Pick(need, None, None, f"no usable part among {checked} checked ({why})")
 
 
+def _best(need: Need, usable: list[tuple[tuple, JlcPart]], unknown: int, low: int, rejected: list[str],
+          min_stock: int, lang) -> Pick:
+    """The pick among ranked `usable` parts (lowest key first), with the
+    English-datasheet preference inside the best key, then stock."""
+    if not usable:
+        if not (unknown or low or rejected):
+            return Pick(need, None, None, "no candidates at JLC")
+        why = ", ".join(f"{n} {what}" for n, what in ((unknown, "unknown manufacturer"),
+                                                        (low, f"stock < {min_stock} at JLC")) if n)
+        if rejected:
+            why = ", ".join(x for x in (why, "; ".join(dict.fromkeys(rejected[:3]))) if x)
+        return Pick(need, None, None, f"no usable part ({why})")
+    best_key = min(k for k, _ in usable)
+    group = sorted((p for k, p in usable if k == best_key), key=lambda p: -p.stock)
+    if lang is None:
+        return _chosen(need, group[0], None, None)
+    best = None
+    for p in group[:MAX_LANG_CHECKS]:
+        ds = lang(p)
+        rank = LANG_RANK.get(ds.lang, LANG_RANK["unknown"])
+        if best is None or rank < best[0]:
+            best = (rank, p, ds)
+        if rank == 0:
+            break
+    return _chosen(need, best[1], None, best[2])
+
+
 def pick_polar(kind: str, value: float, size: str, parts: list[JlcPart], schema: Schema,
                lang: Callable[[JlcPart], Result] | None = None, min_stock: int = 1000,
                min_voltage: float | None = None, max_tolerance: float = 1.0) -> Pick:
@@ -188,27 +215,7 @@ def pick_polar(kind: str, value: float, size: str, parts: list[JlcPart], schema:
             rejected.append(f"{p.lcsc}: voltage {e['voltage']}")
             continue
         usable.append(((int(p.jlc_type == "Extended"), -volts), p))
-    if not usable:
-        if not (unknown or low or rejected):
-            return Pick(need, None, None, "no candidates at JLC")
-        why = ", ".join(f"{n} {what}" for n, what in ((unknown, "unknown manufacturer"),
-                                                        (low, f"stock < {min_stock} at JLC")) if n)
-        if rejected:
-            why = ", ".join(x for x in (why, "; ".join(dict.fromkeys(rejected[:3]))) if x)
-        return Pick(need, None, None, f"no usable part ({why})")
-    best_key = min(k for k, _ in usable)
-    group = sorted((p for k, p in usable if k == best_key), key=lambda p: -p.stock)
-    if lang is None:
-        return _chosen(need, group[0], None, None)
-    best = None
-    for p in group[:MAX_LANG_CHECKS]:
-        ds = lang(p)
-        rank = LANG_RANK.get(ds.lang, LANG_RANK["unknown"])
-        if best is None or rank < best[0]:
-            best = (rank, p, ds)
-        if rank == 0:
-            break
-    return _chosen(need, best[1], None, best[2])
+    return _best(need, usable, unknown, low, rejected, min_stock, lang)
 
 
 def pick_ranked(kind: str, value: float, package: str, parts: list[JlcPart], schema: Schema,
@@ -248,24 +255,31 @@ def pick_ranked(kind: str, value: float, package: str, parts: list[JlcPart], sch
             rejected.append(f"{p.lcsc}: current rating {e.get('current_rating')!r}")
             continue
         usable.append(((tier, -amps), p))
-    if not usable:
-        if not (unknown or low or rejected):
-            return Pick(need, None, None, "no candidates at JLC")
-        why = ", ".join(f"{n} {what}" for n, what in ((unknown, "unknown manufacturer"),
-                                                        (low, f"stock < {min_stock} at JLC")) if n)
-        if rejected:
-            why = ", ".join(x for x in (why, "; ".join(dict.fromkeys(rejected[:3]))) if x)
-        return Pick(need, None, None, f"no usable part ({why})")
-    best_key = min(k for k, _ in usable)
-    group = sorted((p for k, p in usable if k == best_key), key=lambda p: -p.stock)
-    if lang is None:
-        return _chosen(need, group[0], None, None)
-    best = None
-    for p in group[:MAX_LANG_CHECKS]:
-        ds = lang(p)
-        rank = LANG_RANK.get(ds.lang, LANG_RANK["unknown"])
-        if best is None or rank < best[0]:
-            best = (rank, p, ds)
-        if rank == 0:
-            break
-    return _chosen(need, best[1], None, best[2])
+    return _best(need, usable, unknown, low, rejected, min_stock, lang)
+
+
+def pick_discrete(mpn: str, package: str, parts: list[JlcPart], schema: Schema,
+                  lang: Callable[[JlcPart], Result] | None = None, min_stock: int = 1000) -> Pick:
+    """One part of an MPN series (plan 8): a series member (packaging suffixes
+    allowed) in `package` (a discretes.FOOTPRINTS key); rules 1–3, then an
+    English datasheet (rule 6), then stock."""
+    from .discrete_series import series_member
+    from .discretes import canonical_package
+    need = Need("discrete", 0.0, package, 1.0, dielectrics=(), min_stock=min_stock)
+    usable: list[tuple[tuple, JlcPart]] = []
+    unknown = low = 0
+    rejected: list[str] = []
+    for p in parts:
+        if not series_member(mpn, p.mpn):
+            continue
+        if canonical_package(p) != package:
+            rejected.append(f"{p.lcsc}: package {p.package}")
+            continue
+        if schema.canonical_manufacturer(p.brand, p.mpn) is None:
+            unknown += 1
+            continue
+        if p.stock < min_stock:
+            low += 1
+            continue
+        usable.append(((int(p.jlc_type == "Extended"),), p))
+    return _best(need, usable, unknown, low, rejected, min_stock, lang)

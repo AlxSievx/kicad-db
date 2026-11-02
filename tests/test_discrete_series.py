@@ -83,3 +83,140 @@ def test_discrete_manufacturers(schema):  # Review Focus 3
     assert c("Vishay Intertech") == "Vishay"
     assert c("ST(Semtech)") is None
     assert c("cjiang") == "cjiang"
+
+
+# ---- Task 3 ----------------------------------------------------------------------------------------
+from libkit.discrete_series import series_member  # noqa: E402
+from libkit.pick import pick_discrete  # noqa: E402
+
+SHARE = REPO / "tests" / "fixtures" / "share"
+
+
+def zener(mpn, lcsc, package="SOD-123", brand="hongjiacheng", jlc_type="Preferred", stock=50_000, vz="3.3V"):
+    p = part("C8056")
+    return replace(p, mpn=mpn, lcsc=lcsc, package=package, brand=brand, jlc_type=jlc_type, stock=stock,
+                   attributes=dict(p.attributes, **{"Zener Voltage(Nom)": vz}))
+
+
+def test_series_member():  # Review Focus 1
+    assert series_member("BZT52C3V3", "BZT52C3V3") and series_member("BZT52C3V3", "bzt52c3v3-7-F")
+    assert not series_member("BZT52C3V3", "BZT52C3V3S")
+    assert series_member("SMAJ5.0A", "SMAJ5.0A/TR13") and not series_member("SMAJ5.0A", "SMAJ5.0CA")
+    assert not series_member("SS14", "SS14F") and not series_member("SS14", "SS1")
+
+
+def test_mpn_values():
+    from libkit.series import mpn_values
+    z = mpn_values("zener")
+    assert z[0] == "2V4" and z[-1] == "51" and len(z) == 33
+    t = mpn_values("tvs")
+    assert t[0] == "5.0" and t[-1] == "100" and len(t) == 40
+    assert mpn_values("14, 16,110") == ["14", "16", "110"]
+    with pytest.raises(ValueError):
+        mpn_values("")
+
+
+def test_pick_rejects_other_package(schema):  # Review Focus 2
+    other = zener("BZT52C3V3", "C901", package="SOD-123F")
+    p = pick_discrete("BZT52C3V3", "SOD-123", [other], schema)
+    assert p.part is None and "package" in p.note
+
+
+def test_pick_discrete_order(schema):
+    pref = zener("BZT52C3V3", "C902", stock=10_000)
+    ext = zener("BZT52C3V3-7-F", "C903", brand="Diodes Incorporated", jlc_type="Extended", stock=1_000_000)
+    pref2 = zener("BZT52C3V3", "C904", brand="MDD(Microdiode Semiconductor)", stock=20_000)
+    nobody = zener("BZT52C3V3", "C905", brand="Nobody", jlc_type="Basic", stock=9_000_000)
+    neighbour = zener("BZT52C3V3S", "C906", jlc_type="Basic", stock=9_000_000)
+    assert pick_discrete("BZT52C3V3", "SOD-123", [ext, pref], schema).part.lcsc == "C902"
+    assert pick_discrete("BZT52C3V3", "SOD-123", [pref, pref2, nobody, neighbour], schema).part.lcsc == "C904"
+    p = pick_discrete("BZT52C3V3", "SOD-123", [nobody], schema)
+    assert p.part is None and "unknown manufacturer" in p.note
+
+
+def _dlib(minilib):
+    return _with_bases(minilib)
+
+
+def fake_search(parts):
+    def search(keyword, pages=2, post=None):
+        return [p for p in parts if p.mpn.upper().startswith(keyword.upper())]
+    return search
+
+
+def no_fetch(lcsc, workdir):
+    raise AssertionError("EasyEDA must not be fetched in bulk")
+
+
+def test_row_without_base_symbol(minilib):  # Review Focus 4
+    from libkit.discrete_series import plan
+    dual = replace(part("C8592"), mpn="BAT54S", brand="hongjiacheng", jlc_type="Preferred", stock=50_000)
+    rows = plan(_dlib(minilib), "BAT54{}", ["S"], "SOT-23", search=fake_search([dual]), kicad_share_dir=SHARE,
+                fetch=no_fetch)
+    assert rows[0].status == "none" and "single add" in rows[0].note
+
+
+def _two_zeners():
+    return [zener("BZT52C3V3", "C19077396"), zener("BZT52C5V1", "C19077401", vz="5.1V")]
+
+
+def test_plan_and_write_discrete(minilib):
+    from libkit.check import check
+    from libkit.discrete_series import apply, load_plan, plan, save_plan
+    root = _dlib(minilib)
+    run = dict(pattern="BZT52C{}", values=["3V3", "5V1"], package="SOD-123")
+    rows = plan(root, **run, search=fake_search(_two_zeners()), kicad_share_dir=SHARE, fetch=no_fetch)
+    assert [(r.value, r.name, r.status) for r in rows] == [("3V3", "BZT52C3V3", "new"), ("5V1", "BZT52C5V1", "new")]
+    assert rows[1].entry["vz"] == "5.1V" and rows[1].entry["symbol"] == "D_Zener"
+    assert rows[0].entry["footprint"] == "LIB_Diode_SMD:D_SOD-123"
+    save_plan(root, run, rows)
+    back, _ = load_plan(root, run)
+    assert apply(root, run, back) == 2
+    text = (root / "parts" / "diodes.yaml").read_text(encoding="utf-8")
+    assert "BZT52C3V3" in text and "BZT52C5V1" in text
+    assert (root / "footprints" / "LIB_Diode_SMD.pretty" / "D_SOD-123.kicad_mod").exists()
+    assert "Diode_SMD" in load_schema(root).families
+    assert [i for i in check(root, klc=False) if i.severity == "error"] == []
+    again = plan(root, **run, search=fake_search(_two_zeners()), kicad_share_dir=SHARE, fetch=no_fetch)
+    assert [r.status for r in again] == ["exists", "exists"]
+    with pytest.raises(ValueError, match="changed"):
+        load_plan(root, run)
+
+
+def test_skip_discrete_rows():
+    from libkit.bulk import Row
+    from libkit.discrete_series import skip_rows
+    rows = [Row("3V3", "BZT52C3V3", "new", {}, ""), Row("5V1", "BZT52C5V1", "new", {}, "")]
+    assert [r.status for r in skip_rows(rows, ["5v1"])] == ["new", "skipped"]
+    with pytest.raises(ValueError, match="5V6"):
+        skip_rows(rows, ["5V6"])
+
+
+def test_apply_many_rolls_back(minilib):  # Review Focus 5
+    from libkit.add import apply_many, load_plan as load_add
+    from libkit.discrete_series import plan, plan_options
+    from test_add import snapshot
+    root = _dlib(minilib)
+    from libkit.build import build
+    build(root)
+    rows = plan(root, "BZT52C{}", ["3V3", "5V1"], "SOD-123", search=fake_search(_two_zeners()),
+                kicad_share_dir=SHARE, fetch=no_fetch)
+    opts = plan_options("SOD-123")
+    plans = [load_add(root, r.entry["lcsc"], opts) for r in rows]
+    plans[1].entry["vz"] = None  # not a string: the second part breaks the YAML/validation
+    plans[1].entry.pop("lcsc")
+    before = snapshot(root)
+    with pytest.raises(Exception):
+        apply_many(root, plans)
+    assert snapshot(root) == before
+
+
+def test_cli_discrete_options(minilib, monkeypatch, capsys):
+    from libkit import __main__ as cli
+    monkeypatch.chdir(minilib)
+    assert cli.main(["bulk-add", "discrete", "--mpn", "BZT52C{}", "--values", "zener"]) == 1
+    assert "SOD-123" in capsys.readouterr().err  # --package missing: the list is shown
+    assert cli.main(["bulk-add", "discrete", "--mpn", "BZT52C", "--values", "zener", "--package", "SOD-123"]) == 1
+    assert "{}" in capsys.readouterr().err
+    assert cli.main(["bulk-add", "resistor", "--package", "0402", "--tolerance", "1%"]) == 1
+    assert "--series" in capsys.readouterr().err
