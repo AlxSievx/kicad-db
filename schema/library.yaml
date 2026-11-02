@@ -92,6 +92,7 @@ categories:
 families:
   - {name: Passives_SMD}
   - {name: Inductor_SMD}
+  - {name: Diode_SMD}
 
 # Known manufacturers for automatic part picks; parts must use the canonical
 # name. A distributor brand string matches a name case-insensitively when it

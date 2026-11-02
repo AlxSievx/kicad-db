@@ -1,1 +1,5097 @@
-parts: []
+parts:
+  - name: BZT52C2V4
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C2V4
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100Ω 2.28V~2.52V 2.4V 350mW 50uA@1V 600Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C2V4
+    lcsc: C22375296
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291655_hongjiacheng-BZT52C2V4_C22375296.pdf
+    datasheet_lang: en
+    status: active
+    stock: "27227"
+    stock_checked: "2026-11-02"
+    vz: 2.4V
+  - name: BZT52C2V7
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C2V7
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100Ω 2.57V~2.84V 2.7V 20uA 350mW 600Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C2V7
+    lcsc: C19077394
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C2V7_C19077394.pdf
+    datasheet_lang: en
+    status: active
+    stock: "586596"
+    stock_checked: "2026-11-02"
+    vz: 2.7V
+  - name: BZT52C3V0
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C3V0
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 10uA@1V 2.85V~3.15V 350mW 3V 600Ω 95Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C3V0
+    lcsc: C19077395
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C3V0_C19077395.pdf
+    datasheet_lang: en
+    status: active
+    stock: "409827"
+    stock_checked: "2026-11-02"
+    vz: 3V
+  - name: BZT52C3V3
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C3V3
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 3.14V~3.47V 3.3V 350mW 5uA 600Ω 95Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C3V3
+    lcsc: C19077396
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C3V3_C19077396.pdf
+    datasheet_lang: en
+    status: active
+    stock: "713010"
+    stock_checked: "2026-11-02"
+    vz: 3.3V
+  - name: BZT52C3V6
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C3V6
+    package: SOD-123
+    description: 1 Independent 10uA@1V 130Ω 3.42V~3.78V 3.6V 500mW SOD-123 Zener Diodes
+    manufacturer: MDD
+    mpn: BZT52C3V6
+    lcsc: C173412
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407261727_MDD-Microdiode-Semiconductor-BZT52C3V6_C173412.pdf
+    datasheet_lang: en
+    status: active
+    stock: "77251"
+    stock_checked: "2026-11-02"
+    vz: 3.6V
+  - name: BZT52C3V9
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C3V9
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 3.71V~4.1V 3.9V 350mW 3uA@1V 600Ω 90Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C3V9
+    lcsc: C19077398
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403231215_hongjiacheng-BZT52C3V9_C19077398.pdf
+    datasheet_lang: en
+    status: active
+    stock: "69143"
+    stock_checked: "2026-11-02"
+    vz: 3.9V
+  - name: BZT52C4V3
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C4V3
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 350mW 3uA 4.09V~4.52V 4.3V 600Ω 90Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C4V3
+    lcsc: C19077399
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403231215_hongjiacheng-BZT52C4V3_C19077399.pdf
+    datasheet_lang: en
+    status: active
+    stock: "188445"
+    stock_checked: "2026-11-02"
+    vz: 4.3V
+  - name: BZT52C4V7
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C4V7
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 350mW 3uA 4.47V~4.94V 4.7V 500Ω 80Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C4V7
+    lcsc: C19077400
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403231215_hongjiacheng-BZT52C4V7_C19077400.pdf
+    datasheet_lang: en
+    status: active
+    stock: "813465"
+    stock_checked: "2026-11-02"
+    vz: 4.7V
+  - name: BZT52C5V1
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C5V1
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 2uA 350mW 4.85V~5.36V 480Ω 5.1V 60Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C5V1
+    lcsc: C19077401
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403231215_hongjiacheng-BZT52C5V1_C19077401.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2214522"
+    stock_checked: "2026-11-02"
+    vz: 5.1V
+  - name: BZT52C5V6
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C5V6
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 1uA@2V 350mW 400Ω 40Ω 5.32V~5.88V 5.6V SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C5V6
+    lcsc: C19077402
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403231215_hongjiacheng-BZT52C5V6_C19077402.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2911245"
+    stock_checked: "2026-11-02"
+    vz: 5.6V
+  - name: BZT52C6V2
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C6V2
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 10Ω 150Ω 350mW 3uA@4V 5.89V~6.51V 6.2V SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C6V2
+    lcsc: C19077403
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280100_hongjiacheng-BZT52C6V2_C19077403.pdf
+    datasheet_lang: en
+    status: active
+    stock: "204636"
+    stock_checked: "2026-11-02"
+    vz: 6.2V
+  - name: BZT52C6V8
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C6V8
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 15Ω 2uA 350mW 6.46V~7.14V 6.8V 80Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C6V8
+    lcsc: C19077404
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280100_hongjiacheng-BZT52C6V8_C19077404.pdf
+    datasheet_lang: en
+    status: active
+    stock: "114004"
+    stock_checked: "2026-11-02"
+    vz: 6.8V
+  - name: BZT52C7V5
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C7V5
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 15Ω 1uA 350mW 7.13V~7.88V 7.5V 80Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C7V5
+    lcsc: C19077405
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280100_hongjiacheng-BZT52C7V5_C19077405.pdf
+    datasheet_lang: en
+    status: active
+    stock: "120348"
+    stock_checked: "2026-11-02"
+    vz: 7.5V
+  - name: BZT52C8V2
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C8V2
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 15Ω 350mW 7.79V~8.61V 700nA@5V 8.2V 80Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C8V2
+    lcsc: C19077406
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280100_hongjiacheng-BZT52C8V2_C19077406.pdf
+    datasheet_lang: en
+    status: active
+    stock: "360905"
+    stock_checked: "2026-11-02"
+    vz: 8.2V
+  - name: BZT52C9V1
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C9V1
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100Ω 15Ω 350mW 500nA@6V 8.85V~9.56V 9.1V SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C9V1
+    lcsc: C19077407
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280100_hongjiacheng-BZT52C9V1_C19077407.pdf
+    datasheet_lang: en
+    status: active
+    stock: "308921"
+    stock_checked: "2026-11-02"
+    vz: 9.1V
+  - name: BZT52C10
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C10
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 10V 150Ω 200nA 20Ω 350mW 9.5V~10.5V SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C10
+    lcsc: C19077408
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280140_hongjiacheng-BZT52C10_C19077408.pdf
+    datasheet_lang: en
+    status: active
+    stock: "576388"
+    stock_checked: "2026-11-02"
+    vz: 10V
+  - name: BZT52C11
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C11
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 10.45V~11.55V 100nA@8V 11V 150Ω 20Ω 350mW SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C11
+    lcsc: C19077409
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C11_C19077409.pdf
+    datasheet_lang: en
+    status: active
+    stock: "63798"
+    stock_checked: "2026-11-02"
+    vz: 11V
+  - name: BZT52C12
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C12
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA@8V 11.4V~12.6V 12V 150Ω 25Ω 350mW SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C12
+    lcsc: C19077410
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-BZT52C12_C19077410.pdf
+    datasheet_lang: en
+    status: active
+    stock: "426132"
+    stock_checked: "2026-11-02"
+    vz: 12V
+  - name: BZT52C13
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C13
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA 12.35V~13.65V 13V 170Ω 30Ω 350mW SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C13
+    lcsc: C19077411
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C13_C19077411.pdf
+    datasheet_lang: en
+    status: active
+    stock: "149051"
+    stock_checked: "2026-11-02"
+    vz: 13V
+  - name: BZT52C15
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C15
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA 14.25V~15.75V 15V 200Ω 30Ω 350mW SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C15
+    lcsc: C19077412
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C15_C19077412.pdf
+    datasheet_lang: en
+    status: active
+    stock: "567951"
+    stock_checked: "2026-11-02"
+    vz: 15V
+  - name: BZT52C16
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C16
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA@11.2V 15.2V~16.8V 16V 200Ω 350mW 40Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C16
+    lcsc: C19077413
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C16_C19077413.pdf
+    datasheet_lang: en
+    status: active
+    stock: "422230"
+    stock_checked: "2026-11-02"
+    vz: 16V
+  - name: BZT52C18
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C18
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA 17.1V~18.9V 18V 225Ω 350mW 45Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C18
+    lcsc: C19077414
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C18_C19077414.pdf
+    datasheet_lang: en
+    status: active
+    stock: "715617"
+    stock_checked: "2026-11-02"
+    vz: 18V
+  - name: BZT52C20
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C20
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA@14V 19V~21V 20V 225Ω 350mW 55Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C20
+    lcsc: C19077415
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C20_C19077415.pdf
+    datasheet_lang: en
+    status: active
+    stock: "157742"
+    stock_checked: "2026-11-02"
+    vz: 20V
+  - name: BZT52C22
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C22
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA@15.4V 20.9V~23.1V 22V 250Ω 350mW 55Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C22
+    lcsc: C22375295
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291655_hongjiacheng-BZT52C22_C22375295.pdf
+    datasheet_lang: en
+    status: active
+    stock: "731001"
+    stock_checked: "2026-11-02"
+    vz: 22V
+  - name: BZT52C24
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C24
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA@16.8V 22.8V~25.2V 24V 250Ω 350mW 70Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C24
+    lcsc: C19077416
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C24_C19077416.pdf
+    datasheet_lang: en
+    status: active
+    stock: "195835"
+    stock_checked: "2026-11-02"
+    vz: 24V
+  - name: BZT52C27
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C27
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA@18.9V 25.65V~28.35V 27V 300Ω 350mW 80Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C27
+    lcsc: C19077417
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403191730_hongjiacheng-BZT52C27_C19077417.pdf
+    datasheet_lang: en
+    status: active
+    stock: "33600"
+    stock_checked: "2026-11-02"
+    vz: 27V
+  - name: BZT52C30
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C30
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA@21V 28.5V~31.5V 300Ω 30V 350mW 80Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C30
+    lcsc: C19077418
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403191730_hongjiacheng-BZT52C30_C19077418.pdf
+    datasheet_lang: en
+    status: active
+    stock: "263532"
+    stock_checked: "2026-11-02"
+    vz: 30V
+  - name: BZT52C33
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C33
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA 31.35V~34.65V 325Ω 33V 350mW 80Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C33
+    lcsc: C19077419
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403191730_hongjiacheng-BZT52C33_C19077419.pdf
+    datasheet_lang: en
+    status: active
+    stock: "218888"
+    stock_checked: "2026-11-02"
+    vz: 33V
+  - name: BZT52C36
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C36
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA@25.2V 34.2V~37.8V 350mW 350Ω 36V 90Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C36
+    lcsc: C19077420
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403191730_hongjiacheng-BZT52C36_C19077420.pdf
+    datasheet_lang: en
+    status: active
+    stock: "109743"
+    stock_checked: "2026-11-02"
+    vz: 36V
+  - name: BZT52C39
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C39
+    package: SOD-123
+    description: 1 Independent 100nA 130Ω 350Ω 37V~41V 39V 500mW SOD-123 Zener Diodes
+    manufacturer: BORN
+    mpn: BZT52C39
+    lcsc: C511891
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BORN-BZT52C39_C511891.pdf
+    datasheet_lang: en
+    status: active
+    stock: "29435"
+    stock_checked: "2026-11-02"
+    vz: 39V
+  - name: BZT52C43
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C43
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA@32V 100Ω 350mW 40.85V~45.15V 43V 700Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C43
+    lcsc: C22395571
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405091603_hongjiacheng-BZT52C43_C22395571.pdf
+    datasheet_lang: en
+    status: active
+    stock: "56859"
+    stock_checked: "2026-11-02"
+    vz: 43V
+  - name: BZT52C47
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C47
+    package: SOD-123
+    description: -55°C~+150°C 1 Independent 100nA 100Ω 350mW 44.65V~49.35V 47V 750Ω SOD-123 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C47
+    lcsc: C22399887
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405161557_hongjiacheng-BZT52C47_C22399887.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6767"
+    stock_checked: "2026-11-02"
+    vz: 47V
+  - name: BZT52C51
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123
+    value: BZT52C51
+    package: SOD-123
+    description: 1 Independent 100nA@38V 100Ω 48V~54V 500mW 51V 750Ω SOD-123 Zener Diodes
+    manufacturer: BORN
+    mpn: BZT52C51
+    lcsc: C5125708
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2208231730_BORN-BZT52C51_C5125708.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8500"
+    stock_checked: "2026-11-02"
+    vz: 51V
+  - name: BZT52C2V4S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C2V4S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100Ω 2.2V~2.6V 2.4V 200mW 50uA 600Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C2V4S
+    lcsc: C22375290
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291654_hongjiacheng-BZT52C2V4S_C22375290.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5544"
+    stock_checked: "2026-11-02"
+    vz: 2.4V
+  - name: BZT52C2V7S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C2V7S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100Ω 2.5V~2.9V 2.7V 200mW 20uA@1V 600Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C2V7S
+    lcsc: C22375298
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291654_hongjiacheng-BZT52C2V7S_C22375298.pdf
+    datasheet_lang: en
+    status: active
+    stock: "429466"
+    stock_checked: "2026-11-02"
+    vz: 2.7V
+  - name: BZT52C3V0S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C3V0S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 10uA@1V 2.8V~3.2V 200mW 3V 600Ω 95Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C3V0S
+    lcsc: C19077436
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311171118_hongjiacheng-BZT52C3V0S_C19077436.pdf
+    datasheet_lang: en
+    status: active
+    stock: "77528"
+    stock_checked: "2026-11-02"
+    vz: 3V
+  - name: BZT52C3V3S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C3V3S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 200mW 3.1V~3.5V 3.3V 5uA@1V 600Ω 95Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C3V3S
+    lcsc: C19077437
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280505_hongjiacheng-BZT52C3V3S_C19077437.pdf
+    datasheet_lang: en
+    status: active
+    stock: "435231"
+    stock_checked: "2026-11-02"
+    vz: 3.3V
+  - name: BZT52C3V6S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C3V6S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 200mW 3.4V~3.8V 3.6V 5uA 600Ω 90Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C3V6S
+    lcsc: C19077438
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280430_hongjiacheng-BZT52C3V6S_C19077438.pdf
+    datasheet_lang: en
+    status: active
+    stock: "403339"
+    stock_checked: "2026-11-02"
+    vz: 3.6V
+  - name: BZT52C3V9S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C3V9S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 200mW 3.7V~4.1V 3.9V 3uA 600Ω 90Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C3V9S
+    lcsc: C22375299
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291654_hongjiacheng-BZT52C3V9S_C22375299.pdf
+    datasheet_lang: en
+    status: active
+    stock: "394221"
+    stock_checked: "2026-11-02"
+    vz: 3.9V
+  - name: BZT52C4V3S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C4V3S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 200mW 3uA 4.3V 4V~4.6V 600Ω 90Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C4V3S
+    lcsc: C22399888
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405161557_hongjiacheng-BZT52C4V3S_C22399888.pdf
+    datasheet_lang: en
+    status: active
+    stock: "848308"
+    stock_checked: "2026-11-02"
+    vz: 4.3V
+  - name: BZT52C4V7S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C4V7S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 200mW 3uA@2V 4.4V~5V 4.7V 500Ω 80Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C4V7S
+    lcsc: C19077439
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280430_hongjiacheng-BZT52C4V7S_C19077439.pdf
+    datasheet_lang: en
+    status: active
+    stock: "285555"
+    stock_checked: "2026-11-02"
+    vz: 4.7V
+  - name: BZT52C5V1S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C5V1S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 200mW 2uA 4.8V~5.4V 480Ω 5.1V 60Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C5V1S
+    lcsc: C19077440
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280430_hongjiacheng-BZT52C5V1S_C19077440.pdf
+    datasheet_lang: en
+    status: active
+    stock: "607365"
+    stock_checked: "2026-11-02"
+    vz: 5.1V
+  - name: BZT52C5V6S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C5V6S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 1uA 200mW 400Ω 40Ω 5.2V~6V 5.6V SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C5V6S
+    lcsc: C19077441
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280430_hongjiacheng-BZT52C5V6S_C19077441.pdf
+    datasheet_lang: en
+    status: active
+    stock: "363161"
+    stock_checked: "2026-11-02"
+    vz: 5.6V
+  - name: BZT52C6V2S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C6V2S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 10Ω 150Ω 200mW 3uA 5.8V~6.6V 6.2V SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C6V2S
+    lcsc: C19077442
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280430_hongjiacheng-BZT52C6V2S_C19077442.pdf
+    datasheet_lang: en
+    status: active
+    stock: "53330"
+    stock_checked: "2026-11-02"
+    vz: 6.2V
+  - name: BZT52C6V8S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C6V8S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 15Ω 200mW 2uA 6.4V~7.2V 6.8V 80Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C6V8S
+    lcsc: C19077443
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280435_hongjiacheng-BZT52C6V8S_C19077443.pdf
+    datasheet_lang: en
+    status: active
+    stock: "761629"
+    stock_checked: "2026-11-02"
+    vz: 6.8V
+  - name: BZT52C7V5S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C7V5S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 15Ω 1uA 200mW 7.5V 7V~7.9V 80Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C7V5S
+    lcsc: C19077444
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280435_hongjiacheng-BZT52C7V5S_C19077444.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1505"
+    stock_checked: "2026-11-02"
+    vz: 7.5V
+  - name: BZT52C8V2S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C8V2S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 15Ω 200mW 7.7V~8.7V 700nA 8.2V 80Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C8V2S
+    lcsc: C22375294
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291654_hongjiacheng-BZT52C8V2S_C22375294.pdf
+    datasheet_lang: en
+    status: active
+    stock: "397801"
+    stock_checked: "2026-11-02"
+    vz: 8.2V
+  - name: BZT52C9V1S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C9V1S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100Ω 15Ω 200mW 500nA 8.5V~9.6V 9.1V SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C9V1S
+    lcsc: C19077445
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280435_hongjiacheng-BZT52C9V1S_C19077445.pdf
+    datasheet_lang: en
+    status: active
+    stock: "924094"
+    stock_checked: "2026-11-02"
+    vz: 9.1V
+  - name: BZT52C10S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C10S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 10V 150Ω 200mW 200nA@7V 20Ω 9.4V~10.6V SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C10S
+    lcsc: C19077446
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280435_hongjiacheng-BZT52C10S_C19077446.pdf
+    datasheet_lang: en
+    status: active
+    stock: "292770"
+    stock_checked: "2026-11-02"
+    vz: 10V
+  - name: BZT52C11S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C11S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 10.4V~11.6V 100nA 11V 150Ω 200mW 20Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C11S
+    lcsc: C22375287
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291655_hongjiacheng-BZT52C11S_C22375287.pdf
+    datasheet_lang: en
+    status: active
+    stock: "176685"
+    stock_checked: "2026-11-02"
+    vz: 11V
+  - name: BZT52C12S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C12S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA 11.4V~12.7V 12V 150Ω 200mW 25Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C12S
+    lcsc: C19077447
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280435_hongjiacheng-BZT52C12S_C19077447.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1014546"
+    stock_checked: "2026-11-02"
+    vz: 12V
+  - name: BZT52C13S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C13S
+    package: SOD-323
+    description: 1 Independent 100nA@8V 12.4V~14.1V 13V 170Ω 200mW 30Ω SOD-323 Zener Diodes
+    manufacturer: GOODWORK
+    mpn: BZT52C13S
+    lcsc: C2932774
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121630_GOODWORK-BZT52C13S_C2932774.pdf
+    datasheet_lang: en
+    status: active
+    stock: "17360"
+    stock_checked: "2026-11-02"
+    vz: 13V
+  - name: BZT52C15S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C15S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA 13.8V~15.6V 15V 200mW 200Ω 30Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C15S
+    lcsc: C19077448
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280505_hongjiacheng-BZT52C15S_C19077448.pdf
+    datasheet_lang: en
+    status: active
+    stock: "334086"
+    stock_checked: "2026-11-02"
+    vz: 15V
+  - name: BZT52C16S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C16S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA 15.3V~17.1V 16V 200mW 200Ω 40Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C16S
+    lcsc: C19077449
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280505_hongjiacheng-BZT52C16S_C19077449.pdf
+    datasheet_lang: en
+    status: active
+    stock: "62977"
+    stock_checked: "2026-11-02"
+    vz: 16V
+  - name: BZT52C18S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C18S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA@12.6V 16.8V~19.1V 18V 200mW 225Ω 45Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C18S
+    lcsc: C19077450
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280505_hongjiacheng-BZT52C18S_C19077450.pdf
+    datasheet_lang: en
+    status: active
+    stock: "265377"
+    stock_checked: "2026-11-02"
+    vz: 18V
+  - name: BZT52C20S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C20S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA 18.8V~21.2V 200mW 20V 225Ω 55Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C20S
+    lcsc: C19077451
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280505_hongjiacheng-BZT52C20S_C19077451.pdf
+    datasheet_lang: en
+    status: active
+    stock: "25203"
+    stock_checked: "2026-11-02"
+    vz: 20V
+  - name: BZT52C22S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C22S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA 20.8V~23.3V 200mW 22V 250Ω 55Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C22S
+    lcsc: C22375288
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291655_hongjiacheng-BZT52C22S_C22375288.pdf
+    datasheet_lang: en
+    status: active
+    stock: "29347"
+    stock_checked: "2026-11-02"
+    vz: 22V
+  - name: BZT52C24S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C24S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA 200mW 22.8V~25.6V 24V 250Ω 70Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C24S
+    lcsc: C22375289
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291655_hongjiacheng-BZT52C24S_C22375289.pdf
+    datasheet_lang: en
+    status: active
+    stock: "24130"
+    stock_checked: "2026-11-02"
+    vz: 24V
+  - name: BZT52C27S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C27S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA 200mW 25.1V~28.9V 27V 300Ω 80Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C27S
+    lcsc: C22375300
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291655_hongjiacheng-BZT52C27S_C22375300.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4033"
+    stock_checked: "2026-11-02"
+    vz: 27V
+  - name: BZT52C30S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C30S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA 200mW 28V~32V 300Ω 30V 80Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C30S
+    lcsc: C22375291
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291654_hongjiacheng-BZT52C30S_C22375291.pdf
+    datasheet_lang: en
+    status: active
+    stock: "824211"
+    stock_checked: "2026-11-02"
+    vz: 30V
+  - name: BZT52C33S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C33S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA 200mW 31V~35V 325Ω 33V 80Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C33S
+    lcsc: C22375292
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291654_hongjiacheng-BZT52C33S_C22375292.pdf
+    datasheet_lang: en
+    status: active
+    stock: "20952"
+    stock_checked: "2026-11-02"
+    vz: 33V
+  - name: BZT52C36S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C36S
+    package: SOD-323
+    description: -55°C~+150°C 1 Independent 100nA 200mW 34V~38V 350Ω 36V 90Ω SOD-323 Zener Diodes
+    manufacturer: hongjiacheng
+    mpn: BZT52C36S
+    lcsc: C22375293
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404291654_hongjiacheng-BZT52C36S_C22375293.pdf
+    datasheet_lang: en
+    status: active
+    stock: "786428"
+    stock_checked: "2026-11-02"
+    vz: 36V
+  - name: BZT52C39S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C39S
+    package: SOD-323
+    description: 1 Independent 100nA@27.3V 130Ω 200mW 37V~41V 39V SOD-323 Zener Diodes
+    manufacturer: Shandong Jingdao
+    mpn: BZT52C39S
+    lcsc: C353531
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-BZT52C39S_C353531.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5381"
+    stock_checked: "2026-11-02"
+    vz: 39V
+  - name: BZT52C43S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C43S
+    package: SOD-323
+    description: 1 Independent 100nA 100Ω 200mW 40V~46V 43V 700Ω SOD-323 Zener Diodes
+    manufacturer: DOWO
+    mpn: BZT52C43S
+    lcsc: C7544592
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308241608_DOWO-BZT52C43S_C7544592.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11030"
+    stock_checked: "2026-11-02"
+    vz: 43V
+  - name: BZT52C47S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C47S
+    package: SOD-323
+    description: 1 Independent 100nA 100Ω 200mW 44V~50V 47V 750Ω SOD-323 Zener Diodes
+    manufacturer: DOWO
+    mpn: BZT52C47S
+    lcsc: C7544593
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308241608_DOWO-BZT52C47S_C7544593.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6087"
+    stock_checked: "2026-11-02"
+    vz: 47V
+  - name: BZT52C51S
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-323
+    value: BZT52C51S
+    package: SOD-323
+    description: 1 Independent 100nA 100Ω 200mW 48V~54V 51V 750Ω SOD-323 Zener Diodes
+    manufacturer: DOWO
+    mpn: BZT52C51S
+    lcsc: C7544594
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308241608_DOWO-BZT52C51S_C7544594.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4209"
+    stock_checked: "2026-11-02"
+    vz: 51V
+  - name: SMF5.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF5.0A
+    package: SOD-123FL
+    description: -55°C~+150°C 200W@10/1000us 21.7A@10/1000us 400uA 5V 7V 9.2V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF5.0A
+    lcsc: C19077497
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041000_hongjiacheng-SMF5-0A_C19077497.pdf
+    datasheet_lang: en
+    status: active
+    stock: "895861"
+    stock_checked: "2026-11-02"
+    vr: 5V
+  - name: SMF6.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF6.0A
+    package: SOD-123FL
+    description: -55°C~+150°C 10.3V 19.4A@10/1000us 200W@10/1000us 400uA 6V 7.37V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF6.0A
+    lcsc: C19077499
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312011957_hongjiacheng-SMF6-0A_C19077499.pdf
+    datasheet_lang: en
+    status: active
+    stock: "625695"
+    stock_checked: "2026-11-02"
+    vr: 6V
+  - name: SMF6.5A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF6.5A
+    package: SOD-123FL
+    description: -55°C~+150°C 11.2V 17.86A 200W@10/1000us 250uA 6.5V 7.98V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF6.5A
+    lcsc: C41376089
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF6-5A_C41376089.pdf
+    datasheet_lang: en
+    status: active
+    stock: "48016"
+    stock_checked: "2026-11-02"
+    vr: 6.5V
+  - name: SMF7.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF7.0A
+    package: SOD-123FL
+    description: -55°C~+150°C 100uA 12V 16.67A 200W@10/1000us 7V 8.6V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF7.0A
+    lcsc: C41376088
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMF7-0A_C41376088.pdf
+    datasheet_lang: en
+    status: active
+    stock: "145640"
+    stock_checked: "2026-11-02"
+    vr: 7V
+  - name: SMF7.5A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF7.5A
+    package: SOD-123FL
+    description: -55°C~+150°C 12.9V 15.5A 200W@10/1000us 50uA 7.5V 9.21V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF7.5A
+    lcsc: C42371750
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF7-5A_C42371750.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6808"
+    stock_checked: "2026-11-02"
+    vr: 7.5V
+  - name: SMF8.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF8.0A
+    package: SOD-123FL
+    description: -65°C~+150°C 13.6V 14.7A 200W 25uA 8.89V 8V IEC 61000-4-2, IEC 61000-4-4 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Littelfuse
+    mpn: SMF8.0A
+    lcsc: C720055
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Littelfuse-SMF8-0A_C720055.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4587"
+    stock_checked: "2026-11-02"
+    vr: 8V
+  - name: SMF8.5A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF8.5A
+    package: SOD-123FL
+    description: -55°C~+150°C 10uA 13.9A 14.4V 200W 8.5V 9.44V TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF8.5A
+    lcsc: C353255
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF8-5A_C353255.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3052"
+    stock_checked: "2026-11-02"
+    vr: 8.5V
+  - name: SMF9.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF9.0A
+    package: SOD-123FL
+    description: -55°C~+150°C 10V 12.99A 15.4V 200W@10/1000us 5uA 9V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF9.0A
+    lcsc: C42371746
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF9-0A_C42371746.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6835"
+    stock_checked: "2026-11-02"
+    vr: 9V
+  - name: SMF10A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF10A
+    package: SOD-123FL
+    description: -55°C~+150°C 10V 11.8A 12.3V 17V 2.5uA 200W@10/1000us TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF10A
+    lcsc: C353245
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF10A_C353245.pdf
+    datasheet_lang: en
+    status: active
+    stock: "24115"
+    stock_checked: "2026-11-02"
+    vr: 10V
+  - name: SMF11A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF11A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 11A 11V 13.5V 18.2V 2.5uA 200W TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF11A
+    lcsc: C52195214
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C52195214.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8000"
+    stock_checked: "2026-11-02"
+    vr: 11V
+  - name: SMF12A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF12A
+    package: SOD-123FL
+    description: -55°C~+150°C 10.1A@10/1000us 12V 14.7V 19.9V 2.5uA 200W@10/1000us IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF12A
+    lcsc: C19077506
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280940_hongjiacheng-SMF12A_C19077506.pdf
+    datasheet_lang: en
+    status: active
+    stock: "331325"
+    stock_checked: "2026-11-02"
+    vr: 12V
+  - name: SMF13A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF13A
+    package: SOD-123FL
+    description: -55°C~+150°C 13V 15.9V 1uA 200W@10/1000us 21.5V 9.3A IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF13A
+    lcsc: C41376087
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409191648_hongjiacheng-SMF13A_C41376087.pdf
+    datasheet_lang: en
+    status: active
+    stock: "18827"
+    stock_checked: "2026-11-02"
+    vr: 13V
+  - name: SMF14A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF14A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 14V 15.6V 1uA 200W 23.2V 8.62A TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF14A
+    lcsc: C50325388
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325388.pdf
+    datasheet_lang: en
+    status: active
+    stock: "38287"
+    stock_checked: "2026-11-02"
+    vr: 14V
+  - name: SMF15A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF15A
+    package: SOD-123FL
+    description: -55°C~+150°C 15V 18.5V 1uA 200W@10/1000us 24.4V 8.2A@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF15A
+    lcsc: C19077509
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041000_hongjiacheng-SMF15A_C19077509.pdf
+    datasheet_lang: en
+    status: active
+    stock: "246079"
+    stock_checked: "2026-11-02"
+    vr: 15V
+  - name: SMF16A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF16A
+    package: SOD-123FL
+    description: -55°C~+150°C 16V 19.7V 1uA 200W@10/1000us 26V 7.7A IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF16A
+    lcsc: C41376093
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF16A_C41376093.pdf
+    datasheet_lang: en
+    status: active
+    stock: "30879"
+    stock_checked: "2026-11-02"
+    vr: 16V
+  - name: SMF17A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF17A
+    package: SOD-123FL
+    description: -55°C~+150°C 17V 1uA 20.9V 200W 27.6V 7.2A TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: MDD
+    mpn: SMF17A
+    lcsc: C2994190
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407101126_MDD-Microdiode-Semiconductor-SMF17A_C2994190.pdf
+    datasheet_lang: en
+    status: active
+    stock: "14952"
+    stock_checked: "2026-11-02"
+    vr: 17V
+  - name: SMF18A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF18A
+    package: SOD-123FL
+    description: -55°C~+150°C 18V 1uA 200W@10/1000us 22.1V 29.2V 6.8A@10/1000us IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF18A
+    lcsc: C19077512
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280940_hongjiacheng-SMF18A_C19077512.pdf
+    datasheet_lang: en
+    status: active
+    stock: "57885"
+    stock_checked: "2026-11-02"
+    vr: 18V
+  - name: SMF20A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF20A
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 20V 24.5V 32.4V 6.2A IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF20A
+    lcsc: C41411782
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409201747_hongjiacheng-SMF20A_C41411782.pdf
+    datasheet_lang: en
+    status: active
+    stock: "15717"
+    stock_checked: "2026-11-02"
+    vr: 20V
+  - name: SMF22A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF22A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1uA 200W 22V 24.4V 35.5V 5.6A TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: GOODWORK
+    mpn: SMF22A
+    lcsc: C2943862
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2205240945_GOODWORK-SMF22A_C2943862.pdf
+    datasheet_lang: en
+    status: active
+    stock: "102663"
+    stock_checked: "2026-11-02"
+    vr: 22V
+  - name: SMF24A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF24A
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 24V 29.5V 38.9V 5.1A@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF24A
+    lcsc: C19077514
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041000_hongjiacheng-SMF24A_C19077514.pdf
+    datasheet_lang: en
+    status: active
+    stock: "329187"
+    stock_checked: "2026-11-02"
+    vr: 24V
+  - name: SMF26A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF26A
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 26V 31.9V 4.8A 42.1V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF26A
+    lcsc: C41376090
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF26A_C41376090.pdf
+    datasheet_lang: en
+    status: active
+    stock: "65074"
+    stock_checked: "2026-11-02"
+    vr: 26V
+  - name: SMF28A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF28A
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 28V 34.4V 4.41A 45.4V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF28A
+    lcsc: C41376091
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF28A_C41376091.pdf
+    datasheet_lang: en
+    status: active
+    stock: "91884"
+    stock_checked: "2026-11-02"
+    vr: 28V
+  - name: SMF30A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF30A
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 30V 36.8V 4.1A 48.4V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF30A
+    lcsc: C19077518
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041000_hongjiacheng-SMF30A_C19077518.pdf
+    datasheet_lang: en
+    status: active
+    stock: "496334"
+    stock_checked: "2026-11-02"
+    vr: 30V
+  - name: SMF33A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF33A
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 3.8A@10/1000us 33V 40.6V 53.3V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF33A
+    lcsc: C42456389
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C42456389.pdf
+    datasheet_lang: en
+    status: active
+    stock: "168511"
+    stock_checked: "2026-11-02"
+    vr: 33V
+  - name: SMF36A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF36A
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 3.44A 36V 44.2V 58.1V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF36A
+    lcsc: C41376086
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMF36A_C41376086.pdf
+    datasheet_lang: en
+    status: active
+    stock: "284416"
+    stock_checked: "2026-11-02"
+    vr: 36V
+  - name: SMF40A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF40A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1uA 200W 3.1A 40V 44.4V 64.5V TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF40A
+    lcsc: C50325392
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325392.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5027"
+    stock_checked: "2026-11-02"
+    vr: 40V
+  - name: SMF43A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF43A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1uA 2.88A 200W 43V 47.8V 69.4V TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF43A
+    lcsc: C50325393
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325393.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1322"
+    stock_checked: "2026-11-02"
+    vr: 43V
+  - name: SMF45A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF45A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1uA 2.8A 200W 45V 55.3V 72.7V TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF45A
+    lcsc: C52195215
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C52195215.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3154"
+    stock_checked: "2026-11-02"
+    vr: 45V
+  - name: SMF48A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF48A
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 2.6A 200W@10/1000us 48V 58.9V 77.4V IEC 61000-4-2 Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF48A
+    lcsc: C42371754
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF48A_C42371754.pdf
+    datasheet_lang: en
+    status: active
+    stock: "90416"
+    stock_checked: "2026-11-02"
+    vr: 48V
+  - name: SMF51A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF51A
+    package: SOD-123FL
+    description: 1uA 2.4A@10/1000us 200W@10/1000us 51V 62.7V 82.4V TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: CJ
+    mpn: SMF51A
+    lcsc: C1509575
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SMF51A_C1509575.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3027"
+    stock_checked: "2026-11-02"
+    vr: 51V
+  - name: SMF54A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF54A
+    package: SOD-123FL
+    description: 1 1uA 2.3A@10/1000us 200W@10/1000us 54V 66.3V 87.1V TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF54A
+    lcsc: C353275
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF54A_C353275.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2357"
+    stock_checked: "2026-11-02"
+    vr: 54V
+  - name: SMF58A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF58A
+    package: SOD-123FL
+    description: -65°C~+150°C 1uA 2.1A 200W 58V 64.4V 93.6V IEC 61000-4-2, IEC 61000-4-4 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Littelfuse
+    mpn: SMF58A
+    lcsc: C720057
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Littelfuse-SMF58A_C720057.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2503"
+    stock_checked: "2026-11-02"
+    vr: 58V
+  - name: SMF60A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF60A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1uA 2.1A 200W 60V 73.7V 96.8V TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF60A
+    lcsc: C52195218
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C52195218.pdf
+    datasheet_lang: en
+    status: active
+    stock: "67363"
+    stock_checked: "2026-11-02"
+    vr: 60V
+  - name: SMF64A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF64A
+    package: SOD-123FL
+    description: -55°C~+150°C 1.7A@10/1000us 103V 1uA 200W@10/1000us 64V 78.6V TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF64A
+    lcsc: C353268
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF64A_C353268.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10894"
+    stock_checked: "2026-11-02"
+    vr: 64V
+  - name: SMF70A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF70A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1.77A 113V 1uA 200W 70V 77.8V TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF70A
+    lcsc: C50325402
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325402.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6062"
+    stock_checked: "2026-11-02"
+    vr: 70V
+  - name: SMF75A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF75A
+    package: SOD-123FL
+    description: -55°C~+150°C 1.6A 121V 1uA 200W@10/1000us 75V 83.3V Single-channel TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: CJ
+    mpn: SMF75A
+    lcsc: C5294091
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2212101307_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SMF75A_C5294091.pdf
+    datasheet_lang: en
+    status: active
+    stock: "29129"
+    stock_checked: "2026-11-02"
+    vr: 75V
+  - name: SMF78A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF78A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1.4A 126V 1uA 200W 78V 86.7V TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: GOODWORK
+    mpn: SMF78A
+    lcsc: C50581525
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50581525.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2799"
+    stock_checked: "2026-11-02"
+    vr: 78V
+  - name: SMF85A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF85A
+    package: SOD-123FL
+    description: -65°C~+150°C 1.3A 137V 1uA 200W@10/1000us 85V 94.4V IEC 61000-4-2, IEC 61000-4-4 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Littelfuse
+    mpn: SMF85A
+    lcsc: C1977128
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Littelfuse-SMF85A_C1977128.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1198"
+    stock_checked: "2026-11-02"
+    vr: 85V
+  - name: SMF90A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF90A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1.37A 100V 146V 1uA 200W 90V TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF90A
+    lcsc: C50325405
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325405.pdf
+    datasheet_lang: en
+    status: active
+    stock: "27451"
+    stock_checked: "2026-11-02"
+    vr: 90V
+  - name: SMF100A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF100A
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1.23A 100V 111V 162V 1uA 200W TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF100A
+    lcsc: C50325407
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325407.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5787"
+    stock_checked: "2026-11-02"
+    vr: 100V
+  - name: SMAJ5.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ5.0A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 400W@10/1000us 43.5A@10/1000us 5V 7V 800uA 9.2V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ5.0A
+    lcsc: C19077523
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ5-0A_C19077523.pdf
+    datasheet_lang: en
+    status: active
+    stock: "258855"
+    stock_checked: "2026-11-02"
+    vr: 5V
+  - name: SMAJ6.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ6.0A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 10.3V 38.8A@10/1000us 400W@10/1000us 6V 7.37V 800uA IEC 61000-4-2 TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ6.0A
+    lcsc: C19077525
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ6-0A_C19077525.pdf
+    datasheet_lang: en
+    status: active
+    stock: "181080"
+    stock_checked: "2026-11-02"
+    vr: 6V
+  - name: SMAJ6.5A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ6.5A
+    package: SMA
+    description: -65°C~+150°C 11.2V 35.7A@10/1000us 400W@10/1000us 500uA 6.5V 7.98V IEC 61000-4-2 TVS Unidirectional SMA ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMAJ6.5A
+    lcsc: C169450
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMAJ6-5A_C169450.pdf
+    datasheet_lang: en
+    status: active
+    stock: "65552"
+    stock_checked: "2026-11-02"
+    vr: 6.5V
+  - name: SMAJ7.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ7.0A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 12V 200uA 33.3A 400W 7V 8.6V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ7.0A
+    lcsc: C42394395
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMAJ7-0A_C42394395.pdf
+    datasheet_lang: en
+    status: active
+    stock: "18754"
+    stock_checked: "2026-11-02"
+    vr: 7V
+  - name: SMAJ7.5A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ7.5A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 100uA 12.9V 31.01A 400W 7.5V 9.21V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ7.5A
+    lcsc: C49066914
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066914.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3301"
+    stock_checked: "2026-11-02"
+    vr: 7.5V
+  - name: SMAJ8.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ8.0A
+    package: DO-214AC(SMA)
+    description: -65°C~+150°C 10.4V 14.4V 27.8A@10/1000us 400W@10/1000us 50uA 8.5V IEC 61000-4-2, IEC 61000-4-4 TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: Littelfuse
+    mpn: SMAJ8.0A
+    lcsc: C1972936
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401230946_Littelfuse-SMAJ8-0A_C1972936.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6887"
+    stock_checked: "2026-11-02"
+    vr: 8V
+  - name: SMAJ8.5A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ8.5A
+    package: SMA
+    description: -55°C~+150°C 1 14.4V 20uA 27.8A 400W 8.5V 9.44V TVS Unidirectional SMA ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ8.5A
+    lcsc: C49424014
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49424014.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7137"
+    stock_checked: "2026-11-02"
+    vr: 8.5V
+  - name: SMAJ9.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ9.0A
+    package: DO-214AC(SMA)
+    description: -65°C~+150°C 10V 10uA 12.3V 17V 23.5A@10/1000us 400W@10/1000us IEC 61000-4-2, IEC 61000-4-4 TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: Littelfuse
+    mpn: SMAJ9.0A
+    lcsc: C151248
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Littelfuse-SMAJ9-0A_C151248.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8254"
+    stock_checked: "2026-11-02"
+    vr: 9V
+  - name: SMAJ10A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ10A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 10V 12.3V 17V 23.5A 400W 5uA IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ10A
+    lcsc: C41376407
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409191648_hongjiacheng-SMAJ10A_C41376407.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11326"
+    stock_checked: "2026-11-02"
+    vr: 10V
+  - name: SMAJ11A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ11A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 11V 13.5V 18.2V 1uA 21.98A 400W IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ11A
+    lcsc: C49066918
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066918.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7157"
+    stock_checked: "2026-11-02"
+    vr: 11V
+  - name: SMAJ12A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ12A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 12V 14.7V 19.9V 1uA 20.1A@10/1000us 400W@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ12A
+    lcsc: C19077531
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ12A_C19077531.pdf
+    datasheet_lang: en
+    status: active
+    stock: "57417"
+    stock_checked: "2026-11-02"
+    vr: 12V
+  - name: SMAJ13A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ13A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 13V 15.9V 18.6A 1uA 21.5V 400W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ13A
+    lcsc: C19077533
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ13A_C19077533.pdf
+    datasheet_lang: en
+    status: active
+    stock: "41180"
+    stock_checked: "2026-11-02"
+    vr: 13V
+  - name: SMAJ14A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ14A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 14V 17.2A@10/1000us 17.2V 1uA 23.2V 400W IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ14A
+    lcsc: C41376406
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMAJ14A_C41376406.pdf
+    datasheet_lang: en
+    status: active
+    stock: "14388"
+    stock_checked: "2026-11-02"
+    vr: 14V
+  - name: SMAJ15A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ15A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 15V 16.4A@10/1000us 18.5V 1uA 24.4V 400W@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ15A
+    lcsc: C19077535
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMAJ15A_C19077535.pdf
+    datasheet_lang: en
+    status: active
+    stock: "87996"
+    stock_checked: "2026-11-02"
+    vr: 15V
+  - name: SMAJ16A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ16A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 15.4A 16V 19.7V 1uA 26V 400W IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ16A
+    lcsc: C41376405
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMAJ16A_C41376405.pdf
+    datasheet_lang: en
+    status: active
+    stock: "29423"
+    stock_checked: "2026-11-02"
+    vr: 16V
+  - name: SMAJ17A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ17A
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 14.49A 17V 18.9V 1uA 27.6V 600W@10/1000us TVS Unidirectional SMA(DO-214AC) ESD and Surge Protection (TVS/ESD)
+    manufacturer: LGE
+    mpn: SMAJ17A
+    lcsc: C841115
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_LGE-SMAJ17A_C841115.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11542"
+    stock_checked: "2026-11-02"
+    vr: 17V
+  - name: SMAJ18A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ18A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 13.7A 18V 1uA 22.1V 29.2V 400W IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ18A
+    lcsc: C19077538
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ18A_C19077538.pdf
+    datasheet_lang: en
+    status: active
+    stock: "52009"
+    stock_checked: "2026-11-02"
+    vr: 18V
+  - name: SMAJ20A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ20A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 12.3A@10/1000us 1uA 20V 24.5V 32.4V 400W IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ20A
+    lcsc: C41376408
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMAJ20A_C41376408.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9493"
+    stock_checked: "2026-11-02"
+    vr: 20V
+  - name: SMAJ22A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ22A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 11.3A 1uA 22V 26.9V 35.5V 400W IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ22A
+    lcsc: C41376403
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMAJ22A_C41376403.pdf
+    datasheet_lang: en
+    status: active
+    stock: "164042"
+    stock_checked: "2026-11-02"
+    vr: 22V
+  - name: SMAJ24A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ24A
+    package: DO-214AC(SMA)
+    description: 10.3A@10/1000us 1uA 24V 29.5V 38.9V 400W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ24A
+    lcsc: C19077541
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ24A_C19077541.pdf
+    datasheet_lang: en
+    status: active
+    stock: "83677"
+    stock_checked: "2026-11-02"
+    vr: 24V
+  - name: SMAJ26A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ26A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 26V 31.9V 400W@10/1000us 42.1V 9.5A@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ26A
+    lcsc: C19077543
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ26A_C19077543.pdf
+    datasheet_lang: en
+    status: active
+    stock: "316192"
+    stock_checked: "2026-11-02"
+    vr: 26V
+  - name: SMAJ28A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ28A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 28V 34.4V 400W@10/1000us 45.4V 8.8A@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ28A
+    lcsc: C19077545
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ28A_C19077545.pdf
+    datasheet_lang: en
+    status: active
+    stock: "31634"
+    stock_checked: "2026-11-02"
+    vr: 28V
+  - name: SMAJ30A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ30A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 30V 36.8V 400W@10/1000us 48.4V 8.3A@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ30A
+    lcsc: C19077547
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ30A_C19077547.pdf
+    datasheet_lang: en
+    status: active
+    stock: "26850"
+    stock_checked: "2026-11-02"
+    vr: 30V
+  - name: SMAJ33A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ33A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 33V 40.6V 400W 53.3V 7.5A@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ33A
+    lcsc: C41376399
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMAJ33A_C41376399.pdf
+    datasheet_lang: en
+    status: active
+    stock: "34871"
+    stock_checked: "2026-11-02"
+    vr: 33V
+  - name: SMAJ36A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ36A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 36V 400W@10/1000us 44.2V 58.1V 6.9A@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ36A
+    lcsc: C19077550
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ36A_C19077550.pdf
+    datasheet_lang: en
+    status: active
+    stock: "35470"
+    stock_checked: "2026-11-02"
+    vr: 36V
+  - name: SMAJ40A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ40A
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 1uA 400W@10/1000us 40V 49.1V 6.2A@10/1000us 64.5V TVS Unidirectional SMA(DO-214AC) ESD and Surge Protection (TVS/ESD)
+    manufacturer: DOWO
+    mpn: SMAJ40A
+    lcsc: C22378367
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404081627_DOWO-SMAJ40A_C22378367.pdf
+    datasheet_lang: en
+    status: active
+    stock: "119807"
+    stock_checked: "2026-11-02"
+    vr: 40V
+  - name: SMAJ43A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ43A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 400W 43V 5.8A@10/1000us 52.8V 69.4V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ43A
+    lcsc: C41376402
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMAJ43A_C41376402.pdf
+    datasheet_lang: en
+    status: active
+    stock: "28609"
+    stock_checked: "2026-11-02"
+    vr: 43V
+  - name: SMAJ45A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ45A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 400W 45V 5.5A 55.3V 72.7V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ45A
+    lcsc: C49066922
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066922.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10690"
+    stock_checked: "2026-11-02"
+    vr: 45V
+  - name: SMAJ48A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ48A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 400W 48V 5.2A@10/1000us 58.9V 77.4V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ48A
+    lcsc: C41376401
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMAJ48A_C41376401.pdf
+    datasheet_lang: en
+    status: active
+    stock: "19582"
+    stock_checked: "2026-11-02"
+    vr: 48V
+  - name: SMAJ51A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ51A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 4.85A 400W 51V 62.7V 82.4V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ51A
+    lcsc: C49066923
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066923.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11829"
+    stock_checked: "2026-11-02"
+    vr: 51V
+  - name: SMAJ54A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ54A
+    package: SMA
+    description: -55°C~+150°C 1 1uA 4.6A 400W 54V 60V 87.1V TVS Unidirectional SMA ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ54A
+    lcsc: C49424016
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49424016.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10821"
+    stock_checked: "2026-11-02"
+    vr: 54V
+  - name: SMAJ58A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ58A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 4.3A@10/1000us 400W@10/1000us 58V 71.2V 93.6V IEC 61000-4-2 TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ58A
+    lcsc: C19077554
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ58A_C19077554.pdf
+    datasheet_lang: en
+    status: active
+    stock: "47059"
+    stock_checked: "2026-11-02"
+    vr: 58V
+  - name: SMAJ60A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ60A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 4.1A 400W 60V 73.7V 96.8V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ60A
+    lcsc: C42394398
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMAJ60A_C42394398.pdf
+    datasheet_lang: en
+    status: active
+    stock: "182192"
+    stock_checked: "2026-11-02"
+    vr: 60V
+  - name: SMAJ64A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ64A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 103V 1uA 3.9A 400W 64V 78.6V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ64A
+    lcsc: C42394400
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMAJ64A_C42394400.pdf
+    datasheet_lang: en
+    status: active
+    stock: "22520"
+    stock_checked: "2026-11-02"
+    vr: 64V
+  - name: SMAJ70A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ70A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 113V 3.5A 400W 5uA 70V 77.8V TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: GOODWORK
+    mpn: SMAJ70A
+    lcsc: C2980411
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2203092030_GOODWORK-SMAJ70A_C2980411.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4210"
+    stock_checked: "2026-11-02"
+    vr: 70V
+  - name: SMAJ75A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ75A
+    package: SMA
+    description: -55°C~+150°C 1 121V 1uA 3.3A 400W 75V 83.3V TVS Unidirectional SMA ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ75A
+    lcsc: C49424027
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49424027.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11899"
+    stock_checked: "2026-11-02"
+    vr: 75V
+  - name: SMAJ78A_TR13
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ78A/TR13
+    package: SMA(DO-214AC)
+    description: 126V 1uA 3.2A 400W 78V 86.7V TVS Unidirectional SMA(DO-214AC) ESD and Surge Protection (TVS/ESD)
+    manufacturer: Brightking
+    mpn: SMAJ78A/TR13
+    lcsc: C309912
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Brightking-SMAJ78A-TR13_C309912.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5002"
+    stock_checked: "2026-11-02"
+    vr: 78V
+  - name: SMAJ85A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ85A
+    package: SMA
+    description: -55°C~+150°C 1 137V 1uA 2.9A 400W 85V 94.4V TVS Unidirectional SMA ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ85A
+    lcsc: C49424022
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49424022.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8846"
+    stock_checked: "2026-11-02"
+    vr: 85V
+  - name: SMAJ90A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ90A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 111V 146V 1uA 2.7A 400W 90V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ90A
+    lcsc: C42394403
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMAJ90A_C42394403.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10375"
+    stock_checked: "2026-11-02"
+    vr: 90V
+  - name: SMAJ100A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ100A
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 100V 123V 162V 1uA 2.47A 400W IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ100A
+    lcsc: C49066926
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066926.pdf
+    datasheet_lang: en
+    status: active
+    stock: "19491"
+    stock_checked: "2026-11-02"
+    vr: 100V
+  - name: SMBJ5.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ5.0A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 5V 600W@10/1000us 65.22A@10/1000us 7V 800uA 9.2V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ5.0A
+    lcsc: C19077558
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041004_hongjiacheng-SMBJ5-0A_C19077558.pdf
+    datasheet_lang: en
+    status: active
+    stock: "120022"
+    stock_checked: "2026-11-02"
+    vr: 5V
+  - name: SMBJ6.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ6.0A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 10.3V 58.25A@10/1000us 600W@10/1000us 6V 7.37V 800uA IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ6.0A
+    lcsc: C19077560
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312251758_hongjiacheng-SMBJ6-0A_C19077560.pdf
+    datasheet_lang: en
+    status: active
+    stock: "180471"
+    stock_checked: "2026-11-02"
+    vr: 6V
+  - name: SMBJ6.5A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ6.5A
+    package: DO-214AA(SMB)
+    description: -65°C~+150°C 11.2V 500uA 53.6A@10/1000us 6.5V 600W@10/1000us 7.98V TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: MDD
+    mpn: SMBJ6.5A
+    lcsc: C113978
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407291859_MDD-Microdiode-Semiconductor-SMBJ6-5A_C113978.pdf
+    datasheet_lang: en
+    status: active
+    stock: "26226"
+    stock_checked: "2026-11-02"
+    vr: 6.5V
+  - name: SMBJ7.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ7.0A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 12V 200uA 50A@10/1000us 600W@10/1000us 7V 8.6V IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ7.0A
+    lcsc: C19077563
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ7-0A_C19077563.pdf
+    datasheet_lang: en
+    status: active
+    stock: "32656"
+    stock_checked: "2026-11-02"
+    vr: 7V
+  - name: SMBJ7.5A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ7.5A
+    package: DO-214AA(SMB)
+    description: 12.9V 46.5A 50uA 600W@10/1000us 7.5V 8.33V TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: BORN
+    mpn: SMBJ7.5A
+    lcsc: C344012
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BORN-SMBJ7-5A_C344012.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7716"
+    stock_checked: "2026-11-02"
+    vr: 7.5V
+  - name: SMBJ8.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ8.0A
+    package: DO-214AA(SMB)
+    description: -65°C~+150°C 13.6V 44.2A@10/1000us 50uA 600W@10/1000us 8V 9.83V TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: MDD
+    mpn: SMBJ8.0A
+    lcsc: C173540
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407291901_MDD-Microdiode-Semiconductor-SMBJ8-0A_C173540.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4969"
+    stock_checked: "2026-11-02"
+    vr: 8V
+  - name: SMBJ8.5A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ8.5A
+    package: SMB
+    description: -55°C~+150°C 1 10uA 14.4V 41.67A 600W 8.5V 9.44V TVS Unidirectional SMB ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ8.5A
+    lcsc: C50325495
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325495.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8339"
+    stock_checked: "2026-11-02"
+    vr: 8.5V
+  - name: SMBJ9.0A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ9.0A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 10uA 11.1V 15.4V 39A 600W@10/1000us 9V Single-channel TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: BORN
+    mpn: SMBJ9.0A
+    lcsc: C152088
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2305170930_BORN-SMBJ9-0A_C152088.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3136"
+    stock_checked: "2026-11-02"
+    vr: 9V
+  - name: SMBJ10A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ10A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 10V 11.1V 17V 35.29A 5uA 600W@10/1000us TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: LGE
+    mpn: SMBJ10A
+    lcsc: C713714
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_LGE-SMBJ10A_C713714.pdf
+    datasheet_lang: en
+    status: active
+    stock: "21307"
+    stock_checked: "2026-11-02"
+    vr: 10V
+  - name: SMBJ11A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ11A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 11V 12.2V 18.2V 33A 5uA 600W TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: GOODWORK
+    mpn: SMBJ11A
+    lcsc: C908792
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_GOODWORK-SMBJ11A_C908792.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4205"
+    stock_checked: "2026-11-02"
+    vr: 11V
+  - name: SMBJ12A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ12A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 12V 14.7V 19.9V 30.15A@10/1000us 5uA 600W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ12A
+    lcsc: C19077565
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ12A_C19077565.pdf
+    datasheet_lang: en
+    status: active
+    stock: "20463"
+    stock_checked: "2026-11-02"
+    vr: 12V
+  - name: SMBJ13A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ13A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 13V 15.9V 21.5V 27.91A@10/1000us 5uA 600W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ13A
+    lcsc: C19077567
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ13A_C19077567.pdf
+    datasheet_lang: en
+    status: active
+    stock: "58879"
+    stock_checked: "2026-11-02"
+    vr: 13V
+  - name: SMBJ14A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ14A
+    package: DO-214AA(SMB)
+    description: 14V 17.2V 1uA 23.2V 25.9A@10/1000us 600W@10/1000us TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: BORN
+    mpn: SMBJ14A
+    lcsc: C152106
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BORN-SMBJ14A_C152106.pdf
+    datasheet_lang: en
+    status: active
+    stock: "16202"
+    stock_checked: "2026-11-02"
+    vr: 14V
+  - name: SMBJ15A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ15A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 15V 18.5V 24.4V 24.59A@10/1000us 5uA 600W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ15A
+    lcsc: C19077569
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ15A_C19077569.pdf
+    datasheet_lang: en
+    status: active
+    stock: "84282"
+    stock_checked: "2026-11-02"
+    vr: 15V
+  - name: SMBJ16A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ16A
+    package: DO-214AA(SMB)
+    description: 16V 19.7V 23.08A 26V 5uA 600W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ16A
+    lcsc: C19077571
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ16A_C19077571.pdf
+    datasheet_lang: en
+    status: active
+    stock: "114553"
+    stock_checked: "2026-11-02"
+    vr: 16V
+  - name: SMBJ17A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ17A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 17V 18.9V 1uA 21.74A 27.6V 600W@10/1000us TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: LGE
+    mpn: SMBJ17A
+    lcsc: C713716
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2008011840_LGE-SMBJ17A_C713716.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2707"
+    stock_checked: "2026-11-02"
+    vr: 17V
+  - name: SMBJ18A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ18A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 18V 20.55A@10/1000us 22.1V 29.2V 5uA 600W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ18A
+    lcsc: C19077573
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ18A_C19077573.pdf
+    datasheet_lang: en
+    status: active
+    stock: "20159"
+    stock_checked: "2026-11-02"
+    vr: 18V
+  - name: SMBJ20A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ20A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 18.52A@10/1000us 20V 24.5V 32.4V 5uA 600W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ20A
+    lcsc: C19077575
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ20A_C19077575.pdf
+    datasheet_lang: en
+    status: active
+    stock: "16513"
+    stock_checked: "2026-11-02"
+    vr: 20V
+  - name: SMBJ22A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ22A
+    package: DO-214AA(SMB)
+    description: 16.9A@10/1000us 1uA 22V 26.9V 35.5V 600W@10/1000us TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: BORN
+    mpn: SMBJ22A
+    lcsc: C151920
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BORN-SMBJ22A_C151920.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8251"
+    stock_checked: "2026-11-02"
+    vr: 22V
+  - name: SMBJ24A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ24A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 15.42A@10/1000us 24V 29.5V 38.9V 5uA 600W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ24A
+    lcsc: C19077578
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ24A_C19077578.pdf
+    datasheet_lang: en
+    status: active
+    stock: "56552"
+    stock_checked: "2026-11-02"
+    vr: 24V
+  - name: SMBJ26A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ26A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 14.25A@10/1000us 26V 31.9V 42.1V 5uA 600W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ26A
+    lcsc: C19077580
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ26A_C19077580.pdf
+    datasheet_lang: en
+    status: active
+    stock: "17674"
+    stock_checked: "2026-11-02"
+    vr: 26V
+  - name: SMBJ28A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ28A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 13.22A@10/1000us 28V 34.4V 45.4V 5uA 600W@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ28A
+    lcsc: C19077582
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403240415_hongjiacheng-SMBJ28A_C19077582.pdf
+    datasheet_lang: en
+    status: active
+    stock: "21547"
+    stock_checked: "2026-11-02"
+    vr: 28V
+  - name: SMBJ30A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ30A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 12.4A@10/1000us 30V 36.8V 48.4V 5uA 600W@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ30A
+    lcsc: C19077584
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403240415_hongjiacheng-SMBJ30A_C19077584.pdf
+    datasheet_lang: en
+    status: active
+    stock: "263468"
+    stock_checked: "2026-11-02"
+    vr: 30V
+  - name: SMBJ33A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ33A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 11.26A@10/1000us 33V 40.6V 53.3V 5uA 600W@10/1000us IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ33A
+    lcsc: C19077586
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ33A_C19077586.pdf
+    datasheet_lang: en
+    status: active
+    stock: "62282"
+    stock_checked: "2026-11-02"
+    vr: 33V
+  - name: SMBJ36A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ36A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 10.33A 36V 44.2V 58.1V 5uA 600W@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ36A
+    lcsc: C19077588
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041004_hongjiacheng-SMBJ36A_C19077588.pdf
+    datasheet_lang: en
+    status: active
+    stock: "28744"
+    stock_checked: "2026-11-02"
+    vr: 36V
+  - name: SMBJ40A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ40A
+    package: DO-214AA(SMB)
+    description: -65°C~+150°C 1uA 40V 49.1V 600W@10/1000us 64.5V 9.3A@10/1000us TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: MDD
+    mpn: SMBJ40A
+    lcsc: C114003
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407291901_MDD-Microdiode-Semiconductor-SMBJ40A_C114003.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12981"
+    stock_checked: "2026-11-02"
+    vr: 40V
+  - name: SMBJ43A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ43A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 43V 52.8V 5uA 600W@10/1000us 69.4V 8.65A IEC 61000-4-2 Single-channel TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ43A
+    lcsc: C49066948
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066948.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12201"
+    stock_checked: "2026-11-02"
+    vr: 43V
+  - name: SMBJ45A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ45A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 45V 55.3V 5uA 600W@10/1000us 72.7V 8.25A IEC 61000-4-2 Single-channel TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ45A
+    lcsc: C42371744
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMBJ45A_C42371744.pdf
+    datasheet_lang: en
+    status: active
+    stock: "20600"
+    stock_checked: "2026-11-02"
+    vr: 45V
+  - name: SMBJ48A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ48A
+    package: SMB
+    description: -65°C~+150°C 1uA 390pF 48V 58.9V 600W@10/1000us 7.8A@10/1000us 77.4V TVS SMB ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMBJ48A
+    lcsc: C353356
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMBJ48A_C353356.pdf
+    datasheet_lang: en
+    status: active
+    stock: "29887"
+    stock_checked: "2026-11-02"
+    vr: 48V
+  - name: SMBJ51A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ51A
+    package: DO-214AA
+    description: -65°C~+150°C 1uA 51V 600W@10/1000us 62.7V 7.3A@10/1000us 82.4V IEC 61000-4-2, IEC 61000-4-4 TVS Unidirectional DO-214AA ESD and Surge Protection (TVS/ESD)
+    manufacturer: Littelfuse
+    mpn: SMBJ51A
+    lcsc: C1973217
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Littelfuse-SMBJ51A_C1973217.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7733"
+    stock_checked: "2026-11-02"
+    vr: 51V
+  - name: SMBJ54A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ54A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 54V 5uA 6.89A 600W@10/1000us 66.3V 87.1V IEC 61000-4-2 Single-channel TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ54A
+    lcsc: C49066951
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066951.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7040"
+    stock_checked: "2026-11-02"
+    vr: 54V
+  - name: SMBJ58A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ58A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 58V 5uA 6.41A 600W@10/1000us 71.2V 93.6V IEC 61000-4-2 Single-channel TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ58A
+    lcsc: C41376102
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409191648_hongjiacheng-SMBJ58A_C41376102.pdf
+    datasheet_lang: en
+    status: active
+    stock: "35804"
+    stock_checked: "2026-11-02"
+    vr: 58V
+  - name: SMBJ60A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ60A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 5uA 6.2A 600W@10/1000us 60V 73.7V 96.8V IEC 61000-4-2 Single-channel TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ60A
+    lcsc: C49066953
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066953.pdf
+    datasheet_lang: en
+    status: active
+    stock: "47267"
+    stock_checked: "2026-11-02"
+    vr: 60V
+  - name: SMBJ64A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ64A
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 103V 5.83A@10/1000us 5uA 600W@10/1000us 64V 78.6V IEC 61000-4-2 TVS Unidirectional DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ64A
+    lcsc: C19077594
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ64A_C19077594.pdf
+    datasheet_lang: en
+    status: active
+    stock: "26211"
+    stock_checked: "2026-11-02"
+    vr: 64V
+  - name: SMBJ70A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ70A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 113V 5.31A 5uA 600W@10/1000us 70V 86V IEC 61000-4-2 Single-channel TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ70A
+    lcsc: C49066954
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066954.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7597"
+    stock_checked: "2026-11-02"
+    vr: 70V
+  - name: SMBJ75A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ75A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 121V 4.96A 5uA 600W@10/1000us 75V 92.1V IEC 61000-4-2 Single-channel TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ75A
+    lcsc: C49066956
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066956.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7279"
+    stock_checked: "2026-11-02"
+    vr: 75V
+  - name: SMBJ78A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ78A
+    package: SMB
+    description: -55°C~+150°C 1 126V 4.76A 5uA 600W 78V 86.7V TVS Unidirectional SMB ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ78A
+    lcsc: C50325431
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325431.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8442"
+    stock_checked: "2026-11-02"
+    vr: 78V
+  - name: SMBJ85A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ85A
+    package: SMB
+    description: -65°C~+150°C 104V 137V 1uA 390pF 4.4A@10/1000us 600W@10/1000us 85V TVS SMB ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMBJ85A
+    lcsc: C353327
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMBJ85A_C353327.pdf
+    datasheet_lang: en
+    status: active
+    stock: "13047"
+    stock_checked: "2026-11-02"
+    vr: 85V
+  - name: SMBJ90A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ90A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 111V 146V 4.11A 5uA 600W@10/1000us 90V IEC 61000-4-2 Single-channel TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ90A
+    lcsc: C49066960
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066960.pdf
+    datasheet_lang: en
+    status: active
+    stock: "63485"
+    stock_checked: "2026-11-02"
+    vr: 90V
+  - name: SMBJ100A
+    symbol: D_Zener
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ100A
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 100V 123V 162V 3.7A 5uA 600W@10/1000us IEC 61000-4-2 Single-channel TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ100A
+    lcsc: C49066961
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066961.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12261"
+    stock_checked: "2026-11-02"
+    vr: 100V
+  - name: SMF5.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF5.0CA
+    package: SOD-123FL
+    description: -55°C~+150°C 200W@10/1000us 21.7A@10/1000us 400uA 5V 7V 9.2V Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF5.0CA
+    lcsc: C19077498
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041000_hongjiacheng-SMF5-0CA_C19077498.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1535345"
+    stock_checked: "2026-11-02"
+    vr: 5V
+  - name: SMF6.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF6.0CA
+    package: SOD-123FL
+    description: -55°C~+150°C 10.3V 19.4A@10/1000us 200W@10/1000us 400uA 6V 7.37V Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF6.0CA
+    lcsc: C19077500
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041000_hongjiacheng-SMF6-0CA_C19077500.pdf
+    datasheet_lang: en
+    status: active
+    stock: "900362"
+    stock_checked: "2026-11-02"
+    vr: 6V
+  - name: SMF6.5CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF6.5CA
+    package: SOD-123FL
+    description: -55°C~+150°C 11.2V 17.9A@10/1000us 200W@10/1000us 250uA 6.5V 7.98V Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF6.5CA
+    lcsc: C19077501
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403231900_hongjiacheng-SMF6-5CA_C19077501.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2435824"
+    stock_checked: "2026-11-02"
+    vr: 6.5V
+  - name: SMF7.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF7.0CA
+    package: SOD-123FL
+    description: -55°C~+150°C 100uA 12V 16.7A@10/1000us 200W@10/1000us 7V 8.6V Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF7.0CA
+    lcsc: C19077502
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMF7-0CA_C19077502.pdf
+    datasheet_lang: en
+    status: active
+    stock: "245512"
+    stock_checked: "2026-11-02"
+    vr: 7V
+  - name: SMF7.5CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF7.5CA
+    package: SOD-123FL
+    description: -55°C~+150°C 12.9V 15.5A@10/1000us 200W@10/1000us 50uA 7.5V 9.21V Bidirectional IEC 61000-4-2 TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF7.5CA
+    lcsc: C19077503
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280940_hongjiacheng-SMF7-5CA_C19077503.pdf
+    datasheet_lang: en
+    status: active
+    stock: "18983"
+    stock_checked: "2026-11-02"
+    vr: 7.5V
+  - name: SMF8.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF8.0CA
+    package: SOD-123FL
+    description: 1 13.6V 14.7A@10/1000us 200W@10/1000us 25uA 8V 9.83V TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF8.0CA
+    lcsc: C353256
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF8-0CA_C353256.pdf
+    datasheet_lang: en
+    status: active
+    stock: "13170"
+    stock_checked: "2026-11-02"
+    vr: 8V
+  - name: SMF8.5CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF8.5CA
+    package: SOD-123FL
+    description: -55°C~+150°C 10.4V 10uA 13.9A@10/1000us 14.4V 200W@10/1000us 8.5V TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF8.5CA
+    lcsc: C353254
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF8-5CA_C353254.pdf
+    datasheet_lang: en
+    status: active
+    stock: "39851"
+    stock_checked: "2026-11-02"
+    vr: 8.5V
+  - name: SMF9.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF9.0CA
+    package: SOD-123FL
+    description: -55°C~+150°C 11.1V 13A@10/1000us 15.4V 200W@10/1000us 5uA 9V Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF9.0CA
+    lcsc: C19077504
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMF9-0CA_C19077504.pdf
+    datasheet_lang: en
+    status: active
+    stock: "54636"
+    stock_checked: "2026-11-02"
+    vr: 9V
+  - name: SMF10CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF10CA
+    package: SOD-123FL
+    description: -55°C~+150°C 10V 11.8A@10/1000us 12.3V 17V 2.5uA 200W@10/1000us Bidirectional IEC 61000-4-2 TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF10CA
+    lcsc: C19077505
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMF10CA_C19077505.pdf
+    datasheet_lang: en
+    status: active
+    stock: "345238"
+    stock_checked: "2026-11-02"
+    vr: 10V
+  - name: SMF11CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF11CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1 10.99A 11V 12.2V 18.2V 2.5uA 200W Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF11CA
+    lcsc: C50325387
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325387.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11247"
+    stock_checked: "2026-11-02"
+    vr: 11V
+  - name: SMF12CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF12CA
+    package: SOD-123FL
+    description: -55°C~+150°C 10.1A@10/1000us 12V 14.7V 19.9V 2.5uA 200W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF12CA
+    lcsc: C19077507
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMF12CA_C19077507.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1067156"
+    stock_checked: "2026-11-02"
+    vr: 12V
+  - name: SMF13CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF13CA
+    package: SOD-123FL
+    description: -55°C~+150°C 13V 15.9V 1uA 200W@10/1000us 21.5V 9.3A@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF13CA
+    lcsc: C19077508
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMF13CA_C19077508.pdf
+    datasheet_lang: en
+    status: active
+    stock: "387641"
+    stock_checked: "2026-11-02"
+    vr: 13V
+  - name: SMF14CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF14CA
+    package: SOD-123FL
+    description: -55°C~+150°C 14V 17.2V 1uA 200W@10/1000us 23.2V 8.6A Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF14CA
+    lcsc: C41411783
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409201747_hongjiacheng-SMF14CA_C41411783.pdf
+    datasheet_lang: en
+    status: active
+    stock: "364928"
+    stock_checked: "2026-11-02"
+    vr: 14V
+  - name: SMF15CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF15CA
+    package: SOD-123FL
+    description: -55°C~+150°C 15V 18.5V 1uA 200W@10/1000us 24.4V 8.2A@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF15CA
+    lcsc: C19077510
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041000_hongjiacheng-SMF15CA_C19077510.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8246158"
+    stock_checked: "2026-11-02"
+    vr: 15V
+  - name: SMF16CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF16CA
+    package: SOD-123FL
+    description: -55°C~+150°C 16V 19.7V 1uA 200W@10/1000us 26V 7.7A@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF16CA
+    lcsc: C19077511
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041000_hongjiacheng-SMF16CA_C19077511.pdf
+    datasheet_lang: en
+    status: active
+    stock: "414498"
+    stock_checked: "2026-11-02"
+    vr: 16V
+  - name: SMF17CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF17CA
+    package: SOD-123FL
+    description: -55°C~+150°C 17V 1uA 20.9V 200W@10/1000us 27.6V 7.2A@10/1000us TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF17CA
+    lcsc: C353303
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF17CA_C353303.pdf
+    datasheet_lang: en
+    status: active
+    stock: "13375"
+    stock_checked: "2026-11-02"
+    vr: 17V
+  - name: SMF18CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF18CA
+    package: SOD-123FL
+    description: 1 18V 1uA 200W@10/1000us 22.1V 29.2V 6.8A@10/1000us Bidirectional IEC 61000-4-2 TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF18CA
+    lcsc: C19077513
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041000_hongjiacheng-SMF18CA_C19077513.pdf
+    datasheet_lang: en
+    status: active
+    stock: "345132"
+    stock_checked: "2026-11-02"
+    vr: 18V
+  - name: SMF20CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF20CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 20V 24.5V 32.4V 6.2A Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF20CA
+    lcsc: C42371747
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF20CA_C42371747.pdf
+    datasheet_lang: en
+    status: active
+    stock: "246438"
+    stock_checked: "2026-11-02"
+    vr: 20V
+  - name: SMF22CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF22CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 22V 26.9V 35.5V 5.6A@10/1000us TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF22CA
+    lcsc: C353295
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF22CA_C353295.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4138"
+    stock_checked: "2026-11-02"
+    vr: 22V
+  - name: SMF24CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF24CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 24V 29.5V 38.9V 5.1A@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF24CA
+    lcsc: C19077515
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMF24CA_C19077515.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3341686"
+    stock_checked: "2026-11-02"
+    vr: 24V
+  - name: SMF26CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF26CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 26V 31.9V 4.8A@10/1000us 42.1V Bidirectional IEC 61000-4-2 TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF26CA
+    lcsc: C19077516
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280940_hongjiacheng-SMF26CA_C19077516.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1136833"
+    stock_checked: "2026-11-02"
+    vr: 26V
+  - name: SMF28CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF28CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 28V 34.4V 4.4A@10/1000us 45.4V Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF28CA
+    lcsc: C19077517
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMF28CA_C19077517.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2303331"
+    stock_checked: "2026-11-02"
+    vr: 28V
+  - name: SMF30CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF30CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 30V 36.8V 4.1A@10/1000us 48.4V Bidirectional IEC 61000-4-2 TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF30CA
+    lcsc: C19077519
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280940_hongjiacheng-SMF30CA_C19077519.pdf
+    datasheet_lang: en
+    status: active
+    stock: "176436"
+    stock_checked: "2026-11-02"
+    vr: 30V
+  - name: SMF33CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF33CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 3.8A@10/1000us 33V 40.6V 53.3V Bidirectional IEC 61000-4-2 TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF33CA
+    lcsc: C19077520
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280940_hongjiacheng-SMF33CA_C19077520.pdf
+    datasheet_lang: en
+    status: active
+    stock: "319800"
+    stock_checked: "2026-11-02"
+    vr: 33V
+  - name: SMF36CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF36CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 3.4A@10/1000us 36V 44.2V 58.1V Bidirectional IEC 61000-4-2 TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF36CA
+    lcsc: C19077521
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280940_hongjiacheng-SMF36CA_C19077521.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1015492"
+    stock_checked: "2026-11-02"
+    vr: 36V
+  - name: SMF40CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF40CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 200W@10/1000us 3.1A 40V 49.1V 64.5V Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF40CA
+    lcsc: C42371749
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF40CA_C42371749.pdf
+    datasheet_lang: en
+    status: active
+    stock: "29296"
+    stock_checked: "2026-11-02"
+    vr: 40V
+  - name: SMF43CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF43CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1uA 2.88A 200W 43V 47.8V 69.4V Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF43CA
+    lcsc: C50325394
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325394.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5642"
+    stock_checked: "2026-11-02"
+    vr: 43V
+  - name: SMF45CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF45CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1uA 2.75A 200W 45V 50V 72.7V Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF45CA
+    lcsc: C50325395
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325395.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5870"
+    stock_checked: "2026-11-02"
+    vr: 45V
+  - name: SMF48CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF48CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1uA 2.6A 200W 48V 58.9V 77.4V Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF48CA
+    lcsc: C52195216
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C52195216.pdf
+    datasheet_lang: en
+    status: active
+    stock: "53712"
+    stock_checked: "2026-11-02"
+    vr: 48V
+  - name: SMF51CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF51CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 2.4A@10/1000us 200W@10/1000us 51V 62.7V 82.4V TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF51CA
+    lcsc: C353276
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF51CA_C353276.pdf
+    datasheet_lang: en
+    status: active
+    stock: "74653"
+    stock_checked: "2026-11-02"
+    vr: 51V
+  - name: SMF54CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF54CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1uA 2.3A 200W 54V 60V 87.1V Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF54CA
+    lcsc: C50325398
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325398.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5629"
+    stock_checked: "2026-11-02"
+    vr: 54V
+  - name: SMF58CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF58CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 2.1A 200W@10/1000us 58V 71.2V 93.6V Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF58CA
+    lcsc: C42371753
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF58CA_C42371753.pdf
+    datasheet_lang: en
+    status: active
+    stock: "28688"
+    stock_checked: "2026-11-02"
+    vr: 58V
+  - name: SMF60CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF60CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1uA 2.1A 200W@10/1000us 60V 73.7V 96.8V Bidirectional IEC 61000-4-2 Single-channel TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF60CA
+    lcsc: C41376092
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMF60CA_C41376092.pdf
+    datasheet_lang: en
+    status: active
+    stock: "193454"
+    stock_checked: "2026-11-02"
+    vr: 60V
+  - name: SMF64CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF64CA
+    package: SOD-123FL
+    description: 1 1.7A@10/1000us 103V 1uA 200W@10/1000us 64V 78.6V TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF64CA
+    lcsc: C353267
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF64CA_C353267.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3098"
+    stock_checked: "2026-11-02"
+    vr: 64V
+  - name: SMF70CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF70CA
+    package: SOD-123FL
+    description: 1.7A@10/1000us 113V 1uA 200W@10/1000us 70V 86V Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: CJ
+    mpn: SMF70CA
+    lcsc: C1509564
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SMF70CA_C1509564.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9409"
+    stock_checked: "2026-11-02"
+    vr: 70V
+  - name: SMF75CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF75CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1.6A 121V 1uA 200W 75V 92.1V Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF75CA
+    lcsc: C52195220
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C52195220.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1930"
+    stock_checked: "2026-11-02"
+    vr: 75V
+  - name: SMF78CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF78CA
+    package: SOD-123FL
+    description: 1.4A@10/1000us 126V 1uA 200W@10/1000us 78V 95.8V Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMF78CA
+    lcsc: C353258
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMF78CA_C353258.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3004"
+    stock_checked: "2026-11-02"
+    vr: 78V
+  - name: SMF85CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF85CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1.5A 104V 137V 1uA 200W 85V Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF85CA
+    lcsc: C52195273
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C52195273.pdf
+    datasheet_lang: en
+    status: active
+    stock: "31435"
+    stock_checked: "2026-11-02"
+    vr: 85V
+  - name: SMF90CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF90CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1 1.37A 100V 146V 1uA 200W 90V Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMF90CA
+    lcsc: C50325406
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325406.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5924"
+    stock_checked: "2026-11-02"
+    vr: 90V
+  - name: SMF100CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SOD-123F
+    value: SMF100CA
+    package: SOD-123FL
+    description: -55°C~+150°C 1.1A 100V 111V 162V 1uA 200W Bidirectional TVS SOD-123FL ESD and Surge Protection (TVS/ESD)
+    manufacturer: GOODWORK
+    mpn: SMF100CA
+    lcsc: C2943837
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2205240945_GOODWORK-SMF100CA_C2943837.pdf
+    datasheet_lang: en
+    status: active
+    stock: "14763"
+    stock_checked: "2026-11-02"
+    vr: 100V
+  - name: SMAJ5.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ5.0CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 400W@10/1000us 43.5A@10/1000us 5V 7V 800uA 9.2V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ5.0CA
+    lcsc: C19077524
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ5-0CA_C19077524.pdf
+    datasheet_lang: en
+    status: active
+    stock: "645011"
+    stock_checked: "2026-11-02"
+    vr: 5V
+  - name: SMAJ6.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ6.0CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 10.3V 38.8A@10/1000us 400W@10/1000us 6V 7.37V 800uA Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ6.0CA
+    lcsc: C19077526
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312011957_hongjiacheng-SMAJ6-0CA_C19077526.pdf
+    datasheet_lang: en
+    status: active
+    stock: "279298"
+    stock_checked: "2026-11-02"
+    vr: 6V
+  - name: SMAJ6.5CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ6.5CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 11.2V 35.7A@10/1000us 400W@10/1000us 500uA 6.5V 7.98V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ6.5CA
+    lcsc: C19077527
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403232245_hongjiacheng-SMAJ6-5CA_C19077527.pdf
+    datasheet_lang: en
+    status: active
+    stock: "306736"
+    stock_checked: "2026-11-02"
+    vr: 6.5V
+  - name: SMAJ7.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ7.0CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 12V 200uA 33.3A@10/1000us 400W@10/1000us 7V 8.6V Bidirectional IEC 61000-4-2 TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ7.0CA
+    lcsc: C19077529
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ7-0CA_C19077529.pdf
+    datasheet_lang: en
+    status: active
+    stock: "70483"
+    stock_checked: "2026-11-02"
+    vr: 7V
+  - name: SMAJ7.5CA_TR13
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ7.5CA/TR13
+    package: SMA(DO-214AC)
+    description: 100uA 12.9V 31A 400W 7.5V 8.33V Bidirectional TVS SMA(DO-214AC) ESD and Surge Protection (TVS/ESD)
+    manufacturer: Brightking
+    mpn: SMAJ7.5CA/TR13
+    lcsc: C309907
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Brightking-SMAJ7-5CA-TR13_C309907.pdf
+    datasheet_lang: en
+    status: active
+    stock: "15948"
+    stock_checked: "2026-11-02"
+    vr: 7.5V
+  - name: SMAJ8.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ8.0CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 13.6V 29.41A 400W@10/1000us 50uA 8V 9.83V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ8.0CA
+    lcsc: C49066916
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066916.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8263"
+    stock_checked: "2026-11-02"
+    vr: 8V
+  - name: SMAJ8.5CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ8.5CA
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 14.4V 20uA 27.8A 400W@10/1000us 8.5V 9.44V Bidirectional Single-channel TVS SMA(DO-214AC) ESD and Surge Protection (TVS/ESD)
+    manufacturer: BORN
+    mpn: SMAJ8.5CA
+    lcsc: C5439951
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303301800_BORN-SMAJ8-5CA_C5439951.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4066"
+    stock_checked: "2026-11-02"
+    vr: 8.5V
+  - name: SMAJ9.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ9.0CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 10V 15.4V 26A 400W 5uA 9V Bidirectional TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: GOODWORK
+    mpn: SMAJ9.0CA
+    lcsc: C908815
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_GOODWORK-SMAJ9-0CA_C908815.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9803"
+    stock_checked: "2026-11-02"
+    vr: 9V
+  - name: SMAJ10CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ10CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 10V 12.3V 17V 23.5A 400W@10/1000us 5uA Bidirectional IEC 61000-4-2 TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ10CA
+    lcsc: C19077530
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ10CA_C19077530.pdf
+    datasheet_lang: en
+    status: active
+    stock: "36455"
+    stock_checked: "2026-11-02"
+    vr: 10V
+  - name: SMAJ11CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ11CA
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 11V 13.5V 18.2V 1uA 22A@10/1000us 400W@10/1000us Bidirectional TVS SMA(DO-214AC) ESD and Surge Protection (TVS/ESD)
+    manufacturer: BORN
+    mpn: SMAJ11CA
+    lcsc: C152124
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2208231800_BORN-SMAJ11CA_C152124.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6076"
+    stock_checked: "2026-11-02"
+    vr: 11V
+  - name: SMAJ12CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ12CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 12V 14.7V 19.9V 1uA 20.1A@10/1000us 400W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ12CA
+    lcsc: C19077532
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403232245_hongjiacheng-SMAJ12CA_C19077532.pdf
+    datasheet_lang: en
+    status: active
+    stock: "187758"
+    stock_checked: "2026-11-02"
+    vr: 12V
+  - name: SMAJ13CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ13CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 13V 15.9V 18.6A@10/1000us 1uA 21.5V 400W@10/1000us Bidirectional IEC 61000-4-2 TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ13CA
+    lcsc: C19077534
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ13CA_C19077534.pdf
+    datasheet_lang: en
+    status: active
+    stock: "123441"
+    stock_checked: "2026-11-02"
+    vr: 13V
+  - name: SMAJ14CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ14CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 14V 17.2A 17.2V 1uA 23.2V 400W Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ14CA
+    lcsc: C42394396
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMAJ14CA_C42394396.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12788"
+    stock_checked: "2026-11-02"
+    vr: 14V
+  - name: SMAJ15CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ15CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 15V 16.4A@10/1000us 18.5V 1uA 24.4V 400W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ15CA
+    lcsc: C19077536
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ15CA_C19077536.pdf
+    datasheet_lang: en
+    status: active
+    stock: "292873"
+    stock_checked: "2026-11-02"
+    vr: 15V
+  - name: SMAJ16CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ16CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 15.4A 16V 19.7V 1uA 26V 400W@10/1000us Bidirectional IEC 61000-4-2 TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ16CA
+    lcsc: C19077537
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ16CA_C19077537.pdf
+    datasheet_lang: en
+    status: active
+    stock: "65035"
+    stock_checked: "2026-11-02"
+    vr: 16V
+  - name: SMAJ17CA_TR13
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ17CA/TR13
+    package: SMA(DO-214AC)
+    description: 14.5A 17V 18.9V 1uA 27.6V 400W Bidirectional TVS SMA(DO-214AC) ESD and Surge Protection (TVS/ESD)
+    manufacturer: Brightking
+    mpn: SMAJ17CA/TR13
+    lcsc: C309864
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Brightking-SMAJ17CA-TR13_C309864.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4415"
+    stock_checked: "2026-11-02"
+    vr: 17V
+  - name: SMAJ18CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ18CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 13.7A@10/1000us 18V 1uA 22.1V 29.2V 400W@10/1000us Bidirectional IEC 61000-4-2 TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ18CA
+    lcsc: C19077539
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ18CA_C19077539.pdf
+    datasheet_lang: en
+    status: active
+    stock: "310616"
+    stock_checked: "2026-11-02"
+    vr: 18V
+  - name: SMAJ20CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ20CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 12.3A@10/1000us 1uA 20V 24.5V 32.4V 400W@10/1000us Bidirectional IEC 61000-4-2 TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ20CA
+    lcsc: C19077540
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ20CA_C19077540.pdf
+    datasheet_lang: en
+    status: active
+    stock: "21158"
+    stock_checked: "2026-11-02"
+    vr: 20V
+  - name: SMAJ22CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ22CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 11.27A 1uA 22V 26.9V 35.5V 400W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ22CA
+    lcsc: C42394397
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMAJ22CA_C42394397.pdf
+    datasheet_lang: en
+    status: active
+    stock: "23214"
+    stock_checked: "2026-11-02"
+    vr: 22V
+  - name: SMAJ24CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ24CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 10.3A@10/1000us 1uA 24V 29.5V 38.9V 400W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ24CA
+    lcsc: C19077542
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ24CA_C19077542.pdf
+    datasheet_lang: en
+    status: active
+    stock: "125102"
+    stock_checked: "2026-11-02"
+    vr: 24V
+  - name: SMAJ26CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ26CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 26V 31.9V 400W@10/1000us 42.1V 9.5A@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ26CA
+    lcsc: C19077544
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403232245_hongjiacheng-SMAJ26CA_C19077544.pdf
+    datasheet_lang: en
+    status: active
+    stock: "101304"
+    stock_checked: "2026-11-02"
+    vr: 26V
+  - name: SMAJ28CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ28CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 28V 34.4V 400W@10/1000us 45.4V 8.8A Bidirectional IEC 61000-4-2 TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ28CA
+    lcsc: C19077546
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ28CA_C19077546.pdf
+    datasheet_lang: en
+    status: active
+    stock: "597719"
+    stock_checked: "2026-11-02"
+    vr: 28V
+  - name: SMAJ30CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ30CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 30V 36.8V 400W@10/1000us 48.4V 8.3A@10/1000us Bidirectional IEC 61000-4-2 TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ30CA
+    lcsc: C19077548
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ30CA_C19077548.pdf
+    datasheet_lang: en
+    status: active
+    stock: "41870"
+    stock_checked: "2026-11-02"
+    vr: 30V
+  - name: SMAJ33CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ33CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 33V 40.6V 400W@10/1000us 53.3V 7.5A@10/1000us Bidirectional IEC 61000-4-2 TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ33CA
+    lcsc: C19077549
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ33CA_C19077549.pdf
+    datasheet_lang: en
+    status: active
+    stock: "187562"
+    stock_checked: "2026-11-02"
+    vr: 33V
+  - name: SMAJ36CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ36CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 36V 400W@10/1000us 44.2V 58.1V 6.9A@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ36CA
+    lcsc: C19077551
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ36CA_C19077551.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8226"
+    stock_checked: "2026-11-02"
+    vr: 36V
+  - name: SMAJ40CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ40CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 400W@10/1000us 40V 49.1V 6.2A@10/1000us 64.5V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ40CA
+    lcsc: C19077552
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041002_hongjiacheng-SMAJ40CA_C19077552.pdf
+    datasheet_lang: en
+    status: active
+    stock: "90507"
+    stock_checked: "2026-11-02"
+    vr: 40V
+  - name: SMAJ43CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ43CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 400W@10/1000us 43V 5.8A@10/1000us 52.8V 69.4V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ43CA
+    lcsc: C41376400
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMAJ43CA_C41376400.pdf
+    datasheet_lang: en
+    status: active
+    stock: "30854"
+    stock_checked: "2026-11-02"
+    vr: 43V
+  - name: SMAJ45CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ45CA
+    package: SMA
+    description: SMA ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ45CA
+    lcsc: C53055792
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C53055792.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9283"
+    stock_checked: "2026-11-02"
+    vr: 45V
+  - name: SMAJ48CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ48CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 400W@10/1000us 48V 5.2A@10/1000us 58.9V 77.4V Bidirectional IEC 61000-4-2 TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ48CA
+    lcsc: C19077553
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280937_hongjiacheng-SMAJ48CA_C19077553.pdf
+    datasheet_lang: en
+    status: active
+    stock: "118873"
+    stock_checked: "2026-11-02"
+    vr: 48V
+  - name: SMAJ51CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ51CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 4.9A 400W@10/1000us 51V 62.7V 82.4V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ51CA
+    lcsc: C41376404
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMAJ51CA_C41376404.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2818"
+    stock_checked: "2026-11-02"
+    vr: 51V
+  - name: SMAJ54CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ54CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 4.59A 400W@10/1000us 54V 66.3V 87.1V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ54CA
+    lcsc: C49066924
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066924.pdf
+    datasheet_lang: en
+    status: active
+    stock: "88093"
+    stock_checked: "2026-11-02"
+    vr: 54V
+  - name: SMAJ58CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ58CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 4.27A 400W@10/1000us 58V 71.2V 93.6V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ58CA
+    lcsc: C49066925
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066925.pdf
+    datasheet_lang: en
+    status: active
+    stock: "55139"
+    stock_checked: "2026-11-02"
+    vr: 58V
+  - name: SMAJ60CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ60CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 1uA 4.1A 400W@10/1000us 60V 73.7V 96.8V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ60CA
+    lcsc: C42394399
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMAJ60CA_C42394399.pdf
+    datasheet_lang: en
+    status: active
+    stock: "35996"
+    stock_checked: "2026-11-02"
+    vr: 60V
+  - name: SMAJ64CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ64CA
+    package: SMA
+    description: SMA ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ64CA
+    lcsc: C53446678
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C53446678.pdf
+    datasheet_lang: en
+    status: active
+    stock: "35744"
+    stock_checked: "2026-11-02"
+    vr: 64V
+  - name: SMAJ75CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ75CA
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 121V 1uA 3.3A 400W@10/1000us 75V 83.3V Bidirectional Single-channel TVS SMA(DO-214AC) ESD and Surge Protection (TVS/ESD)
+    manufacturer: BORN
+    mpn: SMAJ75CA
+    lcsc: C5439954
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303301800_BORN-SMAJ75CA_C5439954.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6961"
+    stock_checked: "2026-11-02"
+    vr: 75V
+  - name: SMAJ78CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ78CA
+    package: SMA
+    description: -55°C~+150°C 1 126V 1uA 3.2A 400W 78V 86.7V Bidirectional TVS SMA ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ78CA
+    lcsc: C49424020
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49424020.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8205"
+    stock_checked: "2026-11-02"
+    vr: 78V
+  - name: SMAJ85CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ85CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 104V 137V 1uA 2.9A 400W@10/1000us 85V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ85CA
+    lcsc: C42394401
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMAJ85CA_C42394401.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7896"
+    stock_checked: "2026-11-02"
+    vr: 85V
+  - name: SMAJ90CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ90CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 111V 146V 1uA 2.74A 400W@10/1000us 90V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ90CA
+    lcsc: C42394402
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2501071555_hongjiacheng-SMAJ90CA_C42394402.pdf
+    datasheet_lang: en
+    status: active
+    stock: "21045"
+    stock_checked: "2026-11-02"
+    vr: 90V
+  - name: SMAJ100CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SMAJ100CA
+    package: DO-214AC(SMA)
+    description: -55°C~+150°C 100V 123V 162V 1uA 2.47A 400W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AC(SMA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMAJ100CA
+    lcsc: C49066927
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066927.pdf
+    datasheet_lang: en
+    status: active
+    stock: "22385"
+    stock_checked: "2026-11-02"
+    vr: 100V
+  - name: SMBJ5.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ5.0CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 5V 600W@10/1000us 65.22A@10/1000us 7V 800uA 9.2V Bidirectional IEC 61000-4-2 TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ5.0CA
+    lcsc: C19077559
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ5-0CA_C19077559.pdf
+    datasheet_lang: en
+    status: active
+    stock: "142415"
+    stock_checked: "2026-11-02"
+    vr: 5V
+  - name: SMBJ6.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ6.0CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 10.3V 58.25A@10/1000us 600W@10/1000us 6V 7.37V 800uA Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ6.0CA
+    lcsc: C19077561
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041004_hongjiacheng-SMBJ6-0CA_C19077561.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1415446"
+    stock_checked: "2026-11-02"
+    vr: 6V
+  - name: SMBJ6.5CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ6.5CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 1 11.2V 500uA 53.57A 6.5V 600W 7.22V Bidirectional IEC 61000-4-2 TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ6.5CA
+    lcsc: C7420377
+    jlc_type: Basic
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405211514_hongjiacheng-SMBJ6-5CA_C7420377.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1192606"
+    stock_checked: "2026-11-02"
+    vr: 6.5V
+  - name: SMBJ7.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ7.0CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 12V 200uA 50A@10/1000us 600W@10/1000us 7V 8.6V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ7.0CA
+    lcsc: C19077564
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMBJ7-0CA_C19077564.pdf
+    datasheet_lang: en
+    status: active
+    stock: "23064"
+    stock_checked: "2026-11-02"
+    vr: 7V
+  - name: SMBJ7.5CA_TR13
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ7.5CA/TR13
+    package: SMB(DO-214AA)
+    description: 12.9V 1uA 46.6A 600W 7.5V 8.33V Bidirectional IEC 61000-4-2 TVS SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: Brightking
+    mpn: SMBJ7.5CA/TR13
+    lcsc: C309981
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Brightking-SMBJ7-5CA-TR13_C309981.pdf
+    datasheet_lang: en
+    status: active
+    stock: "25034"
+    stock_checked: "2026-11-02"
+    vr: 7.5V
+  - name: SMBJ8.0CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ8.0CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 13.6V 44.12A 50uA 600W@10/1000us 8V 9.83V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ8.0CA
+    lcsc: C41376100
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409191648_hongjiacheng-SMBJ8-0CA_C41376100.pdf
+    datasheet_lang: en
+    status: active
+    stock: "24913"
+    stock_checked: "2026-11-02"
+    vr: 8V
+  - name: SMBJ8.5CA-E3_52
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ8.5CA-E3/52
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 10.4V 14.4V 20uA 41.7A@10/1000us 600W@10/1000us 8.5V Bidirectional IEC 61000-4-2 TVS SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: Vishay
+    mpn: SMBJ8.5CA-E3/52
+    lcsc: C1973914
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Vishay-Intertech-SMBJ8-5CA-E3-52_C1973914.pdf
+    datasheet_lang: en
+    status: active
+    stock: "13673"
+    stock_checked: "2026-11-02"
+    vr: 8.5V
+  - name: SMBJ9.0CA-13-F
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ9.0CA-13-F
+    package: SMB
+    description: -55°C~+150°C 11.5V 15.4V 39A@8.3ms 5uA 600W@8.3ms 9V Bidirectional TVS SMB ESD and Surge Protection (TVS/ESD)
+    manufacturer: Diodes Incorporated
+    mpn: SMBJ9.0CA-13-F
+    lcsc: C135111
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Diodes-Incorporated-SMBJ9-0CA-13-F_C135111.pdf
+    datasheet_lang: en
+    status: active
+    stock: "29850"
+    stock_checked: "2026-11-02"
+    vr: 9V
+  - name: SMBJ10CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ10CA
+    package: DO-214AA(SMB)
+    description: -65°C~+150°C 10V 12.3V 17V 35.3A 5uA 600W Bidirectional TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: MDD
+    mpn: SMBJ10CA
+    lcsc: C364294
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407291901_MDD-Microdiode-Semiconductor-SMBJ10CA-T3_C364294.pdf
+    datasheet_lang: en
+    status: active
+    stock: "52597"
+    stock_checked: "2026-11-02"
+    vr: 10V
+  - name: SMBJ11CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ11CA
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 11V 12.2V 18.2V 1uA 32.97A 600W@10/1000us Bidirectional TVS SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: LGE
+    mpn: SMBJ11CA
+    lcsc: C320225
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_LGE-SMBJ11CA_C320225.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3376"
+    stock_checked: "2026-11-02"
+    vr: 11V
+  - name: SMBJ12CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ12CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 12V 14.7V 19.9V 30.15A@10/1000us 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ12CA
+    lcsc: C19077566
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405211514_hongjiacheng-SMBJ12CA_C19077566.pdf
+    datasheet_lang: en
+    status: active
+    stock: "110043"
+    stock_checked: "2026-11-02"
+    vr: 12V
+  - name: SMBJ13CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ13CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 13V 15.9V 21.5V 27.91A@10/1000us 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ13CA
+    lcsc: C19077568
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMBJ13CA_C19077568.pdf
+    datasheet_lang: en
+    status: active
+    stock: "26010"
+    stock_checked: "2026-11-02"
+    vr: 13V
+  - name: SMBJ14CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ14CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 14V 17.2V 23.2V 25.86A 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ14CA
+    lcsc: C41376097
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMBJ14CA_C41376097.pdf
+    datasheet_lang: en
+    status: active
+    stock: "17299"
+    stock_checked: "2026-11-02"
+    vr: 14V
+  - name: SMBJ15CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ15CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 15V 18.5V 24.4V 24.59A@10/1000us 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ15CA
+    lcsc: C19077570
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMBJ15CA_C19077570.pdf
+    datasheet_lang: en
+    status: active
+    stock: "59906"
+    stock_checked: "2026-11-02"
+    vr: 15V
+  - name: SMBJ16CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ16CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 16V 19.7V 23.08A@10/1000us 26V 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ16CA
+    lcsc: C19077572
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMBJ16CA_C19077572.pdf
+    datasheet_lang: en
+    status: active
+    stock: "138231"
+    stock_checked: "2026-11-02"
+    vr: 16V
+  - name: SMBJ17CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ17CA
+    package: SMB
+    description: -55°C~+150°C 1 17V 18.9V 21.74A 27.6V 5uA 600W Bidirectional TVS SMB ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ17CA
+    lcsc: C50325429
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325429.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8641"
+    stock_checked: "2026-11-02"
+    vr: 17V
+  - name: SMBJ18CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ18CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 18V 20.55A 22.1V 29.2V 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ18CA
+    lcsc: C19077574
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMBJ18CA_C19077574.pdf
+    datasheet_lang: en
+    status: active
+    stock: "52347"
+    stock_checked: "2026-11-02"
+    vr: 18V
+  - name: SMBJ20CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ20CA
+    package: DO-214AA(SMB)
+    description: 18.52A@10/1000us 20V 24.5V 32.4V 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ20CA
+    lcsc: C19077576
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ20CA_C19077576.pdf
+    datasheet_lang: en
+    status: active
+    stock: "15499"
+    stock_checked: "2026-11-02"
+    vr: 20V
+  - name: SMBJ22CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ22CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 16.9A@10/1000us 22V 26.9V 35.5V 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ22CA
+    lcsc: C19077577
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMBJ22CA_C19077577.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1955"
+    stock_checked: "2026-11-02"
+    vr: 22V
+  - name: SMBJ24CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ24CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 15.42A@10/1000us 24V 29.5V 38.9V 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ24CA
+    lcsc: C19077579
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312011957_hongjiacheng-SMBJ24CA_C19077579.pdf
+    datasheet_lang: en
+    status: active
+    stock: "375391"
+    stock_checked: "2026-11-02"
+    vr: 24V
+  - name: SMBJ26CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ26CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 14.25A@10/1000us 26V 31.9V 42.1V 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ26CA
+    lcsc: C19077581
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041004_hongjiacheng-SMBJ26CA_C19077581.pdf
+    datasheet_lang: en
+    status: active
+    stock: "682673"
+    stock_checked: "2026-11-02"
+    vr: 26V
+  - name: SMBJ28CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ28CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 13.22A@10/1000us 28V 34.4V 45.4V 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ28CA
+    lcsc: C19077583
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMBJ28CA_C19077583.pdf
+    datasheet_lang: en
+    status: active
+    stock: "120257"
+    stock_checked: "2026-11-02"
+    vr: 28V
+  - name: SMBJ30CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ30CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 12.4A@10/1000us 30V 36.8V 48.4V 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ30CA
+    lcsc: C19077585
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041004_hongjiacheng-SMBJ30CA_C19077585.pdf
+    datasheet_lang: en
+    status: active
+    stock: "252479"
+    stock_checked: "2026-11-02"
+    vr: 30V
+  - name: SMBJ33CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ33CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 11.26A@10/1000us 33V 40.6V 53.3V 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ33CA
+    lcsc: C19077587
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403240415_hongjiacheng-SMBJ33CA_C19077587.pdf
+    datasheet_lang: en
+    status: active
+    stock: "309152"
+    stock_checked: "2026-11-02"
+    vr: 33V
+  - name: SMBJ36CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ36CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 10.33A@10/1000us 36V 44.2V 58.1V 5uA 600W@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ36CA
+    lcsc: C19077589
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403240415_hongjiacheng-SMBJ36CA_C19077589.pdf
+    datasheet_lang: en
+    status: active
+    stock: "592552"
+    stock_checked: "2026-11-02"
+    vr: 36V
+  - name: SMBJ40CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ40CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 40V 49.1V 5uA 600W@10/1000us 64.5V 9.3A@10/1000us Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ40CA
+    lcsc: C19077590
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMBJ40CA_C19077590.pdf
+    datasheet_lang: en
+    status: active
+    stock: "31489"
+    stock_checked: "2026-11-02"
+    vr: 40V
+  - name: SMBJ43CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ43CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 43V 52.8V 5uA 600W@10/1000us 69.4V 8.65A Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ43CA
+    lcsc: C41376098
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411041728_hongjiacheng-SMBJ43CA_C41376098.pdf
+    datasheet_lang: en
+    status: active
+    stock: "23014"
+    stock_checked: "2026-11-02"
+    vr: 43V
+  - name: SMBJ45CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ45CA
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 1uA 45V 50V 600W@10/1000us 72.7V 8.3A Bidirectional Single-channel TVS SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: BORN
+    mpn: SMBJ45CA
+    lcsc: C5439945
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303301800_BORN-SMBJ45CA_C5439945.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9085"
+    stock_checked: "2026-11-02"
+    vr: 45V
+  - name: SMBJ48CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ48CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 48V 58.9V 5uA 600W@10/1000us 7.75A@10/1000us 77.4V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ48CA
+    lcsc: C19077591
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403240415_hongjiacheng-SMBJ48CA_C19077591.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4317"
+    stock_checked: "2026-11-02"
+    vr: 48V
+  - name: SMBJ51CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ51CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 51V 5uA 600W@10/1000us 62.7V 7.28A 82.4V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ51CA
+    lcsc: C41376101
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409191648_hongjiacheng-SMBJ51CA_C41376101.pdf
+    datasheet_lang: en
+    status: active
+    stock: "66942"
+    stock_checked: "2026-11-02"
+    vr: 51V
+  - name: SMBJ54CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ54CA
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 54V 5uA 6.89A 600W@10/1000us 66.3V 87.1V Bidirectional IEC 61000-4-2 Single-channel TVS SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ54CA
+    lcsc: C49066952
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066952.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7068"
+    stock_checked: "2026-11-02"
+    vr: 54V
+  - name: SMBJ58CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ58CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 58V 5uA 6.41A@10/1000us 600W@10/1000us 71.2V 93.6V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ58CA
+    lcsc: C19077592
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312221742_hongjiacheng-SMBJ58CA_C19077592.pdf
+    datasheet_lang: en
+    status: active
+    stock: "190313"
+    stock_checked: "2026-11-02"
+    vr: 58V
+  - name: SMBJ60CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ60CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 5uA 6.2A@10/1000us 600W@10/1000us 60V 73.7V 96.8V Bidirectional IEC 61000-4-2 TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ60CA
+    lcsc: C19077593
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312280935_hongjiacheng-SMBJ60CA_C19077593.pdf
+    datasheet_lang: en
+    status: active
+    stock: "333986"
+    stock_checked: "2026-11-02"
+    vr: 60V
+  - name: SMBJ64CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ64CA
+    package: SMB(DO-214AA)
+    description: -65°C~+150°C 103V 1uA 5.9A 600W@10/1000us 64V 78.6V Bidirectional TVS SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: Brightking
+    mpn: SMBJ64CA
+    lcsc: C123975
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Brightking-SMBJ64CA_C123975.pdf
+    datasheet_lang: en
+    status: active
+    stock: "20432"
+    stock_checked: "2026-11-02"
+    vr: 64V
+  - name: SMBJ70CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ70CA
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 113V 5.31A 5uA 600W@10/1000us 70V 86V Bidirectional IEC 61000-4-2 Single-channel TVS SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ70CA
+    lcsc: C49066955
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066955.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11791"
+    stock_checked: "2026-11-02"
+    vr: 70V
+  - name: SMBJ75CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ75CA
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 121V 4.96A 5uA 600W@10/1000us 75V 92.1V Bidirectional IEC 61000-4-2 Single-channel TVS SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ75CA
+    lcsc: C49066957
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066957.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11581"
+    stock_checked: "2026-11-02"
+    vr: 75V
+  - name: SMBJ78CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ78CA
+    package: SMB
+    description: -55°C~+150°C 1 126V 4.76A 5uA 600W 78V 86.7V Bidirectional TVS SMB ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ78CA
+    lcsc: C50325432
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C50325432.pdf
+    datasheet_lang: en
+    status: active
+    stock: "39121"
+    stock_checked: "2026-11-02"
+    vr: 78V
+  - name: SMBJ85CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ85CA
+    package: SMB(DO-214AA)
+    description: -55°C~+150°C 104V 137V 4.38A 5uA 600W@10/1000us 85V Bidirectional IEC 61000-4-2 Single-channel TVS SMB(DO-214AA) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ85CA
+    lcsc: C49066959
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49066959.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8712"
+    stock_checked: "2026-11-02"
+    vr: 85V
+  - name: SMBJ90CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ90CA
+    package: DO-214AA(SMB)
+    description: -55°C~+150°C 111V 146V 4.11A 5uA 600W@10/1000us 90V Bidirectional IEC 61000-4-2 Single-channel TVS DO-214AA(SMB) ESD and Surge Protection (TVS/ESD)
+    manufacturer: hongjiacheng
+    mpn: SMBJ90CA
+    lcsc: C41376398
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409191648_hongjiacheng-SMBJ90CA_C41376398.pdf
+    datasheet_lang: en
+    status: active
+    stock: "26740"
+    stock_checked: "2026-11-02"
+    vr: 90V
+  - name: SMBJ100CA
+    symbol: D_TVS
+    footprint: LIB_Diode_SMD:D_SMB
+    value: SMBJ100CA
+    package: SMB
+    description: -65°C~+150°C 100V 123V 162V 1uA 3.7A@10/1000us 390pF 600W@10/1000us TVS SMB ESD and Surge Protection (TVS/ESD)
+    manufacturer: Shandong Jingdao
+    mpn: SMBJ100CA
+    lcsc: C353407
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shandong-Jingdao-Microelectronics-SMBJ100CA_C353407.pdf
+    datasheet_lang: en
+    status: active
+    stock: "36055"
+    stock_checked: "2026-11-02"
+    vr: 100V
+  - name: SS14
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS14
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 1A 25A 300uA@40V 40V 550mV@1A Independent SMA(DO-214AC) Schottky Diodes
+    manufacturer: MDD
+    mpn: SS14
+    lcsc: C2480
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407101109_MDD-Microdiode-Semiconductor-SS14_C2480.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1788150"
+    stock_checked: "2026-11-02"
+    vr: 40V
+    if: 1A
+    vf: 550mV@1A
+  - name: SS16
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS16
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 1A 200uA@60V 30A 60V 700mV@1A Standalone SMA(DO-214AC) Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: SS16
+    lcsc: C18199176
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310131745_hongjiacheng-SS16_C18199176.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "106700"
+    stock_checked: "2026-11-02"
+    vr: 60V
+    if: 1A
+    vf: 700mV@1A
+  - name: SS110
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS110
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 100V 1A 30A 50uA@100V 850mV@1A Standalone SMA(DO-214AC) Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: SS110
+    lcsc: C18199178
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310131745_hongjiacheng-SS110_C18199178.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "5651"
+    stock_checked: "2026-11-02"
+    vr: 100V
+    if: 1A
+    vf: 850mV@1A
+  - name: SS24
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS24
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 200uA@40V 2A 40V 50A 550mV@2A Independent SMA(DO-214AC) Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: SS24
+    lcsc: C7420362
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401290920_hongjiacheng-SS24_C7420362.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "658599"
+    stock_checked: "2026-11-02"
+    vr: 40V
+    if: 2A
+    vf: 550mV@2A
+  - name: SS26
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS26
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 200uA@60V 2A 50A 60V 700mV@2A Independent SMA(DO-214AC) Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: SS26
+    lcsc: C7420363
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401290920_hongjiacheng-SS26_C7420363.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "359561"
+    stock_checked: "2026-11-02"
+    vr: 60V
+    if: 2A
+    vf: 700mV@2A
+  - name: SS210
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS210
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 1 Independent 100V 2A 500uA@100V 850mV@2A SMA(DO-214AC) Schottky Diodes
+    manufacturer: MDD
+    mpn: SS210
+    lcsc: C14996
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS210_C14996.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1210873"
+    stock_checked: "2026-11-02"
+    vr: 100V
+    if: 2A
+    vf: 850mV@2A
+  - name: SS34
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS34
+    package: SMA(DO-214AC)
+    description: -55°C~+125°C 3A 40V 500uA@40V 550mV@3A Independent SMA(DO-214AC) Schottky Diodes
+    manufacturer: MDD
+    mpn: SS34
+    lcsc: C8678
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS34_C8678.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3245081"
+    stock_checked: "2026-11-02"
+    vr: 40V
+    if: 3A
+    vf: 550mV@3A
+  - name: SS36
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS36
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 10mA@60V 3A 60V 700mV@3A 80A Independent SMA(DO-214AC) Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: SS36
+    lcsc: C7420367
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2402010525_hongjiacheng-SS36_C7420367.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "463203"
+    stock_checked: "2026-11-02"
+    vr: 60V
+    if: 3A
+    vf: 700mV@3A
+  - name: SS310
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS310
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 100V 3A 50uA@100V 80A 850mV@3A Independent SMA(DO-214AC) Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: SS310
+    lcsc: C7420364
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308281515_hongjiacheng-SS310_C7420364.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "452881"
+    stock_checked: "2026-11-02"
+    vr: 100V
+    if: 3A
+    vf: 850mV@3A
+  - name: SS54
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS54
+    package: SMA(DO-214AC)
+    description: -55°C~+125°C 1mA@40V 40V 550mV@5A 5A Independent SMA(DO-214AC) Schottky Diodes
+    manufacturer: MDD
+    mpn: SS54
+    lcsc: C22452
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS54_C22452.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1872636"
+    stock_checked: "2026-11-02"
+    vr: 40V
+    if: 5A
+    vf: 550mV@5A
+  - name: SS56
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS56
+    package: SMA(DO-214AC)
+    description: -55°C~+125°C 120A 200uA@60V 5A 60V 700mV@5A Standalone SMA(DO-214AC) Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: SS56
+    lcsc: C18199169
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310131745_hongjiacheng-SS56_C18199169.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "1158153"
+    stock_checked: "2026-11-02"
+    vr: 60V
+    if: 5A
+    vf: 700mV@5A
+  - name: SS510
+    symbol: D_Schottky
+    footprint: LIB_Diode_SMD:D_SMA
+    value: SS510
+    package: SMA(DO-214AC)
+    description: -55°C~+150°C 100V 120A 50uA@100V 5A 850mV@5A Standalone SMA(DO-214AC) Schottky Diodes
+    manufacturer: hongjiacheng
+    mpn: SS510
+    lcsc: C18199171
+    jlc_type: Preferred
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310131745_hongjiacheng-SS510_C18199171.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "233880"
+    stock_checked: "2026-11-02"
+    vr: 100V
+    if: 5A
+    vf: 850mV@5A
