@@ -118,7 +118,7 @@ def _footprint(stage: _Stage, schema, part: JlcPart, choice: str, family: str | 
             raise ValueError(f"footprint {choice!r} does not exist in footprints/")
         return choice, None
     if not family:
-        raise ValueError("--family is required for a new footprint (e.g. Package_TO_SOT, Inductor_SMD)")
+        raise ValueError("--family is required for a new footprint (e.g. Package_TO_SOT_SMD, Inductor_SMD)")
     _valid_name(family, "family")
     fam = schema.families.get(family) or Family(family, f"{schema.prefix}_{family}")
     new_family = None if family in schema.families else family
@@ -279,7 +279,10 @@ def prepare(root: Path, ref: str, *, category: str | None = None, symbol: str | 
         if category not in schema.categories:
             raise ValueError(f"--category is required: one of {', '.join(schema.categories)}")
         symbol = symbol or (KINDS[kind][1] if kind else None)  # None: decided by the footprint's pads
-        mapped = stock_footprint(part) if disc is not None and not footprint else None
+        # only with a base or chosen KiCad symbol (an EasyEDA symbol needs EasyEDA's pad numbers), and not
+        # when --fp-name asks for an EasyEDA footprint
+        mapped = (stock_footprint(part) if disc is not None and (disc.symbol or symbol) and symbol != "easyeda"
+                  and not footprint and not fp_name else None)
         if mapped:  # plan 8: a discrete in a known package takes KiCad's stock footprint
             footprint, family = f"stock:{mapped[0]}", family or mapped[1]
         footprint = footprint or "easyeda"

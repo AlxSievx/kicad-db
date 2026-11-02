@@ -431,7 +431,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--category", help="category key, e.g. ics_power (not for chip passives)")
     p.add_argument("--symbol", help="easyeda (default), stock:<Lib>:<Name>, or a symbol in src/symbols")
     p.add_argument("--footprint", help="easyeda (default), stock:<Lib>:<Name>, or LIB_<Family>:<Name>")
-    p.add_argument("--family", help="footprint family for a new footprint, e.g. Package_TO_SOT")
+    p.add_argument("--family", help="footprint family for a new footprint, e.g. Package_TO_SOT_SMD")
     p.add_argument("--fp-name", help="KLC name for an EasyEDA footprint, e.g. SOT-223-3_TabPin2")
     p.add_argument("--name", help="part name instead of the MPN")
     p.add_argument("--pin-types", help="EasyEDA symbols: pin types, e.g. EN=input,#4=passive")

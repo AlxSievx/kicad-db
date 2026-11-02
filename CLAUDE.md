@@ -40,7 +40,7 @@ Design: `docs/superpowers/specs/2026-11-01-kicad-library-design.md`.
 .venv\Scripts\python -m libkit refresh-stock      # re-query stock + JLC type of every part (network)
 .venv\Scripts\python -m libkit find resistor 62k --package 0402 --tolerance 1%   # candidates for one value (network)
 .venv\Scripts\python -m libkit add C1046         # single add, dry run (network); --write applies it
-.venv\Scripts\python -m libkit add C6186 --category ics_power --family Package_TO_SOT --fp-name SOT-223-3_TabPin2
+.venv\Scripts\python -m libkit add C6186 --category ics_power --family Package_TO_SOT_SMD --fp-name SOT-223-3_TabPin2
 .venv\Scripts\python -m libkit add C81598         # diode/LED/SOT-23 transistor: stock footprint, category + base symbol automatic
 .venv\Scripts\python -m libkit add MountingHole_3.2mm_M3 --local --category mechanical --footprint stock:MountingHole:MountingHole_3.2mm_M3 --family MountingHole
 ```
@@ -110,7 +110,7 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
     (`--symbol stock:<Lib>:<Name>`, `--footprint stock:<Lib>:<Name>`), else
     EasyEDA (the default) with `--fp-name` in KLC form (`SOT-223-3_TabPin2`).
     Existing LIB items: `--symbol <src symbol>`, `--footprint LIB_<Family>:<Name>`.
-    Family names follow KiCad stock: `Package_TO_SOT`, `Package_SO`,
+    Family names are KiCad stock library names: `Package_TO_SOT_SMD`, `Package_SO`,
     `Package_DFN_QFN`, `Inductor_SMD`, `Connector`, …
   - EasyEDA footprints keep EasyEDA's (= JLC's) orientation; the report says
     when pin 1 is not top-left. Only STEP models are kept.

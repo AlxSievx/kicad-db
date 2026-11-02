@@ -220,3 +220,28 @@ def test_cli_discrete_options(minilib, monkeypatch, capsys):
     assert "{}" in capsys.readouterr().err
     assert cli.main(["bulk-add", "resistor", "--package", "0402", "--tolerance", "1%"]) == 1
     assert "--series" in capsys.readouterr().err
+
+
+# ---- final review fixes ---------------------------------------------------------------------------
+def test_no_stock_footprint_without_base_symbol(minilib):  # final review I2
+    from test_add import prep
+    root = _with_bases(minilib)
+    p = prep(root, "C8592", family="Package_TO_SOT", fp_name="SOT-23")  # dual diode: EasyEDA footprint too
+    assert not p.entry["footprint"].startswith("LIB_Package_TO_SOT_SMD") and p.symbol is not None
+    p = prep(root, "C81598", family="Diode_SMD", fp_name="D_Odd")  # --fp-name means an EasyEDA footprint
+    assert p.entry["footprint"] == "LIB_Diode_SMD:D_Odd"
+
+
+def test_stock_symbol_takes_stock_footprint(minilib, tmp_path):
+    import shutil
+    from libkit.kicad import kicad_share
+    from test_add import prep
+    diode_lib = kicad_share() / "symbols" / "Diode.kicad_sym"
+    if not diode_lib.exists():
+        pytest.skip("needs the installed KiCad symbol libraries")
+    share = tmp_path / "share"
+    shutil.copytree(SHARE, share)
+    (share / "symbols").mkdir()
+    shutil.copy(diode_lib, share / "symbols")
+    p = prep(_with_bases(minilib), "C8592", symbol="stock:Diode:BAT54S", kicad_share_dir=share)
+    assert p.entry["footprint"] == "LIB_Package_TO_SOT_SMD:SOT-23" and p.symbol is not None
