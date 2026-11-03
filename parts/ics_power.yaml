@@ -89,3 +89,33 @@ parts:
     status: active
     stock: "21540"
     stock_checked: "2026-11-02"
+  - name: SN6505BDBVR
+    symbol: SN6505BDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: SN6505BDBVR
+    package: SOT-23-6
+    description: -55°C~+125°C 1.56mA 160mΩ 16V 1A 2.25V~5.5V SOT-23-6 Transformer Drivers
+    manufacturer: Texas Instruments
+    mpn: SN6505BDBVR
+    lcsc: C74518
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811051713_Texas-Instruments-SN6505BDBVR_C74518.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1580"
+    stock_checked: "2026-11-03"
+  - name: LP38692MP-5.0_NOPB
+    symbol: LP38692MP-5.0_NOPB
+    footprint: LIB_Package_TO_SOT_SMD:SOT-223-5
+    value: LP38692MP-5.0/NOPB
+    package: SOT-223-5
+    description: -40°C~+125°C@(Ta) 1 100uA 10V 1A 5V 800mV@(1A) Fixed Over Current Protection, Over Temperature Protection Positive SOT-223-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: LP38692MP-5.0/NOPB
+    lcsc: C28191
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809172042_Texas-Instruments-LP38692MP-5-0-NOPB_C28191.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1350"
+    stock_checked: "2026-11-03"

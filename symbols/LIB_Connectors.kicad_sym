@@ -219,7 +219,7 @@
 				)
 			)
 			(pin passive line
-				(at 2.54 -12.7 90)
+				(at 5.08 -12.7 90)
 				(length 2.54)
 				(name "MP"
 					(effects

@@ -12,7 +12,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -10.16 34.29 0)
+			(at -22.86 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Value" "DRV8353HRTAR"
-			(at -10.16 -34.29 0)
+			(at -22.86 -34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -79,8 +79,8 @@
 		)
 		(symbol "DRV8353HRTAR_0_1"
 			(rectangle
-				(start -10.16 33.02)
-				(end 10.16 -33.02)
+				(start -22.86 33.02)
+				(end 22.86 -33.02)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -92,7 +92,7 @@
 		)
 		(symbol "DRV8353HRTAR_1_1"
 			(pin input line
-				(at -12.7 30.48 0)
+				(at -25.4 30.48 0)
 				(length 2.54)
 				(name "ENABLE"
 					(effects
@@ -110,7 +110,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 27.94 0)
+				(at -25.4 27.94 0)
 				(length 2.54)
 				(name "INHA"
 					(effects
@@ -128,7 +128,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 25.4 0)
+				(at -25.4 25.4 0)
 				(length 2.54)
 				(name "INLA"
 					(effects
@@ -146,7 +146,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 22.86 0)
+				(at -25.4 22.86 0)
 				(length 2.54)
 				(name "INHB"
 					(effects
@@ -164,7 +164,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 20.32 0)
+				(at -25.4 20.32 0)
 				(length 2.54)
 				(name "INLB"
 					(effects
@@ -182,7 +182,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 17.78 0)
+				(at -25.4 17.78 0)
 				(length 2.54)
 				(name "INHC"
 					(effects
@@ -200,7 +200,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 15.24 0)
+				(at -25.4 15.24 0)
 				(length 2.54)
 				(name "INLC"
 					(effects
@@ -218,7 +218,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 10.16 0)
+				(at -25.4 10.16 0)
 				(length 2.54)
 				(name "MODE"
 					(effects
@@ -236,7 +236,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 7.62 0)
+				(at -25.4 7.62 0)
 				(length 2.54)
 				(name "IDRIVE"
 					(effects
@@ -254,7 +254,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -25.4 5.08 0)
 				(length 2.54)
 				(name "VDS"
 					(effects
@@ -272,7 +272,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 2.54 0)
+				(at -25.4 2.54 0)
 				(length 2.54)
 				(name "GAIN"
 					(effects
@@ -290,7 +290,7 @@
 				)
 			)
 			(pin open_collector line
-				(at -12.7 -2.54 0)
+				(at -25.4 -2.54 0)
 				(length 2.54)
 				(name "nFAULT"
 					(effects
@@ -308,7 +308,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 30.48 180)
+				(at 25.4 30.48 180)
 				(length 2.54)
 				(name "GHA"
 					(effects
@@ -326,7 +326,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 27.94 180)
+				(at 25.4 27.94 180)
 				(length 2.54)
 				(name "SHA"
 					(effects
@@ -344,7 +344,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 25.4 180)
+				(at 25.4 25.4 180)
 				(length 2.54)
 				(name "GLA"
 					(effects
@@ -362,7 +362,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 22.86 180)
+				(at 25.4 22.86 180)
 				(length 2.54)
 				(name "SPA"
 					(effects
@@ -380,7 +380,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 20.32 180)
+				(at 25.4 20.32 180)
 				(length 2.54)
 				(name "SNA"
 					(effects
@@ -398,7 +398,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 15.24 180)
+				(at 25.4 15.24 180)
 				(length 2.54)
 				(name "GHB"
 					(effects
@@ -416,7 +416,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 12.7 180)
+				(at 25.4 12.7 180)
 				(length 2.54)
 				(name "SHB"
 					(effects
@@ -434,7 +434,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 10.16 180)
+				(at 25.4 10.16 180)
 				(length 2.54)
 				(name "GLB"
 					(effects
@@ -452,7 +452,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 7.62 180)
+				(at 25.4 7.62 180)
 				(length 2.54)
 				(name "SPB"
 					(effects
@@ -470,7 +470,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 5.08 180)
+				(at 25.4 5.08 180)
 				(length 2.54)
 				(name "SNB"
 					(effects
@@ -488,7 +488,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 0 180)
+				(at 25.4 0 180)
 				(length 2.54)
 				(name "GHC"
 					(effects
@@ -506,7 +506,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -2.54 180)
+				(at 25.4 -2.54 180)
 				(length 2.54)
 				(name "SHC"
 					(effects
@@ -524,7 +524,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -5.08 180)
+				(at 25.4 -5.08 180)
 				(length 2.54)
 				(name "GLC"
 					(effects
@@ -542,7 +542,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -7.62 180)
+				(at 25.4 -7.62 180)
 				(length 2.54)
 				(name "SPC"
 					(effects
@@ -560,7 +560,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -10.16 180)
+				(at 25.4 -10.16 180)
 				(length 2.54)
 				(name "SNC"
 					(effects
@@ -578,7 +578,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -15.24 180)
+				(at 25.4 -15.24 180)
 				(length 2.54)
 				(name "SOA"
 					(effects
@@ -596,7 +596,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -17.78 180)
+				(at 25.4 -17.78 180)
 				(length 2.54)
 				(name "SOB"
 					(effects
@@ -614,7 +614,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -20.32 180)
+				(at 25.4 -20.32 180)
 				(length 2.54)
 				(name "SOC"
 					(effects
@@ -632,7 +632,7 @@
 				)
 			)
 			(pin power_out line
-				(at 12.7 -25.4 180)
+				(at 25.4 -25.4 180)
 				(length 2.54)
 				(name "VCP"
 					(effects
@@ -650,7 +650,7 @@
 				)
 			)
 			(pin power_out line
-				(at 12.7 -27.94 180)
+				(at 25.4 -27.94 180)
 				(length 2.54)
 				(name "VGLS"
 					(effects
@@ -668,7 +668,7 @@
 				)
 			)
 			(pin power_out line
-				(at 12.7 -30.48 180)
+				(at 25.4 -30.48 180)
 				(length 2.54)
 				(name "DVDD"
 					(effects
@@ -686,7 +686,7 @@
 				)
 			)
 			(pin power_in line
-				(at -5.08 35.56 270)
+				(at -10.16 35.56 270)
 				(length 2.54)
 				(name "VM"
 					(effects
@@ -704,7 +704,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 35.56 270)
+				(at -5.08 35.56 270)
 				(length 2.54)
 				(name "VDRAIN"
 					(effects
@@ -740,7 +740,7 @@
 				)
 			)
 			(pin passive line
-				(at 2.54 35.56 270)
+				(at 5.08 35.56 270)
 				(length 2.54)
 				(name "CPH"
 					(effects
@@ -758,7 +758,7 @@
 				)
 			)
 			(pin passive line
-				(at 5.08 35.56 270)
+				(at 10.16 35.56 270)
 				(length 2.54)
 				(name "CPL"
 					(effects
@@ -776,7 +776,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -35.56 90)
+				(at -5.08 -35.56 90)
 				(length 2.54)
 				(name "AGND"
 					(effects
@@ -812,7 +812,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -35.56 90)
+				(at 5.08 -35.56 90)
 				(length 2.54)
 				(name "EP"
 					(effects
@@ -842,7 +842,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -12.7 8.89 0)
+			(at -15.24 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -853,7 +853,7 @@
 			)
 		)
 		(property "Value" "LMR38020SDDAR"
-			(at -12.7 -8.89 0)
+			(at -15.24 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -909,8 +909,8 @@
 		)
 		(symbol "LMR38020SDDAR_0_1"
 			(rectangle
-				(start -12.7 7.62)
-				(end 12.7 -7.62)
+				(start -15.24 7.62)
+				(end 15.24 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -922,7 +922,7 @@
 		)
 		(symbol "LMR38020SDDAR_1_1"
 			(pin power_in line
-				(at -15.24 5.08 0)
+				(at -17.78 5.08 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -940,7 +940,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 2.54 0)
+				(at -17.78 2.54 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -958,7 +958,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 0 0)
+				(at -17.78 0 0)
 				(length 2.54)
 				(name "RT/SYNC"
 					(effects
@@ -976,7 +976,7 @@
 				)
 			)
 			(pin input line
-				(at -15.24 -2.54 0)
+				(at -17.78 -2.54 0)
 				(length 2.54)
 				(name "FB"
 					(effects
@@ -994,7 +994,7 @@
 				)
 			)
 			(pin power_out line
-				(at 15.24 5.08 180)
+				(at 17.78 5.08 180)
 				(length 2.54)
 				(name "SW"
 					(effects
@@ -1012,7 +1012,7 @@
 				)
 			)
 			(pin passive line
-				(at 15.24 2.54 180)
+				(at 17.78 2.54 180)
 				(length 2.54)
 				(name "BOOT"
 					(effects
@@ -1030,7 +1030,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 15.24 0 180)
+				(at 17.78 0 180)
 				(length 2.54)
 				(name "PG"
 					(effects
@@ -1066,7 +1066,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -10.16 90)
+				(at 5.08 -10.16 90)
 				(length 2.54)
 				(name "EP"
 					(effects
@@ -1096,7 +1096,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -7.62 3.81 0)
+			(at -10.16 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1107,7 +1107,7 @@
 			)
 		)
 		(property "Value" "TLV76050DBZR"
-			(at -7.62 -3.81 0)
+			(at -10.16 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1163,8 +1163,8 @@
 		)
 		(symbol "TLV76050DBZR_0_1"
 			(rectangle
-				(start -7.62 2.54)
-				(end 7.62 -2.54)
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1176,7 +1176,7 @@
 		)
 		(symbol "TLV76050DBZR_1_1"
 			(pin power_in line
-				(at -10.16 0 0)
+				(at -12.7 0 0)
 				(length 2.54)
 				(name "IN"
 					(effects
@@ -1194,7 +1194,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 0 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(name "OUT"
 					(effects
@@ -1212,7 +1212,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -5.08 90)
+				(at 0 -7.62 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1242,7 +1242,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -7.62 6.35 0)
+			(at -12.7 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1253,7 +1253,7 @@
 			)
 		)
 		(property "Value" "TLV75733PDYDR"
-			(at -7.62 -6.35 0)
+			(at -12.7 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1309,8 +1309,8 @@
 		)
 		(symbol "TLV75733PDYDR_0_1"
 			(rectangle
-				(start -7.62 5.08)
-				(end 7.62 -5.08)
+				(start -12.7 5.08)
+				(end 12.7 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1322,7 +1322,7 @@
 		)
 		(symbol "TLV75733PDYDR_1_1"
 			(pin power_in line
-				(at -10.16 2.54 0)
+				(at -15.24 2.54 0)
 				(length 2.54)
 				(name "IN"
 					(effects
@@ -1340,7 +1340,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 0 0)
+				(at -15.24 0 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -1358,7 +1358,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 2.54 180)
+				(at 15.24 2.54 180)
 				(length 2.54)
 				(name "OUT"
 					(effects
@@ -1376,7 +1376,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 10.16 0 180)
+				(at 15.24 0 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -1413,7 +1413,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -7.62 90)
+				(at 5.08 -7.62 90)
 				(length 2.54)
 				(name "EP"
 					(effects
@@ -1443,7 +1443,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -7.62 6.35 0)
+			(at -10.16 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1454,7 +1454,7 @@
 			)
 		)
 		(property "Value" "UCC27517DBVR"
-			(at -7.62 -6.35 0)
+			(at -10.16 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1510,8 +1510,8 @@
 		)
 		(symbol "UCC27517DBVR_0_1"
 			(rectangle
-				(start -7.62 5.08)
-				(end 7.62 -5.08)
+				(start -10.16 7.62)
+				(end 10.16 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1523,7 +1523,7 @@
 		)
 		(symbol "UCC27517DBVR_1_1"
 			(pin input line
-				(at -10.16 2.54 0)
+				(at -12.7 2.54 0)
 				(length 2.54)
 				(name "IN+"
 					(effects
@@ -1541,7 +1541,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 0 0)
+				(at -12.7 0 0)
 				(length 2.54)
 				(name "IN-"
 					(effects
@@ -1559,7 +1559,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 2.54 180)
+				(at 12.7 2.54 180)
 				(length 2.54)
 				(name "OUT"
 					(effects
@@ -1577,7 +1577,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 7.62 270)
+				(at 0 10.16 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -1595,7 +1595,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -7.62 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1865,6 +1865,373 @@
 					)
 				)
 				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "LP38692MP-5.0_NOPB"
+		(pin_names
+			(offset 0.508)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -10.16 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "LP38692MP-5.0_NOPB"
+			(at -10.16 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "5 V 1 A low-dropout CMOS regulator with enable, 10 V max input, SOT-223-5"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "ldo linear regulator 5V enable"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "LP38692MP-5.0_NOPB_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "LP38692MP-5.0_NOPB_1_1"
+			(pin power_in line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 0 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 0 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "SN6505BDBVR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -5.08 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 7.62 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at -7.62 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SN6505BDBVR_0_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "SN6505BDBVR_1_1"
+			(pin open_collector line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(name "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)

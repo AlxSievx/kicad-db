@@ -3625,3 +3625,19 @@ parts:
     stock_checked: "2026-11-01"
     current_rating: 2A
     dcr: 40mΩ
+  - name: DA2303-AL
+    symbol: DA2303-AL
+    footprint: LIB_Transformer_SMD:Transformer_Coilcraft_DA230x-AL
+    value: DA2303-AL
+    package: SMD-8P,10.3x8.1mm
+    description: Push-pull transformer 1:1.5, 5 V to 6 V, 2500 Vrms, 34.4 Vus, SMD-8P 10.3x8.1mm (Coilcraft DA230x)
+    manufacturer: Coilcraft
+    mpn: DA2303-AL
+    lcsc: C19633595
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C19633595.pdf
+    datasheet_lang: unknown
+    status: active
+    current_rating: 1A
+    stock: "51"
+    stock_checked: "2026-11-03"

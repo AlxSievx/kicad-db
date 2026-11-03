@@ -126,4 +126,11 @@
 		(options "")
 		(descr "TestPoint")
 	)
+	(lib
+		(name "LIB_Transformer_SMD")
+		(type "KiCad")
+		(uri "${LIB_DIR}/footprints/LIB_Transformer_SMD.pretty")
+		(options "")
+		(descr "Transformer SMD")
+	)
 )

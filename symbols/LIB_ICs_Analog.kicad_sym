@@ -12,7 +12,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -10.16 6.35 0)
+			(at -15.24 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Value" "AMC1311BDWVR"
-			(at -10.16 -6.35 0)
+			(at -15.24 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -123,8 +123,8 @@
 		)
 		(symbol "AMC1311BDWVR_0_1"
 			(rectangle
-				(start -10.16 5.08)
-				(end 10.16 -5.08)
+				(start -15.24 7.62)
+				(end 15.24 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -136,7 +136,7 @@
 		)
 		(symbol "AMC1311BDWVR_1_1"
 			(pin input line
-				(at -12.7 2.54 0)
+				(at -17.78 2.54 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -154,7 +154,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -17.78 0 0)
 				(length 2.54)
 				(name "SHTDN"
 					(effects
@@ -172,7 +172,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 2.54 180)
+				(at 17.78 2.54 180)
 				(length 2.54)
 				(name "VOUTP"
 					(effects
@@ -190,7 +190,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 0 180)
+				(at 17.78 0 180)
 				(length 2.54)
 				(name "VOUTN"
 					(effects
@@ -208,7 +208,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 7.62 270)
+				(at 0 10.16 270)
 				(length 2.54)
 				(name "VDD1"
 					(effects
@@ -226,7 +226,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 7.62 270)
+				(at 5.08 10.16 270)
 				(length 2.54)
 				(name "VDD2"
 					(effects
@@ -244,7 +244,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -7.62 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND1"
 					(effects
@@ -262,7 +262,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -7.62 90)
+				(at 5.08 -10.16 90)
 				(length 2.54)
 				(name "GND2"
 					(effects
@@ -292,7 +292,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -10.16 6.35 0)
+			(at -25.4 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -303,7 +303,7 @@
 			)
 		)
 		(property "Value" "AMC3302DWER"
-			(at -10.16 -6.35 0)
+			(at -25.4 -13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -403,8 +403,8 @@
 		)
 		(symbol "AMC3302DWER_0_1"
 			(rectangle
-				(start -10.16 5.08)
-				(end 10.16 -5.08)
+				(start -25.4 12.7)
+				(end 25.4 -12.7)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -416,7 +416,7 @@
 		)
 		(symbol "AMC3302DWER_1_1"
 			(pin input line
-				(at -12.7 2.54 0)
+				(at -27.94 2.54 0)
 				(length 2.54)
 				(name "INP"
 					(effects
@@ -434,7 +434,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -27.94 0 0)
 				(length 2.54)
 				(name "INN"
 					(effects
@@ -452,7 +452,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -12.7 -2.54 0)
+				(at -27.94 -2.54 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -471,7 +471,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 2.54 180)
+				(at 27.94 2.54 180)
 				(length 2.54)
 				(name "OUTP"
 					(effects
@@ -489,7 +489,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 0 180)
+				(at 27.94 0 180)
 				(length 2.54)
 				(name "OUTN"
 					(effects
@@ -507,7 +507,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 12.7 -2.54 180)
+				(at 27.94 -2.54 180)
 				(length 2.54)
 				(name "DIAG"
 					(effects
@@ -525,7 +525,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 7.62 270)
+				(at -10.16 15.24 270)
 				(length 2.54)
 				(name "DCDC_OUT"
 					(effects
@@ -543,7 +543,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 7.62 270)
+				(at -5.08 15.24 270)
 				(length 2.54)
 				(name "HLDO_IN"
 					(effects
@@ -561,7 +561,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 7.62 270)
+				(at 0 15.24 270)
 				(length 2.54)
 				(name "HLDO_OUT"
 					(effects
@@ -579,7 +579,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 7.62 270)
+				(at 5.08 15.24 270)
 				(length 2.54)
 				(name "DCDC_IN"
 					(effects
@@ -597,7 +597,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 7.62 270)
+				(at 10.16 15.24 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -615,7 +615,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 7.62 270)
+				(at 15.24 15.24 270)
 				(length 2.54)
 				(name "LDO_OUT"
 					(effects
@@ -633,7 +633,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -7.62 90)
+				(at -5.08 -15.24 90)
 				(length 2.54)
 				(name "DCDC_HGND"
 					(effects
@@ -651,7 +651,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -7.62 90)
+				(at 0 -15.24 90)
 				(length 2.54)
 				(name "HGND"
 					(effects
@@ -669,7 +669,7 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 -7.62 90)
+				(at 5.08 -15.24 90)
 				(length 2.54)
 				(name "DCDC_GND"
 					(effects
@@ -687,7 +687,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 -7.62 90)
+				(at 10.16 -15.24 90)
 				(length 2.54)
 				(name "GND"
 					(effects
