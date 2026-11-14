@@ -317,3 +317,37 @@
   item: ["SOT-563"]
   rule: F5.2
   reason: Stock KiCad footprint copied unchanged (fab-layer RefDes scaled to fit the 1.6 mm body).
+
+# Logic and interface group 2026-11-14: stock KiCad symbols/footprints copied unchanged.
+- kind: symbol
+  item: ["*:74HC02D,653", "*:74HC02PW,118", "*:74HC08D,653", "*:74HC08PW,118", "*:74HC27D,653"]
+  rule: EC01
+  reason: Stock KiCad 74xx / 74xGxx / 4xxx / Logic_LevelTranslator / Interface symbols copied unchanged (KiCad gate drawing conventions - unnamed gate pins, 50 mil pin lengths, slightly off-centre outlines).
+- kind: symbol
+  item: ["*:74HC4060D,653", "*:74HC4060PW,118"]
+  rule: EC03
+  reason: Stock KiCad 74xx / 74xGxx / 4xxx / Logic_LevelTranslator / Interface symbols copied unchanged (KiCad gate drawing conventions - unnamed gate pins, 50 mil pin lengths, slightly off-centre outlines).
+- kind: symbol
+  item: ["*:74HC4051D", "*:74HC4051PW,118", "*:74HC595D,118", "*:74HC595PW,118", "*:74LV4051D,118", "*:74LV4051PW,118", "*:LAN8742A-CZ-TR", "*:LAN8742AI-CZ-TR", "*:NL27WZ16DFT2G", "*:SN74HCS595PWR", "*:SN74LVC1G02DCKR", "*:SN74LVC1G04DBVR", "*:SN74LVC1G04DCKR", "*:SN74LVC1G08DBVR", "*:SN74LVC1G08DCKR", "*:SN74LVC1G10DBVR", "*:SN74LVC1G10DCKR", "*:SN74LVC1G11DBVR", "*:SN74LVC1G11DCKR", "*:SN74LVC1G125DBVR", "*:SN74LVC1G125DCKR", "*:SN74LVC1G14DBVR", "*:SN74LVC1G14DCKR", "*:SN74LVC1G17DBVR", "*:SN74LVC1G240DBVR", "*:SN74LVC1G240DCKR", "*:SN74LVC1G32DBVR", "*:SN74LVC1G32DCKR", "*:SN74LVC1G86DBVR", "*:SN74LVC1G86DCKR", "*:SN74LVC2G04DBVR", "*:SN74LVC2G04DCKR", "*:SN74LVC2G17DBVR", "*:SN74LVC2G17DCKR"]
+  rule: S3.1
+  reason: Stock KiCad 74xx / 74xGxx / 4xxx / Logic_LevelTranslator / Interface symbols copied unchanged (KiCad gate drawing conventions - unnamed gate pins, 50 mil pin lengths, slightly off-centre outlines).
+- kind: symbol
+  item: ["*:74HC02D,653", "*:74HC02PW,118", "*:74HC08D,653", "*:74HC08PW,118", "*:74HC14D,653", "*:74HC14PW,118", "*:74HC27D,653", "*:74HC393D,653", "*:CD74HC4049M96", "*:SN74LVC245ADBR", "*:SN74LVC245ADWR", "*:SN74LVC245APWR"]
+  rule: S3.6
+  reason: Stock KiCad 74xx / 74xGxx / 4xxx / Logic_LevelTranslator / Interface symbols copied unchanged (KiCad gate drawing conventions - unnamed gate pins, 50 mil pin lengths, slightly off-centre outlines).
+- kind: symbol
+  item: ["*:74HC02D,653", "*:74HC02PW,118", "*:74HC08D,653", "*:74HC08PW,118", "*:74HC14D,653", "*:74HC14PW,118", "*:74HC27D,653", "*:CD74HC4049M96", "*:NL27WZ16DFT2G", "*:SN74LVC1G02DCKR", "*:SN74LVC1G04DBVR", "*:SN74LVC1G04DCKR", "*:SN74LVC1G08DBVR", "*:SN74LVC1G08DCKR", "*:SN74LVC1G10DBVR", "*:SN74LVC1G10DCKR", "*:SN74LVC1G11DBVR", "*:SN74LVC1G11DCKR", "*:SN74LVC1G125DBVR", "*:SN74LVC1G125DCKR", "*:SN74LVC1G14DBVR", "*:SN74LVC1G14DCKR", "*:SN74LVC1G17DBVR", "*:SN74LVC1G240DBVR", "*:SN74LVC1G240DCKR", "*:SN74LVC1G32DBVR", "*:SN74LVC1G32DCKR", "*:SN74LVC1G86DBVR", "*:SN74LVC1G86DCKR", "*:SN74LVC2G04DBVR", "*:SN74LVC2G04DCKR", "*:SN74LVC2G17DBVR", "*:SN74LVC2G17DCKR"]
+  rule: S4.1
+  reason: Stock KiCad 74xx / 74xGxx / 4xxx / Logic_LevelTranslator / Interface symbols copied unchanged (KiCad gate drawing conventions - unnamed gate pins, 50 mil pin lengths, slightly off-centre outlines).
+- kind: symbol
+  item: ["*:CD74HC4049M96"]
+  rule: S4.5
+  reason: Stock KiCad 74xx / 74xGxx / 4xxx / Logic_LevelTranslator / Interface symbols copied unchanged (KiCad gate drawing conventions - unnamed gate pins, 50 mil pin lengths, slightly off-centre outlines).
+- kind: footprint
+  item: ["SSOP-8_2.95x2.8mm_P0.65mm", "Texas_S-PVQFN-N14", "VQFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias"]
+  rule: F6.3
+  reason: Stock KiCad footprints copied unchanged.
+- kind: footprint
+  item: ["SSOP-8_2.95x2.8mm_P0.65mm"]
+  rule: F9.1
+  reason: Stock KiCad footprints copied unchanged.

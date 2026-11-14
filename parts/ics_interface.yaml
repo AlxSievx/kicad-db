@@ -329,3 +329,273 @@ parts:
     status: active
     stock: "2"
     stock_checked: "2026-11-14"
+  - name: SN74LV1T34DBVR
+    symbol: SN74LV1T34DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: SN74LV1T34DBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 1 1 1.6V~5.5V 10uA 5.5ns@5V,15pF 74LV 8mA 8mA Level shifting Push-pull Unidirectional SOT-23-5 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LV1T34DBVR
+    lcsc: C100024
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010301_Texas-Instruments-SN74LV1T34DBVR_C100024.pdf
+    datasheet_lang: en
+    status: active
+    stock: "27305"
+    stock_checked: "2026-11-14"
+  - name: SN74LV1T125DBVR
+    symbol: SN74LV1T125DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: SN74LV1T125DBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 1 1 1.6V~5.5V 10uA 5.5ns@5V,15pF 74LV 8mA 8mA Tri-State Unidirectional SOT-23-5 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LV1T125DBVR
+    lcsc: C473338
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2001031720_Texas-Instruments-SN74LV1T125DBVR_C473338.pdf
+    datasheet_lang: en
+    status: active
+    stock: "88735"
+    stock_checked: "2026-11-14"
+  - name: TXB0104PWR
+    symbol: TXB0104PWR
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: TXB0104PWR
+    package: TSSOP-14
+    description: -40°C~+85°C 1 1.2V~3.6V 1.65V~5.5V 100Mbps 4 Auto Direction Detection Bidirectional CMOS CMOS Tri-State TSSOP-14 Translators, Level Shifters
+    manufacturer: Texas Instruments
+    mpn: TXB0104PWR
+    lcsc: C60708
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810151620_Texas-Instruments-TXB0104PWR_C60708.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12266"
+    stock_checked: "2026-11-14"
+  - name: TXB0104DR
+    symbol: TXB0104DR
+    footprint: LIB_Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+    value: TXB0104DR
+    package: SOIC-14
+    description: -40°C~+85°C 1 1.2V~3.6V 1.65V~5.5V 100Mbps 4 Auto Direction Detection Bidirectional CMOS CMOS Tri-State SOIC-14 Translators, Level Shifters
+    manufacturer: Texas Instruments
+    mpn: TXB0104DR
+    lcsc: C2652946
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302221130_Texas-Instruments-TXB0104DR_C2652946.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "1656"
+    stock_checked: "2026-11-14"
+  - name: TXB0104RGYR
+    symbol: TXB0104RGYR
+    footprint: LIB_Package_DFN_QFN:Texas_S-PVQFN-N14
+    value: TXB0104RGYR
+    package: VQFN-14-EP(3.5x3.5)
+    description: -40°C~+85°C 1 1.2V~3.6V 1.65V~5.5V 100Mbps 4 Auto Direction Detection Bidirectional Tri-State VQFN-14-EP(3.5x3.5) Translators, Level Shifters
+    manufacturer: Texas Instruments
+    mpn: TXB0104RGYR
+    lcsc: C400708
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Texas-Instruments-TXB0104RGYR_C400708.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12570"
+    stock_checked: "2026-11-14"
+  - name: TXB0108PWR
+    symbol: TXB0108PWR
+    footprint: LIB_Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm
+    value: TXB0108PWR
+    package: TSSOP-20
+    description: -40°C~+85°C 1 1.2V~3.6V 1.65V~5.5V 100Mbps 8 Automatic direction detection, Power-off protection, Output enable high-impedance Bidirectional Level translator Tri-State TSSOP-20 Translators, Level Shifters
+    manufacturer: Texas Instruments
+    mpn: TXB0108PWR
+    lcsc: C53406
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010200_Texas-Instruments-TXB0108PWR_C53406.pdf
+    datasheet_lang: en
+    status: active
+    stock: "17844"
+    stock_checked: "2026-11-14"
+  - name: TXS0102DCTR
+    symbol: TXS0102DCTR
+    footprint: LIB_Package_SO:SSOP-8_2.95x2.8mm_P0.65mm
+    value: TXS0102DCTR
+    package: SSOP-8
+    description: -40°C~+85°C 1 1.65V~3.6V 2 2.3V~5.5V 24Mbps Auto Direction Detection Bidirectional Push-Pull, Open-drain SSOP-8 Translators, Level Shifters
+    manufacturer: Texas Instruments
+    mpn: TXS0102DCTR
+    lcsc: C324082
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811082018_Texas-Instruments-TXS0102DCTR_C324082.pdf
+    datasheet_lang: en
+    status: active
+    stock: "54690"
+    stock_checked: "2026-11-14"
+  - name: TXS0102DCUR
+    symbol: TXS0102DCUR
+    footprint: LIB_Package_SO:VSSOP-8_2.3x2mm_P0.5mm
+    value: TXS0102DCUR
+    package: VSSOP-8
+    description: -40°C~+85°C 1 1.65V~3.6V 2 2.3V~5.5V 24Mbps Auto Direction Detection Bidirectional Push-Pull, Open-drain VSSOP-8 Translators, Level Shifters
+    manufacturer: Texas Instruments
+    mpn: TXS0102DCUR
+    lcsc: C53434
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810292010_Texas-Instruments-TXS0102DCUR_C53434.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6058"
+    stock_checked: "2026-11-14"
+  - name: TXS0104EPWR
+    symbol: TXS0104EPWR
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: TXS0104EPWR
+    package: TSSOP-14
+    description: -40°C~+85°C 1 1.65V~3.6V 2.3V~5.5V 24Mbps 4 Automatic direction detection, Output enable high-impedance, Integrated pull-up resistor Bidirectional Level translator Push-Pull, Open-drain TSSOP-14 Translators, Level Shifters
+    manufacturer: Texas Instruments
+    mpn: TXS0104EPWR
+    lcsc: C44955
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810271112_Texas-Instruments-TXS0104EPWR_C44955.pdf
+    datasheet_lang: en
+    status: active
+    stock: "36431"
+    stock_checked: "2026-11-14"
+  - name: TXS0104EDR
+    symbol: TXS0104EDR
+    footprint: LIB_Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+    value: TXS0104EDR
+    package: SOIC-14
+    description: -40°C~+85°C 1 1.65V~3.6V 2.3V~5.5V 24Mbps 4 Auto Direction Detection Bidirectional Push-Pull, Open-drain SOIC-14 Translators, Level Shifters
+    manufacturer: Texas Instruments
+    mpn: TXS0104EDR
+    lcsc: C79342
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-TXS0104EDR_C79342.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9180"
+    stock_checked: "2026-11-14"
+  - name: TXS0108EPWR
+    symbol: TXS0108EPWR
+    footprint: LIB_Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm
+    value: TXS0108EPWR
+    package: TSSOP-20
+    description: -40°C~+85°C 1 1.4V~3.6V 1.65V~5.5V 60Mbps 8 Automatic direction detection, Output enable high-impedance, Integrated pull-up resistor Bidirectional Level translator Push-Pull, Open-drain TSSOP-20 Translators, Level Shifters
+    manufacturer: Texas Instruments
+    mpn: TXS0108EPWR
+    lcsc: C17206
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809192314_Texas-Instruments-TXS0108EPWR_C17206.pdf
+    datasheet_lang: en
+    status: active
+    stock: "88405"
+    stock_checked: "2026-11-14"
+  - name: P82B96DGKR
+    symbol: P82B96DGKR
+    footprint: LIB_Package_SO:VSSOP-8_3x3mm_P0.65mm
+    value: P82B96DGKR
+    package: MSOP-8
+    description: -40°C~+85°C 2 2-Wire Bus 2-Wire Bus 2V~15V 4pF Driver, Buffer MSOP-8 Signal Buffers, Repeaters, Splitters
+    manufacturer: Texas Instruments
+    mpn: P82B96DGKR
+    lcsc: C2652360
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010100_Texas-Instruments-P82B96DGKR_C2652360.pdf
+    datasheet_lang: en
+    status: active
+    stock: "970"
+    stock_checked: "2026-11-14"
+  - name: P82B96DR
+    symbol: P82B96DR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: P82B96DR
+    package: SOIC-8
+    description: -40°C~+85°C 2 2-Wire Bus 2-Wire Bus 2V~15V 4pF 70ns Buffer SOIC-8 Signal Buffers, Repeaters, Splitters
+    manufacturer: Texas Instruments
+    mpn: P82B96DR
+    lcsc: C2652363
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303011701_Texas-Instruments-P82B96DR_C2652363.pdf
+    datasheet_lang: en
+    status: active
+    stock: "442"
+    stock_checked: "2026-11-14"
+  - name: THVD1450DR
+    symbol: THVD1450DR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: THVD1450DR
+    package: SOIC-8
+    description: -40°C~+125°C 1 1 256 3V~5.5V 3mA 50Mbps Half-Duplex Transceiver ±18kV SOIC-8 RS-485 / RS-422 ICs
+    manufacturer: Texas Instruments
+    mpn: THVD1450DR
+    lcsc: C2671361
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2303011500_Texas-Instruments-THVD1450DR_C2671361.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4974"
+    stock_checked: "2026-11-14"
+  - name: THVD1450DGKR
+    symbol: THVD1450DGKR
+    footprint: LIB_Package_SO:VSSOP-8_3x3mm_P0.65mm
+    value: THVD1450DGKR
+    package: VSSOP-8-0.65mm
+    description: -40°C~+125°C 256 3V~5.5V 3mA 50Mbps Half-Duplex Transceiver ±30kV VSSOP-8-0.65mm RS-485 / RS-422 ICs
+    manufacturer: Texas Instruments
+    mpn: THVD1450DGKR
+    lcsc: C2860896
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010930_Texas-Instruments-THVD1450DGKR_C2860896.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5808"
+    stock_checked: "2026-11-14"
+  - name: THVD1410DR
+    symbol: THVD1410DR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: THVD1410DR
+    package: SOIC-8
+    description: -40°C~+125°C 1 1 256 3V~5.5V 3mA 500Kbps Half-Duplex Transceiver ±18kV SOIC-8 RS-485 / RS-422 ICs
+    manufacturer: Texas Instruments
+    mpn: THVD1410DR
+    lcsc: C2671345
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303011500_Texas-Instruments-THVD1410DR_C2671345.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10191"
+    stock_checked: "2026-11-14"
+  - name: LAN8742AI-CZ-TR
+    symbol: LAN8742AI-CZ-TR
+    footprint: LIB_Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias
+    value: LAN8742AI-CZ-TR
+    package: VQFN-24-EP(4x4)
+    description: -40°C~+85°C 1.8V~3.3V 12mA 12mA LAN8742A Open-drain Schmitt trigger VQFN-24-EP(4x4) Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Microchip
+    mpn: LAN8742AI-CZ-TR
+    lcsc: C621425
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010203_Microchip-Tech-LAN8742AI-CZ-TR_C621425.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10950"
+    stock_checked: "2026-11-14"
+  - name: LAN8742A-CZ-TR
+    symbol: LAN8742A-CZ-TR
+    footprint: LIB_Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias
+    value: LAN8742A-CZ-TR
+    package: QFN-24-EP(4x4)
+    description: 0°C~+70°C 1 1.8V~3.3V 10BASE-T, 100BASE-TX 10Mbit/s, 100Mbit/s Ethernet Transceiver RMII QFN-24-EP(4x4) Ethernet Transceivers
+    manufacturer: Microchip
+    mpn: LAN8742A-CZ-TR
+    lcsc: C621424
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2011201138_Microchip-Tech-LAN8742A-CZ-TR_C621424.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8543"
+    stock_checked: "2026-11-14"

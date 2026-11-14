@@ -1,1 +1,781 @@
-parts: []
+parts:
+  - name: 74HC02D,653
+    symbol: 74HC02D,653
+    footprint: LIB_Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+    value: 74HC02D,653
+    package: SOIC-14
+    description: -40°C~+125°C 1.5V~4.2V 15ns@6V,50pF 2 2V~6V 2uA 4 400mV 5.2V, 5.9V 5.2mA 5.2mA 500mV~1.8V 74HC Series NOR Gate SOIC-14 Logic Gates
+    manufacturer: Nexperia
+    mpn: 74HC02D,653
+    lcsc: C5588
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC02D-653_C5588.pdf
+    datasheet_lang: en
+    status: active
+    stock: "83720"
+    stock_checked: "2026-11-14"
+  - name: 74HC02PW,118
+    symbol: 74HC02PW,118
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: 74HC02PW,118
+    package: TSSOP-14
+    description: -40°C~+125°C 1.5V~4.2V 100mV, 400mV 2 2V~6V 2uA 4 5.2V, 5.9V 5.2mA 5.2mA 500mV~1.8V 74HC Series 7ns@6V,50pF NOR Gate TSSOP-14 Logic Gates
+    manufacturer: Nexperia
+    mpn: 74HC02PW,118
+    lcsc: C113211
+    jlc_type: Extended
+    datasheet: https://datasheet.lcsc.com/lcsc/1810151520_Nexperia-74HC02PW-118_C113211.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7300"
+    stock_checked: "2026-11-14"
+  - name: 74HC08D,653
+    symbol: 74HC08D,653
+    footprint: LIB_Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+    value: 74HC08D,653
+    package: SOIC-14
+    description: -40°C~+125°C 1.5V~4.2V 1.9V, 3.7V, 5.2V 100mV, 400mV 2 27ns@4.5V,50pF 2V~6V 2uA 4 5.2mA 5.2mA 500mV~1.8V 74HC Series AND Gate SOIC-14 Logic Gates
+    manufacturer: Nexperia
+    mpn: 74HC08D,653
+    lcsc: C5593
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC08D-653_C5593.pdf
+    datasheet_lang: en
+    status: active
+    stock: "14768"
+    stock_checked: "2026-11-14"
+  - name: 74HC08PW,118
+    symbol: 74HC08PW,118
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: 74HC08PW,118
+    package: TSSOP-14
+    description: -40°C~+125°C 1.5V~4.2V 1.9V, 3.7V, 4.4V, 5.9V 100mV, 100mV, 100mV, 400mV 15ns@6V,50pF 2 2V~6V 2uA 4 5.2mA 5.2mA 500mV~1.8V 74HC Series AND Gate TSSOP-14 Logic Gates
+    manufacturer: Nexperia
+    mpn: 74HC08PW,118
+    lcsc: C80001
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241045_Nexperia-74HC08PW-118_C80001.pdf
+    datasheet_lang: en
+    status: active
+    stock: "17279"
+    stock_checked: "2026-11-14"
+  - name: 74HC14D,653
+    symbol: 74HC14D,653
+    footprint: LIB_Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+    value: 74HC14D,653
+    package: SOIC-14
+    description: -40°C~+125°C 1 1.5V~4.2V 21ns@6V,50pF 2V~6V 2uA 300mV~1.2V 5.2mA 5.2mA 6 74HC Schmitt trigger SOIC-14 Inverters
+    manufacturer: Nexperia
+    mpn: 74HC14D,653
+    lcsc: C5605
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf
+    datasheet_lang: en
+    status: active
+    stock: "222665"
+    stock_checked: "2026-11-14"
+  - name: 74HC14PW,118
+    symbol: 74HC14PW,118
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: 74HC14PW,118
+    package: TSSOP-14
+    description: -40°C~+125°C 1 1.5V~4.2V 21ns@6V,50pF 2V~6V 2uA 3.7V 400mV 5.2mA 5.2mA 6 74HC Schmitt trigger TSSOP-14 Inverters
+    manufacturer: Nexperia
+    mpn: 74HC14PW,118
+    lcsc: C5606
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14PW-118_C5606.pdf
+    datasheet_lang: en
+    status: active
+    stock: "30018"
+    stock_checked: "2026-11-14"
+  - name: 74HC20D,653
+    symbol: IEC_NAND4_Dual_74x20
+    footprint: LIB_Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+    value: 74HC20D,653
+    package: SOP-14
+    description: -40°C~+125°C 1.5V~4.2V 100mV, 400mV, 400mV 15ns@6V,50pF 2 2V~6V 2uA 4 5.2mA 5.2mA 500mV~1.8V 74HC Series NAND Gate SOP-14 Logic Gates
+    manufacturer: Nexperia
+    mpn: 74HC20D,653
+    lcsc: C546715
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241037_Nexperia-74HC20D-653_C546715.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5358"
+    stock_checked: "2026-11-14"
+  - name: 74HC20PW,118
+    symbol: IEC_NAND4_Dual_74x20
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: 74HC20PW,118
+    package: TSSOP-14
+    description: -40°C~+125°C 1.5V~4.2V 15ns@6V,50pF 2 2V~6V 2uA 5.2mA 5.2mA 500mV~1.8V 74HC Series NAND Gate TSSOP-14 Logic Gates
+    manufacturer: Nexperia
+    mpn: 74HC20PW,118
+    lcsc: C546719
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241037_Nexperia-74HC20PW-118_C546719.pdf
+    datasheet_lang: en
+    status: active
+    stock: "21664"
+    stock_checked: "2026-11-14"
+  - name: 74HC27D,653
+    symbol: 74HC27D,653
+    footprint: LIB_Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+    value: 74HC27D,653
+    package: SOIC-14
+    description: -40°C~+125°C 1.5V~4.2V 1.9V~2V, 3.98V~4.32V, 4.4V~4.5V, 5.48V~5.81V, 5.9V~6V 100mV, 100mV, 100mV, 260mV, 260mV 18ns@4.5V,50pF 2V~6V 2uA 3 3 5.2mA 5.2mA 500mV~1.8V 74HC Series NOR Gate SOIC-14 Logic Gates
+    manufacturer: Nexperia
+    mpn: 74HC27D,653
+    lcsc: C5629
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC27D-653_C5629.pdf
+    datasheet_lang: en
+    status: active
+    stock: "32779"
+    stock_checked: "2026-11-14"
+  - name: CD74HC30M96
+    symbol: IEC_NAND8_74x30
+    footprint: LIB_Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+    value: CD74HC30M96
+    package: SOIC-14
+    description: -55°C~+125°C 1 1.5V~4.2V 1.9V, 4.4V, 5.9V 100mV 22ns@6V,50pF 2V~6V 2uA 5.2mA 5.2mA 500mV~1.8V 74HC Series 8 NAND Gate SOIC-14 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: CD74HC30M96
+    lcsc: C6540
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810161111_Texas-Instruments-CD74HC30M96_C6540.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1478"
+    stock_checked: "2026-11-14"
+  - name: 74HC30PW,118
+    symbol: IEC_NAND8_74x30
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: 74HC30PW,118
+    package: TSSOP-14
+    description: -40°C~+125°C 1 1.5V~4.2V 22ns@6V,50pF 2V~6V 2uA 3.7V, 4.4V, 5.9V 400mV 5.2mA 5.2mA 500mV~1.8V 74HC Series 8 NAND Gate TSSOP-14 Logic Gates
+    manufacturer: Nexperia
+    mpn: 74HC30PW,118
+    lcsc: C546857
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241037_Nexperia-74HC30PW-118_C546857.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1329"
+    stock_checked: "2026-11-14"
+  - name: CD74HC4049M96
+    symbol: CD74HC4049M96
+    footprint: LIB_Package_SO:SOIC-16_3.9x9.9mm_P1.27mm
+    value: CD74HC4049M96
+    package: SOP-16
+    description: -55°C~+125°C 1.5V, 3.15V, 4.2V 1.9V, 4.4V, 5.9V 100mV 17ns@4.5V,50pF 2V~6V 2uA 500mV, 1.35V, 1.8V 6 74HC SOP-16 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: CD74HC4049M96
+    lcsc: C2871324
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010230_Texas-Instruments-CD74HC4049M96_C2871324.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1007"
+    stock_checked: "2026-11-14"
+  - name: 74HC4051D
+    symbol: 74HC4051D
+    footprint: LIB_Package_SO:SOIC-16_3.9x9.9mm_P1.27mm
+    value: 74HC4051D
+    package: SOIC-16
+    description: -40°C~+125°C -6V~0V, 2V~6V 50Ω 7ns 85MHz 8:1 SOIC-16 Analog Switches, Multiplexers
+    manufacturer: TOSHIBA
+    mpn: 74HC4051D
+    lcsc: C2673644
+    jlc_type: Extended
+    datasheet: https://datasheet.lcsc.com/lcsc/2108071530_TOSHIBA-74HC4051D_C2673644.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2580"
+    stock_checked: "2026-11-14"
+  - name: 74HC4051PW,118
+    symbol: 74HC4051PW,118
+    footprint: LIB_Package_SO:TSSOP-16_4.4x5mm_P0.65mm
+    value: 74HC4051PW,118
+    package: TSSOP-16
+    description: -40°C~+125°C 1 12ns 29ns 2V~10V 31ns 5pF 70Ω 8:1 Level shifting TSSOP-16 Analog Switches, Multiplexers
+    manufacturer: Nexperia
+    mpn: 74HC4051PW,118
+    lcsc: C5645
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC4051PW-118_C5645.pdf
+    datasheet_lang: en
+    status: active
+    stock: "106812"
+    stock_checked: "2026-11-14"
+  - name: 74LV4051D,118
+    symbol: 74LV4051D,118
+    footprint: LIB_Package_SO:SOIC-16_3.9x9.9mm_P1.27mm
+    value: 74LV4051D,118
+    package: SO-16
+    description: -40°C~+125°C 145Ω 180MHz 1V~6V 29ns 5ns 8 8:1 SO-16 Analog Switches, Multiplexers
+    manufacturer: Nexperia
+    mpn: 74LV4051D,118
+    lcsc: C547978
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241039_Nexperia-74LV4051D-118_C547978.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2501"
+    stock_checked: "2026-11-14"
+  - name: 74LV4051PW,118
+    symbol: 74LV4051PW,118
+    footprint: LIB_Package_SO:TSSOP-16_4.4x5mm_P0.65mm
+    value: 74LV4051PW,118
+    package: TSSOP-16
+    description: -40°C~+125°C 1 10ns 180MHz 1V~6V 29ns 5pF 80Ω 8:1 TSSOP-16 Analog Switches, Multiplexers
+    manufacturer: Nexperia
+    mpn: 74LV4051PW,118
+    lcsc: C547982
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241039_Nexperia-74LV4051PW-118_C547982.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2603"
+    stock_checked: "2026-11-14"
+  - name: 74HC4060D,653
+    symbol: 74HC4060D,653
+    footprint: LIB_Package_SO:SOIC-16_3.9x9.9mm_P1.27mm
+    value: 74HC4060D,653
+    package: SOIC-16
+    description: -40°C~+125°C 1 29ns 2V~6V 95MHz Asynchronous Divide-by-2 Falling Edge Up Counter SOIC-16 Counters, Dividers
+    manufacturer: Nexperia
+    mpn: 74HC4060D,653
+    lcsc: C5649
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC4060D-653_C5649.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1148"
+    stock_checked: "2026-11-14"
+  - name: 74HC4060PW,118
+    symbol: 74HC4060PW,118
+    footprint: LIB_Package_SO:TSSOP-16_4.4x5mm_P0.65mm
+    value: 74HC4060PW,118
+    package: TSSOP-16
+    description: -40°C~+125°C 1 29ns 2V~6V 95MHz Asynchronous Divide-by-2 Falling Edge Up Counter TSSOP-16 Counters, Dividers
+    manufacturer: Nexperia
+    mpn: 74HC4060PW,118
+    lcsc: C547023
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241037_Nexperia-74HC4060PW-118_C547023.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2358"
+    stock_checked: "2026-11-14"
+  - name: 74HC393D,653
+    symbol: 74HC393D,653
+    footprint: LIB_Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+    value: 74HC393D,653
+    package: SOIC-14
+    description: -40°C~+125°C 107MHz 12ns 2 2V~6V 4 Asynchronous Divide-by-2 Falling Edge SOIC-14 Counters, Dividers
+    manufacturer: Nexperia
+    mpn: 74HC393D,653
+    lcsc: C5641
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC393D-653_C5641.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1991"
+    stock_checked: "2026-11-14"
+  - name: 74HC595D,118
+    symbol: 74HC595D,118
+    footprint: LIB_Package_SO:SOIC-16_3.9x9.9mm_P1.27mm
+    value: 74HC595D,118
+    package: SOIC-16
+    description: -40°C~+125°C 1 100MHz 19ns@4.5V,50pF 2V~6V 74HC 8 Serial-to-Serial or Parallel Tri-State SOIC-16 Shift Registers
+    manufacturer: Nexperia
+    mpn: 74HC595D,118
+    lcsc: C5947
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC595D-118_C5947.pdf
+    datasheet_lang: en
+    status: active
+    stock: "363578"
+    stock_checked: "2026-11-14"
+  - name: 74HC595PW,118
+    symbol: 74HC595PW,118
+    footprint: LIB_Package_SO:TSSOP-16_4.4x5mm_P0.65mm
+    value: 74HC595PW,118
+    package: TSSOP-16
+    description: -40°C~+125°C 1 100MHz 19ns@4.5V,50pF 2V~6V 35mA 74HC 8 Serial-to-Serial or Parallel Tri-State TSSOP-16 Shift Registers
+    manufacturer: Nexperia
+    mpn: 74HC595PW,118
+    lcsc: C5948
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC595PW-118_C5948.pdf
+    datasheet_lang: en
+    status: active
+    stock: "273655"
+    stock_checked: "2026-11-14"
+  - name: SN74HCS595PWR
+    symbol: SN74HCS595PWR
+    footprint: LIB_Package_SO:TSSOP-16_4.4x5mm_P0.65mm
+    value: SN74HCS595PWR
+    package: TSSOP-16
+    description: -40°C~+125°C 1 130MHz 2V~6V 7.8mA 74HCS 7ns@6V,50pF 8 Asynchronous clear function, Output enable Serial-to-Parallel Tri-State TSSOP-16 Shift Registers
+    manufacturer: Texas Instruments
+    mpn: SN74HCS595PWR
+    lcsc: C2862589
+    jlc_type: Extended
+    datasheet: https://www.ti.com/cn/lit/gpn/sn74hcs595
+    datasheet_lang: en
+    status: active
+    stock: "1034"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC244APWR
+    symbol: SN74LVC244APWR
+    footprint: LIB_Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm
+    value: SN74LVC244APWR
+    package: TSSOP-20
+    description: -40°C~+125°C 1.65V~3.6V 2 24mA 24mA 3.9ns@3.3V,50pF 4 40uA 74LVC Tri-State Unidirectional TSSOP-20 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC244APWR
+    lcsc: C7668
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-SN74LVC244APWR_C7668.pdf
+    datasheet_lang: en
+    status: active
+    stock: "100875"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC244ADWR
+    symbol: SN74LVC244ADWR
+    footprint: LIB_Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm
+    value: SN74LVC244ADWR
+    package: SOIC-20-300mil
+    description: -40°C~+125°C 1.65V~3.6V 2 24mA 24mA 3.9ns@3.3V,50pF 4 40uA 74LVC Output enable, Level shifting Tri-State Unidirectional SOIC-20-300mil Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC244ADWR
+    lcsc: C507250
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2005092038_Texas-Instruments-SN74LVC244ADWR_C507250.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4058"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC245APWR
+    symbol: SN74LVC245APWR
+    footprint: LIB_Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm
+    value: SN74LVC245APWR
+    package: TSSOP-20
+    description: -40°C~+125°C 1 1.65V~3.6V 24mA 24mA 3.8ns@3.3V,50pF 30uA 74LVC 8 Bidirectional Tri-State TSSOP-20 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC245APWR
+    lcsc: C7848
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2302221930_Texas-Instruments-SN74LVC245APWR_C7848.pdf
+    datasheet_lang: en
+    status: active
+    stock: "38887"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC245ADWR
+    symbol: SN74LVC245ADWR
+    footprint: LIB_Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm
+    value: SN74LVC245ADWR
+    package: SOIC-20-300mil
+    description: -40°C~+125°C 1 1.65V~3.6V 24mA 24mA 3.8ns@3.3V,50pF 30uA 74LVC 8 Bidirectional Tri-State SOIC-20-300mil Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC245ADWR
+    lcsc: C571201
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2006011532_Texas-Instruments-SN74LVC245ADWR_C571201.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2827"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC245ADBR
+    symbol: SN74LVC245ADBR
+    footprint: LIB_Package_SO:SSOP-20_5.3x7.2mm_P0.65mm
+    value: SN74LVC245ADBR
+    package: SSOP-20
+    description: -40°C~+125°C 1 1.65V~3.6V 10uA 24mA 24mA 3.8ns@3.3V,50pF 74LVC 8 Bidirectional Tri-State SSOP-20 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC245ADBR
+    lcsc: C393617
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Texas-Instruments-SN74LVC245ADBR_C393617.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4387"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G02DCKR
+    symbol: SN74LVC1G02DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-353_SC-70-5
+    value: SN74LVC1G02DCKR
+    package: SC-70-5
+    description: -40°C~+125°C 1 1.2V, 1.9V, 2.4V, 3.8V 1.65V~5.5V 1.7V~2V 10uA 2 3.6ns@3.3V,15pF 300mV, 400mV, 450mV, 550mV 32mA 32mA 700mV~800mV 74LVC Series NOR Gate Overvoltage-tolerant input, Rear drive protection, Level shifting, Local shutdown mode, Live insertion protection SC-70-5 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G02DCKR
+    lcsc: C113520
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010301_Texas-Instruments-SN74LVC1G02DCKR_C113520.pdf
+    datasheet_lang: en
+    status: active
+    stock: "19552"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G04DBVR
+    symbol: SN74LVC1G04DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: SN74LVC1G04DBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 1 1 1.65V~5.5V 1.7V~2V 10uA 2.4V 3.7ns@5V,50pF 32mA 32mA 400mV 700mV~800mV 74LVC 电源关断保护 SOT-23-5 Inverters
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G04DBVR
+    lcsc: C7827
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809192324_Texas-Instruments-SN74LVC1G04DBVR_C7827.pdf
+    datasheet_lang: en
+    status: active
+    stock: "56799"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G04DCKR
+    symbol: SN74LVC1G04DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-353_SC-70-5
+    value: SN74LVC1G04DCKR
+    package: SC-70-5
+    description: -40°C~+125°C 1 1 1.65V~5.5V 1.7V~2V 10uA 3.7ns@5V,50pF 32mA 32mA 700mV~800mV 74LVC 电源关断保护 SC-70-5 Inverters
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G04DCKR
+    lcsc: C8207
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811021113_Texas-Instruments-SN74LVC1G04DCKR_C8207.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7732"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G08DBVR
+    symbol: SN74LVC1G08DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: SN74LVC1G08DBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 1 1.2V, 1.9V, 2.3V, 3.8V 1.65V~5.5V 1.7V, 2V 10uA 2 300mV, 450mV, 550mV 32mA 32mA 4ns@5V,50pF 700mV, 800mV 74LVC Series AND Gate Overvoltage-tolerant input, Rear drive protection, Level shifting, Local shutdown mode, Live insertion protection SOT-23-5 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G08DBVR
+    lcsc: C7666
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-SN74LVC1G08DBVR_C7666.pdf
+    datasheet_lang: en
+    status: active
+    stock: "68226"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G08DCKR
+    symbol: SN74LVC1G08DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-353_SC-70-5
+    value: SN74LVC1G08DCKR
+    package: SC-70-5
+    description: -40°C~+125°C 1 1.65V~5.5V 1.7V, 2V 10uA 2 2.3V 24mA 3.6ns@3.3V 32mA 550mV 700mV, 800mV 74LVC Series AND Gate Overvoltage-tolerant input, Rear drive protection, Local shutdown mode, Live insertion protection SC-70-5 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G08DCKR
+    lcsc: C7832
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121951_Texas-Instruments-SN74LVC1G08DCKR_C7832.pdf
+    datasheet_lang: en
+    status: active
+    stock: "214020"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G10DBVR
+    symbol: SN74LVC1G10DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: SN74LVC1G10DBVR
+    package: SOT-23-6
+    description: -40°C~+125°C 1 1.2V, 1.9V, 2.4V, 3.8V 1.65V~5.5V 1.7V~2V 10uA 3 3.6ns@5V,50pF 300mV, 450mV, 550mV 32mA 32mA 700mV~800mV 74LVC Series NAND Gate Rear drive protection, Level shifting, Local shutdown mode, Live insertion protection SOT-23-6 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G10DBVR
+    lcsc: C403721
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-SN74LVC1G10DBVR_C403721.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1171"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G10DCKR
+    symbol: SN74LVC1G10DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-363_SC-70-6
+    value: SN74LVC1G10DCKR
+    package: SC-70-6
+    description: -40°C~+125°C 1 1.65V~5.5V 1.7V~2V 10uA 3 3.6ns@5V,50pF 3.8V 32mA 32mA 550mV 700mV~800mV 74LVC Series NAND Gate SC-70-6 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G10DCKR
+    lcsc: C485078
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2001151005_Texas-Instruments-SN74LVC1G10DCKR_C485078.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9429"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G11DBVR
+    symbol: SN74LVC1G11DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: SN74LVC1G11DBVR
+    package: SOT-23-6
+    description: -40°C~+125°C 1 1.2V, 1.9V, 2.3V, 3.8V 1.65V~5.5V 1.7V~2V 10uA 3 3.5ns@5V,50pF 300mV, 450mV, 550mV 32mA 32mA 700mV~800mV 74LVC Series AND Gate Local shutdown mode SOT-23-6 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G11DBVR
+    lcsc: C22046
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809051026_Texas-Instruments-SN74LVC1G11DBVR_C22046.pdf
+    datasheet_lang: en
+    status: active
+    stock: "28668"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G11DCKR
+    symbol: SN74LVC1G11DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-363_SC-70-6
+    value: SN74LVC1G11DCKR
+    package: SC-70-6
+    description: -40°C~+125°C 1 1.65V~5.5V 1.7V~2V 10uA 3 3.5ns@5V,50pF 3.8V 32mA 32mA 550mV 700mV~800mV 74LVC Series AND Gate Overvoltage-tolerant input, Local shutdown mode SC-70-6 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G11DCKR
+    lcsc: C529281
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2005151136_Texas-Instruments-SN74LVC1G11DCKR_C529281.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11220"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G14DBVR
+    symbol: SN74LVC1G14DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: SN74LVC1G14DBVR
+    package: SOT-23-5
+    description: -40°C~+85°C 1 1 1.16V~3.33V 1.65V~5.5V 10uA 2.3V 32mA 32mA 390mV~1.87V 550mV 6.5ns@2.5V,50pF 74LVC Schmitt trigger 电源关断保护, 噪声抑制功能 SOT-23-5 Inverters
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G14DBVR
+    lcsc: C7835
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809251717_Texas-Instruments-SN74LVC1G14DBVR_C7835.pdf
+    datasheet_lang: en
+    status: active
+    stock: "193654"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G14DCKR
+    symbol: SN74LVC1G14DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-353_SC-70-5
+    value: SN74LVC1G14DCKR
+    package: SC-70-5
+    description: -40°C~+125°C 1 1 1.16V~3.33V 1.65V~5.5V 10uA 3.8V 32mA 32mA 390mV~1.87V 550mV 6.5ns@2.5V,50pF 74LVC Schmitt trigger 电源关断保护, 噪声抑制功能 SC-70-5 Inverters
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G14DCKR
+    lcsc: C35740
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811032110_Texas-Instruments-SN74LVC1G14DCKR_C35740.pdf
+    datasheet_lang: en
+    status: active
+    stock: "39681"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G17DBVR
+    symbol: SN74LVC1G17DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: SN74LVC1G17DBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 1 1 1.65V~5.5V 10uA 32mA 32mA 4.6ns@3.3V,15pF 74LVC Power-off isolation, Level shifting Push-pull Schmitt trigger Unidirectional SOT-23-5 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G17DBVR
+    lcsc: C7836
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811031937_Texas-Instruments-SN74LVC1G17DBVR_C7836.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6276"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G32DBVR
+    symbol: SN74LVC1G32DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: SN74LVC1G32DBVR
+    package: SOT-23-5
+    description: -40°C~+85°C 1 1.2V, 1.9V, 2.4V, 3.8V 1.65V~5.5V 1.7V~2V 10uA 2 300mV, 400mV, 450mV, 550mV 32mA 32mA 4ns@5V,50pF 74LVC Series Local shutdown mode OR Gate SOT-23-5 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G32DBVR
+    lcsc: C10096
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809251716_Texas-Instruments-SN74LVC1G32DBVR_C10096.pdf
+    datasheet_lang: en
+    status: active
+    stock: "147992"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G32DCKR
+    symbol: SN74LVC1G32DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-353_SC-70-5
+    value: SN74LVC1G32DCKR
+    package: SC-70-5
+    description: -40°C~+125°C 1 1.65V~5.5V 1.7V~2V 10uA 2 3.8V 32mA 32mA 4ns@5V,50pF 550mV~650mV 700mV, 800mV 74LVC Series OR Gate Overvoltage-tolerant input, Rear drive protection, Level shifting, Local shutdown mode, Live insertion protection SC-70-5 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G32DCKR
+    lcsc: C7840
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809192019_Texas-Instruments-SN74LVC1G32DCKR_C7840.pdf
+    datasheet_lang: en
+    status: active
+    stock: "68790"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G86DBVR
+    symbol: SN74LVC1G86DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: SN74LVC1G86DBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 1 1.65V~5.5V 10uA 32mA 32mA 4ns@5V,50pF 74LVC Series Overvoltage-tolerant input, Rear drive protection, Level shifting, Local shutdown mode XOR Gate SOT-23-5 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G86DBVR
+    lcsc: C402161
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Texas-Instruments-SN74LVC1G86DBVR_C402161.pdf
+    datasheet_lang: en
+    status: active
+    stock: "57300"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G86DCKR
+    symbol: SN74LVC1G86DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-353_SC-70-5
+    value: SN74LVC1G86DCKR
+    package: SC-70-5
+    description: -40°C~+125°C 1 1.65V~5.5V 1.7V~2V 10uA 2 32mA 32mA 4ns@5V,50pF 700mV~800mV 74LVC Series XOR Gate SC-70-5 Logic Gates
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G86DCKR
+    lcsc: C52350
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811091709_Texas-Instruments-SN74LVC1G86DCKR_C52350.pdf
+    datasheet_lang: en
+    status: active
+    stock: "68141"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G125DBVR
+    symbol: SN74LVC1G125DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: SN74LVC1G125DBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 1 1 1.65V~5.5V 10uA 3.7ns@3.3V,15pF 32mA 32mA 74LVC Tri-State Unidirectional SOT-23-5 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G125DBVR
+    lcsc: C23654
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809200051_Texas-Instruments-SN74LVC1G125DBVR_C23654.pdf
+    datasheet_lang: en
+    status: active
+    stock: "219300"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G125DCKR
+    symbol: SN74LVC1G125DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-353_SC-70-5
+    value: SN74LVC1G125DCKR
+    package: SC-70-5
+    description: -40°C~+125°C 0.6ns@3.3V,15pF 1 1 1.65V~5.5V 10uA 32mA 32mA 74LVC Tri-State Unidirectional SC-70-5 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G125DCKR
+    lcsc: C7833
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121952_Texas-Instruments-SN74LVC1G125DCKR_C7833.pdf
+    datasheet_lang: en
+    status: active
+    stock: "24276"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G240DBVR
+    symbol: SN74LVC1G240DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: SN74LVC1G240DBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 1 1 1.65V~5.5V 10uA 3.7ns@3.3V,15pF 32mA 32mA 74LVC Power-off isolation, Output enable, Level shifting Tri-State Unidirectional SOT-23-5 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G240DBVR
+    lcsc: C7837
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809251730_Texas-Instruments-SN74LVC1G240DBVR_C7837.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10377"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC1G240DCKR
+    symbol: SN74LVC1G240DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-353_SC-70-5
+    value: SN74LVC1G240DCKR
+    package: SC-70-5
+    description: -40°C~+125°C 1 1 1.65V~5.5V 10uA 3.7ns@3.3V,15pF 32mA 32mA 74LVC Tri-State Unidirectional SC-70-5 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC1G240DCKR
+    lcsc: C470957
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912202018_Texas-Instruments-SN74LVC1G240DCKR_C470957.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2422"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC2G04DBVR
+    symbol: SN74LVC2G04DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: SN74LVC2G04DBVR
+    package: SOT-23-6
+    description: -40°C~+85°C 1.65V~5.5V 1.7V~2V 10uA 2 2 2.4V 3.2ns@5V,50pF 32mA 32mA 550mV 700mV~800mV 74LVC 电源关断保护 SOT-23-6 Inverters
+    manufacturer: Texas Instruments
+    mpn: SN74LVC2G04DBVR
+    lcsc: C10428
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811092004_Texas-Instruments-SN74LVC2G04DBVR_C10428.pdf
+    datasheet_lang: en
+    status: active
+    stock: "61934"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC2G04DCKR
+    symbol: SN74LVC2G04DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-363_SC-70-6
+    value: SN74LVC2G04DCKR
+    package: SOT-363-6
+    description: -40°C~+125°C 1.65V~5.5V 1.7V~2V 10uA 2 2 3.2ns@5V,50pF 32mA 32mA 700mV~800mV 74LVC Power shutdown protection SOT-363-6 Inverters
+    manufacturer: Texas Instruments
+    mpn: SN74LVC2G04DCKR
+    lcsc: C105251
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809192237_Texas-Instruments-SN74LVC2G04DCKR_C105251.pdf
+    datasheet_lang: en
+    status: active
+    stock: "26950"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC2G17DBVR
+    symbol: SN74LVC2G17DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: SN74LVC2G17DBVR
+    package: SOT-23-6
+    description: -40°C~+85°C 1 1.65V~5.5V 10uA 2 32mA 32mA 5.4ns@3.3V,50pF 74LVC Schmitt trigger SOT-23-6 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC2G17DBVR
+    lcsc: C10429
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809200013_Texas-Instruments-SN74LVC2G17DBVR_C10429.pdf
+    datasheet_lang: en
+    status: active
+    stock: "128132"
+    stock_checked: "2026-11-14"
+  - name: SN74LVC2G17DCKR
+    symbol: SN74LVC2G17DCKR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-363_SC-70-6
+    value: SN74LVC2G17DCKR
+    package: SC-70-6
+    description: -40°C~+125°C 1 1.65V~5.5V 10uA 2 32mA 32mA 5.4ns@3.3V,50pF 74LVC Power-off isolation, Level shifting Push-pull Schmitt trigger Unidirectional SC-70-6 Buffers, Drivers, Receivers, Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN74LVC2G17DCKR
+    lcsc: C50714
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810131710_Texas-Instruments-SN74LVC2G17DCKR_C50714.pdf
+    datasheet_lang: en
+    status: active
+    stock: "29122"
+    stock_checked: "2026-11-14"
+  - name: NL27WZ16DFT2G
+    symbol: NL27WZ16DFT2G
+    footprint: LIB_Package_TO_SOT_SMD:SOT-363_SC-70-6
+    value: NL27WZ16DFT2G
+    package: SC-70-6(SOT-363)
+    description: -55°C~+125°C 1 1.65V~5.5V 1.8ns@5V,15pF 10uA 2 27WZ 32mA 32mA Tri-State SC-70-6(SOT-363) Buffers, Drivers, Receivers, Transceivers
+    manufacturer: onsemi
+    mpn: NL27WZ16DFT2G
+    lcsc: C152463
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2210210230_onsemi-NL27WZ16DFT2G_C152463.pdf
+    datasheet_lang: en
+    status: active
+    stock: "165"
+    stock_checked: "2026-11-14"
