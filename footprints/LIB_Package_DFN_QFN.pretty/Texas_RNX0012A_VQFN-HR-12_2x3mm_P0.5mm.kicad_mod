@@ -1,0 +1,344 @@
+(footprint "Texas_RNX0012A_VQFN-HR-12_2x3mm_P0.5mm"
+	(version 20260206)
+	(generator "libkit")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40°C~+150°C@(TJ) 1 1MHz 26uA 4.2V~60V 600mA Adjustable Buck Buck Built-in Yes VQFN-12(2x3) DC-DC Converters, https://datasheet.lcsc.com/lcsc/2303020106_Texas-Instruments-LMR36006BRNXR_C1850367.pdf (EasyEDA C1850367)")
+	(tags "VQFN-12(2x3) LMR36006BRNXR")
+	(property "Reference" "REF**"
+		(at 0 -4.9 0)
+		(layer "F.SilkS")
+		(uuid "55655f3e-cc04-46f6-8260-c7eb41b64243")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Texas_RNX0012A_VQFN-HR-12_2x3mm_P0.5mm"
+		(at 0 4.9 0)
+		(layer "F.Fab")
+		(uuid "7100063d-1b43-4ac1-8082-e3e94de8d9e8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9122c8e4-3569-445d-95e4-eddb5fc2a292")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3cfffd78-42a6-414a-80c8-ee8ca1493e41")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.64 -1)
+		(end -1.62 -1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11771bce-13d6-4e26-a53e-3cdb513e8a14")
+	)
+	(fp_line
+		(start -1.64 -0.36)
+		(end -1.64 -1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d17b9804-bdd8-4c84-8c74-b6a352fb7042")
+	)
+	(fp_line
+		(start -1.64 1)
+		(end -1.64 0.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9c985540-f88f-47f4-971c-cbd217698a49")
+	)
+	(fp_line
+		(start -1.64 1)
+		(end -1.62 1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e6374759-f346-40a5-96de-5a8a6d92a22a")
+	)
+	(fp_line
+		(start 0.89 -1)
+		(end 1.36 -1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3b223e36-88be-4bed-918d-13983fa6a1d8")
+	)
+	(fp_line
+		(start 0.89 1)
+		(end 1.36 1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3bd9d92b-e08d-477a-bf5b-ab6d59cdad56")
+	)
+	(fp_line
+		(start 1.36 -1)
+		(end 1.36 -0.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eda9c01b-d4f2-415a-b21f-e4ea81f53ba1")
+	)
+	(fp_line
+		(start 1.36 0.86)
+		(end 1.36 1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ea00b61a-581d-49b5-bae6-b166aad457a5")
+	)
+	(fp_circle
+		(center -1.64 1)
+		(end -1.61 1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "0c19bb1a-a880-47ba-a65b-63e95ec4fc83")
+	)
+	(fp_circle
+		(center -1.27 1.51)
+		(end -1.17 1.51)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e5b7c089-45e7-43f9-a0e5-d680c5a67dc2")
+	)
+	(fp_line
+		(start -1.64 -1)
+		(end -1.62 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.64 -0.36)
+		(end -1.64 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.64 1)
+		(end -1.64 0.36)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.64 1)
+		(end -1.62 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.89 -1)
+		(end 1.36 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.89 1)
+		(end 1.36 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.36 -1)
+		(end 1.36 -0.86)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.36 0.86)
+		(end 1.36 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -2.1 -1.45)
+		(end 1.81 1.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.14 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.26 0.9)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "6de2fdc9-39cc-44ca-af0e-5fdc7783fd46")
+	)
+	(pad "2" smd roundrect
+		(at -0.61 0.9)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "3cd2eb90-b31e-4c5d-b9e7-5eb680b0870b")
+	)
+	(pad "3" smd roundrect
+		(at 0.04 0.9)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "199b63e7-1074-4a82-8c46-c88229725018")
+	)
+	(pad "4" smd roundrect
+		(at 0.54 0.9)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "52d86b01-8031-4ddc-a784-2f61653d6f7c")
+	)
+	(pad "5" smd roundrect
+		(at 1.26 0.5 90)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "fc0a54c9-48b2-4c6d-b499-5f3b70a25932")
+	)
+	(pad "6" smd roundrect
+		(at 1.26 0 90)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "fd420351-0036-418c-ae46-8c0073f3d028")
+	)
+	(pad "7" smd roundrect
+		(at 1.26 -0.5 90)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c5a3256f-2b21-4539-9bcc-cb9f657ffdb5")
+	)
+	(pad "8" smd roundrect
+		(at 0.54 -0.9 180)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "1962f609-3313-4081-93e6-c958b13e0bc5")
+	)
+	(pad "9" smd roundrect
+		(at 0.04 -0.9 180)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "49617238-ddec-4e89-8c19-8b2b92ed2f35")
+	)
+	(pad "10" smd roundrect
+		(at -0.61 -0.9 180)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c2873213-8569-465f-90eb-e68fcc3c2b4e")
+	)
+	(pad "11" smd roundrect
+		(at -1.26 -0.9 180)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "6729c13d-4e8c-4e42-80b8-8256284d505c")
+	)
+	(pad "12" smd roundrect
+		(at -0.93 0 270)
+		(size 0.25 1.825)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "e1053a1d-8f32-4acb-970f-41edc5113117")
+	)
+	(embedded_fonts no)
+	(model "${LIB_DIR}/3dmodels/LIB_Package_DFN_QFN.3dshapes/Texas_RNX0012A_VQFN-HR-12_2x3mm_P0.5mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

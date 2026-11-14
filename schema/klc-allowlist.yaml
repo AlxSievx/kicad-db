@@ -257,3 +257,23 @@
   item: ["Infineon_PG-HSOF-8-1", "TI_SO-PowerPAD-8"]
   rule: F9.2
   reason: Stock KiCad footprints copied unchanged (pad shapes, line widths and paste margin as KiCad ships them).
+
+# Power ICs 2026-11-14 (user OK).
+- kind: footprint
+  item: ["Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm", "TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.74x4.75mm", "WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"]
+  rule: F6.3
+  reason: Stock KiCad footprints copied unchanged (rectangular pads, exposed pad with paste windows as KiCad ships them).
+- kind: footprint
+  item: ["Texas_RNX0012A_VQFN-HR-12_2x3mm_P0.5mm"]
+  rule: F6.2
+  reason: >-
+    EasyEDA (= JLC) footprint; the anchor sits 0.14 mm off the pad centre because the VQFN-HR pads are
+    asymmetric. Kept so JLC's placement data matches.
+- kind: symbol
+  item: ["*:LMR36006BRNXR"]
+  rule: S4.4
+  reason: VCC is the internal 5 V LDO output (datasheet "Internal 5-V LDO output"), so power_out is the correct type.
+- kind: symbol
+  item: ["*:LT8390EFE_TRPBF"]
+  rule: S4.4
+  reason: VOUT is an output-voltage sense input and VREF a 2 V reference output; the checker's name heuristic suggests the opposite.

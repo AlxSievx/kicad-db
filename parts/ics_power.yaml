@@ -119,3 +119,243 @@ parts:
     status: active
     stock: "1350"
     stock_checked: "2026-11-03"
+  - name: TLV75512PDBVR
+    symbol: TLV75512PDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TLV75512PDBVR
+    package: SOT-23-5
+    description: -40°C~+125°C@(Tj) 1 1.2V 33uA 46dB@(100kHz) 5.5V 500mA 71.5uVrms 780mV@(500mA) Fixed Positive Under Voltage Lockout, Over Current Protection, Soft Start, Enable, Thermal Shutdown SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TLV75512PDBVR
+    lcsc: C2877864
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302282330_Texas-Instruments-TLV75512PDBVR_C2877864.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1973"
+    stock_checked: "2026-11-14"
+  - name: TLV75733PDBVR
+    symbol: TLV75733PDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TLV75733PDBVR
+    package: SOT-23-5
+    description: -40°C~+125°C@(Tj) 1 1A 3.3V 40uA 46dB@(100kHz) 5.5V 650mV@(1A) 71.5uVrms Fixed Positive Under Voltage Lockout, Over Current Protection, Over Temperature Protection, Soft Start SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TLV75733PDBVR
+    lcsc: C485517
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-TLV75733PDBVR_C485517.pdf
+    datasheet_lang: en
+    status: active
+    stock: "20554"
+    stock_checked: "2026-11-14"
+  - name: TLV77312PDBVR
+    symbol: TLV77312PDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TLV77312PDBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 1.2V 300mA 5.5V 600mV@(300mA) 72dB@(1kHz) 80uA Fixed Over Current Protection, Short Circuit Protection, Thermal Shutdown, Enable control SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TLV77312PDBVR
+    lcsc: C30806341
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C30806341.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "324"
+    stock_checked: "2026-11-14"
+  - name: AP7375-50SA-7
+    symbol: AP7375-50SA-7
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: AP7375-50SA-7
+    package: SOT-23
+    description: -40°C~+125°C@(Tj) 1 2.1uA 300mA 35mV 45V 5V 85dB@(1kHz) Fixed Over Current Protection, Over Temperature Protection, Enable Positive SOT-23 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Diodes Incorporated
+    mpn: AP7375-50SA-7
+    lcsc: C6500991
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401161816_Diodes-Incorporated-AP7375-50SA-7_C6500991.pdf
+    datasheet_lang: en
+    status: active
+    stock: "18982"
+    stock_checked: "2026-11-14"
+  - name: ZXTR2105FQ-7
+    symbol: ZXTR2105FQ-7
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23
+    value: ZXTR2105FQ-7
+    package: SOT-23
+    description: -65°C~+150°C@(Tj) 1 15mA 4.75V~5.25V 46dB@(100Hz) 60V 800uA Fixed Positive SOT-23 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Diodes Incorporated
+    mpn: ZXTR2105FQ-7
+    lcsc: C211385
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809081633_Diodes-Incorporated-ZXTR2105FQ-7_C211385.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3439"
+    stock_checked: "2026-11-14"
+  - name: TPS54360BDDAR
+    symbol: TPS54360BDDAR
+    footprint: LIB_Package_SO:TI_SO-PowerPAD-8
+    value: TPS54360BDDAR
+    package: SOIC-8-EP
+    description: -40°C~+150°C@(TJ) 1 146uA 2.5MHz 3.5A 4.5V~60V 800mV~58.8V Adjustable Buck Buck Built-in No SOIC-8-EP DC-DC Converters
+    manufacturer: Texas Instruments
+    mpn: TPS54360BDDAR
+    lcsc: C524806
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2005111633_Texas-Instruments-TPS54360BDDAR_C524806.pdf
+    datasheet_lang: en
+    status: active
+    stock: "40903"
+    stock_checked: "2026-11-14"
+  - name: TPS54560BDDAR
+    symbol: TPS54560BDDAR
+    footprint: LIB_Package_SO:Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm
+    value: TPS54560BDDAR
+    package: SO-8
+    description: -40°C~+150°C@(TJ) 1 146uA 4.5V~60V 500kHz 5A 800mV~58.8V Adjustable Buck Buck Built-in No SO-8 DC-DC Converters
+    manufacturer: Texas Instruments
+    mpn: TPS54560BDDAR
+    lcsc: C1850354
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121922_Texas-Instruments-TPS54560BDDAR_C1850354.pdf
+    datasheet_lang: en
+    status: active
+    stock: "31328"
+    stock_checked: "2026-11-14"
+  - name: LMR36006BRNXR
+    symbol: LMR36006BRNXR
+    footprint: LIB_Package_DFN_QFN:Texas_RNX0012A_VQFN-HR-12_2x3mm_P0.5mm
+    value: LMR36006BRNXR
+    package: VQFN-12(2x3)
+    description: -40°C~+150°C@(TJ) 1 1MHz 26uA 4.2V~60V 600mA Adjustable Buck Buck Built-in Yes VQFN-12(2x3) DC-DC Converters
+    manufacturer: Texas Instruments
+    mpn: LMR36006BRNXR
+    lcsc: C1850367
+    jlc_type: Extended
+    datasheet: https://datasheet.lcsc.com/lcsc/2303020106_Texas-Instruments-LMR36006BRNXR_C1850367.pdf
+    datasheet_lang: en
+    status: active
+    stock: "288"
+    stock_checked: "2026-11-14"
+  - name: LT8390EFE_TRPBF
+    symbol: LT8390EFE_TRPBF
+    footprint: LIB_Package_SO:TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.74x4.75mm
+    value: LT8390EFE#TRPBF
+    package: HTSSOP-28
+    description: -40°C~+125°C@(TJ) 0V~60V 1 2.1mA 4V~60V 630kHz Adjustable Buck-Boost Buck-Boost External Overcurrent Protection, Load disconnect, Protection latch, Adjustable soft-start, Operating status indication, Adjustable current limiting, Frequency synchronization, Hiccup current limiting, External compensation, EMI optimization (spread spectrum) Yes HTSSOP-28 DC-DC Converters
+    manufacturer: Analog Devices
+    mpn: LT8390EFE#TRPBF
+    lcsc: C673802
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Analog-Devices-LT8390EFE-TRPBF_C673802.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "1019"
+    stock_checked: "2026-11-14"
+  - name: LT3092ETS8_TRPBF
+    symbol: LT3092ETS8_TRPBF
+    footprint: LIB_Package_TO_SOT_SMD:TSOT-23-8
+    value: LT3092ETS8#TRPBF
+    package: TSOT-23-8
+    description: -40°C~+125°C 1.2V~40V 200mA Current Source ±1% TSOT-23-8 Current Source / Constant Current Source
+    manufacturer: Analog Devices
+    mpn: LT3092ETS8#TRPBF
+    lcsc: C462641
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Analog-Devices-LT3092ETS8-TRPBF_C462641.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "2822"
+    stock_checked: "2026-11-14"
+  - name: TPS3700DDCR
+    symbol: TPS3700DDCR
+    footprint: LIB_Package_TO_SOT_SMD:TSOT-23-6
+    value: TPS3700DDCR
+    package: SOT-23-6
+    description: -40°C~+125°C 1.8V~18V 11uA 1nA 2 2.2us 29us 5.5mV Open-drain SOT-23-6 Comparators
+    manufacturer: Texas Instruments
+    mpn: TPS3700DDCR
+    lcsc: C33002
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811051511_Texas-Instruments-TPS3700DDCR_C33002.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7870"
+    stock_checked: "2026-11-14"
+  - name: TPS259531DSGR
+    symbol: TPS259531DSGR
+    footprint: LIB_Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm
+    value: TPS259531DSGR
+    package: WSON-8-EP(2x2)
+    description: -40°C~+125°C@(Tj) 0.75mm 1 2.7V~18V 2mm 2mm 34mΩ Integrated FET Surface Mount WSON-8-EP(2x2) Surge Protection Devices (SPDs)
+    manufacturer: Texas Instruments
+    mpn: TPS259531DSGR
+    lcsc: C2155674
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302281030_Texas-Instruments-TPS259531DSGR_C2155674.pdf
+    datasheet_lang: en
+    status: active
+    stock: "915"
+    stock_checked: "2026-11-14"
+  - name: TPS7A2033PDBVR
+    symbol: TPS7A2033PDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TPS7A2033PDBVR
+    package: SOT-23-5
+    description: -40°C~+125°C@(Tj) 1 10uVrms 140mV@(300mA) 3.3V 300mA 65dB@(100kHz) 6V 8.5uA Fixed Over Current Protection, Short Circuit Protection, Thermal shutdown, Enable control, Input under-voltage protection, Output discharge, Built-in soft-start Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TPS7A2033PDBVR
+    lcsc: C2862740
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2303010830_Texas-Instruments-TPS7A2033PDBVR_C2862740.pdf
+    datasheet_lang: en
+    status: active
+    stock: "169392"
+    stock_checked: "2026-11-14"
+  - name: TPS62A02APDDCR
+    symbol: TPS62A02APDDCR
+    footprint: LIB_Package_TO_SOT_SMD:TSOT-23-6
+    value: TPS62A02APDDCR
+    package: TSOT-23-6
+    description: -40°C~+125°C@(TJ) 1 2.4MHz 2.5V~5.5V 23uA 2A Adjustable Buck Buck Built-in Yes TSOT-23-6 DC-DC Converters
+    manufacturer: Texas Instruments
+    mpn: TPS62A02APDDCR
+    lcsc: C25687169
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C25687169.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "2162"
+    stock_checked: "2026-11-14"
+  - name: TPS60403DBVR
+    symbol: TPS60403DBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TPS60403DBVR
+    package: SOT-23-5
+    description: -40°C~+125°C -5.5V~-1.6V 1.8V~5.25V 15Ω 250kHz 425uA 60mA 90% Inverted Not supported SOT-23-5 Charge Pumps
+    manufacturer: Texas Instruments
+    mpn: TPS60403DBVR
+    lcsc: C11338
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810121210_Texas-Instruments-TPS60403DBVR_C11338.pdf
+    datasheet_lang: en
+    status: active
+    stock: "16265"
+    stock_checked: "2026-11-14"
+  - name: TPS3702CX33DDCR
+    symbol: TPS3702CX33DDCR
+    footprint: LIB_Package_TO_SOT_SMD:TSOT-23-6
+    value: TPS3702CX33DDCR
+    package: TSOT-23-6
+    description: -40°C~+125°C 1 2V~18V 3.3V 7uA Active Low Open Drain Voltage monitor TSOT-23-6 Supervisor and Reset ICs
+    manufacturer: Texas Instruments
+    mpn: TPS3702CX33DDCR
+    lcsc: C2068031
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302281001_Texas-Instruments-TPS3702CX33DDCR_C2068031.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4311"
+    stock_checked: "2026-11-14"

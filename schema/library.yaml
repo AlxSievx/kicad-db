@@ -80,7 +80,13 @@ categories:
   - {key: ics_analog, title: ICs_Analog}
   - {key: ics_digital_mcu, title: ICs_Digital_MCU}
   - {key: ics_interface, title: ICs_Interface}
-  - {key: crystals_oscillators, title: Crystals_Oscillators}
+  - key: crystals_oscillators
+    title: Crystals_Oscillators
+    fields:
+      - {key: frequency, label: Frequency, keyword: true}
+      - {key: load_capacitance, label: Load_Capacitance}      # crystals
+      - {key: stability, label: Stability, keyword: true}     # ppm over temperature (TCXO: ±0.5ppm …)
+      - {key: output, label: Output}                         # oscillators: CMOS, clipped sine, LVDS
   - {key: connectors, title: Connectors}
   - {key: switches_relays, title: Switches_Relays}
   - {key: protection, title: Protection}
@@ -173,3 +179,6 @@ manufacturers:
   - {name: UMW}
   - {name: Slkor}
   - {name: LRC}
+  # ICs and crystals (user OK 2026-11-14).
+  - {name: Analog Devices, aliases: [ADI, Analog Devices Inc, Linear Technology]}
+  - {name: YXC, aliases: [YXC Crystal Oscillators, Yangxing]}
