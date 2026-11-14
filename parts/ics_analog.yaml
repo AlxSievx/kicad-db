@@ -1364,3 +1364,78 @@ parts:
     status: active
     stock: "738"
     stock_checked: "2026-11-14"
+  - name: INA219AIDR
+    symbol: INA219AIDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: INA219AIDR
+    package: SOIC-8
+    description: -40°C~+125°C 0.1uV/°C 0V~26V 1 10uV 120dB 20nA 3V~5.5V 700uA Bidirectional detection, Zero drift / auto-zero, Input filter, Power monitoring, Digital output interface ±26V SOIC-8 Current Sense Amplifiers
+    manufacturer: Texas Instruments
+    mpn: INA219AIDR
+    lcsc: C138706
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810181516_Texas-Instruments-INA219AIDR_C138706.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4824"
+    stock_checked: "2026-11-14"
+  - name: INA226AIDGSR
+    symbol: INA226AIDGSR
+    footprint: LIB_Package_SO:TSSOP-10_3x3mm_P0.5mm
+    value: INA226AIDGSR
+    package: VSSOP-10
+    description: -40°C~+125°C 0.1uV/°C 0V~36V 100pA 140dB 2.5uV 2.7V~5.5V 330uA High-side detection, Low-side detection, Bidirectional detection, Power monitoring, Digital output interface, Programmable threshold alarm, Enable/shutdown function ±40V VSSOP-10 Current Sense Amplifiers
+    manufacturer: Texas Instruments
+    mpn: INA226AIDGSR
+    lcsc: C49851
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2312041157_Texas-Instruments-INA226AIDGSR_C49851.pdf
+    datasheet_lang: en
+    status: active
+    stock: "64085"
+    stock_checked: "2026-11-14"
+  - name: TMP117AIDRVR
+    symbol: TMP117AIDRVR
+    footprint: LIB_Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm
+    value: TMP117AIDRVR
+    package: WDFN-6-EP(2x2)
+    description: -55°C~+150°C 1.7V~5.5V 15.5ms 16bit 3.1uA Factory temperature calibration, Temperature threshold monitoring, Low-power standby, On-chip non-volatile parameter storage, On-chip digital filtering/averaging I2C, SMBus ±0.1°C WDFN-6-EP(2x2) Temperature Sensors
+    manufacturer: Texas Instruments
+    mpn: TMP117AIDRVR
+    lcsc: C699536
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2309221403_Texas-Instruments-TMP117AIDRVR_C699536.pdf
+    datasheet_lang: en
+    status: active
+    stock: "399"
+    stock_checked: "2026-11-14"
+  - name: TMP102AIDRLR
+    symbol: TMP102AIDRLR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-563
+    value: TMP102AIDRLR
+    package: SOT-563
+    description: -40°C~+125°C 1.4V~3.6V 12bit 1uA 26ms I2C ±0.5°C SOT-563 Temperature Sensors
+    manufacturer: Texas Instruments
+    mpn: TMP102AIDRLR
+    lcsc: C99269
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810161612_Texas-Instruments-TMP102AIDRLR_C99269.pdf
+    datasheet_lang: en
+    status: active
+    stock: "36202"
+    stock_checked: "2026-11-14"
+  - name: LIS3DHTR
+    symbol: LIS3DHTR
+    footprint: LIB_Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y
+    value: LIS3DHTR
+    package: LGA-16(3x3)
+    description: -40°C~+85°C 1.71V~3.6V 16bit 500nA Accelerometer Motion event detection SPI, I2C X,Y,Z ±16g LGA-16(3x3) Accelerometers
+    manufacturer: STMicroelectronics
+    mpn: LIS3DHTR
+    lcsc: C15134
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811031937_STMicroelectronics-LIS3DHTR_C15134.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5364"
+    stock_checked: "2026-11-14"

@@ -204,3 +204,11 @@ manufacturers:
   - {name: WCH, aliases: [WCH(Jiangsu Qin Heng), Jiangsu Qin Heng]}
   - {name: Silicon Labs, aliases: [SKYWORKS/SILICON LABS, Silicon Laboratories]}
   - {name: FTDI}
+  - {name: Advanced Monolithic Systems, aliases: [AMS]}
+  - {name: Torex, aliases: [Torex Semicon, Torex Semiconductor]}
+  - {name: MICRONE, aliases: [MICRONE(Nanjing Micro One Elec)]}
+  - {name: XI'AN Aerosemi, aliases: [XI'AN Aerosemi Tech, Aerosemi]}
+  - {name: TOPPOWER, aliases: [TOPPOWER(Nanjing Extension Microelectronics)]}
+  - {name: WIZnet, aliases: [WIZNET]}
+  - {name: TRINAMIC, aliases: [TRINAMIC Motion Control GmbH]}
+  - {name: NXP, aliases: [NXP Semicon, NXP Semiconductors]}

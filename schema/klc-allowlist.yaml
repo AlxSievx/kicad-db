@@ -462,3 +462,49 @@
   item: ["SSOP-20_3.9x8.7mm_P0.635mm"]
   rule: F5.1
   reason: Stock KiCad footprint copied unchanged.
+
+# Common parts 2026-11-14 (regulators, chargers, motor drivers, sensors, interface): stock KiCad symbols/footprints copied unchanged.
+- kind: symbol
+  item: ["*:AMS1117-3.3", "*:AP2112K-3.3TRG1", "*:LIS3DHTR", "*:PCA9685PW,118", "*:TCA9548APWR", "*:TMC2209-LA-T", "*:XC6206P332MR-G"]
+  rule: S3.1
+  reason: Stock KiCad symbol copied unchanged (KiCad conventions; KLC heuristics misread its pin groups or legacy pin stacks).
+- kind: symbol
+  item: ["*:AP2112K-3.3TRG1", "*:MAX3232ESE+T", "*:SN65HVD230DR", "*:TPS62133RGTR", "*:XC6206P332MR-G"]
+  rule: S3.6
+  reason: Stock KiCad symbol copied unchanged (KiCad conventions; KLC heuristics misread its pin groups or legacy pin stacks).
+- kind: symbol
+  item: ["*:AP63203WU-7", "*:BQ24075RGTR", "*:MAX3232ESE+T", "*:MT3608", "*:STUSB4500QTR", "*:TPS563201DDCR"]
+  rule: S4.2
+  reason: Stock KiCad symbol copied unchanged (KiCad conventions; KLC heuristics misread its pin groups or legacy pin stacks).
+- kind: symbol
+  item: ["*:BQ24075RGTR", "*:DRV8833PWPR", "*:DRV8871DDAR", "*:FUSB302BMPX", "*:LIS3DHTR", "*:STUSB4500QTR", "*:TMC2209-LA-T", "*:TPS62133RGTR", "*:W5500"]
+  rule: S4.3
+  reason: Stock KiCad symbol copied unchanged (KiCad conventions; KLC heuristics misread its pin groups or legacy pin stacks).
+- kind: symbol
+  item: ["*:SN65HVD230DR", "*:TMC2209-LA-T"]
+  rule: S4.4
+  reason: Stock KiCad symbol copied unchanged (KiCad conventions; KLC heuristics misread its pin groups or legacy pin stacks).
+- kind: footprint
+  item: ["Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias"]
+  rule: F5.1
+  reason: Stock KiCad footprint copied unchanged.
+- kind: footprint
+  item: ["Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias"]
+  rule: F5.2
+  reason: Stock KiCad footprint copied unchanged.
+- kind: footprint
+  item: ["HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias", "QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm", "SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias", "Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias", "VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias", "VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm", "VQFN-28-1EP_5x5mm_P0.5mm_EP3.7x3.7mm_ThermalVias", "WQFN-14-1EP_2.5x2.5mm_P0.5mm_EP1.45x1.45mm"]
+  rule: F6.3
+  reason: Stock KiCad footprint copied unchanged.
+- kind: footprint
+  item: ["SOT-223-3_TabPin2"]
+  rule: F9.1
+  reason: Stock KiCad footprint copied unchanged.
+- kind: footprint
+  item: ["Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias"]
+  rule: F9.2
+  reason: Stock KiCad footprint copied unchanged.
+- kind: symbol
+  item: ["*:TMC2209-LA-T"]
+  rule: S4.6
+  reason: Pin 25 is "unused, may be connected to GND" (TMC2209 datasheet); stock KiCad symbol keeps it visible and passive for that.

@@ -749,3 +749,108 @@ parts:
     status: active
     stock: "6359"
     stock_checked: "2026-11-14"
+  - name: SN65HVD230DR
+    symbol: SN65HVD230DR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: SN65HVD230DR
+    package: SOIC-8
+    description: -40°C~+85°C 1 17mA 1Mbps 370uA 3V~3.6V CAN Transceiver Low-power mode, Wake-up function, ESD protection, Thermal shutdown protection, Bus fault protection, Hot-swap protection SOIC-8 CAN Transceivers
+    manufacturer: Texas Instruments
+    mpn: SN65HVD230DR
+    lcsc: C12084
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-SN65HVD230DR_C12084.pdf
+    datasheet_lang: en
+    status: active
+    stock: "167528"
+    stock_checked: "2026-11-14"
+  - name: MAX3232ESE+T
+    symbol: MAX3232ESE+T
+    footprint: LIB_Package_SO:SOIC-16_3.9x9.9mm_P1.27mm
+    value: MAX3232ESE+T
+    package: SO-Narrow-16
+    description: -40°C~+85°C 2 2 250Kbps 3V~5.5V Transceiver Yes SO-Narrow-16 RS232 ICs
+    manufacturer: Analog Devices
+    mpn: MAX3232ESE+T
+    lcsc: C15846
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2208121200_Analog-Devices-Inc--Maxim-Integrated-MAX3232ESE-T_C15846.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "42063"
+    stock_checked: "2026-11-14"
+  - name: TCA9548APWR
+    symbol: TCA9548APWR
+    footprint: LIB_Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm
+    value: TCA9548APWR
+    package: TSSOP-24
+    description: -40°C~+85°C 1.65V~5.5V 2uA 400Kbps 80uA I2C, SMBus Power-up/reset configuration TSSOP-24 Interface - Specialized
+    manufacturer: Texas Instruments
+    mpn: TCA9548APWR
+    lcsc: C130026
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811081942_Texas-Instruments-TCA9548APWR_C130026.pdf
+    datasheet_lang: en
+    status: active
+    stock: "17647"
+    stock_checked: "2026-11-14"
+  - name: PCA9685PW,118
+    symbol: PCA9685PW,118
+    footprint: LIB_Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm
+    value: PCA9685PW,118
+    package: TSSOP-28
+    description: -40°C~+85°C 100kHz~1MHz 16 2.3V~5.5V 25mA 5.5V Built-in PWM TSSOP-28 LED Drivers
+    manufacturer: NXP
+    mpn: PCA9685PW,118
+    lcsc: C2678753
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2405281434_NXP-Semicon-PCA9685PW-118_C2678753.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "2694"
+    stock_checked: "2026-11-14"
+  - name: W5500
+    symbol: W5500
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: W5500
+    package: LQFP-48_7x7
+    description: -40°C~+85°C 10BASE-T, 100BASE-TX 3.3V 32KB SPI SPI Wake-up function, Programmable LED indication, Low-power mode Yes LQFP-48(7x7) Ethernet Controllers
+    manufacturer: WIZnet
+    mpn: W5500
+    lcsc: C32843
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121618_WIZNET-W5500_C32843.pdf
+    datasheet_lang: en
+    status: active
+    stock: "20521"
+    stock_checked: "2026-11-14"
+  - name: FUSB302BMPX
+    symbol: FUSB302BMPX
+    footprint: LIB_Package_DFN_QFN:WQFN-14-1EP_2.5x2.5mm_P0.5mm_EP1.45x1.45mm
+    value: FUSB302BMPX
+    package: WFQFN-14(2.5x2.5)
+    description: -40°C~+125°C 2.8V~5.5V 25uA Controller USB 3.1 WFQFN-14(2.5x2.5) USB Converters
+    manufacturer: onsemi
+    mpn: FUSB302BMPX
+    lcsc: C132291
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809111642_onsemi-FUSB302BMPX_C132291.pdf
+    datasheet_lang: en
+    status: active
+    stock: "18690"
+    stock_checked: "2026-11-14"
+  - name: STUSB4500QTR
+    symbol: STUSB4500QTR
+    footprint: LIB_Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm
+    value: STUSB4500QTR
+    package: QFN-24-EP(4x4)
+    description: -40°C~+105°C 160uA 3V, 5.5V Controller PD 3.0, PD 2.0 QFN-24-EP(4x4) USB Converters
+    manufacturer: STMicroelectronics
+    mpn: STUSB4500QTR
+    lcsc: C2678061
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2106070703_STMicroelectronics-STUSB4500QTR_C2678061.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6403"
+    stock_checked: "2026-11-14"

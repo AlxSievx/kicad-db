@@ -659,3 +659,228 @@ parts:
     status: active
     stock: "43391"
     stock_checked: "2026-11-14"
+  - name: AMS1117-3.3
+    symbol: AMS1117-3.3
+    footprint: LIB_Package_TO_SOT_SMD:SOT-223-3_TabPin2
+    value: AMS1117-3.3
+    package: SOT-223
+    description: -40°C~+125°C 0.003%Vout 1 1.1V@(800mA) 15V 1A 3.3V 5mA 72dB@(120Hz) Fixed Over Current Protection, Short Circuit Protection, Thermal shutdown Positive SOT-223 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Advanced Monolithic Systems
+    mpn: AMS1117-3.3
+    lcsc: C6186
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121508_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1442472"
+    stock_checked: "2026-11-14"
+  - name: AP2112K-3.3TRG1
+    symbol: AP2112K-3.3TRG1
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: AP2112K-3.3TRG1
+    package: SOT-25-5
+    description: -40°C~+85°C@(Ta) 1 250mV@(600mA) 3.3V 50uVrms 55uA 600mA 65dB@(1kHz) 6V Fixed Over Current Protection, Thermal Shutdown, Enable control Positive SOT-25-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Diodes Incorporated
+    mpn: AP2112K-3.3TRG1
+    lcsc: C51118
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Diodes-Incorporated-AP2112K-3-3TRG1_C51118.pdf
+    datasheet_lang: en
+    status: active
+    stock: "30455"
+    stock_checked: "2026-11-14"
+  - name: XC6206P332MR-G
+    symbol: XC6206P332MR-G
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-3
+    value: XC6206P332MR-G
+    package: SOT-23-3L
+    description: -40°C~+85°C@(Ta) 1 1uA 200mA 3.3V 6V Fixed Over Current Protection Positive SOT-23-3L Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Torex
+    mpn: XC6206P332MR-G
+    lcsc: C5446
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Torex-Semicon-XC6206P332MR-G_C5446.pdf
+    datasheet_lang: en
+    status: active
+    stock: "496676"
+    stock_checked: "2026-11-14"
+  - name: ME6211C33M5G-N
+    symbol: ME6211C33M5G-N
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: ME6211C33M5G-N
+    package: SOT-23-5
+    description: -40°C~+150°C 1 120mV@(100mA) 3.3V 500mA 50uVrms 60uA 6V 70dB@(1kHz) Fixed Over Current Protection, Enable, Short Circuit Protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: MICRONE
+    mpn: ME6211C33M5G-N
+    lcsc: C82942
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811131510_MICRONE-Nanjing-Micro-One-Elec-ME6211C33M5G-N_C82942.pdf
+    datasheet_lang: en
+    status: active
+    stock: "295326"
+    stock_checked: "2026-11-14"
+  - name: TPS563201DDCR
+    symbol: TPS563201DDCR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: TPS563201DDCR
+    package: SOT-23-THIN-6
+    description: -40°C~+125°C@(TJ) 1 3A 4.5V~17V 580kHz 768mV~7V Adjustable Buck Buck Built-in Yes SOT-23-THIN-6 DC-DC Converters
+    manufacturer: Texas Instruments
+    mpn: TPS563201DDCR
+    lcsc: C116592
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304241919_Texas-Instruments-TPS563201DDCR_C116592.pdf
+    datasheet_lang: en
+    status: active
+    stock: "122392"
+    stock_checked: "2026-11-14"
+  - name: TPS54202DDCR
+    symbol: TPS54202DDCR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: TPS54202DDCR
+    package: SOT-23-6
+    description: -40°C~+125°C@(TJ) 1 2A 4.5V~28V 45uA 500kHz Adjustable Buck Buck Built-in Yes SOT-23-6 DC-DC Converters
+    manufacturer: Texas Instruments
+    mpn: TPS54202DDCR
+    lcsc: C191884
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810121324_Texas-Instruments-TPS54202DDCR_C191884.pdf
+    datasheet_lang: en
+    status: active
+    stock: "290517"
+    stock_checked: "2026-11-14"
+  - name: AP63203WU-7
+    symbol: AP63203WU-7
+    footprint: LIB_Package_TO_SOT_SMD:TSOT-23-6
+    value: AP63203WU-7
+    package: TSOT-23-6
+    description: -40°C~+85°C@(TA) 1 1.1MHz 22uA 2A 3.3V 3.8V~32V Buck Built-in Fixed Overcurrent Protection, Light load efficient mode, Cycle-by-cycle current limiting, Hiccup current limiting, EMI optimization (spread spectrum) Step-down type Yes TSOT-23-6 DC-DC Converters
+    manufacturer: Diodes Incorporated
+    mpn: AP63203WU-7
+    lcsc: C780769
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2201131130_Diodes-Incorporated-AP63203WU-7_C780769.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5487"
+    stock_checked: "2026-11-14"
+  - name: TPS62133RGTR
+    symbol: TPS62133RGTR
+    footprint: LIB_Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias
+    value: TPS62133RGTR
+    package: VQFN-16-EP(3x3)
+    description: -40°C~+125°C 1 1.25MHz~2.5MHz 17uA 3A 3V~17V 5V Buck Buck Built-in Fixed Yes VQFN-16-EP(3x3) DC-DC Converters
+    manufacturer: Texas Instruments
+    mpn: TPS62133RGTR
+    lcsc: C73973
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121951_Texas-Instruments-TPS62133RGTR_C73973.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1681"
+    stock_checked: "2026-11-14"
+  - name: MT3608
+    symbol: MT3608
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: MT3608
+    package: SOT-23-6
+    description: -40°C~+85°C 1 1.2MHz 100uA, 1.6mA 2A 2V~24V Adjustable Boost Boost Built-in No SOT-23-6 DC-DC Converters
+    manufacturer: XI'AN Aerosemi
+    mpn: MT3608
+    lcsc: C84817
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811151539_XI-AN-Aerosemi-Tech-MT3608_C84817.pdf
+    datasheet_lang: en
+    status: active
+    stock: "90541"
+    stock_checked: "2026-11-14"
+  - name: TP4056-42-ESOP8
+    symbol: TP4056-42-ESOP8
+    footprint: LIB_Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias
+    value: TP4056-42-ESOP8
+    package: ESOP-8
+    description: -40°C~+85°C 1 1A 2uA 4.2V 4V~8V Charging IC Lithium Battery Support ESOP-8 Battery Management
+    manufacturer: TOPPOWER
+    mpn: TP4056-42-ESOP8
+    lcsc: C16581
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809261820_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf
+    datasheet_lang: en
+    status: active
+    stock: "85985"
+    stock_checked: "2026-11-14"
+  - name: BQ24075RGTR
+    symbol: BQ24075RGTR
+    footprint: LIB_Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm
+    value: BQ24075RGTR
+    package: QFN-16-EP(3x3)
+    description: -40°C~+125°C 1.5A 4.2V 4.35V~6.4V 6.5uA Charging IC Lithium Battery Not supported Support QFN-16-EP(3x3) Battery Management
+    manufacturer: Texas Instruments
+    mpn: BQ24075RGTR
+    lcsc: C15464
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810271109_Texas-Instruments-BQ24075RGTR_C15464.pdf
+    datasheet_lang: en
+    status: active
+    stock: "27212"
+    stock_checked: "2026-11-14"
+  - name: LM74700QDBVRQ1
+    symbol: LM74700QDBVRQ1
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: LM74700QDBVRQ1
+    package: SOT-23-6
+    description: -40°C~+150°C 11mA 15V 2.37A 20mV 3.2V~65V 65V 80uA External FET Reverse current blocking, Reverse polarity protection, With enable SOT-23-6 ORing Controllers
+    manufacturer: Texas Instruments
+    mpn: LM74700QDBVRQ1
+    lcsc: C2941042
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220108_Texas-Instruments-LM74700QDBVRQ1_C2941042.pdf
+    datasheet_lang: en
+    status: active
+    stock: "14109"
+    stock_checked: "2026-11-14"
+  - name: DRV8833PWPR
+    symbol: DRV8833PWPR
+    footprint: LIB_Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias
+    value: DRV8833PWPR
+    package: TSSOP-16-EP
+    description: -40°C~+85°C 1.5A 2 2.7V~10.8V 360mΩ Bipolar Driver Yes TSSOP-16-EP Stepper Motor Driver
+    manufacturer: Texas Instruments
+    mpn: DRV8833PWPR
+    lcsc: C50506
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810151712_Texas-Instruments-DRV8833PWPR_C50506.pdf
+    datasheet_lang: en
+    status: active
+    stock: "37861"
+    stock_checked: "2026-11-14"
+  - name: DRV8871DDAR
+    symbol: DRV8871DDAR
+    footprint: LIB_Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias
+    value: DRV8871DDAR
+    package: SO-8-EP
+    description: -40°C~+125°C 1 10uA 3.6A 565mΩ PWM Yes SO-8-EP Brushed DC Motor Drivers
+    manufacturer: Texas Instruments
+    mpn: DRV8871DDAR
+    lcsc: C75864
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809291617_Texas-Instruments-DRV8871DDAR_C75864.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3912"
+    stock_checked: "2026-11-14"
+  - name: TMC2209-LA-T
+    symbol: TMC2209-LA-T
+    footprint: LIB_Package_DFN_QFN:VQFN-28-1EP_5x5mm_P0.5mm_EP3.7x3.7mm_ThermalVias
+    value: TMC2209-LA-T
+    package: QFN-28-EP(5x5)
+    description: -40°C~+125°C 2 256, 8, 16, 32, 64 2A 340mΩ 4.75V~29V 4.75V~29V Bipolar Driver Overcurrent Protection, Short-Circuit Protection, Over temperature protection, Under-voltage lockout, Motor step-out prevention function, Built-in charge pump, Thermal warning STEP/DIR, UART Yes QFN-28-EP(5x5) Stepper Motor Driver
+    manufacturer: TRINAMIC
+    mpn: TMC2209-LA-T
+    lcsc: C2150710
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2202031830_TRINAMIC-Motion-Control-GmbH-TMC2209-LA-T_C2150710.pdf
+    datasheet_lang: en
+    status: active
+    stock: "18372"
+    stock_checked: "2026-11-14"

@@ -1784,3 +1784,18 @@ parts:
     status: active
     stock: "24353"
     stock_checked: "2026-11-14"
+  - name: M24C02-WMN6TP
+    symbol: M24C02-WMN6TP
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: M24C02-WMN6TP
+    package: SOIC-8
+    description: -40°C~+85°C 2.5V~5.5V 200 Years 2Kbit 4,000,000 Cycles 400kHz 5ms I2C SOIC-8 EEPROM
+    manufacturer: STMicroelectronics
+    mpn: M24C02-WMN6TP
+    lcsc: C7562
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809061818_STMicroelectronics-M24C02-WMN6TP_C7562.pdf
+    datasheet_lang: en
+    status: active
+    stock: "173461"
+    stock_checked: "2026-11-14"
