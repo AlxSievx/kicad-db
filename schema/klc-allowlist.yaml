@@ -389,3 +389,13 @@
   item: ["Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering"]
   rule: F9.1
   reason: Stock KiCad footprint copied unchanged.
+
+# Sensors 2026-11-14.
+- kind: footprint
+  item: ["Allegro_CB_PFF"]
+  rule: F5.4
+  reason: Stock KiCad Allegro CB footprint copied unchanged (fab outline of the bent leads overlaps).
+- kind: footprint
+  item: ["Texas_WSON-8_2.5x2.5mm_P0.5mm"]
+  rule: F7.3
+  reason: EasyEDA (= JLC) footprint; all pads rounded-rectangle, pin 1 marked on silkscreen.

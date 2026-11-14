@@ -106,6 +106,13 @@
 		(descr "Package LGA")
 	)
 	(lib
+		(name "LIB_Package_QFP")
+		(type "KiCad")
+		(uri "${LIB_DIR}/footprints/LIB_Package_QFP.pretty")
+		(options "")
+		(descr "Package QFP")
+	)
+	(lib
 		(name "LIB_Package_SO")
 		(type "KiCad")
 		(uri "${LIB_DIR}/footprints/LIB_Package_SO.pretty")

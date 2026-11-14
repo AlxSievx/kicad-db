@@ -119,6 +119,7 @@ families:
   - {name: Package_LGA}
   - {name: Sensor_Humidity}
   - {name: Sensor_Current}
+  - {name: Package_QFP}
 
 # Known manufacturers for automatic part picks; parts must use the canonical
 # name. A distributor brand string matches a name case-insensitively when it
@@ -194,3 +195,5 @@ manufacturers:
   - {name: Bosch Sensortec}
   - {name: Sensirion}
   - {name: LEM}
+  - {name: Renesas, aliases: [RENESAS, Renesas Electronics]}
+  - {name: Allegro MicroSystems, aliases: ["Allegro MicroSystems, LLC", Allegro]}

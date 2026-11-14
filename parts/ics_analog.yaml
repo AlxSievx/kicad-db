@@ -1274,3 +1274,93 @@ parts:
     status: active
     stock: "112"
     stock_checked: "2026-11-14"
+  - name: ADS124S08IPBSR
+    symbol: ADS124S08IPBSR
+    footprint: LIB_Package_QFP:TQFP-32_5x5mm_P0.5mm
+    value: ADS124S08IPBSR
+    package: TQFP-32(5x5)
+    description: -50°C~+125°C 12 2.7V~5.25V 24 280uA 4.096MHz 4kHz Auto calibration, Built-in temperature sensor, Multiplexers, Power-on reset, Bipolar power supply Built-in Built-in SPI Sigma-Delta Support Yes TQFP-32(5x5) Analog to Digital Converters (ADC)
+    manufacturer: Texas Instruments
+    mpn: ADS124S08IPBSR
+    lcsc: C2870171
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010330_Texas-Instruments-ADS124S08IPBSR_C2870171.pdf
+    datasheet_lang: en
+    status: active
+    stock: "618"
+    stock_checked: "2026-11-14"
+  - name: ADS7028IRTER
+    symbol: ADS7028IRTER
+    footprint: LIB_Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm
+    value: ADS7028IRTER
+    package: WQFN-16(3x3)
+    description: -40°C~+85°C 0.5LSB 12 1MHz 2.35V~5.5V 50uA 72dB 8 Built-in Built-in SAR SPI WQFN-16(3x3) Analog to Digital Converters (ADC)
+    manufacturer: Texas Instruments
+    mpn: ADS7028IRTER
+    lcsc: C880341
+    jlc_type: Extended
+    datasheet: https://www.ti.com/cn/lit/gpn/ads7028
+    datasheet_lang: en
+    status: active
+    stock: "212"
+    stock_checked: "2026-11-14"
+  - name: IPS2550DE1R
+    symbol: IPS2550DE1R
+    footprint: LIB_Package_SO:TSSOP-16_4.4x5mm_P0.65mm
+    value: IPS2550DE1R
+    package: TSSOP-16-EP
+    description: -40°C~+160°C 0°~360° 12mA 3V~3.6V, 4.5V~5.5V 4.4mm 5mm I2C No Rotary position sensor TSSOP-16-EP Position Sensors
+    manufacturer: Renesas
+    mpn: IPS2550DE1R
+    lcsc: C7528042
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2404241421_RENESAS-IPS2550DE1R_C7528042.pdf
+    datasheet_lang: en
+    status: active
+    stock: "186"
+    stock_checked: "2026-11-14"
+  - name: ACS772ECB-200B-PFF-T
+    symbol: ACS772ECB-200B-PFF-T
+    footprint: LIB_Sensor_Current:Allegro_CB_PFF
+    value: ACS772ECB-200B-PFF-T
+    package: CB-5
+    description: -40°C~+85°C 0.1mΩ 10mV/A 2.5us 200A 200kHz 4.5V~5.5V 4800Vrms Support CB-5 Current Sensors
+    manufacturer: Allegro MicroSystems
+    mpn: ACS772ECB-200B-PFF-T
+    lcsc: C2856243
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Allegro-MicroSystems--LLC-ACS772ECB-200B-PFF-T_C2856243.pdf
+    datasheet_lang: en
+    status: active
+    stock: "177"
+    stock_checked: "2026-11-14"
+  - name: HDC3020DEFR
+    symbol: HDC3020DEFR
+    footprint: LIB_Package_SON:Texas_WSON-8_2.5x2.5mm_P0.5mm
+    value: HDC3020DEFR
+    package: WSON-8(2.5x2.5)
+    description: -40°C~+125°C 0%RH~100%RH 1.62V~5.5V 16bit 400nA Built-in heater, Low power drive measurement, Drift/aging compensation I2C ±0.1°C ±0.5%RH WSON-8(2.5x2.5) Temperature and Humidity Sensor
+    manufacturer: Texas Instruments
+    mpn: HDC3020DEFR
+    lcsc: C7472806
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309221446_Texas-Instruments-HDC3020DEFR_C7472806.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6750"
+    stock_checked: "2026-11-14"
+  - name: IIM-42351
+    symbol: IIM-42351
+    footprint: LIB_Package_LGA:InvenSense_LGA-14_2.5x3mm_P0.5mm
+    value: IIM-42351
+    package: LGA-14(2.5x3)
+    description: -40°C~+105°C 1.71V~3.6V 16bit 2KB 7.5uA Accelerometer SPI, I2C, I3C X,Y,Z ±16g 运动事件检测 LGA-14(2.5x3) Accelerometers
+    manufacturer: TDK
+    mpn: IIM-42351
+    lcsc: C3216150
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C3216150.pdf
+    datasheet_lang: en
+    status: active
+    stock: "738"
+    stock_checked: "2026-11-14"
