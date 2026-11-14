@@ -1919,3 +1919,18 @@ parts:
     status: active
     stock: "87"
     stock_checked: "2026-11-14"
+  - name: STM32G431RBI6
+    symbol: STM32G431RBI6
+    footprint: LIB_Package_BGA:UFBGA-64_5x5mm_Layout8x8_P0.5mm
+    value: STM32G431RBI6
+    package: UFBGA-64
+    description: -40°C~+85°C 1.71V~3.6V 128KB 12bit 12bit 170MHz 32 Bit 32KB 52 ARM Cortex-M4F Built-in FLASH UFBGA-64 Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G431RBI6
+    lcsc: C730103
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G431RBI6_C730103.pdf
+    datasheet_lang: en
+    status: active
+    stock: "37"
+    stock_checked: "2026-11-14"
