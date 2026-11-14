@@ -277,3 +277,13 @@
   item: ["*:LT8390EFE_TRPBF"]
   rule: S4.4
   reason: VOUT is an output-voltage sense input and VREF a 2 V reference output; the checker's name heuristic suggests the opposite.
+
+# Crystals 2026-11-14 (user OK).
+- kind: footprint
+  item: ["Crystal_SMD_3225-4Pin_3.2x2.5mm", "Crystal_SMD_2016-4Pin_2.0x1.6mm", "Crystal_SMD_2012-2Pin_2.0x1.2mm"]
+  rule: F9.1
+  reason: Stock KiCad crystal footprints copied unchanged (KiCad ships them without keywords).
+- kind: footprint
+  item: ["Crystal_SMD_3215-2Pin_3.2x1.5mm"]
+  rule: F6.3
+  reason: Stock KiCad crystal footprint copied unchanged (rectangular pads as shipped).

@@ -115,6 +115,7 @@ families:
   - {name: Connector_PinHeader_2.54mm}
   - {name: Connector_Samtec}
   - {name: Transformer_SMD}
+  - {name: Crystal}
 
 # Known manufacturers for automatic part picks; parts must use the canonical
 # name. A distributor brand string matches a name case-insensitively when it

@@ -50,6 +50,13 @@
 		(descr "Converter DCDC")
 	)
 	(lib
+		(name "LIB_Crystal")
+		(type "KiCad")
+		(uri "${LIB_DIR}/footprints/LIB_Crystal.pretty")
+		(options "")
+		(descr "Crystal")
+	)
+	(lib
 		(name "LIB_Diode_SMD")
 		(type "KiCad")
 		(uri "${LIB_DIR}/footprints/LIB_Diode_SMD.pretty")

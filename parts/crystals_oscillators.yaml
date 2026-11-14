@@ -1,1 +1,463 @@
-parts: []
+parts:
+  - name: X32258MOB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 8MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 12pF 180Ω 8MHz Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X32258MOB4SI
+    lcsc: C2682775
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411121006_YXC-Crystal-Oscillators-X32258MOB4SI_C2682775.pdf
+    datasheet_lang: en
+    status: active
+    stock: "173918"
+    stock_checked: "2026-11-14"
+    frequency: 8MHz
+    load_capacitance: 12pF
+    stability: "±20ppm"
+  - name: XL2EL89CSI-111YLC-10M
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 10MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 10MHz 180Ω 20pF Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: XL2EL89CSI-111YLC-10M
+    lcsc: C49304724
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C49304724.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "10764"
+    stock_checked: "2026-11-14"
+    frequency: 10MHz
+    load_capacitance: 20pF
+    stability: "±20ppm"
+  - name: X322512MSB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 12MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 12MHz 20pF 80Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322512MSB4SI
+    lcsc: C9002
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322512MSB4SI_C9002.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "482151"
+    stock_checked: "2026-11-14"
+    frequency: 12MHz
+    load_capacitance: 20pF
+    stability: "±20ppm"
+  - name: X322512288MPB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 12.288MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 12.288MHz 15pF 80Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322512288MPB4SI
+    lcsc: C3034269
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403291506_YXC-Crystal-Oscillators-X322512288MPB4SI_C3034269.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "8353"
+    stock_checked: "2026-11-14"
+    frequency: 12.288MHz
+    load_capacitance: 15pF
+    stability: "±20ppm"
+  - name: X322516MLB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 16MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 16MHz 50Ω 9pF Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322516MLB4SI
+    lcsc: C13738
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322516MLB4SI_C13738.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "253836"
+    stock_checked: "2026-11-14"
+    frequency: 16MHz
+    load_capacitance: 9pF
+    stability: "±20ppm"
+  - name: X322520MSB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 20MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 20MHz 20pF 50Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322520MSB4SI
+    lcsc: C9004
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322520MSB4SI_C9004.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "25063"
+    stock_checked: "2026-11-14"
+    frequency: 20MHz
+    load_capacitance: 20pF
+    stability: "±20ppm"
+  - name: X1E0003410028
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 22.5792MHz
+    package: SMD3225-4P
+    description: -40°C~+125°C 12pF 22.5792MHz 60Ω Crystal Oscillator ±15ppm SMD3225-4P Crystals
+    manufacturer: Seiko Epson
+    mpn: X1E0003410028
+    lcsc: C725713
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2008192035_Seiko-Epson-X1E0003410028_C725713.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "3109"
+    stock_checked: "2026-11-14"
+    frequency: 22.5792MHz
+    load_capacitance: 12pF
+  - name: X322524MOB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 24MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 12pF 24MHz 50Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322524MOB4SI
+    lcsc: C70590
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322524MOB4SI_C70590.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "320104"
+    stock_checked: "2026-11-14"
+    frequency: 24MHz
+    load_capacitance: 12pF
+    stability: "±20ppm"
+  - name: X322524576MOB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 24.576MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 12pF 24.576MHz 50Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322524576MOB4SI
+    lcsc: C70568
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322524576MOB4SI_C70568.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "5700"
+    stock_checked: "2026-11-14"
+    frequency: 24.576MHz
+    load_capacitance: 12pF
+    stability: "±20ppm"
+  - name: X322525MOB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 25MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 12pF 25MHz 50Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322525MOB4SI
+    lcsc: C9006
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322525MOB4SI_C9006.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "340218"
+    stock_checked: "2026-11-14"
+    frequency: 25MHz
+    load_capacitance: 12pF
+    stability: "±20ppm"
+  - name: X322526MOB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 26MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 12pF 26MHz 50Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322526MOB4SI
+    lcsc: C70586
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322526MOB4SI_C70586.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "12060"
+    stock_checked: "2026-11-14"
+    frequency: 26MHz
+    load_capacitance: 12pF
+    stability: "±20ppm"
+  - name: X322527MOB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 27MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 12pF 27MHz 50Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322527MOB4SI
+    lcsc: C70595
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322527MOB4SI_C70595.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "30782"
+    stock_checked: "2026-11-14"
+    frequency: 27MHz
+    load_capacitance: 12pF
+    stability: "±20ppm"
+  - name: X322530MOB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 30MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 12pF 30MHz 50Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322530MOB4SI
+    lcsc: C70592
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322530MOB4SI_C70592.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "26921"
+    stock_checked: "2026-11-14"
+    frequency: 30MHz
+    load_capacitance: 12pF
+    stability: "±20ppm"
+  - name: X322532MOB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 32MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 12pF 32MHz 40Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322532MOB4SI
+    lcsc: C9009
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322532MOB4SI_C9009.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "271687"
+    stock_checked: "2026-11-14"
+    frequency: 32MHz
+    load_capacitance: 12pF
+    stability: "±20ppm"
+  - name: X322540MPB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 40MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 15pF 40MHz 40Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322540MPB4SI
+    lcsc: C9010
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322540MPB4SI_C9010.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "50653"
+    stock_checked: "2026-11-14"
+    frequency: 40MHz
+    load_capacitance: 15pF
+    stability: "±20ppm"
+  - name: X322548MSB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+    value: 48MHz
+    package: SMD3225-4P
+    description: -40°C~+85°C 20pF 40Ω 48MHz Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals
+    manufacturer: YXC
+    mpn: X322548MSB4SI
+    lcsc: C70579
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322548MSB4SI_C70579.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "4661"
+    stock_checked: "2026-11-14"
+    frequency: 48MHz
+    load_capacitance: 20pF
+    stability: "±20ppm"
+  - name: X201616MOB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm
+    value: 16MHz
+    package: SMD2016-4P
+    description: -40°C~+85°C 100Ω 12pF 16MHz Crystal Oscillator ±10ppm ±20ppm SMD2016-4P Crystals
+    manufacturer: YXC
+    mpn: X201616MOB4SI
+    lcsc: C2682778
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403291505_YXC-Crystal-Oscillators-X201616MOB4SI_C2682778.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "13077"
+    stock_checked: "2026-11-14"
+    frequency: 16MHz
+    load_capacitance: 12pF
+    stability: "±20ppm"
+  - name: X201624MKB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm
+    value: 24MHz
+    package: SMD2016-4P
+    description: -40°C~+85°C 100Ω 24MHz 8pF Crystal Oscillator ±10ppm ±20ppm SMD2016-4P Crystals
+    manufacturer: YXC
+    mpn: X201624MKB4SI
+    lcsc: C2682776
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403291505_YXC-Crystal-Oscillators-X201624MKB4SI_C2682776.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "4777"
+    stock_checked: "2026-11-14"
+    frequency: 24MHz
+    load_capacitance: 8pF
+    stability: "±20ppm"
+  - name: X201626MLB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm
+    value: 26MHz
+    package: SMD2016-4P
+    description: -40°C~+85°C 100Ω 26MHz 9pF Crystal Oscillator ±10ppm ±20ppm SMD2016-4P Crystals
+    manufacturer: YXC
+    mpn: X201626MLB4SI
+    lcsc: C5210657
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308230917_YXC-Crystal-Oscillators-X201626MLB4SI_C5210657.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "6216"
+    stock_checked: "2026-11-14"
+    frequency: 26MHz
+    load_capacitance: 9pF
+    stability: "±20ppm"
+  - name: X201632MOB4SI
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm
+    value: 32MHz
+    package: SMD2016-4P
+    description: -40°C~+85°C 12pF 32MHz 80Ω Crystal Oscillator ±10ppm ±20ppm SMD2016-4P Crystals
+    manufacturer: YXC
+    mpn: X201632MOB4SI
+    lcsc: C2682773
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403291505_YXC-Crystal-Oscillators-X201632MOB4SI_C2682773.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "115605"
+    stock_checked: "2026-11-14"
+    frequency: 32MHz
+    load_capacitance: 12pF
+    stability: "±20ppm"
+  - name: NX2016SA-48MHZ-EXS00A-CS05517
+    symbol: Crystal_GND24
+    footprint: LIB_Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm
+    value: 48MHz
+    package: SMD2016-4P
+    description: -40°C~+105°C 40Ω 48MHz 7pF SMD crystal oscillator ±10ppm ±40ppm SMD2016-4P Crystals
+    manufacturer: NDK
+    mpn: NX2016SA-48MHZ-EXS00A-CS05517
+    lcsc: C5186571
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C5186571.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3327"
+    stock_checked: "2026-11-14"
+    frequency: 48MHz
+    load_capacitance: 7pF
+    stability: "±40ppm"
+  - name: Q13FC13500004
+    symbol: Crystal
+    footprint: LIB_Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm
+    value: 32.768kHz
+    package: SMD3215-2P
+    description: -40°C~+85°C 12.5pF 32.768kHz 70kΩ SMD crystal oscillator ±20ppm SMD3215-2P Crystals
+    manufacturer: Seiko Epson
+    mpn: Q13FC13500004
+    lcsc: C32346
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2404180925_Seiko-Epson-Q13FC13500004_C32346.pdf
+    datasheet_lang: en
+    status: active
+    stock: "416329"
+    stock_checked: "2026-11-14"
+    frequency: 32.768kHz
+    load_capacitance: 12.5pF
+  - name: Q13FC13500049
+    symbol: Crystal
+    footprint: LIB_Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm
+    value: 32.768kHz
+    package: SMD3215-2P
+    description: -40°C~+85°C 32.768kHz 6pF 70kΩ Crystal Oscillator ±20ppm SMD3215-2P Crystals
+    manufacturer: Seiko Epson
+    mpn: Q13FC13500049
+    lcsc: C95361
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303071500_Seiko-Epson-Q13FC13500049_C95361.pdf
+    datasheet_lang: en
+    status: active
+    stock: "142542"
+    stock_checked: "2026-11-14"
+    frequency: 32.768kHz
+    load_capacitance: 6pF
+  - name: Q13FC13500003
+    symbol: Crystal
+    footprint: LIB_Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm
+    value: 32.768kHz
+    package: SMD3215-2P
+    description: -40°C~+85°C 32.768kHz 70kΩ 9pF Crystal Oscillator ±20ppm SMD3215-2P Crystals
+    manufacturer: Seiko Epson
+    mpn: Q13FC13500003
+    lcsc: C99010
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810181110_Seiko-Epson-Q13FC13500003_C99010.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "30785"
+    stock_checked: "2026-11-14"
+    frequency: 32.768kHz
+    load_capacitance: 9pF
+  - name: CM8V-T1A-32.768KHZ-7PF-20PPM-TA-QC
+    symbol: Crystal
+    footprint: LIB_Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm
+    value: 32.768kHz
+    package: SMD2012-2P
+    description: -40°C~+85°C 32.768kHz 70kΩ 7pF ±20ppm SMD2012-2P Crystals
+    manufacturer: Micro Crystal
+    mpn: CM8V-T1A-32.768KHZ-7PF-20PPM-TA-QC
+    lcsc: C5136974
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304031800_Micro-Crystal-CM8V-T1A-32-768KHZ-7PF-20PPM-TA-QC_C5136974.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "40296"
+    stock_checked: "2026-11-14"
+    frequency: 32.768kHz
+    load_capacitance: 7pF
+  - name: CM8V-T1A-32.768KHZ-9PF-20PPM-TA-QC
+    symbol: Crystal
+    footprint: LIB_Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm
+    value: 32.768kHz
+    package: SMD2012-2P
+    description: -40°C~+85°C 32.768kHz 70kΩ 9pF Crystal Oscillator ±20ppm SMD2012-2P Crystals
+    manufacturer: Micro Crystal
+    mpn: CM8V-T1A-32.768KHZ-9PF-20PPM-TA-QC
+    lcsc: C5142652
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303311830_Micro-Crystal-CM8V-T1A-32-768KHZ-9PF-20PPM-TA-QC_C5142652.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "19845"
+    stock_checked: "2026-11-14"
+    frequency: 32.768kHz
+    load_capacitance: 9pF
