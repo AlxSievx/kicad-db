@@ -584,3 +584,93 @@ parts:
     status: active
     stock: "2130"
     stock_checked: "2026-11-14"
+  - name: AMC3301DWER
+    symbol: AMC3301DWER
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: AMC3301DWER
+    package: SOIC-16
+    description: -40°C~+125°C 135kV/us 150uV 30uA 334kHz 3V~5.5V 4250 8.2 Differential Isolated ΔΣ (Sigma-Delta) modulator, Fault detection, Full-differential topology, Single power supply isolation, Integrated isolated power supply ±250mV SOIC-16 Isolation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: AMC3301DWER
+    lcsc: C2869778
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220630_Texas-Instruments-AMC3301DWER_C2869778.pdf
+    datasheet_lang: en
+    status: active
+    stock: "222"
+    stock_checked: "2026-11-14"
+  - name: AMC3306M25DWER
+    symbol: AMC3306M25DWER
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: AMC3306M25DWER
+    package: SOIC-16-300mil
+    description: -40°C~+125°C 1 16 3V~5.5V SOIC-16-300mil Isolated ADCs with power
+    manufacturer: Texas Instruments
+    mpn: AMC3306M25DWER
+    lcsc: C2867907
+    jlc_type: Extended
+    datasheet: https://www.ti.com/cn/lit/gpn/amc3306m25
+    datasheet_lang: en
+    status: active
+    stock: "1057"
+    stock_checked: "2026-11-14"
+  - name: AMC1311DWVR
+    symbol: AMC1311DWVR
+    footprint: LIB_Package_SO:SOIC-8_7.5x5.85mm_P1.27mm
+    value: AMC1311DWVR
+    package: SOP-8-300mil
+    description: -40°C~+125°C 1 220kHz 3.5nA 30kV/us 5000 9.9mV Differential Isolated ΔΣ (Sigma-Delta) modulator, Fault detection SOP-8-300mil Isolation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: AMC1311DWVR
+    lcsc: C456277
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Texas-Instruments-AMC1311DWVR_C456277.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4172"
+    stock_checked: "2026-11-14"
+  - name: AMC1302DWVR
+    symbol: AMC1302DWVR
+    footprint: LIB_Package_SO:SOIC-8_7.5x5.85mm_P1.27mm
+    value: AMC1302DWVR
+    package: SOIC-8-300mil
+    description: Isolated ΔΣ (Sigma-Delta) modulator, Fault detection, Full-differential topology SOIC-8-300mil Isolation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: AMC1302DWVR
+    lcsc: C2863209
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121901_Texas-Instruments-AMC1302DWVR_C2863209.pdf
+    datasheet_lang: en
+    status: active
+    stock: "732"
+    stock_checked: "2026-11-14"
+  - name: AMC1350DWVR
+    symbol: AMC1350DWVR
+    footprint: LIB_Package_SO:SOIC-8_7.5x5.85mm_P1.27mm
+    value: AMC1350DWVR
+    package: SOIC-8
+    description: Isolated ΔΣ (Sigma-Delta) modulator, Fault detection, Full-differential topology SOIC-8 Isolation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: AMC1350DWVR
+    lcsc: C4990162
+    jlc_type: Extended
+    datasheet: https://www.ti.com/cn/lit/gpn/amc1350
+    datasheet_lang: en
+    status: active
+    stock: "2186"
+    stock_checked: "2026-11-14"
+  - name: AMC131M03DFMR
+    symbol: AMC131M03DFMR
+    footprint: LIB_Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm
+    value: AMC131M03DFMR
+    package: SOIC-20
+    description: Programmable gain, Built-in reference source, Input protection, Multi-chip synchronization, Built-in temperature sensor SOIC-20 Isolated ADCs
+    manufacturer: Texas Instruments
+    mpn: AMC131M03DFMR
+    lcsc: C31656943
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C31656943.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "825"
+    stock_checked: "2026-11-14"

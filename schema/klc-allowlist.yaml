@@ -293,3 +293,17 @@
   item: ["WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm", "VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm"]
   rule: F6.3
   reason: Stock KiCad footprints copied unchanged (exposed pad with paste windows as KiCad ships them).
+
+# Isolation group 2026-11-14 (user OK).
+- kind: symbol
+  item: ["*:AMC1311DWVR"]
+  rule: S4.4
+  reason: Pin names VIN/VOUTP/VOUTN follow the datasheet; VIN is the analog input and VOUTx analog outputs, not power pins.
+- kind: symbol
+  item: ["*:TLP291_GB-TP,SE", "*:TLP291-4_TP,E"]
+  rule: S4.1
+  reason: Stock KiCad Isolator:TLP291 / TLP291-4 copied unchanged (optocoupler pins drawn without names).
+- kind: footprint
+  item: ["SSOP-16_3.9x4.9mm_P0.635mm", "SOIC-4_4.55x2.6mm_P1.27mm", "SOIC-16_4.55x10.3mm_P1.27mm", "SOIC-20W_7.5x12.8mm_P1.27mm"]
+  rule: F6.3
+  reason: Stock KiCad footprints copied unchanged.

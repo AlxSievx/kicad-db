@@ -59,3 +59,258 @@ parts:
     status: active
     stock: "49860"
     stock_checked: "2026-11-02"
+  - name: ISO7710DR
+    symbol: ISO7710DR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO7710DR
+    package: SOIC-8
+    description: -55°C~+125°C 0 1 100Mbps 100kV/us 11ns 2.25V~5.5V 2.25V~5.5V 3000 High Level SOIC-8 Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7710DR
+    lcsc: C2869473
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010401_Texas-Instruments-ISO7710DR_C2869473.pdf
+    datasheet_lang: en
+    status: active
+    stock: "585"
+    stock_checked: "2026-11-14"
+  - name: ISO7710FDR
+    symbol: ISO7710FDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO7710FDR
+    package: SOIC-8
+    description: -55°C~+125°C 0 1 100Mbps 100kV/us 11ns 2.25V~5.5V 2.25V~5.5V 3000 High Level, Low Level SOIC-8 Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7710FDR
+    lcsc: C2865544
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220730_Texas-Instruments-ISO7710FDR_C2865544.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1321"
+    stock_checked: "2026-11-14"
+  - name: ISO7720DR
+    symbol: ISO7720DR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO7720DR
+    package: SOIC-8
+    description: -55°C~+125°C 0 100Mbps 100kV/us 11ns 2 2.25V~5.5V 2.25V~5.5V 5000 Fail-safe output High Level SOIC-8 Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7720DR
+    lcsc: C486037
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2001181535_Texas-Instruments-ISO7720DR_C486037.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9085"
+    stock_checked: "2026-11-14"
+  - name: ISO7720FDR
+    symbol: ISO7720FDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO7720FDR
+    package: SOIC-8
+    description: -55°C~+125°C 0 100Mbps 100kV/us 11ns 2 2.25V~5.5V 2.25V~5.5V 5000 SOIC-8 Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7720FDR
+    lcsc: C2878308
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302282330_Texas-Instruments-ISO7720FDR_C2878308.pdf
+    datasheet_lang: en
+    status: active
+    stock: "447"
+    stock_checked: "2026-11-14"
+  - name: ISO7720DWR
+    symbol: ISO7720DWR
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: ISO7720DWR
+    package: SOIC-16
+    description: -55°C~+125°C 0 100Mbps 100kV/us 11ns 2 2.25V~5.5V 2.25V~5.5V 5000 SOIC-16 Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7720DWR
+    lcsc: C2872352
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010200_Texas-Instruments-ISO7720DWR_C2872352.pdf
+    datasheet_lang: en
+    status: active
+    stock: "924"
+    stock_checked: "2026-11-14"
+  - name: ISO7721DR
+    symbol: ISO7721DR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO7721DR
+    package: SOIC-8
+    description: -55°C~+125°C 1 1 100Mbps 100kV/us 11ns 2.25V~5.5V 2.25V~5.5V 5000 Fail-safe output High Level SOIC-8 Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7721DR
+    lcsc: C366164
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Texas-Instruments-ISO7721DR_C366164.pdf
+    datasheet_lang: en
+    status: active
+    stock: "13984"
+    stock_checked: "2026-11-14"
+  - name: ISO7721FDR
+    symbol: ISO7721FDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO7721FDR
+    package: SOIC-8
+    description: -55°C~+125°C 1 1 100Mbps 100kV/us 11ns 2 2.25V~5.5V 2.25V~5.5V 5000 SOIC-8 Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7721FDR
+    lcsc: C2871095
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010300_Texas-Instruments-ISO7721FDR_C2871095.pdf
+    datasheet_lang: en
+    status: active
+    stock: "127"
+    stock_checked: "2026-11-14"
+  - name: ISO6721FBDR
+    symbol: ISO6721FBDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO6721FBDR
+    package: SOIC-8
+    description: -40°C~+125°C 1 1 11ns 150kV/us 2.25V~5.5V 2.25V~5.5V 3000 50Mbps Low Level SOIC-8 Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO6721FBDR
+    lcsc: C5216431
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121729_Texas-Instruments-ISO6721FBDR_C5216431.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5518"
+    stock_checked: "2026-11-14"
+  - name: ISO7741DBQR
+    symbol: ISO7741DBQR
+    footprint: LIB_Package_SO:SSOP-16_3.9x4.9mm_P0.635mm
+    value: ISO7741DBQR
+    package: SSOP-16-150mil
+    description: -55°C~+125°C 1 10.7ns 100Mbps 100kV/us 2.25V~5.5V 2.25V~5.5V 3 3000 High Level SSOP-16-150mil Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7741DBQR
+    lcsc: C913840
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303021000_Texas-Instruments-ISO7741DBQR_C913840.pdf
+    datasheet_lang: en
+    status: active
+    stock: "14404"
+    stock_checked: "2026-11-14"
+  - name: ISO7741DWR
+    symbol: ISO7741DWR
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: ISO7741DWR
+    package: SOIC-16-300mil
+    description: -55°C~+125°C 1 10.7ns 100Mbps 100kV/us 2.25V~5.5V 2.25V~5.5V 3 5000 Fail-safe output, Channel direction configurable High Level SOIC-16-300mil Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7741DWR
+    lcsc: C571196
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2006011532_Texas-Instruments-ISO7741DWR_C571196.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12223"
+    stock_checked: "2026-11-14"
+  - name: ISO6741FDWR
+    symbol: ISO6741FDWR
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: ISO6741FDWR
+    package: SOIC-16-300mil
+    description: -40°C~+125°C 1 11ns 150kV/us 3 5000 50Mbps Low Level SOIC-16-300mil Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO6741FDWR
+    lcsc: C5216433
+    jlc_type: Extended
+    datasheet: https://www.ti.com/cn/lit/gpn/iso6741
+    datasheet_lang: zh
+    status: active
+    stock: "2132"
+    stock_checked: "2026-11-14"
+  - name: ISO7731FDWR
+    symbol: ISO7731FDWR
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: ISO7731FDWR
+    package: SOIC-16-300mil
+    description: -55°C~+125°C 1 100Mbps 100kV/us 2 2.25V~5.5V 2.25V~5.5V 5000 Low Level SOIC-16-300mil Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7731FDWR
+    lcsc: C2865127
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010630_Texas-Instruments-ISO7731FDWR_C2865127.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6430"
+    stock_checked: "2026-11-14"
+  - name: ISO7731DBQR
+    symbol: ISO7731DBQR
+    footprint: LIB_Package_SO:SSOP-16_3.9x4.9mm_P0.635mm
+    value: ISO7731DBQR
+    package: SSOP-16-150mil
+    description: -55°C~+125°C 1 100Mbps 100kV/us 2 2.25V~5.5V 2.25V~5.5V 3000 Channel direction configurable SSOP-16-150mil Digital Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO7731DBQR
+    lcsc: C2863213
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010800_Texas-Instruments-ISO7731DBQR_C2863213.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1055"
+    stock_checked: "2026-11-14"
+  - name: ISO1042DWVR
+    symbol: ISO1042DWVR
+    footprint: LIB_Package_SO:SOIC-8_7.5x5.85mm_P1.27mm
+    value: ISO1042DWVR
+    package: SOIC-8-300mil
+    description: -40°C~+125°C 1.71V~1.89V, 2.25V~5.5V, 4.5V~5.5V 5Mbps 73.4mA CAN Transceiver SOIC-8-300mil Isolated CAN Transceivers
+    manufacturer: Texas Instruments
+    mpn: ISO1042DWVR
+    lcsc: C2671714
+    jlc_type: Extended
+    datasheet: https://datasheet.lcsc.com/lcsc/2302212001_Texas-Instruments-ISO1042DWVR_C2671714.pdf
+    datasheet_lang: en
+    status: active
+    stock: "108"
+    stock_checked: "2026-11-14"
+  - name: ISO1042DWR
+    symbol: ISO1042DWR
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: ISO1042DWR
+    package: SOIC-16-300mil
+    description: -40°C~+125°C 1.71V~1.89V, 2.25V~5.5V 5Mbps 73.4mA CAN Transceiver SOIC-16-300mil Isolated CAN Transceivers
+    manufacturer: Texas Instruments
+    mpn: ISO1042DWR
+    lcsc: C1848126
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302280930_Texas-Instruments-ISO1042DWR_C1848126.pdf
+    datasheet_lang: en
+    status: active
+    stock: "424"
+    stock_checked: "2026-11-14"
+  - name: ISO1044BDR
+    symbol: ISO1044BDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO1044BDR
+    package: SOIC-8
+    description: -40°C~+125°C 1.71V~1.89V, 2.25V~5.5V, 4.5V~5.5V 5Mbps 70mA CAN FD Transceiver SOIC-8 CAN Transceivers
+    manufacturer: Texas Instruments
+    mpn: ISO1044BDR
+    lcsc: C2878225
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220108_Texas-Instruments-ISO1044BDR_C2878225.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3252"
+    stock_checked: "2026-11-14"
+  - name: ISO1640BDR
+    symbol: ISO1640BDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO1640BDR
+    package: SOIC-8
+    description: Bidirectional automatic direction, Open-drain buffer output, Hotswap SOIC-8 I2C Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO1640BDR
+    lcsc: C5122339
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2401191746_Texas-Instruments-ISO1640BDR_C5122339.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8738"
+    stock_checked: "2026-11-14"

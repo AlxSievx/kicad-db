@@ -300,3 +300,33 @@ parts:
     status: active
     stock: "341849"
     stock_checked: "2026-11-02"
+  - name: TLP291_GB-TP,SE
+    symbol: TLP291_GB-TP,SE
+    footprint: LIB_Package_SO:SOIC-4_4.55x2.6mm_P1.27mm
+    value: TLP291(GB-TP,SE
+    package: SOP-4-1.27mm
+    description: -55°C~+110°C 1 1.25V 100% 3.75kV 300mV@2.4mA,8mA 400% 4us@2mA,100Ω 50mA 50mA 5V 7us 80V DC Phototransistor SOP-4-1.27mm Transistor, Photovoltaic Output Optoisolators
+    manufacturer: TOSHIBA
+    mpn: TLP291(GB-TP,SE
+    lcsc: C55144
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809041932_TOSHIBA-TLP291-GB-TP-SE_C55144.pdf
+    datasheet_lang: en
+    status: active
+    stock: "329029"
+    stock_checked: "2026-11-14"
+  - name: TLP291-4_TP,E
+    symbol: TLP291-4_TP,E
+    footprint: LIB_Package_SO:SOIC-16_4.55x10.3mm_P1.27mm
+    value: TLP291-4(TP,E)
+    package: SOP-16-4.6mm
+    description: -55°C~+110°C 1.2V 100% 2.5kV 2us@2mA,100Ω 3us 4 400% 400mV@2.4mA,8mA 50mA 50mA 5V 80V DC Phototransistor SOP-16-4.6mm Transistor, Photovoltaic Output Optoisolators
+    manufacturer: TOSHIBA
+    mpn: TLP291-4(TP,E)
+    lcsc: C516180
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2004302006_TOSHIBA-TLP291-4-TP-E_C516180.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3300"
+    stock_checked: "2026-11-14"

@@ -184,3 +184,4 @@ manufacturers:
   - {name: Analog Devices, aliases: [ADI, Analog Devices Inc, Linear Technology]}
   - {name: YXC, aliases: [YXC Crystal Oscillators, Yangxing]}
   - {name: Microchip, aliases: [Microchip Tech, Microchip Technology]}
+  - {name: TOSHIBA, aliases: [Toshiba]}
