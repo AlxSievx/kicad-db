@@ -494,3 +494,168 @@ parts:
     status: active
     stock: "3434"
     stock_checked: "2026-11-14"
+  - name: UCC21750DWR
+    symbol: UCC21750DWR
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: UCC21750DWR
+    package: SOIC-16-300mil
+    description: SOIC-16-300mil Isolators - Gate Drivers
+    manufacturer: Texas Instruments
+    mpn: UCC21750DWR
+    lcsc: C5216339
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2409301403_Texas-Instruments-UCC21750DWR_C5216339.pdf
+    datasheet_lang: en
+    status: active
+    stock: "181"
+    stock_checked: "2026-11-14"
+  - name: 1ED3123MC12HXUMA1
+    symbol: 1ED3123MC12HXUMA1
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: 1ED3123MC12HXUMA1
+    package: DSO-8
+    description: -40°C~+125°C 1 1.1mA 14A 14A 15ns 30ns 8V~35V 90ns 90ns IGBT, MOSFET Under Voltage Protection, Short Circuit Protection DSO-8 Gate Drivers
+    manufacturer: Infineon
+    mpn: 1ED3123MC12HXUMA1
+    lcsc: C5311592
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2212091108_Infineon-Technologies-1ED3123MC12HXUMA1_C5311592.pdf
+    datasheet_lang: en
+    status: active
+    stock: "317"
+    stock_checked: "2026-11-14"
+  - name: 1ED3123MU12HXUMA1
+    symbol: 1ED3123MU12HXUMA1
+    footprint: LIB_Package_SO:SOIC-8_7.5x5.85mm_P1.27mm
+    value: 1ED3123MU12HXUMA1
+    package: SOIC-8-300mil
+    description: -40°C~+125°C 1 1.1mA 10V~35V 14A 14A 15ns 15ns 90ns 90ns IGBT, MOSFET Under Voltage Protection, Short Circuit Protection SOIC-8-300mil Gate Drivers
+    manufacturer: Infineon
+    mpn: 1ED3123MU12HXUMA1
+    lcsc: C17449724
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2311150740_Infineon-Technologies-1ED3123MU12HXUMA1_C17449724.pdf
+    datasheet_lang: en
+    status: active
+    stock: "250"
+    stock_checked: "2026-11-14"
+  - name: FAN3100TSX
+    symbol: FAN3100TSX
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: FAN3100TSX
+    package: SOT-23-5
+    description: -40°C~+125°C 1 13ns 3A 3A 4.5V~18V 500uA 9ns Low Side MOSFET Under Voltage Protection SOT-23-5 Gate Drivers
+    manufacturer: onsemi
+    mpn: FAN3100TSX
+    lcsc: C603194
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2008281634_onsemi-FAN3100TSX_C603194.pdf
+    datasheet_lang: en
+    status: active
+    stock: "558"
+    stock_checked: "2026-11-14"
+  - name: MCP1402T-E_OT
+    symbol: MCP1402T-E_OT
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: MCP1402T-E/OT
+    package: SOT-23-5
+    description: -40°C~+150°C 1 15ns 19ns 2.4V 35ns 35ns 4.5V~18V 500mA 500mA 800mV 850uA MOSFET SOT-23-5 Gate Drivers
+    manufacturer: Microchip
+    mpn: MCP1402T-E/OT
+    lcsc: C128573
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809291521_Microchip-Tech-MCP1402T-E-OT_C128573.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "6520"
+    stock_checked: "2026-11-14"
+  - name: UCC27524ADR
+    symbol: UCC27524ADR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: UCC27524ADR
+    package: SOIC-8
+    description: -40°C~+140°C 1.9V~2.3V 1V~1.4V 2 4.5V~18V 5A 5A 7ns 9ns IGBT, MOSFET Low Side Under Voltage Protection SOIC-8 Gate Drivers
+    manufacturer: Texas Instruments
+    mpn: UCC27524ADR
+    lcsc: C185857
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912261832_Texas-Instruments-UCC27524ADR_C185857.pdf
+    datasheet_lang: en
+    status: active
+    stock: "20906"
+    stock_checked: "2026-11-14"
+  - name: UCC27524DSDR
+    symbol: UCC27524DSDR
+    footprint: LIB_Package_SON:WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm
+    value: UCC27524DSDR
+    package: SON-8-EP(3x3)
+    description: -40°C~+140°C 1.9V~2.3V 13ns 13ns 1V~1.35V 2 4.5V~18V 5A 5A 6ns 7ns IGBT, MOSFET Low Side Under Voltage Protection SON-8-EP(3x3) Gate Drivers
+    manufacturer: Texas Instruments
+    mpn: UCC27524DSDR
+    lcsc: C2676911
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302281101_Texas-Instruments-UCC27524DSDR_C2676911.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7609"
+    stock_checked: "2026-11-14"
+  - name: UCC27511ADBVR
+    symbol: UCC27511ADBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: UCC27511ADBVR
+    package: SOT-23-6
+    description: -40°C~+140°C 1 1V~1.2V 2.2V~2.4V 4.5V~18V 4A 7ns 8A 8ns IGBT, MOSFET Low Side Under Voltage Protection SOT-23-6 Gate Drivers
+    manufacturer: Texas Instruments
+    mpn: UCC27511ADBVR
+    lcsc: C2676982
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303011207_Texas-Instruments-UCC27511ADBVR_C2676982.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6570"
+    stock_checked: "2026-11-14"
+  - name: UCC5350SBDR
+    symbol: UCC5350SBDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: UCC5350SBDR
+    package: SOIC-8
+    description: -40°C~+125°C@(Ta) 1 1.67mA 100kV/us 100ns 100ns 10A 22ns 26ns 3000 3V~15V 8.5A 9.5V~33V MOSFET, IGBT SOIC-8 Isolators - Gate Drivers
+    manufacturer: Texas Instruments
+    mpn: UCC5350SBDR
+    lcsc: C2878307
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302282330_Texas-Instruments-UCC5350SBDR_C2878307.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1943"
+    stock_checked: "2026-11-14"
+  - name: UCC5304DWVR
+    symbol: UCC5304DWVR
+    footprint: LIB_Package_SO:SOIC-8_7.5x5.85mm_P1.27mm
+    value: UCC5304DWVR
+    package: SOIC-8-300mil
+    description: -40°C~+125°C@(Ta) 0.8V~1.25V 1 1.6V~2V 100kV/us 12ns 16ns 2000uA 3V~5.5V 40ns 40ns 4A 5000 6A 6V~18V MOSFET SOIC-8-300mil Isolators - Gate Drivers
+    manufacturer: Texas Instruments
+    mpn: UCC5304DWVR
+    lcsc: C2878299
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302282330_Texas-Instruments-UCC5304DWVR_C2878299.pdf
+    datasheet_lang: en
+    status: active
+    stock: "226"
+    stock_checked: "2026-11-14"
+  - name: UCC21520DWR
+    symbol: UCC21520DWR
+    footprint: LIB_Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm
+    value: UCC21520DWR
+    package: SOIC-16-300mil
+    description: -40°C~+150°C@(Tj) 0.8V~1.2V 1.2V~2V 125kV/us 2 3V~18V 45ns 45ns 4A 5700 6A 9.2V~25V MOSFET, IGBT SOIC-16-300mil Isolators - Gate Drivers
+    manufacturer: Texas Instruments
+    mpn: UCC21520DWR
+    lcsc: C601651
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2006102223_Texas-Instruments-UCC21520DWR_C601651.pdf
+    datasheet_lang: en
+    status: active
+    stock: "43391"
+    stock_checked: "2026-11-14"
