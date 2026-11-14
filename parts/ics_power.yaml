@@ -359,3 +359,138 @@ parts:
     status: active
     stock: "4311"
     stock_checked: "2026-11-14"
+  - name: TLV75533PDBVR
+    symbol: TLV75533PDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TLV75533PDBVR
+    package: SOT-23-5
+    description: -40°C~+125°C@(Tj) 1 238mV@(500mA) 25uA 3.3V 46dB@(100kHz) 5.5V 500mA 71.5uVrms Fixed Over Current Protection, Thermal Shutdown, Input undervoltage protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TLV75533PDBVR
+    lcsc: C404027
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Texas-Instruments-TLV75533PDBVR_C404027.pdf
+    datasheet_lang: en
+    status: active
+    stock: "73456"
+    stock_checked: "2026-11-14"
+  - name: TLV77325PDBVR
+    symbol: TLV77325PDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TLV77325PDBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 2.5V 245mV@(300mA) 300mA 5.5V 80dB@(217Hz) 80uA Fixed Over Current Protection, Short Circuit Protection, Thermal shutdown, Enable control, Output discharge, Built-in soft-start SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TLV77325PDBVR
+    lcsc: C34443490
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C34443490.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "2120"
+    stock_checked: "2026-11-14"
+  - name: TLV75533PDRVR
+    symbol: TLV75533PDRVR
+    footprint: LIB_Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm
+    value: TLV75533PDRVR
+    package: WSON-6-EP(2x2)
+    description: -40°C~+125°C@(Tj) 1 238mV@(500mA) 25uA 3.3V 46dB@(100kHz) 5.5V 500mA 71.5uVrms Fixed Over Current Protection, Short Circuit Protection, Thermal shutdown, Enable control, Input under-voltage protection, Output discharge, Built-in soft-start Positive WSON-6-EP(2x2) Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TLV75533PDRVR
+    lcsc: C2861750
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010900_Texas-Instruments-TLV75533PDRVR_C2861750.pdf
+    datasheet_lang: en
+    status: active
+    stock: "16204"
+    stock_checked: "2026-11-14"
+  - name: TLV75733PDRVR
+    symbol: TLV75733PDRVR
+    footprint: LIB_Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm
+    value: TLV75733PDRVR
+    package: WSON-6(2x2)
+    description: -40°C~+125°C@(Tj) 1 1A 25uA 3.3V 425mV@(1A) 45dB@(100kHz) 5.5V 71.5uVrms Fixed Over Current Protection, Short Circuit Protection, Thermal shutdown, Enable control, Input under-voltage protection, Output discharge, Built-in soft-start Positive WSON-6(2x2) Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TLV75733PDRVR
+    lcsc: C2868428
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010500_Texas-Instruments-TLV75733PDRVR_C2868428.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1629"
+    stock_checked: "2026-11-14"
+  - name: AP7375-33W5-7
+    symbol: AP7375-33W5-7
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: AP7375-33W5-7
+    package: SOT-25
+    description: -40°C~+125°C@(Tj) 1 2.1uA 3.3V 300mA 350mV@(100mA) 45V 85dB@(1kHz) Fixed Positive Short Circuit Protection, Thermal shutdown, Enable control SOT-25 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Diodes Incorporated
+    mpn: AP7375-33W5-7
+    lcsc: C5588118
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308101610_Diodes-Incorporated-AP7375-33W5-7_C5588118.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6009"
+    stock_checked: "2026-11-14"
+  - name: TPS259521DSGR
+    symbol: TPS259521DSGR
+    footprint: LIB_Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm
+    value: TPS259521DSGR
+    package: WSON-8-EP(2x2)
+    description: -40°C~+125°C 2.7V~18V 4A Overcurrent Protection, Operating status indication, Adjustable current limiting, Protection latch, Adjustable soft-start WSON-8-EP(2x2) Surge Protection Devices (SPDs)
+    manufacturer: Texas Instruments
+    mpn: TPS259521DSGR
+    lcsc: C882749
+    jlc_type: Extended
+    datasheet: https://datasheet.lcsc.com/lcsc/2303021000_Texas-Instruments-TPS259521DSGR_C882749.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5719"
+    stock_checked: "2026-11-14"
+  - name: TPS7A2018PDBVR
+    symbol: TPS7A2018PDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TPS7A2018PDBVR
+    package: SOT-23-5L
+    description: -40°C~+125°C@(Tj) 1 1.8V 10uVrms 200mV@(300mA) 300mA 6.5uA 6V 92dB@(1kHz) Fixed Over Current Protection, Short Circuit Protection, Thermal shutdown, Enable control, Input under-voltage protection, Output discharge, Built-in soft-start Positive SOT-23-5L Voltage Regulators - Linear, Low Drop Out (LDO) Regulators
+    manufacturer: Texas Instruments
+    mpn: TPS7A2018PDBVR
+    lcsc: C963430
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2302221730_Texas-Instruments-TPS7A2018PDBVR_C963430.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7217"
+    stock_checked: "2026-11-14"
+  - name: TPS62A02DRLR
+    symbol: TPS62A02DRLR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-563
+    value: TPS62A02DRLR
+    package: SOT-563
+    description: -40°C~+125°C@(TJ) 1 2.4MHz 2.5V~5.5V 23uA 2A 600mV~5.5V Adjustable Buck Buck Built-in Yes SOT-563 DC-DC Converters
+    manufacturer: Texas Instruments
+    mpn: TPS62A02DRLR
+    lcsc: C5350187
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2402290710_Texas-Instruments-TPS62A02DRLR_C5350187.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1961"
+    stock_checked: "2026-11-14"
+  - name: TPS62A02PDDCR
+    symbol: TPS62A02PDDCR
+    footprint: LIB_Package_TO_SOT_SMD:TSOT-23-6
+    value: TPS62A02PDDCR
+    package: SOT-23-THIN-6
+    description: -40°C~+125°C 1 2.4MHz 2.5V~5.5V Buck Buck SOT-23-THIN-6 DC-DC Converters
+    manufacturer: Texas Instruments
+    mpn: TPS62A02PDDCR
+    lcsc: C22445521
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410122039_Texas-Instruments-TPS62A02PDDCR_C22445521.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "3434"
+    stock_checked: "2026-11-14"

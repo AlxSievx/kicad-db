@@ -314,3 +314,18 @@ parts:
     status: active
     stock: "8738"
     stock_checked: "2026-11-14"
+  - name: ISO1641BDR
+    symbol: ISO1641BDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ISO1641BDR
+    package: SOIC-8
+    description: -40°C~+125°C 100kV/us 3000 Bidirectional automatic direction, Open-drain buffer output, Hotswap SOIC-8 I2C Isolators
+    manufacturer: Texas Instruments
+    mpn: ISO1641BDR
+    lcsc: C5216235
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220330_Texas-Instruments-ISO1641BDR_C5216235.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2"
+    stock_checked: "2026-11-14"

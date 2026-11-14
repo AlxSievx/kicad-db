@@ -307,3 +307,13 @@
   item: ["SSOP-16_3.9x4.9mm_P0.635mm", "SOIC-4_4.55x2.6mm_P1.27mm", "SOIC-16_4.55x10.3mm_P1.27mm", "SOIC-20W_7.5x12.8mm_P1.27mm"]
   rule: F6.3
   reason: Stock KiCad footprints copied unchanged.
+
+# Package-variant backfill 2026-11-14 (user OK).
+- kind: footprint
+  item: ["WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"]
+  rule: F6.3
+  reason: Stock KiCad footprint copied unchanged (exposed pad with paste windows as KiCad ships it).
+- kind: footprint
+  item: ["SOT-563"]
+  rule: F5.2
+  reason: Stock KiCad footprint copied unchanged (fab-layer RefDes scaled to fit the 1.6 mm body).
