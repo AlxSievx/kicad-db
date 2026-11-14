@@ -779,3 +779,33 @@ parts:
     status: active
     stock: "165"
     stock_checked: "2026-11-14"
+  - name: 74HC4067PW,118
+    symbol: 74HC4067PW,118
+    footprint: LIB_Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm
+    value: 74HC4067PW,118
+    package: TSSOP-24
+    description: -40°C~+125°C 1 16:1 27ns 29ns 2V~10V 80Ω 9ns Bidirectional analog channel TSSOP-24 Analog Switches, Multiplexers
+    manufacturer: Nexperia
+    mpn: 74HC4067PW,118
+    lcsc: C179326
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2407241027_Nexperia-74HC4067PW-118_C179326.pdf
+    datasheet_lang: en
+    status: active
+    stock: "23200"
+    stock_checked: "2026-11-14"
+  - name: CD74HC4067M96
+    symbol: CD74HC4067M96
+    footprint: LIB_Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm
+    value: CD74HC4067M96
+    package: SOIC-24-300mil
+    description: -55°C~+125°C 15ns 2V~6V 70Ω 83ns 83ns 89MHz SOIC-24-300mil Analog Switches, Multiplexers
+    manufacturer: Texas Instruments
+    mpn: CD74HC4067M96
+    lcsc: C496123
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2003172104_Texas-Instruments-CD74HC4067M96_C496123.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5711"
+    stock_checked: "2026-11-14"

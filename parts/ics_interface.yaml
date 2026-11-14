@@ -599,3 +599,48 @@ parts:
     status: active
     stock: "8543"
     stock_checked: "2026-11-14"
+  - name: THVD1424RGTR
+    symbol: THVD1424RGTR
+    footprint: LIB_Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm
+    value: THVD1424RGTR
+    package: VQFN-16(3x3)
+    description: -40°C~+125°C 1 1 20Mbps 3V~5.5V 3mA Full-Duplex, Half-Duplex Transceiver ±16kV VQFN-16(3x3) RS-485 / RS-422 ICs
+    manufacturer: Texas Instruments
+    mpn: THVD1424RGTR
+    lcsc: C5359161
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2306061201_Texas-Instruments-THVD1424RGTR_C5359161.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8062"
+    stock_checked: "2026-11-14"
+  - name: SN65C1168ERGYR
+    symbol: SN65C1168ERGYR
+    footprint: LIB_Package_DFN_QFN:VQFN-16-1EP_3.5x4mm_P0.5mm
+    value: SN65C1168ERGYR
+    package: VQFN-16(3.5x4)
+    description: -40°C~+85°C 2 2 4.5V~5.5V 9mA Transceiver ±15kV VQFN-16(3.5x4) RS-485 / RS-422 ICs
+    manufacturer: Texas Instruments
+    mpn: SN65C1168ERGYR
+    lcsc: C201679
+    jlc_type: Extended
+    datasheet: https://datasheet.lcsc.com/lcsc/1806030620_Texas-Instruments-SN65C1168ERGYR_C201679.pdf
+    datasheet_lang: en
+    status: active
+    stock: "196"
+    stock_checked: "2026-11-14"
+  - name: TXS02612RTWR
+    symbol: TXS02612RTWR
+    footprint: LIB_Package_DFN_QFN:WQFN-24-1EP_4x4mm_P0.5mm
+    value: TXS02612RTWR
+    package: WQFN-24-EP(4x4)
+    description: -40°C~+85°C 1.1V~3.6V 120Mbps 12uA, 24uA WQFN-24-EP(4x4) Interface - Specialized
+    manufacturer: Texas Instruments
+    mpn: TXS02612RTWR
+    lcsc: C140276
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810081421_Texas-Instruments-TXS02612RTWR_C140276.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8479"
+    stock_checked: "2026-11-14"
