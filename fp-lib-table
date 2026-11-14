@@ -141,6 +141,13 @@
 		(descr "Passives SMD")
 	)
 	(lib
+		(name "LIB_RF_Module")
+		(type "KiCad")
+		(uri "${LIB_DIR}/footprints/LIB_RF_Module.pretty")
+		(options "")
+		(descr "RF Module")
+	)
+	(lib
 		(name "LIB_Sensor_Current")
 		(type "KiCad")
 		(uri "${LIB_DIR}/footprints/LIB_Sensor_Current.pretty")

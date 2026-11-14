@@ -120,6 +120,7 @@ families:
   - {name: Sensor_Humidity}
   - {name: Sensor_Current}
   - {name: Package_QFP}
+  - {name: RF_Module}
 
 # Known manufacturers for automatic part picks; parts must use the canonical
 # name. A distributor brand string matches a name case-insensitively when it
@@ -197,3 +198,9 @@ manufacturers:
   - {name: LEM}
   - {name: Renesas, aliases: [RENESAS, Renesas Electronics]}
   - {name: Allegro MicroSystems, aliases: ["Allegro MicroSystems, LLC", Allegro]}
+  - {name: Raspberry Pi}
+  - {name: Espressif, aliases: [Espressif Systems]}
+  - {name: Nordic Semiconductor, aliases: [Nordic Semicon]}
+  - {name: WCH, aliases: [WCH(Jiangsu Qin Heng), Jiangsu Qin Heng]}
+  - {name: Silicon Labs, aliases: [SKYWORKS/SILICON LABS, Silicon Laboratories]}
+  - {name: FTDI}

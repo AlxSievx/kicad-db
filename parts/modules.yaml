@@ -14,3 +14,108 @@ parts:
     status: active
     stock: "6843"
     stock_checked: "2026-11-02"
+  - name: ESP32-S3-WROOM-1-N16R8
+    symbol: ESP32-S3-WROOM-1-N16R8
+    footprint: LIB_RF_Module:ESP32-S3-WROOM-1
+    value: ESP32-S3-WROOM-1-N16R8
+    package: SMD,25.5x18mm
+    description: -103.5dBm -40°C~+65°C 2.4GHz 20.5dBm 355mA 3V~3.6V 95mA ESP32-S3R8 On-board PCB Antenna UART, SPI, I2C, GPIO, I2S, USB SMD,25.5x18mm WiFi Modules
+    manufacturer: Espressif
+    mpn: ESP32-S3-WROOM-1-N16R8
+    lcsc: C2913202
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411121101_Espressif-Systems-ESP32-S3-WROOM-1-N16R8_C2913202.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "21693"
+    stock_checked: "2026-11-14"
+  - name: ESP32-S3-WROOM-1-N8R8
+    symbol: ESP32-S3-WROOM-1-N8R8
+    footprint: LIB_RF_Module:ESP32-S3-WROOM-1
+    value: ESP32-S3-WROOM-1-N8R8
+    package: SMD,25.5x18mm
+    description: -104.5dBm -40°C~+65°C 2.4GHz 20.5dBm 330mA 3V~3.6V 97mA Bluetooth5.0 ESP32-S3R8 On-board PCB Antenna UART, SPI, I2C, GPIO, I2S, USB SMD,25.5x18mm WiFi Modules
+    manufacturer: Espressif
+    mpn: ESP32-S3-WROOM-1-N8R8
+    lcsc: C2913201
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401301308_Espressif-Systems-ESP32-S3-WROOM-1-N8R8_C2913201.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "10833"
+    stock_checked: "2026-11-14"
+  - name: ESP32-S3-WROOM-1-N8
+    symbol: ESP32-S3-WROOM-1-N8
+    footprint: LIB_RF_Module:ESP32-S3-WROOM-1
+    value: ESP32-S3-WROOM-1-N8
+    package: SMD,25.5x18mm
+    description: -40°C~+85°C -98.2dBm 2.4GHz 20.5dBm 355mA 3V~3.6V 95mA Bluetooth5.0 ESP32-S3 Chip On-board PCB Antenna UART, SPI, I2C, I2S, USB SMD,25.5x18mm WiFi Modules
+    manufacturer: Espressif
+    mpn: ESP32-S3-WROOM-1-N8
+    lcsc: C2913198
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410301608_Espressif-Systems-ESP32-S3-WROOM-1-N8_C2913198.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "6949"
+    stock_checked: "2026-11-14"
+  - name: ESP32-S3-MINI-1-N8
+    symbol: ESP32-S3-MINI-1-N8
+    footprint: LIB_RF_Module:ESP32-S2-MINI-1
+    value: ESP32-S3-MINI-1-N8
+    package: SMD
+    description: -104.5dBm -40°C~+85°C 2.4GHz 20.5dBm 330mA 3V~3.6V 97mA Bluetooth5.0 ESP32-S3FN8 Chip On-board PCB Antenna UART, SPI, I2C, I2S, USB SMD WiFi Modules
+    manufacturer: Espressif
+    mpn: ESP32-S3-MINI-1-N8
+    lcsc: C2913206
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2411121055_Espressif-Systems-ESP32-S3-MINI-1-N8_C2913206.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "20443"
+    stock_checked: "2026-11-14"
+  - name: ESP32-C3-WROOM-02-N4
+    symbol: ESP32-C3-WROOM-02-N4
+    footprint: LIB_RF_Module:ESP32-C3-WROOM-02
+    value: ESP32-C3-WROOM-02-N4
+    package: SMD,20x18mm
+    description: -105dBm -40°C~+85°C 2.4GHz 20.5dBm 345mA 3V~3.6V 82mA Bluetooth5.0 ESP32-C3 Chip Integrated Bluetooth function, Support USB interface On-board PCB Antenna UART, SPI, I2C, I2S, JTAG, USB SMD,20x18mm WiFi Modules
+    manufacturer: Espressif
+    mpn: ESP32-C3-WROOM-02-N4
+    lcsc: C2934560
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2306201508_Espressif-Systems-ESP32-C3-WROOM-02-N4_C2934560.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "12711"
+    stock_checked: "2026-11-14"
+  - name: ESP32-C6-MINI-1-N4
+    symbol: ESP32-C6-MINI-1-N4
+    footprint: LIB_RF_Module:ESP32-C6-MINI-1
+    value: ESP32-C6-MINI-1-N4
+    package: SMD-53P
+    description: -106dBm -40°C~+85°C 2.4GHz 21dBm 354mA 3V~3.6V 71mA ESP32-C6FH4 Integrated Bluetooth function, Integrated Zigbee function On-board PCB Antenna UART, SPI, I2C, GPIO, I2S SMD-53P WiFi Modules
+    manufacturer: Espressif
+    mpn: ESP32-C6-MINI-1-N4
+    lcsc: C5736265
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410301608_Espressif-Systems-ESP32-C6-MINI-1-N4_C5736265.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "5180"
+    stock_checked: "2026-11-14"
+  - name: ESP32-WROOM-32E-N8
+    symbol: ESP32-WROOM-32E-N8
+    footprint: LIB_RF_Module:ESP32-WROOM-32D
+    value: ESP32-WROOM-32E-N8
+    package: SMD,25.5x18mm
+    description: -40°C~+85°C -98dBm 112mA 2.4GHz 20dBm 239mA 3V~3.6V Bluetooth4.2 ESP32-DOWD-V3 On-board PCB Antenna UART, SDIO, SPI, I2C, GPIO, PWM, I2S SMD,25.5x18mm WiFi Modules
+    manufacturer: Espressif
+    mpn: ESP32-WROOM-32E-N8
+    lcsc: C701342
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410301607_Espressif-Systems-ESP32-WROOM-32E-N8_C701342.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "28937"
+    stock_checked: "2026-11-14"

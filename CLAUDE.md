@@ -212,7 +212,7 @@ Most Altium ICs (188/307) and connectors have no LCSC number (Plan 9: orderable 
   footprint), MIE1W0505 (EasyEDA LGA-12 footprint misses pads 4,5,10,11).
   Also deferred: STM32H745XIH6 (stock symbol has 240 pins, TFBGA-265 footprint 25 more balls: check ST ball map),
   AD2S1210 (no datasheet at LCSC), IXDN609SIA and UCC27614DR (pinout unverified), SN74AHC1G09 (open-drain AND,
-  no stock symbol). CKSR_50-NP: pads 1 and 10 have no symbol pin (stock KiCad symbol; confirm with LEM drawing).
+  no stock symbol), nRF52840-QIAA (aQFN-73: inner pad rows need via-in-pad; modules preferred). CKSR_50-NP: pads 1 and 10 have no symbol pin (stock KiCad symbol; confirm with LEM drawing).
 - Symbol generator for box/op-amp symbols is kept locally in `.libkit/gen/` (not committed): move it into `tools/libkit/` (plan).
 
 ## Part naming

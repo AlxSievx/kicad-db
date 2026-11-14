@@ -644,3 +644,108 @@ parts:
     status: active
     stock: "8479"
     stock_checked: "2026-11-14"
+  - name: CH340C
+    symbol: CH340C
+    footprint: LIB_Package_SO:SOIC-16_3.9x9.9mm_P1.27mm
+    value: CH340C
+    package: SOP-16
+    description: -20°C~+70°C 2Mbps 3.3V, 5V 50uA 7mA Transceiver USB 2.0 SOP-16 USB Converters
+    manufacturer: WCH
+    mpn: CH340C
+    lcsc: C84681
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2406191656_WCH-Jiangsu-Qin-Heng-CH340C_C84681.pdf
+    datasheet_lang: en
+    status: active
+    stock: "90591"
+    stock_checked: "2026-11-14"
+  - name: CH343P
+    symbol: CH343P
+    footprint: LIB_Package_DFN_QFN:WCH_QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm
+    value: CH343P
+    package: TQFN-16-EP(3x3)
+    description: -40°C~+85°C 3.3V, 5V 3mA 6Mbps 90uA USB 2.0 USB to UART TQFN-16-EP(3x3) USB Converters
+    manufacturer: WCH
+    mpn: CH343P
+    lcsc: C2846043
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403131129_WCH-Jiangsu-Qin-Heng-CH343P_C2846043.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "17756"
+    stock_checked: "2026-11-14"
+  - name: CH9102F
+    symbol: CH9102F
+    footprint: LIB_Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm
+    value: CH9102F
+    package: QFN-24-EP(4x4)
+    description: -40°C~+85°C 1.8V, 2.5V, 3.3V, 5V 3mA 4Mbps 90uA USB 2.0 USB to UART QFN-24-EP(4x4) USB Converters
+    manufacturer: WCH
+    mpn: CH9102F
+    lcsc: C2858418
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2403131113_WCH-Jiangsu-Qin-Heng-CH9102F_C2858418.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "14788"
+    stock_checked: "2026-11-14"
+  - name: CP2102N-A02-GQFN28R
+    symbol: CP2102N-A02-GQFN28R
+    footprint: LIB_Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm
+    value: CP2102N-A02-GQFN28R
+    package: QFN-28-EP(5x5)
+    description: -40°C~+85°C@(Ta) 1.3uA 3V~3.6V 9.5mA USB 2.0 USB to UART QFN-28-EP(5x5) USB Converters
+    manufacturer: Silicon Labs
+    mpn: CP2102N-A02-GQFN28R
+    lcsc: C964632
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_SKYWORKS-SILICON-LABS-CP2102N-A02-GQFN28R_C964632.pdf
+    datasheet_lang: en
+    status: active
+    stock: "29778"
+    stock_checked: "2026-11-14"
+  - name: CP2102N-A02-GQFN24R
+    symbol: CP2102N-A02-GQFN24R
+    footprint: LIB_Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm
+    value: CP2102N-A02-GQFN24R
+    package: QFN-24-EP(4x4)
+    description: -40°C~+85°C@(Ta) 1.3uA 3V~3.6V 9.5mA USB 2.0 USB to UART QFN-24-EP(4x4) USB Converters
+    manufacturer: Silicon Labs
+    mpn: CP2102N-A02-GQFN24R
+    lcsc: C969151
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_SKYWORKS-SILICON-LABS-CP2102N-A02-GQFN24R_C969151.pdf
+    datasheet_lang: en
+    status: active
+    stock: "27264"
+    stock_checked: "2026-11-14"
+  - name: FT232RL-REEL
+    symbol: FT232RL-REEL
+    footprint: LIB_Package_SO:SSOP-28_5.3x10.2mm_P0.65mm
+    value: FT232RL-REEL
+    package: SSOP-28-208mil
+    description: -40°C~+85°C 15mA 3.3V~5.25V 3Mbps 70uA USB 2.0 USB to UART SSOP-28-208mil USB Converters
+    manufacturer: FTDI
+    mpn: FT232RL-REEL
+    lcsc: C8690
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810311811_FTDI-FT232RL-REEL_C8690.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7893"
+    stock_checked: "2026-11-14"
+  - name: FT231XS-R
+    symbol: FT231XS-R
+    footprint: LIB_Package_SO:SSOP-20_3.9x8.7mm_P0.635mm
+    value: FT231XS-R
+    package: SSOP-20-150mil
+    description: -40°C~+85°C 125uA 5V 8.4mA USB 2.0 USB to UART SSOP-20-150mil USB Converters
+    manufacturer: FTDI
+    mpn: FT231XS-R
+    lcsc: C132160
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FTDI-FT231XS-R_C132160.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6359"
+    stock_checked: "2026-11-14"

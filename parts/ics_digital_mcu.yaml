@@ -914,3 +914,873 @@ parts:
     status: active
     stock: "1596"
     stock_checked: "2026-11-14"
+  - name: STM32C011F6P6
+    symbol: STM32C011F6P6
+    footprint: LIB_Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm
+    value: STM32C011F6P6
+    package: TSSOP-20
+    description: -40°C~+85°C 18 2V~3.6V 32 Bit 32KB 48MHz 6KB ARM Cortex-M0+ Built-in+External FLASH TSSOP-20 Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32C011F6P6
+    lcsc: C5456198
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304251410_STMicroelectronics-STM32C011F6P6_C5456198.pdf
+    datasheet_lang: en
+    status: active
+    stock: "930"
+    stock_checked: "2026-11-14"
+  - name: STM32C011J6M6
+    symbol: STM32C011J6M6
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: STM32C011J6M6
+    package: SO-8N
+    description: -40°C~+85°C 2V~3.6V 32 Bit 32KB 48MHz 6 6KB ARM Cortex-M0+ Built-in+External FLASH SO-8N Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32C011J6M6
+    lcsc: C5456114
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304251424_STMicroelectronics-STM32C011J6M6_C5456114.pdf
+    datasheet_lang: en
+    status: active
+    stock: "664"
+    stock_checked: "2026-11-14"
+  - name: STM32C031C6T6
+    symbol: STM32C031C6T6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32C031C6T6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 12KB 12bit 2V~3.6V 32 Bit 32KB 45 48MHz ARM Cortex-M0+ Built-in+External FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32C031C6T6
+    lcsc: C5456218
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304251418_STMicroelectronics-STM32C031C6T6_C5456218.pdf
+    datasheet_lang: en
+    status: active
+    stock: "991"
+    stock_checked: "2026-11-14"
+  - name: STM32C031K6T6
+    symbol: STM32C031K6T6
+    footprint: LIB_Package_QFP:LQFP-32_7x7mm_P0.8mm
+    value: STM32C031K6T6
+    package: LQFP-32(7x7)
+    description: -40°C~+85°C 12KB 12bit 2V~3.6V 30 32 Bit 32KB 48MHz ARM Cortex-M0+ Built-in+External FLASH LQFP-32(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32C031K6T6
+    lcsc: C5456169
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304251418_STMicroelectronics-STM32C031K6T6_C5456169.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1150"
+    stock_checked: "2026-11-14"
+  - name: STM32C071KBT6
+    symbol: STM32C071KBT6
+    footprint: LIB_Package_QFP:LQFP-32_7x7mm_P0.8mm
+    value: STM32C071KBT6
+    package: LQFP-32(7x7)
+    description: LQFP-32(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32C071KBT6
+    lcsc: C42116633
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2412161841_STMicroelectronics-STM32C071KBT6_C42116633.pdf
+    datasheet_lang: en
+    status: active
+    stock: "110"
+    stock_checked: "2026-11-14"
+  - name: STM32C071RBT6
+    symbol: STM32C071RBT6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32C071RBT6
+    package: LQFP-64(10x10)
+    description: -40°C~+105°C, -40°C~+125°C, -40°C~+85°C 128KB 12bit 24KB 2V~3.6V 32 Bit 48MHz 61 ARM Cortex-M0+ Built-in+External FLASH Power-on reset (POR), Power-down reset (PDR), Undervoltage detection (BOR/LVD/LVR/LVI), Watchdog reset, Software reset, External pin reset (NRST), Integrated LDO, Independent watchdog (IWDG), Window watchdog (WWDG) LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32C071RBT6
+    lcsc: C42240019
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C42240019.pdf
+    datasheet_lang: en
+    status: active
+    stock: "37"
+    stock_checked: "2026-11-14"
+  - name: STM32G030F6P6
+    symbol: STM32G030F6P6
+    footprint: LIB_Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm
+    value: STM32G030F6P6
+    package: TSSOP-20
+    description: -40°C~+85°C 12bit 17 2V~3.6V 32 Bit 32KB 64MHz 8KB ARM Cortex-M0+ Built-in+External FLASH TSSOP-20 Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G030F6P6
+    lcsc: C724040
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G030F6P6_C724040.pdf
+    datasheet_lang: en
+    status: active
+    stock: "254"
+    stock_checked: "2026-11-14"
+  - name: STM32G030C8T6
+    symbol: STM32G030C8T6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32G030C8T6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 12bit 2V~3.6V 32 Bit 44 64KB 64MHz 8KB ARM Cortex-M0+ Built-in+External FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G030C8T6
+    lcsc: C529329
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G030C8T6_C529329.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2403"
+    stock_checked: "2026-11-14"
+  - name: STM32G031K8T6
+    symbol: STM32G031K8T6
+    footprint: LIB_Package_QFP:LQFP-32_7x7mm_P0.8mm
+    value: STM32G031K8T6
+    package: LQFP-32(7x7)
+    description: -40°C~+85°C 1.7V~3.6V 12bit 30 32 Bit 64KB 64MHz 8KB ARM Cortex-M0+ Built-in+External FLASH LQFP-32(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G031K8T6
+    lcsc: C432203
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G031K8T6_C432203.pdf
+    datasheet_lang: en
+    status: active
+    stock: "979"
+    stock_checked: "2026-11-14"
+  - name: STM32G031K8U6
+    symbol: STM32G031K8U6
+    footprint: LIB_Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm
+    value: STM32G031K8U6
+    package: UFQFPN-32(5x5)
+    description: -40°C~+85°C 1.7V~3.6V 12bit 30 32 Bit 64KB 64MHz 8KB ARM Cortex-M0+ Built-in+External FLASH UFQFPN-32(5x5) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G031K8U6
+    lcsc: C432207
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G031K8U6_C432207.pdf
+    datasheet_lang: en
+    status: active
+    stock: "383"
+    stock_checked: "2026-11-14"
+  - name: STM32G070CBT6
+    symbol: STM32G070CBT6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32G070CBT6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 128KB 2V~3.6V 32 Bit 36KB 43 64MHz ARM Cortex-M0+ Built-in+External FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G070CBT6
+    lcsc: C529338
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G070CBT6_C529338.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5028"
+    stock_checked: "2026-11-14"
+  - name: STM32G0B1CBT6
+    symbol: STM32G0B1CBT6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32G0B1CBT6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 1.7V~3.6V 128KB 144KB 32 Bit 44 64MHz ARM Cortex-M0+ Built-in+External FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G0B1CBT6
+    lcsc: C2847904
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2108142230_STMicroelectronics-STM32G0B1CBT6_C2847904.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1478"
+    stock_checked: "2026-11-14"
+  - name: STM32G0B1KBT6
+    symbol: STM32G0B1KBT6
+    footprint: LIB_Package_QFP:LQFP-32_7x7mm_P0.8mm
+    value: STM32G0B1KBT6
+    package: LQFP-32(7x7)
+    description: ARM Cortex-M0+ LQFP-32(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G0B1KBT6
+    lcsc: C5270165
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C5270165.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "281"
+    stock_checked: "2026-11-14"
+  - name: STM32G0B1KBU6
+    symbol: STM32G0B1KBU6
+    footprint: LIB_Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm
+    value: STM32G0B1KBU6
+    package: UFQFPN-32(5x5)
+    description: -40°C~+85°C 1.7V~3.6V 128KB 144KB 30 32 Bit 64MHz ARM Cortex-M0+ Built-in+External FLASH UFQFPN-32(5x5) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G0B1KBU6
+    lcsc: C5159549
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G0B1KBU6_C5159549.pdf
+    datasheet_lang: en
+    status: active
+    stock: "81"
+    stock_checked: "2026-11-14"
+  - name: STM32G0B1RET6
+    symbol: STM32G0B1RET6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32G0B1RET6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 1.7V~3.6V 144KB 32 Bit 512KB 60 64MHz ARM Cortex-M0+ Built-in+External FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G0B1RET6
+    lcsc: C2829307
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2211162030_STMicroelectronics-STM32G0B1RET6_C2829307.pdf
+    datasheet_lang: en
+    status: active
+    stock: "121"
+    stock_checked: "2026-11-14"
+  - name: STM32G431CBU6
+    symbol: STM32G431CBU6
+    footprint: LIB_Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm
+    value: STM32G431CBU6
+    package: UFQFPN-48(7x7)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 12bit 12bit 170MHz 32 Bit 32KB 42 ARM Cortex-M4F Built-in FLASH UFQFPN-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G431CBU6
+    lcsc: C529356
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G431CBU6_C529356.pdf
+    datasheet_lang: en
+    status: active
+    stock: "903"
+    stock_checked: "2026-11-14"
+  - name: STM32G431CBT6
+    symbol: STM32G431CBT6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32G431CBT6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 12bit 12bit 170MHz 32 Bit 32KB 38 ARM Cortex-M4F Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G431CBT6
+    lcsc: C529355
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G431CBT6_C529355.pdf
+    datasheet_lang: en
+    status: active
+    stock: "8399"
+    stock_checked: "2026-11-14"
+  - name: STM32G431RBT6
+    symbol: STM32G431RBT6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32G431RBT6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 12bit 12bit 170MHz 32 Bit 32KB 52 ARM Cortex-M4F Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G431RBT6
+    lcsc: C431633
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_STMicroelectronics-STM32G431RBT6_C431633.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1591"
+    stock_checked: "2026-11-14"
+  - name: STM32G431KBT6TR
+    symbol: STM32G431KBT6TR
+    footprint: LIB_Package_QFP:LQFP-32_7x7mm_P0.8mm
+    value: STM32G431KBT6TR
+    package: LQFP-32(7x7)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 12bit 12bit 170MHz 26 32 Bit 32KB ARM Cortex-M4 Built-in FLASH LQFP-32(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G431KBT6TR
+    lcsc: C5270317
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C5270317.pdf
+    datasheet_lang: en
+    status: active
+    stock: "40"
+    stock_checked: "2026-11-14"
+  - name: STM32G474CET6
+    symbol: STM32G474CET6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32G474CET6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 12bit 12bit 170MHz 32 Bit 38 512KB ARM Cortex-M4F Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G474CET6
+    lcsc: C730125
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G474CET6_C730125.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1497"
+    stock_checked: "2026-11-14"
+  - name: STM32G474RBT6
+    symbol: STM32G474RBT6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32G474RBT6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 128KB 12bit 12bit 170MHz 32 Bit 52 ARM Cortex-M4F Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G474RBT6
+    lcsc: C529413
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G474RBT6_C529413.pdf
+    datasheet_lang: en
+    status: active
+    stock: "479"
+    stock_checked: "2026-11-14"
+  - name: STM32G474RET6
+    symbol: STM32G474RET6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32G474RET6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 12bit 12bit 170MHz 32 Bit 512KB 52 ARM Cortex-M4F Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G474RET6
+    lcsc: C521608
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G474RET6_C521608.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12"
+    stock_checked: "2026-11-14"
+  - name: STM32G491RET6
+    symbol: STM32G491RET6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32G491RET6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 1.71V~3.6V 112KB 12bit 12bit 170MHz 32 Bit 512KB 52 ARM Cortex-M4F Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G491RET6
+    lcsc: C3231005
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211080600_STMicroelectronics-STM32G491RET6_C3231005.pdf
+    datasheet_lang: en
+    status: active
+    stock: "101"
+    stock_checked: "2026-11-14"
+  - name: STM32F103C8T6
+    symbol: STM32F103C8T6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32F103C8T6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 12bit 20KB 2V~3.6V 32 Bit 37 64KB 72MHz ARM Cortex-M3 Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F103C8T6
+    lcsc: C8734
+    jlc_type: Preferred
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2302211130_STMicroelectronics-STM32F103C8T6_C8734.pdf
+    datasheet_lang: en
+    status: active
+    stock: "192675"
+    stock_checked: "2026-11-14"
+  - name: STM32F303CBT6
+    symbol: STM32F303CBT6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32F303CBT6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 128KB 12bit 12bit 2V~3.6V 32 Bit 32KB 37 72MHz ARM Cortex-M4 Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F303CBT6
+    lcsc: C108516
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32F303CBT6_C108516.pdf
+    datasheet_lang: en
+    status: active
+    stock: "48"
+    stock_checked: "2026-11-14"
+  - name: STM32F303RCT6
+    symbol: STM32F303RCT6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32F303RCT6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 12bit 12bit 256KB 2V~3.6V 32 Bit 40KB 52 72MHz ARM Cortex-M4 Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F303RCT6
+    lcsc: C65361
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32F303RCT6_C65361.pdf
+    datasheet_lang: en
+    status: active
+    stock: "141"
+    stock_checked: "2026-11-14"
+  - name: STM32F303RET6
+    symbol: STM32F303RET6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32F303RET6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 12bit 12bit 2V~3.6V 32 Bit 51 512KB 72MHz 80KB ARM Cortex-M4 Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F303RET6
+    lcsc: C183214
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32F303RET6_C183214.pdf
+    datasheet_lang: en
+    status: active
+    stock: "26"
+    stock_checked: "2026-11-14"
+  - name: STM32F303VCT6
+    symbol: STM32F303VCT6
+    footprint: LIB_Package_QFP:LQFP-100_14x14mm_P0.5mm
+    value: STM32F303VCT6
+    package: LQFP-100(14x14)
+    description: -40°C~+85°C 12bit 12bit 256KB 2V~3.6V 32 Bit 40KB 72MHz 87 ARM Cortex-M4 Built-in FLASH LQFP-100(14x14) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F303VCT6
+    lcsc: C40764
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32F303VCT6_C40764.pdf
+    datasheet_lang: en
+    status: active
+    stock: "33"
+    stock_checked: "2026-11-14"
+  - name: STM32F334K8T6
+    symbol: STM32F334K8T6
+    footprint: LIB_Package_QFP:LQFP-32_7x7mm_P0.8mm
+    value: STM32F334K8T6
+    package: LQFP-32(7x7)
+    description: -40°C~+85°C 12KB 12bit 12bit 25 2V~3.6V 32 Bit 64KB 72MHz ARM Cortex-M4 Built-in FLASH LQFP-32(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F334K8T6
+    lcsc: C106758
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32F334K8T6_C106758.pdf
+    datasheet_lang: en
+    status: active
+    stock: "192"
+    stock_checked: "2026-11-14"
+  - name: STM32F334C8T6
+    symbol: STM32F334C8T6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32F334C8T6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 12KB 12bit 12bit 2V~3.6V 32 Bit 37 64KB 72MHz ARM Cortex-M4 Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F334C8T6
+    lcsc: C99450
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810010230_STMicroelectronics-STM32F334C8T6_C99450.pdf
+    datasheet_lang: en
+    status: active
+    stock: "295"
+    stock_checked: "2026-11-14"
+  - name: STM32F334R8T6
+    symbol: STM32F334R8T6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32F334R8T6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 12KB 12bit 12bit 2V~3.6V 32 Bit 51 64KB 72MHz ARM Cortex-M4 Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F334R8T6
+    lcsc: C80577
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32F334R8T6_C80577.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2000"
+    stock_checked: "2026-11-14"
+  - name: STM32F401CCU6
+    symbol: STM32F401CCU6
+    footprint: LIB_Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm
+    value: STM32F401CCU6
+    package: UFQFPN-48(7x7)
+    description: -40°C~+85°C 1.7V~3.6V 12bit 256KB 32 Bit 36 64KB 84MHz ARM Cortex-M4 Built-in FLASH UFQFPN-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F401CCU6
+    lcsc: C79861
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810010233_STMicroelectronics-STM32F401CCU6_C79861.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2280"
+    stock_checked: "2026-11-14"
+  - name: STM32F411CEU6
+    symbol: STM32F411CEU6
+    footprint: LIB_Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm
+    value: STM32F411CEU6
+    package: UFQFPN-48(7x7)
+    description: -40°C~+85°C 1.7V~3.6V 100MHz 128KB 12bit 32 Bit 36 512KB ARM Cortex-M4 Built-in FLASH UFQFPN-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F411CEU6
+    lcsc: C60420
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809291612_STMicroelectronics-STM32F411CEU6_C60420.pdf
+    datasheet_lang: en
+    status: active
+    stock: "331"
+    stock_checked: "2026-11-14"
+  - name: STM32F405RGT6
+    symbol: STM32F405RGT6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32F405RGT6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 1.8V~3.6V 12bit 12bit 168MHz 192KB 1MB 32 Bit 51 ARM Cortex-M4 Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F405RGT6
+    lcsc: C15742
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32F405RGT6_C15742.pdf
+    datasheet_lang: en
+    status: active
+    stock: "62"
+    stock_checked: "2026-11-14"
+  - name: STM32F407VET6
+    symbol: STM32F407VET6
+    footprint: LIB_Package_QFP:LQFP-100_14x14mm_P0.5mm
+    value: STM32F407VET6
+    package: LQFP-100(14x14)
+    description: -40°C~+85°C 1.8V~3.6V 12bit 12bit 168MHz 192KB 32 Bit 512KB 82 ARM Cortex-M4 Built-in FLASH LQFP-100(14x14) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F407VET6
+    lcsc: C28730
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32F407VET6_C28730.pdf
+    datasheet_lang: en
+    status: active
+    stock: "332"
+    stock_checked: "2026-11-14"
+  - name: STM32F407VGT6
+    symbol: STM32F407VGT6
+    footprint: LIB_Package_QFP:LQFP-100_14x14mm_P0.5mm
+    value: STM32F407VGT6
+    package: LQFP-100(14x14)
+    description: -40°C~+85°C 1.8V~3.6V 12bit 12bit 168MHz 192KB 1MB 32 Bit 82 ARM Cortex-M4 Built-in FLASH LQFP-100(14x14) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F407VGT6
+    lcsc: C12345
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2312191042_STMicroelectronics-STM32F407VGT6_C12345.pdf
+    datasheet_lang: en
+    status: active
+    stock: "36"
+    stock_checked: "2026-11-14"
+  - name: STM32F446RET6
+    symbol: STM32F446RET6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32F446RET6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 1.7V~3.6V 128KB 12bit 12bit 180MHz 32 Bit 50 512KB ARM Cortex-M4 Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32F446RET6
+    lcsc: C69336
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32F446RET6_C69336.pdf
+    datasheet_lang: en
+    status: active
+    stock: "259"
+    stock_checked: "2026-11-14"
+  - name: STM32H743VIT6
+    symbol: STM32H743VIT6
+    footprint: LIB_Package_QFP:LQFP-100_14x14mm_P0.5mm
+    value: STM32H743VIT6
+    package: LQFP-100(14x14)
+    description: -40°C~+85°C 1.71V~3.6V 12bit 16bit 1MB 2MB 32 Bit 480MHz 82 ARM Cortex-M7 Built-in FLASH LQFP-100(14x14) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H743VIT6
+    lcsc: C114409
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32H743VIT6_C114409.pdf
+    datasheet_lang: en
+    status: active
+    stock: "149"
+    stock_checked: "2026-11-14"
+  - name: STM32H743ZIT6
+    symbol: STM32H743ZIT6
+    footprint: LIB_Package_QFP:LQFP-144_20x20mm_P0.5mm
+    value: STM32H743ZIT6
+    package: LQFP-144(20x20)
+    description: -40°C~+85°C 1.62V~3.6V 114 12bit 16bit 1MB 2MB 32 Bit 480MHz ARM Cortex-M7 Built-in FLASH LQFP-144(20x20) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H743ZIT6
+    lcsc: C114408
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32H743ZIT6_C114408.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1608"
+    stock_checked: "2026-11-14"
+  - name: STM32H743IIT6
+    symbol: STM32H743IIT6
+    footprint: LIB_Package_QFP:LQFP-176_24x24mm_P0.5mm
+    value: STM32H743IIT6
+    package: LQFP-176(24x24)
+    description: -40°C~+85°C 1.62V~3.6V 12bit 140 16bit 1MB 2MB 32 Bit 480MHz ARM Cortex-M7 Built-in FLASH LQFP-176(24x24) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H743IIT6
+    lcsc: C89597
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2408011426_STMicroelectronics-STM32H743IIT6_C89597.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1064"
+    stock_checked: "2026-11-14"
+  - name: STM32H750VBT6
+    symbol: STM32H750VBT6
+    footprint: LIB_Package_QFP:LQFP-100_14x14mm_P0.5mm
+    value: STM32H750VBT6
+    package: LQFP-100(14x14)
+    description: -40°C~+85°C 1.62V~3.6V 128KB 12bit 16bit 1MB 32 Bit 480MHz 82 ARM Cortex-M7 Built-in FLASH LQFP-100(14x14) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H750VBT6
+    lcsc: C404010
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2310081041_STMicroelectronics-STM32H750VBT6_C404010.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6422"
+    stock_checked: "2026-11-14"
+  - name: STM32H723ZGT6
+    symbol: STM32H723ZGT6
+    footprint: LIB_Package_QFP:LQFP-144_20x20mm_P0.5mm
+    value: STM32H723ZGT6
+    package: LQFP-144(20x20)
+    description: -40°C~+85°C 1.71V~3.6V 114 12bit 12bit, 16bit 1MB 32 Bit 550MHz 564KB ARM Cortex-M7 Built-in FLASH LQFP-144(20x20) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H723ZGT6
+    lcsc: C730146
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2009021033_STMicroelectronics-STM32H723ZGT6_C730146.pdf
+    datasheet_lang: en
+    status: active
+    stock: "24"
+    stock_checked: "2026-11-14"
+  - name: STM32H7A3VIT6
+    symbol: STM32H7A3VIT6
+    footprint: LIB_Package_QFP:LQFP-100_14x14mm_P0.5mm
+    value: STM32H7A3VIT6
+    package: LQFP-100(14x14)
+    description: -40°C~+85°C 1.4MB 1.62V~3.6V 12bit 16bit 280MHz 2MB 32 Bit 80 ARM Cortex-M7 Built-in FLASH LQFP-100(14x14) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H7A3VIT6
+    lcsc: C730222
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32H7A3VIT6_C730222.pdf
+    datasheet_lang: en
+    status: active
+    stock: "20"
+    stock_checked: "2026-11-14"
+  - name: STM32H503CBT6
+    symbol: STM32H503CBT6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32H503CBT6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 250MHz 32 Bit 32KB 35 ARM Cortex-M33 Built-in+External FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H503CBT6
+    lcsc: C17700273
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C17700273.pdf
+    datasheet_lang: en
+    status: active
+    stock: "84"
+    stock_checked: "2026-11-14"
+  - name: STM32H503RBT6
+    symbol: STM32H503RBT6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32H503RBT6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 250MHz 32 Bit 32KB 49 ARM Cortex-M33 Built-in+External FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H503RBT6
+    lcsc: C6807804
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309061527_STMicroelectronics-STM32H503RBT6_C6807804.pdf
+    datasheet_lang: en
+    status: active
+    stock: "530"
+    stock_checked: "2026-11-14"
+  - name: STM32L431CCT6
+    symbol: STM32L431CCT6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32L431CCT6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 1.71V~3.6V 12bit 12bit 256KB 32 Bit 39 64KB 80MHz ARM Cortex-M4 Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32L431CCT6
+    lcsc: C486681
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2204221745_STMicroelectronics-STM32L431CCT6_C486681.pdf
+    datasheet_lang: en
+    status: active
+    stock: "7452"
+    stock_checked: "2026-11-14"
+  - name: STM32L412KBU6
+    symbol: STM32L412KBU6
+    footprint: LIB_Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm
+    value: STM32L412KBU6
+    package: UFQFPN-32(5x5)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 26 32 Bit 40KB 80MHz ARM Cortex-M4 Built-in FLASH UFQFPN-32(5x5) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32L412KBU6
+    lcsc: C529439
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32L412KBU6_C529439.pdf
+    datasheet_lang: en
+    status: active
+    stock: "509"
+    stock_checked: "2026-11-14"
+  - name: STM32L476RGT6
+    symbol: STM32L476RGT6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32L476RGT6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 1.71V~3.6V 128KB 12bit 12bit 1MB 32 Bit 51 80MHz ARM Cortex-M4 Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32L476RGT6
+    lcsc: C74797
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32L476RGT6_C74797.pdf
+    datasheet_lang: en
+    status: active
+    stock: "61"
+    stock_checked: "2026-11-14"
+  - name: STM32U575ZIT6Q
+    symbol: STM32U575ZIT6Q
+    footprint: LIB_Package_QFP:LQFP-144_20x20mm_P0.5mm
+    value: STM32U575ZIT6Q
+    package: LQFP-144(20x20)
+    description: -40°C~+85°C 1.71V~3.6V 111 160MHz 2MB 32 Bit 784KB ARM Cortex-M33 Built-in+External FLASH LQFP-144(20x20) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32U575ZIT6Q
+    lcsc: C5271039
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2309061518_STMicroelectronics-STM32U575ZIT6Q_C5271039.pdf
+    datasheet_lang: en
+    status: active
+    stock: "25"
+    stock_checked: "2026-11-14"
+  - name: STM32U535CET6
+    symbol: STM32U535CET6
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32U535CET6
+    package: LQFP-48(7x7)
+    description: -40°C~+85°C 1.71V~3.6V 160MHz 274KB 32 Bit 37 512KB ARM Cortex-M33 Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32U535CET6
+    lcsc: C20625508
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C20625508.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10"
+    stock_checked: "2026-11-14"
+  - name: STM32WB55RGV6
+    symbol: STM32WB55RGV6
+    footprint: LIB_Package_DFN_QFN:QFN-68-1EP_8x8mm_P0.4mm_EP6.4x6.4mm
+    value: STM32WB55RGV6
+    package: QFN-68-EP(8x8)
+    description: -40°C~+105°C -96dBm 1.71V~3.6V 2.402GHz~2.48GHz 2.4GHz 2Mbps 4.5mA 5.2mA 6dBm Bluetooth, 802.15.4 SPI, USB, UART, ADC, I2C, JTAG, PDM transceiver QFN-68-EP(8x8) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32WB55RGV6
+    lcsc: C401505
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_STMicroelectronics-STM32WB55RGV6_C401505.pdf
+    datasheet_lang: en
+    status: active
+    stock: "188"
+    stock_checked: "2026-11-14"
+  - name: STM32C551KET6
+    symbol: STM32C55xKxTx
+    footprint: LIB_Package_QFP:LQFP-32_7x7mm_P0.8mm
+    value: STM32C551KET6
+    package: LQFP-32(7x7)
+    description: LQFP-32(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32C551KET6
+    lcsc: C53358561
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C53358561.pdf
+    datasheet_lang: en
+    status: active
+    stock: "71"
+    stock_checked: "2026-11-14"
+  - name: STM32C552CET6
+    symbol: STM32C55xCxTx
+    footprint: LIB_Package_QFP:LQFP-48_7x7mm_P0.5mm
+    value: STM32C552CET6
+    package: LQFP-48(7x7)
+    description: LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32C552CET6
+    lcsc: C53358094
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C53358094.pdf
+    datasheet_lang: en
+    status: active
+    stock: "78"
+    stock_checked: "2026-11-14"
+  - name: STM32C562RET6
+    symbol: STM32C56xRxTx
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32C562RET6
+    package: LQFP-64(10x10)
+    description: LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32C562RET6
+    lcsc: C53358707
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C53358707.pdf
+    datasheet_lang: en
+    status: active
+    stock: "133"
+    stock_checked: "2026-11-14"
+  - name: RP2040
+    symbol: RP2040
+    footprint: LIB_Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm
+    value: RP2040
+    package: LQFN-56(7x7)
+    description: 12bit 133MHz 30 LQFN-56(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: Raspberry Pi
+    mpn: RP2040
+    lcsc: C2040
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2201101600_Raspberry-Pi-RP2040_C2040.pdf
+    datasheet_lang: en
+    status: active
+    stock: "80313"
+    stock_checked: "2026-11-14"
+  - name: RP2350A
+    symbol: RP2350A
+    footprint: LIB_Package_DFN_QFN:QFN-60-1EP_7x7mm_P0.4mm_EP3.4x3.4mm
+    value: RP2350A
+    package: QFN-60-EP(7x7)
+    description: Power-on reset (POR), Undervoltage detection (BOR/LVD/LVR/LVI), Watchdog reset, Integrated LDO, True random number generator (TRNG), Hardware ECC check QFN-60-EP(7x7) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: Raspberry Pi
+    mpn: RP2350A
+    lcsc: C42411118
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2412101620_Raspberry-Pi-RP2350A_C42411118.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5343"
+    stock_checked: "2026-11-14"
+  - name: RP2350B
+    symbol: RP2350B
+    footprint: LIB_Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm
+    value: RP2350B
+    package: QFN-80-EP(10x10)
+    description: 48 Power-on reset (POR), Watchdog reset, External pin reset (NRST), Built-in general-purpose timer, Integrated LDO, True random number generator (TRNG), Hardware ECC check, Independent watchdog (IWDG) QFN-80-EP(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: Raspberry Pi
+    mpn: RP2350B
+    lcsc: C42415655
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2412171426_Raspberry-Pi-RP2350B_C42415655.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3620"
+    stock_checked: "2026-11-14"
+  - name: NRF52832-QFAA-R
+    symbol: NRF52832-QFAA-R
+    footprint: LIB_Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm
+    value: NRF52832-QFAA-R
+    package: QFN-48-EP(6x6)
+    description: -40°C~+85°C -96dBm 1.7V~3.6V 2.4GHz 2Mbps 4dBm 5.3mA 5.4mA Bluetooth SPI, UART, I2C transceiver QFN-48-EP(6x6) RF Transceiver ICs
+    manufacturer: Nordic Semiconductor
+    mpn: NRF52832-QFAA-R
+    lcsc: C77540
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810010217_Nordic-Semicon-NRF52832-QFAA-R_C77540.pdf
+    datasheet_lang: en
+    status: active
+    stock: "24353"
+    stock_checked: "2026-11-14"
