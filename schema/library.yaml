@@ -121,6 +121,7 @@ families:
   - {name: Sensor_Current}
   - {name: Package_QFP}
   - {name: RF_Module}
+  - {name: Package_BGA}
 
 # Known manufacturers for automatic part picks; parts must use the canonical
 # name. A distributor brand string matches a name case-insensitively when it

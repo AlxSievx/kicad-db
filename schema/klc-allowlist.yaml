@@ -508,3 +508,13 @@
   item: ["*:TMC2209-LA-T"]
   rule: S4.6
   reason: Pin 25 is "unused, may be connected to GND" (TMC2209 datasheet); stock KiCad symbol keeps it visible and passive for that.
+
+# BGA STM32s 2026-11-14.
+- kind: symbol
+  item: ["*:STM32H750IBK6", "*:STM32H750XBH6", "*:STM32H745XIH6"]
+  rule: S4.5
+  reason: The "missing" numbers are empty grid positions between the outer ball rings and the centre VSS balls (176+25 / 240+25 layouts); every ball of the footprint has a symbol pin.
+- kind: footprint
+  item: ["TFBGA-100_8x8mm_Layout10x10_P0.8mm", "UFBGA-201_10x10mm_Layout15x15_P0.65mm", "TFBGA-265_14x14mm_Layout17x17_P0.8mm"]
+  rule: F9.2
+  reason: Stock KiCad BGA footprint copied unchanged (solder-mask-defined ball pads need a pad mask margin).

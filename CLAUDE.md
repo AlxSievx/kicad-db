@@ -145,7 +145,7 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   Set per package: N 30/40/60/80/100(/150/200) V, P 20/30/40/60(/80/100) V.
 - **ICs (user rules 2026-11-14):** the Altium library is only a reference; add **modern** parts (outdated ones
   get a current replacement), and for every chip **all stocked package variants** (SOIC, TSSOP, VSSOP/MSOP,
-  SOT-23, SC-70, TSOT, WSON/QFN), not DSBGA/WLCSP or ≤1 mm X2SON, not small-reel duplicates (`…T`), not Q1
+  SOT-23, SC-70, TSOT, WSON/QFN; MCUs also their 0.65/0.8 mm BGAs), not DSBGA/WLCSP or ≤1 mm X2SON, not small-reel duplicates (`…T`), not Q1
   unless asked. Common voltage siblings of LDOs/references too. Check every pinout against the datasheet.
   Symbols: KLC-clean only. Shared bases in `src/symbols/`: `Opamp_SOT-23-5`, `Opamp_SC-70-5` (TI DCK
   pinout), `Opamp_SO-8`, `Opamp_Dual`, `Opamp_Quad`, `Comparator_Dual_LM393`, `Comparator_Quad_LM339`,
@@ -210,8 +210,7 @@ Most Altium ICs (188/307) and connectors have no LCSC number (Plan 9: orderable 
 - Not yet added from Altium: IXTY08N100D2 (no stock), AO4606-type N+P pairs, TO-220/TO-263/SiC MOSFETs,
   SOT-23 MOSFETs SQ2361CES, SI2324DS, DMP3099L. Deferred ICs: TLP172A/G (pins 1,3,4,6; needs own symbol and
   footprint), MIE1W0505 (EasyEDA LGA-12 footprint misses pads 4,5,10,11).
-  Also deferred: STM32H745XIH6 (stock symbol has 240 pins, TFBGA-265 footprint 25 more balls: check ST ball map),
-  AD2S1210 (no datasheet at LCSC), IXDN609SIA and UCC27614DR (pinout unverified), SN74AHC1G09 (open-drain AND,
+  Also deferred: AD2S1210 (no datasheet at LCSC), IXDN609SIA and UCC27614DR (pinout unverified), SN74AHC1G09 (open-drain AND,
   no stock symbol), nRF52840-QIAA (aQFN-73: inner pad rows need via-in-pad; modules preferred). CKSR_50-NP: pads 1 and 10 have no symbol pin (stock KiCad symbol; confirm with LEM drawing).
 - Symbol generator for box/op-amp symbols is kept locally in `.libkit/gen/` (not committed): move it into `tools/libkit/` (plan).
 

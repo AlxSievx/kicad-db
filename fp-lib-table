@@ -92,6 +92,13 @@
 		(descr "MountingHole")
 	)
 	(lib
+		(name "LIB_Package_BGA")
+		(type "KiCad")
+		(uri "${LIB_DIR}/footprints/LIB_Package_BGA.pretty")
+		(options "")
+		(descr "Package BGA")
+	)
+	(lib
 		(name "LIB_Package_DFN_QFN")
 		(type "KiCad")
 		(uri "${LIB_DIR}/footprints/LIB_Package_DFN_QFN.pretty")

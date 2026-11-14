@@ -1799,3 +1799,123 @@ parts:
     status: active
     stock: "173461"
     stock_checked: "2026-11-14"
+  - name: STM32H743VIH6
+    symbol: STM32H743VIH6
+    footprint: LIB_Package_BGA:TFBGA-100_8x8mm_Layout10x10_P0.8mm
+    value: STM32H743VIH6
+    package: TFBGA-100
+    description: -40°C~+85°C 1.62V~3.6V 1MB 2MB 32 Bit 480MHz 82 ARM Cortex-M7 Built-in FLASH TFBGA-100 Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H743VIH6
+    lcsc: C964146
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2203091604_STMicroelectronics-STM32H743VIH6_C964146.pdf
+    datasheet_lang: en
+    status: active
+    stock: "671"
+    stock_checked: "2026-11-14"
+  - name: STM32H750IBK6
+    symbol: STM32H750IBK6
+    footprint: LIB_Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm
+    value: STM32H750IBK6
+    package: UFBGA-201
+    description: -40°C~+85°C 1.62V~3.6V 128KB 12bit 140 16bit 1MB 32 Bit 480MHz ARM Cortex-M7 Built-in FLASH UFBGA-201 Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H750IBK6
+    lcsc: C730200
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32H750IBK6_C730200.pdf
+    datasheet_lang: en
+    status: active
+    stock: "736"
+    stock_checked: "2026-11-14"
+  - name: STM32H750XBH6
+    symbol: STM32H750XBH6
+    footprint: LIB_Package_BGA:TFBGA-265_14x14mm_Layout17x17_P0.8mm
+    value: STM32H750XBH6
+    package: TFBGA-265
+    description: -40°C~+85°C 1.62V~3.6V 128KB 12bit 168 16bit 1MB 32 Bit 480MHz ARM Cortex-M7 Built-in FLASH TFBGA-265 Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H750XBH6
+    lcsc: C405932
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_STMicroelectronics-STM32H750XBH6_C405932.pdf
+    datasheet_lang: en
+    status: active
+    stock: "686"
+    stock_checked: "2026-11-14"
+  - name: STM32H745XIH6
+    symbol: STM32H745XIH6
+    footprint: LIB_Package_BGA:TFBGA-265_14x14mm_Layout17x17_P0.8mm
+    value: STM32H745XIH6
+    package: TFBGA-265
+    description: -40°C~+85°C 1.62V~3.6V 12bit 168 16bit 1MB 240MHz, 480MHz 2MB 32 Bit ARM Cortex-M4, ARM Cortex-M7 Built-in FLASH TFBGA-265 Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H745XIH6
+    lcsc: C1338373
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2201141630_STMicroelectronics-STM32H745XIH6_C1338373.pdf
+    datasheet_lang: en
+    status: active
+    stock: "100"
+    stock_checked: "2026-11-14"
+  - name: STM32H723VGH6
+    symbol: STM32H723VGH6
+    footprint: LIB_Package_BGA:TFBGA-100_8x8mm_Layout10x10_P0.8mm
+    value: STM32H723VGH6
+    package: TFBGA-100(8x8x0.8)
+    description: -40°C~+85°C 1.62V~3.6V 12bit 12bit, 16bit 1MB 32 Bit 550MHz 564KB 80 ARM Cortex-M7 Built-in+External FLASH TFBGA-100(8x8x0.8) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H723VGH6
+    lcsc: C2848033
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2303311800_STMicroelectronics-STM32H723VGH6_C2848033.pdf
+    datasheet_lang: en
+    status: active
+    stock: "21"
+    stock_checked: "2026-11-14"
+  - name: STM32G474VEH6
+    symbol: STM32G474VEH6
+    footprint: LIB_Package_BGA:TFBGA-100_8x8mm_Layout10x10_P0.8mm
+    value: STM32G474VEH6
+    package: TFBGA-100
+    description: -40°C~+85°C 1.71V~3.6V 128KB 12bit 12bit 170MHz 32 Bit 512KB 86 ARM Cortex-M4F Built-in FLASH TFBGA-100 Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32G474VEH6
+    lcsc: C1235435
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G474VEH6_C1235435.pdf
+    datasheet_lang: en
+    status: active
+    stock: "296"
+    stock_checked: "2026-11-14"
+  - name: STM32H562RGT6
+    symbol: STM32H562RGT6
+    footprint: LIB_Package_QFP:LQFP-64_10x10mm_P0.5mm
+    value: STM32H562RGT6
+    package: LQFP-64(10x10)
+    description: -40°C~+85°C 1.71V~3.6V 1MB 250MHz 32 Bit 49 640KB ARM Cortex-M33 Built-in+External FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H562RGT6
+    lcsc: C19711662
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C19711662.pdf
+    datasheet_lang: en
+    status: active
+    stock: "808"
+    stock_checked: "2026-11-14"
+  - name: STM32H562VGT6
+    symbol: STM32H562VGT6
+    footprint: LIB_Package_QFP:LQFP-100_14x14mm_P0.5mm
+    value: STM32H562VGT6
+    package: LQFP-100(14x14)
+    description: -40°C~+85°C 1.71V~3.6V 1MB 250MHz 32 Bit 640KB 80 ARM Cortex-M33 Built-in+External FLASH LQFP-100(14x14) Microcontrollers (MCU/MPU/SOC)
+    manufacturer: STMicroelectronics
+    mpn: STM32H562VGT6
+    lcsc: C22452133
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C22452133.pdf
+    datasheet_lang: en
+    status: active
+    stock: "87"
+    stock_checked: "2026-11-14"
