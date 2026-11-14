@@ -210,7 +210,7 @@ Most Altium ICs (188/307) and connectors have no LCSC number (Plan 9: orderable 
 - Not yet added from Altium: IXTY08N100D2 (no stock), AO4606-type N+P pairs, TO-220/TO-263/SiC MOSFETs,
   SOT-23 MOSFETs SQ2361CES, SI2324DS, DMP3099L. Deferred ICs: TLP172A/G (pins 1,3,4,6; needs own symbol and
   footprint), MIE1W0505 (EasyEDA LGA-12 footprint misses pads 4,5,10,11).
-- Symbol generator for box/op-amp symbols lives only in a session scratchpad: move it into `tools/libkit/` (plan).
+- Symbol generator for box/op-amp symbols is kept locally in `.libkit/gen/` (not committed): move it into `tools/libkit/` (plan).
 
 ## Part naming
 
