@@ -183,3 +183,4 @@ manufacturers:
   # ICs and crystals (user OK 2026-11-14).
   - {name: Analog Devices, aliases: [ADI, Analog Devices Inc, Linear Technology]}
   - {name: YXC, aliases: [YXC Crystal Oscillators, Yangxing]}
+  - {name: Microchip, aliases: [Microchip Tech, Microchip Technology]}

@@ -89,3 +89,498 @@ parts:
     status: active
     stock: "800"
     stock_checked: "2026-11-02"
+  - name: TLV9061IDBVR
+    symbol: Opamp_SOT-23-5
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TLV9061IDBVR
+    package: SOT-23-5
+    description: -40°C~+125°C 0.05pA 0.5pA 1 1.6mV 1.8V~5.5V 103dB 10MHz 10nV/√Hz@1kHz 50mA 530nV/°C 538uA 6.5V/us Enable/shutdown function, ESD protection, EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output SOT-23-5 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: TLV9061IDBVR
+    lcsc: C398358
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Texas-Instruments-TLV9061IDBVR_C398358.pdf
+    datasheet_lang: en
+    status: active
+    stock: "246252"
+    stock_checked: "2026-11-14"
+  - name: TLV9001IDBVR
+    symbol: Opamp_SOT-23-5
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TLV9001IDBVR
+    package: SOT-23-5
+    description: -2.75V~-900mV, 900mV~2.75V -40°C~+125°C 1 1.6mV 1.8V~5.5V 1MHz 2V/us 2pA 4.7nV/√Hz@1kHz 40mA 5pA 600nV/°C 60uA 86dB Enable/shutdown function, EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output SOT-23-5 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: TLV9001IDBVR
+    lcsc: C398363
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010130_Texas-Instruments-TLV9001IDBVR_C398363.pdf
+    datasheet_lang: en
+    status: active
+    stock: "67573"
+    stock_checked: "2026-11-14"
+  - name: TL081HIDBVR
+    symbol: Opamp_SOT-23-5
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: TL081HIDBVR
+    package: SOT-23-5
+    description: -20V~-2.25V, 2.25V~20V -40°C~+125°C 1 100dB 18nV/√Hz@1kHz 1mV 20V/us 250pA 26mA 2uV/°C 300pA 4.5V~40V 5.25MHz 940uA Short-Circuit Protection, EMI filtering/RF suppression SOT-23-5 FET Input Amplifiers
+    manufacturer: Texas Instruments
+    mpn: TL081HIDBVR
+    lcsc: C2937165
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302281200_Texas-Instruments-TL081HIDBVR_C2937165.pdf
+    datasheet_lang: en
+    status: active
+    stock: "22001"
+    stock_checked: "2026-11-14"
+  - name: LM7321MFX_NOPB
+    symbol: Opamp_SOT-23-5
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: LM7321MFX/NOPB
+    package: SOT-23-5
+    description: -15V~15V -40°C~+125°C 1 1.1mA 1.2uA 100dB 15nV/√Hz@2kHz 18V/us 2.5V~32V 200nA 20MHz 2uV/°C 65mA 700uV ESD protection Rail-to-Rail Input, Rail-to-Rail Output SOT-23-5 Precision Op Amps
+    manufacturer: Texas Instruments
+    mpn: LM7321MFX/NOPB
+    lcsc: C134033
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810170421_Texas-Instruments-LM7321MFX-NOPB_C134033.pdf
+    datasheet_lang: en
+    status: active
+    stock: "18190"
+    stock_checked: "2026-11-14"
+  - name: MCP6041T-I_OT
+    symbol: Opamp_SOT-23-5
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: MCP6041T-I/OT
+    package: SOT-23-5
+    description: -40°C~+85°C 1 1.4V~6V 14kHz 170nV/√Hz@1kHz 1pA 1pA 20mA 2uV/°C 3V/us 3mV 600nA 80dB Built-in compensation, ESD protection Rail-to-Rail Input, Rail-to-Rail Output SOT-23-5 Operational Amplifier
+    manufacturer: Microchip
+    mpn: MCP6041T-I/OT
+    lcsc: C56463
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811071513_Microchip-Tech-MCP6041T-I-OT_C56463.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4364"
+    stock_checked: "2026-11-14"
+  - name: OPA828IDR
+    symbol: Opamp_SO-8
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: OPA828IDR
+    package: SOIC-8
+    description: -18V~-4V, 4V~18V -40°C~+125°C 0.45uV/°C 1 108dB 150V/us 1pA 1pA 45MHz 4nV/√Hz@1kHz 5.5mA 50uV 8V~36V Short-Circuit Protection, Overvoltage protection, ESD protection SOIC-8 FET Input Amplifiers
+    manufacturer: Texas Instruments
+    mpn: OPA828IDR
+    lcsc: C1850247
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303020130_Texas-Instruments-OPA828IDR_C1850247.pdf
+    datasheet_lang: en
+    status: active
+    stock: "5403"
+    stock_checked: "2026-11-14"
+  - name: TLV9002IDR
+    symbol: Opamp_Dual
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: TLV9002IDR
+    package: SOIC-8
+    description: -2.75V~-900mV, 900mV~2.75V -40°C~+125°C 1.6mV 1.8V~5.5V 1MHz 2 2V/us 2pA 30nV/√Hz@1kHz 40mA 5pA 600nV/°C 60uA 86dB EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output SOIC-8 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: TLV9002IDR
+    lcsc: C398360
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-TLV9002IDR_C398360.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9978"
+    stock_checked: "2026-11-14"
+  - name: TLV9062IDR
+    symbol: Opamp_Dual
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: TLV9062IDR
+    package: SOIC-8
+    description: -40°C~+125°C 0.05pA 0.5pA 1.6mV 1.8V~5.5V 103dB 10MHz 10nV/√Hz@1kHz 2 50mA 530nV/°C 538uA 6.5V/us Enable/shutdown function, ESD protection, EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output SOIC-8 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: TLV9062IDR
+    lcsc: C398355
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-TLV9062IDR_C398355.pdf
+    datasheet_lang: en
+    status: active
+    stock: "164665"
+    stock_checked: "2026-11-14"
+  - name: OPA2992IDR
+    symbol: Opamp_Dual
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: OPA2992IDR
+    package: SOIC-8
+    description: -20V~-1.35V, 1.35V~20V -40°C~+125°C 10.6MHz 10pA 10pA 115dB 2 2.4mA 2.7V~40V 210uV 250nV/°C 32V/us 68mA 7nV/√Hz@1kHz EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output SOIC-8 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: OPA2992IDR
+    lcsc: C4368953
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302281900_Texas-Instruments-OPA2992IDR_C4368953.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3459"
+    stock_checked: "2026-11-14"
+  - name: MCP6042T-I_SN
+    symbol: Opamp_Dual
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: MCP6042T-I/SN
+    package: SOIC-8
+    description: -40°C~+85°C 1.4V~6V 14kHz 170nV/√Hz@1kHz 1pA 1pA 2 20mA 2uV/°C 3V/ms 3mV 600nA 80dB Built-in compensation, ESD protection Rail-to-Rail Input, Rail-to-Rail Output SOIC-8 Operational Amplifier
+    manufacturer: Microchip
+    mpn: MCP6042T-I/SN
+    lcsc: C19250
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809101521_Microchip-Tech-MCP6042T-I-SN_C19250.pdf
+    datasheet_lang: en
+    status: active
+    stock: "11644"
+    stock_checked: "2026-11-14"
+  - name: OPA2182IDGKR
+    symbol: Opamp_Dual
+    footprint: LIB_Package_SO:VSSOP-8_3x3mm_P0.65mm
+    value: OPA2182IDGKR
+    package: VSSOP-8
+    description: -18V~-2.25V, 2.25V~18V -40°C~+125°C 10V/us 140pA 168dB 2 3nV/°C 4.5V~36V 450nV 5.7nV/√Hz@1kHz 50pA 5MHz 65mA 850uA EMI filtering/RF suppression, Zero drift / auto-zero, ESD protection, Reverse-phase input protection Rail-to-rail output VSSOP-8 Precision Op Amps
+    manufacturer: Texas Instruments
+    mpn: OPA2182IDGKR
+    lcsc: C2867865
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220000_Texas-Instruments-OPA2182IDGKR_C2867865.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2438"
+    stock_checked: "2026-11-14"
+  - name: TLV9002IDGKR
+    symbol: Opamp_Dual
+    footprint: LIB_Package_SO:VSSOP-8_3x3mm_P0.65mm
+    value: TLV9002IDGKR
+    package: VSSOP-8
+    description: -2.75V~-900mV, 900mV~2.75V -40°C~+125°C 1.6mV 1.8V~5.5V 1MHz 2 2V/us 2pA 4.7nV/√Hz@1kHz 40mA 5pA 600nV/°C 60uA 86dB EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output VSSOP-8 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: TLV9002IDGKR
+    lcsc: C398361
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-TLV9002IDGKR_C398361.pdf
+    datasheet_lang: en
+    status: active
+    stock: "30321"
+    stock_checked: "2026-11-14"
+  - name: OPA4172IPWR
+    symbol: Opamp_Quad
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: OPA4172IPWR
+    package: TSSOP-14
+    description: -18V~-2.25V, 2.25V~18V -40°C~+125°C 1.6mA 10MHz 10V/us 120dB 200uV 2pA 300nV/°C 4 4.5V~36V 75mA 7nV/√Hz@1kHz 8pA EMI filtering/RF suppression Rail-to-rail output TSSOP-14 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: OPA4172IPWR
+    lcsc: C1849436
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303020130_Texas-Instruments-OPA4172IPWR_C1849436.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2048"
+    stock_checked: "2026-11-14"
+  - name: OPA4992IPWR
+    symbol: Opamp_Quad
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: OPA4992IPWR
+    package: TSSOP-14
+    description: -20V~-1.35V, 1.35V~20V -40°C~+125°C 10.6MHz 10pA 10pA 115dB 2.4mA 2.7V~40V 210uV 250nV/°C 32V/us 4 65mA 7nV/√Hz@1kHz EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output TSSOP-14 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: OPA4992IPWR
+    lcsc: C4367838
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220430_Texas-Instruments-OPA4992IPWR_C4367838.pdf
+    datasheet_lang: en
+    status: active
+    stock: "845"
+    stock_checked: "2026-11-14"
+  - name: TL084HIPWR
+    symbol: Opamp_Quad
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: TL084HIPWR
+    package: TSSOP-14
+    description: -20V~-2.25V, 2.25V~20V -40°C~+125°C 0.5pA 105dB 120pA 1mV 20V/us 26mA 2uV/°C 37nV/√Hz@1kHz 4.5V~40V 5.25MHz 937.5uA Four channels Short-Circuit Protection, EMI filtering/RF suppression TSSOP-14 FET Input Amplifiers
+    manufacturer: Texas Instruments
+    mpn: TL084HIPWR
+    lcsc: C2866476
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010530_Texas-Instruments-TL084HIPWR_C2866476.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1893"
+    stock_checked: "2026-11-14"
+  - name: TLV9004IPWR
+    symbol: Opamp_Quad
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: TLV9004IPWR
+    package: TSSOP-14
+    description: -2.75V~2.75V -40°C~+125°C 1.8V~5.5V 1MHz 27nV/√Hz@1kHz 2V/us 2pA 4 400uV 40mA 5pA 600nV/°C 60uA 86dB EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output TSSOP-14 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: TLV9004IPWR
+    lcsc: C2058050
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302221330_Texas-Instruments-TLV9004IPWR_C2058050.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2883"
+    stock_checked: "2026-11-14"
+  - name: OPA4991IPWR
+    symbol: Opamp_Quad
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: OPA4991IPWR
+    package: TSSOP-14
+    description: -20V~-1.35V, 1.35V~20V -40°C~+125°C 10.8nV/√Hz@1kHz 10pA 10pA 125uV 130dB 2.7V~40V 21V/us 300nV/°C 4 4.5MHz 560uA 75mA Enable/shutdown function, EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output TSSOP-14 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: OPA4991IPWR
+    lcsc: C2873620
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010107_Texas-Instruments-OPA4991IPWR_C2873620.pdf
+    datasheet_lang: en
+    status: active
+    stock: "2127"
+    stock_checked: "2026-11-14"
+  - name: TLV9064IPWR
+    symbol: Opamp_Quad
+    footprint: LIB_Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+    value: TLV9064IPWR
+    package: TSSOP-14
+    description: -40°C~+125°C 0.05pA 1.6mV 1.8V~5.5V 10MHz 16nV/√Hz@1kHz 4 50mA 530nV/°C 538uA 6.5V/us 81pA 87dB Enable/shutdown function, ESD protection, EMI filtering/RF suppression Rail-to-Rail Input, Rail-to-Rail Output TSSOP-14 Operational Amplifier
+    manufacturer: Texas Instruments
+    mpn: TLV9064IPWR
+    lcsc: C779410
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2008291235_Texas-Instruments-TLV9064IPWR_C779410.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "31382"
+    stock_checked: "2026-11-14"
+  - name: INA180A1IDBVR
+    symbol: INA180A1IDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: INA180A1IDBVR
+    package: SOT-23-5
+    description: -200mV~26V -40°C~+125°C 1 100dB 100nA 197uA 1uV/°C 2.7V~5.5V 20V/V 25uV 2V/us 350kHz 40nV/√Hz@1kHz 8mA High-side detection, Low-side detection, Analog output interface, Enable/shutdown function ±26V SOT-23-5 Current Sense Amplifiers
+    manufacturer: Texas Instruments
+    mpn: INA180A1IDBVR
+    lcsc: C122228
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010302_Texas-Instruments-INA180A1IDBVR_C122228.pdf
+    datasheet_lang: en
+    status: active
+    stock: "61284"
+    stock_checked: "2026-11-14"
+  - name: INA180A2IDBVR
+    symbol: INA180A2IDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: INA180A2IDBVR
+    package: SOT-23-5
+    description: -200mV~26V -40°C~+125°C 1 100dB 100nA 197uA 1uV/°C 2.7V~5.5V 210kHz 25uV 2V/us 40nV/√Hz 50V/V 8mA High-side detection, Low-side detection, Analog output interface, Enable/shutdown function ±26V SOT-23-5 Current Sense Amplifiers
+    manufacturer: Texas Instruments
+    mpn: INA180A2IDBVR
+    lcsc: C192764
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811021124_Texas-Instruments-INA180A2IDBVR_C192764.pdf
+    datasheet_lang: en
+    status: active
+    stock: "100760"
+    stock_checked: "2026-11-14"
+  - name: INA180A3IDBVR
+    symbol: INA180A3IDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: INA180A3IDBVR
+    package: SOT-23-5
+    description: -200mV~26V -40°C~+125°C 1 100V/V 100dB 100nA 150kHz 197uA 1uV/°C 2.7V~5.5V 25uV 2V/us 40nV/√Hz@1kHz 8mA High-side detection, Low-side detection, Analog output interface ±26V SOT-23-5 Current Sense Amplifiers
+    manufacturer: Texas Instruments
+    mpn: INA180A3IDBVR
+    lcsc: C122882
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010302_Texas-Instruments-INA180A3IDBVR_C122882.pdf
+    datasheet_lang: en
+    status: active
+    stock: "71123"
+    stock_checked: "2026-11-14"
+  - name: INA180A4IDBVR
+    symbol: INA180A4IDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-5
+    value: INA180A4IDBVR
+    package: SOT-23-5
+    description: -200mV~26V -40°C~+125°C 1 100dB 100nA 150kHz 197uA 1uV/°C 2.7V~5.5V 200V/V 25uV 2V/us 40nV/√Hz@1kHz 8mA High-side detection, Low-side detection, Analog output interface ±26V SOT-23-5 Current Sense Amplifiers
+    manufacturer: Texas Instruments
+    mpn: INA180A4IDBVR
+    lcsc: C188337
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410010331_Texas-Instruments-INA180A4IDBVR_C188337.pdf
+    datasheet_lang: en
+    status: active
+    stock: "30682"
+    stock_checked: "2026-11-14"
+  - name: INA821IDGKR
+    symbol: INA821IDGKR
+    footprint: LIB_Package_SO:VSSOP-8_3x3mm_P0.65mm
+    value: INA821IDGKR
+    package: MSOP-8
+    description: -18V~-2.25V, 2.25V~18V -40°C~+125°C 0.15% 1 112dB 120dB 150pA 1V/V~10000V/V 20mA 2V/us 35uV 4.5V~36V 400nV/°C 500pA 650uA 6us 7nV/√Hz@1kHz External resistor gain, Overvoltage protection, EMI filtering/RF suppression MSOP-8 Instrumentation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: INA821IDGKR
+    lcsc: C2870200
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010330_Texas-Instruments-INA821IDGKR_C2870200.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4327"
+    stock_checked: "2026-11-14"
+  - name: INA821IDR
+    symbol: INA821IDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: INA821IDR
+    package: SOIC-8
+    description: -18V~-2.25V, 2.25V~18V -40°C~+125°C 0.025% 1 10uV 110dB 150pA 150pA 1V/V~10000V/V 20mA 2V/us 4.5V~36V 4.7MHz 400nV/°C 600uA 6us 7nV/√Hz@1kHz 92dB External resistor gain, Overvoltage protection, EMI filtering/RF suppression SOIC-8 Instrumentation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: INA821IDR
+    lcsc: C2060822
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302281001_Texas-Instruments-INA821IDR_C2060822.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12427"
+    stock_checked: "2026-11-14"
+  - name: INA826AIDR
+    symbol: INA826AIDR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: INA826AIDR
+    package: SOIC-8
+    description: -18V~-1.5V, 1.5V~18V -40°C~+125°C 1 100dB 104dB 150uV 16mA 18nV/√Hz@1kHz 1MHz 1V/us 200uA 2uV/°C 35nA 36V 3V~36V 5nA Rail-to-Rail Output SOIC-8 Instrumentation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: INA826AIDR
+    lcsc: C38433
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-INA826AIDR_C38433.pdf
+    datasheet_lang: en
+    status: active
+    stock: "19030"
+    stock_checked: "2026-11-14"
+  - name: INA826AIDRGR
+    symbol: INA826AIDRGR
+    footprint: LIB_Package_SON:WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm
+    value: INA826AIDRGR
+    package: WSON-8-EP(3x3)
+    description: -18V~-1.5V, 1.5V~18V -40°C~+125°C 0.003% 115dB 124dB 12us 16mA 18nV/√Hz@1kHz 1V/V~1000V/V 1V/us 200uA 35nA 3V~36V 400nV/°C 40uV 700pA External resistor gain, Overvoltage protection Rail-to-rail output WSON-8-EP(3x3) Instrumentation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: INA826AIDRGR
+    lcsc: C2870890
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010300_Texas-Instruments-INA826AIDRGR_C2870890.pdf
+    datasheet_lang: en
+    status: active
+    stock: "3567"
+    stock_checked: "2026-11-14"
+  - name: REF2025AIDDCR
+    symbol: REF2025AIDDCR
+    footprint: LIB_Package_TO_SOT_SMD:TSOT-23-5
+    value: REF2025AIDDCR
+    package: TSOT-23-5
+    description: -40°C~+125°C@(Ta) 2.52V~5.5V 2.5V 20mA 460uA 8ppm/°C Fixed Series ±0.05% TSOT-23-5 Voltage Reference
+    manufacturer: Texas Instruments
+    mpn: REF2025AIDDCR
+    lcsc: C962078
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2303021000_Texas-Instruments-REF2025AIDDCR_C962078.pdf
+    datasheet_lang: zh
+    status: active
+    stock: "2950"
+    stock_checked: "2026-11-14"
+  - name: REF2030AIDDCR
+    symbol: REF2030AIDDCR
+    footprint: LIB_Package_TO_SOT_SMD:TSOT-23-5
+    value: REF2030AIDDCR
+    package: SOT-23-5
+    description: -40°C~+125°C@(Ta) 12ppmp-p 20mA 3.02V~5.5V 460uA 8ppm/°C Fixed Series ±0.05% SOT-23-5 Voltage Reference
+    manufacturer: Texas Instruments
+    mpn: REF2030AIDDCR
+    lcsc: C528704
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2005120932_Texas-Instruments-REF2030AIDDCR_C528704.pdf
+    datasheet_lang: en
+    status: active
+    stock: "489"
+    stock_checked: "2026-11-14"
+  - name: REF2033AIDDCR
+    symbol: REF2033AIDDCR
+    footprint: LIB_Package_TO_SOT_SMD:TSOT-23-5
+    value: REF2033AIDDCR
+    package: SOT-23-5
+    description: -40°C~+125°C 12ppmp-p 20mA 3.32V~5.5V 3.3V 360uA 8ppm/°C Enable/disable, Multi-channel reference output Fixed Series ±0.05% SOT-23-5 Voltage Reference
+    manufacturer: Texas Instruments
+    mpn: REF2033AIDDCR
+    lcsc: C440747
+    jlc_type: Extended
+    datasheet: https://datasheet.lcsc.com/szlcsc/1912111437_Texas-Instruments-REF2033AIDDCR_C440747.pdf
+    datasheet_lang: en
+    status: active
+    stock: "9395"
+    stock_checked: "2026-11-14"
+  - name: REF3425IDBVR
+    symbol: REF3425IDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: REF3425IDBVR
+    package: SOT-23-6
+    description: -40°C~+125°C 10mA 2.55V~12V 2.5V 24uVrms 6ppm/°C 95uA Fixed Series ±0.05% SOT-23-6 Voltage Reference
+    manufacturer: Texas Instruments
+    mpn: REF3425IDBVR
+    lcsc: C187836
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1810011024_Texas-Instruments-REF3425IDBVR_C187836.pdf
+    datasheet_lang: en
+    status: active
+    stock: "10044"
+    stock_checked: "2026-11-14"
+  - name: REF3440TIDBVR
+    symbol: REF3440TIDBVR
+    footprint: LIB_Package_TO_SOT_SMD:SOT-23-6
+    value: REF3440TIDBVR
+    package: SOT-23-6
+    description: -40°C~+125°C 10mA 24uVrms 4.096V 4.196V~12V 6ppm/°C 95uA Enable/disable Fixed Series ±0.05% SOT-23-6 Voltage Reference
+    manufacturer: Texas Instruments
+    mpn: REF3440TIDBVR
+    lcsc: C7278865
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403011215_Texas-Instruments-REF3440TIDBVR_C7278865.pdf
+    datasheet_lang: en
+    status: active
+    stock: "209"
+    stock_checked: "2026-11-14"
+  - name: LM339BIDR
+    symbol: Comparator_Quad_LM339
+    footprint: LIB_Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+    value: LM339BIDR
+    package: SOIC-14
+    description: -40°C~+85°C 0.5nA 1us 1us 2V~36V 3.5nA 370uV 38V 800uA ESD Protection Four channels Open-drain TTL, CMOS, MOS SOIC-14 Comparators
+    manufacturer: Texas Instruments
+    mpn: LM339BIDR
+    lcsc: C22416291
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C22416291.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "817"
+    stock_checked: "2026-11-14"
+  - name: PGA855RGTR
+    symbol: PGA855RGTR
+    footprint: LIB_Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm
+    value: PGA855RGTR
+    package: VQFN-16-EP(3x3)
+    description: -18V~-4V, 4V~18V -40°C~+125°C 0.03% 0.125V/V~16V/V 1 10pA/°C 126dB 1uV/°C 21.6nV/√Hz@1kHz 35V/us 3mA 45mA 500pA 500pA 64dB 700ns 70uV 8V~36V Differential Digitally programmable gain, Overvoltage protection, Integrated ADC driver Rail-to-rail input VQFN-16-EP(3x3) Instrumentation Amplifiers
+    manufacturer: Texas Instruments
+    mpn: PGA855RGTR
+    lcsc: C19633573
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2406271402_Texas-Instruments-PGA855RGTR_C19633573.pdf
+    datasheet_lang: unknown
+    status: active
+    stock: "2130"
+    stock_checked: "2026-11-14"
