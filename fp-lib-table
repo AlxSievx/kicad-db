@@ -99,6 +99,13 @@
 		(descr "Package DFN QFN")
 	)
 	(lib
+		(name "LIB_Package_LGA")
+		(type "KiCad")
+		(uri "${LIB_DIR}/footprints/LIB_Package_LGA.pretty")
+		(options "")
+		(descr "Package LGA")
+	)
+	(lib
 		(name "LIB_Package_SO")
 		(type "KiCad")
 		(uri "${LIB_DIR}/footprints/LIB_Package_SO.pretty")
@@ -125,6 +132,20 @@
 		(uri "${LIB_DIR}/footprints/LIB_Passives_SMD.pretty")
 		(options "")
 		(descr "Passives SMD")
+	)
+	(lib
+		(name "LIB_Sensor_Current")
+		(type "KiCad")
+		(uri "${LIB_DIR}/footprints/LIB_Sensor_Current.pretty")
+		(options "")
+		(descr "Sensor Current")
+	)
+	(lib
+		(name "LIB_Sensor_Humidity")
+		(type "KiCad")
+		(uri "${LIB_DIR}/footprints/LIB_Sensor_Humidity.pretty")
+		(options "")
+		(descr "Sensor Humidity")
 	)
 	(lib
 		(name "LIB_TestPoint")

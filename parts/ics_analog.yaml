@@ -1214,3 +1214,63 @@ parts:
     status: active
     stock: "184"
     stock_checked: "2026-11-14"
+  - name: BME280
+    symbol: BME280
+    footprint: LIB_Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering
+    value: BME280
+    package: LGA-8(2.5x2.5)
+    description: -40°C~+85°C 0%RH~100%RH 1.71V~3.6V 1.8uA 16bit I2C, SPI ±0.5°C ±3%RH LGA-8(2.5x2.5) Temperature and Humidity Sensor
+    manufacturer: Bosch Sensortec
+    mpn: BME280
+    lcsc: C92489
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121920_Bosch-Sensortec-BME280_C92489.pdf
+    datasheet_lang: en
+    status: active
+    stock: "192"
+    stock_checked: "2026-11-14"
+  - name: SHT40-AD1B-R2
+    symbol: SHT40-AD1B-R2
+    footprint: LIB_Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad
+    value: SHT40-AD1B-R2
+    package: DFN-4-EP(1.5x1.5)
+    description: -40°C~+125°C 0%RH~100%RH 1.08V~3.6V 16bit 400nA Factory calibration, Built-in heater I2C ±0.2°C ±1.8%RH DFN-4-EP(1.5x1.5) Temperature and Humidity Sensor
+    manufacturer: Sensirion
+    mpn: SHT40-AD1B-R2
+    lcsc: C2909890
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2110211930_Sensirion-SHT40-AD1B-R2_C2909890.pdf
+    datasheet_lang: en
+    status: active
+    stock: "14047"
+    stock_checked: "2026-11-14"
+  - name: ADS1115IDGSR
+    symbol: ADS1115IDGSR
+    footprint: LIB_Package_SO:TSSOP-10_3x3mm_P0.5mm
+    value: ADS1115IDGSR
+    package: VSSOP-10
+    description: -40°C~+125°C 16 1LSB 2 2.048V 2V~5.5V 500nA 860Hz 8Hz, 16Hz, 32Hz, 64Hz, 128Hz, 250Hz, 475Hz, 860Hz Built-in Built-in I2C Sigma-Delta Support Yes VSSOP-10 Analog to Digital Converters (ADC)
+    manufacturer: Texas Instruments
+    mpn: ADS1115IDGSR
+    lcsc: C37593
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1809192322_Texas-Instruments-ADS1115IDGSR_C37593.pdf
+    datasheet_lang: en
+    status: active
+    stock: "12857"
+    stock_checked: "2026-11-14"
+  - name: CKSR_50-NP
+    symbol: CKSR_50-NP
+    footprint: LIB_Sensor_Current:LEM_CKSR
+    value: CKSR 50-NP
+    package: Plugin
+    description: -40°C~+85°C 1000Vrms 300kHz 300ns 4.75V~5.25V ±150A 插件 Current Sensors
+    manufacturer: LEM
+    mpn: CKSR 50-NP
+    lcsc: C3684372
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/C3684372.pdf
+    datasheet_lang: en
+    status: active
+    stock: "112"
+    stock_checked: "2026-11-14"

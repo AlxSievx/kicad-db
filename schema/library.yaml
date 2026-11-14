@@ -116,6 +116,9 @@ families:
   - {name: Connector_Samtec}
   - {name: Transformer_SMD}
   - {name: Crystal}
+  - {name: Package_LGA}
+  - {name: Sensor_Humidity}
+  - {name: Sensor_Current}
 
 # Known manufacturers for automatic part picks; parts must use the canonical
 # name. A distributor brand string matches a name case-insensitively when it
@@ -185,3 +188,9 @@ manufacturers:
   - {name: YXC, aliases: [YXC Crystal Oscillators, Yangxing]}
   - {name: Microchip, aliases: [Microchip Tech, Microchip Technology]}
   - {name: TOSHIBA, aliases: [Toshiba]}
+  - {name: Lattice, aliases: [Lattice Semiconductor]}
+  - {name: ISSI, aliases: [ISSI(Integrated Silicon Solution), Integrated Silicon Solution]}
+  - {name: Winbond, aliases: [Winbond Elec, Winbond Electronics]}
+  - {name: Bosch Sensortec}
+  - {name: Sensirion}
+  - {name: LEM}

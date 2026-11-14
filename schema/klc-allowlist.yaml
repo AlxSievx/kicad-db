@@ -351,3 +351,41 @@
   item: ["SSOP-8_2.95x2.8mm_P0.65mm"]
   rule: F9.1
   reason: Stock KiCad footprints copied unchanged.
+
+# Digital and sensors 2026-11-14: stock KiCad symbols/footprints copied unchanged.
+- kind: symbol
+  item: ["*:ICE40UP5K-SG48I"]
+  rule: S3.1
+  reason: Stock KiCad symbol copied unchanged (KiCad conventions; KLC heuristics misread its pin groups or legacy pin stacks).
+- kind: symbol
+  item: ["*:ICE40UP5K-SG48I"]
+  rule: S4.2
+  reason: Stock KiCad symbol copied unchanged (KiCad conventions; KLC heuristics misread its pin groups or legacy pin stacks).
+- kind: symbol
+  item: ["*:ICE40UP5K-SG48I"]
+  rule: S4.3
+  reason: Stock KiCad symbol copied unchanged (KiCad conventions; KLC heuristics misread its pin groups or legacy pin stacks).
+- kind: symbol
+  item: ["*:BME280"]
+  rule: S4.4
+  reason: Stock KiCad symbol copied unchanged (KiCad conventions; KLC heuristics misread its pin groups or legacy pin stacks).
+- kind: symbol
+  item: ["*:CKSR_50-NP"]
+  rule: S4.5
+  reason: Stock KiCad symbol copied unchanged (KiCad conventions; KLC heuristics misread its pin groups or legacy pin stacks).
+- kind: footprint
+  item: ["Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering"]
+  rule: F5.1
+  reason: Stock KiCad footprint copied unchanged.
+- kind: footprint
+  item: ["Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"]
+  rule: F5.2
+  reason: Stock KiCad footprint copied unchanged.
+- kind: footprint
+  item: ["Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering", "QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm", "Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"]
+  rule: F6.3
+  reason: Stock KiCad footprint copied unchanged.
+- kind: footprint
+  item: ["Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering"]
+  rule: F9.1
+  reason: Stock KiCad footprint copied unchanged.

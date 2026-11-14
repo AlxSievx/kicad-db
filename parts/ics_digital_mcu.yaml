@@ -809,3 +809,108 @@ parts:
     status: active
     stock: "5711"
     stock_checked: "2026-11-14"
+  - name: ICE40UP5K-SG48I
+    symbol: ICE40UP5K-SG48I
+    footprint: LIB_Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm
+    value: ICE40UP5K-SG48I
+    package: QFN-48-EP(7x7)
+    description: -40°C~+100°C 1.14V~1.26V 1171456bit 39 5280 660 iCE40 UltraPlus QFN-48-EP(7x7) Programmable Logic Device (CPLDs/FPGAs)
+    manufacturer: Lattice
+    mpn: ICE40UP5K-SG48I
+    lcsc: C2678152
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404021105_Lattice-ICE40UP5K-SG48I_C2678152.pdf
+    datasheet_lang: en
+    status: active
+    stock: "748"
+    stock_checked: "2026-11-14"
+  - name: W25Q128JVSIQ
+    symbol: W25Q128JVSIQ
+    footprint: LIB_Package_SO:SOIC-8_5.3x5.3mm_P1.27mm
+    value: W25Q128JVSIQ
+    package: SOIC-8-208mil
+    description: -40°C~+85°C 100,000 cycles 120ms@(32KB) 128Mbit 133MHz 1uA 2.7V~3.6V 20 Years 3ms Power-on reset, Hardware write protection, Software write protection, Write enable latch, Absolute write protection SPI SOIC-8-208mil NOR FLASH
+    manufacturer: Winbond
+    mpn: W25Q128JVSIQ
+    lcsc: C97521
+    jlc_type: Basic
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1811142111_Winbond-Elec-W25Q128JVSIQ_C97521.pdf
+    datasheet_lang: en
+    status: active
+    stock: "68943"
+    stock_checked: "2026-11-14"
+  - name: W25Q64JVSSIQ
+    symbol: W25Q64JVSSIQ
+    footprint: LIB_Package_SO:SOIC-8_5.3x5.3mm_P1.27mm
+    value: W25Q64JVSSIQ
+    package: SOIC-8-208mil
+    description: -40°C~+85°C 100,000 cycles 10uA 133MHz 150ms@(64KB) 2.7V~3.6V 20 Years 3ms 64Mbit SPI SOIC-8-208mil NOR FLASH
+    manufacturer: Winbond
+    mpn: W25Q64JVSSIQ
+    lcsc: C179171
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_1912211532_Winbond-Elec-W25Q64JVSSIQ_C179171.pdf
+    datasheet_lang: en
+    status: active
+    stock: "6919"
+    stock_checked: "2026-11-14"
+  - name: W25Q32JVSSIQ
+    symbol: W25Q32JVSSIQ
+    footprint: LIB_Package_SO:SOIC-8_5.3x5.3mm_P1.27mm
+    value: W25Q32JVSSIQ
+    package: SOIC-8-208mil
+    description: -40°C~+85°C 100,000 cycles 133MHz 1uA 2.7V~3.6V 20 Years 32Mbit 3ms SPI SOIC-8-208mil NOR FLASH
+    manufacturer: Winbond
+    mpn: W25Q32JVSSIQ
+    lcsc: C179173
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2410121530_Winbond-Elec-W25Q32JVSSIQ_C179173.pdf
+    datasheet_lang: en
+    status: active
+    stock: "4061"
+    stock_checked: "2026-11-14"
+  - name: IS25LP016D-JNLE-TR
+    symbol: IS25LP016D-JNLE-TR
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: IS25LP016D-JNLE-TR
+    package: SOIC-8
+    description: 100,000 cycles 133MHz 16Mbit 2.3V~3.6V 20 Years 200us 5uA Hardware write protection, Software write protection, Write enable latch, Power lock protection SPI SOIC-8 NOR FLASH
+    manufacturer: ISSI
+    mpn: IS25LP016D-JNLE-TR
+    lcsc: C2653501
+    jlc_type: Extended
+    datasheet: https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_ISSI-Integrated-Silicon-Solution-IS25LP016D-JNLE-TR_C2653501.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1966"
+    stock_checked: "2026-11-14"
+  - name: IS25LP128F-JBLE-TR
+    symbol: IS25LP128F-JBLE-TR
+    footprint: LIB_Package_SO:SOIC-8_5.3x5.3mm_P1.27mm
+    value: IS25LP128F-JBLE-TR
+    package: SOIC-8-208mil
+    description: 100,000 cycles 128Mbit 166MHz 2.3V~3.6V 20 Years 200us 8uA Power-on reset, Hardware write protection, Software write protection, Write enable latch, Absolute write protection SPI SOIC-8-208mil NOR FLASH
+    manufacturer: ISSI
+    mpn: IS25LP128F-JBLE-TR
+    lcsc: C2063014
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_ISSI-Integrated-Silicon-Solution-IS25LP128F-JBLE-TR_C2063014.pdf
+    datasheet_lang: en
+    status: active
+    stock: "392"
+    stock_checked: "2026-11-14"
+  - name: ATECC608B-SSHDA-T
+    symbol: ATECC608B-SSHDA-T
+    footprint: LIB_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+    value: ATECC608B-SSHDA-T
+    package: SOIC-8
+    description: -40°C~+85°C 150nA 2V~5.5V I2C, 1-Wire SHA-256, ECDSA, ECDH, HMAC, AES-128 SOIC-8 Security Verification / Encryption ICs
+    manufacturer: Microchip
+    mpn: ATECC608B-SSHDA-T
+    lcsc: C1518769
+    jlc_type: Extended
+    datasheet: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201180500_Microchip-Tech-ATECC608B-SSHDA-T_C1518769.pdf
+    datasheet_lang: en
+    status: active
+    stock: "1596"
+    stock_checked: "2026-11-14"
