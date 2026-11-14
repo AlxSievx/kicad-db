@@ -143,6 +143,15 @@ live tests are opt-in: `$env:LIBKIT_LIVE=1; .venv\Scripts\python -m pytest -k li
   Example: `add C534384 --category transistors --symbol Q_NMOS_SSSGD --footprint stock:Package_TO_SOT_SMD:TDSON-8-1 --family Package_TO_SOT_SMD`.
   Infineon TSDSON-8FL (BSZ…): `--symbol Q_NMOS_SSSGDDDD --family Package_SON --fp-name Infineon_PG-TSDSON-8-FL_3.3x3.3mm_P0.65mm`.
   Set per package: N 30/40/60/80/100(/150/200) V, P 20/30/40/60(/80/100) V.
+- **ICs (user rules 2026-11-14):** the Altium library is only a reference; add **modern** parts (outdated ones
+  get a current replacement), and for every chip **all stocked package variants** (SOIC, TSSOP, VSSOP/MSOP,
+  SOT-23, SC-70, TSOT, WSON/QFN), not DSBGA/WLCSP or ≤1 mm X2SON, not small-reel duplicates (`…T`), not Q1
+  unless asked. Common voltage siblings of LDOs/references too. Check every pinout against the datasheet.
+  Symbols: KLC-clean only. Shared bases in `src/symbols/`: `Opamp_SOT-23-5`, `Opamp_SC-70-5` (TI DCK
+  pinout), `Opamp_SO-8`, `Opamp_Dual`, `Opamp_Quad`, `Comparator_Dual_LM393`, `Comparator_Quad_LM339`,
+  `Crystal`, `Crystal_GND24`. Other ICs get generated box symbols (inputs left, outputs right, supplies top,
+  grounds bottom, exposed pad as pin, NC hidden); stock KiCad symbols only when they pass KLC.
+- **Crystals:** value = frequency (`25MHz`); fill `frequency`, `load_capacitance`, `stability` by hand.
 - **Local parts (no C-number):** `libkit add <name> --local --category mechanical --footprint stock:…
   --family …` (no network; non-orderable categories only). Symbol from the footprint library
   (`MountingHole`, `MountingHole_Pad` for `*_Pad`, `Fiducial`, `TestPoint`; else `--symbol`), value = name
@@ -199,7 +208,9 @@ Most Altium ICs (188/307) and connectors have no LCSC number (Plan 9: orderable 
   (needs pin/pad check support).
 - JLC BOM/CPL export: plan written (`docs/superpowers/plans/2026-11-01-jlc-export.md`), on hold.
 - Not yet added from Altium: IXTY08N100D2 (no stock), AO4606-type N+P pairs, TO-220/TO-263/SiC MOSFETs,
-  SOT-23 MOSFETs SQ2361CES, SI2324DS, DMP3099L.
+  SOT-23 MOSFETs SQ2361CES, SI2324DS, DMP3099L. Deferred ICs: TLP172A/G (pins 1,3,4,6; needs own symbol and
+  footprint), MIE1W0505 (EasyEDA LGA-12 footprint misses pads 4,5,10,11).
+- Symbol generator for box/op-amp symbols lives only in a session scratchpad: move it into `tools/libkit/` (plan).
 
 ## Part naming
 
